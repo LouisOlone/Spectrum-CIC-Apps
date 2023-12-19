@@ -1,0 +1,87 @@
+{
+  "2690fea1-b039-4d22-b1a5-7f713721f180": {
+    "appActions": [
+      "MyProfile"
+    ],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Office 365 Users",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/office365users/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365users",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [
+      "Office365Users"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "2690fea1-b039-4d22-b1a5-7f713721f180"
+  },
+  "9bb50c81-f215-47ce-8d08-19b7838540ea": {
+    "appActions": [
+      "providers/PowerPlatform.Governance/Operations/Read",
+      "providers/PowerPlatform.Governance/Operations/Write"
+    ],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://spectrumcic.sharepoint.com/sites/PowerAppsDevelopment": {
+        "dataSources": {
+          "4G Laptop Requests": {
+            "tableName": "04bfa6e1-7e09-4641-9cac-6ba46b9a3c36"
+          },
+          "Mobile Requests": {
+            "tableName": "9bb9e071-093b-42a2-9d77-9587fa4006cf"
+          },
+          "Peripherals Requests": {
+            "tableName": "612b235b-696c-4429-8d84-f026739bc9c5"
+          },
+          "Smartcard Requests": {
+            "tableName": "a7a615c0-bea6-49ac-a4c7-ff5842d89566"
+          },
+          "Special IT Requests": {
+            "tableName": "73b3511f-f50e-4b1a-9d13-32f6387d2239"
+          }
+        }
+      },
+      "https://spectrumcic.sharepoint.com/sites/PowerAppsDevelopment/": {
+        "dataSources": {
+          "Inbox": {
+            "tableName": "d49554c7-4473-4d81-ae11-832be58ad8a3"
+          },
+          "Laptop Requests": {
+            "tableName": "621d0fbf-6548-4196-9f2a-f42be44fe800"
+          },
+          "Requests_Master": {
+            "tableName": "4c255ff6-1118-470a-8c05-a542150e3c64"
+          },
+          "Smartcard Positions Requests": {
+            "tableName": "b7b12f3f-7948-4185-9da6-a099a0449a9c"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Inbox",
+      "4G Laptop Requests",
+      "Laptop Requests",
+      "Mobile Requests",
+      "Peripherals Requests",
+      "Special IT Requests",
+      "Smartcard Requests",
+      "Smartcard Positions Requests",
+      "Requests_Master"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "9bb50c81-f215-47ce-8d08-19b7838540ea"
+  }
+}

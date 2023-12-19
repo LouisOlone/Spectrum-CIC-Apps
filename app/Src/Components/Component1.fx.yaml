@@ -1,0 +1,58 @@
+Component1 As CanvasComponent:
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =72
+    Width: =1366
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    logo_Spectrum_1 As image:
+        Height: =50
+        Image: ='Spectrum Community Health CIC 2023 - white'
+        X: =37
+        Y: =13
+        ZIndex: =5
+
+    grp_toolbar_1 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =5
+
+        shp_sidebar_4 As button:
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(77,164,65,0.7)
+            Height: =72
+            HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+            Text: =""
+            Width: =1366
+            ZIndex: =1
+
+        Label4_1 As label:
+            Align: =Align.Center
+            Font: =Font.Arial
+            Height: =19
+            Size: =14
+            Text: =Today()
+            X: =1216
+            Y: =53
+            ZIndex: =2
+
+        icon_my_profile_9 As image:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderThickness: =2
+            DisplayMode: =DisplayMode.View
+            Height: =40
+            Image: =User().Image
+            ImagePosition: =ImagePosition.Fill
+            OnSelect: =
+            RadiusBottomLeft: =icon_my_profile_9.Height
+            RadiusBottomRight: =icon_my_profile_9.Height
+            RadiusTopLeft: =icon_my_profile_9.Height
+            RadiusTopRight: =icon_my_profile_9.Height
+            Width: =40
+            X: =1271
+            Y: =3
+            ZIndex: =3
+

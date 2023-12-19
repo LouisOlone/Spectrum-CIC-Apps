@@ -1,0 +1,98 @@
+template_pop_up As screen:
+
+    grp_pop_up_2 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =9
+
+        shp_pop_up_bkg_2 As rectangle:
+            BorderColor: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(255, 255, 255, 0.9)
+            Height: =768
+            Visible: =true //varPopUp
+            Width: =1366
+            ZIndex: =1
+
+        shp_details_bkg_2 As rectangle:
+            BorderColor: =RGBA(88, 89, 91, 1)
+            BorderThickness: =2
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =623
+            Visible: =true //varPopUp
+            Width: =1153
+            X: =106
+            Y: =72
+            ZIndex: =2
+
+        shp_pop_up_header_2 As rectangle:
+            BorderColor: =RGBA(88, 89, 91, 1)
+            BorderThickness: =1
+            Fill: =RGBA(88, 89, 91, 1)
+            Height: =24
+            Visible: =true //varPopUp
+            Width: =1153
+            X: =106
+            Y: =72
+            ZIndex: =3
+
+        pop_up_cancel_badge_2 As icon.CancelBadge:
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =20
+            Icon: =Icon.CancelBadge
+            OnSelect: |
+                =UpdateContext({varPopUp: false});
+                UpdateContext({varLaptopRequest: false});
+                UpdateContext({var4GLaptopRequest: false});
+                UpdateContext({varMobileRequest: false});
+                UpdateContext({varPeripheralsRequest: false});
+                UpdateContext({varSpecialRequest: false});
+                UpdateContext({varSmartcardRequest: false});
+                UpdateContext({varSmartcardPositionsRequest: false});
+            Visible: =true //varPopUp
+            Width: =20
+            X: =1235
+            Y: =74
+            ZIndex: =4
+
+        lbl_pop_up_details_2 As label:
+            Color: =RGBA(77, 164, 65, 1)
+            FontWeight: =FontWeight.Bold
+            Text: ="Details"
+            Visible: =true //varPopUp
+            X: =127
+            Y: =111
+            ZIndex: =6
+
+        lbl_pop_up_outcome_2 As label:
+            Color: =RGBA(77, 164, 65, 1)
+            FontWeight: =FontWeight.Bold
+            Text: ="Outcome"
+            Visible: =true //varPopUp
+            X: =928
+            Y: =111
+            ZIndex: =7
+
+        btn_submit_approval_outcome_2 As Button:
+            Appearance: ='ButtonCanvas.Appearance'.Secondary
+            BasePaletteColor: =
+            DisplayMode: =DisplayMode.Edit
+            FontColor: =
+            Height: =32
+            Text: ="Submit"
+            Visible: =true //varPopUp
+            Width: =96
+            X: =1139
+            Y: =653
+            ZIndex: =8
+
+        shp_divider_2 As rectangle:
+            Fill: =RGBA(53, 61, 63, 1)
+            Height: =598
+            Visible: =true //varPopUp
+            Width: =1
+            X: =906
+            Y: =96
+            ZIndex: =10
+
