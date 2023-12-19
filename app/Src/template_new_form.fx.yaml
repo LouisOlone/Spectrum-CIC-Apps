@@ -107,25 +107,31 @@ template_new_form As screen:
 
             DataCardKey14 As label:
                 AutoHeight: =true
+                Color: =RGBA(77, 164, 65, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
+                Size: =14
                 X: =30
                 Y: =10
                 ZIndex: =1
 
             DataCardValue14 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: =If(IsBlank(Parent.Error), RGBA(88, 89, 91, 0.5), Color.Red)
+                BorderThickness: =1
                 Default: =Parent.Default
                 DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
+                FocusedBorderThickness: =2
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
+                HoverBorderColor: =RGBA(88, 89, 91, 1)
+                HoverColor: =Color.Black
+                HoverFill: =RGBA(88, 89, 91, 0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
+                PressedBorderColor: =RGBA(88, 89, 91, 0.5)
+                PressedColor: =Color.Black
+                Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
