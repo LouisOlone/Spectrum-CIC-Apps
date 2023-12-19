@@ -22,7 +22,7 @@ Component1 As CanvasComponent:
 
         shp_sidebar_4 As button:
             DisplayMode: =DisplayMode.View
-            Fill: =RGBA(77,164,65,0.7)
+            Fill: =RGBA(77,164,65,1)
             Height: =72
             HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
             Text: =""

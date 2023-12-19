@@ -4,6 +4,7 @@ template_new_form As screen:
 
     Form1 As form:
         DataSource: =Inbox
+        DefaultMode: =FormMode.New
         Height: =586
         NumberOfColumns: =2
         Width: =1298
@@ -29,7 +30,9 @@ template_new_form As screen:
 
             DataCardKey1 As label:
                 AutoHeight: =true
+                Color: =RGBA(77, 164, 65, 1)
                 Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =14
                 Text: =Parent.DisplayName
@@ -40,17 +43,26 @@ template_new_form As screen:
                 ZIndex: =1
 
             DataCardValue1 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: =If(IsBlank(Parent.Error), RGBA(88, 89, 91, 0.5), Color.Red)
+                BorderThickness: =1
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                FocusedBorderThickness: =2
                 Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
+                HoverBorderColor: =RGBA(88, 89, 91, 1)
+                HoverColor: =Color.Black
+                HoverFill: =RGBA(88, 89, 91, 0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
+                PressedBorderColor: =RGBA(88, 89, 91, 0.5)
+                PressedColor: =Color.Black
+                RadiusBottomLeft: |
+                    =10
+                RadiusBottomRight: =10
+                RadiusTopLeft: =10
+                RadiusTopRight: =10
                 Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
