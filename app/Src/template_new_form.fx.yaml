@@ -5,25 +5,25 @@ template_new_form As screen:
     Form1 As form:
         DataSource: =Inbox
         DefaultMode: =FormMode.New
-        Height: =586
+        Height: =538
         NumberOfColumns: =2
-        Width: =1298
+        Width: =1284
         X: =25
-        Y: =104
+        Y: =151
         ZIndex: =2
 
         Title_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Title"
             Default: =ThisItem.Title
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =DisplayMode.Edit
             DisplayName: =DataSourceInfo([@Inbox],DataSourceInfo.DisplayName,"Title")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             MaxLength: =DataSourceInfo([@Inbox], DataSourceInfo.MaxLength, "Title")
             Required: =false
             Update: =DataCardValue1.Text
-            Width: =649
+            Width: =642
             X: =0
             Y: =0
             ZIndex: =3
@@ -47,7 +47,6 @@ template_new_form As screen:
                 BorderThickness: =1
                 Default: =Parent.Default
                 DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
                 FocusedBorderThickness: =2
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
@@ -58,11 +57,6 @@ template_new_form As screen:
                 PaddingLeft: =5
                 PressedBorderColor: =RGBA(88, 89, 91, 0.5)
                 PressedColor: =Color.Black
-                RadiusBottomLeft: |
-                    =10
-                RadiusBottomRight: =10
-                RadiusTopLeft: =10
-                RadiusTopRight: =10
                 Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -106,7 +100,7 @@ template_new_form As screen:
             MaxLength: =DataSourceInfo([@Inbox], DataSourceInfo.MaxLength, "UID")
             Required: =false
             Update: =DataCardValue14.Text
-            Width: =649
+            Width: =642
             X: =1
             Y: =0
             ZIndex: =3
@@ -172,9 +166,9 @@ template_new_form As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             MaxLength: =DataSourceInfo([@Inbox], DataSourceInfo.MaxLength, "request_type")
-            Required: =false
+            Required: =true
             Update: =DataCardValue15.Text
-            Width: =649
+            Width: =642
             X: =0
             Y: =1
             ZIndex: =3
@@ -239,9 +233,9 @@ template_new_form As screen:
             DisplayName: =DataSourceInfo([@Inbox],DataSourceInfo.DisplayName,"requestor")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            Required: =false
+            Required: =true
             Update: =DataCardValue16.Selected
-            Width: =649
+            Width: =642
             X: =1
             Y: =1
             ZIndex: =3
@@ -308,7 +302,7 @@ template_new_form As screen:
             MaxLength: =DataSourceInfo([@Inbox], DataSourceInfo.MaxLength, "stage")
             Required: =false
             Update: =DataCardValue17.Text
-            Width: =649
+            Width: =642
             X: =0
             Y: =2
             ZIndex: =3
@@ -375,7 +369,7 @@ template_new_form As screen:
             Height: =50
             Required: =false
             Update: =DataCardValue18.Selected
-            Width: =649
+            Width: =642
             X: =1
             Y: =2
             ZIndex: =3
@@ -441,7 +435,7 @@ template_new_form As screen:
             Height: =50
             Required: =false
             Update: =DataCardValue19.Selected
-            Width: =649
+            Width: =642
             X: =0
             Y: =3
             ZIndex: =3
@@ -507,7 +501,7 @@ template_new_form As screen:
             Height: =50
             Required: =false
             Update: =DataCardValue20.SelectedDate
-            Width: =649
+            Width: =642
             X: =1
             Y: =3
             ZIndex: =3
@@ -573,7 +567,7 @@ template_new_form As screen:
             MaxLength: =DataSourceInfo([@Inbox], DataSourceInfo.MaxLength, "action_required")
             Required: =false
             Update: =DataCardValue23.Text
-            Width: =649
+            Width: =642
             X: =0
             Y: =4
             ZIndex: =3
@@ -641,7 +635,7 @@ template_new_form As screen:
             MaxLength: =DataSourceInfo([@Inbox], DataSourceInfo.MaxLength, "comments")
             Required: =false
             Update: =DataCardValue24.Text
-            Width: =649
+            Width: =642
             X: =1
             Y: =4
             ZIndex: =3
@@ -708,7 +702,7 @@ template_new_form As screen:
             Height: =50
             Required: =false
             Update: =DataCardValue27.Attachments
-            Width: =649
+            Width: =642
             X: =0
             Y: =5
             ZIndex: =3
@@ -762,4 +756,30 @@ template_new_form As screen:
                 Wrap: =false
                 Y: =DataCardKey27.Y
                 ZIndex: =4
+
+    ButtonCanvas1 As Button:
+        Appearance: ='ButtonCanvas.Appearance'.Primary
+        BasePaletteColor: =RGBA(77, 164, 65, 1)
+        DisplayMode: =DisplayMode.Edit
+        Font: =Font.Arial
+        FontSize: =20
+        Height: =44
+        Text: ="Submit"
+        Width: =136
+        X: =1187
+        Y: =711
+        ZIndex: =3
+
+    Label1 As label:
+        Align: =Align.Center
+        Color: =RGBA(207, 24, 141, 1)
+        Font: =Font.Arial
+        FontWeight: =FontWeight.Semibold
+        Height: =60
+        Size: =26
+        Text: ="[FORM NAME]"
+        Width: =1298
+        X: =25
+        Y: =91
+        ZIndex: =4
 
