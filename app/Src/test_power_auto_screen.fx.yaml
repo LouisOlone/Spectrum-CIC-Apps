@@ -36,7 +36,7 @@ test_power_auto_screen As screen:
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =14
-                Text: =Parent.DisplayName
+                Text: =UID
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
