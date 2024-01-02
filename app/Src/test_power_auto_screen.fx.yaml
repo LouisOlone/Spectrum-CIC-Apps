@@ -5,8 +5,9 @@ test_power_auto_screen As screen:
 
     
     
+    
     form_Requests_Master As form:
-        DataSource: =test
+        DataSource: =Requests_Master
         DefaultMode: =FormMode.New
         Height: =538
         NumberOfColumns: =2
