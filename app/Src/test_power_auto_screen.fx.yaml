@@ -4,8 +4,9 @@ test_power_auto_screen As screen:
 
 
     
+    
     form_Requests_Master As form:
-        DataSource: =Requests_Master
+        DataSource: =test
         DefaultMode: =FormMode.New
         Height: =538
         NumberOfColumns: =2
@@ -114,7 +115,7 @@ test_power_auto_screen As screen:
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =14
-                Text: =Parent.DisplayName
+                Text: ="request_type"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -186,7 +187,7 @@ test_power_auto_screen As screen:
             Requests_Master_requestor_DataCardKey1 As label:
                 AutoHeight: =true
                 Height: =34
-                Text: =Parent.DisplayName
+                Text: ="requestor"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -257,7 +258,7 @@ test_power_auto_screen As screen:
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =14
-                Text: =Parent.DisplayName
+                Text: ="notification"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -334,7 +335,7 @@ test_power_auto_screen As screen:
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =14
-                Text: =Parent.DisplayName
+                Text: ="stage"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -411,7 +412,7 @@ test_power_auto_screen As screen:
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =14
-                Text: =Parent.DisplayName
+                Text: ="complete_flag"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -488,7 +489,7 @@ test_power_auto_screen As screen:
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =14
-                Text: =Parent.DisplayName
+                Text: ="activity"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
