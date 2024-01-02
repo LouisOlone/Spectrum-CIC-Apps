@@ -54,6 +54,9 @@
       },
       "https://spectrumcic.sharepoint.com/sites/PowerAppsDevelopment/": {
         "dataSources": {
+          "Developers": {
+            "tableName": "ac443620-f082-408d-b263-6416c2f11a0b"
+          },
           "Inbox": {
             "tableName": "d49554c7-4473-4d81-ae11-832be58ad8a3"
           },
@@ -82,7 +85,8 @@
       "Smartcard Requests",
       "Smartcard Positions Requests",
       "Requests_Master",
-      "Requests_1"
+      "Requests_1",
+      "Developers"
     ],
     "dependencies": {},
     "dependents": [],

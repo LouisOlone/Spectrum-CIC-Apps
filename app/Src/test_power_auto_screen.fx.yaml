@@ -2,8 +2,6 @@ test_power_auto_screen As screen:
 
     Component1_3 As Component1:
 
-    
-    
     form_Requests_Master As form:
         DataSource: =Requests_Master
         DefaultMode: =FormMode.New
@@ -198,10 +196,11 @@ test_power_auto_screen As screen:
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Claims"]
                 DisplayMode: =Parent.DisplayMode
+                IsSearchable: =false
                 Items: =Choices([@{triggerBody()['text']}].requestor)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Claims"]
-                SearchItems: =Choices(Requests_Master.requestor,Requests_Master_requestor_DataCardValue1.SearchText)
+                SearchItems: =[]
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -234,4 +233,3 @@ test_power_auto_screen As screen:
                 Y: =Requests_Master_requestor_DataCardValue1.Y
                 ZIndex: =4
 
-        

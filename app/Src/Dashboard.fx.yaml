@@ -195,6 +195,7 @@ Dashboard As screen:
                         )
                     )
                 );
+                
                 // Open pop-up window
                 
                 UpdateContext({varPopUp: true}); 
@@ -3245,6 +3246,7 @@ Dashboard As screen:
         OnSelect: |-
             =UpdateContext({varPopUp: true})
         Text: ="ON"
+        Visible: =varDeveloperMode
         Width: =96
         X: =1270
         Y: =736
@@ -3258,6 +3260,7 @@ Dashboard As screen:
         OnSelect: |-
             =UpdateContext({varPopUp: false})
         Text: ="OFF"
+        Visible: =varDeveloperMode
         Width: =96
         X: =1171
         Y: =735
@@ -6870,6 +6873,17 @@ Dashboard As screen:
         Y: =70
         ZIndex: =38
 
+    Icon1 As icon.Tools:
+        Color: =RGBA(79, 90, 94, 1)
+        Height: =55
+        Icon: =Icon.Tools
+        OnSelect: =If(varDeveloperMode = true, Set(varDeveloperMode, false), Set(varDeveloperMode, true))
+        Visible: =If(User().FullName in LookUp(Developers, User().FullName = Developer.DisplayName, Developer.DisplayName), true, false)
+        Width: =63
+        X: =1155
+        Y: =10
+        ZIndex: =42
+
     grp_loading_screen As group:
         Height: =5
         Width: =5
@@ -6908,4 +6922,15 @@ Dashboard As screen:
             X: =0
             Y: =0
             ZIndex: =41
+
+    Label3 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(240, 98, 15, 1)
+        Height: =70
+        Size: =40
+        Text: ="DEVELOPER MODE"
+        Visible: =varDeveloperMode
+        Width: =1155
+        ZIndex: =43
 
