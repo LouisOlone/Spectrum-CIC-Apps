@@ -2,6 +2,7 @@ test_power_auto_screen As screen:
 
     Component1_3 As Component1:
 
+    
     form_Requests_Master As form:
         DataSource: =Requests_Master
         DefaultMode: =FormMode.New
@@ -17,10 +18,10 @@ test_power_auto_screen As screen:
             DataField: ="UID"
             Default: =ThisItem.UID
             DisplayMode: =DisplayMode.Edit
-            DisplayName: =DataSourceInfo([Requests_Master],DataSourceInfo.DisplayName,"UID")
+            DisplayName: =DataSourceInfo([@{triggerBody()['text']}],DataSourceInfo.DisplayName,"UID")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            MaxLength: =DataSourceInfo([Requests_Master], DataSourceInfo.MaxLength, "UID")
+            MaxLength: =DataSourceInfo([@{triggerBody()['text']}], DataSourceInfo.MaxLength, "UID")
             Required: =false
             Update: =Requests_Master_UID_DataCardValue1.Text
             Width: =642
@@ -94,10 +95,10 @@ test_power_auto_screen As screen:
             DataField: ="request_type"
             Default: =ThisItem.request_type
             DisplayMode: =DisplayMode.Edit
-            DisplayName: =DataSourceInfo([Requests_Master],DataSourceInfo.DisplayName,"request_type")
+            DisplayName: =DataSourceInfo([@{triggerBody()['text']}],DataSourceInfo.DisplayName,"request_type")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            MaxLength: =DataSourceInfo([Requests_Master], DataSourceInfo.MaxLength, "request_type")
+            MaxLength: =DataSourceInfo([@{triggerBody()['text']}], DataSourceInfo.MaxLength, "request_type")
             Required: =false
             Update: =Requests_Master_request_type_DataCardValue1.Text
             Width: =642
@@ -171,7 +172,7 @@ test_power_auto_screen As screen:
             DataField: ="requestor"
             Default: =ThisItem.requestor
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([Requests_Master],DataSourceInfo.DisplayName,"requestor")
+            DisplayName: =DataSourceInfo([@{triggerBody()['text']}],DataSourceInfo.DisplayName,"requestor")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =true
@@ -196,11 +197,10 @@ test_power_auto_screen As screen:
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Claims"]
                 DisplayMode: =Parent.DisplayMode
-                IsSearchable: =false
-                Items: =Choices([Requests_Master].requestor)
+                Items: =Choices([@{triggerBody()['text']}].requestor)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Claims"]
-                SearchItems: =[]
+                SearchItems: =Choices(Requests_Master.requestor,Requests_Master_requestor_DataCardValue1.SearchText)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -238,10 +238,10 @@ test_power_auto_screen As screen:
             DataField: ="notification"
             Default: =ThisItem.notification
             DisplayMode: =DisplayMode.Edit
-            DisplayName: =DataSourceInfo([Requests_Master],DataSourceInfo.DisplayName,"notification")
+            DisplayName: =DataSourceInfo([@{triggerBody()['text']}],DataSourceInfo.DisplayName,"notification")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            MaxLength: =DataSourceInfo([Requests_Master], DataSourceInfo.MaxLength, "notification")
+            MaxLength: =DataSourceInfo([@{triggerBody()['text']}], DataSourceInfo.MaxLength, "notification")
             Required: =false
             Update: =Requests_Master_notification_DataCardValue1.Text
             Width: =642
@@ -315,10 +315,10 @@ test_power_auto_screen As screen:
             DataField: ="stage"
             Default: =ThisItem.stage
             DisplayMode: =DisplayMode.Edit
-            DisplayName: =DataSourceInfo([Requests_Master],DataSourceInfo.DisplayName,"stage")
+            DisplayName: =DataSourceInfo([@{triggerBody()['text']}],DataSourceInfo.DisplayName,"stage")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            MaxLength: =DataSourceInfo([Requests_Master], DataSourceInfo.MaxLength, "stage")
+            MaxLength: =DataSourceInfo([@{triggerBody()['text']}], DataSourceInfo.MaxLength, "stage")
             Required: =false
             Update: =Requests_Master_stage_DataCardValue1.Text
             Width: =642
@@ -392,10 +392,10 @@ test_power_auto_screen As screen:
             DataField: ="complete_flag"
             Default: =ThisItem.complete_flag
             DisplayMode: =DisplayMode.Edit
-            DisplayName: =DataSourceInfo([Requests_Master],DataSourceInfo.DisplayName,"complete_flag")
+            DisplayName: =DataSourceInfo([@{triggerBody()['text']}],DataSourceInfo.DisplayName,"complete_flag")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            MaxLength: =DataSourceInfo([Requests_Master], DataSourceInfo.MaxLength, "complete_flag")
+            MaxLength: =DataSourceInfo([@{triggerBody()['text']}], DataSourceInfo.MaxLength, "complete_flag")
             Required: =false
             Update: =Requests_Master_complete_flag_DataCardValue1.Text
             Width: =642
@@ -469,10 +469,10 @@ test_power_auto_screen As screen:
             DataField: ="activity"
             Default: =ThisItem.activity
             DisplayMode: =DisplayMode.Edit
-            DisplayName: =DataSourceInfo([Requests_Master],DataSourceInfo.DisplayName,"activity")
+            DisplayName: =DataSourceInfo([@{triggerBody()['text']}],DataSourceInfo.DisplayName,"activity")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            MaxLength: =DataSourceInfo([Requests_Master], DataSourceInfo.MaxLength, "activity")
+            MaxLength: =DataSourceInfo([@{triggerBody()['text']}], DataSourceInfo.MaxLength, "activity")
             Required: =false
             Update: =Requests_Master_activity_DataCardValue1.Text
             Width: =642
@@ -541,3 +541,4 @@ test_power_auto_screen As screen:
                 Y: =Requests_Master_activity_DataCardKey1.Y
                 ZIndex: =4
 
+        
