@@ -3,7 +3,7 @@ template_new_form As screen:
     Component1_2 As Component1:
 
     Form1 As form:
-        DataSource: =Inbox
+        DataSource: =test
         DefaultMode: =FormMode.New
         Height: =538
         NumberOfColumns: =2
