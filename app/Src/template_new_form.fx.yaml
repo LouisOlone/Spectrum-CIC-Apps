@@ -3,7 +3,7 @@ template_new_form As screen:
     Component1_2 As Component1:
 
     Form1 As form:
-        DataSource: =test
+        DataSource: =Requests_1
         DefaultMode: =FormMode.New
         Height: =538
         NumberOfColumns: =2
@@ -16,11 +16,11 @@ template_new_form As screen:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Title"
             Default: =ThisItem.Title
-            DisplayMode: =DisplayMode.Edit
-            DisplayName: =DataSourceInfo([@Inbox],DataSourceInfo.DisplayName,"Title")
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@Requests_1],DataSourceInfo.DisplayName,"Title")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            MaxLength: =DataSourceInfo([@Inbox], DataSourceInfo.MaxLength, "Title")
+            MaxLength: =DataSourceInfo([@Requests_1], DataSourceInfo.MaxLength, "Title")
             Required: =false
             Update: =DataCardValue1.Text
             Width: =642
@@ -30,11 +30,7 @@ template_new_form As screen:
 
             DataCardKey1 As label:
                 AutoHeight: =true
-                Color: =RGBA(77, 164, 65, 1)
-                Font: =Font.Arial
-                FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -43,21 +39,16 @@ template_new_form As screen:
                 ZIndex: =1
 
             DataCardValue1 As text:
-                BorderColor: =If(IsBlank(Parent.Error), RGBA(88, 89, 91, 0.5), Color.Red)
-                BorderThickness: =1
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true
-                FocusedBorderThickness: =2
-                Font: =Font.Arial
-                FontWeight: =FontWeight.Lighter
-                HoverBorderColor: =RGBA(88, 89, 91, 1)
-                HoverColor: =Color.Black
-                HoverFill: =RGBA(88, 89, 91, 0.01)
+                DisplayMode: =Parent.DisplayMode
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
-                PressedBorderColor: =RGBA(88, 89, 91, 0.5)
-                PressedColor: =Color.Black
-                Size: =12
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -89,15 +80,15 @@ template_new_form As screen:
                 Y: =DataCardKey1.Y
                 ZIndex: =4
 
-        UID_DataCard2 As typedDataCard.textualEditCard:
+        RequestReference_DataCard2 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
-            DataField: ="UID"
-            Default: =ThisItem.UID
+            DataField: ="RequestReference"
+            Default: =ThisItem.RequestReference
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@Inbox],DataSourceInfo.DisplayName,"UID")
+            DisplayName: =DataSourceInfo([@Requests_1],DataSourceInfo.DisplayName,"RequestReference")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            MaxLength: =DataSourceInfo([@Inbox], DataSourceInfo.MaxLength, "UID")
+            MaxLength: =DataSourceInfo([@Requests_1], DataSourceInfo.MaxLength, "RequestReference")
             Required: =false
             Update: =DataCardValue14.Text
             Width: =642
@@ -107,31 +98,25 @@ template_new_form As screen:
 
             DataCardKey14 As label:
                 AutoHeight: =true
-                Color: =RGBA(77, 164, 65, 1)
-                Font: =Font.Arial
-                FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
                 X: =30
                 Y: =10
                 ZIndex: =1
 
             DataCardValue14 As text:
-                BorderColor: =If(IsBlank(Parent.Error), RGBA(88, 89, 91, 0.5), Color.Red)
-                BorderThickness: =1
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true
-                FocusedBorderThickness: =2
-                Font: =Font.Arial
-                FontWeight: =FontWeight.Lighter
-                HoverBorderColor: =RGBA(88, 89, 91, 1)
-                HoverColor: =Color.Black
-                HoverFill: =RGBA(88, 89, 91, 0.01)
+                DisplayMode: =Parent.DisplayMode
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
-                PressedBorderColor: =RGBA(88, 89, 91, 0.5)
-                PressedColor: =Color.Black
-                Size: =12
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -163,17 +148,16 @@ template_new_form As screen:
                 Y: =DataCardKey14.Y
                 ZIndex: =4
 
-        request_type_DataCard1 As typedDataCard.textualEditCard:
+        RaisedBy_DataCard2 As typedDataCard.comboBoxEditCard:
             BorderStyle: =BorderStyle.Solid
-            DataField: ="request_type"
-            Default: =ThisItem.request_type
+            DataField: ="RaisedBy"
+            Default: =ThisItem.RaisedBy
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@Inbox],DataSourceInfo.DisplayName,"request_type")
+            DisplayName: =DataSourceInfo([@Requests_1],DataSourceInfo.DisplayName,"RaisedBy")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            MaxLength: =DataSourceInfo([@Inbox], DataSourceInfo.MaxLength, "request_type")
-            Required: =true
-            Update: =DataCardValue15.Text
+            Required: =false
+            Update: =DataCardValue15.Selected
             Width: =642
             X: =0
             Y: =1
@@ -189,17 +173,16 @@ template_new_form As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue15 As text:
+            DataCardValue15 As combobox:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["Claims"]
                 DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
+                Items: =Choices([@Requests_1].RaisedBy)
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["Claims"]
+                SearchItems: =Choices(Requests_1.RaisedBy,DataCardValue15.SearchText)
+                SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -231,15 +214,15 @@ template_new_form As screen:
                 Y: =DataCardKey15.Y
                 ZIndex: =4
 
-        requestor_DataCard1 As typedDataCard.comboBoxEditCard:
+        RequestType_DataCard2 As typedDataCard.comboBoxEditCard:
             BorderStyle: =BorderStyle.Solid
-            DataField: ="requestor"
-            Default: =ThisItem.requestor
+            DataField: ="RequestType"
+            Default: =ThisItem.RequestType
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@Inbox],DataSourceInfo.DisplayName,"requestor")
+            DisplayName: =DataSourceInfo([@Requests_1],DataSourceInfo.DisplayName,"RequestType")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            Required: =true
+            Required: =false
             Update: =DataCardValue16.Selected
             Width: =642
             X: =1
@@ -259,12 +242,12 @@ template_new_form As screen:
             DataCardValue16 As combobox:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 DefaultSelectedItems: =Parent.Default
-                DisplayFields: =["Claims"]
+                DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@Inbox].requestor)
+                Items: =Choices([@Requests_1].RequestType)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                SearchFields: =["Claims"]
-                SearchItems: =Choices(Inbox.requestor,DataCardValue16.SearchText)
+                SearchFields: =["Value"]
+                SearchItems: =Choices(Requests_1.RequestType,DataCardValue16.SearchText)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -297,15 +280,15 @@ template_new_form As screen:
                 Y: =DataCardKey16.Y
                 ZIndex: =4
 
-        stage_DataCard1 As typedDataCard.textualEditCard:
+        Summary_DataCard2 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
-            DataField: ="stage"
-            Default: =ThisItem.stage
+            DataField: ="Summary"
+            Default: =ThisItem.Summary
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@Inbox],DataSourceInfo.DisplayName,"stage")
+            DisplayName: =DataSourceInfo([@Requests_1],DataSourceInfo.DisplayName,"Summary")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            MaxLength: =DataSourceInfo([@Inbox], DataSourceInfo.MaxLength, "stage")
+            MaxLength: =DataSourceInfo([@Requests_1], DataSourceInfo.MaxLength, "Summary")
             Required: =false
             Update: =DataCardValue17.Text
             Width: =642
@@ -365,16 +348,17 @@ template_new_form As screen:
                 Y: =DataCardKey17.Y
                 ZIndex: =4
 
-        assigned_to_DataCard1 As typedDataCard.comboBoxEditCard:
+        Activity_DataCard2 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
-            DataField: ="assigned_to"
-            Default: =ThisItem.assigned_to
+            DataField: ="Activity"
+            Default: =ThisItem.Activity
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@Inbox],DataSourceInfo.DisplayName,"assigned_to")
+            DisplayName: =DataSourceInfo([@Requests_1],DataSourceInfo.DisplayName,"Activity")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
+            MaxLength: =DataSourceInfo([@Requests_1], DataSourceInfo.MaxLength, "Activity")
             Required: =false
-            Update: =DataCardValue18.Selected
+            Update: =DataCardValue18.Text
             Width: =642
             X: =1
             Y: =2
@@ -390,16 +374,17 @@ template_new_form As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue18 As combobox:
+            DataCardValue18 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultSelectedItems: =Parent.Default
-                DisplayFields: =["Claims"]
+                Default: =Parent.Default
+                DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@Inbox].assigned_to)
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                SearchFields: =["Claims"]
-                SearchItems: =Choices(Inbox.assigned_to,DataCardValue18.SearchText)
-                SelectMultiple: =false
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -431,16 +416,17 @@ template_new_form As screen:
                 Y: =DataCardKey18.Y
                 ZIndex: =4
 
-        decision_DataCard2 As typedDataCard.comboBoxEditCard:
+        Email_DataCard2 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
-            DataField: ="decision"
-            Default: =ThisItem.decision
+            DataField: ="Email"
+            Default: =ThisItem.Email
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@Inbox],DataSourceInfo.DisplayName,"decision")
+            DisplayName: =DataSourceInfo([@Requests_1],DataSourceInfo.DisplayName,"Email")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
+            MaxLength: =DataSourceInfo([@Requests_1], DataSourceInfo.MaxLength, "Email")
             Required: =false
-            Update: =DataCardValue19.Selected
+            Update: =DataCardValue19.Text
             Width: =642
             X: =0
             Y: =3
@@ -456,16 +442,17 @@ template_new_form As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue19 As combobox:
+            DataCardValue19 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultSelectedItems: =Parent.Default
-                DisplayFields: =["Value"]
+                Default: =Parent.Default
+                DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@Inbox].decision)
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                SearchFields: =["Value"]
-                SearchItems: =Choices(Inbox.decision,DataCardValue19.SearchText)
-                SelectMultiple: =false
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -497,16 +484,17 @@ template_new_form As screen:
                 Y: =DataCardKey19.Y
                 ZIndex: =4
 
-        decision_date_DataCard2 As typedDataCard.dateEditCard:
+        Notification_DataCard2 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
-            DataField: ="decision_date"
-            Default: =ThisItem.decision_date
+            DataField: ="Notification"
+            Default: =ThisItem.Notification
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@Inbox],DataSourceInfo.DisplayName,"decision_date")
+            DisplayName: =DataSourceInfo([@Requests_1],DataSourceInfo.DisplayName,"Notification")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
+            MaxLength: =DataSourceInfo([@Requests_1], DataSourceInfo.MaxLength, "Notification")
             Required: =false
-            Update: =DataCardValue20.SelectedDate
+            Update: =DataCardValue20.Text
             Width: =642
             X: =1
             Y: =3
@@ -522,15 +510,17 @@ template_new_form As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue20 As datepicker:
+            DataCardValue20 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultDate: =Parent.Default
+                Default: =Parent.Default
+                DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                EndYear: =Year(Today())+100
-                IsEditable: =true
-                PaddingBottom: =0
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                StartYear: =1899
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -562,15 +552,15 @@ template_new_form As screen:
                 Y: =DataCardKey20.Y
                 ZIndex: =4
 
-        action_required_DataCard1 As typedDataCard.textualEditCard:
+        Chased_DataCard2 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
-            DataField: ="action_required"
-            Default: =ThisItem.action_required
+            DataField: ="Chased"
+            Default: =ThisItem.Chased
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@Inbox],DataSourceInfo.DisplayName,"action_required")
+            DisplayName: =DataSourceInfo([@Requests_1],DataSourceInfo.DisplayName,"Chased")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            MaxLength: =DataSourceInfo([@Inbox], DataSourceInfo.MaxLength, "action_required")
+            MaxLength: =DataSourceInfo([@Requests_1], DataSourceInfo.MaxLength, "Chased")
             Required: =false
             Update: =DataCardValue23.Text
             Width: =642
@@ -630,15 +620,15 @@ template_new_form As screen:
                 Y: =DataCardKey23.Y
                 ZIndex: =4
 
-        comments_DataCard2 As typedDataCard.textualEditCard:
+        Escalated_DataCard2 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
-            DataField: ="comments"
-            Default: =ThisItem.comments
+            DataField: ="Escalated"
+            Default: =ThisItem.Escalated
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@Inbox],DataSourceInfo.DisplayName,"comments")
+            DisplayName: =DataSourceInfo([@Requests_1],DataSourceInfo.DisplayName,"Escalated")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            MaxLength: =DataSourceInfo([@Inbox], DataSourceInfo.MaxLength, "comments")
+            MaxLength: =DataSourceInfo([@Requests_1], DataSourceInfo.MaxLength, "Escalated")
             Required: =false
             Update: =DataCardValue24.Text
             Width: =642
@@ -698,16 +688,17 @@ template_new_form As screen:
                 Y: =DataCardKey24.Y
                 ZIndex: =4
 
-        Attachments_DataCard1 As typedDataCard.attachmentsEditCard:
+        Stage_DataCard2 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
-            DataField: ="{Attachments}"
-            Default: =ThisItem.Attachments
+            DataField: ="Stage"
+            Default: =ThisItem.Stage
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@Inbox],DataSourceInfo.DisplayName,"{Attachments}")
+            DisplayName: =DataSourceInfo([@Requests_1],DataSourceInfo.DisplayName,"Stage")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
+            MaxLength: =DataSourceInfo([@Requests_1], DataSourceInfo.MaxLength, "Stage")
             Required: =false
-            Update: =DataCardValue27.Attachments
+            Update: =DataCardValue27.Text
             Width: =642
             X: =0
             Y: =5
@@ -723,15 +714,17 @@ template_new_form As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue27 As attachments:
+            DataCardValue27 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                IsInDataCard: =true
-                Items: =Parent.Default
-                PaddingBottom: =5
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                PaddingRight: =5
-                PaddingTop: =5
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -761,6 +754,275 @@ template_new_form As screen:
                 Width: =30
                 Wrap: =false
                 Y: =DataCardKey27.Y
+                ZIndex: =4
+
+        Comment_DataCard2 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Comment"
+            Default: =ThisItem.Comment
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@Requests_1],DataSourceInfo.DisplayName,"Comment")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@Requests_1], DataSourceInfo.MaxLength, "Comment")
+            Required: =false
+            Update: =DataCardValue67.Text
+            Width: =642
+            X: =1
+            Y: =5
+            ZIndex: =3
+
+            DataCardKey67 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue67 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey67.Y + DataCardKey67.Height + 5
+                ZIndex: =2
+
+            ErrorMessage67 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue67.Y + DataCardValue67.Height
+                ZIndex: =3
+
+            StarVisible67 As label:
+                Align: =Align.Center
+                Height: =DataCardKey67.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey67.Y
+                ZIndex: =4
+
+        EscalateComment_DataCard2 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="EscalateComment"
+            Default: =ThisItem.EscalateComment
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@Requests_1],DataSourceInfo.DisplayName,"EscalateComment")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@Requests_1], DataSourceInfo.MaxLength, "EscalateComment")
+            Required: =false
+            Update: =DataCardValue68.Text
+            Width: =642
+            X: =0
+            Y: =6
+            ZIndex: =3
+
+            DataCardKey68 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue68 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey68.Y + DataCardKey68.Height + 5
+                ZIndex: =2
+
+            ErrorMessage68 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue68.Y + DataCardValue68.Height
+                ZIndex: =3
+
+            StarVisible68 As label:
+                Align: =Align.Center
+                Height: =DataCardKey68.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey68.Y
+                ZIndex: =4
+
+        Complete_DataCard2 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Complete"
+            Default: =ThisItem.Complete
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@Requests_1],DataSourceInfo.DisplayName,"Complete")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@Requests_1], DataSourceInfo.MaxLength, "Complete")
+            Required: =false
+            Update: =DataCardValue69.Text
+            Width: =642
+            X: =1
+            Y: =6
+            ZIndex: =3
+
+            DataCardKey69 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue69 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey69.Y + DataCardKey69.Height + 5
+                ZIndex: =2
+
+            ErrorMessage69 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue69.Y + DataCardValue69.Height
+                ZIndex: =3
+
+            StarVisible69 As label:
+                Align: =Align.Center
+                Height: =DataCardKey69.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey69.Y
+                ZIndex: =4
+
+        Attachments_DataCard1 As typedDataCard.attachmentsEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="{Attachments}"
+            Default: =ThisItem.Attachments
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@Requests_1],DataSourceInfo.DisplayName,"{Attachments}")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue84.Attachments
+            Width: =642
+            X: =0
+            Y: =7
+            ZIndex: =3
+
+            DataCardKey84 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue84 As attachments:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DisplayMode: =Parent.DisplayMode
+                IsInDataCard: =true
+                Items: =Parent.Default
+                PaddingBottom: =5
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingRight: =5
+                PaddingTop: =5
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey84.Y + DataCardKey84.Height + 5
+                ZIndex: =2
+
+            ErrorMessage84 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue84.Y + DataCardValue84.Height
+                ZIndex: =3
+
+            StarVisible84 As label:
+                Align: =Align.Center
+                Height: =DataCardKey84.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey84.Y
                 ZIndex: =4
 
     ButtonCanvas1 As Button:
