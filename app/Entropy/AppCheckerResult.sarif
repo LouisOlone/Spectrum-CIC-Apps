@@ -974,349 +974,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'IT Incident Form'.ButtonCanvas1_3.AccessibleLabel"
+                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.UID_DataCard6.DataCardValue85.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'IT Incident Form'.ButtonCanvas1_3.AccessibleLabel",
+                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.UID_DataCard6.DataCardValue85.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "IT Incident Form",
-                "type": "'IT Incident Form'.ButtonCanvas1_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.Label_DataCard1.DataCardValue122.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.Label_DataCard1.DataCardValue122.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "IT Incident Form",
-                "type": "'IT Incident Form'.Form1_1.Label_DataCard1.DataCardValue122"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.Category_DataCard1.DataCardValue121.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.Category_DataCard1.DataCardValue121.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "IT Incident Form",
-                "type": "'IT Incident Form'.Form1_1.Category_DataCard1.DataCardValue121"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.ScreenShot_DataCard1.AddPicture1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.ScreenShot_DataCard1.AddPicture1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "IT Incident Form",
-                "type": "'IT Incident Form'.Form1_1.ScreenShot_DataCard1.AddPicture1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.Description_DataCard1.DataCardValue120.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.Description_DataCard1.DataCardValue120.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "IT Incident Form",
-                "type": "'IT Incident Form'.Form1_1.Description_DataCard1.DataCardValue120"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.Summary_DataCard1.DataCardValue119.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.Summary_DataCard1.DataCardValue119.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "IT Incident Form",
-                "type": "'IT Incident Form'.Form1_1.Summary_DataCard1.DataCardValue119"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.Site_DataCard1.DataCardValue118.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.Site_DataCard1.DataCardValue118.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "IT Incident Form",
-                "type": "'IT Incident Form'.Form1_1.Site_DataCard1.DataCardValue118"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.LastName_DataCard1.DataCardValue117.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.LastName_DataCard1.DataCardValue117.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "IT Incident Form",
-                "type": "'IT Incident Form'.Form1_1.LastName_DataCard1.DataCardValue117"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.FirstName_DataCard1.DataCardValue116.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.FirstName_DataCard1.DataCardValue116.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "IT Incident Form",
-                "type": "'IT Incident Form'.Form1_1.FirstName_DataCard1.DataCardValue116"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.Company_DataCard1.DataCardValue114.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.Company_DataCard1.DataCardValue114.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "IT Incident Form",
-                "type": "'IT Incident Form'.Form1_1.Company_DataCard1.DataCardValue114"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.SpectrumEmployee_DataCard1.DataCardValue113.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.SpectrumEmployee_DataCard1.DataCardValue113.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "IT Incident Form",
-                "type": "'IT Incident Form'.Form1_1.SpectrumEmployee_DataCard1.DataCardValue113"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.RequestFor_DataCard2.DataCardValue97.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.RequestFor_DataCard2.DataCardValue97.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "IT Incident Form",
-                "type": "'IT Incident Form'.Form1_1.RequestFor_DataCard2.DataCardValue97"
+                "type": "'IT Incident Form'.Form1_1.UID_DataCard6.DataCardValue85"
               }
             }
           ],
@@ -1364,19 +1034,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.UID_DataCard6.DataCardValue85.AccessibleLabel"
+                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.RequestFor_DataCard2.DataCardValue97.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.UID_DataCard6.DataCardValue85.AccessibleLabel",
+                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.RequestFor_DataCard2.DataCardValue97.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "IT Incident Form",
-                "type": "'IT Incident Form'.Form1_1.UID_DataCard6.DataCardValue85"
+                "type": "'IT Incident Form'.Form1_1.RequestFor_DataCard2.DataCardValue97"
               }
             }
           ],
@@ -1394,19 +1064,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'IT Incident Form'.ButtonCanvas1_2.AccessibleLabel"
+                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.SpectrumEmployee_DataCard1.DataCardValue113.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'IT Incident Form'.ButtonCanvas1_2.AccessibleLabel",
+                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.SpectrumEmployee_DataCard1.DataCardValue113.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "IT Incident Form",
-                "type": "'IT Incident Form'.ButtonCanvas1_2"
+                "type": "'IT Incident Form'.Form1_1.SpectrumEmployee_DataCard1.DataCardValue113"
               }
             }
           ],
@@ -1424,19 +1094,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.Attachments_DataCard2.DataCardValue150.AccessibleLabel"
+                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.Company_DataCard1.DataCardValue114.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.Attachments_DataCard2.DataCardValue150.AccessibleLabel",
+                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.Company_DataCard1.DataCardValue114.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "IT Incident Form",
-                "type": "'IT Incident Form'.Form1_1.Attachments_DataCard2.DataCardValue150"
+                "type": "'IT Incident Form'.Form1_1.Company_DataCard1.DataCardValue114"
               }
             }
           ],
@@ -1454,19 +1124,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.imghtml_DataCard1.DataCardValue149.AccessibleLabel"
+                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.FirstName_DataCard1.DataCardValue116.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.imghtml_DataCard1.DataCardValue149.AccessibleLabel",
+                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.FirstName_DataCard1.DataCardValue116.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "IT Incident Form",
-                "type": "'IT Incident Form'.Form1_1.imghtml_DataCard1.DataCardValue149"
+                "type": "'IT Incident Form'.Form1_1.FirstName_DataCard1.DataCardValue116"
               }
             }
           ],
@@ -1484,19 +1154,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.AttachmentPicture_DataCard1.DataCardValue148.AccessibleLabel"
+                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.LastName_DataCard1.DataCardValue117.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.AttachmentPicture_DataCard1.DataCardValue148.AccessibleLabel",
+                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.LastName_DataCard1.DataCardValue117.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "IT Incident Form",
-                "type": "'IT Incident Form'.Form1_1.AttachmentPicture_DataCard1.DataCardValue148"
+                "type": "'IT Incident Form'.Form1_1.LastName_DataCard1.DataCardValue117"
               }
             }
           ],
@@ -1514,19 +1184,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.Attachment_DataCard1.AddPicture2.AccessibleLabel"
+                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.Site_DataCard1.DataCardValue118.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.Attachment_DataCard1.AddPicture2.AccessibleLabel",
+                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.Site_DataCard1.DataCardValue118.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "IT Incident Form",
-                "type": "'IT Incident Form'.Form1_1.Attachment_DataCard1.AddPicture2"
+                "type": "'IT Incident Form'.Form1_1.Site_DataCard1.DataCardValue118"
               }
             }
           ],
@@ -1544,19 +1214,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.'Attachment Test_DataCard1'.DataCardValue133.AccessibleLabel"
+                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.Summary_DataCard1.DataCardValue119.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.'Attachment Test_DataCard1'.DataCardValue133.AccessibleLabel",
+                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.Summary_DataCard1.DataCardValue119.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "IT Incident Form",
-                "type": "'IT Incident Form'.Form1_1.'Attachment Test_DataCard1'.DataCardValue133"
+                "type": "'IT Incident Form'.Form1_1.Summary_DataCard1.DataCardValue119"
               }
             }
           ],
@@ -1574,19 +1244,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.PCName_DataCard1.DataCardValue132.AccessibleLabel"
+                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.Description_DataCard1.DataCardValue120.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.PCName_DataCard1.DataCardValue132.AccessibleLabel",
+                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.Description_DataCard1.DataCardValue120.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "IT Incident Form",
-                "type": "'IT Incident Form'.Form1_1.PCName_DataCard1.DataCardValue132"
+                "type": "'IT Incident Form'.Form1_1.Description_DataCard1.DataCardValue120"
               }
             }
           ],
@@ -1604,19 +1274,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.EmailAddress_DataCard1.DataCardValue131.AccessibleLabel"
+                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.ScreenShot_DataCard1.AddPicture1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.EmailAddress_DataCard1.DataCardValue131.AccessibleLabel",
+                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.ScreenShot_DataCard1.AddPicture1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "IT Incident Form",
-                "type": "'IT Incident Form'.Form1_1.EmailAddress_DataCard1.DataCardValue131"
+                "type": "'IT Incident Form'.Form1_1.ScreenShot_DataCard1.AddPicture1"
               }
             }
           ],
@@ -1634,19 +1304,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.ContactNumber_DataCard1.DataCardValue130.AccessibleLabel"
+                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.Category_DataCard1.DataCardValue121.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.ContactNumber_DataCard1.DataCardValue130.AccessibleLabel",
+                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.Category_DataCard1.DataCardValue121.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "IT Incident Form",
-                "type": "'IT Incident Form'.Form1_1.ContactNumber_DataCard1.DataCardValue130"
+                "type": "'IT Incident Form'.Form1_1.Category_DataCard1.DataCardValue121"
               }
             }
           ],
@@ -1664,19 +1334,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.'RaisedBy (RaisedBy0)_DataCard1'.DataCardValue129.AccessibleLabel"
+                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.Label_DataCard1.DataCardValue122.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.'RaisedBy (RaisedBy0)_DataCard1'.DataCardValue129.AccessibleLabel",
+                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.Label_DataCard1.DataCardValue122.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "IT Incident Form",
-                "type": "'IT Incident Form'.Form1_1.'RaisedBy (RaisedBy0)_DataCard1'.DataCardValue129"
+                "type": "'IT Incident Form'.Form1_1.Label_DataCard1.DataCardValue122"
               }
             }
           ],
@@ -1694,109 +1364,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.Team_DataCard1.DataCardValue128.AccessibleLabel"
+                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.CurrentStage_DataCard1.DataCardValue123.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.Team_DataCard1.DataCardValue128.AccessibleLabel",
+                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.CurrentStage_DataCard1.DataCardValue123.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "IT Incident Form",
-                "type": "'IT Incident Form'.Form1_1.Team_DataCard1.DataCardValue128"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.Service_DataCard1.DataCardValue127.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.Service_DataCard1.DataCardValue127.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "IT Incident Form",
-                "type": "'IT Incident Form'.Form1_1.Service_DataCard1.DataCardValue127"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.DaysInStage_DataCard1.DataCardValue126.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.DaysInStage_DataCard1.DataCardValue126.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "IT Incident Form",
-                "type": "'IT Incident Form'.Form1_1.DaysInStage_DataCard1.DataCardValue126"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.StageStartDate_DataCard1.DataCardValue125.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.StageStartDate_DataCard1.DataCardValue125.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "IT Incident Form",
-                "type": "'IT Incident Form'.Form1_1.StageStartDate_DataCard1.DataCardValue125"
+                "type": "'IT Incident Form'.Form1_1.CurrentStage_DataCard1.DataCardValue123"
               }
             }
           ],
@@ -1844,19 +1424,439 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.CurrentStage_DataCard1.DataCardValue123.AccessibleLabel"
+                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.StageStartDate_DataCard1.DataCardValue125.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.CurrentStage_DataCard1.DataCardValue123.AccessibleLabel",
+                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.StageStartDate_DataCard1.DataCardValue125.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "IT Incident Form",
-                "type": "'IT Incident Form'.Form1_1.CurrentStage_DataCard1.DataCardValue123"
+                "type": "'IT Incident Form'.Form1_1.StageStartDate_DataCard1.DataCardValue125"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.DaysInStage_DataCard1.DataCardValue126.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.DaysInStage_DataCard1.DataCardValue126.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "IT Incident Form",
+                "type": "'IT Incident Form'.Form1_1.DaysInStage_DataCard1.DataCardValue126"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.Service_DataCard1.DataCardValue127.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.Service_DataCard1.DataCardValue127.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "IT Incident Form",
+                "type": "'IT Incident Form'.Form1_1.Service_DataCard1.DataCardValue127"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.Team_DataCard1.DataCardValue128.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.Team_DataCard1.DataCardValue128.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "IT Incident Form",
+                "type": "'IT Incident Form'.Form1_1.Team_DataCard1.DataCardValue128"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.'RaisedBy (RaisedBy0)_DataCard1'.DataCardValue129.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.'RaisedBy (RaisedBy0)_DataCard1'.DataCardValue129.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "IT Incident Form",
+                "type": "'IT Incident Form'.Form1_1.'RaisedBy (RaisedBy0)_DataCard1'.DataCardValue129"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.ContactNumber_DataCard1.DataCardValue130.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.ContactNumber_DataCard1.DataCardValue130.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "IT Incident Form",
+                "type": "'IT Incident Form'.Form1_1.ContactNumber_DataCard1.DataCardValue130"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.EmailAddress_DataCard1.DataCardValue131.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.EmailAddress_DataCard1.DataCardValue131.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "IT Incident Form",
+                "type": "'IT Incident Form'.Form1_1.EmailAddress_DataCard1.DataCardValue131"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.PCName_DataCard1.DataCardValue132.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.PCName_DataCard1.DataCardValue132.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "IT Incident Form",
+                "type": "'IT Incident Form'.Form1_1.PCName_DataCard1.DataCardValue132"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.'Attachment Test_DataCard1'.DataCardValue133.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.'Attachment Test_DataCard1'.DataCardValue133.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "IT Incident Form",
+                "type": "'IT Incident Form'.Form1_1.'Attachment Test_DataCard1'.DataCardValue133"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.Attachment_DataCard1.AddPicture2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.Attachment_DataCard1.AddPicture2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "IT Incident Form",
+                "type": "'IT Incident Form'.Form1_1.Attachment_DataCard1.AddPicture2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.AttachmentPicture_DataCard1.DataCardValue148.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.AttachmentPicture_DataCard1.DataCardValue148.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "IT Incident Form",
+                "type": "'IT Incident Form'.Form1_1.AttachmentPicture_DataCard1.DataCardValue148"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.imghtml_DataCard1.DataCardValue149.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.imghtml_DataCard1.DataCardValue149.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "IT Incident Form",
+                "type": "'IT Incident Form'.Form1_1.imghtml_DataCard1.DataCardValue149"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.Attachments_DataCard2.DataCardValue150.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'IT Incident Form'.Form1_1.Attachments_DataCard2.DataCardValue150.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "IT Incident Form",
+                "type": "'IT Incident Form'.Form1_1.Attachments_DataCard2.DataCardValue150"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'IT Incident Form'.ButtonCanvas1_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'IT Incident Form'.ButtonCanvas1_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "IT Incident Form",
+                "type": "'IT Incident Form'.ButtonCanvas1_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'IT Incident Form'.ButtonCanvas1_3.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'IT Incident Form'.ButtonCanvas1_3.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "IT Incident Form",
+                "type": "'IT Incident Form'.ButtonCanvas1_3"
               }
             }
           ],
@@ -1927,36 +1927,6 @@
           },
           "ruleId": "app-ScreenHasManyControls",
           "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Dashboard.var4GLaptopTestDetails"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Dashboard.var4GLaptopTestDetails",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "var4GLaptopTestDetails",
-                "module": "Dashboard",
-                "type": "Dashboard"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 6
         },
         {
           "locations": [
