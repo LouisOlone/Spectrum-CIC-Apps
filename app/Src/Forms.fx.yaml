@@ -324,7 +324,7 @@ Forms As screen:
         Fill: =RGBA(0,0,0,0)
         Height: =125
         HoverFill: =RGBA(0,0,0,0)
-        OnSelect: =Navigate(IT_Forms)
+        OnSelect: =Navigate('IT Forms')
         PressedFill: =RGBA(0,0,0,0)
         Text: =""
         Width: =125

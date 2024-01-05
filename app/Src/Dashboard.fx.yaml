@@ -20,7 +20,7 @@ Dashboard As screen:
         Width: =56
         X: =509
         Y: =76
-        ZIndex: =1
+        ZIndex: =5
 
     icon_mail As icon.Mail:
         Color: =RGBA(0, 0, 0, 1)
@@ -29,7 +29,7 @@ Dashboard As screen:
         Width: =30
         X: =434
         Y: =76
-        ZIndex: =2
+        ZIndex: =6
 
     lbl_date_received_1 As label:
         Align: =Align.Center
@@ -40,14 +40,14 @@ Dashboard As screen:
         Width: =943
         X: =19
         Y: =76
-        ZIndex: =3
+        ZIndex: =7
 
     "'shp_logo_block-TEMP' As rectangle":
         Fill: =RGBA(255, 255, 255, 1)
         Height: =192
         Width: =430
         X: =936
-        ZIndex: =4
+        ZIndex: =8
 
     shp_sidebar_2 As button:
         DisplayMode: =DisplayMode.View
@@ -58,7 +58,7 @@ Dashboard As screen:
         Width: =944
         X: =18
         Y: =111
-        ZIndex: =5
+        ZIndex: =9
 
     "gal_inbox As gallery.'BrowseLayout_Vertical_OneTextVariant_ver5.0'":
         DelayItemLoading: =true
@@ -80,7 +80,7 @@ Dashboard As screen:
         Width: =917
         X: =32
         Y: =142
-        ZIndex: =6
+        ZIndex: =10
 
         NextArrow2 As icon.ChevronRight:
             AccessibleLabel: =Self.Tooltip
@@ -285,7 +285,7 @@ Dashboard As screen:
         Width: =item_UID.Width
         X: =52
         Y: =110
-        ZIndex: =8
+        ZIndex: =11
 
     lbl_request_type As label:
         Align: =Align.Center
@@ -296,7 +296,7 @@ Dashboard As screen:
         Width: =item_request_type.Width
         X: =322
         Y: =110
-        ZIndex: =9
+        ZIndex: =12
 
     lbl_action_required As label:
         Align: =Align.Center
@@ -307,7 +307,7 @@ Dashboard As screen:
         Width: =item_action_required.Width
         X: =484
         Y: =110
-        ZIndex: =10
+        ZIndex: =13
 
     lbl_stage As label:
         Align: =Align.Center
@@ -318,7 +318,7 @@ Dashboard As screen:
         Width: =item_stage.Width
         X: =661
         Y: =110
-        ZIndex: =11
+        ZIndex: =14
 
     lbl_date_received As label:
         Align: =Align.Center
@@ -329,7 +329,7 @@ Dashboard As screen:
         Width: =item_date_received.Width
         X: =154
         Y: =110
-        ZIndex: =12
+        ZIndex: =15
 
     grp_pop_up As group:
         Height: =5
@@ -344,7 +344,7 @@ Dashboard As screen:
             Height: =768
             Visible: =varPopUp
             Width: =1366
-            ZIndex: =17
+            ZIndex: =20
 
         shp_details_bkg As rectangle:
             BorderColor: =RGBA(88, 89, 91, 1)
@@ -355,7 +355,7 @@ Dashboard As screen:
             Width: =1153
             X: =106
             Y: =72
-            ZIndex: =18
+            ZIndex: =21
 
         shp_pop_up_header As rectangle:
             BorderColor: =RGBA(88, 89, 91, 1)
@@ -366,7 +366,7 @@ Dashboard As screen:
             Width: =1153
             X: =106
             Y: =72
-            ZIndex: =19
+            ZIndex: =22
 
         pop_up_cancel_badge As icon.CancelBadge:
             Color: =RGBA(255, 255, 255, 1)
@@ -386,7 +386,7 @@ Dashboard As screen:
             Width: =20
             X: =1235
             Y: =74
-            ZIndex: =20
+            ZIndex: =23
 
         form_approval_outcome As form.PowerApps_CoreControls_Form:
             DataSource: =Inbox
@@ -398,7 +398,7 @@ Dashboard As screen:
             Width: =354
             X: =905
             Y: =162
-            ZIndex: =21
+            ZIndex: =24
 
             UID_DataCard3 As typedDataCard.fluentV9TextualEditCard:
                 BorderStyle: =BorderStyle.Solid
@@ -740,7 +740,7 @@ Dashboard As screen:
             Visible: =varPopUp
             X: =127
             Y: =111
-            ZIndex: =22
+            ZIndex: =25
 
         lbl_pop_up_outcome As label:
             Color: =RGBA(77, 164, 65, 1)
@@ -749,7 +749,7 @@ Dashboard As screen:
             Visible: =varPopUp
             X: =928
             Y: =111
-            ZIndex: =23
+            ZIndex: =26
 
         btn_submit_approval_outcome As Button:
             Appearance: ='ButtonCanvas.Appearance'.Secondary
@@ -762,7 +762,7 @@ Dashboard As screen:
             Width: =96
             X: =1139
             Y: =653
-            ZIndex: =24
+            ZIndex: =27
 
         shp_divider As rectangle:
             Fill: =RGBA(53, 61, 63, 1)
@@ -771,7 +771,60 @@ Dashboard As screen:
             Width: =1
             X: =906
             Y: =96
-            ZIndex: =25
+            ZIndex: =28
+
+    grp_toolbar As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =26
+
+        shp_sidebar_1 As button:
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(77,164,65,0.7)
+            Height: =72
+            HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+            Text: =""
+            Width: =1366
+            ZIndex: =16
+
+        Label4 As label:
+            Align: =Align.Center
+            Font: =Font.Arial
+            Height: =19
+            Size: =14
+            Text: =Today()
+            X: =1216
+            Y: =53
+            ZIndex: =17
+
+        icon_my_profile_8 As image:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderThickness: =2
+            DisplayMode: =DisplayMode.View
+            Height: =40
+            Image: =User().Image
+            ImagePosition: =ImagePosition.Fill
+            OnSelect: =
+            RadiusBottomLeft: =icon_my_profile_8.Height
+            RadiusBottomRight: =icon_my_profile_8.Height
+            RadiusTopLeft: =icon_my_profile_8.Height
+            RadiusTopRight: =icon_my_profile_8.Height
+            Width: =40
+            X: =1271
+            Y: =3
+            ZIndex: =18
+
+        Label5 As label:
+            Font: =Font.Arial
+            Height: =66
+            Size: =16
+            Text: =Concatenate("Hello, ", Office365Users.MyProfile().GivenName, ". Welcome to your Spectrum Apps Dashboard.")
+            Width: =652
+            X: =420
+            Y: =5
+            ZIndex: =19
 
     form_laptop_request As form.PowerApps_CoreControls_Form:
         DataSource: ='Laptop Requests'
@@ -783,7 +836,7 @@ Dashboard As screen:
         Visible: =varLaptopRequest
         X: =106
         Y: =162
-        ZIndex: =26
+        ZIndex: =29
 
         UID_DataCard4 As typedDataCard.fluentV9TextualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -1643,59 +1696,6 @@ Dashboard As screen:
                 Y: =DataCardKey34.Y
                 ZIndex: =4
 
-    grp_toolbar As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =26
-
-        shp_sidebar_1 As button:
-            DisplayMode: =DisplayMode.View
-            Fill: =RGBA(77,164,65,0.7)
-            Height: =72
-            HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
-            Text: =""
-            Width: =1366
-            ZIndex: =13
-
-        Label4 As label:
-            Align: =Align.Center
-            Font: =Font.Arial
-            Height: =19
-            Size: =14
-            Text: =Today()
-            X: =1216
-            Y: =53
-            ZIndex: =14
-
-        icon_my_profile_8 As image:
-            BorderColor: =RGBA(32, 54, 71, 1)
-            BorderThickness: =2
-            DisplayMode: =DisplayMode.View
-            Height: =40
-            Image: =User().Image
-            ImagePosition: =ImagePosition.Fill
-            OnSelect: =
-            RadiusBottomLeft: =icon_my_profile_8.Height
-            RadiusBottomRight: =icon_my_profile_8.Height
-            RadiusTopLeft: =icon_my_profile_8.Height
-            RadiusTopRight: =icon_my_profile_8.Height
-            Width: =40
-            X: =1271
-            Y: =3
-            ZIndex: =15
-
-        Label5 As label:
-            Font: =Font.Arial
-            Height: =66
-            Size: =16
-            Text: =Concatenate("Hello, ", Office365Users.MyProfile().GivenName, ". Welcome to your Spectrum Apps Dashboard.")
-            Width: =652
-            X: =420
-            Y: =5
-            ZIndex: =16
-
     form_4G_Laptop As form.PowerApps_CoreControls_Form:
         DataSource: ='4G Laptop Requests'
         DefaultMode: =FormMode.View
@@ -1706,7 +1706,7 @@ Dashboard As screen:
         Visible: =var4GLaptopRequest
         X: =106
         Y: =162
-        ZIndex: =27
+        ZIndex: =30
 
         UID_DataCard1 As typedDataCard.fluentV9TextualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -2509,7 +2509,7 @@ Dashboard As screen:
         Visible: =varMobileRequest
         X: =106
         Y: =162
-        ZIndex: =28
+        ZIndex: =31
 
         UID_DataCard5 As typedDataCard.fluentV9TextualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -3249,7 +3249,7 @@ Dashboard As screen:
         Width: =96
         X: =1270
         Y: =736
-        ZIndex: =29
+        ZIndex: =32
 
     ButtonCanvas3_1 As Button:
         BasePaletteColor: =
@@ -3263,7 +3263,7 @@ Dashboard As screen:
         Width: =96
         X: =1171
         Y: =735
-        ZIndex: =30
+        ZIndex: =33
 
     form_peripheral_requests As form.PowerApps_CoreControls_Form:
         DataSource: ='Peripherals Requests'
@@ -3275,7 +3275,7 @@ Dashboard As screen:
         Visible: =varPeripheralsRequest
         X: =106
         Y: =162
-        ZIndex: =31
+        ZIndex: =34
 
         UID_DataCard7 As typedDataCard.fluentV9TextualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -4214,7 +4214,7 @@ Dashboard As screen:
         Visible: =varSpecialRequest
         X: =106
         Y: =162
-        ZIndex: =32
+        ZIndex: =35
 
         UID_DataCard8 As typedDataCard.fluentV9TextualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -4880,7 +4880,7 @@ Dashboard As screen:
         Image: ='Spectrum Community Health CIC 2023 - white'
         X: =37
         Y: =13
-        ZIndex: =33
+        ZIndex: =36
 
     form_smartcard_requests As form.PowerApps_CoreControls_Form:
         DataSource: ='Smartcard Requests'
@@ -4892,7 +4892,7 @@ Dashboard As screen:
         Visible: =varSmartcardRequest
         X: =106
         Y: =162
-        ZIndex: =34
+        ZIndex: =37
 
         UID_DataCard9 As typedDataCard.fluentV9TextualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -5888,6 +5888,36 @@ Dashboard As screen:
                 Y: =DataCardKey111.Y
                 ZIndex: =4
 
+    grp_attachments_warning As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =37
+
+        Label6 As label:
+            Align: =Align.Right
+            Font: =Font.Arial
+            FontWeight: =FontWeight.Bold
+            Size: =8
+            Text: |-
+                ="Warning: Attachments to review"
+            Visible: =If(And(varSmartcardRequest,gal_inbox.Selected.'Has attachments'=true), true, false)
+            Width: =200
+            X: =928
+            Y: =649
+            ZIndex: =38
+
+        Icon2 As icon.Warning:
+            Color: =RGBA(215, 58, 60, 1)
+            Height: =25
+            Icon: =Icon.Warning
+            Visible: =If(And(varSmartcardRequest,gal_inbox.Selected.'Has attachments'=true), true, false)
+            Width: =25
+            X: =938
+            Y: =656
+            ZIndex: =39
+
     form_smartcard_positions As form.PowerApps_CoreControls_Form:
         DataSource: ='Smartcard Positions Requests'
         DefaultMode: =FormMode.View
@@ -5898,7 +5928,7 @@ Dashboard As screen:
         Visible: =varSmartcardPositionsRequest
         X: =106
         Y: =162
-        ZIndex: =37
+        ZIndex: =40
 
         UID_DataCard11 As typedDataCard.fluentV9TextualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -6828,36 +6858,6 @@ Dashboard As screen:
                 Y: =DataCardKey147.Y
                 ZIndex: =4
 
-    grp_attachments_warning As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =37
-
-        Label6 As label:
-            Align: =Align.Right
-            Font: =Font.Arial
-            FontWeight: =FontWeight.Bold
-            Size: =8
-            Text: |-
-                ="Warning: Attachments to review"
-            Visible: =If(And(varSmartcardRequest,gal_inbox.Selected.'Has attachments'=true), true, false)
-            Width: =200
-            X: =928
-            Y: =649
-            ZIndex: =35
-
-        Icon2 As icon.Warning:
-            Color: =RGBA(215, 58, 60, 1)
-            Height: =25
-            Icon: =Icon.Warning
-            Visible: =If(And(varSmartcardRequest,gal_inbox.Selected.'Has attachments'=true), true, false)
-            Width: =25
-            X: =938
-            Y: =656
-            ZIndex: =36
-
     lbl_subject As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
@@ -6870,18 +6870,7 @@ Dashboard As screen:
         Width: =500
         X: =381
         Y: =70
-        ZIndex: =38
-
-    Icon1 As icon.Tools:
-        Color: =RGBA(79, 90, 94, 1)
-        Height: =55
-        Icon: =Icon.Tools
-        OnSelect: =If(varDeveloperMode = true, Set(varDeveloperMode, false), Set(varDeveloperMode, true))
-        Visible: =If(User().FullName in LookUp(Developers, User().FullName = Developer.DisplayName, Developer.DisplayName), true, false)
-        Width: =63
-        X: =1155
-        Y: =10
-        ZIndex: =42
+        ZIndex: =41
 
     grp_loading_screen As group:
         Height: =5
@@ -6895,7 +6884,7 @@ Dashboard As screen:
             Height: =768
             Visible: =varLoading
             Width: =1366
-            ZIndex: =39
+            ZIndex: =42
 
         timer_loading As timer:
             AutoStart: =
@@ -6906,7 +6895,7 @@ Dashboard As screen:
             Visible: =false
             X: =1037
             Y: =18
-            ZIndex: =40
+            ZIndex: =43
 
         spinner_loading As Spinner:
             BasePaletteColor: =
@@ -6920,7 +6909,18 @@ Dashboard As screen:
             Width: =1366
             X: =0
             Y: =0
-            ZIndex: =41
+            ZIndex: =44
+
+    Icon1 As icon.Tools:
+        Color: =RGBA(79, 90, 94, 1)
+        Height: =55
+        Icon: =Icon.Tools
+        OnSelect: =If(varDeveloperMode = true, Set(varDeveloperMode, false), Set(varDeveloperMode, true))
+        Visible: =If(User().FullName in LookUp(Developers, User().FullName = Developer.DisplayName, Developer.DisplayName), true, false)
+        Width: =63
+        X: =1155
+        Y: =10
+        ZIndex: =45
 
     Label3 As label:
         Align: =Align.Center
@@ -6931,7 +6931,7 @@ Dashboard As screen:
         Text: ="DEVELOPER MODE"
         Visible: =varDeveloperMode
         Width: =1155
-        ZIndex: =43
+        ZIndex: =46
 
     Form3 As form.PowerApps_CoreControls_Form:
         DataSource: ='4G Laptop Requests'
@@ -6942,7 +6942,7 @@ Dashboard As screen:
         Visible: =var4GLaptopTest
         X: =106
         Y: =162
-        ZIndex: =44
+        ZIndex: =47
 
         raised_by_DataCard4 As typedDataCard.fluentV9ComboBoxEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -7735,25 +7735,12 @@ Dashboard As screen:
                 Y: =DataCardKey68.Y
                 ZIndex: =4
 
-    Button2 As button:
-        Fill: =RGBA(0, 0, 0, 0)
-        Height: =63
-        HoverColor: =RGBA(255, 255, 255, 0)
-        HoverFill: =ColorFade(RGBA(56, 96, 178, 0), -20%)
-        OnSelect: =Navigate(Forms)
-        PressedFill: =RGBA(0,0,0,0)
-        Text: =""
-        Width: =362
-        X: =976
-        Y: =685
-        ZIndex: =48
-
-    button_new_request As group:
+    grp_raise_new_request As group:
         Height: =5
         Width: =5
         X: =40
         Y: =40
-        ZIndex: =48
+        ZIndex: =49
 
         shp_sidebar_5 As button:
             DisplayMode: =DisplayMode.View
@@ -7764,7 +7751,7 @@ Dashboard As screen:
             Width: =362
             X: =976
             Y: =685
-            ZIndex: =45
+            ZIndex: =1
 
         Icon3 As icon.AddDocument:
             Color: =RGBA(0, 0, 0, 1)
@@ -7773,7 +7760,7 @@ Dashboard As screen:
             Width: =58
             X: =1262
             Y: =687
-            ZIndex: =46
+            ZIndex: =2
 
         Label2 As label:
             Font: =Font.Arial
@@ -7784,5 +7771,18 @@ Dashboard As screen:
             Width: =222
             X: =1019
             Y: =687
-            ZIndex: =47
+            ZIndex: =3
+
+        Button2 As button:
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =63
+            HoverColor: =RGBA(255, 255, 255, 0)
+            HoverFill: =ColorFade(RGBA(56, 96, 178, 0), -20%)
+            OnSelect: =Navigate(Forms)
+            PressedFill: =RGBA(0,0,0,0)
+            Text: =""
+            Width: =362
+            X: =976
+            Y: =685
+            ZIndex: =4
 
