@@ -6,7 +6,7 @@
         Height: =75
         Width: =137.5
         Y: =552
-        ZIndex: =1
+        ZIndex: =2
 
     Image20_1 As image:
         BorderColor: =RGBA(32, 54, 71, 1)
@@ -14,7 +14,7 @@
         Image: =building
         Width: =137.5
         Y: =174
-        ZIndex: =2
+        ZIndex: =3
 
     Image16_1 As image:
         BorderColor: =RGBA(32, 54, 71, 1)
@@ -23,7 +23,7 @@
         Width: =137.5
         X: =137
         Y: =174
-        ZIndex: =3
+        ZIndex: =4
 
     Image25_1 As image:
         BorderColor: =RGBA(32, 54, 71, 1)
@@ -31,7 +31,7 @@
         Image: ='human-resources'
         Width: =137.5
         Y: =300
-        ZIndex: =4
+        ZIndex: =5
 
     Image21_1 As image:
         BorderColor: =RGBA(32, 54, 71, 1)
@@ -40,7 +40,7 @@
         Width: =137.5
         X: =137
         Y: =300
-        ZIndex: =5
+        ZIndex: =6
 
     Image22_1 As image:
         BorderColor: =RGBA(32, 54, 71, 1)
@@ -48,7 +48,7 @@
         Image: =book
         Width: =137.5
         Y: =426
-        ZIndex: =6
+        ZIndex: =7
 
     Image23_1 As image:
         BorderColor: =RGBA(32, 54, 71, 1)
@@ -57,7 +57,7 @@
         Width: =137.5
         X: =137
         Y: =426
-        ZIndex: =7
+        ZIndex: =8
 
     Image28_1 As image:
         BorderColor: =RGBA(32, 54, 71, 1)
@@ -65,7 +65,7 @@
         Image: =responsive
         Width: =137.5
         Y: =552
-        ZIndex: =8
+        ZIndex: =9
 
     Image18_1 As image:
         BorderColor: =RGBA(32, 54, 71, 1)
@@ -74,7 +74,7 @@
         Width: =137.5
         X: =137
         Y: =552
-        ZIndex: =9
+        ZIndex: =10
 
     Image26_1 As image:
         BorderColor: =RGBA(32, 54, 71, 1)
@@ -82,7 +82,7 @@
         Image: =padlock
         Width: =137.5
         Y: =678
-        ZIndex: =10
+        ZIndex: =11
 
     Image27_1 As image:
         BorderColor: =RGBA(32, 54, 71, 1)
@@ -91,7 +91,7 @@
         Width: =137.5
         X: =137
         Y: =678
-        ZIndex: =11
+        ZIndex: =12
 
     Label9 As label:
         Align: =Align.Center
@@ -104,7 +104,7 @@
         Width: =1034
         X: =274
         Y: =2
-        ZIndex: =12
+        ZIndex: =13
 
     btn_nav_estates As button:
         Fill: =RGBA(0,0,0,0)
@@ -115,7 +115,7 @@
         Text: =""
         Width: =137.5
         Y: =174
-        ZIndex: =13
+        ZIndex: =14
 
     btn_nav_finance As button:
         Fill: =RGBA(0,0,0,0)
@@ -127,7 +127,7 @@
         Width: =137.5
         X: =137
         Y: =174
-        ZIndex: =14
+        ZIndex: =15
 
     btn_nav_hr As button:
         Fill: =RGBA(0,0,0,0)
@@ -138,7 +138,7 @@
         Text: =""
         Width: =137.5
         Y: =300
-        ZIndex: =15
+        ZIndex: =16
 
     btn_nav_ig As button:
         Fill: =RGBA(0,0,0,0)
@@ -150,7 +150,7 @@
         Width: =137.5
         X: =137
         Y: =300
-        ZIndex: =16
+        ZIndex: =17
 
     btn_nav_learning As button:
         Fill: =RGBA(0,0,0,0)
@@ -161,7 +161,7 @@
         Text: =""
         Width: =137.5
         Y: =426
-        ZIndex: =17
+        ZIndex: =18
 
     btn_nav_marketing As button:
         Fill: =RGBA(0,0,0,0)
@@ -173,7 +173,7 @@
         Width: =137.5
         X: =137
         Y: =426
-        ZIndex: =18
+        ZIndex: =19
 
     btn_nav_safeguarding As button:
         Fill: =RGBA(0,0,0,0)
@@ -185,7 +185,7 @@
         Width: =137.5
         X: =137
         Y: =552
-        ZIndex: =19
+        ZIndex: =20
 
     btn_nav_secure_env As button:
         Fill: =RGBA(0,0,0,0)
@@ -196,7 +196,7 @@
         Text: =""
         Width: =137.5
         Y: =678
-        ZIndex: =20
+        ZIndex: =21
 
     btn_nav_sexual_health As button:
         Fill: =RGBA(0,0,0,0)
@@ -208,7 +208,7 @@
         Width: =137.5
         X: =137
         Y: =678
-        ZIndex: =21
+        ZIndex: =22
 
     Icon4_1 As icon.BackArrow:
         Color: =RGBA(255, 255, 255, 1)
@@ -218,7 +218,7 @@
         Width: =36
         X: =331
         Y: =5
-        ZIndex: =22
+        ZIndex: =23
 
     Icon4_2 As icon.BackArrow:
         Color: =RGBA(255, 255, 255, 1)
@@ -228,5 +228,59 @@
         Width: =36
         X: =1321
         Y: =3
-        ZIndex: =23
+        ZIndex: =24
+
+    Label10 As label:
+        Align: =Align.Center
+        Font: =Font.Arial
+        FontWeight: =FontWeight.Lighter
+        Height: =73
+        Size: =28
+        Text: |-
+            ="Select a form below:"
+        Width: =1068
+        X: =298
+        Y: =70
+        ZIndex: =29
+
+    Button4 As button:
+        Fill: =RGBA(77, 164, 65, 1)
+        Height: =62
+        HoverFill: =ColorFade(RGBA(77,164,65,1), -20%)
+        OnSelect: =Navigate('IT Incident Form')
+        Text: ="IT Incident"
+        Width: =395
+        X: =634
+        Y: =174
+        ZIndex: =30
+
+    Button4_1 As button:
+        Fill: =RGBA(77, 164, 65, 1)
+        Height: =62
+        HoverFill: =ColorFade(RGBA(77,164,65,1), -20%)
+        Text: ="IT Request"
+        Width: =395
+        X: =634
+        Y: =249
+        ZIndex: =31
+
+    Icon12 As icon.GlobeWarning:
+        Color: =RGBA(88, 89, 91, 1)
+        DisplayMode: =DisplayMode.View
+        Height: =62
+        Icon: =Icon.GlobeWarning
+        Width: =62
+        X: =661
+        Y: =174
+        ZIndex: =32
+
+    Icon12_1 As icon.GlobeWarning:
+        Color: =RGBA(88, 89, 91, 1)
+        DisplayMode: =DisplayMode.View
+        Height: =62
+        Icon: =Icon.Laptop
+        Width: =62
+        X: =661
+        Y: =249
+        ZIndex: =33
 

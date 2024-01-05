@@ -3313,6 +3313,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Requests.varLoading"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Requests.varLoading",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "varLoading",
+                "module": "Requests",
+                "type": "Requests"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "Requests.varMobileDetails"
                 }
               ],

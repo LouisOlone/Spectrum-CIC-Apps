@@ -51,7 +51,7 @@ Dashboard As screen:
 
     shp_sidebar_2 As button:
         DisplayMode: =DisplayMode.View
-        Fill: =RGBA(77,164,65,0.7)
+        Fill: =RGBA(77,164,65,1)
         Height: =637
         HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
         Text: =""
@@ -782,7 +782,7 @@ Dashboard As screen:
 
         shp_sidebar_1 As button:
             DisplayMode: =DisplayMode.View
-            Fill: =RGBA(77,164,65,0.7)
+            Fill: =RGBA(77,164,65,1)
             Height: =72
             HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
             Text: =""
@@ -7744,7 +7744,7 @@ Dashboard As screen:
 
         shp_sidebar_5 As button:
             DisplayMode: =DisplayMode.View
-            Fill: =RGBA(77,164,65,0.7)
+            Fill: =RGBA(77,164,65,1)
             Height: =63
             HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
             Text: =""
