@@ -2,7 +2,7 @@
 
     Component1_3 As Component1:
 
-    Form1_1 As form:
+    form_IT_Incident As form:
         DataSource: ='IT Incidents'
         DefaultMode: =FormMode.New
         Height: =538
@@ -1951,6 +1951,7 @@
         FontColor: =
         FontSize: =20
         Height: =44
+        OnSelect: =ResetForm(form_IT_Incident); Back()
         Text: ="Cancel"
         Width: =136
         X: =1030

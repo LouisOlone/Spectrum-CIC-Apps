@@ -6,7 +6,7 @@ Forms As screen:
         Fill: =RGBA(255, 255, 255, 0.66)
         Height: =713
         Width: =1133
-        X: =148
+        X: =120
         Y: =50
         ZIndex: =1
 
@@ -14,15 +14,15 @@ Forms As screen:
         BorderColor: =RGBA(32, 54, 71, 1)
         Fill: =RGBA(255, 255, 255, 1)
         Height: =317
-        Width: =625
-        X: =741
+        Width: =653
+        X: =713
         ZIndex: =2
 
     Rectangle2_2 As rectangle:
         BorderColor: =RGBA(32, 54, 71, 1)
         Fill: =RGBA(255, 255, 255, 1)
         Width: =177
-        X: =1009
+        X: =981
         Y: =38
         ZIndex: =25
 
@@ -31,7 +31,7 @@ Forms As screen:
         Fill: =RGBA(231, 19, 26, 0.25)
         Height: =355
         Width: =224
-        X: =148
+        X: =120
         Y: =50
         ZIndex: =26
 
@@ -40,7 +40,7 @@ Forms As screen:
         Fill: =RGBA(77, 164, 65, 0.25)
         Height: =355
         Width: =224
-        X: =148
+        X: =120
         Y: =408
         ZIndex: =27
 
@@ -49,7 +49,7 @@ Forms As screen:
         Fill: =RGBA(174, 204, 54, 0.25)
         Height: =355
         Width: =224
-        X: =1057
+        X: =1029
         Y: =50
         ZIndex: =28
 
@@ -58,7 +58,7 @@ Forms As screen:
         Fill: =RGBA(88, 89, 91, 0.25)
         Height: =355
         Width: =224
-        X: =375
+        X: =347
         Y: =408
         ZIndex: =29
 
@@ -67,7 +67,7 @@ Forms As screen:
         Fill: =RGBA(207, 24, 141, 0.25)
         Height: =355
         Width: =224
-        X: =375
+        X: =347
         Y: =50
         ZIndex: =30
 
@@ -76,7 +76,7 @@ Forms As screen:
         Fill: =RGBA(228, 79, 37, 0.25)
         Height: =355
         Width: =224
-        X: =1057
+        X: =1029
         Y: =408
         ZIndex: =31
 
@@ -85,7 +85,7 @@ Forms As screen:
         Fill: =RGBA(248, 155, 51, 0.25)
         Height: =355
         Width: =224
-        X: =602
+        X: =574
         Y: =50
         ZIndex: =32
 
@@ -94,7 +94,7 @@ Forms As screen:
         Fill: =RGBA(30, 152, 207, 0.25)
         Height: =355
         Width: =224
-        X: =602
+        X: =574
         Y: =408
         ZIndex: =33
 
@@ -103,7 +103,7 @@ Forms As screen:
         Fill: =RGBA(255, 196, 41, 0.25)
         Height: =355
         Width: =224
-        X: =829
+        X: =801
         Y: =50
         ZIndex: =34
 
@@ -112,7 +112,7 @@ Forms As screen:
         Fill: =RGBA(128, 48, 146, 0.25)
         Height: =355
         Width: =224
-        X: =829
+        X: =801
         Y: =408
         ZIndex: =35
 
@@ -125,7 +125,7 @@ Forms As screen:
         Height: =55
         Text: ="Estates and Facilities"
         Width: =200
-        X: =148
+        X: =120
         Y: =340
         ZIndex: =36
 
@@ -136,7 +136,7 @@ Forms As screen:
         Height: =55
         Text: ="Finance"
         Width: =200
-        X: =375
+        X: =347
         Y: =340
         ZIndex: =38
 
@@ -147,7 +147,7 @@ Forms As screen:
         Height: =55
         Text: ="Human Resources"
         Width: =200
-        X: =602
+        X: =574
         Y: =340
         ZIndex: =39
 
@@ -158,7 +158,7 @@ Forms As screen:
         Height: =55
         Text: ="Information Governance"
         Width: =200
-        X: =829
+        X: =801
         Y: =340
         ZIndex: =40
 
@@ -169,7 +169,7 @@ Forms As screen:
         Height: =55
         Text: ="Learning and Development"
         Width: =200
-        X: =1058
+        X: =1030
         Y: =340
         ZIndex: =41
 
@@ -182,7 +182,7 @@ Forms As screen:
         Height: =55
         Text: ="Marketing and Comms"
         Width: =200
-        X: =148
+        X: =120
         Y: =700
         ZIndex: =42
 
@@ -193,7 +193,7 @@ Forms As screen:
         Height: =55
         Text: ="IM&T and Digital"
         Width: =200
-        X: =375
+        X: =347
         Y: =700
         ZIndex: =43
 
@@ -204,7 +204,7 @@ Forms As screen:
         Height: =55
         Text: ="Safeguarding"
         Width: =200
-        X: =602
+        X: =574
         Y: =700
         ZIndex: =44
 
@@ -215,7 +215,7 @@ Forms As screen:
         Height: =55
         Text: ="Secure Environments"
         Width: =200
-        X: =829
+        X: =801
         Y: =700
         ZIndex: =45
 
@@ -226,7 +226,7 @@ Forms As screen:
         Height: =55
         Text: ="Sexual Health"
         Width: =200
-        X: =1058
+        X: =1030
         Y: =700
         ZIndex: =46
 
@@ -235,7 +235,7 @@ Forms As screen:
         Height: =125
         Image: =coins
         Width: =125
-        X: =424
+        X: =396
         Y: =138
         ZIndex: =47
 
@@ -244,7 +244,7 @@ Forms As screen:
         Height: =125
         Image: =community
         Width: =125
-        X: =656
+        X: =628
         Y: =491
         ZIndex: =48
 
@@ -253,7 +253,7 @@ Forms As screen:
         Height: =125
         Image: =building
         Width: =125
-        X: =197
+        X: =169
         Y: =138
         ZIndex: =49
 
@@ -262,7 +262,7 @@ Forms As screen:
         Height: =125
         Image: =clipboard
         Width: =125
-        X: =884
+        X: =856
         Y: =138
         ZIndex: =50
 
@@ -271,7 +271,7 @@ Forms As screen:
         Height: =125
         Image: =book
         Width: =125
-        X: =1105
+        X: =1077
         Y: =138
         ZIndex: =51
 
@@ -280,7 +280,7 @@ Forms As screen:
         Height: =125
         Image: =advertisement
         Width: =125
-        X: =197
+        X: =169
         Y: =491
         ZIndex: =52
 
@@ -289,7 +289,7 @@ Forms As screen:
         Height: =125
         Image: ='human-resources'
         Width: =125
-        X: =649
+        X: =621
         Y: =138
         ZIndex: =53
 
@@ -298,7 +298,7 @@ Forms As screen:
         Height: =125
         Image: =padlock
         Width: =125
-        X: =878
+        X: =850
         Y: =491
         ZIndex: =54
 
@@ -307,7 +307,7 @@ Forms As screen:
         Height: =125
         Image: ='sexual-transmitted-disease'
         Width: =125
-        X: =1105
+        X: =1077
         Y: =491
         ZIndex: =55
 
@@ -316,7 +316,7 @@ Forms As screen:
         Height: =125
         Image: =responsive
         Width: =125
-        X: =424
+        X: =396
         Y: =491
         ZIndex: =56
 
@@ -328,35 +328,35 @@ Forms As screen:
         PressedFill: =RGBA(0,0,0,0)
         Text: =""
         Width: =125
-        X: =423
+        X: =395
         Y: =488
         ZIndex: =59
 
     Button1 As button:
         DisplayMode: =DisplayMode.View
         Fill: =RGBA(248, 155, 51, 0.75)
-        Height: =768
+        Height: =38
         Text: =""
-        Width: =80
+        Width: =1366
         ZIndex: =60
 
     Icon4 As icon.BackArrow:
         Color: =RGBA(0, 0, 0, 1)
-        Height: =40
+        Height: =36
         Icon: =Icon.BackArrow
-        OnSelect: =Back()
-        Width: =40
-        X: =20
-        Y: =24
+        OnSelect: =Navigate(Dashboard)
+        Width: =36
+        X: =13
+        Y: =2
         ZIndex: =61
 
     Label7 As label:
         Align: =Align.Center
         Font: =Font.Arial
         FontWeight: =FontWeight.Bold
-        Height: =50
-        Size: =32
+        Height: =38
+        Size: =24
         Text: ="Forms"
-        X: =643
+        X: =571
         ZIndex: =62
 

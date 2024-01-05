@@ -1,0 +1,244 @@
+"'IG Forms' As screen":
+    BackgroundImage: =GreenLayout
+
+    Rectangle4_4 As rectangle:
+        Fill: =RGBA(255, 255, 255, 0.6)
+        Height: =75
+        Width: =137.5
+        X: =137
+        Y: =300
+        ZIndex: =1
+
+    Image20_5 As image:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Height: =75
+        Image: =building
+        Width: =137.5
+        Y: =174
+        ZIndex: =2
+
+    Image16_5 As image:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Height: =75
+        Image: =coins
+        Width: =137.5
+        X: =137
+        Y: =174
+        ZIndex: =3
+
+    Image25_5 As image:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Height: =75
+        Image: ='human-resources'
+        Width: =137.5
+        Y: =300
+        ZIndex: =4
+
+    Image21_5 As image:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Height: =75
+        Image: =clipboard
+        Width: =137.5
+        X: =137
+        Y: =300
+        ZIndex: =5
+
+    Image22_5 As image:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Height: =75
+        Image: =book
+        Width: =137.5
+        Y: =426
+        ZIndex: =6
+
+    Image23_5 As image:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Height: =75
+        Image: =advertisement
+        Width: =137.5
+        X: =137
+        Y: =426
+        ZIndex: =7
+
+    Image28_5 As image:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Height: =75
+        Image: =responsive
+        Width: =137.5
+        Y: =552
+        ZIndex: =8
+
+    Image18_5 As image:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Height: =75
+        Image: =community
+        Width: =137.5
+        X: =137
+        Y: =552
+        ZIndex: =9
+
+    Image26_5 As image:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Height: =75
+        Image: =padlock
+        Width: =137.5
+        Y: =678
+        ZIndex: =10
+
+    Image27_5 As image:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Height: =75
+        Image: ='sexual-transmitted-disease'
+        Width: =137.5
+        X: =137
+        Y: =678
+        ZIndex: =11
+
+    Label9_4 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.Arial
+        FontWeight: =FontWeight.Bold
+        Height: =39
+        Size: =20
+        Text: ="IG Forms"
+        Width: =1034
+        X: =274
+        Y: =2
+        ZIndex: =12
+
+    btn_nav_estates_4 As button:
+        Fill: =RGBA(0,0,0,0)
+        Height: =75
+        HoverFill: =RGBA(0,0,0,0)
+        OnSelect: =Navigate('HR Forms')
+        PressedFill: =RGBA(0,0,0,0)
+        Text: =""
+        Width: =137.5
+        Y: =174
+        ZIndex: =13
+
+    btn_nav_finance_7 As button:
+        Fill: =RGBA(0,0,0,0)
+        Height: =75
+        HoverFill: =RGBA(0,0,0,0)
+        OnSelect: =Navigate('Finance Forms')
+        PressedFill: =RGBA(0,0,0,0)
+        Text: =""
+        Width: =137.5
+        X: =137
+        Y: =174
+        ZIndex: =14
+
+    btn_nav_hr_4 As button:
+        Fill: =RGBA(0,0,0,0)
+        Height: =75
+        HoverFill: =RGBA(0,0,0,0)
+        OnSelect: =Navigate('HR Forms')
+        PressedFill: =RGBA(0,0,0,0)
+        Text: =""
+        Width: =137.5
+        Y: =300
+        ZIndex: =15
+
+    btn_nav_ig_4 As button:
+        Fill: =RGBA(0,0,0,0)
+        Height: =75
+        HoverFill: =RGBA(0,0,0,0)
+        OnSelect: =Navigate('IG Forms')
+        PressedFill: =RGBA(0,0,0,0)
+        Text: =""
+        Width: =137.5
+        X: =137
+        Y: =300
+        ZIndex: =16
+
+    btn_nav_learning_4 As button:
+        Fill: =RGBA(0,0,0,0)
+        Height: =75
+        HoverFill: =RGBA(0,0,0,0)
+        OnSelect: =Navigate('Learning and Development Forms')
+        PressedFill: =RGBA(0,0,0,0)
+        Text: =""
+        Width: =137.5
+        Y: =426
+        ZIndex: =17
+
+    btn_nav_marketing_4 As button:
+        Fill: =RGBA(0,0,0,0)
+        Height: =75
+        HoverFill: =RGBA(0,0,0,0)
+        OnSelect: =Navigate('Marketing and Comms Forms')
+        PressedFill: =RGBA(0,0,0,0)
+        Text: =""
+        Width: =137.5
+        X: =137
+        Y: =426
+        ZIndex: =18
+
+    btn_nav_safeguarding_4 As button:
+        Fill: =RGBA(0,0,0,0)
+        Height: =75
+        HoverFill: =RGBA(0,0,0,0)
+        OnSelect: =Navigate('Safeguarding Forms')
+        PressedFill: =RGBA(0,0,0,0)
+        Text: =""
+        Width: =137.5
+        X: =137
+        Y: =552
+        ZIndex: =19
+
+    btn_nav_secure_env_4 As button:
+        Fill: =RGBA(0,0,0,0)
+        Height: =75
+        HoverFill: =RGBA(0,0,0,0)
+        OnSelect: =Navigate('Secure Environments Forms')
+        PressedFill: =RGBA(0,0,0,0)
+        Text: =""
+        Width: =137.5
+        Y: =678
+        ZIndex: =20
+
+    btn_nav_sexual_health_4 As button:
+        Fill: =RGBA(0,0,0,0)
+        Height: =75
+        HoverFill: =RGBA(0,0,0,0)
+        OnSelect: =Navigate('Sexual Health Forms')
+        PressedFill: =RGBA(0,0,0,0)
+        Text: =""
+        Width: =137.5
+        X: =137
+        Y: =678
+        ZIndex: =21
+
+    btn_nav_finance_8 As button:
+        Fill: =RGBA(0,0,0,0)
+        Height: =75
+        HoverFill: =RGBA(0,0,0,0)
+        OnSelect: =Navigate('IT Forms')
+        PressedFill: =RGBA(0,0,0,0)
+        Text: =""
+        Width: =137.5
+        Y: =552
+        ZIndex: =22
+
+    Icon4_9 As icon.BackArrow:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =36
+        Icon: =Icon.BackArrow
+        OnSelect: =Navigate(Forms)
+        Width: =36
+        X: =327
+        Y: =5
+        ZIndex: =23
+
+    Icon4_10 As icon.BackArrow:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =36
+        Icon: =Icon.Home
+        OnSelect: =Navigate(Dashboard)
+        Width: =36
+        X: =1317
+        Y: =4
+        ZIndex: =24
+
