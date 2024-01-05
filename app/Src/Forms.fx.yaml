@@ -360,3 +360,111 @@ Forms As screen:
         X: =571
         ZIndex: =62
 
+    Btn_Nav_IT_1 As button:
+        Fill: =RGBA(0,0,0,0)
+        Height: =125
+        HoverFill: =RGBA(0,0,0,0)
+        OnSelect: =Navigate('HR Forms')
+        PressedFill: =RGBA(0,0,0,0)
+        Text: =""
+        Width: =125
+        X: =169
+        Y: =138
+        ZIndex: =63
+
+    Btn_Nav_IT_2 As button:
+        Fill: =RGBA(0,0,0,0)
+        Height: =125
+        HoverFill: =RGBA(0,0,0,0)
+        OnSelect: =Navigate('Finance Forms')
+        PressedFill: =RGBA(0,0,0,0)
+        Text: =""
+        Width: =125
+        X: =394
+        Y: =133
+        ZIndex: =64
+
+    Btn_Nav_IT_3 As button:
+        Fill: =RGBA(0,0,0,0)
+        Height: =125
+        HoverFill: =RGBA(0,0,0,0)
+        OnSelect: =Navigate('HR Forms')
+        PressedFill: =RGBA(0,0,0,0)
+        Text: =""
+        Width: =125
+        X: =620
+        Y: =138
+        ZIndex: =65
+
+    Btn_Nav_IT_4 As button:
+        Fill: =RGBA(0,0,0,0)
+        Height: =125
+        HoverFill: =RGBA(0,0,0,0)
+        OnSelect: =Navigate('IG Forms')
+        PressedFill: =RGBA(0,0,0,0)
+        Text: =""
+        Width: =125
+        X: =856
+        Y: =138
+        ZIndex: =66
+
+    Btn_Nav_IT_5 As button:
+        Fill: =RGBA(0,0,0,0)
+        Height: =125
+        HoverFill: =RGBA(0,0,0,0)
+        OnSelect: =Navigate('Learning and Development Forms')
+        PressedFill: =RGBA(0,0,0,0)
+        Text: =""
+        Width: =125
+        X: =1078
+        Y: =138
+        ZIndex: =67
+
+    Btn_Nav_IT_6 As button:
+        Fill: =RGBA(0,0,0,0)
+        Height: =125
+        HoverFill: =RGBA(0,0,0,0)
+        OnSelect: =Navigate('Marketing and Comms Forms')
+        PressedFill: =RGBA(0,0,0,0)
+        Text: =""
+        Width: =125
+        X: =169
+        Y: =491
+        ZIndex: =68
+
+    Btn_Nav_IT_7 As button:
+        Fill: =RGBA(0,0,0,0)
+        Height: =125
+        HoverFill: =RGBA(0,0,0,0)
+        OnSelect: =Navigate('Safeguarding Forms')
+        PressedFill: =RGBA(0,0,0,0)
+        Text: =""
+        Width: =125
+        X: =628
+        Y: =491
+        ZIndex: =69
+
+    Btn_Nav_IT_8 As button:
+        Fill: =RGBA(0,0,0,0)
+        Height: =125
+        HoverFill: =RGBA(0,0,0,0)
+        OnSelect: =Navigate('Secure Environments Forms')
+        PressedFill: =RGBA(0,0,0,0)
+        Text: =""
+        Width: =125
+        X: =848
+        Y: =491
+        ZIndex: =70
+
+    Btn_Nav_IT_9 As button:
+        Fill: =RGBA(0,0,0,0)
+        Height: =125
+        HoverFill: =RGBA(0,0,0,0)
+        OnSelect: =Navigate('Sexual Health Forms')
+        PressedFill: =RGBA(0,0,0,0)
+        Text: =""
+        Width: =125
+        X: =1078
+        Y: =488
+        ZIndex: =71
+
