@@ -2475,7 +2475,70 @@ Requests As screen:
         tl_stage_1_img As image:
             DisplayMode: =DisplayMode.View
             Height: =35
-            Image: =success
+            Image: |-
+                =/* 
+                
+                !!! NEED TO ADD PERIPHERALS AND SMARTCARD TYPES !!!
+                
+                */
+                
+                
+                If(
+                    And(
+                        gal_requests.Selected.request_type = "IT Incident",
+                        LookUp(
+                            'IT Incidents',
+                            gal_requests.Selected.UID = UID,
+                            stage_logged_with_IT
+                        ) = "true"
+                    ),
+                    success,
+                    If(
+                        And(
+                            gal_requests.Selected.request_type = "Laptop Request",
+                            LookUp(
+                                'Laptop Requests',
+                                gal_requests.Selected.UID = UID,
+                                stage_line_manager_approval
+                            ) = "true"
+                        ),
+                        success,
+                        If(
+                            And(
+                                gal_requests.Selected.request_type = "4G Laptop",
+                                LookUp(
+                                    '4G Laptop Requests',
+                                    gal_requests.Selected.UID = UID,
+                                    stage_line_manager_approval
+                                ) = "true"
+                            ),
+                            success,
+                            If(
+                                And(
+                                    gal_requests.Selected.request_type = "Mobile",
+                                    LookUp(
+                                        'Mobile Requests',
+                                        gal_requests.Selected.UID = UID,
+                                        stage_line_manager_approval
+                                    ) = "true"
+                                ),
+                                success,
+                                If(
+                                    And(
+                                        gal_requests.Selected.request_type = "Special IT Request",
+                                        LookUp(
+                                            'Special IT Requests',
+                                            gal_requests.Selected.UID = UID,
+                                            stage_line_manager_approval
+                                        ) = "true"
+                                    ),
+                                    success,
+                                    loading
+                                )
+                            )
+                        )
+                    )
+                )
             Visible: =varPopUp
             Width: =35
             X: =954
