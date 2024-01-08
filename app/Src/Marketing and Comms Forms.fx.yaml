@@ -6,7 +6,7 @@
         Height: =75
         Width: =137.5
         X: =137
-        Y: =426
+        Y: =405
         ZIndex: =1
 
     Image20_7 As image:
@@ -14,7 +14,7 @@
         Height: =75
         Image: =building
         Width: =137.5
-        Y: =174
+        Y: =153
         ZIndex: =2
 
     Image16_7 As image:
@@ -23,7 +23,7 @@
         Image: =coins
         Width: =137.5
         X: =137
-        Y: =174
+        Y: =153
         ZIndex: =3
 
     Image25_7 As image:
@@ -31,7 +31,7 @@
         Height: =75
         Image: ='human-resources'
         Width: =137.5
-        Y: =300
+        Y: =279
         ZIndex: =4
 
     Image21_7 As image:
@@ -40,7 +40,7 @@
         Image: =clipboard
         Width: =137.5
         X: =137
-        Y: =300
+        Y: =279
         ZIndex: =5
 
     Image22_7 As image:
@@ -48,7 +48,7 @@
         Height: =75
         Image: =book
         Width: =137.5
-        Y: =426
+        Y: =405
         ZIndex: =6
 
     Image23_7 As image:
@@ -57,7 +57,7 @@
         Image: =advertisement
         Width: =137.5
         X: =137
-        Y: =426
+        Y: =405
         ZIndex: =7
 
     Image28_7 As image:
@@ -65,7 +65,7 @@
         Height: =75
         Image: =responsive
         Width: =137.5
-        Y: =552
+        Y: =531
         ZIndex: =8
 
     Image18_7 As image:
@@ -74,7 +74,7 @@
         Image: =community
         Width: =137.5
         X: =137
-        Y: =552
+        Y: =531
         ZIndex: =9
 
     Image26_7 As image:
@@ -82,7 +82,7 @@
         Height: =75
         Image: =padlock
         Width: =137.5
-        Y: =678
+        Y: =657
         ZIndex: =10
 
     Image27_7 As image:
@@ -91,7 +91,7 @@
         Image: ='sexual-transmitted-disease'
         Width: =137.5
         X: =137
-        Y: =678
+        Y: =657
         ZIndex: =11
 
     Label9_6 As label:
@@ -115,7 +115,7 @@
         PressedFill: =RGBA(0,0,0,0)
         Text: =""
         Width: =137.5
-        Y: =174
+        Y: =153
         ZIndex: =13
 
     btn_nav_finance_11 As button:
@@ -127,7 +127,7 @@
         Text: =""
         Width: =137.5
         X: =137
-        Y: =174
+        Y: =153
         ZIndex: =14
 
     btn_nav_hr_6 As button:
@@ -138,7 +138,7 @@
         PressedFill: =RGBA(0,0,0,0)
         Text: =""
         Width: =137.5
-        Y: =300
+        Y: =279
         ZIndex: =15
 
     btn_nav_ig_6 As button:
@@ -150,7 +150,7 @@
         Text: =""
         Width: =137.5
         X: =137
-        Y: =300
+        Y: =279
         ZIndex: =16
 
     btn_nav_learning_6 As button:
@@ -161,7 +161,7 @@
         PressedFill: =RGBA(0,0,0,0)
         Text: =""
         Width: =137.5
-        Y: =426
+        Y: =405
         ZIndex: =17
 
     btn_nav_marketing_6 As button:
@@ -173,7 +173,7 @@
         Text: =""
         Width: =137.5
         X: =137
-        Y: =426
+        Y: =405
         ZIndex: =18
 
     btn_nav_safeguarding_6 As button:
@@ -185,7 +185,7 @@
         Text: =""
         Width: =137.5
         X: =137
-        Y: =552
+        Y: =531
         ZIndex: =19
 
     btn_nav_secure_env_6 As button:
@@ -196,7 +196,7 @@
         PressedFill: =RGBA(0,0,0,0)
         Text: =""
         Width: =137.5
-        Y: =678
+        Y: =657
         ZIndex: =20
 
     btn_nav_sexual_health_6 As button:
@@ -208,7 +208,7 @@
         Text: =""
         Width: =137.5
         X: =137
-        Y: =678
+        Y: =657
         ZIndex: =21
 
     btn_nav_finance_12 As button:
@@ -219,7 +219,7 @@
         PressedFill: =RGBA(0,0,0,0)
         Text: =""
         Width: =137.5
-        Y: =552
+        Y: =531
         ZIndex: =22
 
     Icon4_13 As icon.BackArrow:
@@ -241,4 +241,109 @@
         X: =1321
         Y: =3
         ZIndex: =24
+
+    Label11_60 As label:
+        Align: =Align.Center
+        Font: =Font.Arial
+        FontWeight: =FontWeight.Lighter
+        Size: =10
+        Text: ="Estates"
+        Width: =137.5
+        Y: =228
+        ZIndex: =25
+
+    Label11_61 As label:
+        Align: =Align.Center
+        Font: =Font.Arial
+        FontWeight: =FontWeight.Lighter
+        Size: =10
+        Text: ="Finance"
+        Width: =137.5
+        X: =137
+        Y: =228
+        ZIndex: =26
+
+    Label11_62 As label:
+        Align: =Align.Center
+        Font: =Font.Arial
+        FontWeight: =FontWeight.Lighter
+        Size: =10
+        Text: ="HR"
+        Width: =137.5
+        Y: =354
+        ZIndex: =27
+
+    Label11_63 As label:
+        Align: =Align.Center
+        Font: =Font.Arial
+        FontWeight: =FontWeight.Lighter
+        Size: =10
+        Text: ="IG"
+        Width: =137.5
+        X: =137
+        Y: =354
+        ZIndex: =28
+
+    Label11_64 As label:
+        Align: =Align.Center
+        Font: =Font.Arial
+        FontWeight: =FontWeight.Lighter
+        Size: =10
+        Text: ="Learning & Development"
+        Width: =137.5
+        Y: =480
+        ZIndex: =29
+
+    Label11_65 As label:
+        Align: =Align.Center
+        Font: =Font.Arial
+        FontWeight: =FontWeight.Lighter
+        Size: =10
+        Text: ="Marketing & Comms"
+        Width: =137.5
+        X: =137
+        Y: =480
+        ZIndex: =30
+
+    Label11_66 As label:
+        Align: =Align.Center
+        Font: =Font.Arial
+        FontWeight: =FontWeight.Lighter
+        Size: =10
+        Text: ="IT"
+        Width: =137.5
+        Y: =606
+        ZIndex: =31
+
+    Label11_67 As label:
+        Align: =Align.Center
+        Font: =Font.Arial
+        FontWeight: =FontWeight.Lighter
+        Size: =10
+        Text: ="Safeguarding"
+        Width: =137.5
+        X: =137
+        Y: =606
+        ZIndex: =32
+
+    Label11_68 As label:
+        Align: =Align.Center
+        Font: =Font.Arial
+        FontWeight: =FontWeight.Lighter
+        Size: =10
+        Text: ="Secure Environments"
+        Width: =137.5
+        Y: =728
+        ZIndex: =33
+
+    Label11_69 As label:
+        Align: =Align.Center
+        Font: =Font.Arial
+        FontWeight: =FontWeight.Lighter
+        Size: =10
+        Text: ="Sexual Health"
+        Width: =137.5
+        X: =137
+        Y: =728
+        ZIndex: =34
 
