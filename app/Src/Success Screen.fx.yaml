@@ -1,0 +1,68 @@
+"'Success Screen' As screen.'tabletLayout_Success_ver3.0'":
+
+    Label8 As label:
+        Align: =Align.Center
+        Font: =Font.Arial
+        Height: =299
+        Size: =28
+        Text: |-
+            ="Your request has been successfully submitted. 
+            You will shortly receive an email with your reference number."
+        Width: =1366
+        Y: =304
+        ZIndex: =4
+
+    Timer1 As timer:
+        AutoStart: =true
+        Duration: =7000
+        OnTimerEnd: =Navigate(Dashboard)
+        Visible: =false
+        X: =1106
+        Y: =157
+        ZIndex: =5
+
+    Image4 As image:
+        Height: =153
+        Image: ='Spectrum Community Health CIC 2023 - white'
+        Width: =278
+        X: =15
+        Y: =4
+        ZIndex: =6
+
+    "Progress1 As 'Progress Bar'":
+        AccessibleLabel: ="Redirecting you to the dashboard"
+        BasePaletteColor: =
+        DisplayMode: =DisplayMode.Edit
+        Height: =47
+        Indeterminate: =true
+        ProgressColor: ='Progress.ProgressColor'.Success
+        Shape: ='Progress.Shape'.Square
+        Thickness: ='Progress.Thickness'.Large
+        Width: =231
+        X: =583
+        Y: =667
+        ZIndex: =7
+
+    Label12 As label:
+        Align: =Align.Center
+        Font: =Font.Arial
+        Size: =11
+        Text: ="Redirecting you to the dashboard ..."
+        Width: =256
+        X: =571
+        Y: =646
+        ZIndex: =8
+
+    Circle2 As circle:
+        Fill: =RGBA(77, 164, 65, 1)
+        X: =633
+        Y: =235
+        ZIndex: =9
+
+    Icon6 As icon.Check:
+        Color: =RGBA(255, 255, 255, 1)
+        Icon: =Icon.Check
+        X: =651
+        Y: =253
+        ZIndex: =10
+

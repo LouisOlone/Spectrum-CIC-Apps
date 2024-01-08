@@ -1,12 +1,13 @@
 "'IT Incident Form' As screen":
 
-    Component1_3 As Component1:
+    Component1_3 As banner:
 
     form_IT_Incident As form:
         DataSource: ='IT Incidents'
         DefaultMode: =FormMode.New
         Height: =538
         NumberOfColumns: =2
+        OnSuccess: =Navigate('Success Screen')
         Width: =1284
         X: =25
         Y: =151
@@ -121,13 +122,13 @@
                 HoverBorderColor: =RGBA(88,89,91,100)
                 HoverColor: =RGBA(255,255,255,1)
                 HoverFill: =RGBA(77,164,65,1)
-                Items: =Choices([@'IT Incidents'].RaisedBy)
+                Items: =Choices([@'IT Incidents'].SpectrumEmployeeName)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
                 PressedFill: =Self.Fill
                 SearchFields: =["Claims"]
-                SearchItems: =Choices('IT Incidents'.RaisedBy,DataCardValue96.SearchText)
+                SearchItems: =Choices('IT Incidents'.SpectrumEmployeeName,DataCardValue96.SearchText)
                 SelectionFill: =RGBA(74,164,65,1)
                 SelectMultiple: =false
                 Size: =12
@@ -1924,6 +1925,7 @@
         FontColor: =
         FontSize: =20
         Height: =44
+        OnSelect: =SubmitForm(form_IT_Incident)
         Text: ="Submit"
         Width: =136
         X: =1187

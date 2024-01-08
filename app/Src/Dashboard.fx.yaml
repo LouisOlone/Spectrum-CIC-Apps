@@ -467,6 +467,12 @@ Dashboard As screen:
                     Y: =DataCardKey26.Y
                     ZIndex: =4
 
+                Button3 As button:
+                    Text: ="Button"
+                    X: =274
+                    Y: =11
+                    ZIndex: =5
+
             comments_DataCard1 As typedDataCard.fluentV9TextualEditCard:
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="comments"

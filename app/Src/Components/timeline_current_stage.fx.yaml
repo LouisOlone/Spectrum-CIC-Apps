@@ -1,0 +1,27 @@
+timeline_current_stage As CanvasComponent:
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =30
+    Width: =30
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    Circle3_3 As circle:
+        BorderColor: =RGBA(88, 89, 91, 0.5)
+        Fill: =RGBA(77, 164, 65, 1)
+        Height: =30
+        Width: =30
+        X: =957
+        Y: =276
+        ZIndex: =1
+
+    Circle3_5 As circle:
+        BorderColor: =RGBA(255, 255, 255, 1)
+        BorderThickness: =5
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =10
+        Width: =10
+        X: =10
+        Y: =10
+        ZIndex: =2
+

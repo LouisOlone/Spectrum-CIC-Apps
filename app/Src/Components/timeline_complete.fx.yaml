@@ -1,0 +1,26 @@
+timeline_complete As CanvasComponent:
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =30
+    Width: =30
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    Circle3_6 As circle:
+        BorderColor: =RGBA(88, 89, 91, 0.5)
+        Fill: =RGBA(88, 89, 91, 1)
+        Height: =30
+        Width: =30
+        X: =957
+        Y: =229
+        ZIndex: =1
+
+    Icon8_1 As icon.Check:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =20
+        Icon: =Icon.Check
+        Width: =20
+        X: =5
+        Y: =5
+        ZIndex: =2
+

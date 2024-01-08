@@ -11,7 +11,7 @@ Requests As screen:
         Y: =111
         ZIndex: =1
 
-    "gal_inbox_1 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver5.0'":
+    "gal_requests As gallery.'BrowseLayout_Vertical_OneTextVariant_ver5.0'":
         DelayItemLoading: =true
         Fill: =RGBA(255, 255, 255, 1)
         Height: =591
@@ -235,7 +235,7 @@ Requests As screen:
         Visible: =var4GLaptopRequest
         X: =106
         Y: =162
-        ZIndex: =12
+        ZIndex: =3
 
         UID_DataCard1_1 As typedDataCard.fluentV9TextualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -1028,6 +1028,819 @@ Requests As screen:
                 Y: =DataCardKey12_1.Y
                 ZIndex: =4
 
+    form_4G_Laptop_2 As form.PowerApps_CoreControls_Form:
+        DataSource: ='4G Laptop Requests'
+        DefaultMode: =FormMode.View
+        Height: =525
+        Item: =var4GLaptopDetails
+        NumberOfColumns: =1
+        UseFluentV9Cards: =true
+        Visible: =var4GLaptopRequest
+        Width: =374
+        X: =106
+        Y: =162
+        ZIndex: =20
+
+        UID_DataCard1_2 As typedDataCard.fluentV9TextualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="UID"
+            Default: =ThisItem.UID
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'4G Laptop Requests'],DataSourceInfo.DisplayName,"UID")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            MaxLength: =DataSourceInfo([@'4G Laptop Requests'], DataSourceInfo.MaxLength, "UID")
+            Required: =false
+            Update: =DataCardValue13_2.Value
+            Width: =374
+            X: =0
+            Y: =0
+            ZIndex: =16
+
+            DataCardKey13_2 As Text:
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =
+                Height: =22
+                Text: =Parent.DisplayName
+                Weight: ='TextCanvas.Weight'.Semibold
+                Width: =Parent.Width - 48
+                Wrap: =false
+                X: =24
+                Y: =10
+                ZIndex: =1
+
+            "DataCardValue13_2 As 'Text input'":
+                AccessibleLabel: =Parent.DisplayName
+                BasePaletteColor: =
+                DisplayMode: =Parent.DisplayMode
+                FontColor: =
+                Height: =32
+                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                Required: =Parent.Required
+                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                Value: =Parent.Default
+                Width: =Parent.Width - 48
+                X: =24
+                Y: =DataCardKey13_2.Y + DataCardKey13_2.Height + 4
+                ZIndex: =2
+
+            ErrorMessage13_2 As Text:
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =
+                Height: =30
+                Text: =Parent.Error
+                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                Width: =Parent.Width - 48
+                Wrap: =true
+                X: =24
+                Y: =DataCardValue13_2.Y + DataCardValue13_2.Height
+                ZIndex: =3
+
+            StarVisible13_2 As Text:
+                Align: ='TextCanvas.Align'.Center
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =
+                Height: =30
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                X: =0
+                Y: =DataCardKey13_2.Y
+                ZIndex: =4
+
+        date_required_DataCard1_2 As typedDataCard.fluentV9DateEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="date_required"
+            Default: =ThisItem.date_required
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'4G Laptop Requests'],DataSourceInfo.DisplayName,"date_required")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            Required: =false
+            Update: =DataCardValue11_2.SelectedDate
+            Width: =374
+            X: =0
+            Y: =1
+            ZIndex: =16
+
+            DataCardKey11_2 As Text:
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =
+                Height: =22
+                Text: ="Date Required"
+                Weight: ='TextCanvas.Weight'.Semibold
+                Width: =Parent.Width - 48
+                Wrap: =false
+                X: =24
+                Y: =10
+                ZIndex: =1
+
+            "DataCardValue11_2 As 'Date picker'":
+                AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                BasePaletteColor: =
+                DisplayMode: =Parent.DisplayMode
+                EndYear: =Year(Today())+100
+                FontColor: =
+                Height: =32
+                SelectedDate: =Parent.Default
+                StartYear: =1900
+                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                Width: =Parent.Width - 48
+                X: =24
+                Y: =DataCardKey11_2.Y + DataCardKey11_2.Height + 4
+                ZIndex: =2
+
+            ErrorMessage11_2 As Text:
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =
+                Height: =30
+                Text: =Parent.Error
+                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                Width: =Parent.Width - 48
+                Wrap: =true
+                X: =24
+                Y: =DataCardValue11_2.Y + DataCardValue11_2.Height
+                ZIndex: =3
+
+            StarVisible11_2 As Text:
+                Align: ='TextCanvas.Align'.Center
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =
+                Height: =30
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                X: =0
+                Y: =DataCardKey11_2.Y
+                ZIndex: =4
+
+        raised_by_DataCard1_2 As typedDataCard.fluentV9ComboBoxEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="raised_by"
+            Default: =ThisItem.raised_by
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'4G Laptop Requests'],DataSourceInfo.DisplayName,"raised_by")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            Required: =false
+            Update: =DataCardValue2_2.Selected
+            Width: =374
+            X: =0
+            Y: =2
+            ZIndex: =16
+
+            DataCardKey2_2 As Text:
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =
+                Height: =22
+                Text: ="Raised By"
+                Weight: ='TextCanvas.Weight'.Semibold
+                Width: =Parent.Width - 48
+                Wrap: =false
+                X: =24
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue2_2 As Combobox.pcfdataset:
+                AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                DisplayMode: =Parent.DisplayMode
+                Height: =32
+                Items: =Choices([@'4G Laptop Requests'].raised_by)
+                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                Width: =Parent.Width - 48
+                X: =24
+                Y: =DataCardKey2_2.Y + DataCardKey2_2.Height + 4
+                ZIndex: =2
+
+            ErrorMessage2_2 As Text:
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =
+                Height: =30
+                Text: =Parent.Error
+                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                Width: =Parent.Width - 48
+                Wrap: =true
+                X: =24
+                Y: =DataCardValue2_2.Y + DataCardValue2_2.Height
+                ZIndex: =3
+
+            StarVisible2_2 As Text:
+                Align: ='TextCanvas.Align'.Center
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =
+                Height: =20
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                X: =0
+                Y: =DataCardKey2_2.Y
+                ZIndex: =4
+
+        employee_name_DataCard1_2 As typedDataCard.fluentV9ComboBoxEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="employee_name"
+            Default: =ThisItem.employee_name
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'4G Laptop Requests'],DataSourceInfo.DisplayName,"employee_name")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            Required: =false
+            Update: =DataCardValue3_2.Selected
+            Width: =374
+            X: =0
+            Y: =3
+            ZIndex: =16
+
+            DataCardKey3_2 As Text:
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =
+                Height: =22
+                Text: ="Employee Name"
+                Weight: ='TextCanvas.Weight'.Semibold
+                Width: =Parent.Width - 48
+                Wrap: =false
+                X: =24
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue3_2 As Combobox.pcfdataset:
+                AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                DisplayMode: =Parent.DisplayMode
+                Height: =32
+                Items: =Choices([@'4G Laptop Requests'].employee_name)
+                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                Width: =Parent.Width - 48
+                X: =24
+                Y: =DataCardKey3_2.Y + DataCardKey3_2.Height + 4
+                ZIndex: =2
+
+            ErrorMessage3_2 As Text:
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =
+                Height: =30
+                Text: =Parent.Error
+                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                Width: =Parent.Width - 48
+                Wrap: =true
+                X: =24
+                Y: =DataCardValue3_2.Y + DataCardValue3_2.Height
+                ZIndex: =3
+
+            StarVisible3_2 As Text:
+                Align: ='TextCanvas.Align'.Center
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =
+                Height: =20
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                X: =0
+                Y: =DataCardKey3_2.Y
+                ZIndex: =4
+
+        first_name_DataCard1_2 As typedDataCard.fluentV9TextualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="first_name"
+            Default: =ThisItem.first_name
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'4G Laptop Requests'],DataSourceInfo.DisplayName,"first_name")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            MaxLength: =DataSourceInfo([@'4G Laptop Requests'], DataSourceInfo.MaxLength, "first_name")
+            Required: =false
+            Update: =DataCardValue4_2.Value
+            Width: =374
+            X: =0
+            Y: =4
+            ZIndex: =16
+
+            DataCardKey4_2 As Text:
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =
+                Height: =22
+                Text: ="First Name"
+                Weight: ='TextCanvas.Weight'.Semibold
+                Width: =Parent.Width - 48
+                Wrap: =false
+                X: =24
+                Y: =10
+                ZIndex: =1
+
+            "DataCardValue4_2 As 'Text input'":
+                AccessibleLabel: =Parent.DisplayName
+                BasePaletteColor: =
+                DisplayMode: =Parent.DisplayMode
+                FontColor: =
+                Height: =32
+                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                Required: =Parent.Required
+                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                Value: =Parent.Default
+                Width: =Parent.Width - 48
+                X: =24
+                Y: =DataCardKey4_2.Y + DataCardKey4_2.Height + 4
+                ZIndex: =2
+
+            ErrorMessage4_2 As Text:
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =
+                Height: =30
+                Text: =Parent.Error
+                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                Width: =Parent.Width - 48
+                Wrap: =true
+                X: =24
+                Y: =DataCardValue4_2.Y + DataCardValue4_2.Height
+                ZIndex: =3
+
+            StarVisible4_2 As Text:
+                Align: ='TextCanvas.Align'.Center
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =
+                Height: =30
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                X: =0
+                Y: =DataCardKey4_2.Y
+                ZIndex: =4
+
+        last_name_DataCard1_2 As typedDataCard.fluentV9TextualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="last_name"
+            Default: =ThisItem.last_name
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'4G Laptop Requests'],DataSourceInfo.DisplayName,"last_name")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            MaxLength: =DataSourceInfo([@'4G Laptop Requests'], DataSourceInfo.MaxLength, "last_name")
+            Required: =false
+            Update: =DataCardValue5_2.Value
+            Width: =374
+            X: =0
+            Y: =5
+            ZIndex: =16
+
+            DataCardKey5_2 As Text:
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =
+                Height: =22
+                Text: ="Last Name"
+                Weight: ='TextCanvas.Weight'.Semibold
+                Width: =Parent.Width - 48
+                Wrap: =false
+                X: =24
+                Y: =10
+                ZIndex: =1
+
+            "DataCardValue5_2 As 'Text input'":
+                AccessibleLabel: =Parent.DisplayName
+                BasePaletteColor: =
+                DisplayMode: =Parent.DisplayMode
+                FontColor: =
+                Height: =32
+                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                Required: =Parent.Required
+                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                Value: =Parent.Default
+                Width: =Parent.Width - 48
+                X: =24
+                Y: =DataCardKey5_2.Y + DataCardKey5_2.Height + 4
+                ZIndex: =2
+
+            ErrorMessage5_2 As Text:
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =
+                Height: =30
+                Text: =Parent.Error
+                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                Width: =Parent.Width - 48
+                Wrap: =true
+                X: =24
+                Y: =DataCardValue5_2.Y + DataCardValue5_2.Height
+                ZIndex: =3
+
+            StarVisible5_2 As Text:
+                Align: ='TextCanvas.Align'.Center
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =
+                Height: =30
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                X: =0
+                Y: =DataCardKey5_2.Y
+                ZIndex: =4
+
+        telephone_number_DataCard1_2 As typedDataCard.fluentV9TextualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="telephone_number"
+            Default: =ThisItem.telephone_number
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'4G Laptop Requests'],DataSourceInfo.DisplayName,"telephone_number")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            MaxLength: =DataSourceInfo([@'4G Laptop Requests'], DataSourceInfo.MaxLength, "telephone_number")
+            Required: =false
+            Update: =DataCardValue6_2.Value
+            Width: =374
+            X: =0
+            Y: =6
+            ZIndex: =16
+
+            DataCardKey6_2 As Text:
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =
+                Height: =22
+                Text: ="Telephone Number"
+                Weight: ='TextCanvas.Weight'.Semibold
+                Width: =Parent.Width - 48
+                Wrap: =false
+                X: =24
+                Y: =10
+                ZIndex: =1
+
+            "DataCardValue6_2 As 'Text input'":
+                AccessibleLabel: =Parent.DisplayName
+                BasePaletteColor: =
+                DisplayMode: =Parent.DisplayMode
+                FontColor: =
+                Height: =32
+                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                Required: =Parent.Required
+                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                Value: =Parent.Default
+                Width: =Parent.Width - 48
+                X: =24
+                Y: =DataCardKey6_2.Y + DataCardKey6_2.Height + 4
+                ZIndex: =2
+
+            ErrorMessage6_2 As Text:
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =
+                Height: =30
+                Text: =Parent.Error
+                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                Width: =Parent.Width - 48
+                Wrap: =true
+                X: =24
+                Y: =DataCardValue6_2.Y + DataCardValue6_2.Height
+                ZIndex: =3
+
+            StarVisible6_2 As Text:
+                Align: ='TextCanvas.Align'.Center
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =
+                Height: =30
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                X: =0
+                Y: =DataCardKey6_2.Y
+                ZIndex: =4
+
+        request_length_DataCard1_2 As typedDataCard.fluentV9TextualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="request_length"
+            Default: =ThisItem.request_length
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'4G Laptop Requests'],DataSourceInfo.DisplayName,"request_length")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            MaxLength: =DataSourceInfo([@'4G Laptop Requests'], DataSourceInfo.MaxLength, "request_length")
+            Required: =false
+            Update: =DataCardValue7_2.Value
+            Width: =374
+            X: =0
+            Y: =7
+            ZIndex: =16
+
+            DataCardKey7_2 As Text:
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =
+                Height: =22
+                Text: ="Request Type"
+                Weight: ='TextCanvas.Weight'.Semibold
+                Width: =Parent.Width - 48
+                Wrap: =false
+                X: =24
+                Y: =10
+                ZIndex: =1
+
+            "DataCardValue7_2 As 'Text input'":
+                AccessibleLabel: =Parent.DisplayName
+                BasePaletteColor: =
+                DisplayMode: =Parent.DisplayMode
+                FontColor: =
+                Height: =32
+                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                Required: =Parent.Required
+                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                Value: =Parent.Default
+                Width: =Parent.Width - 48
+                X: =24
+                Y: =DataCardKey7_2.Y + DataCardKey7_2.Height + 4
+                ZIndex: =2
+
+            ErrorMessage7_2 As Text:
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =
+                Height: =30
+                Text: =Parent.Error
+                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                Width: =Parent.Width - 48
+                Wrap: =true
+                X: =24
+                Y: =DataCardValue7_2.Y + DataCardValue7_2.Height
+                ZIndex: =3
+
+            StarVisible7_2 As Text:
+                Align: ='TextCanvas.Align'.Center
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =
+                Height: =30
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                X: =0
+                Y: =DataCardKey7_2.Y
+                ZIndex: =4
+
+        loan_start_date_DataCard1_2 As typedDataCard.fluentV9DateEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="loan_start_date"
+            Default: =ThisItem.loan_start_date
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'4G Laptop Requests'],DataSourceInfo.DisplayName,"loan_start_date")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            Required: =false
+            Update: =DataCardValue9_2.SelectedDate
+            Width: =374
+            X: =0
+            Y: =8
+            ZIndex: =16
+
+            DataCardKey9_2 As Text:
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =
+                Height: =22
+                Text: ="Loan Start Date"
+                Weight: ='TextCanvas.Weight'.Semibold
+                Width: =Parent.Width - 48
+                Wrap: =false
+                X: =24
+                Y: =10
+                ZIndex: =1
+
+            "DataCardValue9_2 As 'Date picker'":
+                AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                BasePaletteColor: =
+                DisplayMode: =Parent.DisplayMode
+                EndYear: =Year(Today())+100
+                FontColor: =
+                Height: =32
+                SelectedDate: =Parent.Default
+                StartYear: =1900
+                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                Width: =Parent.Width - 48
+                X: =24
+                Y: =DataCardKey9_2.Y + DataCardKey9_2.Height + 4
+                ZIndex: =2
+
+            ErrorMessage9_2 As Text:
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =
+                Height: =30
+                Text: =Parent.Error
+                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                Width: =Parent.Width - 48
+                Wrap: =true
+                X: =24
+                Y: =DataCardValue9_2.Y + DataCardValue9_2.Height
+                ZIndex: =3
+
+            StarVisible9_2 As Text:
+                Align: ='TextCanvas.Align'.Center
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =
+                Height: =30
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                X: =0
+                Y: =DataCardKey9_2.Y
+                ZIndex: =4
+
+        loan_end_date_DataCard1_2 As typedDataCard.fluentV9DateEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="loan_end_date"
+            Default: =ThisItem.loan_end_date
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'4G Laptop Requests'],DataSourceInfo.DisplayName,"loan_end_date")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            Required: =false
+            Update: =DataCardValue10_2.SelectedDate
+            Width: =374
+            X: =0
+            Y: =9
+            ZIndex: =16
+
+            DataCardKey10_2 As Text:
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =
+                Height: =22
+                Text: ="Loan End Date"
+                Weight: ='TextCanvas.Weight'.Semibold
+                Width: =Parent.Width - 48
+                Wrap: =false
+                X: =24
+                Y: =10
+                ZIndex: =1
+
+            "DataCardValue10_2 As 'Date picker'":
+                AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                BasePaletteColor: =
+                DisplayMode: =Parent.DisplayMode
+                EndYear: =Year(Today())+100
+                FontColor: =
+                Height: =32
+                SelectedDate: =Parent.Default
+                StartYear: =1900
+                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                Width: =Parent.Width - 48
+                X: =24
+                Y: =DataCardKey10_2.Y + DataCardKey10_2.Height + 4
+                ZIndex: =2
+
+            ErrorMessage10_2 As Text:
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =
+                Height: =30
+                Text: =Parent.Error
+                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                Width: =Parent.Width - 48
+                Wrap: =true
+                X: =24
+                Y: =DataCardValue10_2.Y + DataCardValue10_2.Height
+                ZIndex: =3
+
+            StarVisible10_2 As Text:
+                Align: ='TextCanvas.Align'.Center
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =
+                Height: =30
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                X: =0
+                Y: =DataCardKey10_2.Y
+                ZIndex: =4
+
+        request_reason_DataCard1_2 As typedDataCard.fluentV9TextualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="request_reason"
+            Default: =ThisItem.request_reason
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'4G Laptop Requests'],DataSourceInfo.DisplayName,"request_reason")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            MaxLength: =DataSourceInfo([@'4G Laptop Requests'], DataSourceInfo.MaxLength, "request_reason")
+            Required: =false
+            Update: =DataCardValue8_2.Value
+            Width: =374
+            X: =0
+            Y: =10
+            ZIndex: =16
+
+            DataCardKey8_2 As Text:
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =
+                Height: =22
+                Text: ="Reason for Laptop"
+                Weight: ='TextCanvas.Weight'.Semibold
+                Width: =Parent.Width - 48
+                Wrap: =false
+                X: =24
+                Y: =10
+                ZIndex: =1
+
+            "DataCardValue8_2 As 'Text input'":
+                AccessibleLabel: =Parent.DisplayName
+                BasePaletteColor: =
+                DisplayMode: =Parent.DisplayMode
+                FontColor: =
+                Height: =150
+                Mode: ='TextInputCanvas.Mode'.Multiline
+                Required: =Parent.Required
+                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                Value: =Parent.Default
+                Width: =Parent.Width - 48
+                X: =24
+                Y: =DataCardKey8_2.Y + DataCardKey8_2.Height + 4
+                ZIndex: =2
+
+            ErrorMessage8_2 As Text:
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =
+                Height: =30
+                Text: =Parent.Error
+                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                Width: =Parent.Width - 48
+                Wrap: =true
+                X: =24
+                Y: =DataCardValue8_2.Y + DataCardValue8_2.Height
+                ZIndex: =3
+
+            StarVisible8_2 As Text:
+                Align: ='TextCanvas.Align'.Center
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =
+                Height: =30
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                X: =0
+                Y: =DataCardKey8_2.Y
+                ZIndex: =4
+
+        "'4g_reason_DataCard1_2' As typedDataCard.fluentV9TextualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="OData__x0034_g_reason"
+            Default: =ThisItem.'4g_reason'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'4G Laptop Requests'],DataSourceInfo.DisplayName,"OData__x0034_g_reason")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            MaxLength: =DataSourceInfo([@'4G Laptop Requests'], DataSourceInfo.MaxLength, "OData__x0034_g_reason")
+            Required: =false
+            Update: =DataCardValue12_2.Value
+            Width: =374
+            X: =0
+            Y: =11
+            ZIndex: =16
+
+            DataCardKey12_2 As Text:
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =
+                Height: =22
+                Text: ="Reason for 4G Laptop"
+                Weight: ='TextCanvas.Weight'.Semibold
+                Width: =Parent.Width - 48
+                Wrap: =false
+                X: =24
+                Y: =10
+                ZIndex: =1
+
+            "DataCardValue12_2 As 'Text input'":
+                AccessibleLabel: =Parent.DisplayName
+                BasePaletteColor: =
+                DisplayMode: =Parent.DisplayMode
+                FontColor: =
+                Height: =150
+                Mode: ='TextInputCanvas.Mode'.Multiline
+                Required: =Parent.Required
+                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                Value: =Parent.Default
+                Width: =Parent.Width - 48
+                X: =24
+                Y: =DataCardKey12_2.Y + DataCardKey12_2.Height + 4
+                ZIndex: =2
+
+            ErrorMessage12_2 As Text:
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =
+                Height: =30
+                Text: =Parent.Error
+                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                Width: =Parent.Width - 48
+                Wrap: =true
+                X: =24
+                Y: =DataCardValue12_2.Y + DataCardValue12_2.Height
+                ZIndex: =3
+
+            StarVisible12_2 As Text:
+                Align: ='TextCanvas.Align'.Center
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =
+                Height: =30
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                X: =0
+                Y: =DataCardKey12_2.Y
+                ZIndex: =4
+
+    shp_divider_4 As rectangle:
+        Fill: =RGBA(53, 61, 63, 1)
+        Height: =598
+        Visible: =varPopUp
+        Width: =1
+        X: =480
+        Y: =97
+        ZIndex: =21
+
     grp_pop_up_1 As group:
         Height: =5
         Width: =5
@@ -1041,7 +1854,7 @@ Requests As screen:
             Height: =768
             Visible: =varPopUp
             Width: =1366
-            ZIndex: =13
+            ZIndex: =4
 
         shp_details_bkg_1 As rectangle:
             BorderColor: =RGBA(88, 89, 91, 1)
@@ -1052,7 +1865,7 @@ Requests As screen:
             Width: =1153
             X: =106
             Y: =72
-            ZIndex: =14
+            ZIndex: =5
 
         shp_pop_up_header_1 As rectangle:
             BorderColor: =RGBA(88, 89, 91, 1)
@@ -1063,7 +1876,7 @@ Requests As screen:
             Width: =1153
             X: =106
             Y: =72
-            ZIndex: =15
+            ZIndex: =6
 
         pop_up_cancel_badge_1 As icon.CancelBadge:
             Color: =RGBA(255, 255, 255, 1)
@@ -1082,7 +1895,7 @@ Requests As screen:
             Width: =20
             X: =1235
             Y: =74
-            ZIndex: =16
+            ZIndex: =7
 
         form_approval_outcome_1 As form.PowerApps_CoreControls_Form:
             DataSource: =Inbox
@@ -1094,7 +1907,7 @@ Requests As screen:
             Width: =354
             X: =905
             Y: =162
-            ZIndex: =17
+            ZIndex: =8
 
             UID_DataCard3_1 As typedDataCard.fluentV9TextualEditCard:
                 BorderStyle: =BorderStyle.Solid
@@ -1436,7 +2249,7 @@ Requests As screen:
             Visible: =varPopUp
             X: =127
             Y: =111
-            ZIndex: =18
+            ZIndex: =9
 
         lbl_pop_up_outcome_1 As label:
             Color: =RGBA(77, 164, 65, 1)
@@ -1445,7 +2258,7 @@ Requests As screen:
             Visible: =varPopUp
             X: =928
             Y: =111
-            ZIndex: =19
+            ZIndex: =10
 
         btn_submit_approval_outcome_1 As Button:
             Appearance: ='ButtonCanvas.Appearance'.Secondary
@@ -1458,7 +2271,7 @@ Requests As screen:
             Width: =96
             X: =1139
             Y: =653
-            ZIndex: =20
+            ZIndex: =11
 
         shp_divider_1 As rectangle:
             Fill: =RGBA(53, 61, 63, 1)
@@ -1467,7 +2280,68 @@ Requests As screen:
             Width: =1
             X: =906
             Y: =96
-            ZIndex: =22
+            ZIndex: =12
+
+    lbl_pop_up_details_4 As label:
+        Color: =RGBA(77, 164, 65, 1)
+        FontWeight: =FontWeight.Bold
+        Text: ="Activity"
+        Visible: =varPopUp
+        X: =504
+        Y: =111
+        ZIndex: =22
+
+    Label13 As label:
+        BorderColor: =RGBA(88,89,91,0.25)
+        BorderThickness: =0.1
+        Font: =Font.Arial
+        Height: =247
+        Size: =10
+        Text: =gal_requests.Selected.activity
+        VerticalAlign: =VerticalAlign.Top
+        Visible: =varPopUp
+        Width: =394
+        X: =491
+        Y: =162
+        ZIndex: =23
+
+    lbl_pop_up_details_5 As label:
+        Color: =RGBA(77, 164, 65, 1)
+        FontWeight: =FontWeight.Bold
+        Text: ="Comment"
+        Visible: =varPopUp
+        X: =504
+        Y: =431
+        ZIndex: =24
+
+    TextInput1 As text:
+        BorderColor: =RGBA(88,89,91,0.25)
+        BorderThickness: =0.5
+        Default: =""
+        Font: =Font.Arial
+        Height: =182
+        HintText: ="Leave a comment..."
+        HoverBorderColor: =RGBA(88,89,91,1)
+        HoverFill: =RGBA(88,89,91,0.01)
+        Mode: =TextMode.MultiLine
+        PressedBorderColor: =RGBA(88,89,91,0.5)
+        PressedColor: =Color.Black
+        Size: =10
+        Visible: =varPopUp
+        Width: =394
+        X: =491
+        Y: =471
+        ZIndex: =25
+
+    Icon7 As icon.Send:
+        Color: =RGBA(88,89,91,1)
+        Height: =28
+        Icon: =Icon.Send
+        Visible: =varPopUp
+        Width: =28
+        X: =857
+        Y: =659
+        ZIndex: =26
 
     grp_pop_up_3 As group:
         Height: =5
@@ -1482,7 +2356,7 @@ Requests As screen:
             Height: =768
             Visible: =varPopUp
             Width: =1366
-            ZIndex: =23
+            ZIndex: =13
 
         shp_details_bkg_3 As rectangle:
             BorderColor: =RGBA(88, 89, 91, 1)
@@ -1493,7 +2367,7 @@ Requests As screen:
             Width: =1153
             X: =106
             Y: =72
-            ZIndex: =24
+            ZIndex: =14
 
         shp_pop_up_header_3 As rectangle:
             BorderColor: =RGBA(88, 89, 91, 1)
@@ -1504,7 +2378,7 @@ Requests As screen:
             Width: =1153
             X: =106
             Y: =72
-            ZIndex: =25
+            ZIndex: =15
 
         pop_up_cancel_badge_3 As icon.CancelBadge:
             Color: =RGBA(255, 255, 255, 1)
@@ -1523,7 +2397,7 @@ Requests As screen:
             Width: =20
             X: =1235
             Y: =74
-            ZIndex: =26
+            ZIndex: =16
 
         lbl_pop_up_details_3 As label:
             Color: =RGBA(77, 164, 65, 1)
@@ -1532,29 +2406,16 @@ Requests As screen:
             Visible: =varPopUp
             X: =127
             Y: =111
-            ZIndex: =27
+            ZIndex: =17
 
         lbl_pop_up_outcome_3 As label:
             Color: =RGBA(77, 164, 65, 1)
             FontWeight: =FontWeight.Bold
-            Text: ="Outcome"
+            Text: ="Timeline"
             Visible: =varPopUp
             X: =928
             Y: =111
-            ZIndex: =28
-
-        btn_submit_approval_outcome_3 As Button:
-            Appearance: ='ButtonCanvas.Appearance'.Secondary
-            BasePaletteColor: =
-            DisplayMode: =DisplayMode.Edit
-            FontColor: =
-            Height: =32
-            Text: ="Submit"
-            Visible: =varPopUp
-            Width: =96
-            X: =1139
-            Y: =653
-            ZIndex: =29
+            ZIndex: =18
 
         shp_divider_3 As rectangle:
             Fill: =RGBA(53, 61, 63, 1)
@@ -1563,810 +2424,7 @@ Requests As screen:
             Width: =1
             X: =906
             Y: =96
-            ZIndex: =31
-
-    form_4G_Laptop_2 As form.PowerApps_CoreControls_Form:
-        DataSource: ='4G Laptop Requests'
-        DefaultMode: =FormMode.View
-        Height: =525
-        Item: =var4GLaptopDetails
-        NumberOfColumns: =2
-        UseFluentV9Cards: =true
-        Visible: =var4GLaptopRequest
-        X: =106
-        Y: =162
-        ZIndex: =32
-
-        UID_DataCard1_2 As typedDataCard.fluentV9TextualEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="UID"
-            Default: =ThisItem.UID
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'4G Laptop Requests'],DataSourceInfo.DisplayName,"UID")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =70
-            MaxLength: =DataSourceInfo([@'4G Laptop Requests'], DataSourceInfo.MaxLength, "UID")
-            Required: =false
-            Update: =DataCardValue13_2.Value
-            Width: =400
-            X: =0
-            Y: =0
-            ZIndex: =16
-
-            DataCardKey13_2 As Text:
-                DisplayMode: =DisplayMode.Edit
-                FontColor: =
-                Height: =22
-                Text: =Parent.DisplayName
-                Weight: ='TextCanvas.Weight'.Semibold
-                Width: =Parent.Width - 48
-                Wrap: =false
-                X: =24
-                Y: =10
-                ZIndex: =1
-
-            "DataCardValue13_2 As 'Text input'":
-                AccessibleLabel: =Parent.DisplayName
-                BasePaletteColor: =
-                DisplayMode: =Parent.DisplayMode
-                FontColor: =
-                Height: =32
-                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
-                Required: =Parent.Required
-                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                Value: =Parent.Default
-                Width: =Parent.Width - 48
-                X: =24
-                Y: =DataCardKey13_2.Y + DataCardKey13_2.Height + 4
-                ZIndex: =2
-
-            ErrorMessage13_2 As Text:
-                DisplayMode: =DisplayMode.Edit
-                FontColor: =
-                Height: =30
-                Text: =Parent.Error
-                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
-                Width: =Parent.Width - 48
-                Wrap: =true
-                X: =24
-                Y: =DataCardValue13_2.Y + DataCardValue13_2.Height
-                ZIndex: =3
-
-            StarVisible13_2 As Text:
-                Align: ='TextCanvas.Align'.Center
-                DisplayMode: =DisplayMode.Edit
-                FontColor: =
-                Height: =30
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                X: =0
-                Y: =DataCardKey13_2.Y
-                ZIndex: =4
-
-        date_required_DataCard1_2 As typedDataCard.fluentV9DateEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="date_required"
-            Default: =ThisItem.date_required
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'4G Laptop Requests'],DataSourceInfo.DisplayName,"date_required")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =70
-            Required: =false
-            Update: =DataCardValue11_2.SelectedDate
-            Width: =400
-            X: =1
-            Y: =0
-            ZIndex: =16
-
-            DataCardKey11_2 As Text:
-                DisplayMode: =DisplayMode.Edit
-                FontColor: =
-                Height: =22
-                Text: ="Date Required"
-                Weight: ='TextCanvas.Weight'.Semibold
-                Width: =Parent.Width - 48
-                Wrap: =false
-                X: =24
-                Y: =10
-                ZIndex: =1
-
-            "DataCardValue11_2 As 'Date picker'":
-                AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
-                BasePaletteColor: =
-                DisplayMode: =Parent.DisplayMode
-                EndYear: =Year(Today())+100
-                FontColor: =
-                Height: =32
-                SelectedDate: =Parent.Default
-                StartYear: =1900
-                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                Width: =Parent.Width - 48
-                X: =24
-                Y: =DataCardKey11_2.Y + DataCardKey11_2.Height + 4
-                ZIndex: =2
-
-            ErrorMessage11_2 As Text:
-                DisplayMode: =DisplayMode.Edit
-                FontColor: =
-                Height: =30
-                Text: =Parent.Error
-                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
-                Width: =Parent.Width - 48
-                Wrap: =true
-                X: =24
-                Y: =DataCardValue11_2.Y + DataCardValue11_2.Height
-                ZIndex: =3
-
-            StarVisible11_2 As Text:
-                Align: ='TextCanvas.Align'.Center
-                DisplayMode: =DisplayMode.Edit
-                FontColor: =
-                Height: =30
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                X: =0
-                Y: =DataCardKey11_2.Y
-                ZIndex: =4
-
-        raised_by_DataCard1_2 As typedDataCard.fluentV9ComboBoxEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="raised_by"
-            Default: =ThisItem.raised_by
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'4G Laptop Requests'],DataSourceInfo.DisplayName,"raised_by")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =70
-            Required: =false
-            Update: =DataCardValue2_2.Selected
-            Width: =400
-            X: =0
-            Y: =1
-            ZIndex: =16
-
-            DataCardKey2_2 As Text:
-                DisplayMode: =DisplayMode.Edit
-                FontColor: =
-                Height: =22
-                Text: ="Raised By"
-                Weight: ='TextCanvas.Weight'.Semibold
-                Width: =Parent.Width - 48
-                Wrap: =false
-                X: =24
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue2_2 As Combobox.pcfdataset:
-                AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
-                DisplayMode: =Parent.DisplayMode
-                Height: =32
-                Items: =Choices([@'4G Laptop Requests'].raised_by)
-                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                Width: =Parent.Width - 48
-                X: =24
-                Y: =DataCardKey2_2.Y + DataCardKey2_2.Height + 4
-                ZIndex: =2
-
-            ErrorMessage2_2 As Text:
-                DisplayMode: =DisplayMode.Edit
-                FontColor: =
-                Height: =30
-                Text: =Parent.Error
-                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
-                Width: =Parent.Width - 48
-                Wrap: =true
-                X: =24
-                Y: =DataCardValue2_2.Y + DataCardValue2_2.Height
-                ZIndex: =3
-
-            StarVisible2_2 As Text:
-                Align: ='TextCanvas.Align'.Center
-                DisplayMode: =DisplayMode.Edit
-                FontColor: =
-                Height: =20
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                X: =0
-                Y: =DataCardKey2_2.Y
-                ZIndex: =4
-
-        employee_name_DataCard1_2 As typedDataCard.fluentV9ComboBoxEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="employee_name"
-            Default: =ThisItem.employee_name
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'4G Laptop Requests'],DataSourceInfo.DisplayName,"employee_name")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =70
-            Required: =false
-            Update: =DataCardValue3_2.Selected
-            Width: =400
-            X: =1
-            Y: =1
-            ZIndex: =16
-
-            DataCardKey3_2 As Text:
-                DisplayMode: =DisplayMode.Edit
-                FontColor: =
-                Height: =22
-                Text: ="Employee Name"
-                Weight: ='TextCanvas.Weight'.Semibold
-                Width: =Parent.Width - 48
-                Wrap: =false
-                X: =24
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue3_2 As Combobox.pcfdataset:
-                AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
-                DisplayMode: =Parent.DisplayMode
-                Height: =32
-                Items: =Choices([@'4G Laptop Requests'].employee_name)
-                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                Width: =Parent.Width - 48
-                X: =24
-                Y: =DataCardKey3_2.Y + DataCardKey3_2.Height + 4
-                ZIndex: =2
-
-            ErrorMessage3_2 As Text:
-                DisplayMode: =DisplayMode.Edit
-                FontColor: =
-                Height: =30
-                Text: =Parent.Error
-                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
-                Width: =Parent.Width - 48
-                Wrap: =true
-                X: =24
-                Y: =DataCardValue3_2.Y + DataCardValue3_2.Height
-                ZIndex: =3
-
-            StarVisible3_2 As Text:
-                Align: ='TextCanvas.Align'.Center
-                DisplayMode: =DisplayMode.Edit
-                FontColor: =
-                Height: =20
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                X: =0
-                Y: =DataCardKey3_2.Y
-                ZIndex: =4
-
-        first_name_DataCard1_2 As typedDataCard.fluentV9TextualEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="first_name"
-            Default: =ThisItem.first_name
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'4G Laptop Requests'],DataSourceInfo.DisplayName,"first_name")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =70
-            MaxLength: =DataSourceInfo([@'4G Laptop Requests'], DataSourceInfo.MaxLength, "first_name")
-            Required: =false
-            Update: =DataCardValue4_2.Value
-            Width: =400
-            X: =0
-            Y: =2
-            ZIndex: =16
-
-            DataCardKey4_2 As Text:
-                DisplayMode: =DisplayMode.Edit
-                FontColor: =
-                Height: =22
-                Text: ="First Name"
-                Weight: ='TextCanvas.Weight'.Semibold
-                Width: =Parent.Width - 48
-                Wrap: =false
-                X: =24
-                Y: =10
-                ZIndex: =1
-
-            "DataCardValue4_2 As 'Text input'":
-                AccessibleLabel: =Parent.DisplayName
-                BasePaletteColor: =
-                DisplayMode: =Parent.DisplayMode
-                FontColor: =
-                Height: =32
-                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
-                Required: =Parent.Required
-                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                Value: =Parent.Default
-                Width: =Parent.Width - 48
-                X: =24
-                Y: =DataCardKey4_2.Y + DataCardKey4_2.Height + 4
-                ZIndex: =2
-
-            ErrorMessage4_2 As Text:
-                DisplayMode: =DisplayMode.Edit
-                FontColor: =
-                Height: =30
-                Text: =Parent.Error
-                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
-                Width: =Parent.Width - 48
-                Wrap: =true
-                X: =24
-                Y: =DataCardValue4_2.Y + DataCardValue4_2.Height
-                ZIndex: =3
-
-            StarVisible4_2 As Text:
-                Align: ='TextCanvas.Align'.Center
-                DisplayMode: =DisplayMode.Edit
-                FontColor: =
-                Height: =30
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                X: =0
-                Y: =DataCardKey4_2.Y
-                ZIndex: =4
-
-        last_name_DataCard1_2 As typedDataCard.fluentV9TextualEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="last_name"
-            Default: =ThisItem.last_name
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'4G Laptop Requests'],DataSourceInfo.DisplayName,"last_name")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =70
-            MaxLength: =DataSourceInfo([@'4G Laptop Requests'], DataSourceInfo.MaxLength, "last_name")
-            Required: =false
-            Update: =DataCardValue5_2.Value
-            Width: =400
-            X: =1
-            Y: =2
-            ZIndex: =16
-
-            DataCardKey5_2 As Text:
-                DisplayMode: =DisplayMode.Edit
-                FontColor: =
-                Height: =22
-                Text: ="Last Name"
-                Weight: ='TextCanvas.Weight'.Semibold
-                Width: =Parent.Width - 48
-                Wrap: =false
-                X: =24
-                Y: =10
-                ZIndex: =1
-
-            "DataCardValue5_2 As 'Text input'":
-                AccessibleLabel: =Parent.DisplayName
-                BasePaletteColor: =
-                DisplayMode: =Parent.DisplayMode
-                FontColor: =
-                Height: =32
-                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
-                Required: =Parent.Required
-                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                Value: =Parent.Default
-                Width: =Parent.Width - 48
-                X: =24
-                Y: =DataCardKey5_2.Y + DataCardKey5_2.Height + 4
-                ZIndex: =2
-
-            ErrorMessage5_2 As Text:
-                DisplayMode: =DisplayMode.Edit
-                FontColor: =
-                Height: =30
-                Text: =Parent.Error
-                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
-                Width: =Parent.Width - 48
-                Wrap: =true
-                X: =24
-                Y: =DataCardValue5_2.Y + DataCardValue5_2.Height
-                ZIndex: =3
-
-            StarVisible5_2 As Text:
-                Align: ='TextCanvas.Align'.Center
-                DisplayMode: =DisplayMode.Edit
-                FontColor: =
-                Height: =30
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                X: =0
-                Y: =DataCardKey5_2.Y
-                ZIndex: =4
-
-        telephone_number_DataCard1_2 As typedDataCard.fluentV9TextualEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="telephone_number"
-            Default: =ThisItem.telephone_number
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'4G Laptop Requests'],DataSourceInfo.DisplayName,"telephone_number")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =70
-            MaxLength: =DataSourceInfo([@'4G Laptop Requests'], DataSourceInfo.MaxLength, "telephone_number")
-            Required: =false
-            Update: =DataCardValue6_2.Value
-            Width: =400
-            X: =0
-            Y: =3
-            ZIndex: =16
-
-            DataCardKey6_2 As Text:
-                DisplayMode: =DisplayMode.Edit
-                FontColor: =
-                Height: =22
-                Text: ="Telephone Number"
-                Weight: ='TextCanvas.Weight'.Semibold
-                Width: =Parent.Width - 48
-                Wrap: =false
-                X: =24
-                Y: =10
-                ZIndex: =1
-
-            "DataCardValue6_2 As 'Text input'":
-                AccessibleLabel: =Parent.DisplayName
-                BasePaletteColor: =
-                DisplayMode: =Parent.DisplayMode
-                FontColor: =
-                Height: =32
-                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
-                Required: =Parent.Required
-                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                Value: =Parent.Default
-                Width: =Parent.Width - 48
-                X: =24
-                Y: =DataCardKey6_2.Y + DataCardKey6_2.Height + 4
-                ZIndex: =2
-
-            ErrorMessage6_2 As Text:
-                DisplayMode: =DisplayMode.Edit
-                FontColor: =
-                Height: =30
-                Text: =Parent.Error
-                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
-                Width: =Parent.Width - 48
-                Wrap: =true
-                X: =24
-                Y: =DataCardValue6_2.Y + DataCardValue6_2.Height
-                ZIndex: =3
-
-            StarVisible6_2 As Text:
-                Align: ='TextCanvas.Align'.Center
-                DisplayMode: =DisplayMode.Edit
-                FontColor: =
-                Height: =30
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                X: =0
-                Y: =DataCardKey6_2.Y
-                ZIndex: =4
-
-        request_length_DataCard1_2 As typedDataCard.fluentV9TextualEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="request_length"
-            Default: =ThisItem.request_length
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'4G Laptop Requests'],DataSourceInfo.DisplayName,"request_length")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =70
-            MaxLength: =DataSourceInfo([@'4G Laptop Requests'], DataSourceInfo.MaxLength, "request_length")
-            Required: =false
-            Update: =DataCardValue7_2.Value
-            Width: =400
-            X: =1
-            Y: =3
-            ZIndex: =16
-
-            DataCardKey7_2 As Text:
-                DisplayMode: =DisplayMode.Edit
-                FontColor: =
-                Height: =22
-                Text: ="Request Type"
-                Weight: ='TextCanvas.Weight'.Semibold
-                Width: =Parent.Width - 48
-                Wrap: =false
-                X: =24
-                Y: =10
-                ZIndex: =1
-
-            "DataCardValue7_2 As 'Text input'":
-                AccessibleLabel: =Parent.DisplayName
-                BasePaletteColor: =
-                DisplayMode: =Parent.DisplayMode
-                FontColor: =
-                Height: =32
-                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
-                Required: =Parent.Required
-                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                Value: =Parent.Default
-                Width: =Parent.Width - 48
-                X: =24
-                Y: =DataCardKey7_2.Y + DataCardKey7_2.Height + 4
-                ZIndex: =2
-
-            ErrorMessage7_2 As Text:
-                DisplayMode: =DisplayMode.Edit
-                FontColor: =
-                Height: =30
-                Text: =Parent.Error
-                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
-                Width: =Parent.Width - 48
-                Wrap: =true
-                X: =24
-                Y: =DataCardValue7_2.Y + DataCardValue7_2.Height
-                ZIndex: =3
-
-            StarVisible7_2 As Text:
-                Align: ='TextCanvas.Align'.Center
-                DisplayMode: =DisplayMode.Edit
-                FontColor: =
-                Height: =30
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                X: =0
-                Y: =DataCardKey7_2.Y
-                ZIndex: =4
-
-        loan_start_date_DataCard1_2 As typedDataCard.fluentV9DateEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="loan_start_date"
-            Default: =ThisItem.loan_start_date
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'4G Laptop Requests'],DataSourceInfo.DisplayName,"loan_start_date")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =70
-            Required: =false
-            Update: =DataCardValue9_2.SelectedDate
-            Width: =400
-            X: =0
-            Y: =4
-            ZIndex: =16
-
-            DataCardKey9_2 As Text:
-                DisplayMode: =DisplayMode.Edit
-                FontColor: =
-                Height: =22
-                Text: ="Loan Start Date"
-                Weight: ='TextCanvas.Weight'.Semibold
-                Width: =Parent.Width - 48
-                Wrap: =false
-                X: =24
-                Y: =10
-                ZIndex: =1
-
-            "DataCardValue9_2 As 'Date picker'":
-                AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
-                BasePaletteColor: =
-                DisplayMode: =Parent.DisplayMode
-                EndYear: =Year(Today())+100
-                FontColor: =
-                Height: =32
-                SelectedDate: =Parent.Default
-                StartYear: =1900
-                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                Width: =Parent.Width - 48
-                X: =24
-                Y: =DataCardKey9_2.Y + DataCardKey9_2.Height + 4
-                ZIndex: =2
-
-            ErrorMessage9_2 As Text:
-                DisplayMode: =DisplayMode.Edit
-                FontColor: =
-                Height: =30
-                Text: =Parent.Error
-                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
-                Width: =Parent.Width - 48
-                Wrap: =true
-                X: =24
-                Y: =DataCardValue9_2.Y + DataCardValue9_2.Height
-                ZIndex: =3
-
-            StarVisible9_2 As Text:
-                Align: ='TextCanvas.Align'.Center
-                DisplayMode: =DisplayMode.Edit
-                FontColor: =
-                Height: =30
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                X: =0
-                Y: =DataCardKey9_2.Y
-                ZIndex: =4
-
-        loan_end_date_DataCard1_2 As typedDataCard.fluentV9DateEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="loan_end_date"
-            Default: =ThisItem.loan_end_date
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'4G Laptop Requests'],DataSourceInfo.DisplayName,"loan_end_date")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =70
-            Required: =false
-            Update: =DataCardValue10_2.SelectedDate
-            Width: =400
-            X: =1
-            Y: =4
-            ZIndex: =16
-
-            DataCardKey10_2 As Text:
-                DisplayMode: =DisplayMode.Edit
-                FontColor: =
-                Height: =22
-                Text: ="Loan End Date"
-                Weight: ='TextCanvas.Weight'.Semibold
-                Width: =Parent.Width - 48
-                Wrap: =false
-                X: =24
-                Y: =10
-                ZIndex: =1
-
-            "DataCardValue10_2 As 'Date picker'":
-                AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
-                BasePaletteColor: =
-                DisplayMode: =Parent.DisplayMode
-                EndYear: =Year(Today())+100
-                FontColor: =
-                Height: =32
-                SelectedDate: =Parent.Default
-                StartYear: =1900
-                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                Width: =Parent.Width - 48
-                X: =24
-                Y: =DataCardKey10_2.Y + DataCardKey10_2.Height + 4
-                ZIndex: =2
-
-            ErrorMessage10_2 As Text:
-                DisplayMode: =DisplayMode.Edit
-                FontColor: =
-                Height: =30
-                Text: =Parent.Error
-                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
-                Width: =Parent.Width - 48
-                Wrap: =true
-                X: =24
-                Y: =DataCardValue10_2.Y + DataCardValue10_2.Height
-                ZIndex: =3
-
-            StarVisible10_2 As Text:
-                Align: ='TextCanvas.Align'.Center
-                DisplayMode: =DisplayMode.Edit
-                FontColor: =
-                Height: =30
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                X: =0
-                Y: =DataCardKey10_2.Y
-                ZIndex: =4
-
-        request_reason_DataCard1_2 As typedDataCard.fluentV9TextualEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="request_reason"
-            Default: =ThisItem.request_reason
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'4G Laptop Requests'],DataSourceInfo.DisplayName,"request_reason")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =70
-            MaxLength: =DataSourceInfo([@'4G Laptop Requests'], DataSourceInfo.MaxLength, "request_reason")
-            Required: =false
-            Update: =DataCardValue8_2.Value
-            Width: =400
-            X: =0
-            Y: =5
-            ZIndex: =16
-
-            DataCardKey8_2 As Text:
-                DisplayMode: =DisplayMode.Edit
-                FontColor: =
-                Height: =22
-                Text: ="Reason for Laptop"
-                Weight: ='TextCanvas.Weight'.Semibold
-                Width: =Parent.Width - 48
-                Wrap: =false
-                X: =24
-                Y: =10
-                ZIndex: =1
-
-            "DataCardValue8_2 As 'Text input'":
-                AccessibleLabel: =Parent.DisplayName
-                BasePaletteColor: =
-                DisplayMode: =Parent.DisplayMode
-                FontColor: =
-                Height: =150
-                Mode: ='TextInputCanvas.Mode'.Multiline
-                Required: =Parent.Required
-                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                Value: =Parent.Default
-                Width: =Parent.Width - 48
-                X: =24
-                Y: =DataCardKey8_2.Y + DataCardKey8_2.Height + 4
-                ZIndex: =2
-
-            ErrorMessage8_2 As Text:
-                DisplayMode: =DisplayMode.Edit
-                FontColor: =
-                Height: =30
-                Text: =Parent.Error
-                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
-                Width: =Parent.Width - 48
-                Wrap: =true
-                X: =24
-                Y: =DataCardValue8_2.Y + DataCardValue8_2.Height
-                ZIndex: =3
-
-            StarVisible8_2 As Text:
-                Align: ='TextCanvas.Align'.Center
-                DisplayMode: =DisplayMode.Edit
-                FontColor: =
-                Height: =30
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                X: =0
-                Y: =DataCardKey8_2.Y
-                ZIndex: =4
-
-        "'4g_reason_DataCard1_2' As typedDataCard.fluentV9TextualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="OData__x0034_g_reason"
-            Default: =ThisItem.'4g_reason'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'4G Laptop Requests'],DataSourceInfo.DisplayName,"OData__x0034_g_reason")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =70
-            MaxLength: =DataSourceInfo([@'4G Laptop Requests'], DataSourceInfo.MaxLength, "OData__x0034_g_reason")
-            Required: =false
-            Update: =DataCardValue12_2.Value
-            Width: =400
-            X: =1
-            Y: =5
-            ZIndex: =16
-
-            DataCardKey12_2 As Text:
-                DisplayMode: =DisplayMode.Edit
-                FontColor: =
-                Height: =22
-                Text: ="Reason for 4G Laptop"
-                Weight: ='TextCanvas.Weight'.Semibold
-                Width: =Parent.Width - 48
-                Wrap: =false
-                X: =24
-                Y: =10
-                ZIndex: =1
-
-            "DataCardValue12_2 As 'Text input'":
-                AccessibleLabel: =Parent.DisplayName
-                BasePaletteColor: =
-                DisplayMode: =Parent.DisplayMode
-                FontColor: =
-                Height: =150
-                Mode: ='TextInputCanvas.Mode'.Multiline
-                Required: =Parent.Required
-                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                Value: =Parent.Default
-                Width: =Parent.Width - 48
-                X: =24
-                Y: =DataCardKey12_2.Y + DataCardKey12_2.Height + 4
-                ZIndex: =2
-
-            ErrorMessage12_2 As Text:
-                DisplayMode: =DisplayMode.Edit
-                FontColor: =
-                Height: =30
-                Text: =Parent.Error
-                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
-                Width: =Parent.Width - 48
-                Wrap: =true
-                X: =24
-                Y: =DataCardValue12_2.Y + DataCardValue12_2.Height
-                ZIndex: =3
-
-            StarVisible12_2 As Text:
-                Align: ='TextCanvas.Align'.Center
-                DisplayMode: =DisplayMode.Edit
-                FontColor: =
-                Height: =30
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                X: =0
-                Y: =DataCardKey12_2.Y
-                ZIndex: =4
+            ZIndex: =19
 
     grp_loading_screen_1 As group:
         Height: =5
@@ -2378,9 +2436,9 @@ Requests As screen:
         shp_loading_1 As rectangle:
             Fill: =RGBA(255, 255, 255, 1)
             Height: =768
-            Visible: =false
+            Visible: =varLoading
             Width: =1366
-            ZIndex: =33
+            ZIndex: =41
 
         timer_loading_1 As timer:
             AutoStart: =
@@ -2391,7 +2449,7 @@ Requests As screen:
             Visible: =false
             X: =1037
             Y: =18
-            ZIndex: =34
+            ZIndex: =42
 
         spinner_loading_1 As Spinner:
             BasePaletteColor: =
@@ -2401,9 +2459,789 @@ Requests As screen:
             Label: ="Loading..."
             LabelPosition: ='Spinner.LabelPosition'.Below
             SpinnerSize: ='Spinner.SpinnerSize'.Huge
-            Visible: =false
+            Visible: =varLoading
             Width: =1366
             X: =0
             Y: =0
+            ZIndex: =43
+
+    Timeline As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =61
+
+        tl_stage_1_img As image:
+            DisplayMode: =DisplayMode.View
+            Height: =35
+            Image: =success
+            Visible: =varPopUp
+            Width: =35
+            X: =954
+            Y: =179
+            ZIndex: =27
+
+        tl_stage_1_lbl As label:
+            Align: =Align.Center
+            Font: =Font.Arial
+            FontWeight: =FontWeight.Bold
+            Height: =35
+            Size: =12
+            Text: |-
+                =If(
+                    gal_requests.Selected.request_type = "IT Incident",
+                    "Logged with IT",
+                    If(
+                        gal_requests.Selected.request_type = "Laptop Request",
+                        "Line Manager Approval",
+                        If(
+                            gal_requests.Selected.request_type = "4G Laptop",
+                            "Line Manager Approval",
+                            If(
+                                gal_requests.Selected.request_type = "Mobile",
+                                "Line Manager Approval",
+                                If(
+                                    And(
+                                        gal_requests.Selected.request_type = "Peripherals",
+                                        LookUp(
+                                            'Peripherals Requests',
+                                            gal_requests.Selected.UID = UID,
+                                            keyboard_count
+                                        ) = "10+ (Please specify amount in further detail section)"
+                                    ),
+                                    "Line Manager Approval",
+                                    If(
+                                        And(
+                                            gal_requests.Selected.request_type = "Peripherals",
+                                            LookUp(
+                                                'Peripherals Requests',
+                                                gal_requests.Selected.UID = UID,
+                                                headset_count
+                                            ) = "10+ (Please specify amount in further detail section)"
+                                        ),
+                                        "Line Manager Approval",
+                                        If(
+                                            And(
+                                                gal_requests.Selected.request_type = "Peripherals",
+                                                LookUp(
+                                                    'Peripherals Requests',
+                                                    gal_requests.Selected.UID = UID,
+                                                    mouse_count
+                                                ) = "10+ (Please specify amount in further detail section)"
+                                            ),
+                                            "Line Manager Approval",
+                                            If(
+                                                And(
+                                                    gal_requests.Selected.request_type = "Peripherals",
+                                                    LookUp(
+                                                        'Peripherals Requests',
+                                                        gal_requests.Selected.UID = UID,
+                                                        monitor_count
+                                                    ) = "10+ (Please specify amount in further detail section)"
+                                                ),
+                                                "Line Manager Approval",
+                                                If(
+                                                    And(
+                                                        gal_requests.Selected.request_type = "Peripherals",
+                                                        Not(
+                                                            LookUp(
+                                                                'Peripherals Requests',
+                                                                gal_requests.Selected.UID = UID,
+                                                                monitor_count
+                                                            ) = "10+ (Please specify amount in further detail section)"
+                                                        )
+                                                    ),
+                                                    "Logged with IT",
+                                                    If(
+                                                        And(
+                                                            gal_requests.Selected.request_type = "Peripherals",
+                                                            Not(
+                                                                LookUp(
+                                                                    'Peripherals Requests',
+                                                                    gal_requests.Selected.UID = UID,
+                                                                    headset_count
+                                                                ) = "10+ (Please specify amount in further detail section)"
+                                                            )
+                                                        ),
+                                                        "Logged with IT",
+                                                        If(
+                                                            And(
+                                                                gal_requests.Selected.request_type = "Peripherals",
+                                                                Not(
+                                                                    LookUp(
+                                                                        'Peripherals Requests',
+                                                                        gal_requests.Selected.UID = UID,
+                                                                        keyboard_count
+                                                                    ) = "10+ (Please specify amount in further detail section)"
+                                                                )
+                                                            ),
+                                                            "Logged with IT",
+                                                            If(
+                                                                And(
+                                                                    gal_requests.Selected.request_type = "Peripherals",
+                                                                    Not(
+                                                                        LookUp(
+                                                                            'Peripherals Requests',
+                                                                            gal_requests.Selected.UID = UID,
+                                                                            mouse_count
+                                                                        ) = "10+ (Please specify amount in further detail section)"
+                                                                    )
+                                                                ),
+                                                                "Logged with IT",
+                                                                If(
+                                                                    gal_requests.Selected.request_type = "Special IT Request",
+                                                                    "Line Manager Approval",
+                                                                    If(
+                                                                        gal_requests.Selected.request_type = "IT Incident",
+                                                                        "Line Manager Approval",
+                                                                        If(
+                                                                            gal_requests.Selected.request_type = "Smartcard Request",
+                                                                            "Line Manager Approval",
+                                                                            If(
+                                                                                gal_requests.Selected.request_type = "Smartcard Positions",
+                                                                                "Line Manager Approval",
+                                                                                If(
+                                                                                    And(
+                                                                                        gal_requests.Selected.request_type = "Smartcard Request",
+                                                                                        LookUp(
+                                                                                            'Smartcard Requests',
+                                                                                            gal_requests.Selected.UID = UID,
+                                                                                            new_or_replacement
+                                                                                        ) = "Replace a lost/stolen Smartcard"
+                                                                                    ),
+                                                                                    "Logged with IT",
+                                                                                    If(
+                                                                                        gal_requests.Selected.request_type = "Change Form",
+                                                                                        "Budget Holder Approval",
+                                                                                        "Error"
+                                                                                    )
+                                                                                )
+                                                                            )
+                                                                        )
+                                                                    )
+                                                                )
+                                                            )
+                                                        )
+                                                    )
+                                                )
+                                            )
+                                        )
+                                    )
+                                )
+                            )
+                        )
+                    )
+                )
+            Visible: =varPopUp
+            Width: =170
+            X: =996
+            Y: =179
+            ZIndex: =28
+
+        tl_stage_1_line As rectangle:
+            BorderStyle: =BorderStyle.None
+            Fill: =RGBA(88, 89, 91, 1)
+            Height: =42
+            Visible: =varPopUp
+            Width: =2
+            X: =1079
+            Y: =214
+            ZIndex: =29
+
+        tl_stage_2_img As image:
+            DisplayMode: =DisplayMode.View
+            Height: =35
+            Image: =success
+            Visible: =varPopUp
+            Width: =35
+            X: =954
+            Y: =253
+            ZIndex: =30
+
+        tl_stage_2_lbl As label:
+            Align: =Align.Center
+            Font: =Font.Arial
+            FontWeight: =FontWeight.Bold
+            Height: =35
+            Size: =12
+            Text: |-
+                =If(
+                    gal_requests.Selected.request_type = "IT Incident",
+                    "Complete",
+                    If(
+                        gal_requests.Selected.request_type = "Laptop Request",
+                        "IT Manager Approval",
+                        If(
+                            gal_requests.Selected.request_type = "4G Laptop",
+                            "Finance Director Approval",
+                            If(
+                                gal_requests.Selected.request_type = "Mobile",
+                                "Logged with IT",
+                                If(
+                                    And(
+                                        gal_requests.Selected.request_type = "Peripherals",
+                                        LookUp(
+                                            'Peripherals Requests',
+                                            gal_requests.Selected.UID = UID,
+                                            keyboard_count
+                                        ) = "10+ (Please specify amount in further detail section)"
+                                    ),
+                                    "Logged with IT",
+                                    If(
+                                        And(
+                                            gal_requests.Selected.request_type = "Peripherals",
+                                            LookUp(
+                                                'Peripherals Requests',
+                                                gal_requests.Selected.UID = UID,
+                                                headset_count
+                                            ) = "10+ (Please specify amount in further detail section)"
+                                        ),
+                                        "Logged with IT",
+                                        If(
+                                            And(
+                                                gal_requests.Selected.request_type = "Peripherals",
+                                                LookUp(
+                                                    'Peripherals Requests',
+                                                    gal_requests.Selected.UID = UID,
+                                                    mouse_count
+                                                ) = "10+ (Please specify amount in further detail section)"
+                                            ),
+                                            "Logged with IT",
+                                            If(
+                                                And(
+                                                    gal_requests.Selected.request_type = "Peripherals",
+                                                    LookUp(
+                                                        'Peripherals Requests',
+                                                        gal_requests.Selected.UID = UID,
+                                                        monitor_count
+                                                    ) = "10+ (Please specify amount in further detail section)"
+                                                ),
+                                                "Logged with IT",
+                                                If(
+                                                    And(
+                                                        gal_requests.Selected.request_type = "Peripherals",
+                                                        Not(
+                                                            LookUp(
+                                                                'Peripherals Requests',
+                                                                gal_requests.Selected.UID = UID,
+                                                                monitor_count
+                                                            ) = "10+ (Please specify amount in further detail section)"
+                                                        )
+                                                    ),
+                                                    "Complete",
+                                                    If(
+                                                        And(
+                                                            gal_requests.Selected.request_type = "Peripherals",
+                                                            Not(
+                                                                LookUp(
+                                                                    'Peripherals Requests',
+                                                                    gal_requests.Selected.UID = UID,
+                                                                    headset_count
+                                                                ) = "10+ (Please specify amount in further detail section)"
+                                                            )
+                                                        ),
+                                                        "Complete",
+                                                        If(
+                                                            And(
+                                                                gal_requests.Selected.request_type = "Peripherals",
+                                                                Not(
+                                                                    LookUp(
+                                                                        'Peripherals Requests',
+                                                                        gal_requests.Selected.UID = UID,
+                                                                        keyboard_count
+                                                                    ) = "10+ (Please specify amount in further detail section)"
+                                                                )
+                                                            ),
+                                                            "Complete",
+                                                            If(
+                                                                And(
+                                                                    gal_requests.Selected.request_type = "Peripherals",
+                                                                    Not(
+                                                                        LookUp(
+                                                                            'Peripherals Requests',
+                                                                            gal_requests.Selected.UID = UID,
+                                                                            mouse_count
+                                                                        ) = "10+ (Please specify amount in further detail section)"
+                                                                    )
+                                                                ),
+                                                                "Complete",
+                                                                If(
+                                                                    gal_requests.Selected.request_type = "Special IT Request",
+                                                                    "Logged with IT",
+                                                                    If(
+                                                                        gal_requests.Selected.request_type = "IT Incident",
+                                                                        "Logged with IT",
+                                                                        If(
+                                                                            gal_requests.Selected.request_type = "Smartcard Request",
+                                                                            "Logged with IT",
+                                                                            If(
+                                                                                gal_requests.Selected.request_type = "Smartcard Positions",
+                                                                                "Logged with IT",
+                                                                                If(
+                                                                                    And(
+                                                                                        gal_requests.Selected.request_type = "Smartcard Request",
+                                                                                        LookUp(
+                                                                                            'Smartcard Requests',
+                                                                                            gal_requests.Selected.UID = UID,
+                                                                                            new_or_replacement
+                                                                                        ) = "Replace a lost/stolen Smartcard"
+                                                                                    ),
+                                                                                    "Complete",
+                                                                                    If(
+                                                                                        gal_requests.Selected.request_type = "Change Form",
+                                                                                        "HR Approval",
+                                                                                        "Error"
+                                                                                    )
+                                                                                )
+                                                                            )
+                                                                        )
+                                                                    )
+                                                                )
+                                                            )
+                                                        )
+                                                    )
+                                                )
+                                            )
+                                        )
+                                    )
+                                )
+                            )
+                        )
+                    )
+                )
+            Visible: =varPopUp
+            Width: =170
+            X: =996
+            Y: =253
+            ZIndex: =31
+
+        tl_stage_2_line As rectangle:
+            Fill: =RGBA(88, 89, 91, 1)
+            Height: =42
+            Visible: |-
+                =If(
+                    Or(
+                        gal_requests.Selected.request_type = "Mobile",
+                        gal_requests.Selected.request_type = "Smartcard Positions",
+                        gal_requests.Selected.request_type = "Special IT Request",
+                        And(
+                            gal_requests.Selected.request_type = "Peripherals",
+                            LookUp(
+                                'Peripherals Requests',
+                                gal_requests.Selected.UID = UID,
+                                mouse_count = "10+ (Please specify amount in further detail section)"
+                            )
+                        ),
+                        And(
+                            gal_requests.Selected.request_type = "Peripherals",
+                            LookUp(
+                                'Peripherals Requests',
+                                gal_requests.Selected.UID = UID,
+                                keyboard_count = "10+ (Please specify amount in further detail section)"
+                            )
+                        ),
+                        And(
+                            gal_requests.Selected.request_type = "Peripherals",
+                            LookUp(
+                                'Peripherals Requests',
+                                gal_requests.Selected.UID = UID,
+                                headset_count = "10+ (Please specify amount in further detail section)"
+                            )
+                        ),
+                        And(
+                            gal_requests.Selected.request_type = "Peripherals",
+                            LookUp(
+                                'Peripherals Requests',
+                                gal_requests.Selected.UID = UID,
+                                monitor_count = "10+ (Please specify amount in further detail section)"
+                            )
+                        ),
+                        And(
+                            gal_requests.Selected.request_type = "Smartcard Request",
+                            LookUp(
+                                'Smartcard Requests',
+                                gal_requests.Selected.UID = UID,
+                                new_or_replacement
+                            ) = "New Smartcard with Positions"
+                        ),
+                        gal_requests.Selected.request_type = "IT Account",
+                        gal_requests.Selected.request_type = "Change Form",
+                        gal_requests.Selected.request_type = "Laptop Request",
+                        gal_requests.Selected.request_type = "4G Laptop",
+                        And(
+                            gal_requests.Selected.request_type = "Smartcard Request",
+                            LookUp(
+                                'Smartcard Requests',
+                                gal_requests.Selected.UID = UID,
+                                new_or_replacement
+                            ) = "New Smartcard without Positions"
+                        )
+                    ),
+                    varPopUp,
+                    false
+                )
+            Width: =2
+            X: =1079
+            Y: =288
+            ZIndex: =32
+
+        tl_stage_3_img As image:
+            DisplayMode: =DisplayMode.View
+            Height: =35
+            Image: =loading
+            Visible: |-
+                =If(
+                    Or(
+                        gal_requests.Selected.request_type = "Mobile",
+                        gal_requests.Selected.request_type = "Smartcard Positions",
+                        gal_requests.Selected.request_type = "Special IT Request",
+                        And(
+                            gal_requests.Selected.request_type = "Peripherals",
+                            LookUp(
+                                'Peripherals Requests',
+                                gal_requests.Selected.UID = UID,
+                                mouse_count = "10+ (Please specify amount in further detail section"
+                            )
+                        ),
+                        And(
+                            gal_requests.Selected.request_type = "Peripherals",
+                            LookUp(
+                                'Peripherals Requests',
+                                gal_requests.Selected.UID = UID,
+                                keyboard_count = "10+ (Please specify amount in further detail section"
+                            )
+                        ),
+                        And(
+                            gal_requests.Selected.request_type = "Peripherals",
+                            LookUp(
+                                'Peripherals Requests',
+                                gal_requests.Selected.UID = UID,
+                                headset_count = "10+ (Please specify amount in further detail section"
+                            )
+                        ),
+                        And(
+                            gal_requests.Selected.request_type = "Peripherals",
+                            LookUp(
+                                'Peripherals Requests',
+                                gal_requests.Selected.UID = UID,
+                                monitor_count = "10+ (Please specify amount in further detail section"
+                            )
+                        ),
+                        And(
+                            gal_requests.Selected.request_type = "Smartcard Request",
+                            LookUp(
+                                'Smartcard Requests',
+                                gal_requests.Selected.UID = UID,
+                                new_or_replacement
+                            ) = "New Smartcard with Positions"
+                        ),
+                        gal_requests.Selected.request_type = "IT Account",
+                        gal_requests.Selected.request_type = "Change Form",
+                        gal_requests.Selected.request_type = "Laptop Request",
+                        gal_requests.Selected.request_type = "4G Laptop",
+                        And(
+                            gal_requests.Selected.request_type = "Smartcard Request",
+                            LookUp(
+                                'Smartcard Requests',
+                                gal_requests.Selected.UID = UID,
+                                new_or_replacement
+                            ) = "New Smartcard without Positions"
+                        )
+                    ),
+                    varPopUp,
+                    false
+                )
+            Width: =35
+            X: =954
+            Y: =327
+            ZIndex: =33
+
+        tl_stage_3_lbl As label:
+            Align: =Align.Center
+            Font: =Font.Arial
+            FontWeight: =FontWeight.Bold
+            Height: =35
+            Size: =12
+            Text: |-
+                =If(
+                    gal_requests.Selected.request_type = "Laptop Request",
+                    "Logged with IT",
+                    If(
+                        gal_requests.Selected.request_type = "4G Laptop",
+                        "Logged with IT",
+                        If(
+                            gal_requests.Selected.request_type = "Mobile",
+                            "Complete",
+                            If(
+                                And(
+                                    gal_requests.Selected.request_type = "Peripherals",
+                                    LookUp(
+                                        'Peripherals Requests',
+                                        gal_requests.Selected.UID = UID,
+                                        keyboard_count
+                                    ) = "10+ (Please specify amount in further detail section)"
+                                ),
+                                "Complete",
+                                If(
+                                    And(
+                                        gal_requests.Selected.request_type = "Peripherals",
+                                        LookUp(
+                                            'Peripherals Requests',
+                                            gal_requests.Selected.UID = UID,
+                                            headset_count
+                                        ) = "10+ (Please specify amount in further detail section)"
+                                    ),
+                                    "Complete",
+                                    If(
+                                        And(
+                                            gal_requests.Selected.request_type = "Peripherals",
+                                            LookUp(
+                                                'Peripherals Requests',
+                                                gal_requests.Selected.UID = UID,
+                                                mouse_count
+                                            ) = "10+ (Please specify amount in further detail section)"
+                                        ),
+                                        "Complete",
+                                        If(
+                                            And(
+                                                gal_requests.Selected.request_type = "Peripherals",
+                                                LookUp(
+                                                    'Peripherals Requests',
+                                                    gal_requests.Selected.UID = UID,
+                                                    monitor_count
+                                                ) = "10+ (Please specify amount in further detail section)"
+                                            ),
+                                            "Complete",
+                                            If(
+                                                gal_requests.Selected.request_type = "Special IT Request",
+                                                "Complete",
+                                                If(
+                                                    gal_requests.Selected.request_type = "Smartcard Request",
+                                                    "Complete",
+                                                    If(
+                                                        gal_requests.Selected.request_type = "Smartcard Positions",
+                                                        "Complete",
+                                                        If(
+                                                            gal_requests.Selected.request_type = "Change Form",
+                                                            "Finance Approval",
+                                                            "Error"
+                                                        )
+                                                    )
+                                                )
+                                            )
+                                        )
+                                    )
+                                )
+                            )
+                        )
+                    )
+                )
+            Visible: |-
+                =If(
+                    Or(
+                        gal_requests.Selected.request_type = "Mobile",
+                        gal_requests.Selected.request_type = "Smartcard Positions",
+                        gal_requests.Selected.request_type = "Special IT Request",
+                        And(
+                            gal_requests.Selected.request_type = "Peripherals",
+                            LookUp(
+                                'Peripherals Requests',
+                                gal_requests.Selected.UID = UID,
+                                mouse_count = "10+ (Please specify amount in further detail section"
+                            )
+                        ),
+                        And(
+                            gal_requests.Selected.request_type = "Peripherals",
+                            LookUp(
+                                'Peripherals Requests',
+                                gal_requests.Selected.UID = UID,
+                                keyboard_count = "10+ (Please specify amount in further detail section"
+                            )
+                        ),
+                        And(
+                            gal_requests.Selected.request_type = "Peripherals",
+                            LookUp(
+                                'Peripherals Requests',
+                                gal_requests.Selected.UID = UID,
+                                headset_count = "10+ (Please specify amount in further detail section"
+                            )
+                        ),
+                        And(
+                            gal_requests.Selected.request_type = "Peripherals",
+                            LookUp(
+                                'Peripherals Requests',
+                                gal_requests.Selected.UID = UID,
+                                monitor_count = "10+ (Please specify amount in further detail section"
+                            )
+                        ),
+                        And(
+                            gal_requests.Selected.request_type = "Smartcard Request",
+                            LookUp(
+                                'Smartcard Requests',
+                                gal_requests.Selected.UID = UID,
+                                new_or_replacement
+                            ) = "New Smartcard with Positions"
+                        ),
+                        gal_requests.Selected.request_type = "IT Account",
+                        gal_requests.Selected.request_type = "Change Form",
+                        gal_requests.Selected.request_type = "Laptop Request",
+                        gal_requests.Selected.request_type = "4G Laptop",
+                        And(
+                            gal_requests.Selected.request_type = "Smartcard Request",
+                            LookUp(
+                                'Smartcard Requests',
+                                gal_requests.Selected.UID = UID,
+                                new_or_replacement
+                            ) = "New Smartcard without Positions"
+                        )
+                    ),
+                    varPopUp,
+                    false
+                )
+            Width: =170
+            X: =996
+            Y: =327
+            ZIndex: =34
+
+        tl_stage_3_line As rectangle:
+            Fill: =RGBA(88, 89, 91, 1)
+            Height: =42
+            Visible: |-
+                =If(
+                    Or(
+                        gal_requests.Selected.request_type = "Change Form",
+                        gal_requests.Selected.request_type = "Laptop Request",
+                        gal_requests.Selected.request_type = "4G Laptop",
+                        And(
+                            gal_requests.Selected.request_type = "Smartcard Request",
+                            LookUp(
+                                'Smartcard Requests',
+                                gal_requests.Selected.UID = UID,
+                                new_or_replacement
+                            ) = "New Smartcard without Positions"
+                        )
+                    ),
+                    varPopUp,
+                    false
+                )
+            Width: =2
+            X: =1079
+            Y: =362
             ZIndex: =35
+
+        tl_stage_4_img As image:
+            DisplayMode: =DisplayMode.View
+            Height: =35
+            Image: =circle
+            Visible: |-
+                =If(
+                    Or(
+                        gal_requests.Selected.request_type = "Change Form",
+                        gal_requests.Selected.request_type = "Laptop Request",
+                        gal_requests.Selected.request_type = "4G Laptop",
+                        And(
+                            gal_requests.Selected.request_type = "Smartcard Request",
+                            LookUp(
+                                'Smartcard Requests',
+                                gal_requests.Selected.UID = UID,
+                                new_or_replacement
+                            ) = "New Smartcard without Positions"
+                        )
+                    ),
+                    varPopUp,
+                    false
+                )
+            Width: =35
+            X: =954
+            Y: =401
+            ZIndex: =36
+
+        tl_stage_4_lbl As label:
+            Align: =Align.Center
+            Font: =Font.Arial
+            FontWeight: =FontWeight.Bold
+            Height: =35
+            Size: =12
+            Text: |-
+                =If(
+                    gal_requests.Selected.request_type = "Laptop Request",
+                    "Complete",
+                    If(
+                        gal_requests.Selected.request_type = "4G Laptop",
+                        "Complete",
+                        If(
+                            gal_requests.Selected.request_type = "Smartcard Request",
+                            "Complete",
+                            If(
+                                gal_requests.Selected.request_type = "Smartcard Positions",
+                                "Complete",
+                                If(
+                                    gal_requests.Selected.request_type = "Change Form",
+                                    "Finance Director Approval",
+                                    "Error"
+                                )
+                            )
+                        )
+                    )
+                )
+            Visible: |-
+                =If(
+                    Or(
+                        gal_requests.Selected.request_type = "Change Form",
+                        gal_requests.Selected.request_type = "Laptop Request",
+                        gal_requests.Selected.request_type = "4G Laptop",
+                        And(
+                            gal_requests.Selected.request_type = "Smartcard Request",
+                            LookUp(
+                                'Smartcard Requests',
+                                gal_requests.Selected.UID = UID,
+                                new_or_replacement
+                            ) = "New Smartcard without Positions"
+                        )
+                    ),
+                    varPopUp,
+                    false
+                )
+            Width: =170
+            X: =996
+            Y: =401
+            ZIndex: =37
+
+        tl_stage_5_img As image:
+            DisplayMode: =DisplayMode.View
+            Height: =35
+            Image: =circle
+            Visible: =If(gal_requests.Selected.request_type="Change Form", true, false)
+            Width: =35
+            X: =954
+            Y: =475
+            ZIndex: =38
+
+        tl_stage_5_lbl As label:
+            Align: =Align.Center
+            Font: =Font.Arial
+            FontWeight: =FontWeight.Bold
+            Height: =35
+            Size: =12
+            Text: |-
+                =If(
+                    gal_requests.Selected.request_type = "Change Form",
+                    "Complete",
+                    "Error"
+                )
+            Visible: =If(gal_requests.Selected.request_type="Change Form", true, false)
+            Width: =170
+            X: =996
+            Y: =475
+            ZIndex: =39
+
+        tl_stage_4_line As rectangle:
+            Fill: =RGBA(88, 89, 91, 1)
+            Height: =42
+            Visible: =If(gal_requests.Selected.request_type="Change Form", true, false)
+            Width: =2
+            X: =1079
+            Y: =436
+            ZIndex: =40
 
