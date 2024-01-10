@@ -2293,20 +2293,6 @@ Requests As screen:
         Y: =111
         ZIndex: =23
 
-    Label13 As label:
-        BorderColor: =RGBA(88,89,91,0.25)
-        BorderThickness: =0.1
-        Font: =Font.Arial
-        Height: =247
-        Size: =10
-        Text: =gal_requests.Selected.activity
-        VerticalAlign: =VerticalAlign.Top
-        Visible: =varPopUp
-        Width: =394
-        X: =491
-        Y: =162
-        ZIndex: =24
-
     lbl_pop_up_details_5 As label:
         Color: =RGBA(77, 164, 65, 1)
         FontWeight: =FontWeight.Bold
@@ -2314,9 +2300,9 @@ Requests As screen:
         Visible: =varPopUp
         X: =504
         Y: =431
-        ZIndex: =25
+        ZIndex: =24
 
-    TextInput1 As text:
+    txtin_Comment As text:
         BorderColor: =RGBA(88,89,91,0.25)
         BorderThickness: =0.5
         Default: =""
@@ -2333,17 +2319,18 @@ Requests As screen:
         Width: =394
         X: =491
         Y: =471
-        ZIndex: =26
+        ZIndex: =25
 
     Icon7 As icon.Send:
         Color: =RGBA(88,89,91,1)
         Height: =28
         Icon: =Icon.Send
+        OnSelect: =SubmitForm(form_comment); Refresh(Requests_Master); Reset(txtin_Comment)
         Visible: =varPopUp
         Width: =28
         X: =857
         Y: =659
-        ZIndex: =27
+        ZIndex: =26
 
     grp_pop_up_3 As group:
         Height: =5
@@ -2440,7 +2427,7 @@ Requests As screen:
             Height: =768
             Visible: =varLoading
             Width: =1366
-            ZIndex: =42
+            ZIndex: =41
 
         timer_loading_1 As timer:
             AutoStart: =
@@ -2451,7 +2438,7 @@ Requests As screen:
             Visible: =false
             X: =1037
             Y: =18
-            ZIndex: =43
+            ZIndex: =42
 
         spinner_loading_1 As Spinner:
             BasePaletteColor: =
@@ -2465,7 +2452,120 @@ Requests As screen:
             Width: =1366
             X: =0
             Y: =0
-            ZIndex: =44
+            ZIndex: =43
+
+    form_comment As form:
+        DataSource: =Requests_Master
+        Fill: =RGBA(240, 98, 15, 1)
+        Height: =174
+        Item: =gal_requests.Selected
+        Visible: =false
+        Width: =316
+        ZIndex: =44
+
+        activity_DataCard1 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="activity"
+            Default: =ThisItem.activity
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@Requests_Master],DataSourceInfo.DisplayName,"activity")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@Requests_Master], DataSourceInfo.MaxLength, "activity")
+            Required: =false
+            Update: =DataCardValue58.Text
+            Width: =105
+            X: =0
+            Y: =0
+            ZIndex: =46
+
+            DataCardKey58 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue58 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: |
+                    =Concatenate(Today(), ": ", User().FullName, " has commented: ", Char(13), Char(13), txtin_Comment.Text, Char(13), Char(13), "----------------------------------------------------------------------------------- ",gal_requests.Selected.activity)
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey58.Y + DataCardKey58.Height + 5
+                ZIndex: =2
+
+            ErrorMessage58 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue58.Y + DataCardValue58.Height
+                ZIndex: =3
+
+            StarVisible58 As label:
+                Align: =Align.Center
+                Height: =DataCardKey58.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey58.Y
+                ZIndex: =4
+
+    icon_expand_collapse_activity As icon.ExpandView:
+        Height: =20
+        Icon: =If(varExpandActivity=true, Icon.CollapseView, Icon.ExpandView)
+        OnSelect: |-
+            =If(icon_expand_collapse_activity.Icon = Icon.ExpandView, UpdateContext({varExpandActivity: true}), UpdateContext({varExpandActivity: true}))
+        Width: =20
+        X: =856
+        Y: =133
+        ZIndex: =45
+
+    Toggle1 As toggleSwitch:
+        Default: =If(varExpandActivity=true, true, false)
+        Height: =24
+        ShowLabel: =false
+        Width: =53
+        X: =783
+        Y: =129
+        ZIndex: =46
+
+    Label13 As label:
+        BorderColor: =RGBA(88,89,91,0.25)
+        BorderThickness: =0.1
+        Fill: =RGBA(255, 255, 255, 1)
+        Font: =Font.Arial
+        Height: =523
+        Overflow: =Overflow.Scroll
+        Size: =10
+        Text: =gal_requests.Selected.activity
+        VerticalAlign: =VerticalAlign.Top
+        Visible: =varPopUp
+        Width: =394
+        X: =491
+        Y: =162
+        ZIndex: =47
 
     Timeline As group:
         Height: =5
@@ -2715,7 +2815,7 @@ Requests As screen:
             Width: =35
             X: =954
             Y: =179
-            ZIndex: =28
+            ZIndex: =27
 
         tl_stage_1_lbl As label:
             Align: =Align.Center
@@ -2872,7 +2972,7 @@ Requests As screen:
             Width: =170
             X: =996
             Y: =179
-            ZIndex: =29
+            ZIndex: =28
 
         tl_stage_1_line As rectangle:
             BorderStyle: =BorderStyle.None
@@ -2882,7 +2982,7 @@ Requests As screen:
             Width: =2
             X: =1079
             Y: =214
-            ZIndex: =30
+            ZIndex: =29
 
         tl_stage_2_img As image:
             DisplayMode: =DisplayMode.View
@@ -3127,7 +3227,7 @@ Requests As screen:
             Width: =35
             X: =954
             Y: =253
-            ZIndex: =31
+            ZIndex: =30
 
         tl_stage_2_lbl As label:
             Align: =Align.Center
@@ -3284,7 +3384,7 @@ Requests As screen:
             Width: =170
             X: =996
             Y: =253
-            ZIndex: =32
+            ZIndex: =31
 
         tl_stage_2_line As rectangle:
             Fill: =RGBA(88, 89, 91, 1)
@@ -3354,7 +3454,7 @@ Requests As screen:
             Width: =2
             X: =1079
             Y: =288
-            ZIndex: =33
+            ZIndex: =32
 
         tl_stage_3_img As image:
             DisplayMode: =DisplayMode.View
@@ -3559,7 +3659,7 @@ Requests As screen:
             Width: =35
             X: =954
             Y: =327
-            ZIndex: =34
+            ZIndex: =33
 
         tl_stage_3_lbl As label:
             Align: =Align.Center
@@ -3706,7 +3806,7 @@ Requests As screen:
             Width: =170
             X: =996
             Y: =327
-            ZIndex: =35
+            ZIndex: =34
 
         tl_stage_3_line As rectangle:
             Fill: =RGBA(88, 89, 91, 1)
@@ -3732,7 +3832,7 @@ Requests As screen:
             Width: =2
             X: =1079
             Y: =362
-            ZIndex: =36
+            ZIndex: =35
 
         tl_stage_4_img As image:
             DisplayMode: =DisplayMode.View
@@ -3796,7 +3896,7 @@ Requests As screen:
             Width: =35
             X: =954
             Y: =401
-            ZIndex: =37
+            ZIndex: =36
 
         tl_stage_4_lbl As label:
             Align: =Align.Center
@@ -3847,7 +3947,7 @@ Requests As screen:
             Width: =170
             X: =996
             Y: =401
-            ZIndex: =38
+            ZIndex: =37
 
         tl_stage_5_img As image:
             DisplayMode: =DisplayMode.View
@@ -3862,7 +3962,7 @@ Requests As screen:
             Width: =35
             X: =954
             Y: =475
-            ZIndex: =39
+            ZIndex: =38
 
         tl_stage_5_lbl As label:
             Align: =Align.Center
@@ -3880,7 +3980,7 @@ Requests As screen:
             Width: =170
             X: =996
             Y: =475
-            ZIndex: =40
+            ZIndex: =39
 
         tl_stage_4_line As rectangle:
             Fill: =RGBA(88, 89, 91, 1)
@@ -3889,5 +3989,5 @@ Requests As screen:
             Width: =2
             X: =1079
             Y: =436
-            ZIndex: =41
+            ZIndex: =40
 

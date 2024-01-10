@@ -278,7 +278,7 @@
     "Name": "PowerApps_CoreControls_Progress",
     "OverridableProperties": {},
     "TemplateDisplayName": "Progress Bar",
-    "Version": "1.1.16"
+    "Version": "1.1.17"
   },
   "rectangle": {
     "CustomGroupControlTemplateName": "",
@@ -321,7 +321,7 @@
     "Name": "PowerApps_CoreControls_Spinner",
     "OverridableProperties": {},
     "TemplateDisplayName": "Spinner",
-    "Version": "1.0.27"
+    "Version": "1.0.28"
   },
   "text": {
     "CustomGroupControlTemplateName": "",
@@ -378,6 +378,20 @@
     "IsWidgetTemplate": true,
     "LastModifiedTimestamp": "0",
     "Name": "timer",
+    "OverridableProperties": {},
+    "Version": "2.1.0"
+  },
+  "toggleSwitch": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/toggleSwitch",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": false,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": true,
+    "LastModifiedTimestamp": "0",
+    "Name": "toggleSwitch",
     "OverridableProperties": {},
     "Version": "2.1.0"
   },
