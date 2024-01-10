@@ -3776,6 +3776,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Dashboard.Form5.Attachments_DataCard4.DataCardValue173.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Dashboard.Form5.Attachments_DataCard4.DataCardValue173.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Dashboard",
+                "type": "Dashboard.Form5.Attachments_DataCard4.DataCardValue173"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.Backgrounds17"
                 }
               ],
