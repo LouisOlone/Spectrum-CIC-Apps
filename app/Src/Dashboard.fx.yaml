@@ -2,6 +2,13 @@ Dashboard As screen:
     BackgroundImage: ='Green Background'
     Fill: =RGBA(255, 255, 255, 1)
 
+    "'shp_logo_block-TEMP' As rectangle":
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =192
+        Width: =430
+        X: =936
+        ZIndex: =1
+
     lbl_inbox_count As label:
         Font: =Font.Arial
         Height: =30
@@ -20,7 +27,7 @@ Dashboard As screen:
         Width: =56
         X: =509
         Y: =76
-        ZIndex: =9
+        ZIndex: =10
 
     icon_mail As icon.Mail:
         Color: =RGBA(0, 0, 0, 1)
@@ -29,7 +36,7 @@ Dashboard As screen:
         Width: =30
         X: =434
         Y: =76
-        ZIndex: =10
+        ZIndex: =11
 
     lbl_date_received_1 As label:
         Align: =Align.Center
@@ -40,13 +47,6 @@ Dashboard As screen:
         Width: =943
         X: =19
         Y: =76
-        ZIndex: =11
-
-    "'shp_logo_block-TEMP' As rectangle":
-        Fill: =RGBA(255, 255, 255, 1)
-        Height: =192
-        Width: =430
-        X: =936
         ZIndex: =12
 
     shp_sidebar_2 As button:
@@ -6938,7 +6938,7 @@ Dashboard As screen:
             Width: =362
             X: =978
             Y: =192
-            ZIndex: =5
+            ZIndex: =6
 
         Icon3 As icon.AddDocument:
             Color: =RGBA(0, 0, 0, 1)
@@ -6947,7 +6947,7 @@ Dashboard As screen:
             Width: =58
             X: =1264
             Y: =194
-            ZIndex: =6
+            ZIndex: =7
 
         Label2 As label:
             Font: =Font.Arial
@@ -6958,7 +6958,7 @@ Dashboard As screen:
             Width: =222
             X: =1021
             Y: =194
-            ZIndex: =7
+            ZIndex: =8
 
         Button2 As button:
             Fill: =RGBA(0, 0, 0, 0)
@@ -6971,7 +6971,7 @@ Dashboard As screen:
             Width: =362
             X: =978
             Y: =192
-            ZIndex: =8
+            ZIndex: =9
 
     Label3 As label:
         Align: =Align.Center
@@ -7792,6 +7792,7 @@ Dashboard As screen:
         Height: =525
         NumberOfColumns: =2
         UseFluentV9Cards: =true
+        Visible: =false
         X: =106
         Y: =162
         ZIndex: =52
@@ -8800,7 +8801,7 @@ Dashboard As screen:
             Width: =362
             X: =978
             Y: =111
-            ZIndex: =1
+            ZIndex: =2
 
         Icon3_1 As icon.AddDocument:
             Color: =RGBA(0, 0, 0, 1)
@@ -8809,7 +8810,7 @@ Dashboard As screen:
             Width: =58
             X: =1264
             Y: =113
-            ZIndex: =2
+            ZIndex: =3
 
         Label2_11 As label:
             Font: =Font.Arial
@@ -8820,7 +8821,7 @@ Dashboard As screen:
             Width: =222
             X: =1021
             Y: =113
-            ZIndex: =3
+            ZIndex: =4
 
         Button2_1 As button:
             Fill: =RGBA(0, 0, 0, 0)
@@ -8833,5 +8834,5 @@ Dashboard As screen:
             Width: =362
             X: =978
             Y: =111
-            ZIndex: =4
+            ZIndex: =5
 
