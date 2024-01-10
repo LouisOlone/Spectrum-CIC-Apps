@@ -2428,7 +2428,7 @@ Requests As screen:
             Height: =768
             Visible: =varLoading
             Width: =1366
-            ZIndex: =41
+            ZIndex: =44
 
         timer_loading_1 As timer:
             AutoStart: =
@@ -2439,7 +2439,7 @@ Requests As screen:
             Visible: =false
             X: =1037
             Y: =18
-            ZIndex: =42
+            ZIndex: =45
 
         spinner_loading_1 As Spinner:
             BasePaletteColor: =
@@ -2453,7 +2453,7 @@ Requests As screen:
             Width: =1366
             X: =0
             Y: =0
-            ZIndex: =43
+            ZIndex: =46
 
     form_comment As form:
         DataSource: =Requests_Master
@@ -2462,7 +2462,7 @@ Requests As screen:
         Item: =gal_requests.Selected
         Visible: =false
         Width: =316
-        ZIndex: =44
+        ZIndex: =41
 
         activity_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -2544,7 +2544,7 @@ Requests As screen:
         Width: =20
         X: =856
         Y: =133
-        ZIndex: =45
+        ZIndex: =42
 
     Label13 As label:
         BorderColor: =RGBA(88,89,91,0.25)
@@ -2560,7 +2560,7 @@ Requests As screen:
         Width: =394
         X: =491
         Y: =162
-        ZIndex: =47
+        ZIndex: =43
 
     Timeline As group:
         Height: =5
