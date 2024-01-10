@@ -2382,6 +2382,7 @@ Requests As screen:
                 UpdateContext({varSpecialRequest: false});
                 UpdateContext({varSmartcardRequest: false});
                 UpdateContext({varSmartcardPositionsRequest: false});
+                UpdateContext({varExpandActivity: false});
             Visible: =varPopUp
             Width: =20
             X: =1235
@@ -2431,7 +2432,7 @@ Requests As screen:
 
         timer_loading_1 As timer:
             AutoStart: =
-            Duration: =500
+            Duration: =2000
             OnTimerEnd: |-
                 =UpdateContext({varLoading:false}); Reset(timer_loading_1)
             Start: =varPopUp=true
@@ -2536,27 +2537,21 @@ Requests As screen:
         Height: =20
         Icon: =If(varExpandActivity=true, Icon.CollapseView, Icon.ExpandView)
         OnSelect: |-
-            =If(icon_expand_collapse_activity.Icon = Icon.ExpandView, UpdateContext({varExpandActivity: true}), UpdateContext({varExpandActivity: true}))
+            =If(icon_expand_collapse_activity.Icon = Icon.ExpandView, UpdateContext({varExpandActivity: true}), 
+            
+            UpdateContext({varExpandActivity: false}))
+        Visible: =varPopUp
         Width: =20
         X: =856
         Y: =133
         ZIndex: =45
-
-    Toggle1 As toggleSwitch:
-        Default: =If(varExpandActivity=true, true, false)
-        Height: =24
-        ShowLabel: =false
-        Width: =53
-        X: =783
-        Y: =129
-        ZIndex: =46
 
     Label13 As label:
         BorderColor: =RGBA(88,89,91,0.25)
         BorderThickness: =0.1
         Fill: =RGBA(255, 255, 255, 1)
         Font: =Font.Arial
-        Height: =523
+        Height: =If(varExpandActivity=true, 523,242)
         Overflow: =Overflow.Scroll
         Size: =10
         Text: =gal_requests.Selected.activity
