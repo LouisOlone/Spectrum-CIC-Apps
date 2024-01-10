@@ -2534,6 +2534,7 @@ Requests As screen:
                 ZIndex: =4
 
     icon_expand_collapse_activity As icon.ExpandView:
+        Color: =RGBA(88, 89, 91, 1)
         Height: =20
         Icon: =If(varExpandActivity=true, Icon.CollapseView, Icon.ExpandView)
         OnSelect: |-
