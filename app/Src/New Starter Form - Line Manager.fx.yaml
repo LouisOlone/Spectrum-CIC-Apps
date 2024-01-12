@@ -428,13 +428,13 @@
                 Font: =Font.Arial
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: =RGBA(77,164,65,0.5)
-                Items: =Choices([@NewStarterForm].field_65)
+                Items: =Choices([@NewStarterForm].AssignmentType)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
                 PressedFill: =Self.Fill
                 SearchFields: =["Value"]
-                SearchItems: =Choices(NewStarterForm.field_65,DataCardValue322.SearchText)
+                SearchItems: =Choices(NewStarterForm.AssignmentType,DataCardValue322.SearchText)
                 SelectionColor: =RGBA(0,0,0,1)
                 SelectionFill: =RGBA(74,164,65,0.5)
                 SelectMultiple: =false
@@ -828,7 +828,7 @@
                 Font: =Font.Arial
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: =RGBA(77,164,65,0.5)
-                Items: =Choices([@NewStarterForm].field_69)
+                Items: =Choices([@NewStarterForm].PayType)
                 OnChange: |-
                     =If(DataCardValue328.Selected.Value="Spot", Reset(DataCardValue330), Reset(DataCardValue331), Reset(DataCardValue332), true, false) ;
                     If(DataCardValue328.Selected.Value="Agenda for change", Reset(DataCardValue329),true, false)
@@ -837,7 +837,7 @@
                 PressedColor: =Color.Black
                 PressedFill: =Self.Fill
                 SearchFields: =["Value"]
-                SearchItems: =Choices(NewStarterForm.field_69,DataCardValue328.SearchText)
+                SearchItems: =Choices(NewStarterForm.PayType,DataCardValue328.SearchText)
                 SelectionColor: =RGBA(0,0,0,1)
                 SelectionFill: =RGBA(74,164,65,0.5)
                 SelectMultiple: =false
@@ -1321,14 +1321,14 @@
                 Font: =Font.Arial
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: =RGBA(77,164,65,0.5)
-                Items: =Choices([@NewStarterForm].field_73)
+                Items: =Choices([@NewStarterForm].SupervisoryRoleFlag)
                 OnChange: =Reset(DataCardValue335)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
                 PressedFill: =Self.Fill
                 SearchFields: =["Value"]
-                SearchItems: =Choices(NewStarterForm.field_73,DataCardValue334.SearchText)
+                SearchItems: =Choices(NewStarterForm.SupervisoryRoleFlag,DataCardValue334.SearchText)
                 SelectionColor: =RGBA(0,0,0,1)
                 SelectionFill: =RGBA(74,164,65,0.5)
                 SelectMultiple: =false
@@ -1989,13 +1989,13 @@
                 Font: =Font.Arial
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: =RGBA(77,164,65,0.5)
-                Items: =Choices([@NewStarterForm].RequestReason)
+                Items: =Choices([@NewStarterForm].'Request Reason')
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
                 PressedFill: =Self.Fill
                 SearchFields: =["Value"]
-                SearchItems: =Choices(NewStarterForm.RequestReason,DataCardValue314.SearchText)
+                SearchItems: =Choices(NewStarterForm.'Request Reason',DataCardValue314.SearchText)
                 SelectionColor: =RGBA(0,0,0,1)
                 SelectionFill: =RGBA(74,164,65,0.5)
                 SelectMultiple: =false
@@ -2239,14 +2239,14 @@
                 Font: =Font.Arial
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: =RGBA(77,164,65,0.5)
-                Items: =Choices([@NewStarterForm].OData__x0034_GFlagRequired)
+                Items: =Choices([@NewStarterForm].'4GFlagRequired')
                 OnChange: =Reset(DataCardValue316)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
                 PressedFill: =Self.Fill
                 SearchFields: =["Value"]
-                SearchItems: =Choices(NewStarterForm.OData__x0034_GFlagRequired,DataCardValue315.SearchText)
+                SearchItems: =Choices(NewStarterForm.'4GFlagRequired',DataCardValue315.SearchText)
                 SelectionColor: =RGBA(0,0,0,1)
                 SelectionFill: =RGBA(74,164,65,0.5)
                 SelectMultiple: =false
