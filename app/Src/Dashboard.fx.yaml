@@ -179,7 +179,7 @@ Dashboard As screen:
                                             And(
                                                 Set(varNewStarterLM,
                                                     LookUp(
-                                                            'NewStarterForm',
+                                                            NewStarterForm,
                                                             UID = ThisItem.UID
                                                         ) 
                                                 
