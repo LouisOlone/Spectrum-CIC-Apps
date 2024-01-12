@@ -173,6 +173,21 @@ Dashboard As screen:
                                                 }
                                             )
                                         ),
+                                        // View New Starter Line Manager Request
+                                        If(
+                                            ThisItem.request_type = "New Starter Form",
+                                            And(
+                                                Set(varNewStarterLM,
+                                                    LookUp(
+                                                            'NewStarterForm',
+                                                            UID = ThisItem.UID
+                                                        ) 
+                                                
+                                                ),
+                                                Navigate('New Starter Form - Line Manager')
+                                            )
+                                            
+                                        ),
                                         // View Smartcard Positions Request
                                         If(
                                             ThisItem.request_type = "Smartcard Positions",
@@ -186,15 +201,14 @@ Dashboard As screen:
                                                         )
                                                     }
                                                 )
-                                            ),
-                                            false
-                                        )
+                                            ),false)
                                     )
                                 )
                             )
                         )
                     )
-                );
+                    )
+                ;
                 // Open pop-up window
                 UpdateContext({varPopUp: true});
             PaddingBottom: =12
@@ -8906,4 +8920,16 @@ Dashboard As screen:
             X: =978
             Y: =111
             ZIndex: =5
+
+    Icon1_1 As icon.Tools:
+        Color: =RGBA(79, 90, 94, 1)
+        Height: =55
+        Icon: =Icon.Tools
+        OnSelect: |-
+            =UpdateContext({varLoading: false})
+        Visible: =If(User().FullName in LookUp(Developers, User().FullName = Developer.DisplayName, Developer.DisplayName), true, false)
+        Width: =63
+        X: =1303
+        Y: =713
+        ZIndex: =53
 
