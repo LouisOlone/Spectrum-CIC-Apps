@@ -184,6 +184,8 @@ Dashboard As screen:
                                                         ) 
                                                 
                                                 ),
+                                                UpdateContext({varLoading: false}),
+                                                UpdateContext({varPopUp: false}),
                                                 Navigate('New Starter Form - Line Manager')
                                             )
                                             
@@ -211,6 +213,10 @@ Dashboard As screen:
                 ;
                 // Open pop-up window
                 UpdateContext({varPopUp: true});
+                
+                If(
+                                            ThisItem.request_type = "New Starter Form",
+                                            UpdateContext({varPopUp: false}));
             PaddingBottom: =12
             PaddingLeft: =12
             PaddingRight: =12
