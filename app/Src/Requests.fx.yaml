@@ -148,7 +148,7 @@ Requests As screen:
                                                 UpdateContext(
                                                     {
                                                         varNewStarterLMDetails: LookUp(
-                                                            'NewStarterForm',
+                                                            NewStarterForm,
                                                             UID = ThisItem.UID
                                                         )
                                                     }
@@ -3700,7 +3700,7 @@ Requests As screen:
         Y: =94
         ZIndex: =51
 
-    Form2 As form:
+    form_New_Starter_Form_LM As form:
         DataSource: =NewStarterForm
         DefaultMode: =FormMode.View
         Height: =525
@@ -4500,13 +4500,13 @@ Requests As screen:
                 FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: =RGBA(77,164,65,0.5)
-                Items: =Choices([@NewStarterForm].field_69)
+                Items: =Choices([@NewStarterForm].PayType)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
                 PressedFill: =Self.Fill
                 SearchFields: =["Value"]
-                SearchItems: =Choices(NewStarterForm.field_69,DataCardValue350.SearchText)
+                SearchItems: =Choices(NewStarterForm.PayType,DataCardValue350.SearchText)
                 SelectionFill: =RGBA(74,164,65,0.5)
                 SelectMultiple: =false
                 Size: =12
@@ -4580,13 +4580,13 @@ Requests As screen:
                 FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: =RGBA(77,164,65,0.5)
-                Items: =Choices([@NewStarterForm].field_65)
+                Items: =Choices([@NewStarterForm].AssignmentType)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
                 PressedFill: =Self.Fill
                 SearchFields: =["Value"]
-                SearchItems: =Choices(NewStarterForm.field_65,DataCardValue351.SearchText)
+                SearchItems: =Choices(NewStarterForm.AssignmentType,DataCardValue351.SearchText)
                 SelectionFill: =RGBA(74,164,65,0.5)
                 SelectMultiple: =false
                 Size: =12

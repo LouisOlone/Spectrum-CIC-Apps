@@ -4,13 +4,12 @@
 
     NewStarterLMForm As form:
         DataSource: =NewStarterForm
+        DefaultMode: =FormMode.New
         Height: =538
         Item: =varNewStarterLM
         NumberOfColumns: =2
         OnSuccess: |-
-            =	
-            ResetForm(NewStarterLMForm);
-            
+            =ResetForm(NewStarterLMForm);
             Navigate('Success Screen')
         Width: =1284
         X: =25
@@ -128,6 +127,7 @@
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
@@ -202,6 +202,7 @@
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
@@ -276,6 +277,7 @@
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
@@ -349,6 +351,7 @@
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
@@ -426,6 +429,7 @@
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
                 Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: =RGBA(77,164,65,0.5)
                 Items: =Choices([@NewStarterForm].AssignmentType)
@@ -506,6 +510,7 @@
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
@@ -579,6 +584,7 @@
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 IconBackground: |-
                     =	
                     RGBA(74,164,65,1)
@@ -734,6 +740,7 @@
                 DisplayFields: =["DisplayName","Email","Picture"]
                 DisplayMode: =Parent.DisplayMode
                 Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: =RGBA(77,164,65,0.5)
                 Items: =Choices([@NewStarterForm].supervisor)
@@ -826,6 +833,7 @@
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
                 Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: =RGBA(77,164,65,0.5)
                 Items: =Choices([@NewStarterForm].PayType)
@@ -935,6 +943,7 @@
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
@@ -1014,6 +1023,7 @@
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
                 Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: =RGBA(77,164,65,0.5)
                 IsSearchable: =false
@@ -1100,6 +1110,7 @@
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
                 Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: =RGBA(77,164,65,0.5)
                 Items: =Distinct(Filter('Afc Wages', Band = DataCardValue330.Selected.Value), Step)
@@ -1185,6 +1196,7 @@
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
                 Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: =RGBA(77,164,65,0.5)
                 IsSearchable: =false
@@ -1242,6 +1254,7 @@
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
@@ -1319,6 +1332,7 @@
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
                 Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: =RGBA(77,164,65,0.5)
                 Items: =Choices([@NewStarterForm].SupervisoryRoleFlag)
@@ -1383,6 +1397,7 @@
             DataCardKey340 As label:
                 AutoHeight: =true
                 Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =14
@@ -1403,6 +1418,7 @@
                 DisplayFields: =["DisplayName","Email","Picture"]
                 DisplayMode: =Parent.DisplayMode
                 Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: =RGBA(77,164,65,0.5)
                 Items: =Choices([@NewStarterForm].EmployeeReportees)
@@ -1514,10 +1530,12 @@
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisplayMode: =Parent.DisplayMode
                 Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =
                 HoverColor: =RGBA(32, 54, 71, 1)
                 OnCheck: =
                 PressedBorderColor: =
+                Size: =12
                 Text: ="Sign-off"
                 Width: =125
                 X: =30
@@ -1562,6 +1580,7 @@
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
                 Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: =RGBA(77,164,65,0.5)
                 Items: =Choices([@NewStarterForm].ITAccountRequired)
@@ -1635,6 +1654,7 @@
             DataCardKey343 As label:
                 AutoHeight: =true
                 Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =14
@@ -1655,6 +1675,7 @@
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
                 Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: =RGBA(77,164,65,0.5)
                 Items: =Choices([@NewStarterForm].LicensesFlag)
@@ -1736,6 +1757,7 @@
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
@@ -1816,6 +1838,7 @@
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
                 Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: =RGBA(77,164,65,0.5)
                 Items: =Choices([@NewStarterForm].LaptopRequired)
@@ -1905,6 +1928,7 @@
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
@@ -1984,6 +2008,7 @@
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
                 Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: =RGBA(77,164,65,0.5)
                 Items: =Choices([@NewStarterForm].'Request Reason')
@@ -2065,6 +2090,7 @@
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
@@ -2125,7 +2151,7 @@
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =14
-                Text: =Parent.DisplayName
+                Text: ="Is a Mobile Phone required?"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -2142,6 +2168,7 @@
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
                 Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: =RGBA(77,164,65,0.5)
                 Items: =Choices([@NewStarterForm].MobilePhoneRequired)
@@ -2234,6 +2261,7 @@
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
                 Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: =RGBA(77,164,65,0.5)
                 Items: =Choices([@NewStarterForm].'4GFlagRequired')
@@ -2303,7 +2331,7 @@
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =14
-                Text: =Parent.DisplayName
+                Text: ="Reason for Mobile Phone"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -2316,6 +2344,7 @@
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 Height: =356
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: =RGBA(88,89,91,0.01)
@@ -2561,6 +2590,7 @@
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
                 Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: =RGBA(77,164,65,0.5)
                 Items: =Choices([@NewStarterForm].ManagerUserPolicyFlag)
@@ -2810,7 +2840,6 @@
         Height: =44
         OnSelect: |-
             =ResetForm(NewStarterLMForm);
-            
             Navigate(Dashboard)
         Text: ="Cancel"
         Width: =136
