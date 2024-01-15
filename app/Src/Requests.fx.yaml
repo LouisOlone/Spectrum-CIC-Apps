@@ -148,7 +148,7 @@ Requests As screen:
                                                 UpdateContext(
                                                     {
                                                         varNewStarterLMDetails: LookUp(
-                                                            'NewStarterForm',
+                                                            NewStarterForm,
                                                             UID = ThisItem.UID
                                                         )
                                                     }
@@ -4653,7 +4653,7 @@ Requests As screen:
                     And(
                         gal_requests.Selected.request_type = "New Starter Form",
                         LookUp(
-                            'NewStarterForm',
+                            NewStarterForm,
                             gal_requests.Selected.UID = UID,
                             LineManagerCompleteFlag
                         ) = "True"
@@ -5080,7 +5080,7 @@ Requests As screen:
                     And(
                         gal_requests.Selected.request_type = "New Starter Form",
                         LookUp(
-                            'NewStarterForm',
+                            NewStarterForm,
                             gal_requests.Selected.UID = UID,
                             'HRApprove/Reject'.Value
                         ) = "Approve"
@@ -5568,7 +5568,7 @@ Requests As screen:
                     And(
                         gal_requests.Selected.request_type = "New Starter Form",
                         LookUp(
-                            'NewStarterForm',
+                            NewStarterForm,
                             gal_requests.Selected.UID = UID,
                             CurrentStage.Value
                         ) = "Complete"
