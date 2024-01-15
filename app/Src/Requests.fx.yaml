@@ -1887,25 +1887,6 @@ Requests As screen:
             Y: =72
             ZIndex: =7
 
-        pop_up_cancel_badge_1 As icon.CancelBadge:
-            Color: =RGBA(255, 255, 255, 1)
-            Height: =20
-            Icon: =Icon.CancelBadge
-            OnSelect: |
-                =UpdateContext({varPopUp: false});
-                UpdateContext({varLaptopRequest: false});
-                UpdateContext({var4GLaptopRequest: false});
-                UpdateContext({varMobileRequest: false});
-                UpdateContext({varPeripheralsRequest: false});
-                UpdateContext({varSpecialRequest: false});
-                UpdateContext({varSmartcardRequest: false});
-                UpdateContext({varSmartcardPositionsRequest: false});
-            Visible: =varPopUp
-            Width: =20
-            X: =1235
-            Y: =74
-            ZIndex: =8
-
         form_approval_outcome_1 As form.PowerApps_CoreControls_Form:
             DataSource: =Inbox
             Height: =480
@@ -3683,25 +3664,6 @@ Requests As screen:
                 Y: =DataCardKey158.Y
                 ZIndex: =4
 
-    pop_up_cancel_badge_4 As icon.CancelBadge:
-        Color: =RGBA(255, 255, 255, 1)
-        Height: =20
-        Icon: =Icon.CancelBadge
-        OnSelect: |
-            =UpdateContext({varPopUp: false});
-            UpdateContext({varLaptopRequest: false});
-            UpdateContext({var4GLaptopRequest: false});
-            UpdateContext({varMobileRequest: false});
-            UpdateContext({varPeripheralsRequest: false});
-            UpdateContext({varSpecialRequest: false});
-            UpdateContext({varSmartcardRequest: false});
-            UpdateContext({varSmartcardPositionsRequest: false});
-            UpdateContext({var4GLaptopTest: false});
-        Width: =20
-        X: =1255
-        Y: =94
-        ZIndex: =48
-
     Icon1_2 As icon.Tools:
         Color: =RGBA(79, 90, 94, 1)
         Height: =55
@@ -3720,7 +3682,8 @@ Requests As screen:
         Height: =525
         Item: =varNewStarterLMDetails
         NumberOfColumns: =1
-        Visible: =varNewStarterLM
+        Visible: |
+            =varNewStarterLM
         Width: =374
         X: =106
         Y: =162
@@ -3744,7 +3707,7 @@ Requests As screen:
                     And(
                         gal_requests.Selected.request_type = "New Starter Form",
                         LookUp(
-                            'NewStarterForm',
+                            NewStarterForm,
                             gal_requests.Selected.UID = UID,
                             LineManagerCompleteFlag
                         ) = "True"
@@ -4171,7 +4134,7 @@ Requests As screen:
                     And(
                         gal_requests.Selected.request_type = "New Starter Form",
                         LookUp(
-                            'NewStarterForm',
+                            NewStarterForm,
                             gal_requests.Selected.UID = UID,
                             'HRApprove/Reject'.Value
                         ) = "Approve"
@@ -4427,26 +4390,16 @@ Requests As screen:
                     gal_requests.Selected.request_type = "New Starter Form",
                     "HR Approval",
                     If(
-                    gal_requests.Selected.request_type = "IT Incident",
-                    "Complete",
-                    If(
-                        gal_requests.Selected.request_type = "Laptop Request",
-                        "IT Manager Approval",
+                        gal_requests.Selected.request_type = "IT Incident",
+                        "Complete",
                         If(
-                            gal_requests.Selected.request_type = "4G Laptop",
-                            "Finance Director Approval",
+                            gal_requests.Selected.request_type = "Laptop Request",
+                            "IT Manager Approval",
                             If(
-                                gal_requests.Selected.request_type = "Mobile",
-                                "Logged with IT",
+                                gal_requests.Selected.request_type = "4G Laptop",
+                                "Finance Director Approval",
                                 If(
-                                    And(
-                                        gal_requests.Selected.request_type = "Peripherals",
-                                        LookUp(
-                                            'Peripherals Requests',
-                                            gal_requests.Selected.UID = UID,
-                                            keyboard_count
-                                        ) = "10+ (Please specify amount in further detail section)"
-                                    ),
+                                    gal_requests.Selected.request_type = "Mobile",
                                     "Logged with IT",
                                     If(
                                         And(
@@ -4454,7 +4407,7 @@ Requests As screen:
                                             LookUp(
                                                 'Peripherals Requests',
                                                 gal_requests.Selected.UID = UID,
-                                                headset_count
+                                                keyboard_count
                                             ) = "10+ (Please specify amount in further detail section)"
                                         ),
                                         "Logged with IT",
@@ -4464,7 +4417,7 @@ Requests As screen:
                                                 LookUp(
                                                     'Peripherals Requests',
                                                     gal_requests.Selected.UID = UID,
-                                                    mouse_count
+                                                    headset_count
                                                 ) = "10+ (Please specify amount in further detail section)"
                                             ),
                                             "Logged with IT",
@@ -4474,22 +4427,20 @@ Requests As screen:
                                                     LookUp(
                                                         'Peripherals Requests',
                                                         gal_requests.Selected.UID = UID,
-                                                        monitor_count
+                                                        mouse_count
                                                     ) = "10+ (Please specify amount in further detail section)"
                                                 ),
                                                 "Logged with IT",
                                                 If(
                                                     And(
                                                         gal_requests.Selected.request_type = "Peripherals",
-                                                        Not(
-                                                            LookUp(
-                                                                'Peripherals Requests',
-                                                                gal_requests.Selected.UID = UID,
-                                                                monitor_count
-                                                            ) = "10+ (Please specify amount in further detail section)"
-                                                        )
+                                                        LookUp(
+                                                            'Peripherals Requests',
+                                                            gal_requests.Selected.UID = UID,
+                                                            monitor_count
+                                                        ) = "10+ (Please specify amount in further detail section)"
                                                     ),
-                                                    "Complete",
+                                                    "Logged with IT",
                                                     If(
                                                         And(
                                                             gal_requests.Selected.request_type = "Peripherals",
@@ -4497,7 +4448,7 @@ Requests As screen:
                                                                 LookUp(
                                                                     'Peripherals Requests',
                                                                     gal_requests.Selected.UID = UID,
-                                                                    headset_count
+                                                                    monitor_count
                                                                 ) = "10+ (Please specify amount in further detail section)"
                                                             )
                                                         ),
@@ -4509,7 +4460,7 @@ Requests As screen:
                                                                     LookUp(
                                                                         'Peripherals Requests',
                                                                         gal_requests.Selected.UID = UID,
-                                                                        keyboard_count
+                                                                        headset_count
                                                                     ) = "10+ (Please specify amount in further detail section)"
                                                                 )
                                                             ),
@@ -4521,37 +4472,50 @@ Requests As screen:
                                                                         LookUp(
                                                                             'Peripherals Requests',
                                                                             gal_requests.Selected.UID = UID,
-                                                                            mouse_count
+                                                                            keyboard_count
                                                                         ) = "10+ (Please specify amount in further detail section)"
                                                                     )
                                                                 ),
                                                                 "Complete",
                                                                 If(
-                                                                    gal_requests.Selected.request_type = "Special IT Request",
-                                                                    "Logged with IT",
+                                                                    And(
+                                                                        gal_requests.Selected.request_type = "Peripherals",
+                                                                        Not(
+                                                                            LookUp(
+                                                                                'Peripherals Requests',
+                                                                                gal_requests.Selected.UID = UID,
+                                                                                mouse_count
+                                                                            ) = "10+ (Please specify amount in further detail section)"
+                                                                        )
+                                                                    ),
+                                                                    "Complete",
                                                                     If(
-                                                                        gal_requests.Selected.request_type = "IT Incident",
+                                                                        gal_requests.Selected.request_type = "Special IT Request",
                                                                         "Logged with IT",
                                                                         If(
-                                                                            gal_requests.Selected.request_type = "Smartcard Request",
+                                                                            gal_requests.Selected.request_type = "IT Incident",
                                                                             "Logged with IT",
                                                                             If(
-                                                                                gal_requests.Selected.request_type = "Smartcard Positions",
+                                                                                gal_requests.Selected.request_type = "Smartcard Request",
                                                                                 "Logged with IT",
                                                                                 If(
-                                                                                    And(
-                                                                                        gal_requests.Selected.request_type = "Smartcard Request",
-                                                                                        LookUp(
-                                                                                            'Smartcard Requests',
-                                                                                            gal_requests.Selected.UID = UID,
-                                                                                            new_or_replacement
-                                                                                        ) = "Replace a lost/stolen Smartcard"
-                                                                                    ),
-                                                                                    "Complete",
+                                                                                    gal_requests.Selected.request_type = "Smartcard Positions",
+                                                                                    "Logged with IT",
                                                                                     If(
-                                                                                        gal_requests.Selected.request_type = "Change Form",
-                                                                                        "HR Approval",
-                                                                                        "Error"
+                                                                                        And(
+                                                                                            gal_requests.Selected.request_type = "Smartcard Request",
+                                                                                            LookUp(
+                                                                                                'Smartcard Requests',
+                                                                                                gal_requests.Selected.UID = UID,
+                                                                                                new_or_replacement
+                                                                                            ) = "Replace a lost/stolen Smartcard"
+                                                                                        ),
+                                                                                        "Complete",
+                                                                                        If(
+                                                                                            gal_requests.Selected.request_type = "Change Form",
+                                                                                            "HR Approval",
+                                                                                            "Error"
+                                                                                        )
                                                                                     )
                                                                                 )
                                                                             )
@@ -4569,7 +4533,6 @@ Requests As screen:
                             )
                         )
                     )
-                )
                 )
             Visible: =varPopUp
             Width: =170
@@ -4659,7 +4622,7 @@ Requests As screen:
                     And(
                         gal_requests.Selected.request_type = "New Starter Form",
                         LookUp(
-                            'NewStarterForm',
+                            NewStarterForm,
                             gal_requests.Selected.UID = UID,
                             CurrentStage.Value
                         ) = "Complete"
