@@ -2389,7 +2389,7 @@ Requests As screen:
             Color: =RGBA(255, 255, 255, 1)
             Height: =20
             Icon: =Icon.CancelBadge
-            OnSelect: |
+            OnSelect: |+
                 =UpdateContext({varPopUp: false});
                 UpdateContext({varLaptopRequest: false});
                 UpdateContext({var4GLaptopRequest: false});
@@ -2399,6 +2399,8 @@ Requests As screen:
                 UpdateContext({varSmartcardPositionsRequest: false});
                 UpdateContext({varExpandActivity: false});
                 UpdateContext({varMobileRequest: false});
+                UpdateContext({varNewStarterLM: false});
+                
             Visible: =varPopUp
             Width: =20
             X: =1235
@@ -2444,7 +2446,7 @@ Requests As screen:
             Height: =768
             Visible: =varLoading
             Width: =1366
-            ZIndex: =44
+            ZIndex: =51
 
         timer_loading_1 As timer:
             AutoStart: =
@@ -2455,7 +2457,7 @@ Requests As screen:
             Visible: =false
             X: =1037
             Y: =18
-            ZIndex: =45
+            ZIndex: =52
 
         spinner_loading_1 As Spinner:
             BasePaletteColor: =
@@ -2469,7 +2471,7 @@ Requests As screen:
             Width: =1366
             X: =0
             Y: =0
-            ZIndex: =46
+            ZIndex: =53
 
     form_comment As form:
         DataSource: =Requests_Master
@@ -2587,7 +2589,7 @@ Requests As screen:
         Width: =32
         X: =173
         Y: =22
-        ZIndex: =47
+        ZIndex: =44
 
     Button3 As button:
         OnSelect: |-
@@ -2597,7 +2599,7 @@ Requests As screen:
         Width: =80
         X: =1286
         Y: =728
-        ZIndex: =48
+        ZIndex: =45
 
     Button3_1 As button:
         OnSelect: |-
@@ -2607,7 +2609,7 @@ Requests As screen:
         Width: =80
         X: =1197
         Y: =728
-        ZIndex: =49
+        ZIndex: =46
 
     Form4 As form.PowerApps_CoreControls_Form:
         DataSource: ='Mobile Requests'
@@ -2620,7 +2622,7 @@ Requests As screen:
         Width: =374
         X: =106
         Y: =162
-        ZIndex: =50
+        ZIndex: =47
 
         Title_DataCard2 As typedDataCard.fluentV9TextualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -3698,7 +3700,7 @@ Requests As screen:
         Width: =20
         X: =1255
         Y: =94
-        ZIndex: =51
+        ZIndex: =48
 
     Form2 As form:
         DataSource: =NewStarterForm
@@ -3710,7 +3712,7 @@ Requests As screen:
         Width: =374
         X: =106
         Y: =162
-        ZIndex: =52
+        ZIndex: =49
 
         UID_DataCard15 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -4621,6 +4623,18 @@ Requests As screen:
                 Y: =DataCardKey357.Y
                 ZIndex: =4
 
+    Icon1_2 As icon.Tools:
+        Color: =RGBA(79, 90, 94, 1)
+        Height: =55
+        Icon: =Icon.Tools
+        OnSelect: |-
+            =UpdateContext({varLoading: false})
+        Visible: =If(User().FullName in LookUp(Developers, User().FullName = Developer.DisplayName, Developer.DisplayName), true, false)
+        Width: =63
+        X: =1303
+        Y: =673
+        ZIndex: =50
+
     Timeline As group:
         Height: =5
         Width: =5
@@ -4635,6 +4649,16 @@ Requests As screen:
                 =/* 
                 NEED TO ADD CHANGE FORM!!!
                 */
+                If(
+                    And(
+                        gal_requests.Selected.request_type = "New Starter Form",
+                        LookUp(
+                            'NewStarterForm',
+                            gal_requests.Selected.UID = UID,
+                            LineManagerCompleteFlag
+                        ) = "True"
+                    ),
+                    success,
                 If(
                     And(
                         gal_requests.Selected.request_type = "IT Incident",
@@ -4865,6 +4889,7 @@ Requests As screen:
                         )
                     )
                 )
+                )
             Visible: =varPopUp
             Width: =35
             X: =954
@@ -4879,6 +4904,9 @@ Requests As screen:
             Size: =12
             Text: |-
                 =If(
+                    gal_requests.Selected.request_type = "New Starter Form",
+                    "Line Manager Form",
+                    If(
                     gal_requests.Selected.request_type = "IT Incident",
                     "Logged with IT",
                     If(
@@ -5021,6 +5049,9 @@ Requests As screen:
                             )
                         )
                     )
+                    
+                    )
+                
                 )
             Visible: =varPopUp
             Width: =170
@@ -5045,6 +5076,16 @@ Requests As screen:
                 =/* 
                 NEED TO ADD CHANGE FORM!!!
                 */
+                If(
+                    And(
+                        gal_requests.Selected.request_type = "New Starter Form",
+                        LookUp(
+                            'NewStarterForm',
+                            gal_requests.Selected.UID = UID,
+                            'HRApprove/Reject'.Value
+                        ) = "Approve"
+                    ),
+                    success,
                 If(
                     And(
                         gal_requests.Selected.request_type = "IT Incident",
@@ -5277,6 +5318,7 @@ Requests As screen:
                         )
                     )
                 )
+                )
             Visible: =varPopUp
             Width: =35
             X: =954
@@ -5291,6 +5333,9 @@ Requests As screen:
             Size: =12
             Text: |-
                 =If(
+                    gal_requests.Selected.request_type = "New Starter Form",
+                    "HR Approval",
+                    If(
                     gal_requests.Selected.request_type = "IT Incident",
                     "Complete",
                     If(
@@ -5434,6 +5479,7 @@ Requests As screen:
                         )
                     )
                 )
+                )
             Visible: =varPopUp
             Width: =170
             X: =996
@@ -5448,6 +5494,7 @@ Requests As screen:
                     Or(
                         gal_requests.Selected.request_type = "Mobile",
                         gal_requests.Selected.request_type = "Smartcard Positions",
+                        gal_requests.Selected.request_type = "New Starter Form",
                         gal_requests.Selected.request_type = "Special IT Request",
                         And(
                             gal_requests.Selected.request_type = "Peripherals",
@@ -5517,6 +5564,16 @@ Requests As screen:
                 =/* 
                 NEED TO ADD CHANGE FORM!!!
                 */
+                If(
+                    And(
+                        gal_requests.Selected.request_type = "New Starter Form",
+                        LookUp(
+                            'NewStarterForm',
+                            gal_requests.Selected.UID = UID,
+                            CurrentStage.Value
+                        ) = "Complete"
+                    ),
+                    success,
                 If(
                     And(
                         gal_requests.Selected.request_type = "Laptop Request",
@@ -5648,10 +5705,12 @@ Requests As screen:
                         )
                     )
                 )
+                )
             Visible: |-
                 =If(
                     Or(
                         gal_requests.Selected.request_type = "Mobile",
+                        gal_requests.Selected.request_type = "New Starter Form",
                         gal_requests.Selected.request_type = "Smartcard Positions",
                         gal_requests.Selected.request_type = "Special IT Request",
                         And(
@@ -5729,6 +5788,9 @@ Requests As screen:
                         gal_requests.Selected.request_type = "4G Laptop",
                         "Logged with IT",
                         If(
+                        gal_requests.Selected.request_type = "New Starter Form",
+                        "Complete",
+                        If(
                             gal_requests.Selected.request_type = "Mobile",
                             "Complete",
                             If(
@@ -5795,10 +5857,12 @@ Requests As screen:
                         )
                     )
                 )
+                )
             Visible: |-
                 =If(
                     Or(
                         gal_requests.Selected.request_type = "Mobile",
+                        gal_requests.Selected.request_type = "New Starter Form",
                         gal_requests.Selected.request_type = "Smartcard Positions",
                         gal_requests.Selected.request_type = "Special IT Request",
                         And(
