@@ -1056,7 +1056,7 @@ Requests As screen:
         Width: =374
         X: =106
         Y: =162
-        ZIndex: =21
+        ZIndex: =20
 
         UID_DataCard1_2 As typedDataCard.fluentV9TextualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -1850,6 +1850,15 @@ Requests As screen:
                 Y: =DataCardKey12_2.Y
                 ZIndex: =4
 
+    shp_divider_4 As rectangle:
+        Fill: =RGBA(53, 61, 63, 1)
+        Height: =598
+        Visible: =varPopUp
+        Width: =1
+        X: =480
+        Y: =97
+        ZIndex: =21
+
     grp_pop_up_1 As group:
         Height: =5
         Width: =5
@@ -1897,7 +1906,7 @@ Requests As screen:
             Width: =354
             X: =905
             Y: =162
-            ZIndex: =9
+            ZIndex: =8
 
             UID_DataCard3_1 As typedDataCard.fluentV9TextualEditCard:
                 BorderStyle: =BorderStyle.Solid
@@ -2239,7 +2248,7 @@ Requests As screen:
             Visible: =varPopUp
             X: =127
             Y: =111
-            ZIndex: =10
+            ZIndex: =9
 
         lbl_pop_up_outcome_1 As label:
             Color: =RGBA(77, 164, 65, 1)
@@ -2248,7 +2257,7 @@ Requests As screen:
             Visible: =varPopUp
             X: =928
             Y: =111
-            ZIndex: =11
+            ZIndex: =10
 
         btn_submit_approval_outcome_1 As Button:
             Appearance: ='ButtonCanvas.Appearance'.Secondary
@@ -2261,7 +2270,7 @@ Requests As screen:
             Width: =96
             X: =1139
             Y: =653
-            ZIndex: =12
+            ZIndex: =11
 
         shp_divider_1 As rectangle:
             Fill: =RGBA(53, 61, 63, 1)
@@ -2270,16 +2279,7 @@ Requests As screen:
             Width: =1
             X: =906
             Y: =96
-            ZIndex: =13
-
-    shp_divider_4 As rectangle:
-        Fill: =RGBA(53, 61, 63, 1)
-        Height: =598
-        Visible: =varPopUp
-        Width: =1
-        X: =480
-        Y: =97
-        ZIndex: =22
+            ZIndex: =12
 
     lbl_pop_up_details_4 As label:
         Color: =RGBA(77, 164, 65, 1)
@@ -2288,7 +2288,7 @@ Requests As screen:
         Visible: =varPopUp
         X: =504
         Y: =111
-        ZIndex: =23
+        ZIndex: =22
 
     lbl_pop_up_details_5 As label:
         Color: =RGBA(77, 164, 65, 1)
@@ -2297,7 +2297,7 @@ Requests As screen:
         Visible: =varPopUp
         X: =504
         Y: =431
-        ZIndex: =24
+        ZIndex: =23
 
     txtin_Comment As text:
         BorderColor: =RGBA(88,89,91,0.25)
@@ -2316,7 +2316,7 @@ Requests As screen:
         Width: =394
         X: =491
         Y: =471
-        ZIndex: =25
+        ZIndex: =24
 
     Icon7 As icon.Send:
         Color: =RGBA(88,89,91,1)
@@ -2327,7 +2327,7 @@ Requests As screen:
         Width: =28
         X: =857
         Y: =659
-        ZIndex: =26
+        ZIndex: =25
 
     grp_pop_up_3 As group:
         Height: =5
@@ -2342,7 +2342,7 @@ Requests As screen:
             Height: =768
             Visible: =varPopUp
             Width: =1366
-            ZIndex: =14
+            ZIndex: =13
 
         shp_details_bkg_3 As rectangle:
             BorderColor: =RGBA(88, 89, 91, 1)
@@ -2353,7 +2353,7 @@ Requests As screen:
             Width: =1153
             X: =106
             Y: =72
-            ZIndex: =15
+            ZIndex: =14
 
         shp_pop_up_header_3 As rectangle:
             BorderColor: =RGBA(88, 89, 91, 1)
@@ -2364,7 +2364,7 @@ Requests As screen:
             Width: =1153
             X: =106
             Y: =72
-            ZIndex: =16
+            ZIndex: =15
 
         pop_up_cancel_badge_3 As icon.CancelBadge:
             Color: =RGBA(255, 255, 255, 1)
@@ -2386,7 +2386,7 @@ Requests As screen:
             Width: =20
             X: =1235
             Y: =74
-            ZIndex: =17
+            ZIndex: =16
 
         lbl_pop_up_details_3 As label:
             Color: =RGBA(77, 164, 65, 1)
@@ -2395,7 +2395,7 @@ Requests As screen:
             Visible: =varPopUp
             X: =127
             Y: =111
-            ZIndex: =18
+            ZIndex: =17
 
         lbl_pop_up_outcome_3 As label:
             Color: =RGBA(77, 164, 65, 1)
@@ -2404,7 +2404,7 @@ Requests As screen:
             Visible: =varPopUp
             X: =928
             Y: =111
-            ZIndex: =19
+            ZIndex: =18
 
         shp_divider_3 As rectangle:
             Fill: =RGBA(53, 61, 63, 1)
@@ -2413,7 +2413,7 @@ Requests As screen:
             Width: =1
             X: =906
             Y: =96
-            ZIndex: =20
+            ZIndex: =19
 
     grp_loading_screen_1 As group:
         Height: =5
@@ -2427,7 +2427,7 @@ Requests As screen:
             Height: =768
             Visible: =varLoading
             Width: =1366
-            ZIndex: =51
+            ZIndex: =49
 
         timer_loading_1 As timer:
             AutoStart: =
@@ -2438,7 +2438,7 @@ Requests As screen:
             Visible: =false
             X: =1037
             Y: =18
-            ZIndex: =52
+            ZIndex: =50
 
         spinner_loading_1 As Spinner:
             BasePaletteColor: =
@@ -2452,7 +2452,7 @@ Requests As screen:
             Width: =1366
             X: =0
             Y: =0
-            ZIndex: =53
+            ZIndex: =51
 
     form_comment As form:
         DataSource: =Requests_Master
@@ -2461,7 +2461,7 @@ Requests As screen:
         Item: =gal_requests.Selected
         Visible: =false
         Width: =316
-        ZIndex: =41
+        ZIndex: =40
 
         activity_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -2544,7 +2544,7 @@ Requests As screen:
         Width: =20
         X: =856
         Y: =133
-        ZIndex: =42
+        ZIndex: =41
 
     Label13 As label:
         BorderColor: =RGBA(88,89,91,0.25)
@@ -2560,7 +2560,7 @@ Requests As screen:
         Width: =394
         X: =491
         Y: =162
-        ZIndex: =43
+        ZIndex: =42
 
     Icon8 As icon.BackArrow:
         Color: =RGBA(255, 255, 255, 1)
@@ -2570,7 +2570,7 @@ Requests As screen:
         Width: =32
         X: =173
         Y: =22
-        ZIndex: =44
+        ZIndex: =43
 
     Button3 As button:
         OnSelect: |-
@@ -2580,7 +2580,7 @@ Requests As screen:
         Width: =80
         X: =1286
         Y: =728
-        ZIndex: =45
+        ZIndex: =44
 
     Button3_1 As button:
         OnSelect: |-
@@ -2590,7 +2590,7 @@ Requests As screen:
         Width: =80
         X: =1197
         Y: =728
-        ZIndex: =46
+        ZIndex: =45
 
     Form4 As form.PowerApps_CoreControls_Form:
         DataSource: ='Mobile Requests'
@@ -2603,7 +2603,7 @@ Requests As screen:
         Width: =374
         X: =106
         Y: =162
-        ZIndex: =47
+        ZIndex: =46
 
         Title_DataCard2 As typedDataCard.fluentV9TextualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -3674,7 +3674,7 @@ Requests As screen:
         Width: =63
         X: =1303
         Y: =673
-        ZIndex: =50
+        ZIndex: =47
 
     form_New_Starter_Form_LM As form:
         DataSource: =NewStarterForm
@@ -3687,7 +3687,7 @@ Requests As screen:
         Width: =374
         X: =106
         Y: =162
-        ZIndex: =52
+        ZIndex: =48
 
         UID_DataCard10 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -3720,18 +3720,18 @@ Requests As screen:
                 ZIndex: =1
 
             DataCardValue1 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: =RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
+                PressedBorderColor: =RGBA(88,89,91,0.5)
+                PressedColor: =Color.Black
                 Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -3795,18 +3795,18 @@ Requests As screen:
                 ZIndex: =1
 
             DataCardValue41 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: =RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
+                PressedBorderColor: =RGBA(88,89,91,0.5)
+                PressedColor: =Color.Black
                 Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -3870,18 +3870,18 @@ Requests As screen:
                 ZIndex: =1
 
             DataCardValue42 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: =RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
+                PressedBorderColor: =RGBA(88,89,91,0.5)
+                PressedColor: =Color.Black
                 Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -3945,18 +3945,18 @@ Requests As screen:
                 ZIndex: =1
 
             DataCardValue43 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: =RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
+                PressedBorderColor: =RGBA(88,89,91,0.5)
+                PressedColor: =Color.Black
                 Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -4020,18 +4020,18 @@ Requests As screen:
                 ZIndex: =1
 
             DataCardValue55 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: =RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
+                PressedBorderColor: =RGBA(88,89,91,0.5)
+                PressedColor: =Color.Black
                 Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -4094,14 +4094,18 @@ Requests As screen:
                 ZIndex: =1
 
             DataCardValue56 As combobox:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: =RGBA(88,89,91,0.25)
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 Items: =Choices([@NewStarterForm].field_65)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PressedBorderColor: =RGBA(88,89,91,0.5)
+                PressedColor: =Color.Black
                 SearchFields: =["Value"]
                 SearchItems: =Choices(NewStarterForm.field_65,DataCardValue56.SearchText)
                 SelectMultiple: =false
@@ -4168,18 +4172,18 @@ Requests As screen:
                 ZIndex: =1
 
             DataCardValue57 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: =RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
+                PressedBorderColor: =RGBA(88,89,91,0.5)
+                PressedColor: =Color.Black
                 Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -4243,18 +4247,18 @@ Requests As screen:
                 ZIndex: =1
 
             DataCardValue59 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: =RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
+                PressedBorderColor: =RGBA(88,89,91,0.5)
+                PressedColor: =Color.Black
                 Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -4318,18 +4322,18 @@ Requests As screen:
                 ZIndex: =1
 
             DataCardValue174 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: =RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
+                PressedBorderColor: =RGBA(88,89,91,0.5)
+                PressedColor: =Color.Black
                 Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -4392,12 +4396,13 @@ Requests As screen:
                 ZIndex: =1
 
             DataCardValue175 As datepicker:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: =RGBA(88,89,91,0.25)
                 DefaultDate: =Parent.Default
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -4464,12 +4469,13 @@ Requests As screen:
                 ZIndex: =1
 
             DataCardValue176 As datepicker:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: =RGBA(88,89,91,0.25)
                 DefaultDate: =Parent.Default
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -4537,18 +4543,18 @@ Requests As screen:
                 ZIndex: =1
 
             DataCardValue177 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: =RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
+                PressedBorderColor: =RGBA(88,89,91,0.5)
+                PressedColor: =Color.Black
                 Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -4840,7 +4846,7 @@ Requests As screen:
             Width: =35
             X: =954
             Y: =179
-            ZIndex: =27
+            ZIndex: =26
 
         tl_stage_1_lbl As label:
             Align: =Align.Center
@@ -5003,7 +5009,7 @@ Requests As screen:
             Width: =170
             X: =996
             Y: =179
-            ZIndex: =28
+            ZIndex: =27
 
         tl_stage_1_line As rectangle:
             BorderStyle: =BorderStyle.None
@@ -5013,7 +5019,7 @@ Requests As screen:
             Width: =2
             X: =1079
             Y: =214
-            ZIndex: =29
+            ZIndex: =28
 
         tl_stage_2_img As image:
             DisplayMode: =DisplayMode.View
@@ -5269,7 +5275,7 @@ Requests As screen:
             Width: =35
             X: =954
             Y: =253
-            ZIndex: =30
+            ZIndex: =29
 
         tl_stage_2_lbl As label:
             Align: =Align.Center
@@ -5430,7 +5436,7 @@ Requests As screen:
             Width: =170
             X: =996
             Y: =253
-            ZIndex: =31
+            ZIndex: =30
 
         tl_stage_2_line As rectangle:
             Fill: =RGBA(88, 89, 91, 1)
@@ -5501,7 +5507,7 @@ Requests As screen:
             Width: =2
             X: =1079
             Y: =288
-            ZIndex: =32
+            ZIndex: =31
 
         tl_stage_3_img As image:
             DisplayMode: =DisplayMode.View
@@ -5718,7 +5724,7 @@ Requests As screen:
             Width: =35
             X: =954
             Y: =327
-            ZIndex: =33
+            ZIndex: =32
 
         tl_stage_3_lbl As label:
             Align: =Align.Center
@@ -5870,7 +5876,7 @@ Requests As screen:
             Width: =170
             X: =996
             Y: =327
-            ZIndex: =34
+            ZIndex: =33
 
         tl_stage_3_line As rectangle:
             Fill: =RGBA(88, 89, 91, 1)
@@ -5896,7 +5902,7 @@ Requests As screen:
             Width: =2
             X: =1079
             Y: =362
-            ZIndex: =35
+            ZIndex: =34
 
         tl_stage_4_img As image:
             DisplayMode: =DisplayMode.View
@@ -5960,7 +5966,7 @@ Requests As screen:
             Width: =35
             X: =954
             Y: =401
-            ZIndex: =36
+            ZIndex: =35
 
         tl_stage_4_lbl As label:
             Align: =Align.Center
@@ -6011,7 +6017,7 @@ Requests As screen:
             Width: =170
             X: =996
             Y: =401
-            ZIndex: =37
+            ZIndex: =36
 
         tl_stage_5_img As image:
             DisplayMode: =DisplayMode.View
@@ -6026,7 +6032,7 @@ Requests As screen:
             Width: =35
             X: =954
             Y: =475
-            ZIndex: =38
+            ZIndex: =37
 
         tl_stage_5_lbl As label:
             Align: =Align.Center
@@ -6044,7 +6050,7 @@ Requests As screen:
             Width: =170
             X: =996
             Y: =475
-            ZIndex: =39
+            ZIndex: =38
 
         tl_stage_4_line As rectangle:
             Fill: =RGBA(88, 89, 91, 1)
@@ -6053,5 +6059,5 @@ Requests As screen:
             Width: =2
             X: =1079
             Y: =436
-            ZIndex: =40
+            ZIndex: =39
 
