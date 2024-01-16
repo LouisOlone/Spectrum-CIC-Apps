@@ -2393,8 +2393,8 @@ Requests As screen:
             FontWeight: =FontWeight.Bold
             Text: ="Details"
             Visible: =varPopUp
-            X: =127
-            Y: =111
+            X: =139
+            Y: =114
             ZIndex: =17
 
         lbl_pop_up_outcome_3 As label:
@@ -2427,7 +2427,7 @@ Requests As screen:
             Height: =768
             Visible: =varLoading
             Width: =1366
-            ZIndex: =49
+            ZIndex: =48
 
         timer_loading_1 As timer:
             AutoStart: =
@@ -2438,7 +2438,7 @@ Requests As screen:
             Visible: =false
             X: =1037
             Y: =18
-            ZIndex: =50
+            ZIndex: =49
 
         spinner_loading_1 As Spinner:
             BasePaletteColor: =
@@ -2452,15 +2452,15 @@ Requests As screen:
             Width: =1366
             X: =0
             Y: =0
-            ZIndex: =51
+            ZIndex: =50
 
     form_comment As form:
         DataSource: =Requests_Master
         Fill: =RGBA(240, 98, 15, 1)
-        Height: =174
+        Height: =18
         Item: =gal_requests.Selected
         Visible: =false
-        Width: =316
+        Width: =54
         ZIndex: =40
 
         activity_DataCard1 As typedDataCard.textualEditCard:
@@ -2474,7 +2474,7 @@ Requests As screen:
             MaxLength: =DataSourceInfo([@Requests_Master], DataSourceInfo.MaxLength, "activity")
             Required: =false
             Update: =DataCardValue58.Text
-            Width: =105
+            Width: =18
             X: =0
             Y: =0
             ZIndex: =46
@@ -3664,18 +3664,6 @@ Requests As screen:
                 Y: =DataCardKey158.Y
                 ZIndex: =4
 
-    Icon1_2 As icon.Tools:
-        Color: =RGBA(79, 90, 94, 1)
-        Height: =55
-        Icon: =Icon.Tools
-        OnSelect: |-
-            =UpdateContext({varLoading: false})
-        Visible: =If(User().FullName in LookUp(Developers, User().FullName = Developer.DisplayName, Developer.DisplayName), true, false)
-        Width: =63
-        X: =1303
-        Y: =673
-        ZIndex: =47
-
     form_New_Starter_Form_LM As form:
         DataSource: =NewStarterForm
         DefaultMode: =FormMode.View
@@ -3687,7 +3675,7 @@ Requests As screen:
         Width: =374
         X: =106
         Y: =162
-        ZIndex: =48
+        ZIndex: =47
 
         UID_DataCard10 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -3721,7 +3709,7 @@ Requests As screen:
                 ZIndex: =1
 
             DataCardValue1 As text:
-                BorderColor: =RGBA(88,89,91,0.25)
+                BorderColor: =RGBA(255, 255, 255, 1)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisabledColor: =Color.Black
@@ -3738,7 +3726,7 @@ Requests As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey1.Y + DataCardKey1.Height + 5
+                Y: =46
                 ZIndex: =2
 
             ErrorMessage1 As label:
@@ -3803,17 +3791,20 @@ Requests As screen:
                 DisplayMode: =Parent.DisplayMode
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =21
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingTop: =0
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
                 Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey42.Y + DataCardKey42.Height + 5
+                Y: =46
                 ZIndex: =2
 
             ErrorMessage42 As label:
@@ -3888,7 +3879,7 @@ Requests As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey43.Y + DataCardKey43.Height + 5
+                Y: =46
                 ZIndex: =2
 
             ErrorMessage43 As label:
@@ -4587,6 +4578,18 @@ Requests As screen:
                 Wrap: =false
                 Y: =DataCardKey177.Y
                 ZIndex: =4
+
+    Icon1_2 As icon.Tools:
+        Color: =RGBA(79, 90, 94, 1)
+        Height: =55
+        Icon: =Icon.Tools
+        OnSelect: |-
+            =UpdateContext({varLoading: false})
+        Visible: =If(User().FullName in LookUp(Developers, User().FullName = Developer.DisplayName, Developer.DisplayName), true, false)
+        Width: =63
+        X: =1303
+        Y: =673
+        ZIndex: =51
 
     Timeline As group:
         Height: =5
