@@ -210,12 +210,27 @@ Requests As screen:
                                                     }
                                                 )
                                             ),
+                                            // View Interim Probation Form
+                                        If(
+                                            ThisItem.request_type = "Interim Probation Form",
+                                            And(
+                                                UpdateContext({varInterimProbationForm: true}),
+                                                UpdateContext(
+                                                    {
+                                                        varInterimProbationFormDetails: LookUp(
+                                                            'Interim probation review form',
+                                                            UID = ThisItem.UID
+                                                        )
+                                                    }
+                                                )
+                                            ),
                                             false
                                         )
                                     )
                                 )
                             )
                         )
+                    )
                     )
                     )
                 );
@@ -4651,7 +4666,9 @@ Requests As screen:
         DataSource: ='Interim probation review form'
         DefaultMode: =FormMode.View
         Height: =525
+        Item: =varInterimProbationFormDetails
         NumberOfColumns: =1
+        Visible: =varInterimProbationForm
         Width: =374
         X: =106
         Y: =162
