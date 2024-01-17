@@ -1,7 +1,5 @@
 Requests As screen:
 
-    banner_1 As banner:
-
     shp_sidebar_3 As button:
         DisplayMode: =DisplayMode.View
         Fill: =RGBA(77,164,65,1)
@@ -11,7 +9,65 @@ Requests As screen:
         Width: =1029
         X: =173
         Y: =111
+        ZIndex: =1
+
+    lbl_UID_1 As label:
+        Align: =Align.Center
+        Font: =Font.Arial
+        FontWeight: =FontWeight.Bold
+        Size: =10
+        Text: ="UID"
+        Width: =item_UID.Width
+        X: =226
+        Y: =108
         ZIndex: =2
+
+    lbl_date_received_2 As label:
+        Align: =Align.Center
+        Font: =Font.Arial
+        FontWeight: =FontWeight.Bold
+        Size: =10
+        Text: ="Date Received"
+        Width: =item_date_received.Width
+        X: =328
+        Y: =105
+        ZIndex: =3
+
+    lbl_request_type_1 As label:
+        Align: =Align.Center
+        Font: =Font.Arial
+        FontWeight: =FontWeight.Bold
+        Size: =10
+        Text: ="Request Type"
+        Width: =item_request_type.Width
+        X: =487
+        Y: =105
+        ZIndex: =4
+
+    lbl_stage_1 As label:
+        Align: =Align.Center
+        Font: =Font.Arial
+        FontWeight: =FontWeight.Bold
+        Size: =10
+        Text: ="Stage"
+        Width: =item_stage.Width
+        X: =790
+        Y: =105
+        ZIndex: =5
+
+    lbl_request_type_2 As label:
+        Align: =Align.Center
+        Font: =Font.Arial
+        FontWeight: =FontWeight.Bold
+        Size: =10
+        Text: ="Requestor"
+        Width: =item_request_type.Width
+        X: =643
+        Y: =105
+        ZIndex: =6
+
+    banner_1 As banner:
+        ZIndex: =7
 
     "gal_requests As gallery.'BrowseLayout_Vertical_OneTextVariant_ver5.0'":
         DelayItemLoading: =true
@@ -33,7 +89,7 @@ Requests As screen:
         Width: =955
         X: =205
         Y: =142
-        ZIndex: =3
+        ZIndex: =8
 
         NextArrow2_1 As icon.ChevronRight:
             AccessibleLabel: =Self.Tooltip
@@ -252,7 +308,7 @@ Requests As screen:
         Visible: =var4GLaptopRequest
         X: =106
         Y: =162
-        ZIndex: =4
+        ZIndex: =9
 
         UID_DataCard1_1 As typedDataCard.fluentV9TextualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -1045,6 +1101,428 @@ Requests As screen:
                 Y: =DataCardKey12_1.Y
                 ZIndex: =4
 
+    grp_pop_up_1 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =21
+
+        shp_pop_up_bkg_1 As rectangle:
+            BorderColor: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(255, 255, 255, 0.9)
+            Height: =768
+            Visible: =varPopUp
+            Width: =1366
+            ZIndex: =10
+
+        shp_details_bkg_1 As rectangle:
+            BorderColor: =RGBA(88, 89, 91, 1)
+            BorderThickness: =2
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =623
+            Visible: =varPopUp
+            Width: =1153
+            X: =106
+            Y: =72
+            ZIndex: =11
+
+        shp_pop_up_header_1 As rectangle:
+            BorderColor: =RGBA(88, 89, 91, 1)
+            BorderThickness: =1
+            Fill: =RGBA(88, 89, 91, 1)
+            Height: =24
+            Visible: =varPopUp
+            Width: =1153
+            X: =106
+            Y: =72
+            ZIndex: =12
+
+        form_approval_outcome_1 As form.PowerApps_CoreControls_Form:
+            DataSource: =Inbox
+            Height: =480
+            Item: =gal_inbox.Selected
+            NumberOfColumns: =1
+            UseFluentV9Cards: =true
+            Visible: =varPopUp
+            Width: =354
+            X: =905
+            Y: =162
+            ZIndex: =13
+
+            UID_DataCard3_1 As typedDataCard.fluentV9TextualEditCard:
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="UID"
+                Default: =ThisItem.UID
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@Inbox],DataSourceInfo.DisplayName,"UID")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =70
+                MaxLength: =DataSourceInfo([@Inbox], DataSourceInfo.MaxLength, "UID")
+                Required: =false
+                Update: =DataCardValue26_1.Value
+                Width: =354
+                X: =0
+                Y: =0
+                ZIndex: =1
+
+                DataCardKey26_1 As Text:
+                    DisplayMode: =DisplayMode.Edit
+                    FontColor: =
+                    Height: =22
+                    Text: =Parent.DisplayName
+                    Weight: ='TextCanvas.Weight'.Semibold
+                    Width: =Parent.Width - 48
+                    Wrap: =false
+                    X: =24
+                    Y: =10
+                    ZIndex: =1
+
+                "DataCardValue26_1 As 'Text input'":
+                    AccessibleLabel: =Parent.DisplayName
+                    BasePaletteColor: =
+                    DisplayMode: =DisplayMode.View
+                    FontColor: =
+                    Height: =32
+                    Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                    Required: =Parent.Required
+                    ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                    Value: =Parent.Default
+                    Width: =Parent.Width - 48
+                    X: =24
+                    Y: =DataCardKey26_1.Y + DataCardKey26_1.Height + 4
+                    ZIndex: =2
+
+                ErrorMessage26_1 As Text:
+                    DisplayMode: =DisplayMode.Edit
+                    FontColor: =
+                    Height: =30
+                    Text: =Parent.Error
+                    Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =Parent.Width - 48
+                    Wrap: =true
+                    X: =24
+                    Y: =DataCardValue26_1.Y + DataCardValue26_1.Height
+                    ZIndex: =3
+
+                StarVisible26_1 As Text:
+                    Align: ='TextCanvas.Align'.Center
+                    DisplayMode: =DisplayMode.Edit
+                    FontColor: =
+                    Height: =30
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    X: =0
+                    Y: =DataCardKey26_1.Y
+                    ZIndex: =4
+
+            comments_DataCard1_1 As typedDataCard.fluentV9TextualEditCard:
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="comments"
+                Default: =ThisItem.comments
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@Inbox],DataSourceInfo.DisplayName,"comments")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =70
+                MaxLength: =DataSourceInfo([@Inbox], DataSourceInfo.MaxLength, "comments")
+                Required: =If(DataCardValue21_1.Selected.Value="Reject", true, false)
+                Update: =DataCardValue25_1.Value
+                Width: =354
+                X: =0
+                Y: =3
+                ZIndex: =1
+
+                DataCardKey25_2 As Text:
+                    DisplayMode: =DisplayMode.Edit
+                    FontColor: =
+                    Height: =22
+                    Text: ="Your Comments"
+                    Weight: ='TextCanvas.Weight'.Semibold
+                    Width: =Parent.Width - 48
+                    Wrap: =false
+                    X: =24
+                    Y: =10
+                    ZIndex: =1
+
+                "DataCardValue25_1 As 'Text input'":
+                    AccessibleLabel: =Parent.DisplayName
+                    BasePaletteColor: =
+                    DisplayMode: =Parent.DisplayMode
+                    FontColor: =
+                    Height: =240
+                    Mode: ='TextInputCanvas.Mode'.Multiline
+                    Required: =Parent.Required
+                    ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                    Value: =Parent.Default
+                    Width: =Parent.Width - 48
+                    X: =24
+                    Y: =DataCardKey25_2.Y + DataCardKey25_2.Height + 4
+                    ZIndex: =2
+
+                ErrorMessage25_1 As Text:
+                    DisplayMode: =DisplayMode.Edit
+                    FontColor: =
+                    Height: =30
+                    Text: =Parent.Error
+                    Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =Parent.Width - 48
+                    Wrap: =true
+                    X: =24
+                    Y: =DataCardValue25_1.Y + DataCardValue25_1.Height
+                    ZIndex: =3
+
+                StarVisible25_1 As Text:
+                    Align: ='TextCanvas.Align'.Center
+                    DisplayMode: =DisplayMode.Edit
+                    FontColor: =
+                    Height: =30
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    X: =0
+                    Y: =DataCardKey25_2.Y
+                    ZIndex: =4
+
+            Attachments_DataCard10_1 As typedDataCard.attachmentsEditCard:
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="{Attachments}"
+                Default: =ThisItem.Attachments
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@Inbox],DataSourceInfo.DisplayName,"{Attachments}")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                Required: =false
+                Update: =DataCardValue115_1.Attachments
+                Visible: =If(gal_inbox.Selected.'Has attachments'=true, true, false)
+                Width: =354
+                X: =0
+                Y: =4
+                ZIndex: =1
+
+                DataCardValue115_1 As attachments:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    DisplayMode: =DisplayMode.View
+                    Height: =157
+                    IsInDataCard: =true
+                    Items: =Parent.Default
+                    PaddingBottom: =5
+                    PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                    PaddingRight: =5
+                    PaddingTop: =5
+                    Tooltip: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =25
+                    ZIndex: =2
+
+                ErrorMessage115_1 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue115_1.Y + DataCardValue115_1.Height
+                    ZIndex: =3
+
+                StarVisible115_1 As label:
+                    Align: =Align.Center
+                    Height: =
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =
+                    ZIndex: =4
+
+                DataCardKey25_3 As Text:
+                    DisplayMode: =DisplayMode.Edit
+                    FontColor: =
+                    Height: =22
+                    Text: ="Attachments"
+                    Weight: ='TextCanvas.Weight'.Semibold
+                    Width: =Parent.Width - 48
+                    Wrap: =false
+                    X: =24
+                    Y: =5
+                    ZIndex: =5
+
+            decision_DataCard1_1 As typedDataCard.fluentV9ComboBoxEditCard:
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="decision"
+                Default: =ThisItem.decision
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@Inbox],DataSourceInfo.DisplayName,"decision")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =70
+                Required: =false
+                Update: =DataCardValue21_1.Selected
+                Width: =354
+                X: =0
+                Y: =1
+                ZIndex: =17
+
+                DataCardKey21_1 As Text:
+                    DisplayMode: =DisplayMode.Edit
+                    FontColor: =
+                    Height: =22
+                    Text: ="Your Decision"
+                    Weight: ='TextCanvas.Weight'.Semibold
+                    Width: =Parent.Width - 48
+                    Wrap: =false
+                    X: =24
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue21_1 As Combobox.pcfdataset:
+                    AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =32
+                    Items: =Choices([@Inbox].decision)
+                    ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                    Width: =Parent.Width - 48
+                    X: =24
+                    Y: =DataCardKey21_1.Y + DataCardKey21_1.Height + 4
+                    ZIndex: =2
+
+                ErrorMessage21_1 As Text:
+                    DisplayMode: =DisplayMode.Edit
+                    FontColor: =
+                    Height: =30
+                    Text: =Parent.Error
+                    Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =Parent.Width - 48
+                    Wrap: =true
+                    X: =24
+                    Y: =DataCardValue21_1.Y + DataCardValue21_1.Height
+                    ZIndex: =3
+
+                StarVisible21_1 As Text:
+                    Align: ='TextCanvas.Align'.Center
+                    DisplayMode: =DisplayMode.Edit
+                    FontColor: =
+                    Height: =20
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    X: =0
+                    Y: =DataCardKey21_1.Y
+                    ZIndex: =4
+
+            decision_date_DataCard1_1 As typedDataCard.fluentV9DateEditCard:
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="decision_date"
+                Default: =ThisItem.decision_date
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@Inbox],DataSourceInfo.DisplayName,"decision_date")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =70
+                Required: =false
+                Update: =DataCardValue22_1.SelectedDate
+                Width: =354
+                X: =0
+                Y: =2
+                ZIndex: =17
+
+                DataCardKey22_1 As Text:
+                    DisplayMode: =DisplayMode.Edit
+                    FontColor: =
+                    Height: =22
+                    Text: ="Decision Date"
+                    Weight: ='TextCanvas.Weight'.Semibold
+                    Width: =Parent.Width - 48
+                    Wrap: =false
+                    X: =24
+                    Y: =10
+                    ZIndex: =1
+
+                "DataCardValue22_1 As 'Date picker'":
+                    AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                    BasePaletteColor: =
+                    DisplayMode: =DisplayMode.View
+                    EndYear: =Year(Today())+100
+                    FontColor: =
+                    Format: ='DatePickerCanvas.Format'.LongAbbreviated
+                    Height: =32
+                    SelectedDate: =Today()
+                    StartOfWeek: ="Monday"
+                    StartYear: =1900
+                    ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                    Width: =Parent.Width - 48
+                    X: =24
+                    Y: =DataCardKey22_1.Y + DataCardKey22_1.Height + 4
+                    ZIndex: =2
+
+                ErrorMessage22_1 As Text:
+                    DisplayMode: =DisplayMode.Edit
+                    FontColor: =
+                    Height: =30
+                    Text: =Parent.Error
+                    Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =Parent.Width - 48
+                    Wrap: =true
+                    X: =24
+                    Y: =DataCardValue22_1.Y + DataCardValue22_1.Height
+                    ZIndex: =3
+
+                StarVisible22_1 As Text:
+                    Align: ='TextCanvas.Align'.Center
+                    DisplayMode: =DisplayMode.Edit
+                    FontColor: =
+                    Height: =30
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    X: =0
+                    Y: =DataCardKey22_1.Y
+                    ZIndex: =4
+
+        lbl_pop_up_details_1 As label:
+            Color: =RGBA(77, 164, 65, 1)
+            FontWeight: =FontWeight.Bold
+            Text: ="Details"
+            Visible: =varPopUp
+            X: =127
+            Y: =111
+            ZIndex: =14
+
+        lbl_pop_up_outcome_1 As label:
+            Color: =RGBA(77, 164, 65, 1)
+            FontWeight: =FontWeight.Bold
+            Text: ="Outcome"
+            Visible: =varPopUp
+            X: =928
+            Y: =111
+            ZIndex: =15
+
+        btn_submit_approval_outcome_1 As Button:
+            Appearance: ='ButtonCanvas.Appearance'.Secondary
+            BasePaletteColor: =
+            DisplayMode: =DisplayMode.Edit
+            FontColor: =
+            Height: =32
+            Text: ="Submit"
+            Visible: =varPopUp
+            Width: =96
+            X: =1139
+            Y: =653
+            ZIndex: =16
+
+        shp_divider_1 As rectangle:
+            Fill: =RGBA(53, 61, 63, 1)
+            Height: =598
+            Visible: =varPopUp
+            Width: =1
+            X: =906
+            Y: =96
+            ZIndex: =17
+
     form_4G_Laptop_2 As form.PowerApps_CoreControls_Form:
         DataSource: ='4G Laptop Requests'
         DefaultMode: =FormMode.View
@@ -1056,7 +1534,7 @@ Requests As screen:
         Width: =374
         X: =106
         Y: =162
-        ZIndex: =20
+        ZIndex: =25
 
         UID_DataCard1_2 As typedDataCard.fluentV9TextualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -1857,429 +2335,7 @@ Requests As screen:
         Width: =1
         X: =480
         Y: =97
-        ZIndex: =21
-
-    grp_pop_up_1 As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =21
-
-        shp_pop_up_bkg_1 As rectangle:
-            BorderColor: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(255, 255, 255, 0.9)
-            Height: =768
-            Visible: =varPopUp
-            Width: =1366
-            ZIndex: =5
-
-        shp_details_bkg_1 As rectangle:
-            BorderColor: =RGBA(88, 89, 91, 1)
-            BorderThickness: =2
-            Fill: =RGBA(255, 255, 255, 1)
-            Height: =623
-            Visible: =varPopUp
-            Width: =1153
-            X: =106
-            Y: =72
-            ZIndex: =6
-
-        shp_pop_up_header_1 As rectangle:
-            BorderColor: =RGBA(88, 89, 91, 1)
-            BorderThickness: =1
-            Fill: =RGBA(88, 89, 91, 1)
-            Height: =24
-            Visible: =varPopUp
-            Width: =1153
-            X: =106
-            Y: =72
-            ZIndex: =7
-
-        form_approval_outcome_1 As form.PowerApps_CoreControls_Form:
-            DataSource: =Inbox
-            Height: =480
-            Item: =gal_inbox.Selected
-            NumberOfColumns: =1
-            UseFluentV9Cards: =true
-            Visible: =varPopUp
-            Width: =354
-            X: =905
-            Y: =162
-            ZIndex: =8
-
-            UID_DataCard3_1 As typedDataCard.fluentV9TextualEditCard:
-                BorderStyle: =BorderStyle.Solid
-                DataField: ="UID"
-                Default: =ThisItem.UID
-                DisplayMode: =Parent.DisplayMode
-                DisplayName: =DataSourceInfo([@Inbox],DataSourceInfo.DisplayName,"UID")
-                Fill: =RGBA(0, 0, 0, 0)
-                Height: =70
-                MaxLength: =DataSourceInfo([@Inbox], DataSourceInfo.MaxLength, "UID")
-                Required: =false
-                Update: =DataCardValue26_1.Value
-                Width: =354
-                X: =0
-                Y: =0
-                ZIndex: =1
-
-                DataCardKey26_1 As Text:
-                    DisplayMode: =DisplayMode.Edit
-                    FontColor: =
-                    Height: =22
-                    Text: =Parent.DisplayName
-                    Weight: ='TextCanvas.Weight'.Semibold
-                    Width: =Parent.Width - 48
-                    Wrap: =false
-                    X: =24
-                    Y: =10
-                    ZIndex: =1
-
-                "DataCardValue26_1 As 'Text input'":
-                    AccessibleLabel: =Parent.DisplayName
-                    BasePaletteColor: =
-                    DisplayMode: =DisplayMode.View
-                    FontColor: =
-                    Height: =32
-                    Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
-                    Required: =Parent.Required
-                    ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                    Value: =Parent.Default
-                    Width: =Parent.Width - 48
-                    X: =24
-                    Y: =DataCardKey26_1.Y + DataCardKey26_1.Height + 4
-                    ZIndex: =2
-
-                ErrorMessage26_1 As Text:
-                    DisplayMode: =DisplayMode.Edit
-                    FontColor: =
-                    Height: =30
-                    Text: =Parent.Error
-                    Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
-                    Width: =Parent.Width - 48
-                    Wrap: =true
-                    X: =24
-                    Y: =DataCardValue26_1.Y + DataCardValue26_1.Height
-                    ZIndex: =3
-
-                StarVisible26_1 As Text:
-                    Align: ='TextCanvas.Align'.Center
-                    DisplayMode: =DisplayMode.Edit
-                    FontColor: =
-                    Height: =30
-                    Text: ="*"
-                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                    Width: =30
-                    X: =0
-                    Y: =DataCardKey26_1.Y
-                    ZIndex: =4
-
-            comments_DataCard1_1 As typedDataCard.fluentV9TextualEditCard:
-                BorderStyle: =BorderStyle.Solid
-                DataField: ="comments"
-                Default: =ThisItem.comments
-                DisplayMode: =Parent.DisplayMode
-                DisplayName: =DataSourceInfo([@Inbox],DataSourceInfo.DisplayName,"comments")
-                Fill: =RGBA(0, 0, 0, 0)
-                Height: =70
-                MaxLength: =DataSourceInfo([@Inbox], DataSourceInfo.MaxLength, "comments")
-                Required: =If(DataCardValue21_1.Selected.Value="Reject", true, false)
-                Update: =DataCardValue25_1.Value
-                Width: =354
-                X: =0
-                Y: =3
-                ZIndex: =1
-
-                DataCardKey25_2 As Text:
-                    DisplayMode: =DisplayMode.Edit
-                    FontColor: =
-                    Height: =22
-                    Text: ="Your Comments"
-                    Weight: ='TextCanvas.Weight'.Semibold
-                    Width: =Parent.Width - 48
-                    Wrap: =false
-                    X: =24
-                    Y: =10
-                    ZIndex: =1
-
-                "DataCardValue25_1 As 'Text input'":
-                    AccessibleLabel: =Parent.DisplayName
-                    BasePaletteColor: =
-                    DisplayMode: =Parent.DisplayMode
-                    FontColor: =
-                    Height: =240
-                    Mode: ='TextInputCanvas.Mode'.Multiline
-                    Required: =Parent.Required
-                    ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                    Value: =Parent.Default
-                    Width: =Parent.Width - 48
-                    X: =24
-                    Y: =DataCardKey25_2.Y + DataCardKey25_2.Height + 4
-                    ZIndex: =2
-
-                ErrorMessage25_1 As Text:
-                    DisplayMode: =DisplayMode.Edit
-                    FontColor: =
-                    Height: =30
-                    Text: =Parent.Error
-                    Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
-                    Width: =Parent.Width - 48
-                    Wrap: =true
-                    X: =24
-                    Y: =DataCardValue25_1.Y + DataCardValue25_1.Height
-                    ZIndex: =3
-
-                StarVisible25_1 As Text:
-                    Align: ='TextCanvas.Align'.Center
-                    DisplayMode: =DisplayMode.Edit
-                    FontColor: =
-                    Height: =30
-                    Text: ="*"
-                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                    Width: =30
-                    X: =0
-                    Y: =DataCardKey25_2.Y
-                    ZIndex: =4
-
-            Attachments_DataCard10_1 As typedDataCard.attachmentsEditCard:
-                BorderStyle: =BorderStyle.Solid
-                DataField: ="{Attachments}"
-                Default: =ThisItem.Attachments
-                DisplayMode: =Parent.DisplayMode
-                DisplayName: =DataSourceInfo([@Inbox],DataSourceInfo.DisplayName,"{Attachments}")
-                Fill: =RGBA(0, 0, 0, 0)
-                Height: =50
-                Required: =false
-                Update: =DataCardValue115_1.Attachments
-                Visible: =If(gal_inbox.Selected.'Has attachments'=true, true, false)
-                Width: =354
-                X: =0
-                Y: =4
-                ZIndex: =1
-
-                DataCardValue115_1 As attachments:
-                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                    DisplayMode: =DisplayMode.View
-                    Height: =157
-                    IsInDataCard: =true
-                    Items: =Parent.Default
-                    PaddingBottom: =5
-                    PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                    PaddingRight: =5
-                    PaddingTop: =5
-                    Tooltip: =Parent.DisplayName
-                    Width: =Parent.Width - 60
-                    X: =30
-                    Y: =25
-                    ZIndex: =2
-
-                ErrorMessage115_1 As label:
-                    AutoHeight: =true
-                    Height: =10
-                    Live: =Live.Assertive
-                    PaddingBottom: =0
-                    PaddingLeft: =0
-                    PaddingRight: =0
-                    PaddingTop: =0
-                    Text: =Parent.Error
-                    Visible: =Parent.DisplayMode=DisplayMode.Edit
-                    Width: =Parent.Width - 60
-                    X: =30
-                    Y: =DataCardValue115_1.Y + DataCardValue115_1.Height
-                    ZIndex: =3
-
-                StarVisible115_1 As label:
-                    Align: =Align.Center
-                    Height: =
-                    Text: ="*"
-                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                    Width: =30
-                    Wrap: =false
-                    Y: =
-                    ZIndex: =4
-
-                DataCardKey25_3 As Text:
-                    DisplayMode: =DisplayMode.Edit
-                    FontColor: =
-                    Height: =22
-                    Text: ="Attachments"
-                    Weight: ='TextCanvas.Weight'.Semibold
-                    Width: =Parent.Width - 48
-                    Wrap: =false
-                    X: =24
-                    Y: =5
-                    ZIndex: =5
-
-            decision_DataCard1_1 As typedDataCard.fluentV9ComboBoxEditCard:
-                BorderStyle: =BorderStyle.Solid
-                DataField: ="decision"
-                Default: =ThisItem.decision
-                DisplayMode: =Parent.DisplayMode
-                DisplayName: =DataSourceInfo([@Inbox],DataSourceInfo.DisplayName,"decision")
-                Fill: =RGBA(0, 0, 0, 0)
-                Height: =70
-                Required: =false
-                Update: =DataCardValue21_1.Selected
-                Width: =354
-                X: =0
-                Y: =1
-                ZIndex: =17
-
-                DataCardKey21_1 As Text:
-                    DisplayMode: =DisplayMode.Edit
-                    FontColor: =
-                    Height: =22
-                    Text: ="Your Decision"
-                    Weight: ='TextCanvas.Weight'.Semibold
-                    Width: =Parent.Width - 48
-                    Wrap: =false
-                    X: =24
-                    Y: =10
-                    ZIndex: =1
-
-                DataCardValue21_1 As Combobox.pcfdataset:
-                    AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
-                    DisplayMode: =Parent.DisplayMode
-                    Height: =32
-                    Items: =Choices([@Inbox].decision)
-                    ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                    Width: =Parent.Width - 48
-                    X: =24
-                    Y: =DataCardKey21_1.Y + DataCardKey21_1.Height + 4
-                    ZIndex: =2
-
-                ErrorMessage21_1 As Text:
-                    DisplayMode: =DisplayMode.Edit
-                    FontColor: =
-                    Height: =30
-                    Text: =Parent.Error
-                    Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
-                    Width: =Parent.Width - 48
-                    Wrap: =true
-                    X: =24
-                    Y: =DataCardValue21_1.Y + DataCardValue21_1.Height
-                    ZIndex: =3
-
-                StarVisible21_1 As Text:
-                    Align: ='TextCanvas.Align'.Center
-                    DisplayMode: =DisplayMode.Edit
-                    FontColor: =
-                    Height: =20
-                    Text: ="*"
-                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                    Width: =30
-                    X: =0
-                    Y: =DataCardKey21_1.Y
-                    ZIndex: =4
-
-            decision_date_DataCard1_1 As typedDataCard.fluentV9DateEditCard:
-                BorderStyle: =BorderStyle.Solid
-                DataField: ="decision_date"
-                Default: =ThisItem.decision_date
-                DisplayMode: =Parent.DisplayMode
-                DisplayName: =DataSourceInfo([@Inbox],DataSourceInfo.DisplayName,"decision_date")
-                Fill: =RGBA(0, 0, 0, 0)
-                Height: =70
-                Required: =false
-                Update: =DataCardValue22_1.SelectedDate
-                Width: =354
-                X: =0
-                Y: =2
-                ZIndex: =17
-
-                DataCardKey22_1 As Text:
-                    DisplayMode: =DisplayMode.Edit
-                    FontColor: =
-                    Height: =22
-                    Text: ="Decision Date"
-                    Weight: ='TextCanvas.Weight'.Semibold
-                    Width: =Parent.Width - 48
-                    Wrap: =false
-                    X: =24
-                    Y: =10
-                    ZIndex: =1
-
-                "DataCardValue22_1 As 'Date picker'":
-                    AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
-                    BasePaletteColor: =
-                    DisplayMode: =DisplayMode.View
-                    EndYear: =Year(Today())+100
-                    FontColor: =
-                    Format: ='DatePickerCanvas.Format'.LongAbbreviated
-                    Height: =32
-                    SelectedDate: =Today()
-                    StartOfWeek: ="Monday"
-                    StartYear: =1900
-                    ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                    Width: =Parent.Width - 48
-                    X: =24
-                    Y: =DataCardKey22_1.Y + DataCardKey22_1.Height + 4
-                    ZIndex: =2
-
-                ErrorMessage22_1 As Text:
-                    DisplayMode: =DisplayMode.Edit
-                    FontColor: =
-                    Height: =30
-                    Text: =Parent.Error
-                    Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
-                    Width: =Parent.Width - 48
-                    Wrap: =true
-                    X: =24
-                    Y: =DataCardValue22_1.Y + DataCardValue22_1.Height
-                    ZIndex: =3
-
-                StarVisible22_1 As Text:
-                    Align: ='TextCanvas.Align'.Center
-                    DisplayMode: =DisplayMode.Edit
-                    FontColor: =
-                    Height: =30
-                    Text: ="*"
-                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                    Width: =30
-                    X: =0
-                    Y: =DataCardKey22_1.Y
-                    ZIndex: =4
-
-        lbl_pop_up_details_1 As label:
-            Color: =RGBA(77, 164, 65, 1)
-            FontWeight: =FontWeight.Bold
-            Text: ="Details"
-            Visible: =varPopUp
-            X: =127
-            Y: =111
-            ZIndex: =9
-
-        lbl_pop_up_outcome_1 As label:
-            Color: =RGBA(77, 164, 65, 1)
-            FontWeight: =FontWeight.Bold
-            Text: ="Outcome"
-            Visible: =varPopUp
-            X: =928
-            Y: =111
-            ZIndex: =10
-
-        btn_submit_approval_outcome_1 As Button:
-            Appearance: ='ButtonCanvas.Appearance'.Secondary
-            BasePaletteColor: =
-            DisplayMode: =DisplayMode.Edit
-            FontColor: =
-            Height: =32
-            Text: ="Submit"
-            Visible: =varPopUp
-            Width: =96
-            X: =1139
-            Y: =653
-            ZIndex: =11
-
-        shp_divider_1 As rectangle:
-            Fill: =RGBA(53, 61, 63, 1)
-            Height: =598
-            Visible: =varPopUp
-            Width: =1
-            X: =906
-            Y: =96
-            ZIndex: =12
+        ZIndex: =26
 
     lbl_pop_up_details_4 As label:
         Color: =RGBA(77, 164, 65, 1)
@@ -2288,7 +2344,7 @@ Requests As screen:
         Visible: =varPopUp
         X: =504
         Y: =111
-        ZIndex: =22
+        ZIndex: =27
 
     lbl_pop_up_details_5 As label:
         Color: =RGBA(77, 164, 65, 1)
@@ -2297,7 +2353,7 @@ Requests As screen:
         Visible: =varPopUp
         X: =504
         Y: =431
-        ZIndex: =23
+        ZIndex: =28
 
     txtin_Comment As text:
         BorderColor: =RGBA(88,89,91,0.25)
@@ -2316,7 +2372,7 @@ Requests As screen:
         Width: =394
         X: =491
         Y: =471
-        ZIndex: =24
+        ZIndex: =29
 
     Icon7 As icon.Send:
         Color: =RGBA(88,89,91,1)
@@ -2327,7 +2383,7 @@ Requests As screen:
         Width: =28
         X: =857
         Y: =659
-        ZIndex: =25
+        ZIndex: =30
 
     grp_pop_up_3 As group:
         Height: =5
@@ -2342,7 +2398,7 @@ Requests As screen:
             Height: =768
             Visible: =varPopUp
             Width: =1366
-            ZIndex: =13
+            ZIndex: =18
 
         shp_details_bkg_3 As rectangle:
             BorderColor: =RGBA(88, 89, 91, 1)
@@ -2353,7 +2409,7 @@ Requests As screen:
             Width: =1153
             X: =106
             Y: =72
-            ZIndex: =14
+            ZIndex: =19
 
         shp_pop_up_header_3 As rectangle:
             BorderColor: =RGBA(88, 89, 91, 1)
@@ -2364,7 +2420,7 @@ Requests As screen:
             Width: =1153
             X: =106
             Y: =72
-            ZIndex: =15
+            ZIndex: =20
 
         pop_up_cancel_badge_3 As icon.CancelBadge:
             Color: =RGBA(255, 255, 255, 1)
@@ -2386,7 +2442,7 @@ Requests As screen:
             Width: =20
             X: =1235
             Y: =74
-            ZIndex: =16
+            ZIndex: =21
 
         lbl_pop_up_details_3 As label:
             Color: =RGBA(77, 164, 65, 1)
@@ -2395,7 +2451,7 @@ Requests As screen:
             Visible: =varPopUp
             X: =139
             Y: =114
-            ZIndex: =17
+            ZIndex: =22
 
         lbl_pop_up_outcome_3 As label:
             Color: =RGBA(77, 164, 65, 1)
@@ -2404,7 +2460,7 @@ Requests As screen:
             Visible: =varPopUp
             X: =928
             Y: =111
-            ZIndex: =18
+            ZIndex: =23
 
         shp_divider_3 As rectangle:
             Fill: =RGBA(53, 61, 63, 1)
@@ -2413,7 +2469,7 @@ Requests As screen:
             Width: =1
             X: =906
             Y: =96
-            ZIndex: =19
+            ZIndex: =24
 
     grp_loading_screen_1 As group:
         Height: =5
@@ -2427,7 +2483,7 @@ Requests As screen:
             Height: =768
             Visible: =varLoading
             Width: =1366
-            ZIndex: =48
+            ZIndex: =53
 
         timer_loading_1 As timer:
             AutoStart: =
@@ -2438,7 +2494,7 @@ Requests As screen:
             Visible: =false
             X: =1037
             Y: =18
-            ZIndex: =49
+            ZIndex: =54
 
         spinner_loading_1 As Spinner:
             BasePaletteColor: =
@@ -2452,7 +2508,7 @@ Requests As screen:
             Width: =1366
             X: =0
             Y: =0
-            ZIndex: =50
+            ZIndex: =55
 
     form_comment As form:
         DataSource: =Requests_Master
@@ -2461,7 +2517,7 @@ Requests As screen:
         Item: =gal_requests.Selected
         Visible: =false
         Width: =54
-        ZIndex: =40
+        ZIndex: =45
 
         activity_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -2544,7 +2600,7 @@ Requests As screen:
         Width: =20
         X: =856
         Y: =133
-        ZIndex: =41
+        ZIndex: =46
 
     Label13 As label:
         BorderColor: =RGBA(88,89,91,0.25)
@@ -2560,7 +2616,7 @@ Requests As screen:
         Width: =394
         X: =491
         Y: =162
-        ZIndex: =42
+        ZIndex: =47
 
     Icon8 As icon.BackArrow:
         Color: =RGBA(255, 255, 255, 1)
@@ -2570,7 +2626,7 @@ Requests As screen:
         Width: =32
         X: =173
         Y: =22
-        ZIndex: =43
+        ZIndex: =48
 
     Button3 As button:
         OnSelect: |-
@@ -2580,7 +2636,7 @@ Requests As screen:
         Width: =80
         X: =1286
         Y: =728
-        ZIndex: =44
+        ZIndex: =49
 
     Button3_1 As button:
         OnSelect: |-
@@ -2590,7 +2646,7 @@ Requests As screen:
         Width: =80
         X: =1197
         Y: =728
-        ZIndex: =45
+        ZIndex: =50
 
     Form4 As form.PowerApps_CoreControls_Form:
         DataSource: ='Mobile Requests'
@@ -2603,7 +2659,7 @@ Requests As screen:
         Width: =374
         X: =106
         Y: =162
-        ZIndex: =46
+        ZIndex: =51
 
         Title_DataCard2 As typedDataCard.fluentV9TextualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -3675,7 +3731,7 @@ Requests As screen:
         Width: =374
         X: =106
         Y: =162
-        ZIndex: =47
+        ZIndex: =52
 
         UID_DataCard10 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -4589,62 +4645,1908 @@ Requests As screen:
         Width: =63
         X: =1303
         Y: =673
-        ZIndex: =51
-
-    lbl_UID_1 As label:
-        Align: =Align.Center
-        Font: =Font.Arial
-        FontWeight: =FontWeight.Bold
-        Size: =10
-        Text: ="UID"
-        Width: =item_UID.Width
-        X: =226
-        Y: =108
-        ZIndex: =52
-
-    lbl_date_received_2 As label:
-        Align: =Align.Center
-        Font: =Font.Arial
-        FontWeight: =FontWeight.Bold
-        Size: =10
-        Text: ="Date Received"
-        Width: =item_date_received.Width
-        X: =328
-        Y: =105
-        ZIndex: =53
-
-    lbl_request_type_1 As label:
-        Align: =Align.Center
-        Font: =Font.Arial
-        FontWeight: =FontWeight.Bold
-        Size: =10
-        Text: ="Request Type"
-        Width: =item_request_type.Width
-        X: =487
-        Y: =105
-        ZIndex: =54
-
-    lbl_stage_1 As label:
-        Align: =Align.Center
-        Font: =Font.Arial
-        FontWeight: =FontWeight.Bold
-        Size: =10
-        Text: ="Stage"
-        Width: =item_stage.Width
-        X: =790
-        Y: =105
-        ZIndex: =55
-
-    lbl_request_type_2 As label:
-        Align: =Align.Center
-        Font: =Font.Arial
-        FontWeight: =FontWeight.Bold
-        Size: =10
-        Text: ="Requestor"
-        Width: =item_request_type.Width
-        X: =643
-        Y: =105
         ZIndex: =56
+
+    Form2 As form:
+        DataSource: ='Interim probation review form'
+        DefaultMode: =FormMode.View
+        Height: =525
+        NumberOfColumns: =1
+        Width: =374
+        X: =106
+        Y: =162
+        ZIndex: =57
+
+        UID_DataCard16 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="UID"
+            Default: =ThisItem.UID
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Interim probation review form'],DataSourceInfo.DisplayName,"UID")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Interim probation review form'], DataSourceInfo.MaxLength, "UID")
+            Required: =false
+            Update: =DataCardValue195.Text
+            Width: =374
+            X: =0
+            Y: =0
+            ZIndex: =58
+
+            DataCardKey196 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue195 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey196.Y + DataCardKey196.Height + 5
+                ZIndex: =2
+
+            ErrorMessage197 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue195.Y + DataCardValue195.Height
+                ZIndex: =3
+
+            StarVisible197 As label:
+                Align: =Align.Center
+                Height: =DataCardKey196.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey196.Y
+                ZIndex: =4
+
+        EmployeeSpectrumFlag_DataCard2 As typedDataCard.comboBoxEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="EmployeeSpectrumFlag"
+            Default: =ThisItem.EmployeeSpectrumFlag
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Interim probation review form'],DataSourceInfo.DisplayName,"EmployeeSpectrumFlag")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue196.Selected
+            Width: =374
+            X: =0
+            Y: =1
+            ZIndex: =58
+
+            DataCardKey204 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue196 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["Value"]
+                DisplayMode: =Parent.DisplayMode
+                Items: =Choices([@'Interim probation review form'].EmployeeSpectrumFlag)
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["Value"]
+                SearchItems: =Choices('Interim probation review form'.EmployeeSpectrumFlag,DataCardValue196.SearchText)
+                SelectMultiple: =false
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey204.Y + DataCardKey204.Height + 5
+                ZIndex: =2
+
+            ErrorMessage205 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue196.Y + DataCardValue196.Height
+                ZIndex: =3
+
+            StarVisible205 As label:
+                Align: =Align.Center
+                Height: =DataCardKey204.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey204.Y
+                ZIndex: =4
+
+        SpectrumEmployeeName_DataCard3 As typedDataCard.comboBoxEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="SpectrumEmployeeName"
+            Default: =ThisItem.SpectrumEmployeeName
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Interim probation review form'],DataSourceInfo.DisplayName,"SpectrumEmployeeName")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue197.Selected
+            Width: =374
+            X: =0
+            Y: =2
+            ZIndex: =58
+
+            DataCardKey208 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue197 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["Claims"]
+                DisplayMode: =Parent.DisplayMode
+                Items: =Choices([@'Interim probation review form'].SpectrumEmployeeName)
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["Claims"]
+                SearchItems: =Choices('Interim probation review form'.SpectrumEmployeeName,DataCardValue197.SearchText)
+                SelectMultiple: =false
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey208.Y + DataCardKey208.Height + 5
+                ZIndex: =2
+
+            ErrorMessage209 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue197.Y + DataCardValue197.Height
+                ZIndex: =3
+
+            StarVisible209 As label:
+                Align: =Align.Center
+                Height: =DataCardKey208.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey208.Y
+                ZIndex: =4
+
+        NonSpecEmployeeFirstname_DataCard2 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="NonSpecEmployeeFirstname"
+            Default: =ThisItem.NonSpecEmployeeFirstname
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Interim probation review form'],DataSourceInfo.DisplayName,"NonSpecEmployeeFirstname")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Interim probation review form'], DataSourceInfo.MaxLength, "NonSpecEmployeeFirstname")
+            Required: =false
+            Update: =DataCardValue202.Text
+            Width: =374
+            X: =0
+            Y: =3
+            ZIndex: =58
+
+            DataCardKey209 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue202 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey209.Y + DataCardKey209.Height + 5
+                ZIndex: =2
+
+            ErrorMessage210 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue202.Y + DataCardValue202.Height
+                ZIndex: =3
+
+            StarVisible210 As label:
+                Align: =Align.Center
+                Height: =DataCardKey209.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey209.Y
+                ZIndex: =4
+
+        NonSpecEmployeeLastname_DataCard2 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="NonSpecEmployeeLastname"
+            Default: =ThisItem.NonSpecEmployeeLastname
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Interim probation review form'],DataSourceInfo.DisplayName,"NonSpecEmployeeLastname")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Interim probation review form'], DataSourceInfo.MaxLength, "NonSpecEmployeeLastname")
+            Required: =false
+            Update: =DataCardValue203.Text
+            Width: =374
+            X: =0
+            Y: =4
+            ZIndex: =58
+
+            DataCardKey210 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue203 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey210.Y + DataCardKey210.Height + 5
+                ZIndex: =2
+
+            ErrorMessage211 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue203.Y + DataCardValue203.Height
+                ZIndex: =3
+
+            StarVisible211 As label:
+                Align: =Align.Center
+                Height: =DataCardKey210.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey210.Y
+                ZIndex: =4
+
+        JobTitle_DataCard2 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="JobTitle"
+            Default: =ThisItem.JobTitle
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Interim probation review form'],DataSourceInfo.DisplayName,"JobTitle")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Interim probation review form'], DataSourceInfo.MaxLength, "JobTitle")
+            Required: =false
+            Update: =DataCardValue205.Text
+            Width: =374
+            X: =0
+            Y: =5
+            ZIndex: =58
+
+            DataCardKey211 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue205 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey211.Y + DataCardKey211.Height + 5
+                ZIndex: =2
+
+            ErrorMessage212 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue205.Y + DataCardValue205.Height
+                ZIndex: =3
+
+            StarVisible212 As label:
+                Align: =Align.Center
+                Height: =DataCardKey211.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey211.Y
+                ZIndex: =4
+
+        Service_DataCard5 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Service"
+            Default: =ThisItem.Service
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Interim probation review form'],DataSourceInfo.DisplayName,"Service")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Interim probation review form'], DataSourceInfo.MaxLength, "Service")
+            Required: =false
+            Update: =DataCardValue207.Text
+            Width: =374
+            X: =0
+            Y: =6
+            ZIndex: =58
+
+            DataCardKey212 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue207 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey212.Y + DataCardKey212.Height + 5
+                ZIndex: =2
+
+            ErrorMessage213 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue207.Y + DataCardValue207.Height
+                ZIndex: =3
+
+            StarVisible213 As label:
+                Align: =Align.Center
+                Height: =DataCardKey212.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey212.Y
+                ZIndex: =4
+
+        Site_DataCard5 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Site"
+            Default: =ThisItem.Site
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Interim probation review form'],DataSourceInfo.DisplayName,"Site")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Interim probation review form'], DataSourceInfo.MaxLength, "Site")
+            Required: =false
+            Update: =DataCardValue208.Text
+            Width: =374
+            X: =0
+            Y: =7
+            ZIndex: =58
+
+            DataCardKey213 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue208 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey213.Y + DataCardKey213.Height + 5
+                ZIndex: =2
+
+            ErrorMessage214 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue208.Y + DataCardValue208.Height
+                ZIndex: =3
+
+            StarVisible214 As label:
+                Align: =Align.Center
+                Height: =DataCardKey213.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey213.Y
+                ZIndex: =4
+
+        Team_DataCard5 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Team"
+            Default: =ThisItem.Team
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Interim probation review form'],DataSourceInfo.DisplayName,"Team")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Interim probation review form'], DataSourceInfo.MaxLength, "Team")
+            Required: =false
+            Update: =DataCardValue209.Text
+            Width: =374
+            X: =0
+            Y: =8
+            ZIndex: =58
+
+            DataCardKey214 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue209 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey214.Y + DataCardKey214.Height + 5
+                ZIndex: =2
+
+            ErrorMessage215 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue209.Y + DataCardValue209.Height
+                ZIndex: =3
+
+            StarVisible215 As label:
+                Align: =Align.Center
+                Height: =DataCardKey214.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey214.Y
+                ZIndex: =4
+
+        StartDate_DataCard4 As typedDataCard.dateEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="StartDate"
+            Default: =ThisItem.StartDate
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Interim probation review form'],DataSourceInfo.DisplayName,"StartDate")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue210.SelectedDate
+            Width: =374
+            X: =0
+            Y: =9
+            ZIndex: =58
+
+            DataCardKey215 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue210 As datepicker:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultDate: =Parent.Default
+                DisplayMode: =Parent.DisplayMode
+                EndYear: =Year(Today())+100
+                IsEditable: =true
+                PaddingBottom: =0
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                StartYear: =1899
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey215.Y + DataCardKey215.Height + 5
+                ZIndex: =2
+
+            ErrorMessage216 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue210.Y + DataCardValue210.Height
+                ZIndex: =3
+
+            StarVisible216 As label:
+                Align: =Align.Center
+                Height: =DataCardKey215.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey215.Y
+                ZIndex: =4
+
+        ReviewDate_DataCard2 As typedDataCard.dateEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ReviewDate"
+            Default: =ThisItem.ReviewDate
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Interim probation review form'],DataSourceInfo.DisplayName,"ReviewDate")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue211.SelectedDate
+            Width: =374
+            X: =0
+            Y: =10
+            ZIndex: =58
+
+            DataCardKey216 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue211 As datepicker:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultDate: =Parent.Default
+                DisplayMode: =Parent.DisplayMode
+                EndYear: =Year(Today())+100
+                IsEditable: =true
+                PaddingBottom: =0
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                StartYear: =1899
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey216.Y + DataCardKey216.Height + 5
+                ZIndex: =2
+
+            ErrorMessage217 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue211.Y + DataCardValue211.Height
+                ZIndex: =3
+
+            StarVisible217 As label:
+                Align: =Align.Center
+                Height: =DataCardKey216.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey216.Y
+                ZIndex: =4
+
+        TeamworkComments_DataCard2 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="TeamworkComments"
+            Default: =ThisItem.TeamworkComments
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Interim probation review form'],DataSourceInfo.DisplayName,"TeamworkComments")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Interim probation review form'], DataSourceInfo.MaxLength, "TeamworkComments")
+            Required: =false
+            Update: =DataCardValue212.Text
+            Width: =374
+            X: =0
+            Y: =11
+            ZIndex: =58
+
+            DataCardKey217 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue212 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey217.Y + DataCardKey217.Height + 5
+                ZIndex: =2
+
+            ErrorMessage218 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue212.Y + DataCardValue212.Height
+                ZIndex: =3
+
+            StarVisible218 As label:
+                Align: =Align.Center
+                Height: =DataCardKey217.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey217.Y
+                ZIndex: =4
+
+        AttendanceComments_DataCard2 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="AttendanceComments"
+            Default: =ThisItem.AttendanceComments
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Interim probation review form'],DataSourceInfo.DisplayName,"AttendanceComments")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Interim probation review form'], DataSourceInfo.MaxLength, "AttendanceComments")
+            Required: =false
+            Update: =DataCardValue213.Text
+            Width: =374
+            X: =0
+            Y: =12
+            ZIndex: =58
+
+            DataCardKey218 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue213 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey218.Y + DataCardKey218.Height + 5
+                ZIndex: =2
+
+            ErrorMessage219 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue213.Y + DataCardValue213.Height
+                ZIndex: =3
+
+            StarVisible219 As label:
+                Align: =Align.Center
+                Height: =DataCardKey218.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey218.Y
+                ZIndex: =4
+
+        InstructionComments_DataCard2 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="InstructionComments"
+            Default: =ThisItem.InstructionComments
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Interim probation review form'],DataSourceInfo.DisplayName,"InstructionComments")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Interim probation review form'], DataSourceInfo.MaxLength, "InstructionComments")
+            Required: =false
+            Update: =DataCardValue214.Text
+            Width: =374
+            X: =0
+            Y: =13
+            ZIndex: =58
+
+            DataCardKey219 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue214 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey219.Y + DataCardKey219.Height + 5
+                ZIndex: =2
+
+            ErrorMessage220 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue214.Y + DataCardValue214.Height
+                ZIndex: =3
+
+            StarVisible220 As label:
+                Align: =Align.Center
+                Height: =DataCardKey219.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey219.Y
+                ZIndex: =4
+
+        TrainingComments_DataCard2 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="TrainingComments"
+            Default: =ThisItem.TrainingComments
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Interim probation review form'],DataSourceInfo.DisplayName,"TrainingComments")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Interim probation review form'], DataSourceInfo.MaxLength, "TrainingComments")
+            Required: =false
+            Update: =DataCardValue215.Text
+            Width: =374
+            X: =0
+            Y: =14
+            ZIndex: =58
+
+            DataCardKey220 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue215 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey220.Y + DataCardKey220.Height + 5
+                ZIndex: =2
+
+            ErrorMessage221 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue215.Y + DataCardValue215.Height
+                ZIndex: =3
+
+            StarVisible221 As label:
+                Align: =Align.Center
+                Height: =DataCardKey220.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey220.Y
+                ZIndex: =4
+
+        "'FurtherDetails _DataCard2' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="FurtherDetails"
+            Default: =ThisItem.'FurtherDetails '
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Interim probation review form'],DataSourceInfo.DisplayName,"FurtherDetails")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Interim probation review form'], DataSourceInfo.MaxLength, "FurtherDetails")
+            Required: =false
+            Update: =DataCardValue216.Text
+            Width: =374
+            X: =0
+            Y: =15
+            ZIndex: =58
+
+            DataCardKey221 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue216 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey221.Y + DataCardKey221.Height + 5
+                ZIndex: =2
+
+            ErrorMessage222 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue216.Y + DataCardValue216.Height
+                ZIndex: =3
+
+            StarVisible222 As label:
+                Align: =Align.Center
+                Height: =DataCardKey221.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey221.Y
+                ZIndex: =4
+
+        EmployeeComments_DataCard1 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="EmployeeComments"
+            Default: =ThisItem.EmployeeComments
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Interim probation review form'],DataSourceInfo.DisplayName,"EmployeeComments")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Interim probation review form'], DataSourceInfo.MaxLength, "EmployeeComments")
+            Required: =false
+            Update: =DataCardValue217.Text
+            Width: =374
+            X: =0
+            Y: =16
+            ZIndex: =58
+
+            DataCardKey222 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue217 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey222.Y + DataCardKey222.Height + 5
+                ZIndex: =2
+
+            ErrorMessage223 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue217.Y + DataCardValue217.Height
+                ZIndex: =3
+
+            StarVisible223 As label:
+                Align: =Align.Center
+                Height: =DataCardKey222.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey222.Y
+                ZIndex: =4
+
+        EmployeeProgressWellFlag_DataCard2 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="EmployeeProgressWellFlag"
+            Default: =ThisItem.EmployeeProgressWellFlag
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Interim probation review form'],DataSourceInfo.DisplayName,"EmployeeProgressWellFlag")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Interim probation review form'], DataSourceInfo.MaxLength, "EmployeeProgressWellFlag")
+            Required: =false
+            Update: =DataCardValue218.Text
+            Width: =374
+            X: =0
+            Y: =17
+            ZIndex: =58
+
+            DataCardKey223 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue218 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey223.Y + DataCardKey223.Height + 5
+                ZIndex: =2
+
+            ErrorMessage224 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue218.Y + DataCardValue218.Height
+                ZIndex: =3
+
+            StarVisible224 As label:
+                Align: =Align.Center
+                Height: =DataCardKey223.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey223.Y
+                ZIndex: =4
+
+        EmployeeConcernsRaisedFlag_DataCard2 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="EmployeeConcernsRaisedFlag"
+            Default: =ThisItem.EmployeeConcernsRaisedFlag
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Interim probation review form'],DataSourceInfo.DisplayName,"EmployeeConcernsRaisedFlag")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Interim probation review form'], DataSourceInfo.MaxLength, "EmployeeConcernsRaisedFlag")
+            Required: =false
+            Update: =DataCardValue219.Text
+            Width: =374
+            X: =0
+            Y: =18
+            ZIndex: =58
+
+            DataCardKey224 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue219 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey224.Y + DataCardKey224.Height + 5
+                ZIndex: =2
+
+            ErrorMessage225 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue219.Y + DataCardValue219.Height
+                ZIndex: =3
+
+            StarVisible225 As label:
+                Align: =Align.Center
+                Height: =DataCardKey224.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey224.Y
+                ZIndex: =4
+
+        Objectives_DataCard2 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Objectives"
+            Default: =ThisItem.Objectives
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Interim probation review form'],DataSourceInfo.DisplayName,"Objectives")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Interim probation review form'], DataSourceInfo.MaxLength, "Objectives")
+            Required: =false
+            Update: =DataCardValue220.Text
+            Width: =374
+            X: =0
+            Y: =19
+            ZIndex: =58
+
+            DataCardKey225 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue220 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey225.Y + DataCardKey225.Height + 5
+                ZIndex: =2
+
+            ErrorMessage226 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue220.Y + DataCardValue220.Height
+                ZIndex: =3
+
+            StarVisible226 As label:
+                Align: =Align.Center
+                Height: =DataCardKey225.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey225.Y
+                ZIndex: =4
+
+        Constraints_DataCard2 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Constraints"
+            Default: =ThisItem.Constraints
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Interim probation review form'],DataSourceInfo.DisplayName,"Constraints")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Interim probation review form'], DataSourceInfo.MaxLength, "Constraints")
+            Required: =false
+            Update: =DataCardValue221.Text
+            Width: =374
+            X: =0
+            Y: =20
+            ZIndex: =58
+
+            DataCardKey226 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue221 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey226.Y + DataCardKey226.Height + 5
+                ZIndex: =2
+
+            ErrorMessage227 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue221.Y + DataCardValue221.Height
+                ZIndex: =3
+
+            StarVisible227 As label:
+                Align: =Align.Center
+                Height: =DataCardKey226.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey226.Y
+                ZIndex: =4
+
+        SupportTraining_DataCard2 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="SupportTraining"
+            Default: =ThisItem.SupportTraining
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Interim probation review form'],DataSourceInfo.DisplayName,"SupportTraining")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Interim probation review form'], DataSourceInfo.MaxLength, "SupportTraining")
+            Required: =false
+            Update: =DataCardValue222.Text
+            Width: =374
+            X: =0
+            Y: =21
+            ZIndex: =58
+
+            DataCardKey227 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue222 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey227.Y + DataCardKey227.Height + 5
+                ZIndex: =2
+
+            ErrorMessage228 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue222.Y + DataCardValue222.Height
+                ZIndex: =3
+
+            StarVisible228 As label:
+                Align: =Align.Center
+                Height: =DataCardKey227.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey227.Y
+                ZIndex: =4
+
+        ReviewDateRemidial_DataCard2 As typedDataCard.dateEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ReviewDateRemidial"
+            Default: =ThisItem.ReviewDateRemidial
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Interim probation review form'],DataSourceInfo.DisplayName,"ReviewDateRemidial")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue223.SelectedDate
+            Width: =374
+            X: =0
+            Y: =22
+            ZIndex: =58
+
+            DataCardKey228 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue223 As datepicker:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultDate: =Parent.Default
+                DisplayMode: =Parent.DisplayMode
+                EndYear: =Year(Today())+100
+                IsEditable: =true
+                PaddingBottom: =0
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                StartYear: =1899
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey228.Y + DataCardKey228.Height + 5
+                ZIndex: =2
+
+            ErrorMessage229 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue223.Y + DataCardValue223.Height
+                ZIndex: =3
+
+            StarVisible229 As label:
+                Align: =Align.Center
+                Height: =DataCardKey228.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey228.Y
+                ZIndex: =4
+
+        LineManagerSignatureFLag_DataCard2 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="LineManagerSignatureFLag"
+            Default: =ThisItem.LineManagerSignatureFLag
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Interim probation review form'],DataSourceInfo.DisplayName,"LineManagerSignatureFLag")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Interim probation review form'], DataSourceInfo.MaxLength, "LineManagerSignatureFLag")
+            Required: =false
+            Update: =DataCardValue224.Text
+            Width: =374
+            X: =0
+            Y: =23
+            ZIndex: =58
+
+            DataCardKey229 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue224 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey229.Y + DataCardKey229.Height + 5
+                ZIndex: =2
+
+            ErrorMessage230 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue224.Y + DataCardValue224.Height
+                ZIndex: =3
+
+            StarVisible230 As label:
+                Align: =Align.Center
+                Height: =DataCardKey229.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey229.Y
+                ZIndex: =4
+
+        EmployeeSignatureFlag_DataCard1 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="EmployeeSignatureFlag"
+            Default: =ThisItem.EmployeeSignatureFlag
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Interim probation review form'],DataSourceInfo.DisplayName,"EmployeeSignatureFlag")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Interim probation review form'], DataSourceInfo.MaxLength, "EmployeeSignatureFlag")
+            Required: =false
+            Update: =DataCardValue225.Text
+            Width: =374
+            X: =0
+            Y: =24
+            ZIndex: =58
+
+            DataCardKey230 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue225 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey230.Y + DataCardKey230.Height + 5
+                ZIndex: =2
+
+            ErrorMessage231 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue225.Y + DataCardValue225.Height
+                ZIndex: =3
+
+            StarVisible231 As label:
+                Align: =Align.Center
+                Height: =DataCardKey230.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey230.Y
+                ZIndex: =4
+
+        NonSpectrumEmail_DataCard2 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="NonSpectrumEmail"
+            Default: =ThisItem.NonSpectrumEmail
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Interim probation review form'],DataSourceInfo.DisplayName,"NonSpectrumEmail")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Interim probation review form'], DataSourceInfo.MaxLength, "NonSpectrumEmail")
+            Required: =false
+            Update: =DataCardValue226.Text
+            Width: =374
+            X: =0
+            Y: =25
+            ZIndex: =58
+
+            DataCardKey231 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue226 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey231.Y + DataCardKey231.Height + 5
+                ZIndex: =2
+
+            ErrorMessage232 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue226.Y + DataCardValue226.Height
+                ZIndex: =3
+
+            StarVisible232 As label:
+                Align: =Align.Center
+                Height: =DataCardKey231.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey231.Y
+                ZIndex: =4
+
+        ExtendedProbationFlag_DataCard2 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ExtendedProbationFlag"
+            Default: =ThisItem.ExtendedProbationFlag
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Interim probation review form'],DataSourceInfo.DisplayName,"ExtendedProbationFlag")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Interim probation review form'], DataSourceInfo.MaxLength, "ExtendedProbationFlag")
+            Required: =false
+            Update: =DataCardValue227.Text
+            Width: =374
+            X: =0
+            Y: =26
+            ZIndex: =58
+
+            DataCardKey232 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue227 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey232.Y + DataCardKey232.Height + 5
+                ZIndex: =2
+
+            ErrorMessage233 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue227.Y + DataCardValue227.Height
+                ZIndex: =3
+
+            StarVisible233 As label:
+                Align: =Align.Center
+                Height: =DataCardKey232.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey232.Y
+                ZIndex: =4
+
+        ExtendedProbationTime_DataCard2 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ExtendedProbationTime"
+            Default: =ThisItem.ExtendedProbationTime
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Interim probation review form'],DataSourceInfo.DisplayName,"ExtendedProbationTime")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Interim probation review form'], DataSourceInfo.MaxLength, "ExtendedProbationTime")
+            Required: =false
+            Update: =DataCardValue228.Text
+            Width: =374
+            X: =0
+            Y: =27
+            ZIndex: =58
+
+            DataCardKey233 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue228 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey233.Y + DataCardKey233.Height + 5
+                ZIndex: =2
+
+            ErrorMessage234 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue228.Y + DataCardValue228.Height
+                ZIndex: =3
+
+            StarVisible234 As label:
+                Align: =Align.Center
+                Height: =DataCardKey233.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey233.Y
+                ZIndex: =4
 
     Timeline As group:
         Height: =5
@@ -4905,7 +6807,7 @@ Requests As screen:
             Width: =35
             X: =954
             Y: =179
-            ZIndex: =26
+            ZIndex: =31
 
         tl_stage_1_lbl As label:
             Align: =Align.Center
@@ -5068,7 +6970,7 @@ Requests As screen:
             Width: =170
             X: =996
             Y: =179
-            ZIndex: =27
+            ZIndex: =32
 
         tl_stage_1_line As rectangle:
             BorderStyle: =BorderStyle.None
@@ -5078,7 +6980,7 @@ Requests As screen:
             Width: =2
             X: =1079
             Y: =214
-            ZIndex: =28
+            ZIndex: =33
 
         tl_stage_2_img As image:
             DisplayMode: =DisplayMode.View
@@ -5334,7 +7236,7 @@ Requests As screen:
             Width: =35
             X: =954
             Y: =253
-            ZIndex: =29
+            ZIndex: =34
 
         tl_stage_2_lbl As label:
             Align: =Align.Center
@@ -5495,7 +7397,7 @@ Requests As screen:
             Width: =170
             X: =996
             Y: =253
-            ZIndex: =30
+            ZIndex: =35
 
         tl_stage_2_line As rectangle:
             Fill: =RGBA(88, 89, 91, 1)
@@ -5566,7 +7468,7 @@ Requests As screen:
             Width: =2
             X: =1079
             Y: =288
-            ZIndex: =31
+            ZIndex: =36
 
         tl_stage_3_img As image:
             DisplayMode: =DisplayMode.View
@@ -5783,7 +7685,7 @@ Requests As screen:
             Width: =35
             X: =954
             Y: =327
-            ZIndex: =32
+            ZIndex: =37
 
         tl_stage_3_lbl As label:
             Align: =Align.Center
@@ -5935,7 +7837,7 @@ Requests As screen:
             Width: =170
             X: =996
             Y: =327
-            ZIndex: =33
+            ZIndex: =38
 
         tl_stage_3_line As rectangle:
             Fill: =RGBA(88, 89, 91, 1)
@@ -5961,7 +7863,7 @@ Requests As screen:
             Width: =2
             X: =1079
             Y: =362
-            ZIndex: =34
+            ZIndex: =39
 
         tl_stage_4_img As image:
             DisplayMode: =DisplayMode.View
@@ -6025,7 +7927,7 @@ Requests As screen:
             Width: =35
             X: =954
             Y: =401
-            ZIndex: =35
+            ZIndex: =40
 
         tl_stage_4_lbl As label:
             Align: =Align.Center
@@ -6076,7 +7978,7 @@ Requests As screen:
             Width: =170
             X: =996
             Y: =401
-            ZIndex: =36
+            ZIndex: =41
 
         tl_stage_5_img As image:
             DisplayMode: =DisplayMode.View
@@ -6091,7 +7993,7 @@ Requests As screen:
             Width: =35
             X: =954
             Y: =475
-            ZIndex: =37
+            ZIndex: =42
 
         tl_stage_5_lbl As label:
             Align: =Align.Center
@@ -6109,7 +8011,7 @@ Requests As screen:
             Width: =170
             X: =996
             Y: =475
-            ZIndex: =38
+            ZIndex: =43
 
         tl_stage_4_line As rectangle:
             Fill: =RGBA(88, 89, 91, 1)
@@ -6118,5 +8020,5 @@ Requests As screen:
             Width: =2
             X: =1079
             Y: =436
-            ZIndex: =39
+            ZIndex: =44
 

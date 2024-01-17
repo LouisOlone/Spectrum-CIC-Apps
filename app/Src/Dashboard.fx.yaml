@@ -234,6 +234,10 @@ Dashboard As screen:
                 If(
                                             ThisItem.request_type = "New Starter Form",
                                             UpdateContext({varPopUp: false}));
+                
+                                            If(
+                                            ThisItem.request_type = "Interim Probation Form",
+                                            UpdateContext({varPopUp: false}));
             PaddingBottom: =12
             PaddingLeft: =12
             PaddingRight: =12
