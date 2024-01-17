@@ -13,20 +13,20 @@ template_new_form_1 As screen:
         ZIndex: =2
 
         "'Welcome to the Department/Business Unit_DataCard1' As typedDataCard.textualEditCard":
-        BorderStyle: =BorderStyle.Solid
-        DataField: ="WelcometotheDepartment_x002f_Bus"
-        Default: =ThisItem.'Welcome to the Department/Business Unit'
-        DisplayMode: =Parent.DisplayMode
-        DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"WelcometotheDepartment_x002f_Bus")
-        Fill: =RGBA(0, 0, 0, 0)
-        Height: =50
-        MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "WelcometotheDepartment_x002f_Bus")
-        Required: =false
-        Update: =DataCardValue181.Text
-        Width: =321
-        X: =3
-        Y: =1
-        ZIndex: =3
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="WelcometotheDepartment_x002f_Bus"
+            Default: =ThisItem.'Welcome to the Department/Business Unit'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"WelcometotheDepartment_x002f_Bus")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "WelcometotheDepartment_x002f_Bus")
+            Required: =false
+            Update: =DataCardValue181.Text
+            Width: =321
+            X: =3
+            Y: =1
+            ZIndex: =3
 
             DataCardKey182 As label:
                 AutoHeight: =true
@@ -144,7 +144,7 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey194.Y
                 ZIndex: =4
-            
+                
         "'Brief description of the Department/Business Unit and how it fits into the organisation_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="BriefdescriptionoftheDepartment_"
