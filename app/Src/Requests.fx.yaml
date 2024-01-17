@@ -2452,6 +2452,7 @@ Requests As screen:
                 UpdateContext({varExpandActivity: false});
                 UpdateContext({varMobileRequest: false});
                 UpdateContext({varNewStarterLM: false});
+                UpdateContext({varInterimProbationForm: false});
                 
             Visible: =varPopUp
             Width: =20
@@ -4931,7 +4932,7 @@ Requests As screen:
 
             DataCardValue202 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
+                Default: =ThisItem.NonSpecEmployeeFirstname
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Font: =Font.Arial
