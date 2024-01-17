@@ -50,12 +50,15 @@
                 Default: =LookUp( 'Onboarding Record', UID = varInterimProbationForm.UID, FirstName )
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -122,12 +125,15 @@
                 Default: =LookUp( 'Onboarding Record', UID = varInterimProbationForm.UID, LastName )
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -194,12 +200,15 @@
                 Default: =LookUp( 'Onboarding Record', UID = varInterimProbationForm.UID, UID )
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -266,12 +275,15 @@
                 Default: =LookUp( 'Onboarding Record', UID = varInterimProbationForm.UID, JobTitle )
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -338,12 +350,15 @@
                 Default: =LookUp( 'Onboarding Record', UID = varInterimProbationForm.UID, Service )
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -410,12 +425,15 @@
                 Default: =LookUp( 'Onboarding Record', UID = varInterimProbationForm.UID, Site )
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -482,12 +500,15 @@
                 Default: =LookUp( 'Onboarding Record', UID = varInterimProbationForm.UID, Team )
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =582
                 X: =30
@@ -553,10 +574,13 @@
                 DefaultDate: =Parent.Default
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 IconBackground: =RGBA(77,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                Size: =12
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -631,10 +655,13 @@
                 DefaultDate: =Parent.Default
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 IconBackground: =RGBA(77,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                Size: =12
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -711,11 +738,14 @@
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 Items: =Choices([@'Interim probation review form'].EmployeeSpectrumFlag)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
                 SearchItems: =Choices('Interim probation review form'.EmployeeSpectrumFlag,DataCardValue180.SearchText)
                 SelectMultiple: =false
+                Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -794,11 +824,14 @@
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["DisplayName","Email","Picture"]
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 Items: =Choices([@'Interim probation review form'].SpectrumEmployeeName)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Claims"]
                 SearchItems: =Choices('Interim probation review form'.SpectrumEmployeeName,DataCardValue181.SearchText)
                 SelectMultiple: =false
+                Size: =12
                 Template: =ListItemTemplate.Person
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -867,12 +900,15 @@
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =582
                 X: =30
@@ -938,6 +974,8 @@
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 Height: =133
                 MaxLength: =Parent.MaxLength
                 Mode: =TextMode.MultiLine
@@ -946,6 +984,7 @@
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -1030,6 +1069,8 @@
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 Height: =133
                 MaxLength: =Parent.MaxLength
                 Mode: =TextMode.MultiLine
@@ -1038,6 +1079,7 @@
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -1111,6 +1153,8 @@
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 Height: =133
                 MaxLength: =Parent.MaxLength
                 Mode: =TextMode.MultiLine
@@ -1119,6 +1163,7 @@
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -1185,6 +1230,8 @@
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 Height: =133
                 MaxLength: =Parent.MaxLength
                 Mode: =TextMode.MultiLine
@@ -1193,6 +1240,7 @@
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -1259,6 +1307,8 @@
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 Height: =133
                 MaxLength: =Parent.MaxLength
                 Mode: =TextMode.MultiLine
@@ -1267,6 +1317,7 @@
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =582
                 X: =30
@@ -1374,8 +1425,11 @@
             Checkbox3_3 As checkbox:
                 BorderColor: =RGBA(32, 54, 71, 1)
                 CheckboxBorderColor: =RGBA(32, 54, 71, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 HoverColor: =RGBA(32, 54, 71, 1)
                 OnCheck: =Reset(Checkbox3_5)
+                Size: =12
                 Text: ="Yes"
                 X: =30
                 Y: =140
@@ -1445,9 +1499,12 @@
             Checkbox3_5 As checkbox:
                 BorderColor: =RGBA(32, 54, 71, 1)
                 CheckboxBorderColor: =RGBA(32, 54, 71, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 HoverColor: =RGBA(32, 54, 71, 1)
                 OnCheck: =
                 OnUncheck: =Reset(DataCardValue206)
+                Size: =12
                 Text: ="Extend"
                 X: =30
                 Y: =140
@@ -1518,8 +1575,11 @@
             Checkbox3_4 As checkbox:
                 BorderColor: =RGBA(32, 54, 71, 1)
                 CheckboxBorderColor: =RGBA(32, 54, 71, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 HoverColor: =RGBA(32, 54, 71, 1)
                 OnCheck: =Reset(Checkbox3_5)
+                Size: =12
                 Text: ="Yes"
                 X: =30
                 Y: =90
@@ -1561,13 +1621,17 @@
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 Height: =133
                 MaxLength: =Parent.MaxLength
+                Mode: =TextMode.MultiLine
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -1635,12 +1699,15 @@
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =582
                 X: =30
@@ -1716,13 +1783,17 @@
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 Height: =133
                 MaxLength: =Parent.MaxLength
+                Mode: =TextMode.MultiLine
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -1790,13 +1861,17 @@
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 Height: =133
                 MaxLength: =Parent.MaxLength
+                Mode: =TextMode.MultiLine
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -1871,10 +1946,13 @@
                 DefaultDate: =Parent.Default
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 IconBackground: =RGBA(77,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                Size: =12
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -1972,7 +2050,10 @@
             Checkbox3_6 As checkbox:
                 BorderColor: =RGBA(32, 54, 71, 1)
                 CheckboxBorderColor: =RGBA(32, 54, 71, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 HoverColor: =RGBA(32, 54, 71, 1)
+                Size: =12
                 Text: ="Yes"
                 X: =30
                 Y: =60
