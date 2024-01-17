@@ -4591,6 +4591,61 @@ Requests As screen:
         Y: =673
         ZIndex: =51
 
+    lbl_UID_1 As label:
+        Align: =Align.Center
+        Font: =Font.Arial
+        FontWeight: =FontWeight.Bold
+        Size: =10
+        Text: ="UID"
+        Width: =item_UID.Width
+        X: =226
+        Y: =108
+        ZIndex: =52
+
+    lbl_date_received_2 As label:
+        Align: =Align.Center
+        Font: =Font.Arial
+        FontWeight: =FontWeight.Bold
+        Size: =10
+        Text: ="Date Received"
+        Width: =item_date_received.Width
+        X: =328
+        Y: =105
+        ZIndex: =53
+
+    lbl_request_type_1 As label:
+        Align: =Align.Center
+        Font: =Font.Arial
+        FontWeight: =FontWeight.Bold
+        Size: =10
+        Text: ="Request Type"
+        Width: =item_request_type.Width
+        X: =487
+        Y: =105
+        ZIndex: =54
+
+    lbl_stage_1 As label:
+        Align: =Align.Center
+        Font: =Font.Arial
+        FontWeight: =FontWeight.Bold
+        Size: =10
+        Text: ="Stage"
+        Width: =item_stage.Width
+        X: =790
+        Y: =105
+        ZIndex: =55
+
+    lbl_request_type_2 As label:
+        Align: =Align.Center
+        Font: =Font.Arial
+        FontWeight: =FontWeight.Bold
+        Size: =10
+        Text: ="Requestor"
+        Width: =item_request_type.Width
+        X: =643
+        Y: =105
+        ZIndex: =56
+
     Timeline As group:
         Height: =5
         Width: =5
