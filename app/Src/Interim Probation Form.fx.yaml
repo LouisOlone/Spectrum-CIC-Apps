@@ -44,7 +44,7 @@
 
             DataCardValue182 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
+                Default: =LookUp( 'Onboarding Record', UID = varInterimProbationForm.UID, FirstName )
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 MaxLength: =Parent.MaxLength
@@ -116,7 +116,7 @@
 
             DataCardValue183 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
+                Default: =LookUp( 'Onboarding Record', UID = varInterimProbationForm.UID, LastName )
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 MaxLength: =Parent.MaxLength
@@ -188,7 +188,7 @@
 
             DataCardValue179 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
+                Default: =LookUp( 'Onboarding Record', UID = varInterimProbationForm.UID, UID )
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 MaxLength: =Parent.MaxLength
@@ -260,7 +260,7 @@
 
             DataCardValue184 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
+                Default: =LookUp( 'Onboarding Record', UID = varInterimProbationForm.UID, JobTitle )
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 MaxLength: =Parent.MaxLength
@@ -332,7 +332,7 @@
 
             DataCardValue185 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
+                Default: =LookUp( 'Onboarding Record', UID = varInterimProbationForm.UID, Service )
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 MaxLength: =Parent.MaxLength
@@ -404,7 +404,7 @@
 
             DataCardValue186 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
+                Default: =LookUp( 'Onboarding Record', UID = varInterimProbationForm.UID, Site )
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 MaxLength: =Parent.MaxLength
@@ -476,7 +476,7 @@
 
             DataCardValue187 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
+                Default: =LookUp( 'Onboarding Record', UID = varInterimProbationForm.UID, Team )
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 MaxLength: =Parent.MaxLength

@@ -117,6 +117,22 @@ Dashboard As screen:
                                 }
                             )
                         ),
+                        // View Interim Probation Form
+                                     If(
+                                        ThisItem.request_type = "Interim Probation Form",
+                                        And(
+                                            Set(varInterimProbationForm,
+                                                LookUp(
+                                                         'Interim probation review form',
+                                                         UID = ThisItem.UID
+                                                        ) 
+                                                ),
+                                             UpdateContext({varLoading: false}),
+                                             UpdateContext({varPopUp: false}),
+                                          Navigate('Interim Probation Form')
+                                            )
+                                            
+                                        ),
                         // View Mobile Request
                         If(
                             ThisItem.request_type = "Mobile",
@@ -209,7 +225,8 @@ Dashboard As screen:
                             )
                         )
                     )
-                    )
+                
+                )
                 ;
                 // Open pop-up window
                 UpdateContext({varPopUp: true});
