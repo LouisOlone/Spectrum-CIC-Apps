@@ -4692,7 +4692,11 @@ Requests As screen:
 
             DataCardKey196 As label:
                 AutoHeight: =true
+                Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -4705,12 +4709,15 @@ Requests As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -4759,7 +4766,11 @@ Requests As screen:
 
             DataCardKey204 As label:
                 AutoHeight: =true
+                Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -4772,11 +4783,14 @@ Requests As screen:
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 Items: =Choices([@'Interim probation review form'].EmployeeSpectrumFlag)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
                 SearchItems: =Choices('Interim probation review form'.EmployeeSpectrumFlag,DataCardValue196.SearchText)
                 SelectMultiple: =false
+                Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -4825,7 +4839,11 @@ Requests As screen:
 
             DataCardKey208 As label:
                 AutoHeight: =true
+                Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -4834,15 +4852,22 @@ Requests As screen:
                 ZIndex: =1
 
             DataCardValue197 As combobox:
+                AccessibleLabel: =
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 DefaultSelectedItems: =Parent.Default
-                DisplayFields: =["Claims"]
+                DisplayFields: =["Email"]
                 DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@'Interim probation review form'].SpectrumEmployeeName)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
+                IsSearchable: =false
+                MultiValueDelimiter: =
+                NoSelectionText: =
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                SearchFields: =["Claims"]
-                SearchItems: =Choices('Interim probation review form'.SpectrumEmployeeName,DataCardValue197.SearchText)
+                SearchFields: =
+                SearchItems: =[]
                 SelectMultiple: =false
+                Size: =12
+                Template: =ListItemTemplate.Person
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -4892,7 +4917,11 @@ Requests As screen:
 
             DataCardKey209 As label:
                 AutoHeight: =true
+                Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -4905,12 +4934,15 @@ Requests As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -4960,7 +4992,11 @@ Requests As screen:
 
             DataCardKey210 As label:
                 AutoHeight: =true
+                Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -4973,12 +5009,15 @@ Requests As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -5028,7 +5067,11 @@ Requests As screen:
 
             DataCardKey211 As label:
                 AutoHeight: =true
+                Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -5041,12 +5084,15 @@ Requests As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -5096,7 +5142,11 @@ Requests As screen:
 
             DataCardKey212 As label:
                 AutoHeight: =true
+                Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -5109,12 +5159,15 @@ Requests As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -5164,7 +5217,11 @@ Requests As screen:
 
             DataCardKey213 As label:
                 AutoHeight: =true
+                Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -5177,12 +5234,15 @@ Requests As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -5232,7 +5292,11 @@ Requests As screen:
 
             DataCardKey214 As label:
                 AutoHeight: =true
+                Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -5245,12 +5309,15 @@ Requests As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -5299,7 +5366,11 @@ Requests As screen:
 
             DataCardKey215 As label:
                 AutoHeight: =true
+                Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -5312,9 +5383,12 @@ Requests As screen:
                 DefaultDate: =Parent.Default
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                Size: =12
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -5364,7 +5438,11 @@ Requests As screen:
 
             DataCardKey216 As label:
                 AutoHeight: =true
+                Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -5377,9 +5455,12 @@ Requests As screen:
                 DefaultDate: =Parent.Default
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                Size: =12
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -5430,7 +5511,11 @@ Requests As screen:
 
             DataCardKey217 As label:
                 AutoHeight: =true
+                Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -5443,12 +5528,15 @@ Requests As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -5498,7 +5586,11 @@ Requests As screen:
 
             DataCardKey218 As label:
                 AutoHeight: =true
+                Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -5511,12 +5603,15 @@ Requests As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -5566,7 +5661,11 @@ Requests As screen:
 
             DataCardKey219 As label:
                 AutoHeight: =true
+                Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -5579,12 +5678,15 @@ Requests As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -5634,7 +5736,11 @@ Requests As screen:
 
             DataCardKey220 As label:
                 AutoHeight: =true
+                Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -5647,12 +5753,15 @@ Requests As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -5702,7 +5811,11 @@ Requests As screen:
 
             DataCardKey221 As label:
                 AutoHeight: =true
+                Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -5715,12 +5828,15 @@ Requests As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -5770,7 +5886,11 @@ Requests As screen:
 
             DataCardKey222 As label:
                 AutoHeight: =true
+                Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -5783,12 +5903,15 @@ Requests As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -5838,7 +5961,11 @@ Requests As screen:
 
             DataCardKey223 As label:
                 AutoHeight: =true
+                Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -5851,12 +5978,15 @@ Requests As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -5906,7 +6036,11 @@ Requests As screen:
 
             DataCardKey224 As label:
                 AutoHeight: =true
+                Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -5919,12 +6053,15 @@ Requests As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -5974,7 +6111,11 @@ Requests As screen:
 
             DataCardKey225 As label:
                 AutoHeight: =true
+                Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -5987,12 +6128,15 @@ Requests As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -6042,7 +6186,11 @@ Requests As screen:
 
             DataCardKey226 As label:
                 AutoHeight: =true
+                Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -6055,12 +6203,15 @@ Requests As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -6110,7 +6261,11 @@ Requests As screen:
 
             DataCardKey227 As label:
                 AutoHeight: =true
+                Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -6123,12 +6278,15 @@ Requests As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -6177,7 +6335,11 @@ Requests As screen:
 
             DataCardKey228 As label:
                 AutoHeight: =true
+                Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -6190,9 +6352,12 @@ Requests As screen:
                 DefaultDate: =Parent.Default
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                Size: =12
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -6243,7 +6408,11 @@ Requests As screen:
 
             DataCardKey229 As label:
                 AutoHeight: =true
+                Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -6256,12 +6425,15 @@ Requests As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -6311,7 +6483,11 @@ Requests As screen:
 
             DataCardKey230 As label:
                 AutoHeight: =true
+                Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -6324,12 +6500,15 @@ Requests As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -6379,7 +6558,11 @@ Requests As screen:
 
             DataCardKey231 As label:
                 AutoHeight: =true
+                Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -6392,12 +6575,15 @@ Requests As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -6447,7 +6633,11 @@ Requests As screen:
 
             DataCardKey232 As label:
                 AutoHeight: =true
+                Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -6515,7 +6705,11 @@ Requests As screen:
 
             DataCardKey233 As label:
                 AutoHeight: =true
+                Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
