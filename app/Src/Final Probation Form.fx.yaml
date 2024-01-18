@@ -1,4 +1,4 @@
-template_new_form_1 As screen:
+"'Final Probation Form' As screen":
 
     Component1_6 As banner:
 
@@ -798,7 +798,7 @@ template_new_form_1 As screen:
             DataCardKey244 As label:
                 AutoHeight: =true
                 Height: =55
-                Text: =Parent.DisplayName
+                Text: ="Attendance and timekeeping"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -867,7 +867,7 @@ template_new_form_1 As screen:
             DataCardKey245 As label:
                 AutoHeight: =true
                 Height: =34
-                Text: =Parent.DisplayName
+                Text: ="Ability to effectively follow instruction"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -936,7 +936,7 @@ template_new_form_1 As screen:
             DataCardKey246 As label:
                 AutoHeight: =true
                 Height: =34
-                Text: =Parent.DisplayName
+                Text: ="""Training undertaken /planned"""
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -1005,8 +1005,9 @@ template_new_form_1 As screen:
             DataCardKey247 As label:
                 AutoHeight: =true
                 Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Text: |-
+                    ="Please use this space to provide further details on the employee’s ability to effectively perform tasks outlined in the job description, achievement of targets set and any other issues of relevance:"
+                Width: =582
                 X: =30
                 Y: =10
                 ZIndex: =1
@@ -1024,7 +1025,7 @@ template_new_form_1 As screen:
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
                 Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =582
                 X: =30
                 Y: =DataCardKey247.Y + DataCardKey247.Height + 5
                 ZIndex: =2
@@ -1054,6 +1055,14 @@ template_new_form_1 As screen:
                 Y: =DataCardKey247.Y
                 ZIndex: =4
 
+            Rectangle2_37 As rectangle:
+                BorderColor: =RGBA(32, 54, 71, 1)
+                Fill: =RGBA(100, 118, 132, 1)
+                Height: =2
+                Width: =1284
+                Y: =230
+                ZIndex: =5
+
         ConfirmProbationLetterFlag_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="ConfirmProbationLetterFlag"
@@ -1061,7 +1070,7 @@ template_new_form_1 As screen:
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Final Probation Review Form'],DataSourceInfo.DisplayName,"ConfirmProbationLetterFlag")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =120
             MaxLength: =DataSourceInfo([@'Final Probation Review Form'], DataSourceInfo.MaxLength, "ConfirmProbationLetterFlag")
             Required: =false
             Update: =DataCardValue244.Text
