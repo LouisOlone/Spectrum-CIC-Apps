@@ -148,22 +148,23 @@ template_new_form_1 As screen:
                 Y: =DataCardKey235.Y
                 ZIndex: =4
 
-        EmployeeSpectrumFlag_DataCard3 As typedDataCard.comboBoxEditCard:
+        UID_DataCard17 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
-            DataField: ="EmployeeSpectrumFlag"
-            Default: =ThisItem.EmployeeSpectrumFlag
+            DataField: ="UID"
+            Default: =ThisItem.UID
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Final Probation Review Form'],DataSourceInfo.DisplayName,"EmployeeSpectrumFlag")
+            DisplayName: =DataSourceInfo([@'Final Probation Review Form'],DataSourceInfo.DisplayName,"UID")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
+            MaxLength: =DataSourceInfo([@'Final Probation Review Form'], DataSourceInfo.MaxLength, "UID")
             Required: =false
-            Update: =DataCardValue225.Selected
+            Update: =DataCardValue224.Text
             Width: =642
             X: =0
-            Y: =2
+            Y: =1
             ZIndex: =3
 
-            DataCardKey230 As label:
+            DataCardKey229 As label:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
@@ -173,23 +174,24 @@ template_new_form_1 As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue225 As combobox:
+            DataCardValue224 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultSelectedItems: =Parent.Default
-                DisplayFields: =["Value"]
+                Default: =Parent.Default
+                DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@'Final Probation Review Form'].EmployeeSpectrumFlag)
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                SearchFields: =["Value"]
-                SearchItems: =Choices('Final Probation Review Form'.EmployeeSpectrumFlag,DataCardValue225.SearchText)
-                SelectMultiple: =false
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey230.Y + DataCardKey230.Height + 5
+                Y: =DataCardKey229.Y + DataCardKey229.Height + 5
                 ZIndex: =2
 
-            ErrorMessage231 As label:
+            ErrorMessage230 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -201,17 +203,17 @@ template_new_form_1 As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue225.Y + DataCardValue225.Height
+                Y: =DataCardValue224.Y + DataCardValue224.Height
                 ZIndex: =3
 
-            StarVisible231 As label:
+            StarVisible230 As label:
                 Align: =Align.Center
-                Height: =DataCardKey230.Height
+                Height: =DataCardKey229.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey230.Y
+                Y: =DataCardKey229.Y
                 ZIndex: =4
 
         JobTitle_DataCard3 As typedDataCard.textualEditCard:
@@ -295,7 +297,7 @@ template_new_form_1 As screen:
             Update: =DataCardValue232.Text
             Width: =642
             X: =0
-            Y: =3
+            Y: =2
             ZIndex: =3
 
             DataCardKey237 As label:
@@ -363,7 +365,7 @@ template_new_form_1 As screen:
             Update: =DataCardValue233.Text
             Width: =642
             X: =1
-            Y: =3
+            Y: =2
             ZIndex: =3
 
             DataCardKey238 As label:
@@ -431,7 +433,7 @@ template_new_form_1 As screen:
             Update: =DataCardValue234.Text
             Width: =642
             X: =0
-            Y: =4
+            Y: =3
             ZIndex: =3
 
             DataCardKey239 As label:
@@ -498,7 +500,7 @@ template_new_form_1 As screen:
             Update: =DataCardValue235.SelectedDate
             Width: =642
             X: =1
-            Y: =4
+            Y: =3
             ZIndex: =3
 
             DataCardKey240 As label:
@@ -563,13 +565,13 @@ template_new_form_1 As screen:
             Update: =DataCardValue236.SelectedDate
             Width: =642
             X: =0
-            Y: =5
+            Y: =4
             ZIndex: =3
 
             DataCardKey241 As label:
                 AutoHeight: =true
                 Height: =34
-                Text: =Parent.DisplayName
+                Text: ="Interim Date"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -616,6 +618,14 @@ template_new_form_1 As screen:
                 Y: =DataCardKey241.Y
                 ZIndex: =4
 
+            Rectangle2_35 As rectangle:
+                BorderColor: =RGBA(32, 54, 71, 1)
+                Fill: =RGBA(100, 118, 132, 1)
+                Height: =2
+                Width: =732
+                Y: =102
+                ZIndex: =5
+
         FinalDate_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="FinalDate"
@@ -623,18 +633,18 @@ template_new_form_1 As screen:
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Final Probation Review Form'],DataSourceInfo.DisplayName,"FinalDate")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =104
             Required: =false
             Update: =DataCardValue237.SelectedDate
             Width: =642
             X: =1
-            Y: =5
+            Y: =4
             ZIndex: =3
 
             DataCardKey242 As label:
                 AutoHeight: =true
                 Height: =34
-                Text: =Parent.DisplayName
+                Text: ="Final Date"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -681,6 +691,14 @@ template_new_form_1 As screen:
                 Y: =DataCardKey242.Y
                 ZIndex: =4
 
+            Rectangle2_36 As rectangle:
+                BorderColor: =RGBA(32, 54, 71, 1)
+                Fill: =RGBA(100, 118, 132, 1)
+                Height: =2
+                Width: =732
+                Y: =102
+                ZIndex: =5
+
         TeamworkComments_DataCard3 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="TeamworkComments"
@@ -688,23 +706,22 @@ template_new_form_1 As screen:
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Final Probation Review Form'],DataSourceInfo.DisplayName,"TeamworkComments")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =247
             MaxLength: =DataSourceInfo([@'Final Probation Review Form'], DataSourceInfo.MaxLength, "TeamworkComments")
             Required: =false
             Update: =DataCardValue238.Text
             Width: =642
             X: =0
-            Y: =6
+            Y: =5
             ZIndex: =3
 
             DataCardKey243 As label:
                 AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
+                Height: =55
+                Text: ="Work relationships (team work, interpersonal and communication skills)"
                 Width: =Parent.Width - 60
-                Wrap: =false
                 X: =30
-                Y: =10
+                Y: =49
                 ZIndex: =1
 
             DataCardValue238 As text:
@@ -712,6 +729,7 @@ template_new_form_1 As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Height: =133
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -721,7 +739,7 @@ template_new_form_1 As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey243.Y + DataCardKey243.Height + 5
+                Y: =104      
                 ZIndex: =2
 
             ErrorMessage244 As label:
@@ -749,6 +767,18 @@ template_new_form_1 As screen:
                 Y: =DataCardKey243.Y
                 ZIndex: =4
 
+            Label22_2 As label:
+                BorderColor: =RGBA(32, 54, 71, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
+                Height: =35
+                Size: =14
+                Text: ="Please comment on the below."
+                Width: =612
+                X: =30
+                Y: =1
+                ZIndex: =5
+
         AttendanceComments_DataCard3 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="AttendanceComments"
@@ -762,17 +792,17 @@ template_new_form_1 As screen:
             Update: =DataCardValue239.Text
             Width: =642
             X: =1
-            Y: =6
+            Y: =5
             ZIndex: =3
 
             DataCardKey244 As label:
                 AutoHeight: =true
-                Height: =34
+                Height: =55
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
-                Y: =10
+                Y: =49
                 ZIndex: =1
 
             DataCardValue239 As text:
@@ -780,6 +810,7 @@ template_new_form_1 As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Height: =133
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -789,7 +820,7 @@ template_new_form_1 As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey244.Y + DataCardKey244.Height + 5
+                Y: =104      
                 ZIndex: =2
 
             ErrorMessage245 As label:
@@ -830,7 +861,7 @@ template_new_form_1 As screen:
             Update: =DataCardValue240.Text
             Width: =642
             X: =0
-            Y: =7
+            Y: =6
             ZIndex: =3
 
             DataCardKey245 As label:
@@ -848,6 +879,7 @@ template_new_form_1 As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Height: =133
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -898,7 +930,7 @@ template_new_form_1 As screen:
             Update: =DataCardValue241.Text
             Width: =642
             X: =1
-            Y: =7
+            Y: =6
             ZIndex: =3
 
             DataCardKey246 As label:
@@ -916,6 +948,7 @@ template_new_form_1 As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Height: =133
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -964,9 +997,9 @@ template_new_form_1 As screen:
             MaxLength: =DataSourceInfo([@'Final Probation Review Form'], DataSourceInfo.MaxLength, "FurtherDetails")
             Required: =false
             Update: =DataCardValue242.Text
-            Width: =642
+            Width: =1284
             X: =0
-            Y: =8
+            Y: =7
             ZIndex: =3
 
             DataCardKey247 As label:
@@ -974,7 +1007,6 @@ template_new_form_1 As screen:
                 Height: =34
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
-                Wrap: =false
                 X: =30
                 Y: =10
                 ZIndex: =1
@@ -984,6 +1016,7 @@ template_new_form_1 As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Height: =133
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -1021,74 +1054,6 @@ template_new_form_1 As screen:
                 Y: =DataCardKey247.Y
                 ZIndex: =4
 
-        EmployeeComments_DataCard2 As typedDataCard.textualEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="EmployeeComments"
-            Default: =ThisItem.EmployeeComments
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Final Probation Review Form'],DataSourceInfo.DisplayName,"EmployeeComments")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Final Probation Review Form'], DataSourceInfo.MaxLength, "EmployeeComments")
-            Required: =false
-            Update: =DataCardValue243.Text
-            Width: =642
-            X: =1
-            Y: =8
-            ZIndex: =3
-
-            DataCardKey248 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue243 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey248.Y + DataCardKey248.Height + 5
-                ZIndex: =2
-
-            ErrorMessage249 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue243.Y + DataCardValue243.Height
-                ZIndex: =3
-
-            StarVisible249 As label:
-                Align: =Align.Center
-                Height: =DataCardKey248.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey248.Y
-                ZIndex: =4
-
         ConfirmProbationLetterFlag_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="ConfirmProbationLetterFlag"
@@ -1102,7 +1067,7 @@ template_new_form_1 As screen:
             Update: =DataCardValue244.Text
             Width: =642
             X: =0
-            Y: =9
+            Y: =8
             ZIndex: =3
 
             DataCardKey249 As label:
@@ -1170,7 +1135,7 @@ template_new_form_1 As screen:
             Update: =DataCardValue245.Text
             Width: =642
             X: =1
-            Y: =9
+            Y: =8
             ZIndex: =3
 
             DataCardKey250 As label:
@@ -1225,411 +1190,6 @@ template_new_form_1 As screen:
                 Y: =DataCardKey250.Y
                 ZIndex: =4
 
-        ExtendProbabtionFlag_DataCard1 As typedDataCard.textualEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="ExtendProbabtionFlag"
-            Default: =ThisItem.ExtendProbabtionFlag
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Final Probation Review Form'],DataSourceInfo.DisplayName,"ExtendProbabtionFlag")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Final Probation Review Form'], DataSourceInfo.MaxLength, "ExtendProbabtionFlag")
-            Required: =false
-            Update: =DataCardValue246.Text
-            Width: =642
-            X: =0
-            Y: =10
-            ZIndex: =3
-
-            DataCardKey251 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue246 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey251.Y + DataCardKey251.Height + 5
-                ZIndex: =2
-
-            ErrorMessage252 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue246.Y + DataCardValue246.Height
-                ZIndex: =3
-
-            StarVisible252 As label:
-                Align: =Align.Center
-                Height: =DataCardKey251.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey251.Y
-                ZIndex: =4
-
-        ExtensionDetails_DataCard1 As typedDataCard.textualEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="ExtensionDetails"
-            Default: =ThisItem.ExtensionDetails
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Final Probation Review Form'],DataSourceInfo.DisplayName,"ExtensionDetails")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Final Probation Review Form'], DataSourceInfo.MaxLength, "ExtensionDetails")
-            Required: =false
-            Update: =DataCardValue247.Text
-            Width: =642
-            X: =1
-            Y: =10
-            ZIndex: =3
-
-            DataCardKey252 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue247 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey252.Y + DataCardKey252.Height + 5
-                ZIndex: =2
-
-            ErrorMessage253 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue247.Y + DataCardValue247.Height
-                ZIndex: =3
-
-            StarVisible253 As label:
-                Align: =Align.Center
-                Height: =DataCardKey252.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey252.Y
-                ZIndex: =4
-
-        Objectives_DataCard3 As typedDataCard.textualEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="Objectives"
-            Default: =ThisItem.Objectives
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Final Probation Review Form'],DataSourceInfo.DisplayName,"Objectives")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Final Probation Review Form'], DataSourceInfo.MaxLength, "Objectives")
-            Required: =false
-            Update: =DataCardValue248.Text
-            Width: =642
-            X: =0
-            Y: =11
-            ZIndex: =3
-
-            DataCardKey253 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue248 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey253.Y + DataCardKey253.Height + 5
-                ZIndex: =2
-
-            ErrorMessage254 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue248.Y + DataCardValue248.Height
-                ZIndex: =3
-
-            StarVisible254 As label:
-                Align: =Align.Center
-                Height: =DataCardKey253.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey253.Y
-                ZIndex: =4
-
-        Constraints_DataCard3 As typedDataCard.textualEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="Constraints"
-            Default: =ThisItem.Constraints
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Final Probation Review Form'],DataSourceInfo.DisplayName,"Constraints")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Final Probation Review Form'], DataSourceInfo.MaxLength, "Constraints")
-            Required: =false
-            Update: =DataCardValue249.Text
-            Width: =642
-            X: =1
-            Y: =11
-            ZIndex: =3
-
-            DataCardKey254 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue249 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey254.Y + DataCardKey254.Height + 5
-                ZIndex: =2
-
-            ErrorMessage255 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue249.Y + DataCardValue249.Height
-                ZIndex: =3
-
-            StarVisible255 As label:
-                Align: =Align.Center
-                Height: =DataCardKey254.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey254.Y
-                ZIndex: =4
-
-        SupportTraining_DataCard3 As typedDataCard.textualEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="SupportTraining"
-            Default: =ThisItem.SupportTraining
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Final Probation Review Form'],DataSourceInfo.DisplayName,"SupportTraining")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Final Probation Review Form'], DataSourceInfo.MaxLength, "SupportTraining")
-            Required: =false
-            Update: =DataCardValue250.Text
-            Width: =642
-            X: =0
-            Y: =12
-            ZIndex: =3
-
-            DataCardKey255 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue250 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey255.Y + DataCardKey255.Height + 5
-                ZIndex: =2
-
-            ErrorMessage256 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue250.Y + DataCardValue250.Height
-                ZIndex: =3
-
-            StarVisible256 As label:
-                Align: =Align.Center
-                Height: =DataCardKey255.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey255.Y
-                ZIndex: =4
-
-        ReviewDate_DataCard3 As typedDataCard.dateEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="ReviewDate"
-            Default: =ThisItem.ReviewDate
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Final Probation Review Form'],DataSourceInfo.DisplayName,"ReviewDate")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            Required: =false
-            Update: =DataCardValue251.SelectedDate
-            Width: =642
-            X: =1
-            Y: =12
-            ZIndex: =3
-
-            DataCardKey256 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue251 As datepicker:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultDate: =Parent.Default
-                DisplayMode: =Parent.DisplayMode
-                EndYear: =Year(Today())+100
-                IsEditable: =true
-                PaddingBottom: =0
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                StartYear: =1899
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey256.Y + DataCardKey256.Height + 5
-                ZIndex: =2
-
-            ErrorMessage257 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue251.Y + DataCardValue251.Height
-                ZIndex: =3
-
-            StarVisible257 As label:
-                Align: =Align.Center
-                Height: =DataCardKey256.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey256.Y
-                ZIndex: =4
-
         LineManagerSignatureFLag_DataCard2 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="LineManagerSignatureFLag"
@@ -1643,7 +1203,7 @@ template_new_form_1 As screen:
             Update: =DataCardValue252.Text
             Width: =642
             X: =0
-            Y: =13
+            Y: =9
             ZIndex: =3
 
             DataCardKey257 As label:
@@ -1696,409 +1256,6 @@ template_new_form_1 As screen:
                 Width: =30
                 Wrap: =false
                 Y: =DataCardKey257.Y
-                ZIndex: =4
-
-        EmployeeSignatureFlag_DataCard1 As typedDataCard.textualEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="EmployeeSignatureFlag"
-            Default: =ThisItem.EmployeeSignatureFlag
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Final Probation Review Form'],DataSourceInfo.DisplayName,"EmployeeSignatureFlag")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Final Probation Review Form'], DataSourceInfo.MaxLength, "EmployeeSignatureFlag")
-            Required: =false
-            Update: =DataCardValue253.Text
-            Width: =642
-            X: =1
-            Y: =13
-            ZIndex: =3
-
-            DataCardKey258 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue253 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey258.Y + DataCardKey258.Height + 5
-                ZIndex: =2
-
-            ErrorMessage259 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue253.Y + DataCardValue253.Height
-                ZIndex: =3
-
-            StarVisible259 As label:
-                Align: =Align.Center
-                Height: =DataCardKey258.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey258.Y
-                ZIndex: =4
-
-        NonSpectrumEmail_DataCard3 As typedDataCard.textualEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="NonSpectrumEmail"
-            Default: =ThisItem.NonSpectrumEmail
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Final Probation Review Form'],DataSourceInfo.DisplayName,"NonSpectrumEmail")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Final Probation Review Form'], DataSourceInfo.MaxLength, "NonSpectrumEmail")
-            Required: =false
-            Update: =DataCardValue254.Text
-            Width: =642
-            X: =0
-            Y: =14
-            ZIndex: =3
-
-            DataCardKey259 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue254 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey259.Y + DataCardKey259.Height + 5
-                ZIndex: =2
-
-            ErrorMessage260 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue254.Y + DataCardValue254.Height
-                ZIndex: =3
-
-            StarVisible260 As label:
-                Align: =Align.Center
-                Height: =DataCardKey259.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey259.Y
-                ZIndex: =4
-
-        CompleteFlag_DataCard1 As typedDataCard.textualEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="CompleteFlag"
-            Default: =ThisItem.CompleteFlag
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Final Probation Review Form'],DataSourceInfo.DisplayName,"CompleteFlag")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Final Probation Review Form'], DataSourceInfo.MaxLength, "CompleteFlag")
-            Required: =false
-            Update: =DataCardValue255.Text
-            Width: =642
-            X: =1
-            Y: =14
-            ZIndex: =3
-
-            DataCardKey260 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue255 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey260.Y + DataCardKey260.Height + 5
-                ZIndex: =2
-
-            ErrorMessage261 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue255.Y + DataCardValue255.Height
-                ZIndex: =3
-
-            StarVisible261 As label:
-                Align: =Align.Center
-                Height: =DataCardKey260.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey260.Y
-                ZIndex: =4
-
-        Attachments_DataCard1 As typedDataCard.attachmentsEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="{Attachments}"
-            Default: =ThisItem.Attachments
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Final Probation Review Form'],DataSourceInfo.DisplayName,"{Attachments}")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            Required: =false
-            Update: =DataCardValue256.Attachments
-            Width: =642
-            X: =0
-            Y: =15
-            ZIndex: =3
-
-            DataCardKey261 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue256 As attachments:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DisplayMode: =Parent.DisplayMode
-                IsInDataCard: =true
-                Items: =Parent.Default
-                PaddingBottom: =5
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                PaddingRight: =5
-                PaddingTop: =5
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey261.Y + DataCardKey261.Height + 5
-                ZIndex: =2
-
-            ErrorMessage262 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue256.Y + DataCardValue256.Height
-                ZIndex: =3
-
-            StarVisible262 As label:
-                Align: =Align.Center
-                Height: =DataCardKey261.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey261.Y
-                ZIndex: =4
-
-        UID_DataCard17 As typedDataCard.textualEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="UID"
-            Default: =ThisItem.UID
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Final Probation Review Form'],DataSourceInfo.DisplayName,"UID")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Final Probation Review Form'], DataSourceInfo.MaxLength, "UID")
-            Required: =false
-            Update: =DataCardValue224.Text
-            Width: =642
-            X: =0
-            Y: =1
-            ZIndex: =3
-
-            DataCardKey229 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue224 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey229.Y + DataCardKey229.Height + 5
-                ZIndex: =2
-
-            ErrorMessage230 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue224.Y + DataCardValue224.Height
-                ZIndex: =3
-
-            StarVisible230 As label:
-                Align: =Align.Center
-                Height: =DataCardKey229.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey229.Y
-                ZIndex: =4
-
-        SpectrumEmployeeName_DataCard4 As typedDataCard.comboBoxEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="SpectrumEmployeeName"
-            Default: =ThisItem.SpectrumEmployeeName
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Final Probation Review Form'],DataSourceInfo.DisplayName,"SpectrumEmployeeName")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            Required: =false
-            Update: =DataCardValue228.Selected
-            Width: =642
-            X: =1
-            Y: =2
-            ZIndex: =3
-
-            DataCardKey233 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue228 As combobox:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultSelectedItems: =Parent.Default
-                DisplayFields: =["Claims"]
-                DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@'Final Probation Review Form'].SpectrumEmployeeName)
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                SearchFields: =["Claims"]
-                SearchItems: =Choices('Final Probation Review Form'.SpectrumEmployeeName,DataCardValue228.SearchText)
-                SelectMultiple: =false
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey233.Y + DataCardKey233.Height + 5
-                ZIndex: =2
-
-            ErrorMessage234 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue228.Y + DataCardValue228.Height
-                ZIndex: =3
-
-            StarVisible234 As label:
-                Align: =Align.Center
-                Height: =DataCardKey233.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey233.Y
                 ZIndex: =4
 
     ButtonCanvas1_9 As Button:
