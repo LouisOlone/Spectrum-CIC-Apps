@@ -4772,7 +4772,7 @@ Requests As screen:
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =14
-                Text: =Parent.DisplayName
+                Text: ="Are they a Spectrum Employee"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -4845,7 +4845,7 @@ Requests As screen:
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =14
-                Text: =Parent.DisplayName
+                Text: ="Spectrum Employee Email"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -4923,9 +4923,8 @@ Requests As screen:
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =14
-                Text: =Parent.DisplayName
+                Text: ="Non Spectrum Employee First Name"
                 Width: =Parent.Width - 60
-                Wrap: =false
                 X: =30
                 Y: =10
                 ZIndex: =1
@@ -4998,9 +4997,8 @@ Requests As screen:
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =14
-                Text: =Parent.DisplayName
+                Text: ="Non Spectrum Employee Last Name"
                 Width: =Parent.Width - 60
-                Wrap: =false
                 X: =30
                 Y: =10
                 ZIndex: =1
@@ -5050,6 +5048,80 @@ Requests As screen:
                 Y: =DataCardKey210.Y
                 ZIndex: =4
 
+        NonSpectrumEmail_DataCard2 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="NonSpectrumEmail"
+            Default: =ThisItem.NonSpectrumEmail
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Interim probation review form'],DataSourceInfo.DisplayName,"NonSpectrumEmail")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Interim probation review form'], DataSourceInfo.MaxLength, "NonSpectrumEmail")
+            Required: =false
+            Update: =DataCardValue226.Text
+            Width: =374
+            X: =0
+            Y: =5
+            ZIndex: =58
+
+            DataCardKey231 As label:
+                AutoHeight: =true
+                Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Size: =14
+                Text: ="Non Spectrum Employee Email Address"
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue226 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =12
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey231.Y + DataCardKey231.Height + 5
+                ZIndex: =2
+
+            ErrorMessage232 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue226.Y + DataCardValue226.Height
+                ZIndex: =3
+
+            StarVisible232 As label:
+                Align: =Align.Center
+                Height: =DataCardKey231.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey231.Y
+                ZIndex: =4
+
         JobTitle_DataCard2 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="JobTitle"
@@ -5063,7 +5135,7 @@ Requests As screen:
             Update: =DataCardValue205.Text
             Width: =374
             X: =0
-            Y: =5
+            Y: =6
             ZIndex: =58
 
             DataCardKey211 As label:
@@ -5073,7 +5145,7 @@ Requests As screen:
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =14
-                Text: =Parent.DisplayName
+                Text: ="Job Title"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -5138,7 +5210,7 @@ Requests As screen:
             Update: =DataCardValue207.Text
             Width: =374
             X: =0
-            Y: =6
+            Y: =7
             ZIndex: =58
 
             DataCardKey212 As label:
@@ -5213,7 +5285,7 @@ Requests As screen:
             Update: =DataCardValue208.Text
             Width: =374
             X: =0
-            Y: =7
+            Y: =8
             ZIndex: =58
 
             DataCardKey213 As label:
@@ -5288,7 +5360,7 @@ Requests As screen:
             Update: =DataCardValue209.Text
             Width: =374
             X: =0
-            Y: =8
+            Y: =9
             ZIndex: =58
 
             DataCardKey214 As label:
@@ -5362,7 +5434,7 @@ Requests As screen:
             Update: =DataCardValue210.SelectedDate
             Width: =374
             X: =0
-            Y: =9
+            Y: =10
             ZIndex: =58
 
             DataCardKey215 As label:
@@ -5372,7 +5444,7 @@ Requests As screen:
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =14
-                Text: =Parent.DisplayName
+                Text: ="Start Date"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -5434,7 +5506,7 @@ Requests As screen:
             Update: =DataCardValue211.SelectedDate
             Width: =374
             X: =0
-            Y: =10
+            Y: =11
             ZIndex: =58
 
             DataCardKey216 As label:
@@ -5444,7 +5516,7 @@ Requests As screen:
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =14
-                Text: =Parent.DisplayName
+                Text: ="Review Date"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -5507,7 +5579,7 @@ Requests As screen:
             Update: =DataCardValue212.Text
             Width: =374
             X: =0
-            Y: =11
+            Y: =12
             ZIndex: =58
 
             DataCardKey217 As label:
@@ -5517,9 +5589,8 @@ Requests As screen:
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =14
-                Text: =Parent.DisplayName
+                Text: ="Work relationships (team work, interpersonal and communication skills)"
                 Width: =Parent.Width - 60
-                Wrap: =false
                 X: =30
                 Y: =10
                 ZIndex: =1
@@ -5582,7 +5653,7 @@ Requests As screen:
             Update: =DataCardValue213.Text
             Width: =374
             X: =0
-            Y: =12
+            Y: =13
             ZIndex: =58
 
             DataCardKey218 As label:
@@ -5592,7 +5663,7 @@ Requests As screen:
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =14
-                Text: =Parent.DisplayName
+                Text: ="Attendance and timekeeping"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -5657,7 +5728,7 @@ Requests As screen:
             Update: =DataCardValue214.Text
             Width: =374
             X: =0
-            Y: =13
+            Y: =14
             ZIndex: =58
 
             DataCardKey219 As label:
@@ -5667,9 +5738,8 @@ Requests As screen:
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =14
-                Text: =Parent.DisplayName
+                Text: ="Ability to effectively follow instruction"
                 Width: =Parent.Width - 60
-                Wrap: =false
                 X: =30
                 Y: =10
                 ZIndex: =1
@@ -5732,7 +5802,7 @@ Requests As screen:
             Update: =DataCardValue215.Text
             Width: =374
             X: =0
-            Y: =14
+            Y: =15
             ZIndex: =58
 
             DataCardKey220 As label:
@@ -5742,7 +5812,7 @@ Requests As screen:
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =14
-                Text: =Parent.DisplayName
+                Text: ="Training undertaken /planned"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -5807,7 +5877,7 @@ Requests As screen:
             Update: =DataCardValue216.Text
             Width: =374
             X: =0
-            Y: =15
+            Y: =16
             ZIndex: =58
 
             DataCardKey221 As label:
@@ -5817,9 +5887,9 @@ Requests As screen:
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =14
-                Text: =Parent.DisplayName
+                Text: |-
+                    ="Please use this space to provide further details on the employee’s ability to effectively perform tasks outlined in the job description, achievement of targets set and any other issues of relevance:"
                 Width: =Parent.Width - 60
-                Wrap: =false
                 X: =30
                 Y: =10
                 ZIndex: =1
@@ -5882,7 +5952,7 @@ Requests As screen:
             Update: =DataCardValue217.Text
             Width: =374
             X: =0
-            Y: =16
+            Y: =17
             ZIndex: =58
 
             DataCardKey222 As label:
@@ -5892,7 +5962,7 @@ Requests As screen:
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =14
-                Text: =Parent.DisplayName
+                Text: ="Comments From Employee"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -5957,7 +6027,7 @@ Requests As screen:
             Update: =DataCardValue218.Text
             Width: =374
             X: =0
-            Y: =17
+            Y: =18
             ZIndex: =58
 
             DataCardKey223 As label:
@@ -5967,7 +6037,7 @@ Requests As screen:
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =14
-                Text: =Parent.DisplayName
+                Text: ="Employee Progressing Well"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -6032,7 +6102,7 @@ Requests As screen:
             Update: =DataCardValue219.Text
             Width: =374
             X: =0
-            Y: =18
+            Y: =21
             ZIndex: =58
 
             DataCardKey224 As label:
@@ -6042,7 +6112,7 @@ Requests As screen:
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =14
-                Text: =Parent.DisplayName
+                Text: ="Employee Concerns Raised"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -6107,7 +6177,7 @@ Requests As screen:
             Update: =DataCardValue220.Text
             Width: =374
             X: =0
-            Y: =19
+            Y: =22
             ZIndex: =58
 
             DataCardKey225 As label:
@@ -6182,7 +6252,7 @@ Requests As screen:
             Update: =DataCardValue221.Text
             Width: =374
             X: =0
-            Y: =20
+            Y: =23
             ZIndex: =58
 
             DataCardKey226 As label:
@@ -6257,7 +6327,7 @@ Requests As screen:
             Update: =DataCardValue222.Text
             Width: =374
             X: =0
-            Y: =21
+            Y: =24
             ZIndex: =58
 
             DataCardKey227 As label:
@@ -6267,7 +6337,7 @@ Requests As screen:
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =14
-                Text: =Parent.DisplayName
+                Text: ="Support Training"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -6331,7 +6401,7 @@ Requests As screen:
             Update: =DataCardValue223.SelectedDate
             Width: =374
             X: =0
-            Y: =22
+            Y: =20
             ZIndex: =58
 
             DataCardKey228 As label:
@@ -6341,7 +6411,7 @@ Requests As screen:
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =14
-                Text: =Parent.DisplayName
+                Text: ="Review Date"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -6391,231 +6461,6 @@ Requests As screen:
                 Y: =DataCardKey228.Y
                 ZIndex: =4
 
-        LineManagerSignatureFLag_DataCard2 As typedDataCard.textualEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="LineManagerSignatureFLag"
-            Default: =ThisItem.LineManagerSignatureFLag
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Interim probation review form'],DataSourceInfo.DisplayName,"LineManagerSignatureFLag")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Interim probation review form'], DataSourceInfo.MaxLength, "LineManagerSignatureFLag")
-            Required: =false
-            Update: =DataCardValue224.Text
-            Width: =374
-            X: =0
-            Y: =23
-            ZIndex: =58
-
-            DataCardKey229 As label:
-                AutoHeight: =true
-                Color: =RGBA(77,164,65,1)
-                Font: =Font.Arial
-                FontWeight: =FontWeight.Bold
-                Height: =34
-                Size: =14
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue224 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                Font: =Font.Arial
-                FontWeight: =FontWeight.Lighter
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Size: =12
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey229.Y + DataCardKey229.Height + 5
-                ZIndex: =2
-
-            ErrorMessage230 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue224.Y + DataCardValue224.Height
-                ZIndex: =3
-
-            StarVisible230 As label:
-                Align: =Align.Center
-                Height: =DataCardKey229.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey229.Y
-                ZIndex: =4
-
-        EmployeeSignatureFlag_DataCard1 As typedDataCard.textualEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="EmployeeSignatureFlag"
-            Default: =ThisItem.EmployeeSignatureFlag
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Interim probation review form'],DataSourceInfo.DisplayName,"EmployeeSignatureFlag")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Interim probation review form'], DataSourceInfo.MaxLength, "EmployeeSignatureFlag")
-            Required: =false
-            Update: =DataCardValue225.Text
-            Width: =374
-            X: =0
-            Y: =24
-            ZIndex: =58
-
-            DataCardKey230 As label:
-                AutoHeight: =true
-                Color: =RGBA(77,164,65,1)
-                Font: =Font.Arial
-                FontWeight: =FontWeight.Bold
-                Height: =34
-                Size: =14
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue225 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                Font: =Font.Arial
-                FontWeight: =FontWeight.Lighter
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Size: =12
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey230.Y + DataCardKey230.Height + 5
-                ZIndex: =2
-
-            ErrorMessage231 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue225.Y + DataCardValue225.Height
-                ZIndex: =3
-
-            StarVisible231 As label:
-                Align: =Align.Center
-                Height: =DataCardKey230.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey230.Y
-                ZIndex: =4
-
-        NonSpectrumEmail_DataCard2 As typedDataCard.textualEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="NonSpectrumEmail"
-            Default: =ThisItem.NonSpectrumEmail
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Interim probation review form'],DataSourceInfo.DisplayName,"NonSpectrumEmail")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Interim probation review form'], DataSourceInfo.MaxLength, "NonSpectrumEmail")
-            Required: =false
-            Update: =DataCardValue226.Text
-            Width: =374
-            X: =0
-            Y: =25
-            ZIndex: =58
-
-            DataCardKey231 As label:
-                AutoHeight: =true
-                Color: =RGBA(77,164,65,1)
-                Font: =Font.Arial
-                FontWeight: =FontWeight.Bold
-                Height: =34
-                Size: =14
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue226 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                Font: =Font.Arial
-                FontWeight: =FontWeight.Lighter
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Size: =12
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey231.Y + DataCardKey231.Height + 5
-                ZIndex: =2
-
-            ErrorMessage232 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue226.Y + DataCardValue226.Height
-                ZIndex: =3
-
-            StarVisible232 As label:
-                Align: =Align.Center
-                Height: =DataCardKey231.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey231.Y
-                ZIndex: =4
-
         ExtendedProbationFlag_DataCard2 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="ExtendedProbationFlag"
@@ -6629,7 +6474,7 @@ Requests As screen:
             Update: =DataCardValue227.Text
             Width: =374
             X: =0
-            Y: =26
+            Y: =19
             ZIndex: =58
 
             DataCardKey232 As label:
@@ -6639,7 +6484,7 @@ Requests As screen:
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =14
-                Text: =Parent.DisplayName
+                Text: ="Extended Probation"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -6688,78 +6533,6 @@ Requests As screen:
                 Y: =DataCardKey232.Y
                 ZIndex: =4
 
-        ExtendedProbationTime_DataCard2 As typedDataCard.textualEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="ExtendedProbationTime"
-            Default: =ThisItem.ExtendedProbationTime
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Interim probation review form'],DataSourceInfo.DisplayName,"ExtendedProbationTime")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Interim probation review form'], DataSourceInfo.MaxLength, "ExtendedProbationTime")
-            Required: =false
-            Update: =DataCardValue228.Text
-            Width: =374
-            X: =0
-            Y: =27
-            ZIndex: =58
-
-            DataCardKey233 As label:
-                AutoHeight: =true
-                Color: =RGBA(77,164,65,1)
-                Font: =Font.Arial
-                FontWeight: =FontWeight.Bold
-                Height: =34
-                Size: =14
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue228 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey233.Y + DataCardKey233.Height + 5
-                ZIndex: =2
-
-            ErrorMessage234 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue228.Y + DataCardValue228.Height
-                ZIndex: =3
-
-            StarVisible234 As label:
-                Align: =Align.Center
-                Height: =DataCardKey233.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey233.Y
-                ZIndex: =4
-
     Timeline As group:
         Height: =5
         Width: =5
@@ -6776,49 +6549,39 @@ Requests As screen:
                 */
                 If(
                     And(
-                        gal_requests.Selected.request_type = "New Starter Form",
+                        gal_requests.Selected.request_type = "Interim Probation Form",
                         LookUp(
-                            NewStarterForm,
+                            'Interim probation review form',
                             gal_requests.Selected.UID = UID,
-                            LineManagerCompleteFlag
+                            LineManagerSignatureFLag
                         ) = "True"
-                    ),
-                    success,
-                If(
-                    And(
-                        gal_requests.Selected.request_type = "IT Incident",
-                        LookUp(
-                            'IT Incidents',
-                            gal_requests.Selected.UID = UID,
-                            stage_logged_with_IT
-                        ) = "true"
                     ),
                     success,
                     If(
                         And(
-                            gal_requests.Selected.request_type = "Laptop Request",
+                            gal_requests.Selected.request_type = "New Starter Form",
                             LookUp(
-                                'Laptop Requests',
+                                NewStarterForm,
                                 gal_requests.Selected.UID = UID,
-                                stage_line_manager_approval
-                            ) = "true"
+                                LineManagerCompleteFlag
+                            ) = "True"
                         ),
                         success,
                         If(
                             And(
-                                gal_requests.Selected.request_type = "4G Laptop",
+                                gal_requests.Selected.request_type = "IT Incident",
                                 LookUp(
-                                    '4G Laptop Requests',
+                                    'IT Incidents',
                                     gal_requests.Selected.UID = UID,
-                                    stage_line_manager_approval
+                                    stage_logged_with_IT
                                 ) = "true"
                             ),
                             success,
                             If(
                                 And(
-                                    gal_requests.Selected.request_type = "Mobile",
+                                    gal_requests.Selected.request_type = "Laptop Request",
                                     LookUp(
-                                        'Mobile Requests',
+                                        'Laptop Requests',
                                         gal_requests.Selected.UID = UID,
                                         stage_line_manager_approval
                                     ) = "true"
@@ -6826,9 +6589,9 @@ Requests As screen:
                                 success,
                                 If(
                                     And(
-                                        gal_requests.Selected.request_type = "Special IT Request",
+                                        gal_requests.Selected.request_type = "4G Laptop",
                                         LookUp(
-                                            'Special IT Requests',
+                                            '4G Laptop Requests',
                                             gal_requests.Selected.UID = UID,
                                             stage_line_manager_approval
                                         ) = "true"
@@ -6836,14 +6599,9 @@ Requests As screen:
                                     success,
                                     If(
                                         And(
-                                            gal_requests.Selected.request_type = "Peripherals",
+                                            gal_requests.Selected.request_type = "Mobile",
                                             LookUp(
-                                                'Peripherals Requests',
-                                                gal_requests.Selected.UID = UID,
-                                                keyboard_count
-                                            ) = "10+ (Please specify amount in further detail section)",
-                                            LookUp(
-                                                'Peripherals Requests',
+                                                'Mobile Requests',
                                                 gal_requests.Selected.UID = UID,
                                                 stage_line_manager_approval
                                             ) = "true"
@@ -6851,14 +6609,9 @@ Requests As screen:
                                         success,
                                         If(
                                             And(
-                                                gal_requests.Selected.request_type = "Peripherals",
+                                                gal_requests.Selected.request_type = "Special IT Request",
                                                 LookUp(
-                                                    'Peripherals Requests',
-                                                    gal_requests.Selected.UID = UID,
-                                                    headset_count
-                                                ) = "10+ (Please specify amount in further detail section)",
-                                                LookUp(
-                                                    'Peripherals Requests',
+                                                    'Special IT Requests',
                                                     gal_requests.Selected.UID = UID,
                                                     stage_line_manager_approval
                                                 ) = "true"
@@ -6870,7 +6623,7 @@ Requests As screen:
                                                     LookUp(
                                                         'Peripherals Requests',
                                                         gal_requests.Selected.UID = UID,
-                                                        mouse_count
+                                                        keyboard_count
                                                     ) = "10+ (Please specify amount in further detail section)",
                                                     LookUp(
                                                         'Peripherals Requests',
@@ -6885,7 +6638,7 @@ Requests As screen:
                                                         LookUp(
                                                             'Peripherals Requests',
                                                             gal_requests.Selected.UID = UID,
-                                                            monitor_count
+                                                            headset_count
                                                         ) = "10+ (Please specify amount in further detail section)",
                                                         LookUp(
                                                             'Peripherals Requests',
@@ -6897,34 +6650,30 @@ Requests As screen:
                                                     If(
                                                         And(
                                                             gal_requests.Selected.request_type = "Peripherals",
-                                                            Not(
-                                                                LookUp(
-                                                                    'Peripherals Requests',
-                                                                    gal_requests.Selected.UID = UID,
-                                                                    keyboard_count
-                                                                ) = "10+ (Please specify amount in further detail section)"
-                                                            ),
                                                             LookUp(
                                                                 'Peripherals Requests',
                                                                 gal_requests.Selected.UID = UID,
-                                                                stage_logged_with_it
+                                                                mouse_count
+                                                            ) = "10+ (Please specify amount in further detail section)",
+                                                            LookUp(
+                                                                'Peripherals Requests',
+                                                                gal_requests.Selected.UID = UID,
+                                                                stage_line_manager_approval
                                                             ) = "true"
                                                         ),
                                                         success,
                                                         If(
                                                             And(
                                                                 gal_requests.Selected.request_type = "Peripherals",
-                                                                Not(
-                                                                    LookUp(
-                                                                        'Peripherals Requests',
-                                                                        gal_requests.Selected.UID = UID,
-                                                                        mouse_count
-                                                                    ) = "10+ (Please specify amount in further detail section)"
-                                                                ),
                                                                 LookUp(
                                                                     'Peripherals Requests',
                                                                     gal_requests.Selected.UID = UID,
-                                                                    stage_logged_with_it
+                                                                    monitor_count
+                                                                ) = "10+ (Please specify amount in further detail section)",
+                                                                LookUp(
+                                                                    'Peripherals Requests',
+                                                                    gal_requests.Selected.UID = UID,
+                                                                    stage_line_manager_approval
                                                                 ) = "true"
                                                             ),
                                                             success,
@@ -6935,7 +6684,7 @@ Requests As screen:
                                                                         LookUp(
                                                                             'Peripherals Requests',
                                                                             gal_requests.Selected.UID = UID,
-                                                                            monitor_count
+                                                                            keyboard_count
                                                                         ) = "10+ (Please specify amount in further detail section)"
                                                                     ),
                                                                     LookUp(
@@ -6952,7 +6701,7 @@ Requests As screen:
                                                                             LookUp(
                                                                                 'Peripherals Requests',
                                                                                 gal_requests.Selected.UID = UID,
-                                                                                headset_count
+                                                                                mouse_count
                                                                             ) = "10+ (Please specify amount in further detail section)"
                                                                         ),
                                                                         LookUp(
@@ -6964,21 +6713,35 @@ Requests As screen:
                                                                     success,
                                                                     If(
                                                                         And(
-                                                                            gal_requests.Selected.request_type = "Smartcard Request",
+                                                                            gal_requests.Selected.request_type = "Peripherals",
+                                                                            Not(
+                                                                                LookUp(
+                                                                                    'Peripherals Requests',
+                                                                                    gal_requests.Selected.UID = UID,
+                                                                                    monitor_count
+                                                                                ) = "10+ (Please specify amount in further detail section)"
+                                                                            ),
                                                                             LookUp(
-                                                                                'Smartcard Requests',
+                                                                                'Peripherals Requests',
                                                                                 gal_requests.Selected.UID = UID,
-                                                                                stage_line_manager_approval
+                                                                                stage_logged_with_it
                                                                             ) = "true"
                                                                         ),
                                                                         success,
                                                                         If(
                                                                             And(
-                                                                                gal_requests.Selected.request_type = "Smartcard Positions",
+                                                                                gal_requests.Selected.request_type = "Peripherals",
+                                                                                Not(
+                                                                                    LookUp(
+                                                                                        'Peripherals Requests',
+                                                                                        gal_requests.Selected.UID = UID,
+                                                                                        headset_count
+                                                                                    ) = "10+ (Please specify amount in further detail section)"
+                                                                                ),
                                                                                 LookUp(
-                                                                                    'Smartcard Positions Requests',
+                                                                                    'Peripherals Requests',
                                                                                     gal_requests.Selected.UID = UID,
-                                                                                    stage_line_manager_approval
+                                                                                    stage_logged_with_it
                                                                                 ) = "true"
                                                                             ),
                                                                             success,
@@ -6988,16 +6751,38 @@ Requests As screen:
                                                                                     LookUp(
                                                                                         'Smartcard Requests',
                                                                                         gal_requests.Selected.UID = UID,
-                                                                                        new_or_replacement
-                                                                                    ) = "Replace a lost/stolen Smartcard",
-                                                                                    LookUp(
-                                                                                        'Smartcard Requests',
-                                                                                        gal_requests.Selected.UID = UID,
                                                                                         stage_line_manager_approval
                                                                                     ) = "true"
                                                                                 ),
                                                                                 success,
-                                                                                circle
+                                                                                If(
+                                                                                    And(
+                                                                                        gal_requests.Selected.request_type = "Smartcard Positions",
+                                                                                        LookUp(
+                                                                                            'Smartcard Positions Requests',
+                                                                                            gal_requests.Selected.UID = UID,
+                                                                                            stage_line_manager_approval
+                                                                                        ) = "true"
+                                                                                    ),
+                                                                                    success,
+                                                                                    If(
+                                                                                        And(
+                                                                                            gal_requests.Selected.request_type = "Smartcard Request",
+                                                                                            LookUp(
+                                                                                                'Smartcard Requests',
+                                                                                                gal_requests.Selected.UID = UID,
+                                                                                                new_or_replacement
+                                                                                            ) = "Replace a lost/stolen Smartcard",
+                                                                                            LookUp(
+                                                                                                'Smartcard Requests',
+                                                                                                gal_requests.Selected.UID = UID,
+                                                                                                stage_line_manager_approval
+                                                                                            ) = "true"
+                                                                                        ),
+                                                                                        success,
+                                                                                        circle
+                                                                                    )
+                                                                                )
                                                                             )
                                                                         )
                                                                     )
@@ -7014,7 +6799,6 @@ Requests As screen:
                         )
                     )
                 )
-                )
             Visible: =varPopUp
             Width: =35
             X: =954
@@ -7029,8 +6813,9 @@ Requests As screen:
             Size: =12
             Text: |-
                 =If(
-                    gal_requests.Selected.request_type = "New Starter Form",
-                    "Line Manager Form",
+                    gal_requests.Selected.request_type = "Interim Probation Form",
+                    "Interim Form Completion",
+                
                     If(
                     gal_requests.Selected.request_type = "IT Incident",
                     "Logged with IT",
@@ -7203,75 +6988,59 @@ Requests As screen:
                 */
                 If(
                     And(
-                        gal_requests.Selected.request_type = "New Starter Form",
+                        gal_requests.Selected.request_type = "Interim Probation Form",
                         LookUp(
-                            NewStarterForm,
+                            'Interim probation review form',
                             gal_requests.Selected.UID = UID,
-                            'HRApprove/Reject'.Value
-                        ) = "Approve"
-                    ),
-                    success,
-                If(
-                    And(
-                        gal_requests.Selected.request_type = "IT Incident",
-                        LookUp(
-                            'IT Incidents',
-                            gal_requests.Selected.UID = UID,
-                            stage_complete
-                        ) = "true"
+                            EmployeeSignatureFlag
+                        ) = "True"
                     ),
                     success,
                     If(
                         And(
-                            gal_requests.Selected.request_type = "Laptop Request",
+                            gal_requests.Selected.request_type = "New Starter Form",
                             LookUp(
-                                'Laptop Requests',
+                                NewStarterForm,
                                 gal_requests.Selected.UID = UID,
-                                stage_it_manager_approval
-                            ) = "true"
+                                'HRApprove/Reject'.Value
+                            ) = "Approve"
                         ),
                         success,
                         If(
                             And(
-                                gal_requests.Selected.request_type = "4G Laptop",
+                                gal_requests.Selected.request_type = "IT Incident",
                                 LookUp(
-                                    '4G Laptop Requests',
+                                    'IT Incidents',
                                     gal_requests.Selected.UID = UID,
-                                    stage_finance_director_approval
+                                    stage_complete
                                 ) = "true"
                             ),
                             success,
                             If(
                                 And(
-                                    gal_requests.Selected.request_type = "Mobile",
+                                    gal_requests.Selected.request_type = "Laptop Request",
                                     LookUp(
-                                        'Mobile Requests',
+                                        'Laptop Requests',
                                         gal_requests.Selected.UID = UID,
-                                        stage_logged_with_it
+                                        stage_it_manager_approval
                                     ) = "true"
                                 ),
                                 success,
                                 If(
                                     And(
-                                        gal_requests.Selected.request_type = "Special IT Request",
+                                        gal_requests.Selected.request_type = "4G Laptop",
                                         LookUp(
-                                            'Special IT Requests',
+                                            '4G Laptop Requests',
                                             gal_requests.Selected.UID = UID,
-                                            stage_logged_with_it
+                                            stage_finance_director_approval
                                         ) = "true"
                                     ),
                                     success,
-                                   // "Excess" Peripheral requests
                                     If(
                                         And(
-                                            gal_requests.Selected.request_type = "Peripherals",
+                                            gal_requests.Selected.request_type = "Mobile",
                                             LookUp(
-                                                'Peripherals Requests',
-                                                gal_requests.Selected.UID = UID,
-                                                keyboard_count
-                                            ) = "10+ (Please specify amount in further detail section)",
-                                            LookUp(
-                                                'Peripherals Requests',
+                                                'Mobile Requests',
                                                 gal_requests.Selected.UID = UID,
                                                 stage_logged_with_it
                                             ) = "true"
@@ -7279,26 +7048,22 @@ Requests As screen:
                                         success,
                                         If(
                                             And(
-                                                gal_requests.Selected.request_type = "Peripherals",
+                                                gal_requests.Selected.request_type = "Special IT Request",
                                                 LookUp(
-                                                    'Peripherals Requests',
-                                                    gal_requests.Selected.UID = UID,
-                                                    headset_count
-                                                ) = "10+ (Please specify amount in further detail section)",
-                                                LookUp(
-                                                    'Peripherals Requests',
+                                                    'Special IT Requests',
                                                     gal_requests.Selected.UID = UID,
                                                     stage_logged_with_it
                                                 ) = "true"
                                             ),
                                             success,
+                                   // "Excess" Peripheral requests
                                             If(
                                                 And(
                                                     gal_requests.Selected.request_type = "Peripherals",
                                                     LookUp(
                                                         'Peripherals Requests',
                                                         gal_requests.Selected.UID = UID,
-                                                        mouse_count
+                                                        keyboard_count
                                                     ) = "10+ (Please specify amount in further detail section)",
                                                     LookUp(
                                                         'Peripherals Requests',
@@ -7313,7 +7078,7 @@ Requests As screen:
                                                         LookUp(
                                                             'Peripherals Requests',
                                                             gal_requests.Selected.UID = UID,
-                                                            monitor_count
+                                                            headset_count
                                                         ) = "10+ (Please specify amount in further detail section)",
                                                         LookUp(
                                                             'Peripherals Requests',
@@ -7322,41 +7087,37 @@ Requests As screen:
                                                         ) = "true"
                                                     ),
                                                     success,
-                                                    // Regular peripherals requests
                                                     If(
                                                         And(
                                                             gal_requests.Selected.request_type = "Peripherals",
-                                                            Not(
-                                                                LookUp(
-                                                                    'Peripherals Requests',
-                                                                    gal_requests.Selected.UID = UID,
-                                                                    keyboard_count
-                                                                ) = "10+ (Please specify amount in further detail section)"
-                                                            ),
                                                             LookUp(
                                                                 'Peripherals Requests',
                                                                 gal_requests.Selected.UID = UID,
-                                                                stage_complete
+                                                                mouse_count
+                                                            ) = "10+ (Please specify amount in further detail section)",
+                                                            LookUp(
+                                                                'Peripherals Requests',
+                                                                gal_requests.Selected.UID = UID,
+                                                                stage_logged_with_it
                                                             ) = "true"
                                                         ),
                                                         success,
                                                         If(
                                                             And(
                                                                 gal_requests.Selected.request_type = "Peripherals",
-                                                                Not(
-                                                                    LookUp(
-                                                                        'Peripherals Requests',
-                                                                        gal_requests.Selected.UID = UID,
-                                                                        mouse_count
-                                                                    ) = "10+ (Please specify amount in further detail section)"
-                                                                ),
                                                                 LookUp(
                                                                     'Peripherals Requests',
                                                                     gal_requests.Selected.UID = UID,
-                                                                    stage_complete
+                                                                    monitor_count
+                                                                ) = "10+ (Please specify amount in further detail section)",
+                                                                LookUp(
+                                                                    'Peripherals Requests',
+                                                                    gal_requests.Selected.UID = UID,
+                                                                    stage_logged_with_it
                                                                 ) = "true"
                                                             ),
                                                             success,
+                                                    // Regular peripherals requests
                                                             If(
                                                                 And(
                                                                     gal_requests.Selected.request_type = "Peripherals",
@@ -7364,7 +7125,7 @@ Requests As screen:
                                                                         LookUp(
                                                                             'Peripherals Requests',
                                                                             gal_requests.Selected.UID = UID,
-                                                                            monitor_count
+                                                                            keyboard_count
                                                                         ) = "10+ (Please specify amount in further detail section)"
                                                                     ),
                                                                     LookUp(
@@ -7381,7 +7142,7 @@ Requests As screen:
                                                                             LookUp(
                                                                                 'Peripherals Requests',
                                                                                 gal_requests.Selected.UID = UID,
-                                                                                headset_count
+                                                                                mouse_count
                                                                             ) = "10+ (Please specify amount in further detail section)"
                                                                         ),
                                                                         LookUp(
@@ -7393,21 +7154,35 @@ Requests As screen:
                                                                     success,
                                                                     If(
                                                                         And(
-                                                                            gal_requests.Selected.request_type = "Smartcard Request",
+                                                                            gal_requests.Selected.request_type = "Peripherals",
+                                                                            Not(
+                                                                                LookUp(
+                                                                                    'Peripherals Requests',
+                                                                                    gal_requests.Selected.UID = UID,
+                                                                                    monitor_count
+                                                                                ) = "10+ (Please specify amount in further detail section)"
+                                                                            ),
                                                                             LookUp(
-                                                                                'Smartcard Requests',
+                                                                                'Peripherals Requests',
                                                                                 gal_requests.Selected.UID = UID,
-                                                                                stage_id_checker_approval
+                                                                                stage_complete
                                                                             ) = "true"
                                                                         ),
                                                                         success,
                                                                         If(
                                                                             And(
-                                                                                gal_requests.Selected.request_type = "Smartcard Positions",
+                                                                                gal_requests.Selected.request_type = "Peripherals",
+                                                                                Not(
+                                                                                    LookUp(
+                                                                                        'Peripherals Requests',
+                                                                                        gal_requests.Selected.UID = UID,
+                                                                                        headset_count
+                                                                                    ) = "10+ (Please specify amount in further detail section)"
+                                                                                ),
                                                                                 LookUp(
-                                                                                    'Smartcard Positions Requests',
+                                                                                    'Peripherals Requests',
                                                                                     gal_requests.Selected.UID = UID,
-                                                                                    stage_logged_with_it
+                                                                                    stage_complete
                                                                                 ) = "true"
                                                                             ),
                                                                             success,
@@ -7417,16 +7192,38 @@ Requests As screen:
                                                                                     LookUp(
                                                                                         'Smartcard Requests',
                                                                                         gal_requests.Selected.UID = UID,
-                                                                                        new_or_replacement
-                                                                                    ) = "Replace a lost/stolen Smartcard",
-                                                                                    LookUp(
-                                                                                        'Smartcard Requests',
-                                                                                        gal_requests.Selected.UID = UID,
-                                                                                        stage_complete
+                                                                                        stage_id_checker_approval
                                                                                     ) = "true"
                                                                                 ),
                                                                                 success,
-                                                                                circle
+                                                                                If(
+                                                                                    And(
+                                                                                        gal_requests.Selected.request_type = "Smartcard Positions",
+                                                                                        LookUp(
+                                                                                            'Smartcard Positions Requests',
+                                                                                            gal_requests.Selected.UID = UID,
+                                                                                            stage_logged_with_it
+                                                                                        ) = "true"
+                                                                                    ),
+                                                                                    success,
+                                                                                    If(
+                                                                                        And(
+                                                                                            gal_requests.Selected.request_type = "Smartcard Request",
+                                                                                            LookUp(
+                                                                                                'Smartcard Requests',
+                                                                                                gal_requests.Selected.UID = UID,
+                                                                                                new_or_replacement
+                                                                                            ) = "Replace a lost/stolen Smartcard",
+                                                                                            LookUp(
+                                                                                                'Smartcard Requests',
+                                                                                                gal_requests.Selected.UID = UID,
+                                                                                                stage_complete
+                                                                                            ) = "true"
+                                                                                        ),
+                                                                                        success,
+                                                                                        circle
+                                                                                    )
+                                                                                )
                                                                             )
                                                                         )
                                                                     )
@@ -7443,7 +7240,6 @@ Requests As screen:
                         )
                     )
                 )
-                )
             Visible: =varPopUp
             Width: =35
             X: =954
@@ -7458,6 +7254,9 @@ Requests As screen:
             Size: =12
             Text: |-
                 =If(
+                    gal_requests.Selected.request_type = "Interim Probation Form",
+                    "Employee Signature",
+                    If(
                     gal_requests.Selected.request_type = "New Starter Form",
                     "HR Approval",
                     If(
@@ -7604,6 +7403,7 @@ Requests As screen:
                             )
                         )
                     )
+                    )
                 )
             Visible: =varPopUp
             Width: =170
@@ -7617,6 +7417,7 @@ Requests As screen:
             Visible: |-
                 =If(
                     Or(
+                        gal_requests.Selected.request_type = "Interim Probation Form",
                         gal_requests.Selected.request_type = "Mobile",
                         gal_requests.Selected.request_type = "Smartcard Positions",
                         gal_requests.Selected.request_type = "New Starter Form",
@@ -7691,64 +7492,49 @@ Requests As screen:
                 */
                 If(
                     And(
-                        gal_requests.Selected.request_type = "New Starter Form",
+                        gal_requests.Selected.request_type = "Interim Probation Form",
                         LookUp(
-                            NewStarterForm,
+                            'Interim probation review form',
                             gal_requests.Selected.UID = UID,
-                            CurrentStage.Value
-                        ) = "Complete"
-                    ),
-                    success,
-                If(
-                    And(
-                        gal_requests.Selected.request_type = "Laptop Request",
-                        LookUp(
-                            'Laptop Requests',
-                            gal_requests.Selected.UID = UID,
-                            stage_logged_with_it
-                        ) = "true"
+                            CompleteFlag
+                        ) = "True"
                     ),
                     success,
                     If(
                         And(
-                            gal_requests.Selected.request_type = "4G Laptop",
+                            gal_requests.Selected.request_type = "New Starter Form",
                             LookUp(
-                                '4G Laptop Requests',
+                                NewStarterForm,
                                 gal_requests.Selected.UID = UID,
-                                stage_logged_with_it
-                            ) = "true"
+                                CurrentStage.Value
+                            ) = "Complete"
                         ),
                         success,
                         If(
                             And(
-                                gal_requests.Selected.request_type = "Mobile",
+                                gal_requests.Selected.request_type = "Laptop Request",
                                 LookUp(
-                                    'Mobile Requests',
+                                    'Laptop Requests',
                                     gal_requests.Selected.UID = UID,
-                                    stage_complete
+                                    stage_logged_with_it
                                 ) = "true"
                             ),
                             success,
                             If(
                                 And(
-                                    gal_requests.Selected.request_type = "Special IT Request",
+                                    gal_requests.Selected.request_type = "4G Laptop",
                                     LookUp(
-                                        'Special IT Requests',
+                                        '4G Laptop Requests',
                                         gal_requests.Selected.UID = UID,
-                                        stage_complete
+                                        stage_logged_with_it
                                     ) = "true"
                                 ),
                                 success,
                                 If(
                                     And(
-                                        gal_requests.Selected.request_type = "Peripherals",
+                                        gal_requests.Selected.request_type = "Mobile",
                                         LookUp(
-                                            'Peripherals Requests',
-                                            gal_requests.Selected.UID = UID,
-                                            keyboard_count
-                                        ) = "10+ (Please specify amount in further detail section)",
-                                        LookUp(
-                                            'Peripherals Requests',
+                                            'Mobile Requests',
                                             gal_requests.Selected.UID = UID,
                                             stage_complete
                                         ) = "true"
@@ -7756,14 +7542,9 @@ Requests As screen:
                                     success,
                                     If(
                                         And(
-                                            gal_requests.Selected.request_type = "Peripherals",
+                                            gal_requests.Selected.request_type = "Special IT Request",
                                             LookUp(
-                                                'Peripherals Requests',
-                                                gal_requests.Selected.UID = UID,
-                                                headset_count
-                                            ) = "10+ (Please specify amount in further detail section)",
-                                            LookUp(
-                                                'Peripherals Requests',
+                                                'Special IT Requests',
                                                 gal_requests.Selected.UID = UID,
                                                 stage_complete
                                             ) = "true"
@@ -7775,7 +7556,7 @@ Requests As screen:
                                                 LookUp(
                                                     'Peripherals Requests',
                                                     gal_requests.Selected.UID = UID,
-                                                    mouse_count
+                                                    keyboard_count
                                                 ) = "10+ (Please specify amount in further detail section)",
                                                 LookUp(
                                                     'Peripherals Requests',
@@ -7790,7 +7571,7 @@ Requests As screen:
                                                     LookUp(
                                                         'Peripherals Requests',
                                                         gal_requests.Selected.UID = UID,
-                                                        monitor_count
+                                                        headset_count
                                                     ) = "10+ (Please specify amount in further detail section)",
                                                     LookUp(
                                                         'Peripherals Requests',
@@ -7801,25 +7582,57 @@ Requests As screen:
                                                 success,
                                                 If(
                                                     And(
-                                                        gal_requests.Selected.request_type = "Smartcard Request",
+                                                        gal_requests.Selected.request_type = "Peripherals",
                                                         LookUp(
-                                                            'Smartcard Requests',
+                                                            'Peripherals Requests',
                                                             gal_requests.Selected.UID = UID,
-                                                            stage_logged_with_it
+                                                            mouse_count
+                                                        ) = "10+ (Please specify amount in further detail section)",
+                                                        LookUp(
+                                                            'Peripherals Requests',
+                                                            gal_requests.Selected.UID = UID,
+                                                            stage_complete
                                                         ) = "true"
                                                     ),
                                                     success,
                                                     If(
                                                         And(
-                                                            gal_requests.Selected.request_type = "Smartcard Positions",
+                                                            gal_requests.Selected.request_type = "Peripherals",
                                                             LookUp(
-                                                                'Smartcard Positions Requests',
+                                                                'Peripherals Requests',
+                                                                gal_requests.Selected.UID = UID,
+                                                                monitor_count
+                                                            ) = "10+ (Please specify amount in further detail section)",
+                                                            LookUp(
+                                                                'Peripherals Requests',
                                                                 gal_requests.Selected.UID = UID,
                                                                 stage_complete
                                                             ) = "true"
                                                         ),
                                                         success,
-                                                        circle
+                                                        If(
+                                                            And(
+                                                                gal_requests.Selected.request_type = "Smartcard Request",
+                                                                LookUp(
+                                                                    'Smartcard Requests',
+                                                                    gal_requests.Selected.UID = UID,
+                                                                    stage_logged_with_it
+                                                                ) = "true"
+                                                            ),
+                                                            success,
+                                                            If(
+                                                                And(
+                                                                    gal_requests.Selected.request_type = "Smartcard Positions",
+                                                                    LookUp(
+                                                                        'Smartcard Positions Requests',
+                                                                        gal_requests.Selected.UID = UID,
+                                                                        stage_complete
+                                                                    ) = "true"
+                                                                ),
+                                                                success,
+                                                                circle
+                                                            )
+                                                        )
                                                     )
                                                 )
                                             )
@@ -7830,10 +7643,10 @@ Requests As screen:
                         )
                     )
                 )
-                )
             Visible: |-
                 =If(
                     Or(
+                        gal_requests.Selected.request_type = "Interim Probation Form",
                         gal_requests.Selected.request_type = "Mobile",
                         gal_requests.Selected.request_type = "New Starter Form",
                         gal_requests.Selected.request_type = "Smartcard Positions",
@@ -7907,36 +7720,19 @@ Requests As screen:
             Size: =12
             Text: |-
                 =If(
-                    gal_requests.Selected.request_type = "Laptop Request",
-                    "Logged with IT",
+                    gal_requests.Selected.request_type = "Interim Probation Form",
+                    "Complete",
                     If(
-                        gal_requests.Selected.request_type = "4G Laptop",
+                        gal_requests.Selected.request_type = "Laptop Request",
                         "Logged with IT",
                         If(
-                        gal_requests.Selected.request_type = "New Starter Form",
-                        "Complete",
-                        If(
-                            gal_requests.Selected.request_type = "Mobile",
-                            "Complete",
+                            gal_requests.Selected.request_type = "4G Laptop",
+                            "Logged with IT",
                             If(
-                                And(
-                                    gal_requests.Selected.request_type = "Peripherals",
-                                    LookUp(
-                                        'Peripherals Requests',
-                                        gal_requests.Selected.UID = UID,
-                                        keyboard_count
-                                    ) = "10+ (Please specify amount in further detail section)"
-                                ),
+                                gal_requests.Selected.request_type = "New Starter Form",
                                 "Complete",
                                 If(
-                                    And(
-                                        gal_requests.Selected.request_type = "Peripherals",
-                                        LookUp(
-                                            'Peripherals Requests',
-                                            gal_requests.Selected.UID = UID,
-                                            headset_count
-                                        ) = "10+ (Please specify amount in further detail section)"
-                                    ),
+                                    gal_requests.Selected.request_type = "Mobile",
                                     "Complete",
                                     If(
                                         And(
@@ -7944,7 +7740,7 @@ Requests As screen:
                                             LookUp(
                                                 'Peripherals Requests',
                                                 gal_requests.Selected.UID = UID,
-                                                mouse_count
+                                                keyboard_count
                                             ) = "10+ (Please specify amount in further detail section)"
                                         ),
                                         "Complete",
@@ -7954,23 +7750,45 @@ Requests As screen:
                                                 LookUp(
                                                     'Peripherals Requests',
                                                     gal_requests.Selected.UID = UID,
-                                                    monitor_count
+                                                    headset_count
                                                 ) = "10+ (Please specify amount in further detail section)"
                                             ),
                                             "Complete",
                                             If(
-                                                gal_requests.Selected.request_type = "Special IT Request",
+                                                And(
+                                                    gal_requests.Selected.request_type = "Peripherals",
+                                                    LookUp(
+                                                        'Peripherals Requests',
+                                                        gal_requests.Selected.UID = UID,
+                                                        mouse_count
+                                                    ) = "10+ (Please specify amount in further detail section)"
+                                                ),
                                                 "Complete",
                                                 If(
-                                                    gal_requests.Selected.request_type = "Smartcard Request",
+                                                    And(
+                                                        gal_requests.Selected.request_type = "Peripherals",
+                                                        LookUp(
+                                                            'Peripherals Requests',
+                                                            gal_requests.Selected.UID = UID,
+                                                            monitor_count
+                                                        ) = "10+ (Please specify amount in further detail section)"
+                                                    ),
                                                     "Complete",
                                                     If(
-                                                        gal_requests.Selected.request_type = "Smartcard Positions",
+                                                        gal_requests.Selected.request_type = "Special IT Request",
                                                         "Complete",
                                                         If(
-                                                            gal_requests.Selected.request_type = "Change Form",
-                                                            "Finance Approval",
-                                                            "Error"
+                                                            gal_requests.Selected.request_type = "Smartcard Request",
+                                                            "Complete",
+                                                            If(
+                                                                gal_requests.Selected.request_type = "Smartcard Positions",
+                                                                "Complete",
+                                                                If(
+                                                                    gal_requests.Selected.request_type = "Change Form",
+                                                                    "Finance Approval",
+                                                                    "Error"
+                                                                )
+                                                            )
                                                         )
                                                     )
                                                 )
@@ -7982,10 +7800,10 @@ Requests As screen:
                         )
                     )
                 )
-                )
             Visible: |-
                 =If(
                     Or(
+                        gal_requests.Selected.request_type = "Interim Probation Form",
                         gal_requests.Selected.request_type = "Mobile",
                         gal_requests.Selected.request_type = "New Starter Form",
                         gal_requests.Selected.request_type = "Smartcard Positions",
