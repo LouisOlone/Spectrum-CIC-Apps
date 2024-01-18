@@ -2067,7 +2067,7 @@
         FontColor: =
         FontSize: =20
         Height: =44
-        OnSelect: =SubmitForm(Form1_1)
+        OnSelect: =SubmitForm(Form1_1);
         Text: ="Submit"
         Width: =136
         X: =1187
@@ -2095,7 +2095,7 @@
         FontColor: =
         FontSize: =20
         Height: =44
-        OnSelect: =Navigate(Dashboard);
+        OnSelect: =Navigate(Dashboard); ResetForm(Form1_1)
         Text: ="Cancel"
         Width: =136
         X: =1030
