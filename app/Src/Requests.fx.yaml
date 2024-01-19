@@ -4166,12 +4166,12 @@ Requests As screen:
                 FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: =RGBA(88,89,91,0.01)
-                Items: =Choices([@NewStarterForm].field_65)
+                Items: =Choices([@NewStarterForm].AssignmentType)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
                 SearchFields: =["Value"]
-                SearchItems: =Choices(NewStarterForm.field_65,DataCardValue56.SearchText)
+                SearchItems: =Choices(NewStarterForm.AssignmentType,DataCardValue56.SearchText)
                 SelectMultiple: =false
                 Size: =12
                 Tooltip: =Parent.DisplayName

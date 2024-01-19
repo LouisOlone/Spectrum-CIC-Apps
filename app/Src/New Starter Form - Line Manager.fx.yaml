@@ -4,7 +4,6 @@
 
     NewStarterLMForm As form:
         DataSource: =NewStarterForm
-        DefaultMode: =FormMode.New
         Height: =538
         Item: =varNewStarterLM
         NumberOfColumns: =2
@@ -35,6 +34,7 @@
             DataCardKey324 As label:
                 AutoHeight: =true
                 Color: =RGBA(77,164,65,1)
+                DisplayMode: =Parent.DisplayMode
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34

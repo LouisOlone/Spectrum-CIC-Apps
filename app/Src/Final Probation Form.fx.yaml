@@ -4,7 +4,6 @@
 
     Form1_2 As form:
         DataSource: ='Final Probation Review Form'
-        DefaultMode: =FormMode.New
         Height: =538
         Item: =varFinalProbationForm
         NumberOfColumns: =2
@@ -50,7 +49,7 @@
 
             DataCardValue229 As text:
                 BorderColor: =RGBA(88,89,91,0.25)
-                Default: =
+                Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Font: =Font.Arial

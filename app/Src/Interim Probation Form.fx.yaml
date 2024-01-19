@@ -4,8 +4,8 @@
 
     Form1_1 As form:
         DataSource: ='Interim probation review form'
-        DefaultMode: =FormMode.New
         Height: =538
+        Item: =varInterimProbationForm
         NumberOfColumns: =2
         OnSuccess: |-
             =ResetForm(Form1_1);
@@ -47,7 +47,7 @@
 
             DataCardValue182 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =LookUp( 'Onboarding Record', UID = varInterimProbationForm.UID, FirstName )
+                Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Font: =Font.Arial
@@ -122,7 +122,7 @@
 
             DataCardValue183 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =LookUp( 'Onboarding Record', UID = varInterimProbationForm.UID, LastName )
+                Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Font: =Font.Arial
@@ -197,7 +197,7 @@
 
             DataCardValue179 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =LookUp( 'Onboarding Record', UID = varInterimProbationForm.UID, UID )
+                Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Font: =Font.Arial
@@ -272,7 +272,7 @@
 
             DataCardValue184 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =LookUp( 'Onboarding Record', UID = varInterimProbationForm.UID, JobTitle )
+                Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Font: =Font.Arial
@@ -347,7 +347,7 @@
 
             DataCardValue185 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =LookUp( 'Onboarding Record', UID = varInterimProbationForm.UID, Service )
+                Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Font: =Font.Arial
@@ -422,7 +422,7 @@
 
             DataCardValue186 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =LookUp( 'Onboarding Record', UID = varInterimProbationForm.UID, Site )
+                Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Font: =Font.Arial
@@ -497,7 +497,7 @@
 
             DataCardValue187 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =LookUp( 'Onboarding Record', UID = varInterimProbationForm.UID, Team )
+                Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Font: =Font.Arial
