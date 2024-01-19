@@ -1526,7 +1526,7 @@
             Height: =50
             MaxLength: =DataSourceInfo([@'Interim probation review form'], DataSourceInfo.MaxLength, "ExtendedProbationFlag")
             Required: =false
-            Update: =If(Checkbox3_4.Value =true, "True","False")
+            Update: =If(Checkbox3_5.Value =true, "True","False")
             Width: =642
             X: =1
             Y: =10
@@ -2111,10 +2111,10 @@
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Interim probation review form'],DataSourceInfo.DisplayName,"LineManagerSignatureFLag")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =149
             MaxLength: =DataSourceInfo([@'Interim probation review form'], DataSourceInfo.MaxLength, "LineManagerSignatureFLag")
             Required: =false
-            Update: =Checkbox3_6.Text
+            Update: =If(Checkbox3_6.Value =true, "True","False")
             Width: =642
             X: =0
             Y: =15
@@ -2168,7 +2168,7 @@
                 Size: =12
                 Text: ="Yes"
                 X: =30
-                Y: =60
+                Y: =70
                 ZIndex: =5
 
     ButtonCanvas1_7 As Button:

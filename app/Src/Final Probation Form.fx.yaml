@@ -6,7 +6,13 @@
         DataSource: ='Final Probation Review Form'
         DefaultMode: =FormMode.New
         Height: =538
+        Item: =varFinalProbationForm
         NumberOfColumns: =2
+        OnSuccess: |-
+            =	
+            ResetForm(Form1_2);
+            
+            Navigate('Success Screen')
         Width: =1284
         X: =25
         Y: =151
@@ -43,14 +49,18 @@
                 ZIndex: =1
 
             DataCardValue229 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
+                BorderColor: =RGBA(88,89,91,0.25)
+                Default: =
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
+                PressedBorderColor: =RGBA(88,89,91,0.5)
+                PressedColor: =Color.Black
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -118,14 +128,18 @@
                 ZIndex: =1
 
             DataCardValue230 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: =RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
+                PressedBorderColor: =RGBA(88,89,91,0.5)
+                PressedColor: =Color.Black
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -193,14 +207,18 @@
                 ZIndex: =1
 
             DataCardValue224 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: =RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
+                PressedBorderColor: =RGBA(88,89,91,0.5)
+                PressedColor: =Color.Black
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -268,14 +286,18 @@
                 ZIndex: =1
 
             DataCardValue231 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: =RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
+                PressedBorderColor: =RGBA(88,89,91,0.5)
+                PressedColor: =Color.Black
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -343,14 +365,18 @@
                 ZIndex: =1
 
             DataCardValue232 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: =RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
+                PressedBorderColor: =RGBA(88,89,91,0.5)
+                PressedColor: =Color.Black
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -418,14 +444,18 @@
                 ZIndex: =1
 
             DataCardValue233 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: =RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
+                PressedBorderColor: =RGBA(88,89,91,0.5)
+                PressedColor: =Color.Black
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -493,14 +523,18 @@
                 ZIndex: =1
 
             DataCardValue234 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: =RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
+                PressedBorderColor: =RGBA(88,89,91,0.5)
+                PressedColor: =Color.Black
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -567,7 +601,7 @@
                 ZIndex: =1
 
             DataCardValue235 As datepicker:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: =RGBA(88,89,91,0.25)
                 DefaultDate: =Parent.Default
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
@@ -640,7 +674,7 @@
                 ZIndex: =1
 
             DataCardValue236 As datepicker:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: =RGBA(88,89,91,0.25)
                 DefaultDate: =Parent.Default
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
@@ -721,7 +755,7 @@
                 ZIndex: =1
 
             DataCardValue237 As datepicker:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: =RGBA(88,89,91,0.25)
                 DefaultDate: =Parent.Default
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
@@ -802,15 +836,19 @@
                 ZIndex: =1
 
             DataCardValue238 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: =RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
                 Height: =133
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
+                PressedBorderColor: =RGBA(88,89,91,0.5)
+                PressedColor: =Color.Black
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -890,15 +928,19 @@
                 ZIndex: =1
 
             DataCardValue239 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: =RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
                 Height: =133
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
+                PressedBorderColor: =RGBA(88,89,91,0.5)
+                PressedColor: =Color.Black
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -966,15 +1008,19 @@
                 ZIndex: =1
 
             DataCardValue240 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: =RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
                 Height: =133
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
+                PressedBorderColor: =RGBA(88,89,91,0.5)
+                PressedColor: =Color.Black
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -1042,15 +1088,19 @@
                 ZIndex: =1
 
             DataCardValue241 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: =RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
                 Height: =133
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
+                PressedBorderColor: =RGBA(88,89,91,0.5)
+                PressedColor: =Color.Black
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -1118,15 +1168,19 @@
                 ZIndex: =1
 
             DataCardValue242 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: =RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
                 Height: =133
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
+                PressedBorderColor: =RGBA(88,89,91,0.5)
+                PressedColor: =Color.Black
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -1181,7 +1235,7 @@
             Height: =120
             MaxLength: =DataSourceInfo([@'Final Probation Review Form'], DataSourceInfo.MaxLength, "ConfirmProbationLetterFlag")
             Required: =false
-            Update: =DataCardValue244.Text
+            Update: =If(Checkbox3_7.Value =true, "True","False")
             Width: =642
             X: =0
             Y: =8
@@ -1201,26 +1255,6 @@
                 Y: =40
                 ZIndex: =1
 
-            DataCardValue244 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                Font: =Font.Arial
-                FontWeight: =FontWeight.Lighter
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Size: =12
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =79
-                ZIndex: =2
-
             ErrorMessage250 As label:
                 AutoHeight: =true
                 Height: =10
@@ -1233,7 +1267,7 @@
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue244.Y + DataCardValue244.Height
+                Y: =Checkbox3_7.Y + Checkbox3_7.Height
                 ZIndex: =3
 
             StarVisible250 As label:
@@ -1248,7 +1282,10 @@
 
             Label23_5 As label:
                 BorderColor: =RGBA(32, 54, 71, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =30
+                Size: =14
                 Text: |-
                     ="For final reports (please tick):"
                 Width: =346
@@ -1263,6 +1300,20 @@
                 Y: =127
                 ZIndex: =6
 
+            Checkbox3_7 As checkbox:
+                BorderColor: =RGBA(32, 54, 71, 1)
+                CheckboxBorderColor: =RGBA(32, 54, 71, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
+                HoverColor: =RGBA(32, 54, 71, 1)
+                OnCheck: =Reset(Checkbox3_5)
+                PressedBorderColor: =RGBA(88,89,91,0.5)
+                Size: =12
+                Text: ="Yes"
+                X: =30
+                Y: =77
+                ZIndex: =7
+
         GoldenHandshakeFlag_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="GoldenHandshakeFlag"
@@ -1273,7 +1324,7 @@
             Height: =50
             MaxLength: =DataSourceInfo([@'Final Probation Review Form'], DataSourceInfo.MaxLength, "GoldenHandshakeFlag")
             Required: =false
-            Update: =DataCardValue245.Text
+            Update: =If(Checkbox3_8.Value =true, "True","False")
             Width: =642
             X: =1
             Y: =8
@@ -1293,23 +1344,6 @@
                 Y: =40
                 ZIndex: =1
 
-            DataCardValue245 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =79
-                ZIndex: =2
-
             ErrorMessage251 As label:
                 AutoHeight: =true
                 Height: =10
@@ -1322,7 +1356,7 @@
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue245.Y + DataCardValue245.Height
+                Y: =Checkbox3_8.Y + Checkbox3_8.Height
                 ZIndex: =3
 
             StarVisible251 As label:
@@ -1343,6 +1377,20 @@
                 Y: =127
                 ZIndex: =5
 
+            Checkbox3_8 As checkbox:
+                BorderColor: =RGBA(32, 54, 71, 1)
+                CheckboxBorderColor: =RGBA(32, 54, 71, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
+                HoverColor: =RGBA(32, 54, 71, 1)
+                OnCheck: =Reset(Checkbox3_5)
+                PressedBorderColor: =RGBA(88,89,91,0.5)
+                Size: =12
+                Text: ="Yes"
+                X: =30
+                Y: =77
+                ZIndex: =6
+
         LineManagerSignatureFLag_DataCard2 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="LineManagerSignatureFLag"
@@ -1350,10 +1398,10 @@
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Final Probation Review Form'],DataSourceInfo.DisplayName,"LineManagerSignatureFLag")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =124
+            Height: =182
             MaxLength: =DataSourceInfo([@'Final Probation Review Form'], DataSourceInfo.MaxLength, "LineManagerSignatureFLag")
             Required: =false
-            Update: =DataCardValue252.Text
+            Update: =If(Checkbox3_9.Value =true, "True","False")
             Width: =642
             X: =0
             Y: =9
@@ -1366,29 +1414,11 @@
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =14
-                Text: ="I confirm that this report has been discussed with the employee"
+                Text: ="Line Manager - I confirm that this report has been discussed with the employee"
                 Width: =Parent.Width - 60
-                Wrap: =false
                 X: =30
                 Y: =40
                 ZIndex: =1
-
-            DataCardValue252 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey257.Y + DataCardKey257.Height + 5
-                ZIndex: =2
 
             ErrorMessage258 As label:
                 AutoHeight: =true
@@ -1402,7 +1432,7 @@
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue252.Y + DataCardValue252.Height
+                Y: =Checkbox3_9.Y + Checkbox3_9.Height
                 ZIndex: =3
 
             StarVisible258 As label:
@@ -1417,11 +1447,28 @@
 
             Label23_4 As label:
                 BorderColor: =RGBA(32, 54, 71, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =30
+                Size: =14
                 Text: ="Signature"
                 Width: =346
                 X: =30
                 ZIndex: =5
+
+            Checkbox3_9 As checkbox:
+                BorderColor: =RGBA(32, 54, 71, 1)
+                CheckboxBorderColor: =RGBA(32, 54, 71, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
+                HoverColor: =RGBA(32, 54, 71, 1)
+                OnCheck: =Reset(Checkbox3_5)
+                PressedBorderColor: =RGBA(88,89,91,0.5)
+                Size: =12
+                Text: ="Yes"
+                X: =30
+                Y: =95
+                ZIndex: =6
 
     ButtonCanvas1_9 As Button:
         Appearance: ='ButtonCanvas.Appearance'.Primary
@@ -1431,6 +1478,7 @@
         FontColor: =
         FontSize: =20
         Height: =44
+        OnSelect: =SubmitForm(Form1_2)
         Text: ="Submit"
         Width: =136
         X: =1187
@@ -1458,6 +1506,11 @@
         FontColor: =
         FontSize: =20
         Height: =44
+        OnSelect: |-
+            =	
+            ResetForm(Form1_2);
+            
+            Navigate(Dashboard)
         Text: ="Cancel"
         Width: =136
         X: =1030

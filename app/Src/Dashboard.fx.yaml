@@ -103,6 +103,22 @@ Dashboard As screen:
                             }
                         )
                     ),
+                        // View Final Probation Form
+                    If(
+                        ThisItem.request_type = "Final Probation Form",
+                        And(
+                            Set(
+                                varFinalProbationForm,
+                                LookUp(
+                                    'Final Probation Review Form',
+                                    UID = ThisItem.UID
+                                )
+                            ),
+                            UpdateContext({varLoading: false}),
+                            UpdateContext({varPopUp: false}),
+                            Navigate('Final Probation Form')
+                        )
+                    ),
                     // View 4G Laptop Request
                     If(
                         ThisItem.request_type = "4G Laptop",
@@ -118,21 +134,21 @@ Dashboard As screen:
                             )
                         ),
                         // View Interim Probation Form
-                                     If(
-                                        ThisItem.request_type = "Interim Probation Form",
-                                        And(
-                                            Set(varInterimProbationForm,
-                                                LookUp(
-                                                         'Interim probation review form',
-                                                         UID = ThisItem.UID
-                                                        ) 
-                                                ),
-                                             UpdateContext({varLoading: false}),
-                                             UpdateContext({varPopUp: false}),
-                                          Navigate('Interim Probation Form')
-                                            )
-                                            
-                                        ),
+                        If(
+                            ThisItem.request_type = "Interim Probation Form",
+                            And(
+                                Set(
+                                    varInterimProbationForm,
+                                    LookUp(
+                                        'Interim probation review form',
+                                        UID = ThisItem.UID
+                                    )
+                                ),
+                                UpdateContext({varLoading: false}),
+                                UpdateContext({varPopUp: false}),
+                                Navigate('Interim Probation Form')
+                            )
+                        ),
                         // View Mobile Request
                         If(
                             ThisItem.request_type = "Mobile",
@@ -193,18 +209,17 @@ Dashboard As screen:
                                         If(
                                             ThisItem.request_type = "New Starter Form",
                                             And(
-                                                Set(varNewStarterLM,
+                                                Set(
+                                                    varNewStarterLM,
                                                     LookUp(
-                                                            NewStarterForm,
-                                                            UID = ThisItem.UID
-                                                        ) 
-                                                
+                                                        NewStarterForm,
+                                                        UID = ThisItem.UID
+                                                    )
                                                 ),
                                                 UpdateContext({varLoading: false}),
                                                 UpdateContext({varPopUp: false}),
                                                 Navigate('New Starter Form - Line Manager')
                                             )
-                                            
                                         ),
                                         // View Smartcard Positions Request
                                         If(
@@ -219,25 +234,29 @@ Dashboard As screen:
                                                         )
                                                     }
                                                 )
-                                            ),false)
+                                            ),
+                                            false
+                                        )
                                     )
                                 )
                             )
                         )
                     )
-                
-                )
-                ;
+                );
                 // Open pop-up window
                 UpdateContext({varPopUp: true});
-                
                 If(
-                                            ThisItem.request_type = "New Starter Form",
-                                            UpdateContext({varPopUp: false}));
-                
-                                            If(
-                                            ThisItem.request_type = "Interim Probation Form",
-                                            UpdateContext({varPopUp: false}));
+                    ThisItem.request_type = "New Starter Form",
+                    UpdateContext({varPopUp: false})
+                );
+                If(
+                    ThisItem.request_type = "Interim Probation Form",
+                    UpdateContext({varPopUp: false})
+                );
+                If(
+                    ThisItem.request_type = "Final Probation Form",
+                    UpdateContext({varPopUp: false})
+                );
             PaddingBottom: =12
             PaddingLeft: =12
             PaddingRight: =12
