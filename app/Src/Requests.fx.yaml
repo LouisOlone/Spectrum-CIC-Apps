@@ -4681,11 +4681,11 @@ Requests As screen:
 
             DataCardKey196 As label:
                 AutoHeight: =true
-                Color: =RGBA(77,164,65,1)
+                Color: =RGBA(0, 0, 0, 1)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -4698,15 +4698,17 @@ Requests As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
-                Size: =12
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -4755,11 +4757,11 @@ Requests As screen:
 
             DataCardKey204 As label:
                 AutoHeight: =true
-                Color: =RGBA(77,164,65,1)
+                Color: =RGBA(0, 0, 0, 1)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: ="Are they a Spectrum Employee"
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -4771,15 +4773,17 @@ Requests As screen:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
-                DisplayMode: =Parent.DisplayMode
+                DisplayMode: =DisplayMode.View
+                Fill: =RGBA(214, 221, 224, 0.3)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 Items: =Choices([@'Interim probation review form'].EmployeeSpectrumFlag)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
                 SearchItems: =Choices('Interim probation review form'.EmployeeSpectrumFlag,DataCardValue196.SearchText)
                 SelectMultiple: =false
-                Size: =12
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -4828,11 +4832,11 @@ Requests As screen:
 
             DataCardKey208 As label:
                 AutoHeight: =true
-                Color: =RGBA(77,164,65,1)
+                Color: =RGBA(0, 0, 0, 1)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: ="Spectrum Employee Email"
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -4846,8 +4850,12 @@ Requests As screen:
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Email"]
                 DisplayMode: =Parent.DisplayMode
+                Fill: |-
+                    =RGBA(214, 221, 224, 0.3
+                    )
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 IsSearchable: =false
                 MultiValueDelimiter: =
                 NoSelectionText: =
@@ -4855,7 +4863,7 @@ Requests As screen:
                 SearchFields: =
                 SearchItems: =[]
                 SelectMultiple: =false
-                Size: =12
+                Size: =10
                 Template: =ListItemTemplate.Person
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -4906,11 +4914,11 @@ Requests As screen:
 
             DataCardKey209 As label:
                 AutoHeight: =true
-                Color: =RGBA(77,164,65,1)
+                Color: =RGBA(0, 0, 0, 1)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: ="Non Spectrum Employee First Name"
                 Width: =Parent.Width - 60
                 X: =30
@@ -4922,15 +4930,17 @@ Requests As screen:
                 Default: =ThisItem.NonSpecEmployeeFirstname
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
-                Size: =12
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -4980,11 +4990,11 @@ Requests As screen:
 
             DataCardKey210 As label:
                 AutoHeight: =true
-                Color: =RGBA(77,164,65,1)
+                Color: =RGBA(0, 0, 0, 1)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: ="Non Spectrum Employee Last Name"
                 Width: =Parent.Width - 60
                 X: =30
@@ -4996,15 +5006,17 @@ Requests As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
-                Size: =12
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -5054,11 +5066,11 @@ Requests As screen:
 
             DataCardKey231 As label:
                 AutoHeight: =true
-                Color: =RGBA(77,164,65,1)
+                Color: =RGBA(0, 0, 0, 1)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: ="Non Spectrum Employee Email Address"
                 Width: =Parent.Width - 60
                 X: =30
@@ -5070,15 +5082,17 @@ Requests As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
-                Size: =12
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -5128,11 +5142,11 @@ Requests As screen:
 
             DataCardKey211 As label:
                 AutoHeight: =true
-                Color: =RGBA(77,164,65,1)
+                Color: =RGBA(0, 0, 0, 1)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: ="Job Title"
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -5145,15 +5159,17 @@ Requests As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
-                Size: =12
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -5203,11 +5219,11 @@ Requests As screen:
 
             DataCardKey212 As label:
                 AutoHeight: =true
-                Color: =RGBA(77,164,65,1)
+                Color: =RGBA(0, 0, 0, 1)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -5220,15 +5236,17 @@ Requests As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
-                Size: =12
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -5278,11 +5296,11 @@ Requests As screen:
 
             DataCardKey213 As label:
                 AutoHeight: =true
-                Color: =RGBA(77,164,65,1)
+                Color: =RGBA(0, 0, 0, 1)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -5295,15 +5313,17 @@ Requests As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
-                Size: =12
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -5353,11 +5373,11 @@ Requests As screen:
 
             DataCardKey214 As label:
                 AutoHeight: =true
-                Color: =RGBA(77,164,65,1)
+                Color: =RGBA(0, 0, 0, 1)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -5370,15 +5390,17 @@ Requests As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
-                Size: =12
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -5427,11 +5449,11 @@ Requests As screen:
 
             DataCardKey215 As label:
                 AutoHeight: =true
-                Color: =RGBA(77,164,65,1)
+                Color: =RGBA(0, 0, 0, 1)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: ="Start Date"
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -5444,12 +5466,14 @@ Requests As screen:
                 DefaultDate: =Parent.Default
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                Size: =12
+                Size: =10
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -5499,11 +5523,11 @@ Requests As screen:
 
             DataCardKey216 As label:
                 AutoHeight: =true
-                Color: =RGBA(77,164,65,1)
+                Color: =RGBA(0, 0, 0, 1)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: ="Review Date"
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -5516,12 +5540,14 @@ Requests As screen:
                 DefaultDate: =Parent.Default
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                Size: =12
+                Size: =10
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -5572,11 +5598,11 @@ Requests As screen:
 
             DataCardKey217 As label:
                 AutoHeight: =true
-                Color: =RGBA(77,164,65,1)
+                Color: =RGBA(0, 0, 0, 1)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: ="Work relationships (team work, interpersonal and communication skills)"
                 Width: =Parent.Width - 60
                 X: =30
@@ -5588,15 +5614,17 @@ Requests As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
-                Size: =12
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -5646,11 +5674,11 @@ Requests As screen:
 
             DataCardKey218 As label:
                 AutoHeight: =true
-                Color: =RGBA(77,164,65,1)
+                Color: =RGBA(0, 0, 0, 1)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: ="Attendance and timekeeping"
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -5663,15 +5691,17 @@ Requests As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
-                Size: =12
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -5721,11 +5751,11 @@ Requests As screen:
 
             DataCardKey219 As label:
                 AutoHeight: =true
-                Color: =RGBA(77,164,65,1)
+                Color: =RGBA(0, 0, 0, 1)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: ="Ability to effectively follow instruction"
                 Width: =Parent.Width - 60
                 X: =30
@@ -5737,15 +5767,17 @@ Requests As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
-                Size: =12
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -5795,11 +5827,11 @@ Requests As screen:
 
             DataCardKey220 As label:
                 AutoHeight: =true
-                Color: =RGBA(77,164,65,1)
+                Color: =RGBA(0, 0, 0, 1)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: ="Training undertaken /planned"
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -5812,15 +5844,17 @@ Requests As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
-                Size: =12
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -5870,11 +5904,11 @@ Requests As screen:
 
             DataCardKey221 As label:
                 AutoHeight: =true
-                Color: =RGBA(77,164,65,1)
+                Color: =RGBA(0, 0, 0, 1)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: |-
                     ="Please use this space to provide further details on the employee’s ability to effectively perform tasks outlined in the job description, achievement of targets set and any other issues of relevance:"
                 Width: =Parent.Width - 60
@@ -5887,15 +5921,17 @@ Requests As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
-                Size: =12
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -5945,11 +5981,11 @@ Requests As screen:
 
             DataCardKey222 As label:
                 AutoHeight: =true
-                Color: =RGBA(77,164,65,1)
+                Color: =RGBA(0, 0, 0, 1)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: ="Comments From Employee"
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -5962,8 +5998,10 @@ Requests As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -6020,11 +6058,11 @@ Requests As screen:
 
             DataCardKey223 As label:
                 AutoHeight: =true
-                Color: =RGBA(77,164,65,1)
+                Color: =RGBA(0, 0, 0, 1)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: ="Employee Progressing Well"
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -6037,15 +6075,17 @@ Requests As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
-                Size: =12
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -6095,11 +6135,11 @@ Requests As screen:
 
             DataCardKey232 As label:
                 AutoHeight: =true
-                Color: =RGBA(77,164,65,1)
+                Color: =RGBA(0, 0, 0, 1)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: ="Extended Probation"
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -6112,12 +6152,16 @@ Requests As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(214, 221, 224, 0.5)
+                Font: =Font.Arial
+                Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -6166,11 +6210,11 @@ Requests As screen:
 
             DataCardKey228 As label:
                 AutoHeight: =true
-                Color: =RGBA(77,164,65,1)
+                Color: =RGBA(0, 0, 0, 1)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: ="Review Date"
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -6183,12 +6227,14 @@ Requests As screen:
                 DefaultDate: =Parent.Default
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                Size: =12
+                Size: =10
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -6239,11 +6285,11 @@ Requests As screen:
 
             DataCardKey224 As label:
                 AutoHeight: =true
-                Color: =RGBA(77,164,65,1)
+                Color: =RGBA(0, 0, 0, 1)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: ="Employee Concerns Raised"
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -6256,15 +6302,17 @@ Requests As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
-                Size: =12
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -6314,11 +6362,11 @@ Requests As screen:
 
             DataCardKey225 As label:
                 AutoHeight: =true
-                Color: =RGBA(77,164,65,1)
+                Color: =RGBA(0, 0, 0, 1)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -6331,15 +6379,17 @@ Requests As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
-                Size: =12
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -6389,11 +6439,11 @@ Requests As screen:
 
             DataCardKey226 As label:
                 AutoHeight: =true
-                Color: =RGBA(77,164,65,1)
+                Color: =RGBA(0, 0, 0, 1)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -6406,15 +6456,17 @@ Requests As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
-                Size: =12
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -6464,11 +6516,11 @@ Requests As screen:
 
             DataCardKey227 As label:
                 AutoHeight: =true
-                Color: =RGBA(77,164,65,1)
+                Color: =RGBA(0, 0, 0, 1)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: ="Support Training"
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -6481,15 +6533,17 @@ Requests As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
-                Size: =12
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
