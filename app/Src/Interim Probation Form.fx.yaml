@@ -2,13 +2,13 @@
 
     Component1_5 As banner:
 
-    Form1_1 As form:
+    form_interim_probation_form As form:
         DataSource: ='Interim probation review form'
         Height: =538
         Item: =varInterimProbationForm
         NumberOfColumns: =2
         OnSuccess: |-
-            =ResetForm(Form1_1);
+            =ResetForm(form_interim_probation_form);
             Navigate('Success Screen')
         Width: =1284
         X: =25
@@ -476,7 +476,7 @@
             MaxLength: =DataSourceInfo([@'Interim probation review form'], DataSourceInfo.MaxLength, "Team")
             Required: =false
             Update: =DataCardValue187.Text
-            Width: =1284
+            Width: =642
             X: =0
             Y: =3
             ZIndex: =3
@@ -551,8 +551,8 @@
             Required: =false
             Update: =DataCardValue188.SelectedDate
             Width: =642
-            X: =0
-            Y: =4
+            X: =1
+            Y: =3
             ZIndex: =3
 
             DataCardKey189 As label:
@@ -634,7 +634,7 @@
             Required: =false
             Update: =DataCardValue189.SelectedDate
             Width: =642
-            X: =1
+            X: =0
             Y: =4
             ZIndex: =3
 
@@ -717,8 +717,8 @@
             Required: =false
             Update: =DataCardValue180.Selected
             Width: =642
-            X: =0
-            Y: =5
+            X: =1
+            Y: =4
             ZIndex: =3
 
             DataCardKey181 As label:
@@ -824,7 +824,7 @@
             Update: =DataCardValue181.Selected
             Visible: =If(DataCardValue180.Selected.Value ="Yes", true,false)
             Width: =642
-            X: =1
+            X: =0
             Y: =5
             ZIndex: =3
 
@@ -920,9 +920,9 @@
             Required: =false
             Update: =DataCardValue204.Text
             Visible: =If(DataCardValue180.Selected.Value ="No", true,false)
-            Width: =1284
-            X: =0
-            Y: =6
+            Width: =642
+            X: =1
+            Y: =5
             ZIndex: =3
 
             DataCardKey205 As label:
@@ -1003,7 +1003,7 @@
             Update: =DataCardValue190.Text
             Width: =642
             X: =0
-            Y: =7
+            Y: =6
             ZIndex: =3
 
             DataCardKey191 As label:
@@ -1036,10 +1036,6 @@
                 PaddingLeft: =5
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
                 Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -1103,7 +1099,7 @@
             Update: =DataCardValue191.Text
             Width: =642
             X: =1
-            Y: =7
+            Y: =6
             ZIndex: =3
 
             DataCardKey192 As label:
@@ -1137,10 +1133,6 @@
                 PaddingLeft: =5
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
                 Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -1193,7 +1185,7 @@
             Update: =DataCardValue192.Text
             Width: =642
             X: =0
-            Y: =8
+            Y: =7
             ZIndex: =3
 
             DataCardKey193 As label:
@@ -1227,10 +1219,6 @@
                 PaddingLeft: =5
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
                 Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -1276,7 +1264,7 @@
             Update: =DataCardValue193.Text
             Width: =642
             X: =1
-            Y: =8
+            Y: =7
             ZIndex: =3
 
             DataCardKey194 As label:
@@ -1310,10 +1298,6 @@
                 PaddingLeft: =5
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
                 Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -1357,9 +1341,9 @@
             MaxLength: =DataSourceInfo([@'Interim probation review form'], DataSourceInfo.MaxLength, "FurtherDetails")
             Required: =false
             Update: =DataCardValue194.Text
-            Width: =1284
+            Width: =642
             X: =0
-            Y: =9
+            Y: =8
             ZIndex: =3
 
             DataCardKey195 As label:
@@ -1393,10 +1377,6 @@
                 PaddingLeft: =5
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
                 Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =582
@@ -1441,8 +1421,8 @@
             Required: =false
             Update: =If(Checkbox3_3.Value =true, "True","False")
             Width: =642
-            X: =0
-            Y: =10
+            X: =1
+            Y: =8
             ZIndex: =3
 
             DataCardKey197 As label:
@@ -1528,8 +1508,8 @@
             Required: =false
             Update: =If(Checkbox3_5.Value =true, "True","False")
             Width: =642
-            X: =1
-            Y: =10
+            X: =0
+            Y: =9
             ZIndex: =3
 
             DataCardKey206 As label:
@@ -1603,9 +1583,9 @@
             MaxLength: =DataSourceInfo([@'Interim probation review form'], DataSourceInfo.MaxLength, "EmployeeConcernsRaisedFlag")
             Required: =false
             Update: =If(Checkbox3_4.Value =true, "True","False")
-            Width: =1284
-            X: =0
-            Y: =11
+            Width: =642
+            X: =1
+            Y: =9
             ZIndex: =3
 
             DataCardKey198 As label:
@@ -1680,9 +1660,9 @@
             Required: =false
             Update: =DataCardValue206.Text
             Visible: =If(Checkbox3_5.Value =true, true)
-            Width: =1284
+            Width: =642
             X: =0
-            Y: =12
+            Y: =10
             ZIndex: =3
 
             DataCardKey207 As label:
@@ -1716,10 +1696,6 @@
                 PaddingLeft: =5
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
                 Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =582
@@ -1773,8 +1749,8 @@
             Update: =DataCardValue198.Text
             Visible: =If(Checkbox3_4.Value =true, true)
             Width: =642
-            X: =0
-            Y: =13
+            X: =1
+            Y: =10
             ZIndex: =3
 
             DataCardKey199 As label:
@@ -1808,10 +1784,6 @@
                 PaddingLeft: =5
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
                 Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -1857,8 +1829,8 @@
             Update: =DataCardValue199.Text
             Visible: =If(Checkbox3_4.Value =true, true)
             Width: =642
-            X: =1
-            Y: =13
+            X: =0
+            Y: =11
             ZIndex: =3
 
             DataCardKey200 As label:
@@ -1892,10 +1864,6 @@
                 PaddingLeft: =5
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
                 Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -1941,8 +1909,8 @@
             Update: =DataCardValue200.Text
             Visible: =If(Checkbox3_4.Value =true, true)
             Width: =642
-            X: =0
-            Y: =14
+            X: =1
+            Y: =11
             ZIndex: =3
 
             DataCardKey201 As label:
@@ -1976,10 +1944,6 @@
                 PaddingLeft: =5
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
                 Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -2032,8 +1996,8 @@
             Update: =DataCardValue201.SelectedDate
             Visible: =If(Checkbox3_4.Value =true, true)
             Width: =642
-            X: =1
-            Y: =14
+            X: =0
+            Y: =12
             ZIndex: =3
 
             DataCardKey202 As label:
@@ -2116,8 +2080,8 @@
             Required: =false
             Update: =If(Checkbox3_6.Value =true, "True","False")
             Width: =642
-            X: =0
-            Y: =15
+            X: =1
+            Y: =12
             ZIndex: =3
 
             DataCardKey203 As label:
@@ -2179,7 +2143,7 @@
         FontColor: =
         FontSize: =20
         Height: =44
-        OnSelect: =SubmitForm(Form1_1);
+        OnSelect: =SubmitForm(form_interim_probation_form);
         Text: ="Submit"
         Width: =136
         X: =1187
@@ -2207,7 +2171,9 @@
         FontColor: =
         FontSize: =20
         Height: =44
-        OnSelect: =Navigate(Dashboard); ResetForm(Form1_1)
+        OnSelect: |-
+            =ResetForm(form_interim_probation_form);
+            Navigate(Dashboard)
         Text: ="Cancel"
         Width: =136
         X: =1030
