@@ -785,7 +785,9 @@ template_new_form_1 As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Height: =100
                 MaxLength: =Parent.MaxLength
+                Mode: =TextMode.MultiLine
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
@@ -853,7 +855,9 @@ template_new_form_1 As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Height: =100
                 MaxLength: =Parent.MaxLength
+                Mode: =TextMode.MultiLine
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
@@ -14246,7 +14250,7 @@ template_new_form_1 As screen:
         FontWeight: =FontWeight.Semibold
         Height: =60
         Size: =26
-        Text: ="[FORM NAME]"
+        Text: ="Induction Log"
         Width: =1298
         X: =25
         Y: =91
