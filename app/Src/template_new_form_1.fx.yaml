@@ -3326,7 +3326,7 @@ template_new_form_1 As screen:
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Emergencytelephonenumbers")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =77
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Emergencytelephonenumbers")
             Required: =false
             Update: =DataCardValue268.Text
@@ -3394,7 +3394,7 @@ template_new_form_1 As screen:
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Date14")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =99
             Required: =false
             Update: =DataCardValue269.SelectedDate
             Width: =321
@@ -3454,7 +3454,7 @@ template_new_form_1 As screen:
 
             Rectangle2_22 As rectangle:
                 Fill: =RGBA(0, 0, 0, 1)
-                Height: =165
+                Height: =99
                 Width: =0.5
                 X: =319
                 ZIndex: =5
@@ -3466,7 +3466,7 @@ template_new_form_1 As screen:
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"IdentifyALLHR_x002c_corporateand")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =77
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "IdentifyALLHR_x002c_corporateand")
             Required: =false
             Update: =DataCardValue270.Text
@@ -3534,7 +3534,7 @@ template_new_form_1 As screen:
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Date15")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =77
             Required: =false
             Update: =DataCardValue271.SelectedDate
             Width: =321
@@ -3870,6 +3870,13 @@ template_new_form_1 As screen:
                 Y: =DataCardKey281.Y
                 ZIndex: =4
 
+            Rectangle2_23 As rectangle:
+                Fill: =RGBA(0, 0, 0, 1)
+                Height: =99
+                Width: =0.5
+                X: =319
+                ZIndex: =5
+
         "'Workplace tidiness [wires, obstructions etc.]_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="Workplacetidiness_x005b_wires_x0"
@@ -4071,6 +4078,13 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey433.Y
                 ZIndex: =4
+
+            Rectangle2_24 As rectangle:
+                Fill: =RGBA(0, 0, 0, 1)
+                Height: =165
+                Width: =0.5
+                X: =640
+                ZIndex: =5
 
         Comments17_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -4476,6 +4490,13 @@ template_new_form_1 As screen:
                 Y: =DataCardKey435.Y
                 ZIndex: =4
 
+            Rectangle2_40 As rectangle:
+                Fill: =RGBA(0, 0, 0, 1)
+                Height: =165
+                Width: =0.5
+                X: =640
+                ZIndex: =5
+
         Comments19_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Comments19"
@@ -4879,6 +4900,13 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey437.Y
                 ZIndex: =4
+
+            Rectangle2_41 As rectangle:
+                Fill: =RGBA(0, 0, 0, 1)
+                Height: =165
+                Width: =0.5
+                X: =640
+                ZIndex: =5
 
         Comments21_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -5284,6 +5312,13 @@ template_new_form_1 As screen:
                 Y: =DataCardKey439.Y
                 ZIndex: =4
 
+            Rectangle2_42 As rectangle:
+                Fill: =RGBA(0, 0, 0, 1)
+                Height: =165
+                Width: =0.5
+                X: =640
+                ZIndex: =5
+
         Comments23_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Comments23"
@@ -5687,6 +5722,13 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey441.Y
                 ZIndex: =4
+
+            Rectangle2_43 As rectangle:
+                Fill: =RGBA(0, 0, 0, 1)
+                Height: =165
+                Width: =0.5
+                X: =640
+                ZIndex: =5
 
         Comments25_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -6093,6 +6135,13 @@ template_new_form_1 As screen:
                 Y: =DataCardKey443.Y
                 ZIndex: =4
 
+            Rectangle2_44 As rectangle:
+                Fill: =RGBA(0, 0, 0, 1)
+                Height: =165
+                Width: =0.5
+                X: =640
+                ZIndex: =5
+
         Comments27_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Comments27"
@@ -6496,6 +6545,13 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey445.Y
                 ZIndex: =4
+
+            Rectangle2_45 As rectangle:
+                Fill: =RGBA(0, 0, 0, 1)
+                Height: =165
+                Width: =0.5
+                X: =640
+                ZIndex: =5
 
         Comments29_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -6901,6 +6957,13 @@ template_new_form_1 As screen:
                 Y: =DataCardKey447.Y
                 ZIndex: =4
 
+            Rectangle2_46 As rectangle:
+                Fill: =RGBA(0, 0, 0, 1)
+                Height: =165
+                Width: =0.5
+                X: =640
+                ZIndex: =5
+
         Comments31_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Comments31"
@@ -7305,6 +7368,13 @@ template_new_form_1 As screen:
                 Y: =DataCardKey450.Y
                 ZIndex: =4
 
+            Rectangle2_47 As rectangle:
+                Fill: =RGBA(0, 0, 0, 1)
+                Height: =165
+                Width: =0.5
+                X: =640
+                ZIndex: =5
+
         Comments32_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Comments32"
@@ -7708,6 +7778,13 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey451.Y
                 ZIndex: =4
+
+            Rectangle2_48 As rectangle:
+                Fill: =RGBA(0, 0, 0, 1)
+                Height: =165
+                Width: =0.5
+                X: =640
+                ZIndex: =5
 
         Comments35_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
