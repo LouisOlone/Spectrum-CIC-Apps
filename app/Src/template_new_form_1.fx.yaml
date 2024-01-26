@@ -10188,7 +10188,7 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue456.Text
             Width: =642
-            X: =1
+            X: =2
             Y: =52
             ZIndex: =3
 
@@ -10256,8 +10256,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue372.Text
             Width: =321
-            X: =2
-            Y: =52
+            X: =0
+            Y: =53
             ZIndex: =3
 
             DataCardKey382 As label:
@@ -10323,8 +10323,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue373.SelectedDate
             Width: =321
-            X: =3
-            Y: =52
+            X: =1
+            Y: =53
             ZIndex: =3
 
             DataCardKey383 As label:
@@ -10389,7 +10389,7 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue374.Text
             Width: =321
-            X: =0
+            X: =2
             Y: =53
             ZIndex: =3
 
@@ -10456,7 +10456,7 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue375.SelectedDate
             Width: =321
-            X: =1
+            X: =3
             Y: =53
             ZIndex: =3
 
@@ -10521,9 +10521,9 @@ template_new_form_1 As screen:
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Comments50")
             Required: =false
             Update: =DataCardValue457.Text
-            Width: =321
-            X: =2
-            Y: =53
+            Width: =642
+            X: =0
+            Y: =54
             ZIndex: =3
 
             DataCardKey467 As label:
@@ -10589,9 +10589,9 @@ template_new_form_1 As screen:
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Comments51")
             Required: =false
             Update: =DataCardValue458.Text
-            Width: =321
-            X: =3
-            Y: =53
+            Width: =642
+            X: =2
+            Y: =54
             ZIndex: =3
 
             DataCardKey468 As label:
@@ -10659,7 +10659,7 @@ template_new_form_1 As screen:
             Update: =DataCardValue376.Text
             Width: =321
             X: =0
-            Y: =54
+            Y: =55
             ZIndex: =3
 
             DataCardKey386 As label:
@@ -10726,7 +10726,7 @@ template_new_form_1 As screen:
             Update: =DataCardValue377.SelectedDate
             Width: =321
             X: =1
-            Y: =54
+            Y: =55
             ZIndex: =3
 
             DataCardKey387 As label:
@@ -10792,7 +10792,7 @@ template_new_form_1 As screen:
             Update: =DataCardValue378.Text
             Width: =321
             X: =2
-            Y: =54
+            Y: =55
             ZIndex: =3
 
             DataCardKey388 As label:
@@ -10859,7 +10859,7 @@ template_new_form_1 As screen:
             Update: =DataCardValue379.SelectedDate
             Width: =321
             X: =3
-            Y: =54
+            Y: =55
             ZIndex: =3
 
             DataCardKey389 As label:
@@ -10912,74 +10912,6 @@ template_new_form_1 As screen:
                 Y: =DataCardKey389.Y
                 ZIndex: =4
 
-        "'Explain the Appraisal process_DataCard1' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="ExplaintheAppraisalprocess"
-            Default: =ThisItem.'Explain the Appraisal process'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"ExplaintheAppraisalprocess")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "ExplaintheAppraisalprocess")
-            Required: =false
-            Update: =DataCardValue380.Text
-            Width: =321
-            X: =0
-            Y: =55
-            ZIndex: =3
-
-            DataCardKey390 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue380 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey390.Y + DataCardKey390.Height + 5
-                ZIndex: =2
-
-            ErrorMessage391 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue380.Y + DataCardValue380.Height
-                ZIndex: =3
-
-            StarVisible391 As label:
-                Align: =Align.Center
-                Height: =DataCardKey390.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey390.Y
-                ZIndex: =4
-
         Comments52_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Comments52"
@@ -10991,9 +10923,9 @@ template_new_form_1 As screen:
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Comments52")
             Required: =false
             Update: =DataCardValue459.Text
-            Width: =321
-            X: =1
-            Y: =55
+            Width: =642
+            X: =0
+            Y: =56
             ZIndex: =3
 
             DataCardKey469 As label:
@@ -11059,9 +10991,9 @@ template_new_form_1 As screen:
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Comments53")
             Required: =false
             Update: =DataCardValue460.Text
-            Width: =321
+            Width: =642
             X: =2
-            Y: =55
+            Y: =56
             ZIndex: =3
 
             DataCardKey470 As label:
@@ -11116,6 +11048,74 @@ template_new_form_1 As screen:
                 Y: =DataCardKey470.Y
                 ZIndex: =4
 
+        "'Explain the Appraisal process_DataCard1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ExplaintheAppraisalprocess"
+            Default: =ThisItem.'Explain the Appraisal process'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"ExplaintheAppraisalprocess")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "ExplaintheAppraisalprocess")
+            Required: =false
+            Update: =DataCardValue380.Text
+            Width: =321
+            X: =0
+            Y: =57
+            ZIndex: =3
+
+            DataCardKey390 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue380 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey390.Y + DataCardKey390.Height + 5
+                ZIndex: =2
+
+            ErrorMessage391 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue380.Y + DataCardValue380.Height
+                ZIndex: =3
+
+            StarVisible391 As label:
+                Align: =Align.Center
+                Height: =DataCardKey390.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey390.Y
+                ZIndex: =4
+
         Date54_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Date54"
@@ -11127,8 +11127,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue381.SelectedDate
             Width: =321
-            X: =3
-            Y: =55
+            X: =1
+            Y: =57
             ZIndex: =3
 
             DataCardKey391 As label:
@@ -11193,8 +11193,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue382.Text
             Width: =321
-            X: =0
-            Y: =56
+            X: =2
+            Y: =57
             ZIndex: =3
 
             DataCardKey392 As label:
@@ -11260,8 +11260,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue383.SelectedDate
             Width: =321
-            X: =1
-            Y: =56
+            X: =3
+            Y: =57
             ZIndex: =3
 
             DataCardKey393 As label:
@@ -11314,74 +11314,6 @@ template_new_form_1 As screen:
                 Y: =DataCardKey393.Y
                 ZIndex: =4
 
-        "'Introduce to relevant sites on the Intranet_DataCard1' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="IntroducetorelevantsitesontheInt"
-            Default: =ThisItem.'Introduce to relevant sites on the Intranet'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"IntroducetorelevantsitesontheInt")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "IntroducetorelevantsitesontheInt")
-            Required: =false
-            Update: =DataCardValue384.Text
-            Width: =321
-            X: =2
-            Y: =56
-            ZIndex: =3
-
-            DataCardKey394 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue384 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey394.Y + DataCardKey394.Height + 5
-                ZIndex: =2
-
-            ErrorMessage395 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue384.Y + DataCardValue384.Height
-                ZIndex: =3
-
-            StarVisible395 As label:
-                Align: =Align.Center
-                Height: =DataCardKey394.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey394.Y
-                ZIndex: =4
-
         Comments54_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Comments54"
@@ -11393,9 +11325,9 @@ template_new_form_1 As screen:
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Comments54")
             Required: =false
             Update: =DataCardValue461.Text
-            Width: =321
-            X: =3
-            Y: =56
+            Width: =642
+            X: =0
+            Y: =58
             ZIndex: =3
 
             DataCardKey471 As label:
@@ -11461,9 +11393,9 @@ template_new_form_1 As screen:
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Comments55")
             Required: =false
             Update: =DataCardValue462.Text
-            Width: =321
-            X: =0
-            Y: =57
+            Width: =642
+            X: =2
+            Y: =58
             ZIndex: =3
 
             DataCardKey472 As label:
@@ -11518,6 +11450,74 @@ template_new_form_1 As screen:
                 Y: =DataCardKey472.Y
                 ZIndex: =4
 
+        "'Introduce to relevant sites on the Intranet_DataCard1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="IntroducetorelevantsitesontheInt"
+            Default: =ThisItem.'Introduce to relevant sites on the Intranet'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"IntroducetorelevantsitesontheInt")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "IntroducetorelevantsitesontheInt")
+            Required: =false
+            Update: =DataCardValue384.Text
+            Width: =321
+            X: =0
+            Y: =59
+            ZIndex: =3
+
+            DataCardKey394 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue384 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey394.Y + DataCardKey394.Height + 5
+                ZIndex: =2
+
+            ErrorMessage395 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue384.Y + DataCardValue384.Height
+                ZIndex: =3
+
+            StarVisible395 As label:
+                Align: =Align.Center
+                Height: =DataCardKey394.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey394.Y
+                ZIndex: =4
+
         Date56_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Date56"
@@ -11530,7 +11530,7 @@ template_new_form_1 As screen:
             Update: =DataCardValue385.SelectedDate
             Width: =321
             X: =1
-            Y: =57
+            Y: =59
             ZIndex: =3
 
             DataCardKey395 As label:
@@ -11596,7 +11596,7 @@ template_new_form_1 As screen:
             Update: =DataCardValue386.Text
             Width: =321
             X: =2
-            Y: =57
+            Y: =59
             ZIndex: =3
 
             DataCardKey396 As label:
@@ -11663,7 +11663,7 @@ template_new_form_1 As screen:
             Update: =DataCardValue387.SelectedDate
             Width: =321
             X: =3
-            Y: =57
+            Y: =59
             ZIndex: =3
 
             DataCardKey397 As label:
@@ -11716,74 +11716,6 @@ template_new_form_1 As screen:
                 Y: =DataCardKey397.Y
                 ZIndex: =4
 
-        "'Ensure that new staff member has received confirmation of all statutory and mandatory along with essential training required for role_DataCard1' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="Ensurethatnewstaffmemberhasrecei"
-            Default: =ThisItem.'Ensure that new staff member has received confirmation of all statutory and mandatory along with essential training required for role'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Ensurethatnewstaffmemberhasrecei")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Ensurethatnewstaffmemberhasrecei")
-            Required: =false
-            Update: =DataCardValue388.Text
-            Width: =321
-            X: =0
-            Y: =58
-            ZIndex: =3
-
-            DataCardKey398 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue388 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey398.Y + DataCardKey398.Height + 5
-                ZIndex: =2
-
-            ErrorMessage399 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue388.Y + DataCardValue388.Height
-                ZIndex: =3
-
-            StarVisible399 As label:
-                Align: =Align.Center
-                Height: =DataCardKey398.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey398.Y
-                ZIndex: =4
-
         Comments56_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Comments56"
@@ -11795,9 +11727,9 @@ template_new_form_1 As screen:
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Comments56")
             Required: =false
             Update: =DataCardValue463.Text
-            Width: =321
-            X: =1
-            Y: =58
+            Width: =642
+            X: =0
+            Y: =60
             ZIndex: =3
 
             DataCardKey473 As label:
@@ -11863,9 +11795,9 @@ template_new_form_1 As screen:
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Comments57")
             Required: =false
             Update: =DataCardValue464.Text
-            Width: =321
+            Width: =642
             X: =2
-            Y: =58
+            Y: =60
             ZIndex: =3
 
             DataCardKey474 As label:
@@ -11920,6 +11852,74 @@ template_new_form_1 As screen:
                 Y: =DataCardKey474.Y
                 ZIndex: =4
 
+        "'Ensure that new staff member has received confirmation of all statutory and mandatory along with essential training required for role_DataCard1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Ensurethatnewstaffmemberhasrecei"
+            Default: =ThisItem.'Ensure that new staff member has received confirmation of all statutory and mandatory along with essential training required for role'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Ensurethatnewstaffmemberhasrecei")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Ensurethatnewstaffmemberhasrecei")
+            Required: =false
+            Update: =DataCardValue388.Text
+            Width: =321
+            X: =0
+            Y: =61
+            ZIndex: =3
+
+            DataCardKey398 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue388 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey398.Y + DataCardKey398.Height + 5
+                ZIndex: =2
+
+            ErrorMessage399 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue388.Y + DataCardValue388.Height
+                ZIndex: =3
+
+            StarVisible399 As label:
+                Align: =Align.Center
+                Height: =DataCardKey398.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey398.Y
+                ZIndex: =4
+
         Date58_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Date58"
@@ -11931,8 +11931,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue389.SelectedDate
             Width: =321
-            X: =3
-            Y: =58
+            X: =1
+            Y: =61
             ZIndex: =3
 
             DataCardKey399 As label:
@@ -11997,8 +11997,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue390.Text
             Width: =321
-            X: =0
-            Y: =59
+            X: =2
+            Y: =61
             ZIndex: =3
 
             DataCardKey400 As label:
@@ -12064,8 +12064,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue391.SelectedDate
             Width: =321
-            X: =1
-            Y: =59
+            X: =3
+            Y: =61
             ZIndex: =3
 
             DataCardKey401 As label:
@@ -12118,74 +12118,6 @@ template_new_form_1 As screen:
                 Y: =DataCardKey401.Y
                 ZIndex: =4
 
-        "'Explain mandatory training arrangements and requirements (including e-learning) in the induction period and how to access these_DataCard1' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="Explainmandatorytrainingarrangem"
-            Default: =ThisItem.'Explain mandatory training arrangements and requirements (including e-learning) in the induction period and how to access these'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Explainmandatorytrainingarrangem")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Explainmandatorytrainingarrangem")
-            Required: =false
-            Update: =DataCardValue392.Text
-            Width: =321
-            X: =2
-            Y: =59
-            ZIndex: =3
-
-            DataCardKey402 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue392 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey402.Y + DataCardKey402.Height + 5
-                ZIndex: =2
-
-            ErrorMessage403 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue392.Y + DataCardValue392.Height
-                ZIndex: =3
-
-            StarVisible403 As label:
-                Align: =Align.Center
-                Height: =DataCardKey402.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey402.Y
-                ZIndex: =4
-
         Comments58_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Comments58"
@@ -12197,9 +12129,9 @@ template_new_form_1 As screen:
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Comments58")
             Required: =false
             Update: =DataCardValue465.Text
-            Width: =321
-            X: =3
-            Y: =59
+            Width: =642
+            X: =0
+            Y: =62
             ZIndex: =3
 
             DataCardKey475 As label:
@@ -12265,9 +12197,9 @@ template_new_form_1 As screen:
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Comments59")
             Required: =false
             Update: =DataCardValue466.Text
-            Width: =321
-            X: =0
-            Y: =60
+            Width: =642
+            X: =2
+            Y: =62
             ZIndex: =3
 
             DataCardKey476 As label:
@@ -12322,6 +12254,74 @@ template_new_form_1 As screen:
                 Y: =DataCardKey476.Y
                 ZIndex: =4
 
+        "'Explain mandatory training arrangements and requirements (including e-learning) in the induction period and how to access these_DataCard1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Explainmandatorytrainingarrangem"
+            Default: =ThisItem.'Explain mandatory training arrangements and requirements (including e-learning) in the induction period and how to access these'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Explainmandatorytrainingarrangem")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Explainmandatorytrainingarrangem")
+            Required: =false
+            Update: =DataCardValue392.Text
+            Width: =321
+            X: =0
+            Y: =63
+            ZIndex: =3
+
+            DataCardKey402 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue392 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey402.Y + DataCardKey402.Height + 5
+                ZIndex: =2
+
+            ErrorMessage403 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue392.Y + DataCardValue392.Height
+                ZIndex: =3
+
+            StarVisible403 As label:
+                Align: =Align.Center
+                Height: =DataCardKey402.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey402.Y
+                ZIndex: =4
+
         Date60_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Date60"
@@ -12334,7 +12334,7 @@ template_new_form_1 As screen:
             Update: =DataCardValue393.SelectedDate
             Width: =321
             X: =1
-            Y: =60
+            Y: =63
             ZIndex: =3
 
             DataCardKey403 As label:
@@ -12400,7 +12400,7 @@ template_new_form_1 As screen:
             Update: =DataCardValue394.Text
             Width: =321
             X: =2
-            Y: =60
+            Y: =63
             ZIndex: =3
 
             DataCardKey404 As label:
@@ -12467,7 +12467,7 @@ template_new_form_1 As screen:
             Update: =DataCardValue395.SelectedDate
             Width: =321
             X: =3
-            Y: =60
+            Y: =63
             ZIndex: =3
 
             DataCardKey405 As label:
@@ -12520,74 +12520,6 @@ template_new_form_1 As screen:
                 Y: =DataCardKey405.Y
                 ZIndex: =4
 
-        "'Explanation of IT Support Service and systems_DataCard1' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="ExplanationofITSupportServiceand"
-            Default: =ThisItem.'Explanation of IT Support Service and systems'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"ExplanationofITSupportServiceand")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "ExplanationofITSupportServiceand")
-            Required: =false
-            Update: =DataCardValue396.Text
-            Width: =321
-            X: =0
-            Y: =61
-            ZIndex: =3
-
-            DataCardKey406 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue396 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey406.Y + DataCardKey406.Height + 5
-                ZIndex: =2
-
-            ErrorMessage407 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue396.Y + DataCardValue396.Height
-                ZIndex: =3
-
-            StarVisible407 As label:
-                Align: =Align.Center
-                Height: =DataCardKey406.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey406.Y
-                ZIndex: =4
-
         Comments60_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Comments60"
@@ -12599,9 +12531,9 @@ template_new_form_1 As screen:
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Comments60")
             Required: =false
             Update: =DataCardValue467.Text
-            Width: =321
-            X: =1
-            Y: =61
+            Width: =642
+            X: =0
+            Y: =64
             ZIndex: =3
 
             DataCardKey477 As label:
@@ -12667,9 +12599,9 @@ template_new_form_1 As screen:
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Comments61")
             Required: =false
             Update: =DataCardValue468.Text
-            Width: =321
+            Width: =642
             X: =2
-            Y: =61
+            Y: =64
             ZIndex: =3
 
             DataCardKey478 As label:
@@ -12724,6 +12656,74 @@ template_new_form_1 As screen:
                 Y: =DataCardKey478.Y
                 ZIndex: =4
 
+        "'Explanation of IT Support Service and systems_DataCard1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ExplanationofITSupportServiceand"
+            Default: =ThisItem.'Explanation of IT Support Service and systems'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"ExplanationofITSupportServiceand")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "ExplanationofITSupportServiceand")
+            Required: =false
+            Update: =DataCardValue396.Text
+            Width: =321
+            X: =0
+            Y: =65
+            ZIndex: =3
+
+            DataCardKey406 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue396 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey406.Y + DataCardKey406.Height + 5
+                ZIndex: =2
+
+            ErrorMessage407 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue396.Y + DataCardValue396.Height
+                ZIndex: =3
+
+            StarVisible407 As label:
+                Align: =Align.Center
+                Height: =DataCardKey406.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey406.Y
+                ZIndex: =4
+
         Date62_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Date62"
@@ -12735,8 +12735,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue397.SelectedDate
             Width: =321
-            X: =3
-            Y: =61
+            X: =1
+            Y: =65
             ZIndex: =3
 
             DataCardKey407 As label:
@@ -12801,8 +12801,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue398.Text
             Width: =321
-            X: =0
-            Y: =62
+            X: =2
+            Y: =65
             ZIndex: =3
 
             DataCardKey408 As label:
@@ -12868,8 +12868,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue399.SelectedDate
             Width: =321
-            X: =1
-            Y: =62
+            X: =3
+            Y: =65
             ZIndex: =3
 
             DataCardKey409 As label:
@@ -12922,74 +12922,6 @@ template_new_form_1 As screen:
                 Y: =DataCardKey409.Y
                 ZIndex: =4
 
-        "'Technical helpdesk contacts_DataCard1' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="Technicalhelpdeskcontacts"
-            Default: =ThisItem.'Technical helpdesk contacts'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Technicalhelpdeskcontacts")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Technicalhelpdeskcontacts")
-            Required: =false
-            Update: =DataCardValue400.Text
-            Width: =321
-            X: =2
-            Y: =62
-            ZIndex: =3
-
-            DataCardKey410 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue400 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey410.Y + DataCardKey410.Height + 5
-                ZIndex: =2
-
-            ErrorMessage411 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue400.Y + DataCardValue400.Height
-                ZIndex: =3
-
-            StarVisible411 As label:
-                Align: =Align.Center
-                Height: =DataCardKey410.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey410.Y
-                ZIndex: =4
-
         Comments62_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Comments62"
@@ -13001,9 +12933,9 @@ template_new_form_1 As screen:
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Comments62")
             Required: =false
             Update: =DataCardValue469.Text
-            Width: =321
-            X: =3
-            Y: =62
+            Width: =642
+            X: =0
+            Y: =66
             ZIndex: =3
 
             DataCardKey479 As label:
@@ -13069,9 +13001,9 @@ template_new_form_1 As screen:
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Comments63")
             Required: =false
             Update: =DataCardValue470.Text
-            Width: =321
-            X: =0
-            Y: =63
+            Width: =642
+            X: =2
+            Y: =66
             ZIndex: =3
 
             DataCardKey480 As label:
@@ -13126,6 +13058,74 @@ template_new_form_1 As screen:
                 Y: =DataCardKey480.Y
                 ZIndex: =4
 
+        "'Technical helpdesk contacts_DataCard1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Technicalhelpdeskcontacts"
+            Default: =ThisItem.'Technical helpdesk contacts'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Technicalhelpdeskcontacts")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Technicalhelpdeskcontacts")
+            Required: =false
+            Update: =DataCardValue400.Text
+            Width: =321
+            X: =0
+            Y: =67
+            ZIndex: =3
+
+            DataCardKey410 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue400 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey410.Y + DataCardKey410.Height + 5
+                ZIndex: =2
+
+            ErrorMessage411 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue400.Y + DataCardValue400.Height
+                ZIndex: =3
+
+            StarVisible411 As label:
+                Align: =Align.Center
+                Height: =DataCardKey410.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey410.Y
+                ZIndex: =4
+
         Date64_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Date64"
@@ -13138,7 +13138,7 @@ template_new_form_1 As screen:
             Update: =DataCardValue401.SelectedDate
             Width: =321
             X: =1
-            Y: =63
+            Y: =67
             ZIndex: =3
 
             DataCardKey411 As label:
@@ -13204,7 +13204,7 @@ template_new_form_1 As screen:
             Update: =DataCardValue402.Text
             Width: =321
             X: =2
-            Y: =63
+            Y: =67
             ZIndex: =3
 
             DataCardKey412 As label:
@@ -13271,7 +13271,7 @@ template_new_form_1 As screen:
             Update: =DataCardValue403.SelectedDate
             Width: =321
             X: =3
-            Y: =63
+            Y: =67
             ZIndex: =3
 
             DataCardKey413 As label:
@@ -13335,9 +13335,9 @@ template_new_form_1 As screen:
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Comments65")
             Required: =false
             Update: =DataCardValue472.Text
-            Width: =321
+            Width: =642
             X: =0
-            Y: =64
+            Y: =68
             ZIndex: =3
 
             DataCardKey482 As label:
@@ -13392,6 +13392,74 @@ template_new_form_1 As screen:
                 Y: =DataCardKey482.Y
                 ZIndex: =4
 
+        Comments64_DataCard1 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Comments64"
+            Default: =ThisItem.Comments64
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Comments64")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Comments64")
+            Required: =false
+            Update: =DataCardValue471.Text
+            Width: =642
+            X: =2
+            Y: =68
+            ZIndex: =3
+
+            DataCardKey481 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =25
+                Y: =5
+                ZIndex: =1
+
+            DataCardValue471 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey481.Y + DataCardKey481.Height + 5
+                ZIndex: =2
+
+            ErrorMessage482 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue471.Y + DataCardValue471.Height
+                ZIndex: =3
+
+            StarVisible482 As label:
+                Align: =Align.Center
+                Height: =DataCardKey481.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey481.Y
+                ZIndex: =4
+
         "'Use of e-mail confidentiality_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="Useofe_x002d_mailconfidentiality"
@@ -13404,8 +13472,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue404.Text
             Width: =321
-            X: =1
-            Y: =64
+            X: =0
+            Y: =69
             ZIndex: =3
 
             DataCardKey414 As label:
@@ -13460,74 +13528,6 @@ template_new_form_1 As screen:
                 Y: =DataCardKey414.Y
                 ZIndex: =4
 
-        Comments64_DataCard1 As typedDataCard.textualEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="Comments64"
-            Default: =ThisItem.Comments64
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Comments64")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Comments64")
-            Required: =false
-            Update: =DataCardValue471.Text
-            Width: =321
-            X: =2
-            Y: =64
-            ZIndex: =3
-
-            DataCardKey481 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue471 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey481.Y + DataCardKey481.Height + 5
-                ZIndex: =2
-
-            ErrorMessage482 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue471.Y + DataCardValue471.Height
-                ZIndex: =3
-
-            StarVisible482 As label:
-                Align: =Align.Center
-                Height: =DataCardKey481.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey481.Y
-                ZIndex: =4
-
         Date66_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Date66"
@@ -13538,9 +13538,9 @@ template_new_form_1 As screen:
             Height: =50
             Required: =false
             Update: =DataCardValue405.SelectedDate
-            Width: =321
-            X: =3
-            Y: =64
+            Width: =963
+            X: =1
+            Y: =69
             ZIndex: =3
 
             DataCardKey415 As label:
@@ -13563,7 +13563,7 @@ template_new_form_1 As screen:
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =261
                 X: =30
                 Y: =DataCardKey415.Y + DataCardKey415.Height + 5
                 ZIndex: =2
@@ -13593,142 +13593,6 @@ template_new_form_1 As screen:
                 Y: =DataCardKey415.Y
                 ZIndex: =4
 
-        "'Signature Line Manager_DataCard1' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="SignatureLineManager"
-            Default: =ThisItem.'Signature Line Manager'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"SignatureLineManager")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "SignatureLineManager")
-            Required: =false
-            Update: =DataCardValue406.Text
-            Width: =321
-            X: =0
-            Y: =65
-            ZIndex: =3
-
-            DataCardKey416 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue406 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey416.Y + DataCardKey416.Height + 5
-                ZIndex: =2
-
-            ErrorMessage417 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue406.Y + DataCardValue406.Height
-                ZIndex: =3
-
-            StarVisible417 As label:
-                Align: =Align.Center
-                Height: =DataCardKey416.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey416.Y
-                ZIndex: =4
-
-        "'Signature individual_DataCard1' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="Signatureindividual"
-            Default: =ThisItem.'Signature individual'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Signatureindividual")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Signatureindividual")
-            Required: =false
-            Update: =DataCardValue407.Text
-            Width: =321
-            X: =1
-            Y: =65
-            ZIndex: =3
-
-            DataCardKey417 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue407 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey417.Y + DataCardKey417.Height + 5
-                ZIndex: =2
-
-            ErrorMessage418 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue407.Y + DataCardValue407.Height
-                ZIndex: =3
-
-            StarVisible418 As label:
-                Align: =Align.Center
-                Height: =DataCardKey417.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey417.Y
-                ZIndex: =4
-
         Comments66_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Comments66"
@@ -13740,9 +13604,9 @@ template_new_form_1 As screen:
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Comments66")
             Required: =false
             Update: =DataCardValue473.Text
-            Width: =321
-            X: =2
-            Y: =65
+            Width: =642
+            X: =0
+            Y: =70
             ZIndex: =3
 
             DataCardKey483 As label:
@@ -13797,23 +13661,23 @@ template_new_form_1 As screen:
                 Y: =DataCardKey483.Y
                 ZIndex: =4
 
-        CompleteFlag_DataCard1 As typedDataCard.textualEditCard:
+        "'Signature Line Manager_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
-            DataField: ="CompleteFlag"
-            Default: =ThisItem.CompleteFlag
+            DataField: ="SignatureLineManager"
+            Default: =ThisItem.'Signature Line Manager'
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"CompleteFlag")
+            DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"SignatureLineManager")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "CompleteFlag")
+            MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "SignatureLineManager")
             Required: =false
-            Update: =DataCardValue475.Text
+            Update: =DataCardValue406.Text
             Width: =321
-            X: =3
-            Y: =65
+            X: =2
+            Y: =70
             ZIndex: =3
 
-            DataCardKey485 As label:
+            DataCardKey416 As label:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
@@ -13823,7 +13687,7 @@ template_new_form_1 As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue475 As text:
+            DataCardValue406 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true
@@ -13837,10 +13701,10 @@ template_new_form_1 As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey485.Y + DataCardKey485.Height + 5
+                Y: =DataCardKey416.Y + DataCardKey416.Height + 5
                 ZIndex: =2
 
-            ErrorMessage486 As label:
+            ErrorMessage417 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -13852,83 +13716,17 @@ template_new_form_1 As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue475.Y + DataCardValue475.Height
+                Y: =DataCardValue406.Y + DataCardValue406.Height
                 ZIndex: =3
 
-            StarVisible486 As label:
+            StarVisible417 As label:
                 Align: =Align.Center
-                Height: =DataCardKey485.Height
+                Height: =DataCardKey416.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey485.Y
-                ZIndex: =4
-
-        SpectrumEmp_DataCard1 As typedDataCard.comboBoxEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="SpectrumEmp"
-            Default: =ThisItem.SpectrumEmp
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"SpectrumEmp")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            Required: =false
-            Update: =DataCardValue481.Selected
-            Width: =321
-            X: =0
-            Y: =66
-            ZIndex: =3
-
-            DataCardKey491 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue481 As combobox:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultSelectedItems: =Parent.Default
-                DisplayFields: =["Value"]
-                DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@'Induction Log'].SpectrumEmp)
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                SearchFields: =["Value"]
-                SearchItems: =Choices('Induction Log'.SpectrumEmp,DataCardValue481.SearchText)
-                SelectMultiple: =false
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey491.Y + DataCardKey491.Height + 5
-                ZIndex: =2
-
-            ErrorMessage492 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue481.Y + DataCardValue481.Height
-                ZIndex: =3
-
-            StarVisible492 As label:
-                Align: =Align.Center
-                Height: =DataCardKey491.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey491.Y
+                Y: =DataCardKey416.Y
                 ZIndex: =4
 
         NonSpecEmail_DataCard1 As typedDataCard.textualEditCard:
@@ -13943,8 +13741,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue482.Text
             Width: =321
-            X: =1
-            Y: =66
+            X: =0
+            Y: =71
             ZIndex: =3
 
             DataCardKey492 As label:
@@ -14010,8 +13808,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue483.Selected
             Width: =321
-            X: =2
-            Y: =66
+            X: =1
+            Y: =71
             ZIndex: =3
 
             DataCardKey493 As label:
@@ -14076,8 +13874,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue484.Attachments
             Width: =321
-            X: =3
-            Y: =66
+            X: =2
+            Y: =71
             ZIndex: =3
 
             DataCardKey494 As label:
@@ -14128,6 +13926,72 @@ template_new_form_1 As screen:
                 Width: =30
                 Wrap: =false
                 Y: =DataCardKey494.Y
+                ZIndex: =4
+
+        SpectrumEmp_DataCard1 As typedDataCard.comboBoxEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="SpectrumEmp"
+            Default: =ThisItem.SpectrumEmp
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"SpectrumEmp")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue481.Selected
+            Width: =321
+            X: =3
+            Y: =70
+            ZIndex: =3
+
+            DataCardKey491 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue481 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["Value"]
+                DisplayMode: =Parent.DisplayMode
+                Items: =Choices([@'Induction Log'].SpectrumEmp)
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["Value"]
+                SearchItems: =Choices('Induction Log'.SpectrumEmp,DataCardValue481.SearchText)
+                SelectMultiple: =false
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey491.Y + DataCardKey491.Height + 5
+                ZIndex: =2
+
+            ErrorMessage492 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue481.Y + DataCardValue481.Height
+                ZIndex: =3
+
+            StarVisible492 As label:
+                Align: =Align.Center
+                Height: =DataCardKey491.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey491.Y
                 ZIndex: =4
 
     ButtonCanvas1_11 As Button:
