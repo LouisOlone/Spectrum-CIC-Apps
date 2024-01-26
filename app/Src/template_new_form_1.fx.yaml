@@ -1495,6 +1495,13 @@ template_new_form_1 As screen:
                 Y: =160
                 ZIndex: =5
 
+            Rectangle2_12 As rectangle:
+                Fill: =RGBA(0, 0, 0, 1)
+                Height: =165
+                Width: =0.5
+                X: =640
+                ZIndex: =6
+
         Comments4_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Comments4"
@@ -1704,6 +1711,13 @@ template_new_form_1 As screen:
                 Y: =DataCardKey267.Y
                 ZIndex: =4
 
+            Rectangle2_13 As rectangle:
+                Fill: =RGBA(0, 0, 0, 1)
+                Height: =165
+                Width: =0.5
+                X: =319
+                ZIndex: =5
+
         "'Location of toilets, staff facilities, coffee room, postal area, photocopier, etc._DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="Locationoftoilets_x002c_stafffac"
@@ -1905,6 +1919,13 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey422.Y
                 ZIndex: =4
+
+            Rectangle2_14 As rectangle:
+                Fill: =RGBA(0, 0, 0, 1)
+                Height: =165
+                Width: =0.5
+                X: =640
+                ZIndex: =5
 
         Comments6_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -2108,6 +2129,13 @@ template_new_form_1 As screen:
                 Y: =DataCardKey269.Y
                 ZIndex: =4
 
+            Rectangle2_15 As rectangle:
+                Fill: =RGBA(0, 0, 0, 1)
+                Height: =165
+                Width: =0.5
+                X: =319
+                ZIndex: =5
+
         "'Explain statutory and mandatory training needs. Ensure have basic understanding of safeguarding, Prevent, Mental Capacity Act and Conflict Management_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="Explainstatutoryandmandatorytrai"
@@ -2309,6 +2337,13 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey424.Y
                 ZIndex: =4
+
+            Rectangle2_16 As rectangle:
+                Fill: =RGBA(0, 0, 0, 1)
+                Height: =165
+                Width: =0.5
+                X: =640
+                ZIndex: =5
 
         Comments8_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -2512,6 +2547,13 @@ template_new_form_1 As screen:
                 Y: =DataCardKey271.Y
                 ZIndex: =4
 
+            Rectangle2_17 As rectangle:
+                Fill: =RGBA(0, 0, 0, 1)
+                Height: =165
+                Width: =0.5
+                X: =319
+                ZIndex: =5
+
         "'Explain contractual arrangements e.g. probation, (where appropriate)_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="Explaincontractualarrangementse_"
@@ -2713,6 +2755,13 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey426.Y
                 ZIndex: =4
+
+            Rectangle2_18 As rectangle:
+                Fill: =RGBA(0, 0, 0, 1)
+                Height: =165
+                Width: =0.5
+                X: =640
+                ZIndex: =5
 
         Comments10_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -2985,6 +3034,13 @@ template_new_form_1 As screen:
                 Y: =DataCardKey274.Y
                 ZIndex: =4
 
+            Rectangle2_19 As rectangle:
+                Fill: =RGBA(0, 0, 0, 1)
+                Height: =165
+                Width: =0.5
+                X: =319
+                ZIndex: =5
+
         "'Issue keys/fobs and pin numbers if appropriate_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="Issuekeys_x002f_fobsandpinnumber"
@@ -3186,6 +3242,13 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey429.Y
                 ZIndex: =4
+
+            Rectangle2_20 As rectangle:
+                Fill: =RGBA(0, 0, 0, 1)
+                Height: =165
+                Width: =0.5
+                X: =640
+                ZIndex: =5
 
         Comments13_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -3389,6 +3452,13 @@ template_new_form_1 As screen:
                 Y: =DataCardKey277.Y
                 ZIndex: =4
 
+            Rectangle2_22 As rectangle:
+                Fill: =RGBA(0, 0, 0, 1)
+                Height: =165
+                Width: =0.5
+                X: =319
+                ZIndex: =5
+
         "'Identify ALL HR, corporate and locally applicable policies and procedures, list here and date shared with new employee_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="IdentifyALLHR_x002c_corporateand"
@@ -3553,6 +3623,7 @@ template_new_form_1 As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Height: =100
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -3590,6 +3661,13 @@ template_new_form_1 As screen:
                 Y: =DataCardKey431.Y
                 ZIndex: =4
 
+            Rectangle2_21 As rectangle:
+                Fill: =RGBA(0, 0, 0, 1)
+                Height: =165
+                Width: =0.5
+                X: =640
+                ZIndex: =5
+
         Comments15_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Comments15"
@@ -3621,6 +3699,7 @@ template_new_form_1 As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Height: =100
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
