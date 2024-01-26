@@ -4881,74 +4881,6 @@ template_new_form_1 As screen:
                 Y: =DataCardKey295.Y
                 ZIndex: =4
 
-        "'Moving and Handling_DataCard1' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="MovingandHandling"
-            Default: =ThisItem.'Moving and Handling'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"MovingandHandling")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "MovingandHandling")
-            Required: =false
-            Update: =DataCardValue288.Text
-            Width: =321
-            X: =0
-            Y: =26
-            ZIndex: =3
-
-            DataCardKey296 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue288 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey296.Y + DataCardKey296.Height + 5
-                ZIndex: =2
-
-            ErrorMessage297 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue288.Y + DataCardValue288.Height
-                ZIndex: =3
-
-            StarVisible297 As label:
-                Align: =Align.Center
-                Height: =DataCardKey296.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey296.Y
-                ZIndex: =4
-
         Comments22_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Comments22"
@@ -4961,7 +4893,7 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue429.Text
             Width: =642
-            X: =1
+            X: =0
             Y: =26
             ZIndex: =3
 
@@ -5029,8 +4961,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue430.Text
             Width: =642
-            X: =0
-            Y: =27
+            X: =2
+            Y: =26
             ZIndex: =3
 
             DataCardKey440 As label:
@@ -5085,6 +5017,74 @@ template_new_form_1 As screen:
                 Y: =DataCardKey440.Y
                 ZIndex: =4
 
+        "'Moving and Handling_DataCard1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="MovingandHandling"
+            Default: =ThisItem.'Moving and Handling'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"MovingandHandling")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "MovingandHandling")
+            Required: =false
+            Update: =DataCardValue288.Text
+            Width: =321
+            X: =0
+            Y: =27
+            ZIndex: =3
+
+            DataCardKey296 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue288 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey296.Y + DataCardKey296.Height + 5
+                ZIndex: =2
+
+            ErrorMessage297 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue288.Y + DataCardValue288.Height
+                ZIndex: =3
+
+            StarVisible297 As label:
+                Align: =Align.Center
+                Height: =DataCardKey296.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey296.Y
+                ZIndex: =4
+
         Date24_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Date24"
@@ -5096,7 +5096,7 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue289.SelectedDate
             Width: =321
-            X: =2
+            X: =1
             Y: =27
             ZIndex: =3
 
@@ -5162,7 +5162,7 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue290.Text
             Width: =321
-            X: =3
+            X: =2
             Y: =27
             ZIndex: =3
 
@@ -5229,8 +5229,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue291.SelectedDate
             Width: =321
-            X: =0
-            Y: =28
+            X: =3
+            Y: =27
             ZIndex: =3
 
             DataCardKey299 As label:
@@ -5295,7 +5295,7 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue431.Text
             Width: =642
-            X: =1
+            X: =0
             Y: =28
             ZIndex: =3
 
@@ -5363,8 +5363,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue432.Text
             Width: =642
-            X: =0
-            Y: =29
+            X: =2
+            Y: =28
             ZIndex: =3
 
             DataCardKey442 As label:
@@ -5431,7 +5431,7 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue292.Text
             Width: =321
-            X: =2
+            X: =0
             Y: =29
             ZIndex: =3
 
@@ -5498,7 +5498,7 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue293.SelectedDate
             Width: =321
-            X: =3
+            X: =1
             Y: =29
             ZIndex: =3
 
@@ -5565,8 +5565,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue294.Text
             Width: =321
-            X: =0
-            Y: =30
+            X: =2
+            Y: =29
             ZIndex: =3
 
             DataCardKey302 As label:
@@ -5632,8 +5632,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue295.SelectedDate
             Width: =321
-            X: =1
-            Y: =30
+            X: =3
+            Y: =29
             ZIndex: =3
 
             DataCardKey303 As label:
@@ -5698,7 +5698,7 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue433.Text
             Width: =642
-            X: =2
+            X: =0
             Y: =30
             ZIndex: =3
 
@@ -5766,8 +5766,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue434.Text
             Width: =642
-            X: =0
-            Y: =31
+            X: =2
+            Y: =30
             ZIndex: =3
 
             DataCardKey444 As label:
@@ -5834,7 +5834,7 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue296.Text
             Width: =321
-            X: =2
+            X: =0
             Y: =31
             ZIndex: =3
 
@@ -5901,7 +5901,7 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue297.SelectedDate
             Width: =321
-            X: =3
+            X: =1
             Y: =31
             ZIndex: =3
 
@@ -5967,8 +5967,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue298.Text
             Width: =321
-            X: =0
-            Y: =32
+            X: =2
+            Y: =31
             ZIndex: =3
 
             DataCardKey306 As label:
@@ -6034,8 +6034,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue299.SelectedDate
             Width: =321
-            X: =1
-            Y: =32
+            X: =3
+            Y: =31
             ZIndex: =3
 
             DataCardKey307 As label:
@@ -6100,7 +6100,7 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue435.Text
             Width: =642
-            X: =2
+            X: =0
             Y: =32
             ZIndex: =3
 
@@ -6168,8 +6168,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue436.Text
             Width: =642
-            X: =0
-            Y: =33
+            X: =2
+            Y: =32
             ZIndex: =3
 
             DataCardKey446 As label:
@@ -6236,7 +6236,7 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue300.Text
             Width: =321
-            X: =2
+            X: =0
             Y: =33
             ZIndex: =3
 
@@ -6303,7 +6303,7 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue301.SelectedDate
             Width: =321
-            X: =3
+            X: =1
             Y: =33
             ZIndex: =3
 
@@ -6369,8 +6369,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue302.Text
             Width: =321
-            X: =0
-            Y: =34
+            X: =2
+            Y: =33
             ZIndex: =3
 
             DataCardKey310 As label:
@@ -6436,8 +6436,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue303.SelectedDate
             Width: =321
-            X: =1
-            Y: =34
+            X: =3
+            Y: =33
             ZIndex: =3
 
             DataCardKey311 As label:
@@ -6502,7 +6502,7 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue437.Text
             Width: =642
-            X: =2
+            X: =0
             Y: =34
             ZIndex: =3
 
@@ -6570,8 +6570,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue438.Text
             Width: =642
-            X: =0
-            Y: =35
+            X: =2
+            Y: =34
             ZIndex: =3
 
             DataCardKey448 As label:
@@ -6638,7 +6638,7 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue304.Text
             Width: =321
-            X: =2
+            X: =0
             Y: =35
             ZIndex: =3
 
@@ -6705,7 +6705,7 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue305.SelectedDate
             Width: =321
-            X: =3
+            X: =1
             Y: =35
             ZIndex: =3
 
@@ -6771,8 +6771,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue306.Text
             Width: =321
-            X: =0
-            Y: =36
+            X: =2
+            Y: =35
             ZIndex: =3
 
             DataCardKey348 As label:
@@ -6838,8 +6838,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue307.SelectedDate
             Width: =321
-            X: =1
-            Y: =36
+            X: =3
+            Y: =35
             ZIndex: =3
 
             DataCardKey349 As label:
@@ -6904,7 +6904,7 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue440.Text
             Width: =642
-            X: =2
+            X: =0
             Y: =36
             ZIndex: =3
 
@@ -6972,8 +6972,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue439.Text
             Width: =642
-            X: =0
-            Y: =37
+            X: =2
+            Y: =36
             ZIndex: =3
 
             DataCardKey449 As label:
@@ -7040,7 +7040,7 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue336.Text
             Width: =321
-            X: =2
+            X: =0
             Y: =37
             ZIndex: =3
 
@@ -7107,7 +7107,7 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue339.SelectedDate
             Width: =321
-            X: =3
+            X: =1
             Y: =37
             ZIndex: =3
 
@@ -7173,8 +7173,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue342.Text
             Width: =321
-            X: =0
-            Y: =38
+            X: =2
+            Y: =37
             ZIndex: =3
 
             DataCardKey352 As label:
@@ -7240,8 +7240,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue343.SelectedDate
             Width: =321
-            X: =1
-            Y: =38
+            X: =3
+            Y: =37
             ZIndex: =3
 
             DataCardKey353 As label:
@@ -7294,74 +7294,6 @@ template_new_form_1 As screen:
                 Y: =DataCardKey353.Y
                 ZIndex: =4
 
-        "'Payment during absence due to illness or injury_DataCard1' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="Paymentduringabsenceduetoillness"
-            Default: =ThisItem.'Payment during absence due to illness or injury'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Paymentduringabsenceduetoillness")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Paymentduringabsenceduetoillness")
-            Required: =false
-            Update: =DataCardValue344.Text
-            Width: =321
-            X: =2
-            Y: =38
-            ZIndex: =3
-
-            DataCardKey354 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue344 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey354.Y + DataCardKey354.Height + 5
-                ZIndex: =2
-
-            ErrorMessage355 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue344.Y + DataCardValue344.Height
-                ZIndex: =3
-
-            StarVisible355 As label:
-                Align: =Align.Center
-                Height: =DataCardKey354.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey354.Y
-                ZIndex: =4
-
         Comments34_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Comments34"
@@ -7375,7 +7307,7 @@ template_new_form_1 As screen:
             Update: =DataCardValue441.Text
             Width: =642
             X: =0
-            Y: =39
+            Y: =38
             ZIndex: =3
 
             DataCardKey451 As label:
@@ -7443,7 +7375,7 @@ template_new_form_1 As screen:
             Update: =DataCardValue442.Text
             Width: =642
             X: =2
-            Y: =39
+            Y: =38
             ZIndex: =3
 
             DataCardKey452 As label:
@@ -7498,6 +7430,74 @@ template_new_form_1 As screen:
                 Y: =DataCardKey452.Y
                 ZIndex: =4
 
+        "'Payment during absence due to illness or injury_DataCard1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Paymentduringabsenceduetoillness"
+            Default: =ThisItem.'Payment during absence due to illness or injury'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Paymentduringabsenceduetoillness")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Paymentduringabsenceduetoillness")
+            Required: =false
+            Update: =DataCardValue344.Text
+            Width: =321
+            X: =0
+            Y: =39
+            ZIndex: =3
+
+            DataCardKey354 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue344 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey354.Y + DataCardKey354.Height + 5
+                ZIndex: =2
+
+            ErrorMessage355 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue344.Y + DataCardValue344.Height
+                ZIndex: =3
+
+            StarVisible355 As label:
+                Align: =Align.Center
+                Height: =DataCardKey354.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey354.Y
+                ZIndex: =4
+
         Date36_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Date36"
@@ -7509,8 +7509,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue345.SelectedDate
             Width: =321
-            X: =0
-            Y: =40
+            X: =1
+            Y: =39
             ZIndex: =3
 
             DataCardKey355 As label:
@@ -7575,8 +7575,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue346.Text
             Width: =321
-            X: =1
-            Y: =40
+            X: =2
+            Y: =39
             ZIndex: =3
 
             DataCardKey356 As label:
@@ -7642,8 +7642,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue347.SelectedDate
             Width: =321
-            X: =2
-            Y: =40
+            X: =3
+            Y: =39
             ZIndex: =3
 
             DataCardKey357 As label:
@@ -7696,74 +7696,6 @@ template_new_form_1 As screen:
                 Y: =DataCardKey357.Y
                 ZIndex: =4
 
-        "'Who to contact regarding specific payroll and pensions queries_DataCard1' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="Whotocontactregardingspecificpay"
-            Default: =ThisItem.'Who to contact regarding specific payroll and pensions queries'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Whotocontactregardingspecificpay")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Whotocontactregardingspecificpay")
-            Required: =false
-            Update: =DataCardValue348.Text
-            Width: =642
-            X: =0
-            Y: =41
-            ZIndex: =3
-
-            DataCardKey358 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue348 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey358.Y + DataCardKey358.Height + 5
-                ZIndex: =2
-
-            ErrorMessage359 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue348.Y + DataCardValue348.Height
-                ZIndex: =3
-
-            StarVisible359 As label:
-                Align: =Align.Center
-                Height: =DataCardKey358.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey358.Y
-                ZIndex: =4
-
         Comments36_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Comments36"
@@ -7775,9 +7707,9 @@ template_new_form_1 As screen:
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Comments36")
             Required: =false
             Update: =DataCardValue443.Text
-            Width: =321
-            X: =2
-            Y: =41
+            Width: =642
+            X: =0
+            Y: =40
             ZIndex: =3
 
             DataCardKey453 As label:
@@ -7844,8 +7776,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue444.Text
             Width: =642
-            X: =0
-            Y: =42
+            X: =2
+            Y: =40
             ZIndex: =3
 
             DataCardKey454 As label:
@@ -7900,6 +7832,74 @@ template_new_form_1 As screen:
                 Y: =DataCardKey454.Y
                 ZIndex: =4
 
+        "'Who to contact regarding specific payroll and pensions queries_DataCard1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Whotocontactregardingspecificpay"
+            Default: =ThisItem.'Who to contact regarding specific payroll and pensions queries'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Whotocontactregardingspecificpay")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Whotocontactregardingspecificpay")
+            Required: =false
+            Update: =DataCardValue348.Text
+            Width: =321
+            X: =0
+            Y: =41
+            ZIndex: =3
+
+            DataCardKey358 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue348 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey358.Y + DataCardKey358.Height + 5
+                ZIndex: =2
+
+            ErrorMessage359 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue348.Y + DataCardValue348.Height
+                ZIndex: =3
+
+            StarVisible359 As label:
+                Align: =Align.Center
+                Height: =DataCardKey358.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey358.Y
+                ZIndex: =4
+
         Date38_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Date38"
@@ -7911,8 +7911,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue349.SelectedDate
             Width: =321
-            X: =2
-            Y: =42
+            X: =1
+            Y: =41
             ZIndex: =3
 
             DataCardKey359 As label:
@@ -7977,8 +7977,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue350.Text
             Width: =321
-            X: =3
-            Y: =42
+            X: =2
+            Y: =41
             ZIndex: =3
 
             DataCardKey360 As label:
@@ -8044,8 +8044,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue351.SelectedDate
             Width: =321
-            X: =0
-            Y: =43
+            X: =3
+            Y: =41
             ZIndex: =3
 
             DataCardKey361 As label:
@@ -8109,9 +8109,9 @@ template_new_form_1 As screen:
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Comments38")
             Required: =false
             Update: =DataCardValue445.Text
-            Width: =321
-            X: =1
-            Y: =43
+            Width: =642
+            X: =0
+            Y: =42
             ZIndex: =3
 
             DataCardKey455 As label:
@@ -8177,9 +8177,9 @@ template_new_form_1 As screen:
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Comments39")
             Required: =false
             Update: =DataCardValue446.Text
-            Width: =321
+            Width: =642
             X: =2
-            Y: =43
+            Y: =42
             ZIndex: =3
 
             DataCardKey456 As label:
@@ -8246,7 +8246,7 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue352.Text
             Width: =321
-            X: =3
+            X: =0
             Y: =43
             ZIndex: =3
 
@@ -8313,8 +8313,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue353.SelectedDate
             Width: =321
-            X: =0
-            Y: =44
+            X: =1
+            Y: =43
             ZIndex: =3
 
             DataCardKey363 As label:
@@ -8379,8 +8379,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue354.Text
             Width: =321
-            X: =1
-            Y: =44
+            X: =2
+            Y: =43
             ZIndex: =3
 
             DataCardKey364 As label:
@@ -8446,8 +8446,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue355.SelectedDate
             Width: =321
-            X: =2
-            Y: =44
+            X: =3
+            Y: =43
             ZIndex: =3
 
             DataCardKey365 As label:
@@ -8511,8 +8511,8 @@ template_new_form_1 As screen:
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Comments40")
             Required: =false
             Update: =DataCardValue447.Text
-            Width: =321
-            X: =3
+            Width: =642
+            X: =0
             Y: =44
             ZIndex: =3
 
@@ -8579,9 +8579,9 @@ template_new_form_1 As screen:
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Comments41")
             Required: =false
             Update: =DataCardValue448.Text
-            Width: =321
-            X: =0
-            Y: =45
+            Width: =642
+            X: =2
+            Y: =44
             ZIndex: =3
 
             DataCardKey458 As label:
@@ -8648,7 +8648,7 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue356.Text
             Width: =321
-            X: =1
+            X: =0
             Y: =45
             ZIndex: =3
 
@@ -8715,7 +8715,7 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue357.SelectedDate
             Width: =321
-            X: =2
+            X: =1
             Y: =45
             ZIndex: =3
 
@@ -8781,7 +8781,7 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue358.Text
             Width: =321
-            X: =3
+            X: =2
             Y: =45
             ZIndex: =3
 
@@ -8848,8 +8848,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue359.SelectedDate
             Width: =321
-            X: =0
-            Y: =46
+            X: =3
+            Y: =45
             ZIndex: =3
 
             DataCardKey369 As label:
@@ -8913,8 +8913,8 @@ template_new_form_1 As screen:
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Comments42")
             Required: =false
             Update: =DataCardValue449.Text
-            Width: =321
-            X: =1
+            Width: =642
+            X: =0
             Y: =46
             ZIndex: =3
 
@@ -8981,7 +8981,7 @@ template_new_form_1 As screen:
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Comments43")
             Required: =false
             Update: =DataCardValue450.Text
-            Width: =321
+            Width: =642
             X: =2
             Y: =46
             ZIndex: =3
@@ -9050,8 +9050,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue360.Text
             Width: =321
-            X: =3
-            Y: =46
+            X: =0
+            Y: =47
             ZIndex: =3
 
             DataCardKey370 As label:
@@ -9117,7 +9117,7 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue361.SelectedDate
             Width: =321
-            X: =0
+            X: =1
             Y: =47
             ZIndex: =3
 
@@ -9183,7 +9183,7 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue362.Text
             Width: =321
-            X: =1
+            X: =2
             Y: =47
             ZIndex: =3
 
@@ -9250,7 +9250,7 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue363.SelectedDate
             Width: =321
-            X: =2
+            X: =3
             Y: =47
             ZIndex: =3
 
@@ -9315,9 +9315,9 @@ template_new_form_1 As screen:
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Comments44")
             Required: =false
             Update: =DataCardValue451.Text
-            Width: =321
-            X: =3
-            Y: =47
+            Width: =642
+            X: =0
+            Y: =48
             ZIndex: =3
 
             DataCardKey461 As label:
@@ -9383,8 +9383,8 @@ template_new_form_1 As screen:
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Comments45")
             Required: =false
             Update: =DataCardValue452.Text
-            Width: =321
-            X: =0
+            Width: =642
+            X: =2
             Y: =48
             ZIndex: =3
 
@@ -9452,8 +9452,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue364.Text
             Width: =321
-            X: =1
-            Y: =48
+            X: =0
+            Y: =49
             ZIndex: =3
 
             DataCardKey374 As label:
@@ -9519,8 +9519,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue365.SelectedDate
             Width: =321
-            X: =2
-            Y: =48
+            X: =1
+            Y: =49
             ZIndex: =3
 
             DataCardKey375 As label:
@@ -9585,8 +9585,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue366.Text
             Width: =321
-            X: =3
-            Y: =48
+            X: =2
+            Y: =49
             ZIndex: =3
 
             DataCardKey376 As label:
@@ -9652,7 +9652,7 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue367.SelectedDate
             Width: =321
-            X: =0
+            X: =3
             Y: =49
             ZIndex: =3
 
@@ -9706,74 +9706,6 @@ template_new_form_1 As screen:
                 Y: =DataCardKey377.Y
                 ZIndex: =4
 
-        "'Equality and Diversity and Disability related issues_DataCard1' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="EqualityandDiversityandDisabilit"
-            Default: =ThisItem.'Equality and Diversity and Disability related issues'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"EqualityandDiversityandDisabilit")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "EqualityandDiversityandDisabilit")
-            Required: =false
-            Update: =DataCardValue368.Text
-            Width: =321
-            X: =1
-            Y: =49
-            ZIndex: =3
-
-            DataCardKey378 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue368 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey378.Y + DataCardKey378.Height + 5
-                ZIndex: =2
-
-            ErrorMessage379 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue368.Y + DataCardValue368.Height
-                ZIndex: =3
-
-            StarVisible379 As label:
-                Align: =Align.Center
-                Height: =DataCardKey378.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey378.Y
-                ZIndex: =4
-
         Comments46_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Comments46"
@@ -9785,9 +9717,9 @@ template_new_form_1 As screen:
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Comments46")
             Required: =false
             Update: =DataCardValue453.Text
-            Width: =321
-            X: =2
-            Y: =49
+            Width: =642
+            X: =0
+            Y: =50
             ZIndex: =3
 
             DataCardKey463 As label:
@@ -9853,9 +9785,9 @@ template_new_form_1 As screen:
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Comments47")
             Required: =false
             Update: =DataCardValue454.Text
-            Width: =321
-            X: =3
-            Y: =49
+            Width: =642
+            X: =2
+            Y: =50
             ZIndex: =3
 
             DataCardKey464 As label:
@@ -9910,6 +9842,74 @@ template_new_form_1 As screen:
                 Y: =DataCardKey464.Y
                 ZIndex: =4
 
+        "'Equality and Diversity and Disability related issues_DataCard1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="EqualityandDiversityandDisabilit"
+            Default: =ThisItem.'Equality and Diversity and Disability related issues'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"EqualityandDiversityandDisabilit")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "EqualityandDiversityandDisabilit")
+            Required: =false
+            Update: =DataCardValue368.Text
+            Width: =321
+            X: =0
+            Y: =51
+            ZIndex: =3
+
+            DataCardKey378 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue368 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey378.Y + DataCardKey378.Height + 5
+                ZIndex: =2
+
+            ErrorMessage379 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue368.Y + DataCardValue368.Height
+                ZIndex: =3
+
+            StarVisible379 As label:
+                Align: =Align.Center
+                Height: =DataCardKey378.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey378.Y
+                ZIndex: =4
+
         Date48_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Date48"
@@ -9921,8 +9921,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue369.SelectedDate
             Width: =321
-            X: =0
-            Y: =50
+            X: =1
+            Y: =51
             ZIndex: =3
 
             DataCardKey379 As label:
@@ -9987,8 +9987,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue370.Text
             Width: =321
-            X: =1
-            Y: =50
+            X: =2
+            Y: =51
             ZIndex: =3
 
             DataCardKey380 As label:
@@ -10054,8 +10054,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue371.SelectedDate
             Width: =321
-            X: =2
-            Y: =50
+            X: =3
+            Y: =51
             ZIndex: =3
 
             DataCardKey381 As label:
@@ -10108,74 +10108,6 @@ template_new_form_1 As screen:
                 Y: =DataCardKey381.Y
                 ZIndex: =4
 
-        "'Occupational Health Service_DataCard1' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="OccupationalHealthService"
-            Default: =ThisItem.'Occupational Health Service'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"OccupationalHealthService")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "OccupationalHealthService")
-            Required: =false
-            Update: =DataCardValue372.Text
-            Width: =321
-            X: =3
-            Y: =50
-            ZIndex: =3
-
-            DataCardKey382 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue372 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey382.Y + DataCardKey382.Height + 5
-                ZIndex: =2
-
-            ErrorMessage383 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue372.Y + DataCardValue372.Height
-                ZIndex: =3
-
-            StarVisible383 As label:
-                Align: =Align.Center
-                Height: =DataCardKey382.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey382.Y
-                ZIndex: =4
-
         Comments48_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Comments48"
@@ -10187,9 +10119,9 @@ template_new_form_1 As screen:
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Comments48")
             Required: =false
             Update: =DataCardValue455.Text
-            Width: =321
+            Width: =642
             X: =0
-            Y: =51
+            Y: =52
             ZIndex: =3
 
             DataCardKey465 As label:
@@ -10255,9 +10187,9 @@ template_new_form_1 As screen:
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Comments49")
             Required: =false
             Update: =DataCardValue456.Text
-            Width: =321
+            Width: =642
             X: =1
-            Y: =51
+            Y: =52
             ZIndex: =3
 
             DataCardKey466 As label:
@@ -10312,6 +10244,74 @@ template_new_form_1 As screen:
                 Y: =DataCardKey466.Y
                 ZIndex: =4
 
+        "'Occupational Health Service_DataCard1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="OccupationalHealthService"
+            Default: =ThisItem.'Occupational Health Service'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"OccupationalHealthService")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "OccupationalHealthService")
+            Required: =false
+            Update: =DataCardValue372.Text
+            Width: =321
+            X: =2
+            Y: =52
+            ZIndex: =3
+
+            DataCardKey382 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue372 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey382.Y + DataCardKey382.Height + 5
+                ZIndex: =2
+
+            ErrorMessage383 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue372.Y + DataCardValue372.Height
+                ZIndex: =3
+
+            StarVisible383 As label:
+                Align: =Align.Center
+                Height: =DataCardKey382.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey382.Y
+                ZIndex: =4
+
         Date50_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Date50"
@@ -10323,8 +10323,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue373.SelectedDate
             Width: =321
-            X: =2
-            Y: =51
+            X: =3
+            Y: =52
             ZIndex: =3
 
             DataCardKey383 As label:
@@ -10389,8 +10389,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue374.Text
             Width: =321
-            X: =3
-            Y: =51
+            X: =0
+            Y: =53
             ZIndex: =3
 
             DataCardKey384 As label:
@@ -10456,8 +10456,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue375.SelectedDate
             Width: =321
-            X: =0
-            Y: =52
+            X: =1
+            Y: =53
             ZIndex: =3
 
             DataCardKey385 As label:
@@ -10522,8 +10522,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue457.Text
             Width: =321
-            X: =1
-            Y: =52
+            X: =2
+            Y: =53
             ZIndex: =3
 
             DataCardKey467 As label:
@@ -10590,8 +10590,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue458.Text
             Width: =321
-            X: =2
-            Y: =52
+            X: =3
+            Y: =53
             ZIndex: =3
 
             DataCardKey468 As label:
@@ -10658,8 +10658,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue376.Text
             Width: =321
-            X: =3
-            Y: =52
+            X: =0
+            Y: =54
             ZIndex: =3
 
             DataCardKey386 As label:
@@ -10725,8 +10725,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue377.SelectedDate
             Width: =321
-            X: =0
-            Y: =53
+            X: =1
+            Y: =54
             ZIndex: =3
 
             DataCardKey387 As label:
@@ -10791,8 +10791,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue378.Text
             Width: =321
-            X: =1
-            Y: =53
+            X: =2
+            Y: =54
             ZIndex: =3
 
             DataCardKey388 As label:
@@ -10858,8 +10858,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue379.SelectedDate
             Width: =321
-            X: =2
-            Y: =53
+            X: =3
+            Y: =54
             ZIndex: =3
 
             DataCardKey389 As label:
@@ -10924,8 +10924,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue380.Text
             Width: =321
-            X: =3
-            Y: =53
+            X: =0
+            Y: =55
             ZIndex: =3
 
             DataCardKey390 As label:
@@ -10992,8 +10992,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue459.Text
             Width: =321
-            X: =0
-            Y: =54
+            X: =1
+            Y: =55
             ZIndex: =3
 
             DataCardKey469 As label:
@@ -11060,8 +11060,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue460.Text
             Width: =321
-            X: =1
-            Y: =54
+            X: =2
+            Y: =55
             ZIndex: =3
 
             DataCardKey470 As label:
@@ -11127,8 +11127,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue381.SelectedDate
             Width: =321
-            X: =2
-            Y: =54
+            X: =3
+            Y: =55
             ZIndex: =3
 
             DataCardKey391 As label:
@@ -11193,8 +11193,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue382.Text
             Width: =321
-            X: =3
-            Y: =54
+            X: =0
+            Y: =56
             ZIndex: =3
 
             DataCardKey392 As label:
@@ -11260,8 +11260,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue383.SelectedDate
             Width: =321
-            X: =0
-            Y: =55
+            X: =1
+            Y: =56
             ZIndex: =3
 
             DataCardKey393 As label:
@@ -11326,8 +11326,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue384.Text
             Width: =321
-            X: =1
-            Y: =55
+            X: =2
+            Y: =56
             ZIndex: =3
 
             DataCardKey394 As label:
@@ -11394,8 +11394,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue461.Text
             Width: =321
-            X: =2
-            Y: =55
+            X: =3
+            Y: =56
             ZIndex: =3
 
             DataCardKey471 As label:
@@ -11462,8 +11462,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue462.Text
             Width: =321
-            X: =3
-            Y: =55
+            X: =0
+            Y: =57
             ZIndex: =3
 
             DataCardKey472 As label:
@@ -11529,8 +11529,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue385.SelectedDate
             Width: =321
-            X: =0
-            Y: =56
+            X: =1
+            Y: =57
             ZIndex: =3
 
             DataCardKey395 As label:
@@ -11595,8 +11595,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue386.Text
             Width: =321
-            X: =1
-            Y: =56
+            X: =2
+            Y: =57
             ZIndex: =3
 
             DataCardKey396 As label:
@@ -11662,8 +11662,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue387.SelectedDate
             Width: =321
-            X: =2
-            Y: =56
+            X: =3
+            Y: =57
             ZIndex: =3
 
             DataCardKey397 As label:
@@ -11728,8 +11728,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue388.Text
             Width: =321
-            X: =3
-            Y: =56
+            X: =0
+            Y: =58
             ZIndex: =3
 
             DataCardKey398 As label:
@@ -11796,8 +11796,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue463.Text
             Width: =321
-            X: =0
-            Y: =57
+            X: =1
+            Y: =58
             ZIndex: =3
 
             DataCardKey473 As label:
@@ -11864,8 +11864,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue464.Text
             Width: =321
-            X: =1
-            Y: =57
+            X: =2
+            Y: =58
             ZIndex: =3
 
             DataCardKey474 As label:
@@ -11931,8 +11931,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue389.SelectedDate
             Width: =321
-            X: =2
-            Y: =57
+            X: =3
+            Y: =58
             ZIndex: =3
 
             DataCardKey399 As label:
@@ -11997,8 +11997,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue390.Text
             Width: =321
-            X: =3
-            Y: =57
+            X: =0
+            Y: =59
             ZIndex: =3
 
             DataCardKey400 As label:
@@ -12064,8 +12064,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue391.SelectedDate
             Width: =321
-            X: =0
-            Y: =58
+            X: =1
+            Y: =59
             ZIndex: =3
 
             DataCardKey401 As label:
@@ -12130,8 +12130,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue392.Text
             Width: =321
-            X: =1
-            Y: =58
+            X: =2
+            Y: =59
             ZIndex: =3
 
             DataCardKey402 As label:
@@ -12198,8 +12198,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue465.Text
             Width: =321
-            X: =2
-            Y: =58
+            X: =3
+            Y: =59
             ZIndex: =3
 
             DataCardKey475 As label:
@@ -12266,8 +12266,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue466.Text
             Width: =321
-            X: =3
-            Y: =58
+            X: =0
+            Y: =60
             ZIndex: =3
 
             DataCardKey476 As label:
@@ -12333,8 +12333,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue393.SelectedDate
             Width: =321
-            X: =0
-            Y: =59
+            X: =1
+            Y: =60
             ZIndex: =3
 
             DataCardKey403 As label:
@@ -12399,8 +12399,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue394.Text
             Width: =321
-            X: =1
-            Y: =59
+            X: =2
+            Y: =60
             ZIndex: =3
 
             DataCardKey404 As label:
@@ -12466,8 +12466,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue395.SelectedDate
             Width: =321
-            X: =2
-            Y: =59
+            X: =3
+            Y: =60
             ZIndex: =3
 
             DataCardKey405 As label:
@@ -12532,8 +12532,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue396.Text
             Width: =321
-            X: =3
-            Y: =59
+            X: =0
+            Y: =61
             ZIndex: =3
 
             DataCardKey406 As label:
@@ -12600,8 +12600,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue467.Text
             Width: =321
-            X: =0
-            Y: =60
+            X: =1
+            Y: =61
             ZIndex: =3
 
             DataCardKey477 As label:
@@ -12668,8 +12668,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue468.Text
             Width: =321
-            X: =1
-            Y: =60
+            X: =2
+            Y: =61
             ZIndex: =3
 
             DataCardKey478 As label:
@@ -12735,8 +12735,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue397.SelectedDate
             Width: =321
-            X: =2
-            Y: =60
+            X: =3
+            Y: =61
             ZIndex: =3
 
             DataCardKey407 As label:
@@ -12801,8 +12801,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue398.Text
             Width: =321
-            X: =3
-            Y: =60
+            X: =0
+            Y: =62
             ZIndex: =3
 
             DataCardKey408 As label:
@@ -12868,8 +12868,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue399.SelectedDate
             Width: =321
-            X: =0
-            Y: =61
+            X: =1
+            Y: =62
             ZIndex: =3
 
             DataCardKey409 As label:
@@ -12934,8 +12934,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue400.Text
             Width: =321
-            X: =1
-            Y: =61
+            X: =2
+            Y: =62
             ZIndex: =3
 
             DataCardKey410 As label:
@@ -13002,8 +13002,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue469.Text
             Width: =321
-            X: =2
-            Y: =61
+            X: =3
+            Y: =62
             ZIndex: =3
 
             DataCardKey479 As label:
@@ -13070,8 +13070,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue470.Text
             Width: =321
-            X: =3
-            Y: =61
+            X: =0
+            Y: =63
             ZIndex: =3
 
             DataCardKey480 As label:
@@ -13137,8 +13137,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue401.SelectedDate
             Width: =321
-            X: =0
-            Y: =62
+            X: =1
+            Y: =63
             ZIndex: =3
 
             DataCardKey411 As label:
@@ -13203,8 +13203,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue402.Text
             Width: =321
-            X: =1
-            Y: =62
+            X: =2
+            Y: =63
             ZIndex: =3
 
             DataCardKey412 As label:
@@ -13270,8 +13270,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue403.SelectedDate
             Width: =321
-            X: =2
-            Y: =62
+            X: =3
+            Y: =63
             ZIndex: =3
 
             DataCardKey413 As label:
@@ -13336,8 +13336,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue472.Text
             Width: =321
-            X: =3
-            Y: =62
+            X: =0
+            Y: =64
             ZIndex: =3
 
             DataCardKey482 As label:
@@ -13404,8 +13404,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue404.Text
             Width: =321
-            X: =0
-            Y: =63
+            X: =1
+            Y: =64
             ZIndex: =3
 
             DataCardKey414 As label:
@@ -13472,8 +13472,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue471.Text
             Width: =321
-            X: =1
-            Y: =63
+            X: =2
+            Y: =64
             ZIndex: =3
 
             DataCardKey481 As label:
@@ -13539,8 +13539,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue405.SelectedDate
             Width: =321
-            X: =2
-            Y: =63
+            X: =3
+            Y: =64
             ZIndex: =3
 
             DataCardKey415 As label:
@@ -13605,8 +13605,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue406.Text
             Width: =321
-            X: =3
-            Y: =63
+            X: =0
+            Y: =65
             ZIndex: =3
 
             DataCardKey416 As label:
@@ -13673,8 +13673,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue407.Text
             Width: =321
-            X: =0
-            Y: =64
+            X: =1
+            Y: =65
             ZIndex: =3
 
             DataCardKey417 As label:
@@ -13741,8 +13741,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue473.Text
             Width: =321
-            X: =1
-            Y: =64
+            X: =2
+            Y: =65
             ZIndex: =3
 
             DataCardKey483 As label:
@@ -13809,8 +13809,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue475.Text
             Width: =321
-            X: =2
-            Y: =64
+            X: =3
+            Y: =65
             ZIndex: =3
 
             DataCardKey485 As label:
@@ -13876,8 +13876,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue481.Selected
             Width: =321
-            X: =3
-            Y: =64
+            X: =0
+            Y: =66
             ZIndex: =3
 
             DataCardKey491 As label:
@@ -13943,8 +13943,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue482.Text
             Width: =321
-            X: =0
-            Y: =65
+            X: =1
+            Y: =66
             ZIndex: =3
 
             DataCardKey492 As label:
@@ -14010,8 +14010,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue483.Selected
             Width: =321
-            X: =1
-            Y: =65
+            X: =2
+            Y: =66
             ZIndex: =3
 
             DataCardKey493 As label:
@@ -14076,8 +14076,8 @@ template_new_form_1 As screen:
             Required: =false
             Update: =DataCardValue484.Attachments
             Width: =321
-            X: =2
-            Y: =65
+            X: =3
+            Y: =66
             ZIndex: =3
 
             DataCardKey494 As label:
