@@ -741,23 +741,6 @@ template_new_form_1 As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue243 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =109
-                ZIndex: =2
-
             ErrorMessage249 As label:
                 AutoHeight: =true
                 Height: =10
@@ -782,6 +765,12 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey248.Y
                 ZIndex: =4
+
+            Checkbox1 As checkbox:
+                Text: ="Option"
+                X: =30
+                Y: =94
+                ZIndex: =5
 
         Date1_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -880,23 +869,6 @@ template_new_form_1 As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue228 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey233.Y + DataCardKey233.Height + 5
-                ZIndex: =2
-
             ErrorMessage234 As label:
                 AutoHeight: =true
                 Height: =10
@@ -921,6 +893,12 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey233.Y
                 ZIndex: =4
+
+            Checkbox1_1 As checkbox:
+                Text: ="Option"
+                X: =30
+                Y: =104
+                ZIndex: =5
 
         Date2_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -1173,23 +1151,6 @@ template_new_form_1 As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue244 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey251.Y + DataCardKey251.Height + 5
-                ZIndex: =2
-
             ErrorMessage252 As label:
                 AutoHeight: =true
                 Height: =10
@@ -1214,6 +1175,12 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey251.Y
                 ZIndex: =4
+
+            Checkbox1_2 As checkbox:
+                Text: ="Option"
+                X: =30
+                Y: =62
+                ZIndex: =5
 
         Date3_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -1312,23 +1279,6 @@ template_new_form_1 As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue245 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey252.Y + DataCardKey252.Height + 5
-                ZIndex: =2
-
             ErrorMessage253 As label:
                 AutoHeight: =true
                 Height: =10
@@ -1353,6 +1303,12 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey252.Y
                 ZIndex: =4
+
+            Checkbox1_3 As checkbox:
+                Text: ="Option"
+                X: =30
+                Y: =62
+                ZIndex: =5
 
         Date4_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -1599,27 +1555,9 @@ template_new_form_1 As screen:
                 Height: =34
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
-                Wrap: =false
                 X: =30
                 Y: =10
                 ZIndex: =1
-
-            DataCardValue246 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey253.Y + DataCardKey253.Height + 5
-                ZIndex: =2
 
             ErrorMessage254 As label:
                 AutoHeight: =true
@@ -1645,6 +1583,12 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey253.Y
                 ZIndex: =4
+
+            Checkbox1_4 As checkbox:
+                Text: ="Option"
+                X: =40
+                Y: =40
+                ZIndex: =5
 
         Date5_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -1739,27 +1683,9 @@ template_new_form_1 As screen:
                 Height: =34
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
-                Wrap: =false
                 X: =30
                 Y: =10
                 ZIndex: =1
-
-            DataCardValue247 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey254.Y + DataCardKey254.Height + 5
-                ZIndex: =2
 
             ErrorMessage255 As label:
                 AutoHeight: =true
@@ -1785,6 +1711,12 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey254.Y
                 ZIndex: =4
+
+            Checkbox1_5 As checkbox:
+                Text: ="Option"
+                X: =40
+                Y: =40
+                ZIndex: =5
 
         Date6_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -2036,23 +1968,6 @@ template_new_form_1 As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue248 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey255.Y + DataCardKey255.Height + 5
-                ZIndex: =2
-
             ErrorMessage256 As label:
                 AutoHeight: =true
                 Height: =10
@@ -2077,6 +1992,12 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey255.Y
                 ZIndex: =4
+
+            Checkbox1_6 As checkbox:
+                Text: ="Option"
+                X: =40
+                Y: =40
+                ZIndex: =5
 
         Date7_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -2176,23 +2097,6 @@ template_new_form_1 As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue249 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey256.Y + DataCardKey256.Height + 5
-                ZIndex: =2
-
             ErrorMessage257 As label:
                 AutoHeight: =true
                 Height: =10
@@ -2217,6 +2121,12 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey256.Y
                 ZIndex: =4
+
+            Checkbox1_7 As checkbox:
+                Text: ="Option"
+                X: =40
+                Y: =40
+                ZIndex: =5
 
         Date8_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -2468,23 +2378,6 @@ template_new_form_1 As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue250 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey258.Y + DataCardKey258.Height + 5
-                ZIndex: =2
-
             ErrorMessage259 As label:
                 AutoHeight: =true
                 Height: =10
@@ -2509,6 +2402,12 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey258.Y
                 ZIndex: =4
+
+            Checkbox1_8 As checkbox:
+                Text: ="Option"
+                X: =40
+                Y: =40
+                ZIndex: =5
 
         Date9_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -2608,23 +2507,6 @@ template_new_form_1 As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue251 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey259.Y + DataCardKey259.Height + 5
-                ZIndex: =2
-
             ErrorMessage260 As label:
                 AutoHeight: =true
                 Height: =10
@@ -2649,6 +2531,12 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey259.Y
                 ZIndex: =4
+
+            Checkbox1_9 As checkbox:
+                Text: ="Option"
+                X: =40
+                Y: =40
+                ZIndex: =5
 
         Date10_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -2978,23 +2866,6 @@ template_new_form_1 As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue253 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey261.Y + DataCardKey261.Height + 5
-                ZIndex: =2
-
             ErrorMessage262 As label:
                 AutoHeight: =true
                 Height: =10
@@ -3019,6 +2890,12 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey261.Y
                 ZIndex: =4
+
+            Checkbox1_10 As checkbox:
+                Text: ="Option"
+                X: =40
+                Y: =40
+                ZIndex: =5
 
         Date12_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -3118,23 +2995,6 @@ template_new_form_1 As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue254 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey262.Y + DataCardKey262.Height + 5
-                ZIndex: =2
-
             ErrorMessage263 As label:
                 AutoHeight: =true
                 Height: =10
@@ -3159,6 +3019,12 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey262.Y
                 ZIndex: =4
+
+            Checkbox1_11 As checkbox:
+                Text: ="Option"
+                X: =40
+                Y: =40
+                ZIndex: =5
 
         Date13_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -3410,23 +3276,6 @@ template_new_form_1 As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue268 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey276.Y + DataCardKey276.Height + 5
-                ZIndex: =2
-
             ErrorMessage277 As label:
                 AutoHeight: =true
                 Height: =10
@@ -3451,6 +3300,12 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey276.Y
                 ZIndex: =4
+
+            Checkbox1_12 As checkbox:
+                Text: ="Option"
+                X: =40
+                Y: =40
+                ZIndex: =5
 
         Date14_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -3550,23 +3405,6 @@ template_new_form_1 As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue270 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey278.Y + DataCardKey278.Height + 5
-                ZIndex: =2
-
             ErrorMessage279 As label:
                 AutoHeight: =true
                 Height: =10
@@ -3591,6 +3429,12 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey278.Y
                 ZIndex: =4
+
+            Checkbox1_13 As checkbox:
+                Text: ="Option"
+                X: =40
+                Y: =40
+                ZIndex: =5
 
         Date15_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -3842,23 +3686,6 @@ template_new_form_1 As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue272 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey280.Y + DataCardKey280.Height + 5
-                ZIndex: =2
-
             ErrorMessage281 As label:
                 AutoHeight: =true
                 Height: =10
@@ -3883,6 +3710,12 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey280.Y
                 ZIndex: =4
+
+            Checkbox1_14 As checkbox:
+                Text: ="Option"
+                X: =40
+                Y: =40
+                ZIndex: =5
 
         Date16_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -3982,23 +3815,6 @@ template_new_form_1 As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue274 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey282.Y + DataCardKey282.Height + 5
-                ZIndex: =2
-
             ErrorMessage283 As label:
                 AutoHeight: =true
                 Height: =10
@@ -4023,6 +3839,12 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey282.Y
                 ZIndex: =4
+
+            Checkbox1_15 As checkbox:
+                Text: ="Option"
+                X: =40
+                Y: =40
+                ZIndex: =5
 
         Date17_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -4274,23 +4096,6 @@ template_new_form_1 As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue276 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =49
-                ZIndex: =2
-
             ErrorMessage285 As label:
                 AutoHeight: =true
                 Height: =10
@@ -4315,6 +4120,12 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey284.Y
                 ZIndex: =4
+
+            Checkbox1_16 As checkbox:
+                Text: ="Option"
+                X: =40
+                Y: =40
+                ZIndex: =5
 
         Date18_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -4414,23 +4225,6 @@ template_new_form_1 As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue278 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey286.Y + DataCardKey286.Height + 5
-                ZIndex: =2
-
             ErrorMessage287 As label:
                 AutoHeight: =true
                 Height: =10
@@ -4455,6 +4249,12 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey286.Y
                 ZIndex: =4
+
+            Checkbox1_17 As checkbox:
+                Text: ="Option"
+                X: =40
+                Y: =40
+                ZIndex: =5
 
         Date19_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -4706,23 +4506,6 @@ template_new_form_1 As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue280 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey288.Y + DataCardKey288.Height + 5
-                ZIndex: =2
-
             ErrorMessage289 As label:
                 AutoHeight: =true
                 Height: =10
@@ -4747,6 +4530,12 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey288.Y
                 ZIndex: =4
+
+            Checkbox1_18 As checkbox:
+                Text: ="Option"
+                X: =40
+                Y: =40
+                ZIndex: =5
 
         Date20_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -4846,23 +4635,6 @@ template_new_form_1 As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue282 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey290.Y + DataCardKey290.Height + 5
-                ZIndex: =2
-
             ErrorMessage291 As label:
                 AutoHeight: =true
                 Height: =10
@@ -4887,6 +4659,12 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey290.Y
                 ZIndex: =4
+
+            Checkbox1_19 As checkbox:
+                Text: ="Option"
+                X: =40
+                Y: =40
+                ZIndex: =5
 
         Date21_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -5138,23 +4916,6 @@ template_new_form_1 As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue284 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey292.Y + DataCardKey292.Height + 5
-                ZIndex: =2
-
             ErrorMessage293 As label:
                 AutoHeight: =true
                 Height: =10
@@ -5179,6 +4940,12 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey292.Y
                 ZIndex: =4
+
+            Checkbox1_20 As checkbox:
+                Text: ="Option"
+                X: =40
+                Y: =40
+                ZIndex: =5
 
         Date22_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -5278,23 +5045,6 @@ template_new_form_1 As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue286 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey294.Y + DataCardKey294.Height + 5
-                ZIndex: =2
-
             ErrorMessage295 As label:
                 AutoHeight: =true
                 Height: =10
@@ -5319,6 +5069,12 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey294.Y
                 ZIndex: =4
+
+            Checkbox1_21 As checkbox:
+                Text: ="Option"
+                X: =40
+                Y: =40
+                ZIndex: =5
 
         Date23_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -5570,23 +5326,6 @@ template_new_form_1 As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue288 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey296.Y + DataCardKey296.Height + 5
-                ZIndex: =2
-
             ErrorMessage297 As label:
                 AutoHeight: =true
                 Height: =10
@@ -5611,6 +5350,12 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey296.Y
                 ZIndex: =4
+
+            Checkbox1_22 As checkbox:
+                Text: ="Option"
+                X: =40
+                Y: =40
+                ZIndex: =5
 
         Date24_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -5710,23 +5455,6 @@ template_new_form_1 As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue290 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey298.Y + DataCardKey298.Height + 5
-                ZIndex: =2
-
             ErrorMessage299 As label:
                 AutoHeight: =true
                 Height: =10
@@ -5751,6 +5479,12 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey298.Y
                 ZIndex: =4
+
+            Checkbox1_23 As checkbox:
+                Text: ="Option"
+                X: =40
+                Y: =40
+                ZIndex: =5
 
         Date25_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -6002,23 +5736,6 @@ template_new_form_1 As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue292 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey300.Y + DataCardKey300.Height + 5
-                ZIndex: =2
-
             ErrorMessage301 As label:
                 AutoHeight: =true
                 Height: =10
@@ -6043,6 +5760,12 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey300.Y
                 ZIndex: =4
+
+            Checkbox1_24 As checkbox:
+                Text: ="Option"
+                X: =40
+                Y: =40
+                ZIndex: =5
 
         Date26_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -6115,75 +5838,6 @@ template_new_form_1 As screen:
                 Width: =0.5
                 X: =319
                 ZIndex: =5
-
-        "'Explain arrangements for staff member to meet with key managers and Spectrum contacts:-_DataCard1' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="Explainarrangementsforstaffmembe"
-            Default: |-
-                =ThisItem.'Explain arrangements for staff member to meet with key managers and Spectrum contacts:-'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Explainarrangementsforstaffmembe")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Explainarrangementsforstaffmembe")
-            Required: =false
-            Update: =DataCardValue294.Text
-            Width: =321
-            X: =2
-            Y: =30
-            ZIndex: =3
-
-            DataCardKey302 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue294 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey302.Y + DataCardKey302.Height + 5
-                ZIndex: =2
-
-            ErrorMessage303 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue294.Y + DataCardValue294.Height
-                ZIndex: =3
-
-            StarVisible303 As label:
-                Align: =Align.Center
-                Height: =DataCardKey302.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey302.Y
-                ZIndex: =4
 
         Date27_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -6435,23 +6089,6 @@ template_new_form_1 As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue296 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey304.Y + DataCardKey304.Height + 5
-                ZIndex: =2
-
             ErrorMessage305 As label:
                 AutoHeight: =true
                 Height: =10
@@ -6476,6 +6113,12 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey304.Y
                 ZIndex: =4
+
+            Checkbox1_26 As checkbox:
+                Text: ="Option"
+                X: =40
+                Y: =40
+                ZIndex: =5
 
         Date28_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -6575,23 +6218,6 @@ template_new_form_1 As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue298 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey306.Y + DataCardKey306.Height + 5
-                ZIndex: =2
-
             ErrorMessage307 As label:
                 AutoHeight: =true
                 Height: =10
@@ -6616,6 +6242,12 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey306.Y
                 ZIndex: =4
+
+            Checkbox1_27 As checkbox:
+                Text: ="Option"
+                X: =40
+                Y: =40
+                ZIndex: =5
 
         Date29_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -6867,23 +6499,6 @@ template_new_form_1 As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue300 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey308.Y + DataCardKey308.Height + 5
-                ZIndex: =2
-
             ErrorMessage309 As label:
                 AutoHeight: =true
                 Height: =10
@@ -6908,6 +6523,12 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey308.Y
                 ZIndex: =4
+
+            Checkbox1_28 As checkbox:
+                Text: ="Option"
+                X: =40
+                Y: =40
+                ZIndex: =5
 
         Date30_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -7007,23 +6628,6 @@ template_new_form_1 As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue302 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey310.Y + DataCardKey310.Height + 5
-                ZIndex: =2
-
             ErrorMessage311 As label:
                 AutoHeight: =true
                 Height: =10
@@ -7048,6 +6652,12 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey310.Y
                 ZIndex: =4
+
+            Checkbox1_29 As checkbox:
+                Text: ="Option"
+                X: =40
+                Y: =40
+                ZIndex: =5
 
         Date31_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -7299,23 +6909,6 @@ template_new_form_1 As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue304 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey344.Y + DataCardKey344.Height + 5
-                ZIndex: =2
-
             ErrorMessage345 As label:
                 AutoHeight: =true
                 Height: =10
@@ -7340,6 +6933,12 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey344.Y
                 ZIndex: =4
+
+            Checkbox1_30 As checkbox:
+                Text: ="Option"
+                X: =40
+                Y: =40
+                ZIndex: =5
 
         Date32_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -7439,23 +7038,6 @@ template_new_form_1 As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue306 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey348.Y + DataCardKey348.Height + 5
-                ZIndex: =2
-
             ErrorMessage349 As label:
                 AutoHeight: =true
                 Height: =10
@@ -7480,6 +7062,12 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey348.Y
                 ZIndex: =4
+
+            Checkbox1_31 As checkbox:
+                Text: ="Option"
+                X: =40
+                Y: =40
+                ZIndex: =5
 
         Date33_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -7731,23 +7319,6 @@ template_new_form_1 As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue336 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey350.Y + DataCardKey350.Height + 5
-                ZIndex: =2
-
             ErrorMessage351 As label:
                 AutoHeight: =true
                 Height: =10
@@ -7772,6 +7343,12 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey350.Y
                 ZIndex: =4
+
+            Checkbox1_32 As checkbox:
+                Text: ="Option"
+                X: =40
+                Y: =40
+                ZIndex: =5
 
         Date34_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -7871,23 +7448,6 @@ template_new_form_1 As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue342 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey352.Y + DataCardKey352.Height + 5
-                ZIndex: =2
-
             ErrorMessage353 As label:
                 AutoHeight: =true
                 Height: =10
@@ -7912,6 +7472,12 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey352.Y
                 ZIndex: =4
+
+            Checkbox1_33 As checkbox:
+                Text: ="Option"
+                X: =40
+                Y: =40
+                ZIndex: =5
 
         Date35_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -8163,23 +7729,6 @@ template_new_form_1 As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue344 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey354.Y + DataCardKey354.Height + 5
-                ZIndex: =2
-
             ErrorMessage355 As label:
                 AutoHeight: =true
                 Height: =10
@@ -8204,6 +7753,12 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey354.Y
                 ZIndex: =4
+
+            Checkbox1_34 As checkbox:
+                Text: ="Option"
+                X: =40
+                Y: =40
+                ZIndex: =5
 
         Date36_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -8303,23 +7858,6 @@ template_new_form_1 As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue346 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey356.Y + DataCardKey356.Height + 5
-                ZIndex: =2
-
             ErrorMessage357 As label:
                 AutoHeight: =true
                 Height: =10
@@ -8344,6 +7882,12 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey356.Y
                 ZIndex: =4
+
+            Checkbox1_35 As checkbox:
+                Text: ="Option"
+                X: =40
+                Y: =40
+                ZIndex: =5
 
         Date37_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -8595,23 +8139,6 @@ template_new_form_1 As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue348 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey358.Y + DataCardKey358.Height + 5
-                ZIndex: =2
-
             ErrorMessage359 As label:
                 AutoHeight: =true
                 Height: =10
@@ -8636,6 +8163,12 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey358.Y
                 ZIndex: =4
+
+            Checkbox1_36 As checkbox:
+                Text: ="Option"
+                X: =40
+                Y: =40
+                ZIndex: =5
 
         Date38_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -8735,23 +8268,6 @@ template_new_form_1 As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue350 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey360.Y + DataCardKey360.Height + 5
-                ZIndex: =2
-
             ErrorMessage361 As label:
                 AutoHeight: =true
                 Height: =10
@@ -8776,6 +8292,12 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey360.Y
                 ZIndex: =4
+
+            Checkbox1_37 As checkbox:
+                Text: ="Option"
+                X: =40
+                Y: =40
+                ZIndex: =5
 
         Date39_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -9027,23 +8549,6 @@ template_new_form_1 As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue352 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey362.Y + DataCardKey362.Height + 5
-                ZIndex: =2
-
             ErrorMessage363 As label:
                 AutoHeight: =true
                 Height: =10
@@ -9068,6 +8573,12 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey362.Y
                 ZIndex: =4
+
+            Checkbox1_38 As checkbox:
+                Text: ="Option"
+                X: =40
+                Y: =40
+                ZIndex: =5
 
         Date40_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -9167,23 +8678,6 @@ template_new_form_1 As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue354 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey364.Y + DataCardKey364.Height + 5
-                ZIndex: =2
-
             ErrorMessage365 As label:
                 AutoHeight: =true
                 Height: =10
@@ -9208,6 +8702,12 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey364.Y
                 ZIndex: =4
+
+            Checkbox1_39 As checkbox:
+                Text: ="Option"
+                X: =40
+                Y: =40
+                ZIndex: =5
 
         Date41_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -9891,23 +9391,6 @@ template_new_form_1 As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue360 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey370.Y + DataCardKey370.Height + 5
-                ZIndex: =2
-
             ErrorMessage371 As label:
                 AutoHeight: =true
                 Height: =10
@@ -9932,6 +9415,12 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey370.Y
                 ZIndex: =4
+
+            Checkbox1_40 As checkbox:
+                Text: ="Option"
+                X: =40
+                Y: =40
+                ZIndex: =5
 
         Date44_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -10031,23 +9520,6 @@ template_new_form_1 As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue362 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey372.Y + DataCardKey372.Height + 5
-                ZIndex: =2
-
             ErrorMessage373 As label:
                 AutoHeight: =true
                 Height: =10
@@ -10072,6 +9544,12 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey372.Y
                 ZIndex: =4
+
+            Checkbox1_41 As checkbox:
+                Text: ="Option"
+                X: =40
+                Y: =40
+                ZIndex: =5
 
         Date45_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -10323,23 +9801,6 @@ template_new_form_1 As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue364 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey374.Y + DataCardKey374.Height + 5
-                ZIndex: =2
-
             ErrorMessage375 As label:
                 AutoHeight: =true
                 Height: =10
@@ -10364,6 +9825,12 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey374.Y
                 ZIndex: =4
+
+            Checkbox1_42 As checkbox:
+                Text: ="Option"
+                X: =40
+                Y: =40
+                ZIndex: =5
 
         Date46_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -10463,23 +9930,6 @@ template_new_form_1 As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue366 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey376.Y + DataCardKey376.Height + 5
-                ZIndex: =2
-
             ErrorMessage377 As label:
                 AutoHeight: =true
                 Height: =10
@@ -10504,6 +9954,12 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey376.Y
                 ZIndex: =4
+
+            Checkbox1_43 As checkbox:
+                Text: ="Option"
+                X: =40
+                Y: =40
+                ZIndex: =5
 
         Date47_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -10755,23 +10211,6 @@ template_new_form_1 As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue368 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey378.Y + DataCardKey378.Height + 5
-                ZIndex: =2
-
             ErrorMessage379 As label:
                 AutoHeight: =true
                 Height: =10
@@ -10796,6 +10235,12 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey378.Y
                 ZIndex: =4
+
+            Checkbox1_44 As checkbox:
+                Text: ="Option"
+                X: =40
+                Y: =40
+                ZIndex: =5
 
         Date48_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -10895,23 +10340,6 @@ template_new_form_1 As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue370 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey380.Y + DataCardKey380.Height + 5
-                ZIndex: =2
-
             ErrorMessage381 As label:
                 AutoHeight: =true
                 Height: =10
@@ -10936,6 +10364,12 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey380.Y
                 ZIndex: =4
+
+            Checkbox1_45 As checkbox:
+                Text: ="Option"
+                X: =40
+                Y: =40
+                ZIndex: =5
 
         Date49_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -11187,23 +10621,6 @@ template_new_form_1 As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue372 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey382.Y + DataCardKey382.Height + 5
-                ZIndex: =2
-
             ErrorMessage383 As label:
                 AutoHeight: =true
                 Height: =10
@@ -11228,6 +10645,12 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey382.Y
                 ZIndex: =4
+
+            Checkbox1_46 As checkbox:
+                Text: ="Option"
+                X: =40
+                Y: =40
+                ZIndex: =5
 
         Date50_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -11327,23 +10750,6 @@ template_new_form_1 As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue374 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey384.Y + DataCardKey384.Height + 5
-                ZIndex: =2
-
             ErrorMessage385 As label:
                 AutoHeight: =true
                 Height: =10
@@ -11368,6 +10774,12 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey384.Y
                 ZIndex: =4
+
+            Checkbox1_47 As checkbox:
+                Text: ="Option"
+                X: =40
+                Y: =40
+                ZIndex: =5
 
         Date51_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -11619,23 +11031,6 @@ template_new_form_1 As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue376 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey386.Y + DataCardKey386.Height + 5
-                ZIndex: =2
-
             ErrorMessage387 As label:
                 AutoHeight: =true
                 Height: =10
@@ -11660,6 +11055,12 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey386.Y
                 ZIndex: =4
+
+            Checkbox1_48 As checkbox:
+                Text: ="Option"
+                X: =40
+                Y: =40
+                ZIndex: =5
 
         Date52_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -11759,23 +11160,6 @@ template_new_form_1 As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue378 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey388.Y + DataCardKey388.Height + 5
-                ZIndex: =2
-
             ErrorMessage389 As label:
                 AutoHeight: =true
                 Height: =10
@@ -11800,6 +11184,12 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey388.Y
                 ZIndex: =4
+
+            Checkbox1_49 As checkbox:
+                Text: ="Option"
+                X: =40
+                Y: =40
+                ZIndex: =5
 
         Date53_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -12051,23 +11441,6 @@ template_new_form_1 As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue380 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey390.Y + DataCardKey390.Height + 5
-                ZIndex: =2
-
             ErrorMessage391 As label:
                 AutoHeight: =true
                 Height: =10
@@ -12092,6 +11465,12 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey390.Y
                 ZIndex: =4
+
+            Checkbox1_50 As checkbox:
+                Text: ="Option"
+                X: =40
+                Y: =40
+                ZIndex: =5
 
         Date54_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -12191,23 +11570,6 @@ template_new_form_1 As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue382 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey392.Y + DataCardKey392.Height + 5
-                ZIndex: =2
-
             ErrorMessage393 As label:
                 AutoHeight: =true
                 Height: =10
@@ -12232,6 +11594,12 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey392.Y
                 ZIndex: =4
+
+            Checkbox1_51 As checkbox:
+                Text: ="Option"
+                X: =40
+                Y: =40
+                ZIndex: =5
 
         Date55_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -12483,23 +11851,6 @@ template_new_form_1 As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue384 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey394.Y + DataCardKey394.Height + 5
-                ZIndex: =2
-
             ErrorMessage395 As label:
                 AutoHeight: =true
                 Height: =10
@@ -12524,6 +11875,12 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey394.Y
                 ZIndex: =4
+
+            Checkbox1_52 As checkbox:
+                Text: ="Option"
+                X: =40
+                Y: =40
+                ZIndex: =5
 
         Date56_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -12623,23 +11980,6 @@ template_new_form_1 As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue386 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey396.Y + DataCardKey396.Height + 5
-                ZIndex: =2
-
             ErrorMessage397 As label:
                 AutoHeight: =true
                 Height: =10
@@ -12664,6 +12004,12 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey396.Y
                 ZIndex: =4
+
+            Checkbox1_53 As checkbox:
+                Text: ="Option"
+                X: =40
+                Y: =40
+                ZIndex: =5
 
         Date57_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -12915,23 +12261,6 @@ template_new_form_1 As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue388 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey398.Y + DataCardKey398.Height + 5
-                ZIndex: =2
-
             ErrorMessage399 As label:
                 AutoHeight: =true
                 Height: =10
@@ -12956,6 +12285,12 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey398.Y
                 ZIndex: =4
+
+            Checkbox1_54 As checkbox:
+                Text: ="Option"
+                X: =40
+                Y: =40
+                ZIndex: =5
 
         Date58_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -13055,23 +12390,6 @@ template_new_form_1 As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue390 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey400.Y + DataCardKey400.Height + 5
-                ZIndex: =2
-
             ErrorMessage401 As label:
                 AutoHeight: =true
                 Height: =10
@@ -13096,6 +12414,12 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey400.Y
                 ZIndex: =4
+
+            Checkbox1_55 As checkbox:
+                Text: ="Option"
+                X: =40
+                Y: =40
+                ZIndex: =5
 
         Date59_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -13347,23 +12671,6 @@ template_new_form_1 As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue392 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey402.Y + DataCardKey402.Height + 5
-                ZIndex: =2
-
             ErrorMessage403 As label:
                 AutoHeight: =true
                 Height: =10
@@ -13388,6 +12695,12 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey402.Y
                 ZIndex: =4
+
+            Checkbox1_56 As checkbox:
+                Text: ="Option"
+                X: =40
+                Y: =40
+                ZIndex: =5
 
         Date60_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -13487,23 +12800,6 @@ template_new_form_1 As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue394 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey404.Y + DataCardKey404.Height + 5
-                ZIndex: =2
-
             ErrorMessage405 As label:
                 AutoHeight: =true
                 Height: =10
@@ -13528,6 +12824,12 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey404.Y
                 ZIndex: =4
+
+            Checkbox1_57 As checkbox:
+                Text: ="Option"
+                X: =40
+                Y: =40
+                ZIndex: =5
 
         Date61_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -13779,23 +13081,6 @@ template_new_form_1 As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue396 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey406.Y + DataCardKey406.Height + 5
-                ZIndex: =2
-
             ErrorMessage407 As label:
                 AutoHeight: =true
                 Height: =10
@@ -13820,6 +13105,12 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey406.Y
                 ZIndex: =4
+
+            Checkbox1_58 As checkbox:
+                Text: ="Option"
+                X: =40
+                Y: =40
+                ZIndex: =5
 
         Date62_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -13919,23 +13210,6 @@ template_new_form_1 As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue398 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey408.Y + DataCardKey408.Height + 5
-                ZIndex: =2
-
             ErrorMessage409 As label:
                 AutoHeight: =true
                 Height: =10
@@ -13960,6 +13234,12 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey408.Y
                 ZIndex: =4
+
+            Checkbox1_59 As checkbox:
+                Text: ="Option"
+                X: =40
+                Y: =40
+                ZIndex: =5
 
         Date63_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -14211,23 +13491,6 @@ template_new_form_1 As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue400 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey410.Y + DataCardKey410.Height + 5
-                ZIndex: =2
-
             ErrorMessage411 As label:
                 AutoHeight: =true
                 Height: =10
@@ -14252,6 +13515,12 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey410.Y
                 ZIndex: =4
+
+            Checkbox1_60 As checkbox:
+                Text: ="Option"
+                X: =40
+                Y: =40
+                ZIndex: =5
 
         Date64_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -14351,23 +13620,6 @@ template_new_form_1 As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue402 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey412.Y + DataCardKey412.Height + 5
-                ZIndex: =2
-
             ErrorMessage413 As label:
                 AutoHeight: =true
                 Height: =10
@@ -14392,6 +13644,12 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey412.Y
                 ZIndex: =4
+
+            Checkbox1_61 As checkbox:
+                Text: ="Option"
+                X: =40
+                Y: =40
+                ZIndex: =5
 
         Date65_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -14643,23 +13901,6 @@ template_new_form_1 As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue404 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey414.Y + DataCardKey414.Height + 5
-                ZIndex: =2
-
             ErrorMessage415 As label:
                 AutoHeight: =true
                 Height: =10
@@ -14684,6 +13925,12 @@ template_new_form_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey414.Y
                 ZIndex: =4
+
+            Checkbox1_62 As checkbox:
+                Text: ="Option"
+                X: =40
+                Y: =40
+                ZIndex: =5
 
         Date66_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -14913,6 +14160,64 @@ template_new_form_1 As screen:
                 Height: =0.5
                 Width: =1284
                 Y: =160
+                ZIndex: =5
+
+        "'Explain arrangements for staff member to meet with key managers and Spectrum contacts:-_DataCard1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Explainarrangementsforstaffmembe"
+            Default: |-
+                =ThisItem.'Explain arrangements for staff member to meet with key managers and Spectrum contacts:-'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Explainarrangementsforstaffmembe")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Explainarrangementsforstaffmembe")
+            Required: =false
+            Update: =DataCardValue294.Text
+            Width: =321
+            X: =2
+            Y: =30
+            ZIndex: =3
+
+            DataCardKey302 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            ErrorMessage303 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue294.Y + DataCardValue294.Height
+                ZIndex: =3
+
+            StarVisible303 As label:
+                Align: =Align.Center
+                Height: =DataCardKey302.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey302.Y
+                ZIndex: =4
+
+            Checkbox1_25 As checkbox:
+                Text: ="Option"
+                X: =40
+                Y: =40
                 ZIndex: =5
 
     ButtonCanvas1_11 As Button:
