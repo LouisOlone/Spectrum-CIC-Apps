@@ -9851,7 +9851,10 @@ template_new_form_1 As screen:
             DataCardKey460 As label:
                 AutoHeight: =true
                 Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -10830,7 +10833,7 @@ template_new_form_1 As screen:
             Checkbox1_44 As checkbox:
                 Text: ="Option"
                 X: =30
-                Y: =55
+                Y: =83
                 ZIndex: =5
 
         Date48_DataCard1 As typedDataCard.dateEditCard:
@@ -10874,7 +10877,7 @@ template_new_form_1 As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =55
+                Y: =83
                 ZIndex: =2
 
             ErrorMessage380 As label:
@@ -10928,7 +10931,10 @@ template_new_form_1 As screen:
             DataCardKey380 As label:
                 AutoHeight: =true
                 Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -10963,7 +10969,7 @@ template_new_form_1 As screen:
             Checkbox1_45 As checkbox:
                 Text: ="Option"
                 X: =30
-                Y: =55
+                Y: =83
                 ZIndex: =5
 
         Date49_DataCard1 As typedDataCard.dateEditCard:
@@ -10984,7 +10990,10 @@ template_new_form_1 As screen:
             DataCardKey381 As label:
                 AutoHeight: =true
                 Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -11004,7 +11013,7 @@ template_new_form_1 As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =55
+                Y: =83
                 ZIndex: =2
 
             ErrorMessage382 As label:
