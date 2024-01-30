@@ -4,7 +4,6 @@ template_new_form_1 As screen:
 
     Form1_3 As form:
         DataSource: ='Induction Log'
-        DefaultMode: =FormMode.New
         Height: =538
         NumberOfColumns: =4
         Width: =1284
@@ -43,7 +42,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue225 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
@@ -115,7 +116,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue474 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
@@ -187,7 +190,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue476 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
@@ -259,7 +264,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue477 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
@@ -331,7 +338,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue478 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
@@ -403,7 +412,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue479 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
@@ -475,7 +486,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue480 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
@@ -552,7 +565,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue481 As combobox:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
@@ -629,7 +644,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue483 As combobox:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Claims"]
                 DisplayMode: =Parent.DisplayMode
@@ -707,7 +724,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue482 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
@@ -720,7 +739,7 @@ template_new_form_1 As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey492.Y + DataCardKey492.Height + 5
+                Y: =67
                 ZIndex: =2
 
             ErrorMessage493 As label:
@@ -810,6 +829,12 @@ template_new_form_1 As screen:
                 ZIndex: =4
 
             Checkbox1 As checkbox:
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
+                CheckboxBorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Text: ="Done"
                 X: =30
                 Y: =104
@@ -845,7 +870,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue255 As datepicker:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 DefaultDate: =If(Checkbox1.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
@@ -946,6 +973,9 @@ template_new_form_1 As screen:
                 ZIndex: =4
 
             Checkbox1_1 As checkbox:
+                CheckboxBorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Text: ="Done"
                 X: =30
                 Y: =104
@@ -981,7 +1011,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue256 As datepicker:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 DefaultDate: =If(Checkbox1_1.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
@@ -1051,7 +1083,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue408 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
@@ -1139,7 +1173,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue409 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
@@ -1244,6 +1280,9 @@ template_new_form_1 As screen:
                 ZIndex: =4
 
             Checkbox1_2 As checkbox:
+                CheckboxBorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Text: ="Done"
                 X: =30
                 Y: =55
@@ -1279,7 +1318,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue257 As datepicker:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 DefaultDate: =If(Checkbox1_2.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
@@ -1380,6 +1421,13 @@ template_new_form_1 As screen:
                 ZIndex: =4
 
             Checkbox1_3 As checkbox:
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
+                CheckboxBorderColor: |-
+                    =	
+                    	
+                    RGBA(88,89,91,0.25)
                 Text: ="Done"
                 X: =30
                 Y: =55
@@ -1415,7 +1463,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue258 As datepicker:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 DefaultDate: =If(Checkbox1_3.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
@@ -1485,7 +1535,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue410 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
@@ -1572,7 +1624,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue411 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
@@ -1676,6 +1730,9 @@ template_new_form_1 As screen:
                 ZIndex: =4
 
             Checkbox1_4 As checkbox:
+                CheckboxBorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Text: ="Done"
                 X: =30
                 Y: =111
@@ -1711,7 +1768,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue259 As datepicker:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 DefaultDate: =If(Checkbox1_4.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
@@ -1812,6 +1871,9 @@ template_new_form_1 As screen:
                 ZIndex: =4
 
             Checkbox1_5 As checkbox:
+                CheckboxBorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Text: ="Done"
                 X: =30
                 Y: =111
@@ -1847,7 +1909,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue260 As datepicker:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 DefaultDate: =If(Checkbox1_5.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
@@ -1917,7 +1981,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue412 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
@@ -2004,7 +2070,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue413 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
@@ -2108,6 +2176,9 @@ template_new_form_1 As screen:
                 ZIndex: =4
 
             Checkbox1_6 As checkbox:
+                CheckboxBorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Text: ="Done"
                 X: =30
                 Y: =177
@@ -2143,7 +2214,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue261 As datepicker:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 DefaultDate: =If(Checkbox1_6.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
@@ -2244,6 +2317,9 @@ template_new_form_1 As screen:
                 ZIndex: =4
 
             Checkbox1_7 As checkbox:
+                CheckboxBorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Text: ="Done"
                 X: =30
                 Y: =177
@@ -2279,7 +2355,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue262 As datepicker:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 DefaultDate: =If(Checkbox1_7.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
@@ -2349,7 +2427,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue414 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
@@ -2436,7 +2516,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue415 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
@@ -2540,6 +2622,9 @@ template_new_form_1 As screen:
                 ZIndex: =4
 
             Checkbox1_8 As checkbox:
+                CheckboxBorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Text: ="Done"
                 X: =30
                 Y: =110
@@ -2575,7 +2660,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue263 As datepicker:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 DefaultDate: =If(Checkbox1_8.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
@@ -2676,6 +2763,12 @@ template_new_form_1 As screen:
                 ZIndex: =4
 
             Checkbox1_9 As checkbox:
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
+                CheckboxBorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Text: ="Done"
                 X: =30
                 Y: =110
@@ -2711,7 +2804,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue264 As datepicker:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 DefaultDate: =If(Checkbox1_9.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
@@ -2781,7 +2876,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue416 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
@@ -2868,7 +2965,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue417 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
@@ -2949,7 +3048,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue252 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
@@ -3055,12 +3156,18 @@ template_new_form_1 As screen:
                 ZIndex: =4
 
             Checkbox1_10 As checkbox:
+                CheckboxBorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Text: ="Done"
                 X: =30
                 Y: =59
                 ZIndex: =5
 
         Date12_DataCard1 As typedDataCard.dateEditCard:
+            BorderColor: |-
+                =	
+                RGBA(88,89,91,0.25)
             BorderStyle: =BorderStyle.Solid
             DataField: ="Date12"
             Default: =ThisItem.Date12
@@ -3191,6 +3298,9 @@ template_new_form_1 As screen:
                 ZIndex: =4
 
             Checkbox1_11 As checkbox:
+                CheckboxBorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Text: ="Done"
                 X: =30
                 Y: =59
@@ -3226,7 +3336,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue267 As datepicker:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 DefaultDate: =If(Checkbox1_11.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
@@ -3296,7 +3408,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue419 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
@@ -3383,7 +3497,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue420 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
@@ -3487,6 +3603,9 @@ template_new_form_1 As screen:
                 ZIndex: =4
 
             Checkbox1_12 As checkbox:
+                CheckboxBorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Text: ="Done"
                 X: =30
                 Y: =131
@@ -3522,7 +3641,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue269 As datepicker:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 DefaultDate: =If(Checkbox1_12.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
@@ -3623,6 +3744,9 @@ template_new_form_1 As screen:
                 ZIndex: =4
 
             Checkbox1_13 As checkbox:
+                CheckboxBorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Text: ="Done"
                 X: =30
                 Y: =131
@@ -3658,7 +3782,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue271 As datepicker:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 DefaultDate: =If(Checkbox1_13.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
@@ -3728,7 +3854,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue421 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
@@ -3815,7 +3943,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue422 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
@@ -3919,6 +4049,12 @@ template_new_form_1 As screen:
                 ZIndex: =4
 
             Checkbox1_14 As checkbox:
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
+                CheckboxBorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Text: ="Done"
                 X: =30
                 Y: =55
@@ -3954,7 +4090,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue273 As datepicker:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 DefaultDate: =If(Checkbox1_14.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
@@ -4055,6 +4193,12 @@ template_new_form_1 As screen:
                 ZIndex: =4
 
             Checkbox1_15 As checkbox:
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
+                CheckboxBorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Text: ="Done"
                 X: =30
                 Y: =55
@@ -4090,7 +4234,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue275 As datepicker:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 DefaultDate: =If(Checkbox1_15.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
@@ -4160,7 +4306,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue423 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
@@ -4247,7 +4395,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue424 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
@@ -4351,6 +4501,9 @@ template_new_form_1 As screen:
                 ZIndex: =4
 
             Checkbox1_16 As checkbox:
+                CheckboxBorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Text: ="Done"
                 X: =30
                 Y: =55
@@ -4386,7 +4539,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue277 As datepicker:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 DefaultDate: =If(Checkbox1_16.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
@@ -4487,6 +4642,12 @@ template_new_form_1 As screen:
                 ZIndex: =4
 
             Checkbox1_17 As checkbox:
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
+                CheckboxBorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Text: ="Done"
                 X: =30
                 Y: =55
@@ -4522,7 +4683,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue279 As datepicker:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 DefaultDate: =If(Checkbox1_17.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
@@ -4592,7 +4755,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue425 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
@@ -4679,7 +4844,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue426 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
@@ -4783,6 +4950,12 @@ template_new_form_1 As screen:
                 ZIndex: =4
 
             Checkbox1_18 As checkbox:
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
+                CheckboxBorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Text: ="Done"
                 X: =30
                 Y: =88
@@ -4818,7 +4991,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue281 As datepicker:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 DefaultDate: =If(Checkbox1_18.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
@@ -4919,6 +5094,9 @@ template_new_form_1 As screen:
                 ZIndex: =4
 
             Checkbox1_19 As checkbox:
+                CheckboxBorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Text: ="Done"
                 X: =30
                 Y: =88
@@ -4953,7 +5131,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue283 As datepicker:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 DefaultDate: =If(Checkbox1_19.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
@@ -5023,7 +5203,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue427 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
@@ -5110,7 +5292,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue428 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
@@ -5215,6 +5399,9 @@ template_new_form_1 As screen:
                 ZIndex: =4
 
             Checkbox1_20 As checkbox:
+                CheckboxBorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Text: ="Done"
                 X: =30
                 Y: =55
@@ -5250,7 +5437,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue285 As datepicker:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 DefaultDate: =If(Checkbox1_20.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
@@ -5351,6 +5540,9 @@ template_new_form_1 As screen:
                 ZIndex: =4
 
             Checkbox1_21 As checkbox:
+                CheckboxBorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Text: ="Done"
                 X: =30
                 Y: =55
@@ -5386,7 +5578,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue287 As datepicker:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 DefaultDate: =If(Checkbox1_21.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
@@ -5456,7 +5650,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue429 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
@@ -5543,7 +5739,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue430 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
@@ -5648,6 +5846,9 @@ template_new_form_1 As screen:
                 ZIndex: =4
 
             Checkbox1_22 As checkbox:
+                CheckboxBorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Text: ="Done"
                 X: =30
                 Y: =55
@@ -5683,7 +5884,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue289 As datepicker:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 DefaultDate: =If(Checkbox1_22.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
@@ -5784,6 +5987,9 @@ template_new_form_1 As screen:
                 ZIndex: =4
 
             Checkbox1_23 As checkbox:
+                CheckboxBorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Text: ="Done"
                 X: =30
                 Y: =55
@@ -5818,7 +6024,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue291 As datepicker:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 DefaultDate: =If(Checkbox1_23.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
@@ -5888,7 +6096,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue431 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
@@ -5975,7 +6185,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue432 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
@@ -6079,6 +6291,9 @@ template_new_form_1 As screen:
                 ZIndex: =4
 
             Checkbox1_24 As checkbox:
+                CheckboxBorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Text: ="Done"
                 X: =30
                 Y: =124
@@ -6114,7 +6329,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue293 As datepicker:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 DefaultDate: =If(Checkbox1_24.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
@@ -6216,6 +6433,9 @@ template_new_form_1 As screen:
                 ZIndex: =4
 
             Checkbox1_25 As checkbox:
+                CheckboxBorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Text: ="Done"
                 X: =30
                 Y: =124
@@ -6251,7 +6471,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue295 As datepicker:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 DefaultDate: =If(Checkbox1_25.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
@@ -6321,7 +6543,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue433 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
@@ -6408,7 +6632,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue434 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
@@ -6512,6 +6738,9 @@ template_new_form_1 As screen:
                 ZIndex: =4
 
             Checkbox1_26 As checkbox:
+                CheckboxBorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Text: ="Done"
                 X: =30
                 Y: =84
@@ -6547,7 +6776,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue297 As datepicker:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 DefaultDate: =If(Checkbox1_26.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
@@ -6648,6 +6879,9 @@ template_new_form_1 As screen:
                 ZIndex: =4
 
             Checkbox1_27 As checkbox:
+                CheckboxBorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Text: ="Done"
                 X: =30
                 Y: =84
@@ -6683,7 +6917,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue299 As datepicker:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 DefaultDate: =If(Checkbox1_27.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
@@ -6753,7 +6989,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue435 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
@@ -6840,7 +7078,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue436 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
@@ -6944,6 +7184,12 @@ template_new_form_1 As screen:
                 ZIndex: =4
 
             Checkbox1_28 As checkbox:
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
+                CheckboxBorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Text: ="Done"
                 X: =30
                 Y: =84
@@ -6979,7 +7225,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue301 As datepicker:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 DefaultDate: =If(Checkbox1_28.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
@@ -7080,6 +7328,9 @@ template_new_form_1 As screen:
                 ZIndex: =4
 
             Checkbox1_29 As checkbox:
+                CheckboxBorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Text: ="Done"
                 X: =30
                 Y: =84
@@ -7115,7 +7366,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue303 As datepicker:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 DefaultDate: =If(Checkbox1_29.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
@@ -7185,7 +7438,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue437 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
@@ -7272,7 +7527,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue438 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
@@ -7376,6 +7633,9 @@ template_new_form_1 As screen:
                 ZIndex: =4
 
             Checkbox1_30 As checkbox:
+                CheckboxBorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Text: ="Done"
                 X: =30
                 Y: =84
@@ -7411,7 +7671,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue305 As datepicker:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 DefaultDate: =If(Checkbox1_30.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
@@ -7512,6 +7774,9 @@ template_new_form_1 As screen:
                 ZIndex: =4
 
             Checkbox1_31 As checkbox:
+                CheckboxBorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Text: ="Done"
                 X: =30
                 Y: =84
@@ -7547,7 +7812,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue307 As datepicker:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 DefaultDate: =If(Checkbox1_31.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
@@ -7617,7 +7884,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue440 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
@@ -7704,7 +7973,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue439 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
