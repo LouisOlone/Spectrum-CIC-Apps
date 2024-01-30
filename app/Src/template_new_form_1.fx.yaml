@@ -52,6 +52,9 @@ template_new_form_1 As screen:
                 HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
+                PressedBorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.5)
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -124,6 +127,9 @@ template_new_form_1 As screen:
                 HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
+                PressedBorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.5)
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -196,6 +202,9 @@ template_new_form_1 As screen:
                 HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
+                PressedBorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.5)
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -268,6 +277,9 @@ template_new_form_1 As screen:
                 HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
+                PressedBorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.5)
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -340,6 +352,9 @@ template_new_form_1 As screen:
                 HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
+                PressedBorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.5)
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -412,6 +427,9 @@ template_new_form_1 As screen:
                 HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
+                PressedBorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.5)
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -484,6 +502,9 @@ template_new_form_1 As screen:
                 HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
+                PressedBorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.5)
                 Tooltip: =Parent.DisplayName
                 Width: =582
                 X: =30
@@ -560,6 +581,7 @@ template_new_form_1 As screen:
                 HoverBorderColor: =RGBA(88,89,91,1)
                 Items: =Choices([@'Induction Log'].SpectrumEmp)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 SearchFields: =["Value"]
                 SearchItems: =Choices('Induction Log'.SpectrumEmp,DataCardValue481.SearchText)
                 SelectMultiple: =false
@@ -640,6 +662,7 @@ template_new_form_1 As screen:
                 HoverBorderColor: =RGBA(88,89,91,1)
                 Items: =Choices([@'Induction Log'].SpectrumEmpEmail)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 SearchFields: =["Claims"]
                 SearchItems: =Choices('Induction Log'.SpectrumEmpEmail,DataCardValue483.SearchText)
                 SelectMultiple: =false
@@ -722,6 +745,7 @@ template_new_form_1 As screen:
                 HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -822,6 +846,7 @@ template_new_form_1 As screen:
                     =	
                     RGBA(88,89,91,0.25)
                 HoverBorderColor: =RGBA(88,89,91,1)
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 Text: ="Done"
                 X: =30
                 Y: =104
@@ -963,6 +988,7 @@ template_new_form_1 As screen:
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 Text: ="Done"
                 X: =30
                 Y: =104
@@ -1082,6 +1108,7 @@ template_new_form_1 As screen:
                 MaxLength: =Parent.MaxLength
                 Mode: =TextMode.MultiLine
                 PaddingLeft: =5
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -1170,6 +1197,7 @@ template_new_form_1 As screen:
                 MaxLength: =Parent.MaxLength
                 Mode: =TextMode.MultiLine
                 PaddingLeft: =5
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -1266,6 +1294,7 @@ template_new_form_1 As screen:
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 Text: ="Done"
                 X: =30
                 Y: =55
@@ -1411,6 +1440,7 @@ template_new_form_1 As screen:
                     =	
                     	
                     RGBA(88,89,91,0.25)
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 Text: ="Done"
                 X: =30
                 Y: =55
@@ -1529,6 +1559,7 @@ template_new_form_1 As screen:
                 HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -1616,6 +1647,7 @@ template_new_form_1 As screen:
                 HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -1712,6 +1744,7 @@ template_new_form_1 As screen:
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 Text: ="Done"
                 X: =30
                 Y: =111
@@ -1853,6 +1886,7 @@ template_new_form_1 As screen:
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 Text: ="Done"
                 X: =30
                 Y: =111
@@ -1971,6 +2005,7 @@ template_new_form_1 As screen:
                 HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -2058,6 +2093,7 @@ template_new_form_1 As screen:
                 HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -2154,6 +2190,7 @@ template_new_form_1 As screen:
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 Text: ="Done"
                 X: =30
                 Y: =177
@@ -2295,6 +2332,7 @@ template_new_form_1 As screen:
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 Text: ="Done"
                 X: =30
                 Y: =177
@@ -2413,6 +2451,7 @@ template_new_form_1 As screen:
                 HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -2500,6 +2539,7 @@ template_new_form_1 As screen:
                 HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -2596,6 +2636,7 @@ template_new_form_1 As screen:
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 Text: ="Done"
                 X: =30
                 Y: =110
@@ -2740,6 +2781,7 @@ template_new_form_1 As screen:
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 Text: ="Done"
                 X: =30
                 Y: =110
@@ -2858,6 +2900,7 @@ template_new_form_1 As screen:
                 HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -2945,6 +2988,7 @@ template_new_form_1 As screen:
                 HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -3027,6 +3071,7 @@ template_new_form_1 As screen:
                 MaxLength: =Parent.MaxLength
                 Mode: =TextMode.MultiLine
                 PaddingLeft: =5
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 Tooltip: =Parent.DisplayName
                 Width: =582
                 X: =30
