@@ -10003,7 +10003,7 @@ template_new_form_1 As screen:
 
             DataCardValue361 As datepicker:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultDate: =Parent.Default
+                DefaultDate: =If(Checkbox1_40.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IsEditable: =true
@@ -10139,7 +10139,7 @@ template_new_form_1 As screen:
 
             DataCardValue363 As datepicker:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultDate: =Parent.Default
+                DefaultDate: =If(Checkbox1_41.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IsEditable: =true
@@ -10435,7 +10435,7 @@ template_new_form_1 As screen:
 
             DataCardValue365 As datepicker:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultDate: =Parent.Default
+                DefaultDate: =If(Checkbox1_42.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IsEditable: =true
@@ -10571,7 +10571,7 @@ template_new_form_1 As screen:
 
             DataCardValue367 As datepicker:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultDate: =Parent.Default
+                DefaultDate: =If(Checkbox1_43.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IsEditable: =true
@@ -10867,7 +10867,7 @@ template_new_form_1 As screen:
 
             DataCardValue369 As datepicker:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultDate: =Parent.Default
+                DefaultDate: =If(Checkbox1_44.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IsEditable: =true
@@ -11003,7 +11003,7 @@ template_new_form_1 As screen:
 
             DataCardValue371 As datepicker:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultDate: =Parent.Default
+                DefaultDate: =If(Checkbox1_45.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IsEditable: =true
@@ -11265,7 +11265,7 @@ template_new_form_1 As screen:
             Checkbox1_46 As checkbox:
                 Text: ="Done"
                 X: =30
-                Y: =55
+                Y: =87
                 ZIndex: =5
 
         Date50_DataCard1 As typedDataCard.dateEditCard:
@@ -11299,7 +11299,7 @@ template_new_form_1 As screen:
 
             DataCardValue373 As datepicker:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultDate: =Parent.Default
+                DefaultDate: =If(Checkbox1_46.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IsEditable: =true
@@ -11309,7 +11309,7 @@ template_new_form_1 As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =55
+                Y: =87
                 ZIndex: =2
 
             ErrorMessage384 As label:
@@ -11435,7 +11435,7 @@ template_new_form_1 As screen:
 
             DataCardValue375 As datepicker:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultDate: =Parent.Default
+                DefaultDate: =If(Checkbox1_47.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IsEditable: =true
@@ -11445,7 +11445,7 @@ template_new_form_1 As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey385.Y + DataCardKey385.Height + 5
+                Y: =87
                 ZIndex: =2
 
             ErrorMessage386 As label:
@@ -11731,7 +11731,7 @@ template_new_form_1 As screen:
 
             DataCardValue377 As datepicker:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultDate: =Parent.Default
+                DefaultDate: =If(Checkbox1_48.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IsEditable: =true
@@ -11867,7 +11867,7 @@ template_new_form_1 As screen:
 
             DataCardValue379 As datepicker:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultDate: =Parent.Default
+                DefaultDate: =If(Checkbox1_49.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IsEditable: =true
@@ -12163,7 +12163,7 @@ template_new_form_1 As screen:
 
             DataCardValue381 As datepicker:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultDate: =Parent.Default
+                DefaultDate: =If(Checkbox1_50.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IsEditable: =true
@@ -12299,7 +12299,7 @@ template_new_form_1 As screen:
 
             DataCardValue383 As datepicker:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultDate: =Parent.Default
+                DefaultDate: =If(Checkbox1_51.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IsEditable: =true
@@ -12595,7 +12595,7 @@ template_new_form_1 As screen:
 
             DataCardValue385 As datepicker:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultDate: =Parent.Default
+                DefaultDate: =If(Checkbox1_52.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IsEditable: =true
@@ -12731,7 +12731,7 @@ template_new_form_1 As screen:
 
             DataCardValue387 As datepicker:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultDate: =Parent.Default
+                DefaultDate: =If(Checkbox1_53.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IsEditable: =true
@@ -13027,7 +13027,7 @@ template_new_form_1 As screen:
 
             DataCardValue389 As datepicker:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultDate: =Parent.Default
+                DefaultDate: =If(Checkbox1_54.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IsEditable: =true
@@ -13163,7 +13163,7 @@ template_new_form_1 As screen:
 
             DataCardValue391 As datepicker:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultDate: =Parent.Default
+                DefaultDate: =If(Checkbox1_55.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IsEditable: =true
@@ -13459,7 +13459,7 @@ template_new_form_1 As screen:
 
             DataCardValue393 As datepicker:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultDate: =Parent.Default
+                DefaultDate: =If(Checkbox1_56.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IsEditable: =true
@@ -13595,7 +13595,7 @@ template_new_form_1 As screen:
 
             DataCardValue395 As datepicker:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultDate: =Parent.Default
+                DefaultDate: =If(Checkbox1_57.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IsEditable: =true
@@ -13891,7 +13891,7 @@ template_new_form_1 As screen:
 
             DataCardValue397 As datepicker:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultDate: =Parent.Default
+                DefaultDate: =If(Checkbox1_58.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IsEditable: =true
@@ -14027,7 +14027,7 @@ template_new_form_1 As screen:
 
             DataCardValue399 As datepicker:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultDate: =Parent.Default
+                DefaultDate: =If(Checkbox1_59.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IsEditable: =true
@@ -14323,7 +14323,7 @@ template_new_form_1 As screen:
 
             DataCardValue401 As datepicker:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultDate: =Parent.Default
+                DefaultDate: =If(Checkbox1_60.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IsEditable: =true
@@ -14459,7 +14459,7 @@ template_new_form_1 As screen:
 
             DataCardValue403 As datepicker:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultDate: =Parent.Default
+                DefaultDate: =If(Checkbox1_61.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IsEditable: =true
@@ -14756,7 +14756,7 @@ template_new_form_1 As screen:
 
             DataCardValue405 As datepicker:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultDate: =Parent.Default
+                DefaultDate: =If(Checkbox1_62.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IsEditable: =true
