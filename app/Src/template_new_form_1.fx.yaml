@@ -765,7 +765,7 @@ template_new_form_1 As screen:
             Height: =50
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "WelcometotheDepartment_x002f_Bus")
             Required: =false
-            Update: =DataCardValue243.Text
+            Update: =If(Checkbox1.Value =true,"Complete","")
             Width: =321
             X: =0
             Y: =5
@@ -901,7 +901,7 @@ template_new_form_1 As screen:
             Height: =50
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "BriefdescriptionoftheDepartment_")
             Required: =false
-            Update: =DataCardValue228.Text
+            Update: =If(Checkbox1_1.Value =true,"Complete","")
             Width: =321
             X: =2
             Y: =5
@@ -1199,7 +1199,7 @@ template_new_form_1 As screen:
             Height: =50
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Explainmanagementstructureofthed")
             Required: =false
-            Update: =DataCardValue244.Text
+            Update: =If(Checkbox1_2.Value =true,"Complete","")
             Width: =321
             X: =0
             Y: =7
@@ -1335,7 +1335,7 @@ template_new_form_1 As screen:
             Height: =50
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "IntroducetoMentor_x002c_whereapp")
             Required: =false
-            Update: =DataCardValue245.Text
+            Update: =If(Checkbox1_3.Value =true,"Complete","")
             Width: =321
             X: =2
             Y: =7
@@ -1631,7 +1631,7 @@ template_new_form_1 As screen:
             Height: =122
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Introducetootherstaffandexplanat")
             Required: =false
-            Update: =DataCardValue246.Text
+            Update: =If(Checkbox1_4.Value =true,"Complete","")
             Width: =321
             X: =0
             Y: =9
@@ -1767,7 +1767,7 @@ template_new_form_1 As screen:
             Height: =161
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Locationoftoilets_x002c_stafffac")
             Required: =false
-            Update: =DataCardValue247.Text
+            Update: =If(Checkbox1_5.Value =true,"Complete","")
             Width: =321
             X: =2
             Y: =9
@@ -2063,7 +2063,7 @@ template_new_form_1 As screen:
             Height: =191
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Checkreceiptofformalletterofappo")
             Required: =false
-            Update: =DataCardValue248.Text
+            Update: =If(Checkbox1_6.Value =true,"Complete","")
             Width: =321
             X: =0
             Y: =11
@@ -2199,7 +2199,7 @@ template_new_form_1 As screen:
             Height: =228
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Explainstatutoryandmandatorytrai")
             Required: =false
-            Update: =DataCardValue249.Text
+            Update: =If(Checkbox1_7.Value =true,"Complete","")t
             Width: =321
             X: =2
             Y: =11
@@ -2495,7 +2495,7 @@ template_new_form_1 As screen:
             Height: =143
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Explainduties_x002c_remitofjob_x")
             Required: =false
-            Update: =DataCardValue250.Text
+            Update: =If(Checkbox1_8.Value =true,"Complete","")
             Width: =321
             X: =0
             Y: =13
@@ -2631,7 +2631,7 @@ template_new_form_1 As screen:
             Height: =165
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Explaincontractualarrangementse_")
             Required: =false
-            Update: =DataCardValue251.Text
+            Update: =If(Checkbox1_9.Value =true,"Complete","")
             Width: =321
             X: =2
             Y: =13
@@ -3009,7 +3009,7 @@ template_new_form_1 As screen:
             Height: =50
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Name_x003a_")
             Required: =false
-            Update: =DataCardValue253.Text
+            Update: =If(Checkbox1_10.Value =true,"Complete","")
             Width: =321
             X: =0
             Y: =16
@@ -3146,7 +3146,7 @@ template_new_form_1 As screen:
             Height: =109
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Issuekeys_x002f_fobsandpinnumber")
             Required: =false
-            Update: =DataCardValue254.Text
+            Update: =If(Checkbox1_11.Value =true,"Complete","")
             Width: =321
             X: =2
             Y: =16
@@ -3442,7 +3442,7 @@ template_new_form_1 As screen:
             Height: =77
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Emergencytelephonenumbers")
             Required: =false
-            Update: =DataCardValue268.Text
+            Update: =If(Checkbox1_12.Value =true,"Complete","")
             Width: =321
             X: =0
             Y: =18
@@ -3578,7 +3578,7 @@ template_new_form_1 As screen:
             Height: =181
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "IdentifyALLHR_x002c_corporateand")
             Required: =false
-            Update: =DataCardValue270.Text
+            Update: =If(Checkbox1_13.Value =true,"Complete","")
             Width: =321
             X: =2
             Y: =18
@@ -3874,7 +3874,7 @@ template_new_form_1 As screen:
             Height: =50
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "FireandFirstAidprocedures")
             Required: =false
-            Update: =DataCardValue272.Text
+            Update: =If(Checkbox1_14.Value =true,"Complete","")
             Width: =321
             X: =0
             Y: =20
@@ -4010,7 +4010,7 @@ template_new_form_1 As screen:
             Height: =105
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Workplacetidiness_x005b_wires_x0")
             Required: =false
-            Update: =DataCardValue274.Text
+            Update: =If(Checkbox1_15.Value =true,"Complete","")
             Width: =321
             X: =2
             Y: =20
@@ -4306,7 +4306,7 @@ template_new_form_1 As screen:
             Height: =50
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Approachtosupportingnonsmoking")
             Required: =false
-            Update: =DataCardValue276.Text
+            Update: =If(Checkbox1_16.Value =true,"Complete","")
             Width: =321
             X: =0
             Y: =22
@@ -4442,7 +4442,7 @@ template_new_form_1 As screen:
             Height: =50
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Accidentsandincidentreportingpro")
             Required: =false
-            Update: =DataCardValue278.Text
+            Update: =If(Checkbox1_17.Value =true,"Complete","")
             Width: =321
             X: =2
             Y: =22
@@ -4738,7 +4738,7 @@ template_new_form_1 As screen:
             Height: =50
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "RiskManagementarrangements")
             Required: =false
-            Update: =DataCardValue280.Text
+            Update: =If(Checkbox1_18.Value =true,"Complete","")
             Width: =321
             X: =0
             Y: =24
@@ -4874,7 +4874,7 @@ template_new_form_1 As screen:
             Height: =138
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "LoneWorkerandHomeworking_x0028_i")
             Required: =false
-            Update: =DataCardValue282.Text
+            Update: =If(Checkbox1_19.Value =true,"Complete","")
             Width: =321
             X: =2
             Y: =24
@@ -5169,7 +5169,7 @@ template_new_form_1 As screen:
             Height: =50
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Electricalsafety")
             Required: =false
-            Update: =DataCardValue284.Text
+            Update: =If(Checkbox1_20.Value =true,"Complete","")
             Width: =321
             X: =0
             Y: =26
@@ -5306,7 +5306,7 @@ template_new_form_1 As screen:
             Height: =50
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Handlingdangerouschemicals_x002f")
             Required: =false
-            Update: =DataCardValue286.Text
+            Update: =If(Checkbox1_21.Value =true,"Complete","")
             Width: =321
             X: =2
             Y: =26
@@ -5602,7 +5602,7 @@ template_new_form_1 As screen:
             Height: =50
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "MovingandHandling")
             Required: =false
-            Update: =DataCardValue288.Text
+            Update: =If(Checkbox1_22.Value =true,"Complete","")
             Width: =321
             X: =0
             Y: =28
@@ -5739,7 +5739,7 @@ template_new_form_1 As screen:
             Height: =50
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "DisplayScreenEquipment_x0028_DSE")
             Required: =false
-            Update: =DataCardValue290.Text
+            Update: =If(Checkbox1_23.Value =true,"Complete","")
             Width: =321
             X: =2
             Y: =28
@@ -6034,7 +6034,7 @@ template_new_form_1 As screen:
             Height: =174
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "ConfirmprogressofthisInductionLo")
             Required: =false
-            Update: =DataCardValue292.Text
+            Update: =If(Checkbox1_24.Value =true,"Complete","")
             Width: =321
             X: =0
             Y: =30
@@ -6171,7 +6171,7 @@ template_new_form_1 As screen:
             Height: =50
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Explainarrangementsforstaffmembe")
             Required: =false
-            Update: =DataCardValue294.Text
+            Update: =If(Checkbox1_25.Value =true,"Complete","")
             Width: =321
             X: =2
             Y: =30
@@ -6467,7 +6467,7 @@ template_new_form_1 As screen:
             Height: =50
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Starting_x002f_Finishingtimes_x0")
             Required: =false
-            Update: =DataCardValue296.Text
+            Update: =If(Checkbox1_26.Value =true,"Complete","")
             Width: =321
             X: =0
             Y: =32
@@ -6603,7 +6603,7 @@ template_new_form_1 As screen:
             Height: =134
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Sicknessabsencereportingandmonit")
             Required: =false
-            Update: =DataCardValue298.Text
+            Update: =If(Checkbox1_27.Value =true,"Complete","")
             Width: =321
             X: =2
             Y: =32
@@ -6899,7 +6899,7 @@ template_new_form_1 As screen:
             Height: =50
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Homeemergencies_x0028_SpecialLea")
             Required: =false
-            Update: =DataCardValue300.Text
+            Update: =If(Checkbox1_28.Value =true,"Complete","")
             Width: =321
             X: =0
             Y: =34
@@ -7035,7 +7035,7 @@ template_new_form_1 As screen:
             Height: =50
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Overtime_x002f_shift_x002f_on_x0")
             Required: =false
-            Update: =DataCardValue302.Text
+            Update: =If(Checkbox1_29.Value =true,"Complete","")
             Width: =321
             X: =2
             Y: =34
@@ -7331,7 +7331,7 @@ template_new_form_1 As screen:
             Height: =50
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Flexibleworkingarrangements_x005")
             Required: =false
-            Update: =DataCardValue304.Text
+            Update: =If(Checkbox1_30.Value =true,"Complete","")
             Width: =321
             X: =0
             Y: =36
@@ -7467,7 +7467,7 @@ template_new_form_1 As screen:
             Height: =50
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Explanationoffilingsystems_x0028")
             Required: =false
-            Update: =DataCardValue306.Text
+            Update: =If(Checkbox1_31.Value =true,"Complete","")
             Width: =321
             X: =2
             Y: =36
@@ -7763,7 +7763,7 @@ template_new_form_1 As screen:
             Height: =128
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Non_x002d_liabilityoforganisatio")
             Required: =false
-            Update: =DataCardValue336.Text
+            Update: =If(Checkbox1_32.Value =true,"Complete","")
             Width: =321
             X: =0
             Y: =38
@@ -7899,7 +7899,7 @@ template_new_form_1 As screen:
             Height: =50
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Checkthatsalaryarrangementsareun")
             Required: =false
-            Update: =DataCardValue342.Text
+            Update: =If(Checkbox1_33.Value =true,"Complete","")
             Width: =321
             X: =2
             Y: =38
@@ -8195,7 +8195,7 @@ template_new_form_1 As screen:
             Height: =50
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Paymentduringabsenceduetoillness")
             Required: =false
-            Update: =DataCardValue344.Text
+            Update: =If(Checkbox1_34.Value =true,"Complete","")
             Width: =321
             X: =0
             Y: =40
@@ -8331,7 +8331,7 @@ template_new_form_1 As screen:
             Height: =50
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Expenseclaimarrangements")
             Required: =false
-            Update: =DataCardValue346.Text
+            Update: =If(Checkbox1_35.Value =true,"Complete","")
             Width: =321
             X: =2
             Y: =40
@@ -8627,7 +8627,7 @@ template_new_form_1 As screen:
             Height: =131
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Whotocontactregardingspecificpay")
             Required: =false
-            Update: =DataCardValue348.Text
+            Update: =If(Checkbox1_36.Value =true,"Complete","")
             Width: =321
             X: =0
             Y: =42
@@ -8763,7 +8763,7 @@ template_new_form_1 As screen:
             Height: =50
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Completeallrelevantdocumentation")
             Required: =false
-            Update: =DataCardValue350.Text
+            Update: =If(Checkbox1_37.Value =true,"Complete","")
             Width: =321
             X: =2
             Y: =42
@@ -9059,7 +9059,7 @@ template_new_form_1 As screen:
             Height: =50
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Holidayentitlementsandholidayreq")
             Required: =false
-            Update: =DataCardValue352.Text
+            Update: =If(Checkbox1_38.Value =true,"Complete","")
             Width: =321
             X: =0
             Y: =44
@@ -9195,7 +9195,7 @@ template_new_form_1 As screen:
             Height: =50
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Holidayarrangements_x002f_fittin")
             Required: =false
-            Update: =DataCardValue354.Text
+            Update: =If(Checkbox1_39.Value =true,"Complete","")
             Width: =321
             X: =2
             Y: =44
