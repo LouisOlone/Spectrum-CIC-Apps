@@ -582,6 +582,10 @@ template_new_form_1 As screen:
                 BorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                ChevronBackground: |-
+                    =	
+                    RGBA(77,164,65,1)
+                ChevronHoverBackground: =ColorFade(RGBA(77,164,65,1), -20%)
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
@@ -591,6 +595,10 @@ template_new_form_1 As screen:
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 SearchFields: =["Value"]
                 SearchItems: =Choices('Induction Log'.SpectrumEmp,DataCardValue481.SearchText)
+                SelectionColor: |-
+                    =	
+                    RGBA(0,0,0,1)
+                SelectionFill: =RGBA(74,164,65,0.5)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -663,16 +671,27 @@ template_new_form_1 As screen:
                 BorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                ChevronBackground: |-
+                    =	
+                    RGBA(77,164,65,1)
+                ChevronHoverBackground: =ColorFade(RGBA(77,164,65,1), -20%)
                 DefaultSelectedItems: =Parent.Default
-                DisplayFields: =["Claims"]
+                DisplayFields: =["DisplayName","Email","Picture"]
                 DisplayMode: =Parent.DisplayMode
-                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverBorderColor: |-
+                    =	
+                    RGBA(88,89,91,1)
                 Items: =Choices([@'Induction Log'].SpectrumEmpEmail)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 SearchFields: =["Claims"]
                 SearchItems: =Choices('Induction Log'.SpectrumEmpEmail,DataCardValue483.SearchText)
+                SelectionColor: |-
+                    =	
+                    RGBA(0,0,0,1)
+                SelectionFill: =RGBA(74,164,65,0.5)
                 SelectMultiple: =false
+                Template: =ListItemTemplate.Person
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
