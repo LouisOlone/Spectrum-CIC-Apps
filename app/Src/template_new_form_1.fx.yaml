@@ -1798,7 +1798,7 @@ template_new_form_1 As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue247.Y + DataCardValue247.Height
+                Y: =
                 ZIndex: =3
 
             StarVisible255 As label:
@@ -2094,7 +2094,7 @@ template_new_form_1 As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue248.Y + DataCardValue248.Height
+                Y: =
                 ZIndex: =3
 
             StarVisible256 As label:
@@ -2199,7 +2199,7 @@ template_new_form_1 As screen:
             Height: =228
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Explainstatutoryandmandatorytrai")
             Required: =false
-            Update: =If(Checkbox1_7.Value =true,"Complete","")t
+            Update: =If(Checkbox1_7.Value =true,"Complete","")
             Width: =321
             X: =2
             Y: =11
@@ -2230,7 +2230,7 @@ template_new_form_1 As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue249.Y + DataCardValue249.Height
+                Y: =
                 ZIndex: =3
 
             StarVisible257 As label:
@@ -2526,7 +2526,7 @@ template_new_form_1 As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue250.Y + DataCardValue250.Height
+                Y: =
                 ZIndex: =3
 
             StarVisible259 As label:
@@ -2662,7 +2662,7 @@ template_new_form_1 As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue251.Y + DataCardValue251.Height
+                Y: =
                 ZIndex: =3
 
             StarVisible260 As label:
@@ -3041,7 +3041,7 @@ template_new_form_1 As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue253.Y + DataCardValue253.Height
+                Y: =
                 ZIndex: =3
 
             StarVisible262 As label:
@@ -3177,7 +3177,7 @@ template_new_form_1 As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue254.Y + DataCardValue254.Height
+                Y: =
                 ZIndex: =3
 
             StarVisible263 As label:
@@ -3473,7 +3473,7 @@ template_new_form_1 As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue268.Y + DataCardValue268.Height
+                Y: =
                 ZIndex: =3
 
             StarVisible277 As label:
@@ -3609,7 +3609,7 @@ template_new_form_1 As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue270.Y + DataCardValue270.Height
+                Y: =
                 ZIndex: =3
 
             StarVisible279 As label:
@@ -3905,7 +3905,7 @@ template_new_form_1 As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue272.Y + DataCardValue272.Height
+                Y: =
                 ZIndex: =3
 
             StarVisible281 As label:
@@ -4041,7 +4041,7 @@ template_new_form_1 As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue274.Y + DataCardValue274.Height
+                Y: =
                 ZIndex: =3
 
             StarVisible283 As label:
@@ -4337,7 +4337,7 @@ template_new_form_1 As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue276.Y + DataCardValue276.Height
+                Y: =
                 ZIndex: =3
 
             StarVisible285 As label:
@@ -4473,7 +4473,7 @@ template_new_form_1 As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue278.Y + DataCardValue278.Height
+                Y: =
                 ZIndex: =3
 
             StarVisible287 As label:
@@ -4769,7 +4769,7 @@ template_new_form_1 As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue280.Y + DataCardValue280.Height
+                Y: =
                 ZIndex: =3
 
             StarVisible289 As label:
@@ -4905,7 +4905,7 @@ template_new_form_1 As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue282.Y + DataCardValue282.Height
+                Y: =
                 ZIndex: =3
 
             StarVisible291 As label:
@@ -5201,7 +5201,7 @@ template_new_form_1 As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue284.Y + DataCardValue284.Height
+                Y: =
                 ZIndex: =3
 
             StarVisible293 As label:
@@ -5337,7 +5337,7 @@ template_new_form_1 As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue286.Y + DataCardValue286.Height
+                Y: =
                 ZIndex: =3
 
             StarVisible295 As label:
@@ -5634,7 +5634,7 @@ template_new_form_1 As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue288.Y + DataCardValue288.Height
+                Y: =
                 ZIndex: =3
 
             StarVisible297 As label:
@@ -5770,7 +5770,7 @@ template_new_form_1 As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue290.Y + DataCardValue290.Height
+                Y: =
                 ZIndex: =3
 
             StarVisible299 As label:
@@ -6065,7 +6065,7 @@ template_new_form_1 As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue292.Y + DataCardValue292.Height
+                Y: =
                 ZIndex: =3
 
             StarVisible301 As label:
@@ -6202,7 +6202,7 @@ template_new_form_1 As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue294.Y + DataCardValue294.Height
+                Y: =
                 ZIndex: =3
 
             StarVisible303 As label:
@@ -6498,7 +6498,7 @@ template_new_form_1 As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue296.Y + DataCardValue296.Height
+                Y: =
                 ZIndex: =3
 
             StarVisible305 As label:
@@ -6634,7 +6634,7 @@ template_new_form_1 As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue298.Y + DataCardValue298.Height
+                Y: =
                 ZIndex: =3
 
             StarVisible307 As label:
@@ -6930,7 +6930,7 @@ template_new_form_1 As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue300.Y + DataCardValue300.Height
+                Y: =
                 ZIndex: =3
 
             StarVisible309 As label:
@@ -7066,7 +7066,7 @@ template_new_form_1 As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue302.Y + DataCardValue302.Height
+                Y: =
                 ZIndex: =3
 
             StarVisible311 As label:
@@ -7362,7 +7362,7 @@ template_new_form_1 As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue304.Y + DataCardValue304.Height
+                Y: =
                 ZIndex: =3
 
             StarVisible345 As label:
@@ -7498,7 +7498,7 @@ template_new_form_1 As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue306.Y + DataCardValue306.Height
+                Y: =
                 ZIndex: =3
 
             StarVisible349 As label:
@@ -7794,7 +7794,7 @@ template_new_form_1 As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue336.Y + DataCardValue336.Height
+                Y: =
                 ZIndex: =3
 
             StarVisible351 As label:
@@ -7930,7 +7930,7 @@ template_new_form_1 As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue342.Y + DataCardValue342.Height
+                Y: =
                 ZIndex: =3
 
             StarVisible353 As label:
@@ -8226,7 +8226,7 @@ template_new_form_1 As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue344.Y + DataCardValue344.Height
+                Y: =
                 ZIndex: =3
 
             StarVisible355 As label:
@@ -8362,7 +8362,7 @@ template_new_form_1 As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue346.Y + DataCardValue346.Height
+                Y: =
                 ZIndex: =3
 
             StarVisible357 As label:
@@ -8658,7 +8658,7 @@ template_new_form_1 As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue348.Y + DataCardValue348.Height
+                Y: =
                 ZIndex: =3
 
             StarVisible359 As label:
@@ -8794,7 +8794,7 @@ template_new_form_1 As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue350.Y + DataCardValue350.Height
+                Y: =
                 ZIndex: =3
 
             StarVisible361 As label:
@@ -9090,7 +9090,7 @@ template_new_form_1 As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue352.Y + DataCardValue352.Height
+                Y: =
                 ZIndex: =3
 
             StarVisible363 As label:
@@ -9226,7 +9226,7 @@ template_new_form_1 As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue354.Y + DataCardValue354.Height
+                Y: =
                 ZIndex: =3
 
             StarVisible365 As label:
@@ -9523,7 +9523,7 @@ template_new_form_1 As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue356.Y + DataCardValue356.Height
+                Y: =
                 ZIndex: =3
 
             StarVisible367 As label:
@@ -9659,7 +9659,7 @@ template_new_form_1 As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue358.Y + DataCardValue358.Height
+                Y: =
                 ZIndex: =3
 
             StarVisible369 As label:
@@ -9953,7 +9953,7 @@ template_new_form_1 As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue360.Y + DataCardValue360.Height
+                Y: =
                 ZIndex: =3
 
             StarVisible371 As label:
@@ -10089,7 +10089,7 @@ template_new_form_1 As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue362.Y + DataCardValue362.Height
+                Y: =
                 ZIndex: =3
 
             StarVisible373 As label:
@@ -10385,7 +10385,7 @@ template_new_form_1 As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue364.Y + DataCardValue364.Height
+                Y: =
                 ZIndex: =3
 
             StarVisible375 As label:
@@ -10521,7 +10521,7 @@ template_new_form_1 As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue366.Y + DataCardValue366.Height
+                Y: =
                 ZIndex: =3
 
             StarVisible377 As label:
@@ -10817,7 +10817,7 @@ template_new_form_1 As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue368.Y + DataCardValue368.Height
+                Y: =
                 ZIndex: =3
 
             StarVisible379 As label:
@@ -10953,7 +10953,7 @@ template_new_form_1 As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue370.Y + DataCardValue370.Height
+                Y: =
                 ZIndex: =3
 
             StarVisible381 As label:
@@ -11249,7 +11249,7 @@ template_new_form_1 As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue372.Y + DataCardValue372.Height
+                Y: =
                 ZIndex: =3
 
             StarVisible383 As label:
@@ -11385,7 +11385,7 @@ template_new_form_1 As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue374.Y + DataCardValue374.Height
+                Y: =
                 ZIndex: =3
 
             StarVisible385 As label:
@@ -11681,7 +11681,7 @@ template_new_form_1 As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue376.Y + DataCardValue376.Height
+                Y: =
                 ZIndex: =3
 
             StarVisible387 As label:
@@ -11817,7 +11817,7 @@ template_new_form_1 As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue378.Y + DataCardValue378.Height
+                Y: =
                 ZIndex: =3
 
             StarVisible389 As label:
@@ -12113,7 +12113,7 @@ template_new_form_1 As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue380.Y + DataCardValue380.Height
+                Y: =
                 ZIndex: =3
 
             StarVisible391 As label:
@@ -12249,7 +12249,7 @@ template_new_form_1 As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue382.Y + DataCardValue382.Height
+                Y: =
                 ZIndex: =3
 
             StarVisible393 As label:
@@ -12545,7 +12545,7 @@ template_new_form_1 As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue384.Y + DataCardValue384.Height
+                Y: =
                 ZIndex: =3
 
             StarVisible395 As label:
@@ -12681,7 +12681,7 @@ template_new_form_1 As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue386.Y + DataCardValue386.Height
+                Y: =
                 ZIndex: =3
 
             StarVisible397 As label:
@@ -12977,7 +12977,7 @@ template_new_form_1 As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue388.Y + DataCardValue388.Height
+                Y: =
                 ZIndex: =3
 
             StarVisible399 As label:
@@ -13113,7 +13113,7 @@ template_new_form_1 As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue390.Y + DataCardValue390.Height
+                Y: =
                 ZIndex: =3
 
             StarVisible401 As label:
@@ -13409,7 +13409,7 @@ template_new_form_1 As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue392.Y + DataCardValue392.Height
+                Y: =
                 ZIndex: =3
 
             StarVisible403 As label:
@@ -13545,7 +13545,7 @@ template_new_form_1 As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue394.Y + DataCardValue394.Height
+                Y: =
                 ZIndex: =3
 
             StarVisible405 As label:
@@ -13841,7 +13841,7 @@ template_new_form_1 As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue396.Y + DataCardValue396.Height
+                Y: =
                 ZIndex: =3
 
             StarVisible407 As label:
@@ -13977,7 +13977,7 @@ template_new_form_1 As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue398.Y + DataCardValue398.Height
+                Y: =
                 ZIndex: =3
 
             StarVisible409 As label:
@@ -14273,7 +14273,7 @@ template_new_form_1 As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue400.Y + DataCardValue400.Height
+                Y: =
                 ZIndex: =3
 
             StarVisible411 As label:
@@ -14409,7 +14409,7 @@ template_new_form_1 As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue402.Y + DataCardValue402.Height
+                Y: =
                 ZIndex: =3
 
             StarVisible413 As label:
@@ -14706,7 +14706,7 @@ template_new_form_1 As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue404.Y + DataCardValue404.Height
+                Y: =
                 ZIndex: =3
 
             StarVisible415 As label:
