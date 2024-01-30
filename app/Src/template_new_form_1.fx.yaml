@@ -915,6 +915,7 @@ template_new_form_1 As screen:
                 DefaultDate: =If(Checkbox1.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -1058,6 +1059,7 @@ template_new_form_1 As screen:
                 DefaultDate: =If(Checkbox1_1.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -1367,6 +1369,7 @@ template_new_form_1 As screen:
                 DefaultDate: =If(Checkbox1_2.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -1514,6 +1517,7 @@ template_new_form_1 As screen:
                 DefaultDate: =If(Checkbox1_3.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -1821,6 +1825,7 @@ template_new_form_1 As screen:
                 DefaultDate: =If(Checkbox1_4.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -1964,6 +1969,7 @@ template_new_form_1 As screen:
                 DefaultDate: =If(Checkbox1_5.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -2271,6 +2277,7 @@ template_new_form_1 As screen:
                 DefaultDate: =If(Checkbox1_6.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -2414,6 +2421,7 @@ template_new_form_1 As screen:
                 DefaultDate: =If(Checkbox1_7.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -2721,6 +2729,7 @@ template_new_form_1 As screen:
                 DefaultDate: =If(Checkbox1_8.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -2867,6 +2876,7 @@ template_new_form_1 As screen:
                 DefaultDate: =If(Checkbox1_9.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -3260,6 +3270,7 @@ template_new_form_1 As screen:
                 DefaultDate: =If(Checkbox1_10.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -3403,6 +3414,7 @@ template_new_form_1 As screen:
                 DefaultDate: =If(Checkbox1_11.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -3710,6 +3722,7 @@ template_new_form_1 As screen:
                 DefaultDate: =If(Checkbox1_12.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -3853,6 +3866,7 @@ template_new_form_1 As screen:
                 DefaultDate: =If(Checkbox1_13.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -4162,6 +4176,7 @@ template_new_form_1 As screen:
                 DefaultDate: =If(Checkbox1_14.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -4308,6 +4323,7 @@ template_new_form_1 As screen:
                 DefaultDate: =If(Checkbox1_15.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -4615,6 +4631,7 @@ template_new_form_1 As screen:
                 DefaultDate: =If(Checkbox1_16.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -4761,6 +4778,7 @@ template_new_form_1 As screen:
                 DefaultDate: =If(Checkbox1_17.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -5071,6 +5089,7 @@ template_new_form_1 As screen:
                 DefaultDate: =If(Checkbox1_18.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -5213,6 +5232,7 @@ template_new_form_1 As screen:
                 DefaultDate: =If(Checkbox1_19.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -5521,6 +5541,7 @@ template_new_form_1 As screen:
                 DefaultDate: =If(Checkbox1_20.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -5664,6 +5685,7 @@ template_new_form_1 As screen:
                 DefaultDate: =If(Checkbox1_21.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -5972,6 +5994,7 @@ template_new_form_1 As screen:
                 DefaultDate: =If(Checkbox1_22.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -6114,6 +6137,7 @@ template_new_form_1 As screen:
                 DefaultDate: =If(Checkbox1_23.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -6421,6 +6445,7 @@ template_new_form_1 As screen:
                 DefaultDate: =If(Checkbox1_24.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -6565,6 +6590,7 @@ template_new_form_1 As screen:
                 DefaultDate: =If(Checkbox1_25.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -6872,6 +6898,7 @@ template_new_form_1 As screen:
                 DefaultDate: =If(Checkbox1_26.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -7015,6 +7042,7 @@ template_new_form_1 As screen:
                 DefaultDate: =If(Checkbox1_27.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -7325,6 +7353,7 @@ template_new_form_1 As screen:
                 DefaultDate: =If(Checkbox1_28.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -7468,6 +7497,7 @@ template_new_form_1 As screen:
                 DefaultDate: =If(Checkbox1_29.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -7779,6 +7809,7 @@ template_new_form_1 As screen:
                 DefaultDate: =If(Checkbox1_30.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -7922,6 +7953,7 @@ template_new_form_1 As screen:
                 DefaultDate: =If(Checkbox1_31.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -8232,6 +8264,7 @@ template_new_form_1 As screen:
                 DefaultDate: =If(Checkbox1_32.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -8375,6 +8408,7 @@ template_new_form_1 As screen:
                 DefaultDate: =If(Checkbox1_33.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -8685,6 +8719,7 @@ template_new_form_1 As screen:
                 DefaultDate: =If(Checkbox1_34.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -8828,6 +8863,7 @@ template_new_form_1 As screen:
                 DefaultDate: =If(Checkbox1_35.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -9135,6 +9171,7 @@ template_new_form_1 As screen:
                 DefaultDate: =If(Checkbox1_36.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -9278,6 +9315,7 @@ template_new_form_1 As screen:
                 DefaultDate: =If(Checkbox1_37.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -9583,6 +9621,7 @@ template_new_form_1 As screen:
                 DefaultDate: =If(Checkbox1_38.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -9726,6 +9765,7 @@ template_new_form_1 As screen:
                 DefaultDate: =If(Checkbox1_39.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -10034,6 +10074,7 @@ template_new_form_1 As screen:
                 DefaultDate: =If(Checkbox1_63.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -10178,6 +10219,7 @@ template_new_form_1 As screen:
                 DefaultDate: =If(Checkbox1_64.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -10482,6 +10524,7 @@ template_new_form_1 As screen:
                 DefaultDate: =If(Checkbox1_40.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -10625,6 +10668,7 @@ template_new_form_1 As screen:
                 DefaultDate: =If(Checkbox1_41.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -10932,6 +10976,7 @@ template_new_form_1 As screen:
                 DefaultDate: =If(Checkbox1_42.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -11075,6 +11120,7 @@ template_new_form_1 As screen:
                 DefaultDate: =If(Checkbox1_43.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -11382,6 +11428,7 @@ template_new_form_1 As screen:
                 DefaultDate: =If(Checkbox1_44.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -11525,6 +11572,7 @@ template_new_form_1 As screen:
                 DefaultDate: =If(Checkbox1_45.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -11832,6 +11880,7 @@ template_new_form_1 As screen:
                 DefaultDate: =If(Checkbox1_46.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -11975,6 +12024,7 @@ template_new_form_1 As screen:
                 DefaultDate: =If(Checkbox1_47.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -12282,6 +12332,7 @@ template_new_form_1 As screen:
                 DefaultDate: =If(Checkbox1_48.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -12425,6 +12476,7 @@ template_new_form_1 As screen:
                 DefaultDate: =If(Checkbox1_49.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -12732,6 +12784,7 @@ template_new_form_1 As screen:
                 DefaultDate: =If(Checkbox1_50.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -12875,6 +12928,7 @@ template_new_form_1 As screen:
                 DefaultDate: =If(Checkbox1_51.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -13182,6 +13236,7 @@ template_new_form_1 As screen:
                 DefaultDate: =If(Checkbox1_52.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -13325,6 +13380,7 @@ template_new_form_1 As screen:
                 DefaultDate: =If(Checkbox1_53.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -13632,6 +13688,7 @@ template_new_form_1 As screen:
                 DefaultDate: =If(Checkbox1_54.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -13775,6 +13832,7 @@ template_new_form_1 As screen:
                 DefaultDate: =If(Checkbox1_55.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -14082,6 +14140,7 @@ template_new_form_1 As screen:
                 DefaultDate: =If(Checkbox1_56.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -14225,6 +14284,7 @@ template_new_form_1 As screen:
                 DefaultDate: =If(Checkbox1_57.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -14535,6 +14595,7 @@ template_new_form_1 As screen:
                 DefaultDate: =If(Checkbox1_58.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -14678,6 +14739,7 @@ template_new_form_1 As screen:
                 DefaultDate: =If(Checkbox1_59.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -14988,6 +15050,7 @@ template_new_form_1 As screen:
                 DefaultDate: =If(Checkbox1_60.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -15131,6 +15194,7 @@ template_new_form_1 As screen:
                 DefaultDate: =If(Checkbox1_61.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -15444,6 +15508,7 @@ template_new_form_1 As screen:
                 DefaultDate: =If(Checkbox1_62.Value =true,Today(),"")
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
