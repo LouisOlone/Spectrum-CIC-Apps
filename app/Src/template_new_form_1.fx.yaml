@@ -12463,7 +12463,10 @@ template_new_form_1 As screen:
             DataCardKey394 As label:
                 AutoHeight: =true
                 Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -12519,7 +12522,10 @@ template_new_form_1 As screen:
             DataCardKey395 As label:
                 AutoHeight: =true
                 Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -12593,7 +12599,10 @@ template_new_form_1 As screen:
             DataCardKey396 As label:
                 AutoHeight: =true
                 Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -12649,7 +12658,10 @@ template_new_form_1 As screen:
             DataCardKey397 As label:
                 AutoHeight: =true
                 Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -12716,7 +12728,10 @@ template_new_form_1 As screen:
             DataCardKey473 As label:
                 AutoHeight: =true
                 Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -12800,7 +12815,10 @@ template_new_form_1 As screen:
             DataCardKey474 As label:
                 AutoHeight: =true
                 Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -12865,7 +12883,7 @@ template_new_form_1 As screen:
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Ensurethatnewstaffmemberhasrecei")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =175
+            Height: =163
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Ensurethatnewstaffmemberhasrecei")
             Required: =false
             Update: =DataCardValue388.Text
@@ -12877,7 +12895,10 @@ template_new_form_1 As screen:
             DataCardKey398 As label:
                 AutoHeight: =true
                 Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -12912,7 +12933,7 @@ template_new_form_1 As screen:
             Checkbox1_54 As checkbox:
                 Text: ="Option"
                 X: =30
-                Y: =125
+                Y: =154
                 ZIndex: =5
 
         Date58_DataCard1 As typedDataCard.dateEditCard:
@@ -12933,7 +12954,10 @@ template_new_form_1 As screen:
             DataCardKey399 As label:
                 AutoHeight: =true
                 Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -12953,7 +12977,7 @@ template_new_form_1 As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =125
+                Y: =154
                 ZIndex: =2
 
             ErrorMessage400 As label:
@@ -13007,7 +13031,10 @@ template_new_form_1 As screen:
             DataCardKey400 As label:
                 AutoHeight: =true
                 Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -13042,7 +13069,7 @@ template_new_form_1 As screen:
             Checkbox1_55 As checkbox:
                 Text: ="Option"
                 X: =30
-                Y: =125
+                Y: =154
                 ZIndex: =5
 
         Date59_DataCard1 As typedDataCard.dateEditCard:
@@ -13063,7 +13090,10 @@ template_new_form_1 As screen:
             DataCardKey401 As label:
                 AutoHeight: =true
                 Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -13083,7 +13113,7 @@ template_new_form_1 As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =125
+                Y: =154
                 ZIndex: =2
 
             ErrorMessage402 As label:
@@ -13130,7 +13160,10 @@ template_new_form_1 As screen:
             DataCardKey475 As label:
                 AutoHeight: =true
                 Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -13214,7 +13247,10 @@ template_new_form_1 As screen:
             DataCardKey476 As label:
                 AutoHeight: =true
                 Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -13279,7 +13315,7 @@ template_new_form_1 As screen:
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Explainmandatorytrainingarrangem")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =190
+            Height: =196
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Explainmandatorytrainingarrangem")
             Required: =false
             Update: =DataCardValue392.Text
@@ -13291,7 +13327,10 @@ template_new_form_1 As screen:
             DataCardKey402 As label:
                 AutoHeight: =true
                 Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -13326,7 +13365,7 @@ template_new_form_1 As screen:
             Checkbox1_56 As checkbox:
                 Text: ="Option"
                 X: =30
-                Y: =140
+                Y: =146
                 ZIndex: =5
 
         Date60_DataCard1 As typedDataCard.dateEditCard:
@@ -13367,7 +13406,7 @@ template_new_form_1 As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =140
+                Y: =146
                 ZIndex: =2
 
             ErrorMessage404 As label:
@@ -13421,7 +13460,10 @@ template_new_form_1 As screen:
             DataCardKey404 As label:
                 AutoHeight: =true
                 Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -13456,7 +13498,7 @@ template_new_form_1 As screen:
             Checkbox1_57 As checkbox:
                 Text: ="Option"
                 X: =30
-                Y: =140
+                Y: =146
                 ZIndex: =5
 
         Date61_DataCard1 As typedDataCard.dateEditCard:
@@ -13497,7 +13539,7 @@ template_new_form_1 As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =140
+                Y: =146
                 ZIndex: =2
 
             ErrorMessage406 As label:
@@ -13544,7 +13586,10 @@ template_new_form_1 As screen:
             DataCardKey477 As label:
                 AutoHeight: =true
                 Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -13628,7 +13673,10 @@ template_new_form_1 As screen:
             DataCardKey478 As label:
                 AutoHeight: =true
                 Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -13705,7 +13753,10 @@ template_new_form_1 As screen:
             DataCardKey406 As label:
                 AutoHeight: =true
                 Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -13835,10 +13886,12 @@ template_new_form_1 As screen:
             DataCardKey408 As label:
                 AutoHeight: =true
                 Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
-                Wrap: =false
                 X: =30
                 Y: =10
                 ZIndex: =1
@@ -13959,7 +14012,10 @@ template_new_form_1 As screen:
             DataCardKey479 As label:
                 AutoHeight: =true
                 Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -14043,7 +14099,10 @@ template_new_form_1 As screen:
             DataCardKey480 As label:
                 AutoHeight: =true
                 Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -14120,10 +14179,12 @@ template_new_form_1 As screen:
             DataCardKey410 As label:
                 AutoHeight: =true
                 Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
-                Wrap: =false
                 X: =30
                 Y: =10
                 ZIndex: =1
@@ -14251,7 +14312,10 @@ template_new_form_1 As screen:
             DataCardKey412 As label:
                 AutoHeight: =true
                 Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -14374,7 +14438,10 @@ template_new_form_1 As screen:
             DataCardKey481 As label:
                 AutoHeight: =true
                 Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -14458,7 +14525,10 @@ template_new_form_1 As screen:
             DataCardKey482 As label:
                 AutoHeight: =true
                 Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -14535,7 +14605,10 @@ template_new_form_1 As screen:
             DataCardKey414 As label:
                 AutoHeight: =true
                 Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Semibold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -14666,7 +14739,10 @@ template_new_form_1 As screen:
             DataCardKey483 As label:
                 AutoHeight: =true
                 Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
