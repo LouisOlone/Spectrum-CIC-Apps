@@ -48,6 +48,8 @@ template_new_form_1 As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -118,6 +120,8 @@ template_new_form_1 As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -188,6 +192,8 @@ template_new_form_1 As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -258,6 +264,8 @@ template_new_form_1 As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -328,6 +336,8 @@ template_new_form_1 As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -398,6 +408,8 @@ template_new_form_1 As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -468,6 +480,8 @@ template_new_form_1 As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -543,6 +557,7 @@ template_new_form_1 As screen:
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
+                HoverBorderColor: =RGBA(88,89,91,1)
                 Items: =Choices([@'Induction Log'].SpectrumEmp)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
@@ -622,6 +637,7 @@ template_new_form_1 As screen:
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Claims"]
                 DisplayMode: =Parent.DisplayMode
+                HoverBorderColor: =RGBA(88,89,91,1)
                 Items: =Choices([@'Induction Log'].SpectrumEmpEmail)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Claims"]
@@ -702,6 +718,8 @@ template_new_form_1 As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -803,6 +821,7 @@ template_new_form_1 As screen:
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                HoverBorderColor: =RGBA(88,89,91,1)
                 Text: ="Done"
                 X: =30
                 Y: =104
@@ -1058,6 +1077,8 @@ template_new_form_1 As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =100
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 Mode: =TextMode.MultiLine
                 PaddingLeft: =5
@@ -1144,6 +1165,8 @@ template_new_form_1 As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =100
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 Mode: =TextMode.MultiLine
                 PaddingLeft: =5
@@ -1502,6 +1525,8 @@ template_new_form_1 As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =100
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -1587,6 +1612,8 @@ template_new_form_1 As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =100
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -1940,6 +1967,8 @@ template_new_form_1 As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =100
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -2025,6 +2054,8 @@ template_new_form_1 As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =100
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -2378,6 +2409,8 @@ template_new_form_1 As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =100
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -2463,6 +2496,8 @@ template_new_form_1 As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =100
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -2819,6 +2854,8 @@ template_new_form_1 As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =100
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -2904,6 +2941,8 @@ template_new_form_1 As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =100
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -2983,6 +3022,8 @@ template_new_form_1 As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =100
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 Mode: =TextMode.MultiLine
                 PaddingLeft: =5
@@ -3339,6 +3380,8 @@ template_new_form_1 As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =100
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -3424,6 +3467,8 @@ template_new_form_1 As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =100
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -3777,6 +3822,8 @@ template_new_form_1 As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =100
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -3862,6 +3909,8 @@ template_new_form_1 As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =100
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -4221,6 +4270,8 @@ template_new_form_1 As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =100
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -4306,6 +4357,8 @@ template_new_form_1 As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =100
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -4662,6 +4715,8 @@ template_new_form_1 As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =100
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -4747,6 +4802,8 @@ template_new_form_1 As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =100
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -5102,6 +5159,8 @@ template_new_form_1 As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =100
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -5187,6 +5246,8 @@ template_new_form_1 As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =100
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -5541,6 +5602,8 @@ template_new_form_1 As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =100
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -5626,6 +5689,8 @@ template_new_form_1 As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =100
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -5979,6 +6044,8 @@ template_new_form_1 As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =100
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -6064,6 +6131,8 @@ template_new_form_1 As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =100
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -6418,6 +6487,8 @@ template_new_form_1 As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =100
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -6503,6 +6574,8 @@ template_new_form_1 As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =100
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -6856,6 +6929,8 @@ template_new_form_1 As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =100
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -6941,6 +7016,8 @@ template_new_form_1 As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =100
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -7297,6 +7374,8 @@ template_new_form_1 As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =100
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -7382,6 +7461,8 @@ template_new_form_1 As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =100
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -7739,6 +7820,8 @@ template_new_form_1 As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =100
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -7824,6 +7907,8 @@ template_new_form_1 As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =100
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -8180,6 +8265,8 @@ template_new_form_1 As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =100
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -8265,6 +8352,8 @@ template_new_form_1 As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =100
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -8621,6 +8710,8 @@ template_new_form_1 As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =100
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -8706,6 +8797,8 @@ template_new_form_1 As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =100
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -9059,6 +9152,8 @@ template_new_form_1 As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =100
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -9144,6 +9239,8 @@ template_new_form_1 As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =100
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -9497,6 +9594,8 @@ template_new_form_1 As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =100
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -9582,6 +9681,8 @@ template_new_form_1 As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =100
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -9934,6 +10035,8 @@ template_new_form_1 As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =100
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -10019,6 +10122,8 @@ template_new_form_1 As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =100
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -10372,6 +10477,8 @@ template_new_form_1 As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =100
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -10457,6 +10564,8 @@ template_new_form_1 As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =100
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -10810,6 +10919,8 @@ template_new_form_1 As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =100
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -10895,6 +11006,8 @@ template_new_form_1 As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =100
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -11248,6 +11361,8 @@ template_new_form_1 As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =100
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -11333,6 +11448,8 @@ template_new_form_1 As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =100
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -11686,6 +11803,8 @@ template_new_form_1 As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =100
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -11771,6 +11890,8 @@ template_new_form_1 As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =100
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -12124,6 +12245,8 @@ template_new_form_1 As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =100
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -12209,6 +12332,8 @@ template_new_form_1 As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =100
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -12562,6 +12687,8 @@ template_new_form_1 As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =100
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -12647,6 +12774,8 @@ template_new_form_1 As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =100
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -13000,6 +13129,8 @@ template_new_form_1 As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =100
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -13085,6 +13216,8 @@ template_new_form_1 As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =100
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -13438,6 +13571,8 @@ template_new_form_1 As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =100
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -13523,6 +13658,8 @@ template_new_form_1 As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =100
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -13876,6 +14013,8 @@ template_new_form_1 As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =100
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -13961,6 +14100,8 @@ template_new_form_1 As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =100
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -14317,6 +14458,8 @@ template_new_form_1 As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =100
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -14402,6 +14545,8 @@ template_new_form_1 As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =100
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -14758,6 +14903,10 @@ template_new_form_1 As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =100
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: |-
+                    =	
+                    RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -14843,6 +14992,8 @@ template_new_form_1 As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =100
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -15066,6 +15217,10 @@ template_new_form_1 As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =100
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: |-
+                    =	
+                    RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
@@ -15146,6 +15301,9 @@ template_new_form_1 As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                HoverFill: |-
+                    =	
+                    RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 Tooltip: =Parent.DisplayName
