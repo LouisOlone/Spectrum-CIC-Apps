@@ -15432,7 +15432,9 @@ template_new_form_1 As screen:
                 ZIndex: =1
 
             DataCardValue406 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
