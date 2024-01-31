@@ -103,7 +103,7 @@ Dashboard As screen:
                             }
                         )
                     ),
-                                            // View New Starter Line Manager Request
+                            // View New Starter Line Manager Request
                     If(
                         ThisItem.request_type = "New Starter Form",
                         And(
@@ -117,6 +117,21 @@ Dashboard As screen:
                             UpdateContext({varLoading: false}),
                             UpdateContext({varPopUp: false}),
                             Navigate('New Starter Form - Line Manager')
+                        ),
+                            // View Induction Log
+                    If(
+                        ThisItem.request_type = "Induction Log",
+                        And(
+                            Set(
+                                varInductionLog,
+                                LookUp(
+                                    'Induction Log',
+                                    UID = ThisItem.UID
+                                )
+                            ),
+                            UpdateContext({varLoading: false}),
+                            UpdateContext({varPopUp: false}),
+                            Navigate('Induction Log Page')
                         ),
                            // View Interim Probation Form
                         If(
@@ -242,6 +257,7 @@ Dashboard As screen:
                             )
                         )
                     )
+                )
                 )
                 ;
                 // Open pop-up window
