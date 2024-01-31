@@ -653,6 +653,7 @@
             Height: =50
             Required: =false
             Update: =DataCardValue483.Selected
+            Visible: =If(DataCardValue481.Selected.Value ="Yes", true)
             Width: =321
             X: =1
             Y: =4
@@ -746,6 +747,7 @@
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "NonSpecEmail")
             Required: =false
             Update: =DataCardValue482.Text
+            Visible: =If(DataCardValue481.Selected.Value ="No", true)
             Width: =642
             X: =2
             Y: =4
