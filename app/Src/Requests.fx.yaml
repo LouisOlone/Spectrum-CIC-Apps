@@ -6845,7 +6845,10 @@ Requests As screen:
 
             DataCardKey694 As label:
                 AutoHeight: =true
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -6913,7 +6916,10 @@ Requests As screen:
 
             DataCardKey695 As label:
                 AutoHeight: =true
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -6981,7 +6987,10 @@ Requests As screen:
 
             DataCardKey696 As label:
                 AutoHeight: =true
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -7049,7 +7058,10 @@ Requests As screen:
 
             DataCardKey697 As label:
                 AutoHeight: =true
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -7116,7 +7128,10 @@ Requests As screen:
 
             DataCardKey700 As label:
                 AutoHeight: =true
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -7127,13 +7142,14 @@ Requests As screen:
             DataCardValue625 As combobox:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 DefaultSelectedItems: =Parent.Default
-                DisplayFields: =["Claims"]
+                DisplayFields: =["DisplayName","Email","Picture"]
                 DisplayMode: =Parent.DisplayMode
                 Items: =Choices([@'Induction Log'].SpectrumEmpEmail)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Claims"]
                 SearchItems: =Choices('Induction Log'.SpectrumEmpEmail,DataCardValue625.SearchText)
                 SelectMultiple: =false
+                Template: =ListItemTemplate.Person
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -7182,7 +7198,10 @@ Requests As screen:
 
             DataCardKey698 As label:
                 AutoHeight: =true
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -7249,7 +7268,10 @@ Requests As screen:
 
             DataCardKey699 As label:
                 AutoHeight: =true
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
