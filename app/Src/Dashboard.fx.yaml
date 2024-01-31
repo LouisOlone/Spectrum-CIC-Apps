@@ -274,7 +274,6 @@ Dashboard As screen:
                     ThisItem.request_type = "Final Probation Form",
                     UpdateContext({varPopUp: false})
                 );
-                ;
                 If(
                     ThisItem.request_type = "Induction Log",
                     UpdateContext({varPopUp: false})

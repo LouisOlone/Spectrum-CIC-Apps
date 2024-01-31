@@ -126,6 +126,20 @@ Requests As screen:
                                 }
                             )
                         ),
+                            // View Induction Log
+                    If(
+                        ThisItem.request_type = "Induction Log",
+                        And(
+                            UpdateContext({varInductionLogForm: true}),
+                            UpdateContext(
+                                {
+                                    varInductionLogDetails: LookUp(
+                                        'Induction Log',
+                                        UID = ThisItem.UID
+                                    )
+                                }
+                            )
+                        ),
                         // View Mobile Request
                         If(
                             ThisItem.request_type = "Mobile",
