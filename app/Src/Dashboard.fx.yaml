@@ -273,6 +273,11 @@ Dashboard As screen:
                 If(
                     ThisItem.request_type = "Final Probation Form",
                     UpdateContext({varPopUp: false})
+                );
+                ;
+                If(
+                    ThisItem.request_type = "Induction Log",
+                    UpdateContext({varPopUp: false})
                 )
             PaddingBottom: =12
             PaddingLeft: =12
