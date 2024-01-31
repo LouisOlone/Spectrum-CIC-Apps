@@ -6632,7 +6632,10 @@ Requests As screen:
 
             DataCardKey702 As label:
                 AutoHeight: =true
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -6700,7 +6703,10 @@ Requests As screen:
 
             DataCardKey273 As label:
                 AutoHeight: =true
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -6768,7 +6774,10 @@ Requests As screen:
 
             DataCardKey693 As label:
                 AutoHeight: =true
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -6952,6 +6961,208 @@ Requests As screen:
                 Width: =30
                 Wrap: =false
                 Y: =DataCardKey695.Y
+                ZIndex: =4
+
+        Site_DataCard8 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Site"
+            Default: =ThisItem.Site
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Site")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Site")
+            Required: =false
+            Update: =DataCardValue621.Text
+            Width: =374
+            X: =0
+            Y: =5
+            ZIndex: =59
+
+            DataCardKey696 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue621 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey696.Y + DataCardKey696.Height + 5
+                ZIndex: =2
+
+            ErrorMessage697 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue621.Y + DataCardValue621.Height
+                ZIndex: =3
+
+            StarVisible697 As label:
+                Align: =Align.Center
+                Height: =DataCardKey696.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey696.Y
+                ZIndex: =4
+
+        Team_DataCard8 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Team"
+            Default: =ThisItem.Team
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Team")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Team")
+            Required: =false
+            Update: =DataCardValue622.Text
+            Width: =374
+            X: =0
+            Y: =6
+            ZIndex: =59
+
+            DataCardKey697 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue622 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey697.Y + DataCardKey697.Height + 5
+                ZIndex: =2
+
+            ErrorMessage698 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue622.Y + DataCardValue622.Height
+                ZIndex: =3
+
+            StarVisible698 As label:
+                Align: =Align.Center
+                Height: =DataCardKey697.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey697.Y
+                ZIndex: =4
+
+        SpectrumEmpEmail_DataCard2 As typedDataCard.comboBoxEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="SpectrumEmpEmail"
+            Default: =ThisItem.SpectrumEmpEmail
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"SpectrumEmpEmail")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue625.Selected
+            Width: =374
+            X: =0
+            Y: =7
+            ZIndex: =59
+
+            DataCardKey700 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue625 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["Claims"]
+                DisplayMode: =Parent.DisplayMode
+                Items: =Choices([@'Induction Log'].SpectrumEmpEmail)
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["Claims"]
+                SearchItems: =Choices('Induction Log'.SpectrumEmpEmail,DataCardValue625.SearchText)
+                SelectMultiple: =false
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey700.Y + DataCardKey700.Height + 5
+                ZIndex: =2
+
+            ErrorMessage701 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue625.Y + DataCardValue625.Height
+                ZIndex: =3
+
+            StarVisible701 As label:
+                Align: =Align.Center
+                Height: =DataCardKey700.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey700.Y
                 ZIndex: =4
 
         SpectrumEmp_DataCard2 As typedDataCard.comboBoxEditCard:
@@ -11725,208 +11936,6 @@ Requests As screen:
                 Width: =30
                 Wrap: =false
                 Y: =DataCardKey624.Y
-                ZIndex: =4
-
-        Site_DataCard8 As typedDataCard.textualEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="Site"
-            Default: =ThisItem.Site
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Site")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Site")
-            Required: =false
-            Update: =DataCardValue621.Text
-            Width: =374
-            X: =0
-            Y: =5
-            ZIndex: =59
-
-            DataCardKey696 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue621 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey696.Y + DataCardKey696.Height + 5
-                ZIndex: =2
-
-            ErrorMessage697 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue621.Y + DataCardValue621.Height
-                ZIndex: =3
-
-            StarVisible697 As label:
-                Align: =Align.Center
-                Height: =DataCardKey696.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey696.Y
-                ZIndex: =4
-
-        Team_DataCard8 As typedDataCard.textualEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="Team"
-            Default: =ThisItem.Team
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Team")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Team")
-            Required: =false
-            Update: =DataCardValue622.Text
-            Width: =374
-            X: =0
-            Y: =6
-            ZIndex: =59
-
-            DataCardKey697 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue622 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey697.Y + DataCardKey697.Height + 5
-                ZIndex: =2
-
-            ErrorMessage698 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue622.Y + DataCardValue622.Height
-                ZIndex: =3
-
-            StarVisible698 As label:
-                Align: =Align.Center
-                Height: =DataCardKey697.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey697.Y
-                ZIndex: =4
-
-        SpectrumEmpEmail_DataCard2 As typedDataCard.comboBoxEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="SpectrumEmpEmail"
-            Default: =ThisItem.SpectrumEmpEmail
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"SpectrumEmpEmail")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            Required: =false
-            Update: =DataCardValue625.Selected
-            Width: =374
-            X: =0
-            Y: =7
-            ZIndex: =59
-
-            DataCardKey700 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue625 As combobox:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultSelectedItems: =Parent.Default
-                DisplayFields: =["Claims"]
-                DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@'Induction Log'].SpectrumEmpEmail)
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                SearchFields: =["Claims"]
-                SearchItems: =Choices('Induction Log'.SpectrumEmpEmail,DataCardValue625.SearchText)
-                SelectMultiple: =false
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey700.Y + DataCardKey700.Height + 5
-                ZIndex: =2
-
-            ErrorMessage701 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue625.Y + DataCardValue625.Height
-                ZIndex: =3
-
-            StarVisible701 As label:
-                Align: =Align.Center
-                Height: =DataCardKey700.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey700.Y
                 ZIndex: =4
 
     Timeline As group:
