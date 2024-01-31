@@ -5,7 +5,12 @@
     Form1_3 As form:
         DataSource: ='Induction Log'
         Height: =538
+        Item: =varInductionLog
         NumberOfColumns: =4
+        OnSuccess: |-
+            =ResetForm(Form1_3);
+            
+            Navigate('Success Screen')
         Width: =1284
         X: =25
         Y: =151
@@ -15729,6 +15734,7 @@
         FontColor: =
         FontSize: =20
         Height: =44
+        OnSelect: =SubmitForm(Form1_3)
         Text: ="Submit"
         Width: =136
         X: =1187
@@ -15756,6 +15762,11 @@
         FontColor: =
         FontSize: =20
         Height: =44
+        OnSelect: |-
+            =	
+            ResetForm(Form1_3);
+            
+            Navigate(Dashboard)
         Text: ="Cancel"
         Width: =136
         X: =1030
