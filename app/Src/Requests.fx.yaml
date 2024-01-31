@@ -7339,7 +7339,10 @@ Requests As screen:
 
             DataCardKey417 As label:
                 AutoHeight: =true
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -7406,7 +7409,10 @@ Requests As screen:
 
             DataCardKey428 As label:
                 AutoHeight: =true
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -7473,7 +7479,10 @@ Requests As screen:
 
             DataCardKey485 As label:
                 AutoHeight: =true
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -7540,7 +7549,10 @@ Requests As screen:
 
             DataCardKey494 As label:
                 AutoHeight: =true
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -7607,7 +7619,10 @@ Requests As screen:
 
             DataCardKey495 As label:
                 AutoHeight: =true
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -7674,7 +7689,10 @@ Requests As screen:
 
             DataCardKey496 As label:
                 AutoHeight: =true
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -7741,7 +7759,10 @@ Requests As screen:
 
             DataCardKey497 As label:
                 AutoHeight: =true
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -7808,7 +7829,10 @@ Requests As screen:
 
             DataCardKey498 As label:
                 AutoHeight: =true
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -7875,7 +7899,10 @@ Requests As screen:
 
             DataCardKey499 As label:
                 AutoHeight: =true
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -7942,7 +7969,10 @@ Requests As screen:
 
             DataCardKey500 As label:
                 AutoHeight: =true
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -8010,7 +8040,10 @@ Requests As screen:
 
             DataCardKey501 As label:
                 AutoHeight: =true
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -8077,7 +8110,10 @@ Requests As screen:
 
             DataCardKey502 As label:
                 AutoHeight: =true
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -8126,74 +8162,6 @@ Requests As screen:
                 Y: =DataCardKey502.Y
                 ZIndex: =4
 
-        EmployeeFirstName_DataCard2 As typedDataCard.textualEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="StartersName"
-            Default: =ThisItem.EmployeeFirstName
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"StartersName")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "StartersName")
-            Required: =false
-            Update: =DataCardValue616.Text
-            Width: =374
-            X: =0
-            Y: =22
-            ZIndex: =59
-
-            DataCardKey691 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue616 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey691.Y + DataCardKey691.Height + 5
-                ZIndex: =2
-
-            ErrorMessage692 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue616.Y + DataCardValue616.Height
-                ZIndex: =3
-
-            StarVisible692 As label:
-                Align: =Align.Center
-                Height: =DataCardKey691.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey691.Y
-                ZIndex: =4
-
         "'Issue keys/fobs and pin numbers if appropriate_DataCard2' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="Issuekeys_x002f_fobsandpinnumber"
@@ -8207,12 +8175,15 @@ Requests As screen:
             Update: =DataCardValue268.Text
             Width: =374
             X: =0
-            Y: =23
+            Y: =22
             ZIndex: =59
 
             DataCardKey503 As label:
                 AutoHeight: =true
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -8274,12 +8245,15 @@ Requests As screen:
             Update: =DataCardValue296.Text
             Width: =374
             X: =0
-            Y: =24
+            Y: =23
             ZIndex: =59
 
             DataCardKey517 As label:
                 AutoHeight: =true
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -8341,12 +8315,15 @@ Requests As screen:
             Update: =DataCardValue300.Text
             Width: =374
             X: =0
-            Y: =25
+            Y: =24
             ZIndex: =59
 
             DataCardKey519 As label:
                 AutoHeight: =true
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -8408,12 +8385,15 @@ Requests As screen:
             Update: =DataCardValue304.Text
             Width: =374
             X: =0
-            Y: =26
+            Y: =25
             ZIndex: =59
 
             DataCardKey521 As label:
                 AutoHeight: =true
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -8475,12 +8455,15 @@ Requests As screen:
             Update: =DataCardValue336.Text
             Width: =374
             X: =0
-            Y: =27
+            Y: =26
             ZIndex: =59
 
             DataCardKey523 As label:
                 AutoHeight: =true
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -8542,12 +8525,15 @@ Requests As screen:
             Update: =DataCardValue344.Text
             Width: =374
             X: =0
-            Y: =28
+            Y: =27
             ZIndex: =59
 
             DataCardKey525 As label:
                 AutoHeight: =true
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -8609,12 +8595,15 @@ Requests As screen:
             Update: =DataCardValue348.Text
             Width: =374
             X: =0
-            Y: =29
+            Y: =28
             ZIndex: =59
 
             DataCardKey527 As label:
                 AutoHeight: =true
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -8676,12 +8665,15 @@ Requests As screen:
             Update: =DataCardValue352.Text
             Width: =374
             X: =0
-            Y: =30
+            Y: =29
             ZIndex: =59
 
             DataCardKey529 As label:
                 AutoHeight: =true
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -8744,12 +8736,15 @@ Requests As screen:
             Update: =DataCardValue356.Text
             Width: =374
             X: =0
-            Y: =31
+            Y: =30
             ZIndex: =59
 
             DataCardKey531 As label:
                 AutoHeight: =true
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -8811,12 +8806,15 @@ Requests As screen:
             Update: =DataCardValue360.Text
             Width: =374
             X: =0
-            Y: =32
+            Y: =31
             ZIndex: =59
 
             DataCardKey533 As label:
                 AutoHeight: =true
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -8879,7 +8877,7 @@ Requests As screen:
             Update: =DataCardValue364.Text
             Width: =374
             X: =0
-            Y: =33
+            Y: =32
             ZIndex: =59
 
             DataCardKey535 As label:
@@ -8946,7 +8944,7 @@ Requests As screen:
             Update: =DataCardValue368.Text
             Width: =374
             X: =0
-            Y: =34
+            Y: =33
             ZIndex: =59
 
             DataCardKey537 As label:
@@ -9014,7 +9012,7 @@ Requests As screen:
             Update: =DataCardValue372.Text
             Width: =374
             X: =0
-            Y: =35
+            Y: =34
             ZIndex: =59
 
             DataCardKey539 As label:
@@ -9081,7 +9079,7 @@ Requests As screen:
             Update: =DataCardValue376.Text
             Width: =374
             X: =0
-            Y: =36
+            Y: =35
             ZIndex: =59
 
             DataCardKey541 As label:
@@ -9149,7 +9147,7 @@ Requests As screen:
             Update: =DataCardValue380.Text
             Width: =374
             X: =0
-            Y: =37
+            Y: =36
             ZIndex: =59
 
             DataCardKey543 As label:
@@ -9216,7 +9214,7 @@ Requests As screen:
             Update: =DataCardValue384.Text
             Width: =374
             X: =0
-            Y: =38
+            Y: =37
             ZIndex: =59
 
             DataCardKey545 As label:
@@ -9283,7 +9281,7 @@ Requests As screen:
             Update: =DataCardValue388.Text
             Width: =374
             X: =0
-            Y: =39
+            Y: =38
             ZIndex: =59
 
             DataCardKey547 As label:
@@ -9350,7 +9348,7 @@ Requests As screen:
             Update: =DataCardValue392.Text
             Width: =374
             X: =0
-            Y: =40
+            Y: =39
             ZIndex: =59
 
             DataCardKey549 As label:
@@ -9417,7 +9415,7 @@ Requests As screen:
             Update: =DataCardValue396.Text
             Width: =374
             X: =0
-            Y: =41
+            Y: =40
             ZIndex: =59
 
             DataCardKey551 As label:
@@ -9484,7 +9482,7 @@ Requests As screen:
             Update: =DataCardValue400.Text
             Width: =374
             X: =0
-            Y: =42
+            Y: =41
             ZIndex: =59
 
             DataCardKey553 As label:
@@ -9551,7 +9549,7 @@ Requests As screen:
             Update: =DataCardValue404.Text
             Width: =374
             X: =0
-            Y: =43
+            Y: =42
             ZIndex: =59
 
             DataCardKey555 As label:
@@ -9618,7 +9616,7 @@ Requests As screen:
             Update: =DataCardValue418.Text
             Width: =374
             X: =0
-            Y: =44
+            Y: =43
             ZIndex: =59
 
             DataCardKey557 As label:
@@ -9685,7 +9683,7 @@ Requests As screen:
             Update: =DataCardValue484.Text
             Width: =374
             X: =0
-            Y: =45
+            Y: =44
             ZIndex: =59
 
             DataCardKey559 As label:
@@ -9752,7 +9750,7 @@ Requests As screen:
             Update: =DataCardValue486.Text
             Width: =374
             X: =0
-            Y: =46
+            Y: =45
             ZIndex: =59
 
             DataCardKey561 As label:
@@ -9819,7 +9817,7 @@ Requests As screen:
             Update: =DataCardValue488.Text
             Width: =374
             X: =0
-            Y: =47
+            Y: =46
             ZIndex: =59
 
             DataCardKey563 As label:
@@ -9887,7 +9885,7 @@ Requests As screen:
             Update: =DataCardValue490.Text
             Width: =374
             X: =0
-            Y: =48
+            Y: =47
             ZIndex: =59
 
             DataCardKey565 As label:
@@ -9954,7 +9952,7 @@ Requests As screen:
             Update: =DataCardValue492.Text
             Width: =374
             X: =0
-            Y: =49
+            Y: =48
             ZIndex: =59
 
             DataCardKey567 As label:
@@ -10021,7 +10019,7 @@ Requests As screen:
             Update: =DataCardValue494.Text
             Width: =374
             X: =0
-            Y: =50
+            Y: =49
             ZIndex: =59
 
             DataCardKey569 As label:
@@ -10088,7 +10086,7 @@ Requests As screen:
             Update: =DataCardValue496.Text
             Width: =374
             X: =0
-            Y: =51
+            Y: =50
             ZIndex: =59
 
             DataCardKey571 As label:
@@ -10155,7 +10153,7 @@ Requests As screen:
             Update: =DataCardValue498.Text
             Width: =374
             X: =0
-            Y: =52
+            Y: =51
             ZIndex: =59
 
             DataCardKey573 As label:
@@ -10223,7 +10221,7 @@ Requests As screen:
             Update: =DataCardValue500.Text
             Width: =374
             X: =0
-            Y: =53
+            Y: =52
             ZIndex: =59
 
             DataCardKey575 As label:
@@ -10290,7 +10288,7 @@ Requests As screen:
             Update: =DataCardValue502.Text
             Width: =374
             X: =0
-            Y: =54
+            Y: =53
             ZIndex: =59
 
             DataCardKey577 As label:
@@ -10357,7 +10355,7 @@ Requests As screen:
             Update: =DataCardValue504.Text
             Width: =374
             X: =0
-            Y: =55
+            Y: =54
             ZIndex: =59
 
             DataCardKey579 As label:
@@ -10424,7 +10422,7 @@ Requests As screen:
             Update: =DataCardValue506.Text
             Width: =374
             X: =0
-            Y: =56
+            Y: =55
             ZIndex: =59
 
             DataCardKey581 As label:
@@ -10491,7 +10489,7 @@ Requests As screen:
             Update: =DataCardValue508.Text
             Width: =374
             X: =0
-            Y: =57
+            Y: =56
             ZIndex: =59
 
             DataCardKey583 As label:
@@ -10558,7 +10556,7 @@ Requests As screen:
             Update: =DataCardValue510.Text
             Width: =374
             X: =0
-            Y: =58
+            Y: =57
             ZIndex: =59
 
             DataCardKey585 As label:
@@ -10625,7 +10623,7 @@ Requests As screen:
             Update: =DataCardValue512.Text
             Width: =374
             X: =0
-            Y: =59
+            Y: =58
             ZIndex: =59
 
             DataCardKey587 As label:
@@ -10692,7 +10690,7 @@ Requests As screen:
             Update: =DataCardValue514.Text
             Width: =374
             X: =0
-            Y: =60
+            Y: =59
             ZIndex: =59
 
             DataCardKey589 As label:
@@ -10760,7 +10758,7 @@ Requests As screen:
             Update: =DataCardValue516.Text
             Width: =374
             X: =0
-            Y: =61
+            Y: =60
             ZIndex: =59
 
             DataCardKey591 As label:
@@ -10827,7 +10825,7 @@ Requests As screen:
             Update: =DataCardValue518.Text
             Width: =374
             X: =0
-            Y: =62
+            Y: =61
             ZIndex: =59
 
             DataCardKey593 As label:
@@ -10894,7 +10892,7 @@ Requests As screen:
             Update: =DataCardValue520.Text
             Width: =374
             X: =0
-            Y: =63
+            Y: =62
             ZIndex: =59
 
             DataCardKey595 As label:
@@ -10961,7 +10959,7 @@ Requests As screen:
             Update: =DataCardValue522.Text
             Width: =374
             X: =0
-            Y: =64
+            Y: =63
             ZIndex: =59
 
             DataCardKey597 As label:
@@ -11029,7 +11027,7 @@ Requests As screen:
             Update: =DataCardValue524.Text
             Width: =374
             X: =0
-            Y: =65
+            Y: =64
             ZIndex: =59
 
             DataCardKey599 As label:
@@ -11096,7 +11094,7 @@ Requests As screen:
             Update: =DataCardValue526.Text
             Width: =374
             X: =0
-            Y: =66
+            Y: =65
             ZIndex: =59
 
             DataCardKey601 As label:
@@ -11163,7 +11161,7 @@ Requests As screen:
             Update: =DataCardValue528.Text
             Width: =374
             X: =0
-            Y: =67
+            Y: =66
             ZIndex: =59
 
             DataCardKey603 As label:
@@ -11230,7 +11228,7 @@ Requests As screen:
             Update: =DataCardValue530.Text
             Width: =374
             X: =0
-            Y: =68
+            Y: =67
             ZIndex: =59
 
             DataCardKey605 As label:
@@ -11297,7 +11295,7 @@ Requests As screen:
             Update: =DataCardValue532.Text
             Width: =374
             X: =0
-            Y: =69
+            Y: =68
             ZIndex: =59
 
             DataCardKey607 As label:
@@ -11364,7 +11362,7 @@ Requests As screen:
             Update: =DataCardValue534.Text
             Width: =374
             X: =0
-            Y: =70
+            Y: =69
             ZIndex: =59
 
             DataCardKey609 As label:
@@ -11431,7 +11429,7 @@ Requests As screen:
             Update: =DataCardValue536.Text
             Width: =374
             X: =0
-            Y: =71
+            Y: =70
             ZIndex: =59
 
             DataCardKey611 As label:
@@ -11498,7 +11496,7 @@ Requests As screen:
             Update: =DataCardValue538.Text
             Width: =374
             X: =0
-            Y: =72
+            Y: =71
             ZIndex: =59
 
             DataCardKey613 As label:
@@ -11565,7 +11563,7 @@ Requests As screen:
             Update: =DataCardValue540.Text
             Width: =374
             X: =0
-            Y: =73
+            Y: =72
             ZIndex: =59
 
             DataCardKey615 As label:
@@ -11633,7 +11631,7 @@ Requests As screen:
             Update: =DataCardValue542.Text
             Width: =374
             X: =0
-            Y: =74
+            Y: =73
             ZIndex: =59
 
             DataCardKey617 As label:
@@ -11701,7 +11699,7 @@ Requests As screen:
             Update: =DataCardValue544.Text
             Width: =374
             X: =0
-            Y: =75
+            Y: =74
             ZIndex: =59
 
             DataCardKey619 As label:
@@ -11769,7 +11767,7 @@ Requests As screen:
             Update: =DataCardValue546.Text
             Width: =374
             X: =0
-            Y: =76
+            Y: =75
             ZIndex: =59
 
             DataCardKey621 As label:
@@ -11837,7 +11835,7 @@ Requests As screen:
             Update: =DataCardValue548.Text
             Width: =374
             X: =0
-            Y: =77
+            Y: =76
             ZIndex: =59
 
             DataCardKey623 As label:
@@ -11905,7 +11903,7 @@ Requests As screen:
             Update: =DataCardValue549.Text
             Width: =374
             X: =0
-            Y: =78
+            Y: =77
             ZIndex: =59
 
             DataCardKey624 As label:
