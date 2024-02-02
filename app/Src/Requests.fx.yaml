@@ -3783,12 +3783,12 @@ Requests As screen:
 
             DataCardKey1 As label:
                 AutoHeight: =true
-                Color: =RGBA(77,164,65,1)
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =Color.Black
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -3802,19 +3802,21 @@ Requests As screen:
                 DelayOutput: =true
                 DisabledColor: =Color.Black
                 DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
-                Size: =12
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =46
+                Y: =41
                 ZIndex: =2
 
             ErrorMessage1 As label:
@@ -3860,11 +3862,11 @@ Requests As screen:
 
             DataCardKey42 As label:
                 AutoHeight: =true
-                Color: =RGBA(77,164,65,1)
+                Color: =RGBA(0, 0, 0, 1)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: ="First Name"
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -3877,9 +3879,10 @@ Requests As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
-                Height: =21
+                Height: =25
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
@@ -3888,11 +3891,11 @@ Requests As screen:
                 PaddingTop: =0
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
-                Size: =12
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =46
+                Y: =41
                 ZIndex: =2
 
             ErrorMessage42 As label:
@@ -3938,11 +3941,11 @@ Requests As screen:
 
             DataCardKey43 As label:
                 AutoHeight: =true
-                Color: =RGBA(77,164,65,1)
+                Color: =RGBA(0, 0, 0, 1)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: ="Last Name"
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -3955,19 +3958,21 @@ Requests As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
-                Size: =12
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =46
+                Y: =41
                 ZIndex: =2
 
             ErrorMessage43 As label:
@@ -4012,11 +4017,11 @@ Requests As screen:
 
             DataCardKey41 As label:
                 AutoHeight: =true
-                Color: =RGBA(77,164,65,1)
+                Color: =RGBA(0, 0, 0, 1)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: ="Supervisor"
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -4029,17 +4034,19 @@ Requests As screen:
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Email"]
                 DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 IsSearchable: =false
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Claims"]
                 SearchItems: =[]
                 SelectMultiple: =false
-                Size: =12
+                Size: =10
                 Template: =ListItemTemplate.Person
                 Tooltip: =Parent.DisplayName
-                Width: =344
+                Width: =314
                 X: =30
                 Y: =DataCardKey41.Y + DataCardKey41.Height + 5
                 ZIndex: =2
@@ -4087,12 +4094,12 @@ Requests As screen:
 
             DataCardKey55 As label:
                 AutoHeight: =true
-                Color: =RGBA(77,164,65,1)
+                Color: =RGBA(0, 0, 0, 1)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
-                Text: =Parent.DisplayName
+                Size: =11
+                Text: ="Job Title"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -4104,15 +4111,17 @@ Requests As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
-                Size: =12
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -4161,12 +4170,12 @@ Requests As screen:
 
             DataCardKey56 As label:
                 AutoHeight: =true
-                Color: =RGBA(77,164,65,1)
+                Color: =RGBA(0, 0, 0, 1)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
-                Text: =Parent.DisplayName
+                Size: =11
+                Text: ="Assignment Type"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -4178,8 +4187,10 @@ Requests As screen:
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: =RGBA(88,89,91,0.01)
                 Items: =Choices([@NewStarterForm].AssignmentType)
@@ -4189,7 +4200,7 @@ Requests As screen:
                 SearchFields: =["Value"]
                 SearchItems: =Choices(NewStarterForm.AssignmentType,DataCardValue56.SearchText)
                 SelectMultiple: =false
-                Size: =12
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -4239,11 +4250,11 @@ Requests As screen:
 
             DataCardKey178 As label:
                 AutoHeight: =true
-                Color: =RGBA(77,164,65,1)
+                Color: =RGBA(0, 0, 0, 1)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -4256,15 +4267,17 @@ Requests As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
-                Size: =12
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -4314,11 +4327,11 @@ Requests As screen:
 
             DataCardKey57 As label:
                 AutoHeight: =true
-                Color: =RGBA(77,164,65,1)
+                Color: =RGBA(0, 0, 0, 1)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -4331,15 +4344,17 @@ Requests As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
-                Size: =12
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -4389,11 +4404,11 @@ Requests As screen:
 
             DataCardKey59 As label:
                 AutoHeight: =true
-                Color: =RGBA(77,164,65,1)
+                Color: =RGBA(0, 0, 0, 1)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -4406,15 +4421,17 @@ Requests As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
-                Size: =12
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -4464,11 +4481,11 @@ Requests As screen:
 
             DataCardKey175 As label:
                 AutoHeight: =true
-                Color: =RGBA(77,164,65,1)
+                Color: =RGBA(0, 0, 0, 1)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -4481,15 +4498,17 @@ Requests As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
-                Size: =12
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -4538,12 +4557,12 @@ Requests As screen:
 
             DataCardKey176 As label:
                 AutoHeight: =true
-                Color: =RGBA(77,164,65,1)
+                Color: =RGBA(0, 0, 0, 1)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
-                Text: =Parent.DisplayName
+                Size: =11
+                Text: ="Start Date"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -4555,13 +4574,15 @@ Requests As screen:
                 DefaultDate: =Parent.Default
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                Size: =12
+                Size: =10
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -4611,12 +4632,12 @@ Requests As screen:
 
             DataCardKey177 As label:
                 AutoHeight: =true
-                Color: =RGBA(77,164,65,1)
+                Color: =RGBA(0, 0, 0, 1)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
-                Text: =Parent.DisplayName
+                Size: =11
+                Text: ="End Date"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -4628,13 +4649,15 @@ Requests As screen:
                 DefaultDate: =Parent.Default
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                Size: =12
+                Size: =10
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -7140,6 +7163,151 @@ Requests As screen:
                 Width: =30
                 Wrap: =false
                 Y: =DataCardKey697.Y
+                ZIndex: =4
+
+        SpectrumEmp_DataCard2 As typedDataCard.comboBoxEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="SpectrumEmp"
+            Default: =ThisItem.SpectrumEmp
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"SpectrumEmp")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue623.Selected
+            Width: =374
+            X: =0
+            Y: =7
+            ZIndex: =59
+
+            DataCardKey698 As label:
+                AutoHeight: =true
+                Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Size: =14
+                Text: ="Spectrum Employee"
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue623 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["Value"]
+                DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
+                Items: =Choices([@'Induction Log'].SpectrumEmp)
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["Value"]
+                SearchItems: =Choices('Induction Log'.SpectrumEmp,DataCardValue623.SearchText)
+                SelectMultiple: =false
+                Size: =12
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey698.Y + DataCardKey698.Height + 5
+                ZIndex: =2
+
+            ErrorMessage699 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue623.Y + DataCardValue623.Height
+                ZIndex: =3
+
+            StarVisible699 As label:
+                Align: =Align.Center
+                Height: =DataCardKey698.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey698.Y
+                ZIndex: =4
+
+        SpectrumEmpEmail_DataCard2 As typedDataCard.comboBoxEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="SpectrumEmpEmail"
+            Default: =ThisItem.SpectrumEmpEmail
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"SpectrumEmpEmail")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue625.Selected
+            Width: =374
+            X: =0
+            Y: =8
+            ZIndex: =59
+
+            DataCardKey700 As label:
+                AutoHeight: =true
+                Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Size: =14
+                Text: ="Spectrum Employee Email"
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue625 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["Email","Email","Picture"]
+                DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
+                Items: =Choices([@'Induction Log'].SpectrumEmpEmail)
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["Claims"]
+                SearchItems: =Choices('Induction Log'.SpectrumEmpEmail,DataCardValue625.SearchText)
+                SelectMultiple: =false
+                Size: =12
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey700.Y + DataCardKey700.Height + 5
+                ZIndex: =2
+
+            ErrorMessage701 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue625.Y + DataCardValue625.Height
+                ZIndex: =3
+
+            StarVisible701 As label:
+                Align: =Align.Center
+                Height: =DataCardKey700.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey700.Y
                 ZIndex: =4
 
         NonSpecEmail_DataCard2 As typedDataCard.textualEditCard:
@@ -12262,151 +12430,6 @@ Requests As screen:
                 Y: =DataCardKey624.Y
                 ZIndex: =4
 
-        SpectrumEmp_DataCard2 As typedDataCard.comboBoxEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="SpectrumEmp"
-            Default: =ThisItem.SpectrumEmp
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"SpectrumEmp")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            Required: =false
-            Update: =DataCardValue623.Selected
-            Width: =374
-            X: =0
-            Y: =7
-            ZIndex: =59
-
-            DataCardKey698 As label:
-                AutoHeight: =true
-                Color: =RGBA(77,164,65,1)
-                Font: =Font.Arial
-                FontWeight: =FontWeight.Bold
-                Height: =34
-                Size: =14
-                Text: ="Spectrum Employee"
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue623 As combobox:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultSelectedItems: =Parent.Default
-                DisplayFields: =["Value"]
-                DisplayMode: =Parent.DisplayMode
-                Font: =Font.Arial
-                FontWeight: =FontWeight.Lighter
-                Items: =Choices([@'Induction Log'].SpectrumEmp)
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                SearchFields: =["Value"]
-                SearchItems: =Choices('Induction Log'.SpectrumEmp,DataCardValue623.SearchText)
-                SelectMultiple: =false
-                Size: =12
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey698.Y + DataCardKey698.Height + 5
-                ZIndex: =2
-
-            ErrorMessage699 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue623.Y + DataCardValue623.Height
-                ZIndex: =3
-
-            StarVisible699 As label:
-                Align: =Align.Center
-                Height: =DataCardKey698.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey698.Y
-                ZIndex: =4
-
-        SpectrumEmpEmail_DataCard2 As typedDataCard.comboBoxEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="SpectrumEmpEmail"
-            Default: =ThisItem.SpectrumEmpEmail
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"SpectrumEmpEmail")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            Required: =false
-            Update: =DataCardValue625.Selected
-            Width: =374
-            X: =0
-            Y: =8
-            ZIndex: =59
-
-            DataCardKey700 As label:
-                AutoHeight: =true
-                Color: =RGBA(77,164,65,1)
-                Font: =Font.Arial
-                FontWeight: =FontWeight.Bold
-                Height: =34
-                Size: =14
-                Text: ="Spectrum Employee Email"
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue625 As combobox:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultSelectedItems: =Parent.Default
-                DisplayFields: =["Email","Email","Picture"]
-                DisplayMode: =Parent.DisplayMode
-                Font: =Font.Arial
-                FontWeight: =FontWeight.Lighter
-                Items: =Choices([@'Induction Log'].SpectrumEmpEmail)
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                SearchFields: =["Claims"]
-                SearchItems: =Choices('Induction Log'.SpectrumEmpEmail,DataCardValue625.SearchText)
-                SelectMultiple: =false
-                Size: =12
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey700.Y + DataCardKey700.Height + 5
-                ZIndex: =2
-
-            ErrorMessage701 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue625.Y + DataCardValue625.Height
-                ZIndex: =3
-
-            StarVisible701 As label:
-                Align: =Align.Center
-                Height: =DataCardKey700.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey700.Y
-                ZIndex: =4
-
     Timeline As group:
         Height: =5
         Width: =5
@@ -12701,29 +12724,22 @@ Requests As screen:
                     gal_requests.Selected.request_type = "Interim Probation Form",
                     "Interim Form Completion",
                     If(
-                        gal_requests.Selected.request_type = "Induction Log",
-                        "Manager Section Completion",
+                        gal_requests.Selected.request_type = "New Starter Form",
+                        "Manager Form Completion",
                         If(
-                            gal_requests.Selected.request_type = "IT Incident",
-                            "Logged with IT",
+                            gal_requests.Selected.request_type = "Induction Log",
+                            "Manager Section Completion",
                             If(
-                                gal_requests.Selected.request_type = "Laptop Request",
-                                "Line Manager Approval",
+                                gal_requests.Selected.request_type = "IT Incident",
+                                "Logged with IT",
                                 If(
-                                    gal_requests.Selected.request_type = "4G Laptop",
+                                    gal_requests.Selected.request_type = "Laptop Request",
                                     "Line Manager Approval",
                                     If(
-                                        gal_requests.Selected.request_type = "Mobile",
+                                        gal_requests.Selected.request_type = "4G Laptop",
                                         "Line Manager Approval",
                                         If(
-                                            And(
-                                                gal_requests.Selected.request_type = "Peripherals",
-                                                LookUp(
-                                                    'Peripherals Requests',
-                                                    gal_requests.Selected.UID = UID,
-                                                    keyboard_count
-                                                ) = "10+ (Please specify amount in further detail section)"
-                                            ),
+                                            gal_requests.Selected.request_type = "Mobile",
                                             "Line Manager Approval",
                                             If(
                                                 And(
@@ -12731,7 +12747,7 @@ Requests As screen:
                                                     LookUp(
                                                         'Peripherals Requests',
                                                         gal_requests.Selected.UID = UID,
-                                                        headset_count
+                                                        keyboard_count
                                                     ) = "10+ (Please specify amount in further detail section)"
                                                 ),
                                                 "Line Manager Approval",
@@ -12741,7 +12757,7 @@ Requests As screen:
                                                         LookUp(
                                                             'Peripherals Requests',
                                                             gal_requests.Selected.UID = UID,
-                                                            mouse_count
+                                                            headset_count
                                                         ) = "10+ (Please specify amount in further detail section)"
                                                     ),
                                                     "Line Manager Approval",
@@ -12751,22 +12767,20 @@ Requests As screen:
                                                             LookUp(
                                                                 'Peripherals Requests',
                                                                 gal_requests.Selected.UID = UID,
-                                                                monitor_count
+                                                                mouse_count
                                                             ) = "10+ (Please specify amount in further detail section)"
                                                         ),
                                                         "Line Manager Approval",
                                                         If(
                                                             And(
                                                                 gal_requests.Selected.request_type = "Peripherals",
-                                                                Not(
-                                                                    LookUp(
-                                                                        'Peripherals Requests',
-                                                                        gal_requests.Selected.UID = UID,
-                                                                        monitor_count
-                                                                    ) = "10+ (Please specify amount in further detail section)"
-                                                                )
+                                                                LookUp(
+                                                                    'Peripherals Requests',
+                                                                    gal_requests.Selected.UID = UID,
+                                                                    monitor_count
+                                                                ) = "10+ (Please specify amount in further detail section)"
                                                             ),
-                                                            "Logged with IT",
+                                                            "Line Manager Approval",
                                                             If(
                                                                 And(
                                                                     gal_requests.Selected.request_type = "Peripherals",
@@ -12774,7 +12788,7 @@ Requests As screen:
                                                                         LookUp(
                                                                             'Peripherals Requests',
                                                                             gal_requests.Selected.UID = UID,
-                                                                            headset_count
+                                                                            monitor_count
                                                                         ) = "10+ (Please specify amount in further detail section)"
                                                                     )
                                                                 ),
@@ -12786,7 +12800,7 @@ Requests As screen:
                                                                             LookUp(
                                                                                 'Peripherals Requests',
                                                                                 gal_requests.Selected.UID = UID,
-                                                                                keyboard_count
+                                                                                headset_count
                                                                             ) = "10+ (Please specify amount in further detail section)"
                                                                         )
                                                                     ),
@@ -12798,37 +12812,50 @@ Requests As screen:
                                                                                 LookUp(
                                                                                     'Peripherals Requests',
                                                                                     gal_requests.Selected.UID = UID,
-                                                                                    mouse_count
+                                                                                    keyboard_count
                                                                                 ) = "10+ (Please specify amount in further detail section)"
                                                                             )
                                                                         ),
                                                                         "Logged with IT",
                                                                         If(
-                                                                            gal_requests.Selected.request_type = "Special IT Request",
-                                                                            "Line Manager Approval",
+                                                                            And(
+                                                                                gal_requests.Selected.request_type = "Peripherals",
+                                                                                Not(
+                                                                                    LookUp(
+                                                                                        'Peripherals Requests',
+                                                                                        gal_requests.Selected.UID = UID,
+                                                                                        mouse_count
+                                                                                    ) = "10+ (Please specify amount in further detail section)"
+                                                                                )
+                                                                            ),
+                                                                            "Logged with IT",
                                                                             If(
-                                                                                gal_requests.Selected.request_type = "IT Incident",
+                                                                                gal_requests.Selected.request_type = "Special IT Request",
                                                                                 "Line Manager Approval",
                                                                                 If(
-                                                                                    gal_requests.Selected.request_type = "Smartcard Request",
+                                                                                    gal_requests.Selected.request_type = "IT Incident",
                                                                                     "Line Manager Approval",
                                                                                     If(
-                                                                                        gal_requests.Selected.request_type = "Smartcard Positions",
+                                                                                        gal_requests.Selected.request_type = "Smartcard Request",
                                                                                         "Line Manager Approval",
                                                                                         If(
-                                                                                            And(
-                                                                                                gal_requests.Selected.request_type = "Smartcard Request",
-                                                                                                LookUp(
-                                                                                                    'Smartcard Requests',
-                                                                                                    gal_requests.Selected.UID = UID,
-                                                                                                    new_or_replacement
-                                                                                                ) = "Replace a lost/stolen Smartcard"
-                                                                                            ),
-                                                                                            "Logged with IT",
+                                                                                            gal_requests.Selected.request_type = "Smartcard Positions",
+                                                                                            "Line Manager Approval",
                                                                                             If(
-                                                                                                gal_requests.Selected.request_type = "Change Form",
-                                                                                                "Budget Holder Approval",
-                                                                                                "Error"
+                                                                                                And(
+                                                                                                    gal_requests.Selected.request_type = "Smartcard Request",
+                                                                                                    LookUp(
+                                                                                                        'Smartcard Requests',
+                                                                                                        gal_requests.Selected.UID = UID,
+                                                                                                        new_or_replacement
+                                                                                                    ) = "Replace a lost/stolen Smartcard"
+                                                                                                ),
+                                                                                                "Logged with IT",
+                                                                                                If(
+                                                                                                    gal_requests.Selected.request_type = "Change Form",
+                                                                                                    "Budget Holder Approval",
+                                                                                                    "Error"
+                                                                                                )
                                                                                             )
                                                                                         )
                                                                                     )
@@ -13408,7 +13435,7 @@ Requests As screen:
                             LookUp(
                                 'Induction Log',
                                 gal_requests.Selected.UID = UID,
-                                'CompleteFlag'
+                                CompleteFlag
                             ) = "true"
                         ),
                         success,
