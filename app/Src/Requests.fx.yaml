@@ -2515,7 +2515,7 @@ Requests As screen:
             Height: =768
             Visible: =varLoading
             Width: =1366
-            ZIndex: =54
+            ZIndex: =55
 
         timer_loading_1 As timer:
             AutoStart: =
@@ -2526,7 +2526,7 @@ Requests As screen:
             Visible: =false
             X: =1037
             Y: =18
-            ZIndex: =55
+            ZIndex: =56
 
         spinner_loading_1 As Spinner:
             BasePaletteColor: =
@@ -2540,7 +2540,7 @@ Requests As screen:
             Width: =1366
             X: =0
             Y: =0
-            ZIndex: =56
+            ZIndex: =57
 
     form_comment As form:
         DataSource: =Requests_Master
@@ -6614,18 +6614,6 @@ Requests As screen:
                 Y: =DataCardKey227.Y
                 ZIndex: =4
 
-    Icon1_2 As icon.Tools:
-        Color: =RGBA(79, 90, 94, 1)
-        Height: =55
-        Icon: =Icon.Tools
-        OnSelect: |-
-            =UpdateContext({varLoading: false})
-        Visible: =If(User().FullName in LookUp(Developers, User().FullName = Developer.DisplayName, Developer.DisplayName), true, false)
-        Width: =63
-        X: =1303
-        Y: =673
-        ZIndex: =57
-
     Form6 As form:
         DataSource: ='Induction Log'
         DefaultMode: =FormMode.View
@@ -6636,7 +6624,7 @@ Requests As screen:
         Width: =374
         X: =106
         Y: =162
-        ZIndex: =58
+        ZIndex: =54
 
         EmployeeFirstName_DataCard3 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -6660,7 +6648,7 @@ Requests As screen:
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: ="Employee First Name"
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -6737,7 +6725,7 @@ Requests As screen:
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -6812,7 +6800,7 @@ Requests As screen:
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: ="Employee Last Name"
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -6887,7 +6875,7 @@ Requests As screen:
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: ="Job Title"
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -6962,7 +6950,7 @@ Requests As screen:
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -7037,7 +7025,7 @@ Requests As screen:
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -7112,7 +7100,7 @@ Requests As screen:
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -7186,7 +7174,7 @@ Requests As screen:
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: ="Spectrum Employee"
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -7259,7 +7247,7 @@ Requests As screen:
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: ="Spectrum Employee Email"
                 Width: =Parent.Width - 60
                 X: =30
@@ -7332,7 +7320,7 @@ Requests As screen:
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: ="Non Spectrum Employee Email"
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -7407,7 +7395,7 @@ Requests As screen:
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -7481,7 +7469,7 @@ Requests As screen:
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -7555,7 +7543,7 @@ Requests As screen:
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -7629,7 +7617,7 @@ Requests As screen:
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -7703,7 +7691,7 @@ Requests As screen:
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -7777,7 +7765,7 @@ Requests As screen:
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -7851,7 +7839,7 @@ Requests As screen:
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -7925,7 +7913,7 @@ Requests As screen:
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -7999,7 +7987,7 @@ Requests As screen:
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -8073,7 +8061,7 @@ Requests As screen:
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -8148,7 +8136,7 @@ Requests As screen:
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -8222,7 +8210,7 @@ Requests As screen:
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -8296,7 +8284,7 @@ Requests As screen:
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -8370,7 +8358,7 @@ Requests As screen:
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -8444,7 +8432,7 @@ Requests As screen:
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -8518,7 +8506,7 @@ Requests As screen:
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -8592,7 +8580,7 @@ Requests As screen:
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -8666,7 +8654,7 @@ Requests As screen:
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -8740,7 +8728,7 @@ Requests As screen:
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -8814,7 +8802,7 @@ Requests As screen:
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -8889,7 +8877,7 @@ Requests As screen:
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -8963,7 +8951,7 @@ Requests As screen:
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -9038,7 +9026,7 @@ Requests As screen:
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -9112,7 +9100,7 @@ Requests As screen:
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -9187,7 +9175,7 @@ Requests As screen:
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -9261,7 +9249,7 @@ Requests As screen:
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -9336,6 +9324,7 @@ Requests As screen:
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =11
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -9409,7 +9398,7 @@ Requests As screen:
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -9483,7 +9472,7 @@ Requests As screen:
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -9557,7 +9546,7 @@ Requests As screen:
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -9631,7 +9620,7 @@ Requests As screen:
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -9705,7 +9694,7 @@ Requests As screen:
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -9779,7 +9768,7 @@ Requests As screen:
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -9853,7 +9842,7 @@ Requests As screen:
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -9927,7 +9916,7 @@ Requests As screen:
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -10001,7 +9990,7 @@ Requests As screen:
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -10075,7 +10064,7 @@ Requests As screen:
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -10150,7 +10139,7 @@ Requests As screen:
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -10224,7 +10213,7 @@ Requests As screen:
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -10298,7 +10287,7 @@ Requests As screen:
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
                 Height: =34
-                Size: =14
+                Size: =11
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -12429,6 +12418,18 @@ Requests As screen:
                 Wrap: =false
                 Y: =DataCardKey624.Y
                 ZIndex: =4
+
+    Icon1_2 As icon.Tools:
+        Color: =RGBA(79, 90, 94, 1)
+        Height: =55
+        Icon: =Icon.Tools
+        OnSelect: |-
+            =UpdateContext({varLoading: false})
+        Visible: =If(User().FullName in LookUp(Developers, User().FullName = Developer.DisplayName, Developer.DisplayName), true, false)
+        Width: =63
+        X: =1303
+        Y: =673
+        ZIndex: =58
 
     Timeline As group:
         Height: =5
