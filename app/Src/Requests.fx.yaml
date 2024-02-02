@@ -6664,6 +6664,7 @@ Requests As screen:
                 Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -6740,6 +6741,7 @@ Requests As screen:
                 Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -6816,6 +6818,7 @@ Requests As screen:
                 Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -6892,6 +6895,7 @@ Requests As screen:
                 Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -6968,6 +6972,7 @@ Requests As screen:
                 Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -7044,6 +7049,7 @@ Requests As screen:
                 Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -7120,6 +7126,7 @@ Requests As screen:
                 Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -7195,6 +7202,7 @@ Requests As screen:
                 Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 Items: =Choices([@'Induction Log'].SpectrumEmp)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
@@ -7268,6 +7276,7 @@ Requests As screen:
                 Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 Items: =Choices([@'Induction Log'].SpectrumEmpEmail)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Claims"]
@@ -7343,6 +7352,7 @@ Requests As screen:
                 Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -7418,6 +7428,7 @@ Requests As screen:
                 Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -7493,6 +7504,7 @@ Requests As screen:
                 Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -7503,7 +7515,7 @@ Requests As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey428.Y + DataCardKey428.Height + 5
+                Y: =41
                 ZIndex: =2
 
             ErrorMessage429 As label:
@@ -7568,6 +7580,7 @@ Requests As screen:
                 Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -7718,6 +7731,7 @@ Requests As screen:
                 Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -7793,6 +7807,7 @@ Requests As screen:
                 Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -7868,6 +7883,7 @@ Requests As screen:
                 Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -7943,6 +7959,7 @@ Requests As screen:
                 Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -8018,6 +8035,7 @@ Requests As screen:
                 Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -8093,6 +8111,7 @@ Requests As screen:
                 Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -8169,6 +8188,7 @@ Requests As screen:
                 Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -8244,6 +8264,7 @@ Requests As screen:
                 Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -8319,6 +8340,7 @@ Requests As screen:
                 Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -8394,6 +8416,7 @@ Requests As screen:
                 Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -8469,6 +8492,7 @@ Requests As screen:
                 Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -8544,6 +8568,7 @@ Requests As screen:
                 Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -8619,6 +8644,7 @@ Requests As screen:
                 Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -8694,6 +8720,7 @@ Requests As screen:
                 Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -8769,6 +8796,7 @@ Requests As screen:
                 Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -8845,6 +8873,7 @@ Requests As screen:
                 Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -8920,6 +8949,7 @@ Requests As screen:
                 Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -8996,6 +9026,7 @@ Requests As screen:
                 Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -9071,6 +9102,7 @@ Requests As screen:
                 Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -9147,6 +9179,7 @@ Requests As screen:
                 Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -9222,6 +9255,7 @@ Requests As screen:
                 Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -9297,6 +9331,7 @@ Requests As screen:
                 Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -9373,6 +9408,7 @@ Requests As screen:
                 Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -9448,6 +9484,7 @@ Requests As screen:
                 Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -9523,6 +9560,7 @@ Requests As screen:
                 Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -9598,6 +9636,7 @@ Requests As screen:
                 Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -9673,6 +9712,7 @@ Requests As screen:
                 Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -9748,6 +9788,7 @@ Requests As screen:
                 Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -9823,6 +9864,7 @@ Requests As screen:
                 Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -9898,6 +9940,7 @@ Requests As screen:
                 Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -12457,6 +12500,7 @@ Requests As screen:
                 Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
