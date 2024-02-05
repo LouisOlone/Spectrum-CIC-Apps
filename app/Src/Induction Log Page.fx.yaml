@@ -4,6 +4,7 @@
 
     Form1_3 As form:
         DataSource: ='Induction Log'
+        DefaultMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), FormMode.Edit, FormMode.View)
         Height: =538
         Item: =varInductionLog
         NumberOfColumns: =4
@@ -16,100 +17,23 @@
         Y: =151
         ZIndex: =2
 
-        EmployeeApproval_DataCard1 As typedDataCard.comboBoxEditCard:
+        EmployeeApproval_DataCard2 As typedDataCard.comboBoxEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="EmployeeApproval"
             Default: =ThisItem.EmployeeApproval
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =DisplayMode.Edit
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"EmployeeApproval")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
-            Update: =DataCardValue270.Selected
-            Width: =642
-            X: =2
-            Y: =72
-            ZIndex: =1
-
-            DataCardKey504 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue270 As combobox:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultSelectedItems: =Parent.Default
-                DisplayFields: =["Value"]
-                DisplayMode: =Parent.DisplayMode
-                Items: |-
-                    =Table({Value: "Approve"}, {Value: "Reject"})
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                SearchFields: =["Value"]
-                SearchItems: |-
-                    =Search(Table({Value: "Approve"}, {Value: "Reject"}),DataCardValue270.SearchText,"Value")
-                SelectMultiple: =false
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: |
-                    =131
-                ZIndex: =2
-
-            ErrorMessage505 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue270.Y + DataCardValue270.Height
-                ZIndex: =3
-
-            StarVisible505 As label:
-                Align: =Align.Center
-                Height: =DataCardKey504.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey504.Y
-                ZIndex: =4
-
-            Label15 As label:
-                Height: =63
-                Text: ="Please confirm whether you approve or reject the Induction Log submitted by your line manager."
-                Width: =594
-                X: =30
-                Y: =56
-                ZIndex: =5
-
-        "'Signature individual_DataCard2' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="Signatureindividual"
-            Default: =ThisItem.'Signature individual'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Signatureindividual")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Signatureindividual")
-            Required: =false
-            Update: =DataCardValue178.Text
-            Width: =642
+            Update: =DataCardValue272.Selected
+            Visible: =If(IsBlank(varInductionLog.'Signature Line Manager'), false, true)
+            Width: =1284
             X: =0
             Y: =73
             ZIndex: =1
 
-            DataCardKey179 As label:
+            DataCardKey505 As label:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
@@ -119,24 +43,22 @@
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue178 As text:
+            DataCardValue272 As combobox:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =If(DataCardValue270.Selected.Value="Approve", Concatenate("Electronically approved by ", User().FullName, " ", Today()), Parent.Default)
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["Value"]
+                Items: =Choices([@'Induction Log'].EmployeeApproval)
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["Value"]
+                SearchItems: =Choices('Induction Log'.EmployeeApproval,DataCardValue272.SearchText)
+                SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =64
+                Y: =DataCardKey505.Y + DataCardKey505.Height + 5
                 ZIndex: =2
 
-            ErrorMessage180 As label:
+            ErrorMessage506 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -148,17 +70,17 @@
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue178.Y + DataCardValue178.Height
+                Y: =DataCardValue272.Y + DataCardValue272.Height
                 ZIndex: =3
 
-            StarVisible180 As label:
+            StarVisible506 As label:
                 Align: =Align.Center
-                Height: =DataCardKey179.Height
+                Height: =DataCardKey505.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey179.Y
+                Y: =DataCardKey505.Y
                 ZIndex: =4
 
         UID_DataCard18 As typedDataCard.textualEditCard:
@@ -15802,6 +15724,76 @@
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "SignatureLineManager")
             Required: =false
             Update: =DataCardValue406.Text
+            Visible: |-
+                =If(
+                    Or(
+                        Checkbox1.Value = false,
+                        Checkbox1_1.Value = false,
+                        Checkbox1_2.Value = false,
+                        Checkbox1_3.Value = false,
+                        Checkbox1_4.Value = false,
+                        Checkbox1_5.Value = false,
+                        Checkbox1_6.Value = false,
+                        Checkbox1_7.Value = false,
+                        Checkbox1_8.Value = false,
+                        Checkbox1_9.Value = false,
+                        Checkbox1_10.Value = false,
+                        Checkbox1_11.Value = false,
+                        Checkbox1_12.Value = false,
+                        Checkbox1_13.Value = false,
+                        Checkbox1_14.Value = false,
+                        Checkbox1_15.Value = false,
+                        Checkbox1_16.Value = false,
+                        Checkbox1_17.Value = false,
+                        Checkbox1_18.Value = false,
+                        Checkbox1_19.Value = false,
+                        Checkbox1_20.Value = false,
+                        Checkbox1_21.Value = false,
+                        Checkbox1_22.Value = false,
+                        Checkbox1_23.Value = false,
+                        Checkbox1_24.Value = false,
+                        Checkbox1_25.Value = false,
+                        Checkbox1_26.Value = false,
+                        Checkbox1_27.Value = false,
+                        Checkbox1_28.Value = false,
+                        Checkbox1_29.Value = false,
+                        Checkbox1_30.Value = false,
+                        Checkbox1_31.Value = false,
+                        Checkbox1_32.Value = false,
+                        Checkbox1_33.Value = false,
+                        Checkbox1_34.Value = false,
+                        Checkbox1_35.Value = false,
+                        Checkbox1_36.Value = false,
+                        Checkbox1_37.Value = false,
+                        Checkbox1_38.Value = false,
+                        Checkbox1_39.Value = false,
+                        Checkbox1_40.Value = false,
+                        Checkbox1_41.Value = false,
+                        Checkbox1_42.Value = false,
+                        Checkbox1_43.Value = false,
+                        Checkbox1_44.Value = false,
+                        Checkbox1_45.Value = false,
+                        Checkbox1_46.Value = false,
+                        Checkbox1_47.Value = false,
+                        Checkbox1_48.Value = false,
+                        Checkbox1_49.Value = false,
+                        Checkbox1_50.Value = false,
+                        Checkbox1_51.Value = false,
+                        Checkbox1_52.Value = false,
+                        Checkbox1_53.Value = false,
+                        Checkbox1_54.Value = false,
+                        Checkbox1_55.Value = false,
+                        Checkbox1_56.Value = false,
+                        Checkbox1_57.Value = false,
+                        Checkbox1_58.Value = false,
+                        Checkbox1_59.Value = false,
+                        Checkbox1_60.Value = false,
+                        Checkbox1_61.Value = false,
+                        Checkbox1_62.Value = false
+                    ),
+                    false,
+                    true
+                )
             Width: =642
             X: =0
             Y: =72
