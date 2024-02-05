@@ -26,7 +26,7 @@
             Height: =50
             Required: =false
             Update: =DataCardValue270.Selected
-            Width: =321
+            Width: =642
             X: =2
             Y: =72
             ZIndex: =1
@@ -56,7 +56,8 @@
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey504.Y + DataCardKey504.Height + 5
+                Y: |
+                    =131
                 ZIndex: =2
 
             ErrorMessage505 As label:
@@ -83,6 +84,14 @@
                 Wrap: =false
                 Y: =DataCardKey504.Y
                 ZIndex: =4
+
+            Label15 As label:
+                Height: =63
+                Text: ="Please confirm whether you approve or reject the Induction Log submitted by your line manager."
+                Width: =594
+                X: =30
+                Y: =56
+                ZIndex: =5
 
         "'Signature individual_DataCard2' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
@@ -124,8 +133,7 @@
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: |
-                    =131
+                Y: =64
                 ZIndex: =2
 
             ErrorMessage180 As label:
