@@ -930,6 +930,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                Default: =If(ThisItem.'Welcome to the Department/Business Unit'="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 HoverBorderColor: =RGBA(88,89,91,1)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
@@ -978,7 +979,16 @@
                 BorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
-                DefaultDate: =If(Checkbox1.Value =true,Today(),"")
+                DefaultDate: |-
+                    =If(
+                    	Checkbox1.DisplayMode=DisplayMode.View, ThisItem.Date1,
+                    	If(
+                    		And(
+                    			Checkbox1.DisplayMode=DisplayMode.Edit,
+                    			Checkbox1.Value=true),
+                    				Today(),
+                    				""))
+                    	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(74,164,65,1)
@@ -1088,6 +1098,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                Default: =If(ThisItem.'Brief description of the Department/Business Unit and how it fits into the organisation'="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
@@ -1135,7 +1146,16 @@
                 BorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
-                DefaultDate: =If(Checkbox1_1.Value =true,Today(),"")
+                DefaultDate: |-
+                    =If(
+                    	Checkbox1_1.DisplayMode=DisplayMode.View, ThisItem.Date2,
+                    	If(
+                    		And(
+                    			Checkbox1_1.DisplayMode=DisplayMode.Edit,
+                    			Checkbox1_1.Value=true),
+                    				Today(),
+                    				""))
+                    	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(74,164,65,1)
@@ -1411,6 +1431,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                Default: =If(ThisItem.'Explain management structure of the department' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
@@ -1452,7 +1473,15 @@
                 BorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
-                DefaultDate: =If(Checkbox1_2.Value =true,Today(),"")
+                DefaultDate: |-
+                    =If(
+                    	Checkbox1_2.DisplayMode=DisplayMode.View, ThisItem.Date3,
+                    	If(
+                    		And(
+                    			Checkbox1_2.DisplayMode=DisplayMode.Edit,
+                    			Checkbox1_2.Value=true),
+                    				Today(),
+                    				""))
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(74,164,65,1)
@@ -1560,6 +1589,7 @@
                     =	
                     	
                     RGBA(88,89,91,0.25)
+                Default: =If(ThisItem.'Introduce to Mentor, where appropriate' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
@@ -1601,7 +1631,15 @@
                 BorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
-                DefaultDate: =If(Checkbox1_3.Value =true,Today(),"")
+                DefaultDate: |-
+                    =If(
+                    	Checkbox1_3.DisplayMode=DisplayMode.View, ThisItem.Date4,
+                    	If(
+                    		And(
+                    			Checkbox1_3.DisplayMode=DisplayMode.Edit,
+                    			Checkbox1_3.Value=true),
+                    				Today(),
+                    				""))
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(74,164,65,1)
@@ -1869,6 +1907,9 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                Default: |-
+                    =	
+                    If(ThisItem.'Introduce to other staff and explanation of their roles' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
@@ -1910,7 +1951,15 @@
                 BorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
-                DefaultDate: =If(Checkbox1_4.Value =true,Today(),"")
+                DefaultDate: |-
+                    =If(
+                    	Checkbox1_4.DisplayMode=DisplayMode.View, ThisItem.Date5,
+                    	If(
+                    		And(
+                    			Checkbox1_4.DisplayMode=DisplayMode.Edit,
+                    			Checkbox1_4.Value=true),
+                    				Today(),
+                    				""))
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(74,164,65,1)
@@ -2014,6 +2063,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                Default: =If(ThisItem.'Location of toilets, staff facilities, coffee room, postal area, photocopier, etc.' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
@@ -2055,7 +2105,15 @@
                 BorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
-                DefaultDate: =If(Checkbox1_5.Value =true,Today(),"")
+                DefaultDate: |-
+                    =If(
+                    	Checkbox1_5.DisplayMode=DisplayMode.View, ThisItem.Date6,
+                    	If(
+                    		And(
+                    			Checkbox1_5.DisplayMode=DisplayMode.Edit,
+                    			Checkbox1_5.Value=true),
+                    				Today(),
+                    				""))
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(74,164,65,1)
@@ -2323,6 +2381,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                Default: =If(ThisItem.'Check receipt of formal letter of appointment, contract, policy summaries and associated documents if appropriate' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
@@ -2364,7 +2423,16 @@
                 BorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
-                DefaultDate: =If(Checkbox1_6.Value =true,Today(),"")
+                DefaultDate: |-
+                    =If(
+                    	Checkbox1_6.DisplayMode=DisplayMode.View, ThisItem.Date7,
+                    	If(
+                    		And(
+                    			Checkbox1_6.DisplayMode=DisplayMode.Edit,
+                    			Checkbox1_6.Value=true),
+                    				Today(),
+                    				""))
+                    	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(74,164,65,1)
@@ -2468,6 +2536,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                Default: =If(ThisItem.'Explain statutory and mandatory training needs. Ensure have basic understanding of safeguarding, Prevent, Mental Capacity Act and Conflict Management' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
@@ -2509,7 +2578,16 @@
                 BorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
-                DefaultDate: =If(Checkbox1_7.Value =true,Today(),"")
+                DefaultDate: |-
+                    =If(
+                    	Checkbox1_7.DisplayMode=DisplayMode.View, ThisItem.Date8,
+                    	If(
+                    		And(
+                    			Checkbox1_7.DisplayMode=DisplayMode.Edit,
+                    			Checkbox1_7.Value=true),
+                    				Today(),
+                    				""))
+                    	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(74,164,65,1)
@@ -2777,6 +2855,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                Default: =If(ThisItem.'Explain duties, remit of job/go through job description' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
@@ -2818,7 +2897,17 @@
                 BorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
-                DefaultDate: =If(Checkbox1_8.Value =true,Today(),"")
+                DefaultDate: |-
+                    =If(
+                    	Checkbox1_8.DisplayMode=DisplayMode.View, ThisItem.Date9,
+                    	If(
+                    		And(
+                    			Checkbox1_8.DisplayMode=DisplayMode.Edit,
+                    			Checkbox1_8.Value=true),
+                    				Today(),
+                    				""))
+                    	
+                    	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(74,164,65,1)
@@ -2925,6 +3014,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                Default: =If(ThisItem.'Explain contractual arrangements e.g. probation, (where appropriate)' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
@@ -2966,7 +3056,16 @@
                 BorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
-                DefaultDate: =If(Checkbox1_9.Value =true,Today(),"")
+                DefaultDate: |-
+                    =If(
+                    	Checkbox1_9.DisplayMode=DisplayMode.View, ThisItem.Date10,
+                    	If(
+                    		And(
+                    			Checkbox1_9.DisplayMode=DisplayMode.Edit,
+                    			Checkbox1_9.Value=true),
+                    				Today(),
+                    				""))
+                    	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(74,164,65,1)
@@ -3319,6 +3418,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                Default: =If(ThisItem.'Contact Details given' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
@@ -3361,7 +3461,16 @@
 
             DataCardValue266 As datepicker:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultDate: =If(Checkbox1_10.Value =true,Today(),"")
+                DefaultDate: |-
+                    =If(
+                    	Checkbox1_10.DisplayMode=DisplayMode.View, ThisItem.Date12,
+                    	If(
+                    		And(
+                    			Checkbox1_10.DisplayMode=DisplayMode.Edit,
+                    			Checkbox1_10.Value=true),
+                    				Today(),
+                    				""))
+                    	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(74,164,65,1)
@@ -3465,6 +3574,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                Default: =If(ThisItem.'Issue keys/fobs and pin numbers if appropriate' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
@@ -3506,7 +3616,17 @@
                 BorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
-                DefaultDate: =If(Checkbox1_11.Value =true,Today(),"")
+                DefaultDate: |-
+                    =If(
+                    	Checkbox1_11.DisplayMode=DisplayMode.View, ThisItem.Date13,
+                    	If(
+                    		And(
+                    			Checkbox1_11.DisplayMode=DisplayMode.Edit,
+                    			Checkbox1_11.Value=true),
+                    				Today(),
+                    				""))
+                    	
+                    	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(74,164,65,1)
@@ -3774,6 +3894,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                Default: =If(ThisItem.'Emergency telephone numbers' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
@@ -3815,7 +3936,16 @@
                 BorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
-                DefaultDate: =If(Checkbox1_12.Value =true,Today(),"")
+                DefaultDate: |-
+                    =If(
+                    	Checkbox1_12.DisplayMode=DisplayMode.View, ThisItem.Date14,
+                    	If(
+                    		And(
+                    			Checkbox1_12.DisplayMode=DisplayMode.Edit,
+                    			Checkbox1_12.Value=true),
+                    				Today(),
+                    				""))
+                    	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(74,164,65,1)
@@ -3919,6 +4049,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                Default: =If(ThisItem.'Identify ALL HR, corporate and locally applicable policies and procedures, list here and date shared with new employee' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
@@ -3960,7 +4091,17 @@
                 BorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
-                DefaultDate: =If(Checkbox1_13.Value =true,Today(),"")
+                DefaultDate: |-
+                    =If(
+                    	Checkbox1_13.DisplayMode=DisplayMode.View, ThisItem.Date15,
+                    	If(
+                    		And(
+                    			Checkbox1_13.DisplayMode=DisplayMode.Edit,
+                    			Checkbox1_13.Value=true),
+                    				Today(),
+                    				""))
+                    	
+                    	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(74,164,65,1)
@@ -4230,6 +4371,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                Default: =If(ThisItem.'Fire and First Aid procedures' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
@@ -4271,7 +4413,16 @@
                 BorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
-                DefaultDate: =If(Checkbox1_14.Value =true,Today(),"")
+                DefaultDate: |-
+                    =If(
+                    	Checkbox1_14.DisplayMode=DisplayMode.View, ThisItem.Date16,
+                    	If(
+                    		And(
+                    			Checkbox1_14.DisplayMode=DisplayMode.Edit,
+                    			Checkbox1_14.Value=true),
+                    				Today(),
+                    				""))
+                    	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(74,164,65,1)
@@ -4378,6 +4529,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                Default: =If(ThisItem.'Workplace tidiness [wires, obstructions etc.]' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
@@ -4419,7 +4571,16 @@
                 BorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
-                DefaultDate: =If(Checkbox1_15.Value =true,Today(),"")
+                DefaultDate: |-
+                    =If(
+                    	Checkbox1_15.DisplayMode=DisplayMode.View, ThisItem.Date17,
+                    	If(
+                    		And(
+                    			Checkbox1_15.DisplayMode=DisplayMode.Edit,
+                    			Checkbox1_15.Value=true),
+                    				Today(),
+                    				""))
+                    	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(74,164,65,1)
@@ -4687,6 +4848,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                Default: =If(ThisItem.'Approach to supporting non smoking' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
@@ -4728,7 +4890,15 @@
                 BorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
-                DefaultDate: =If(Checkbox1_16.Value =true,Today(),"")
+                DefaultDate: |-
+                    =If(
+                    	Checkbox1_16.DisplayMode=DisplayMode.View, ThisItem.Date18,
+                    	If(
+                    		And(
+                    			Checkbox1_16.DisplayMode=DisplayMode.Edit,
+                    			Checkbox1_16.Value=true),
+                    				Today(),
+                    				""))
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(74,164,65,1)
@@ -4835,6 +5005,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                Default: =If(ThisItem.'Accidents and incident reporting procedures' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
@@ -4876,7 +5047,15 @@
                 BorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
-                DefaultDate: =If(Checkbox1_17.Value =true,Today(),"")
+                DefaultDate: |-
+                    =If(
+                    	Checkbox1_17.DisplayMode=DisplayMode.View, ThisItem.Date19,
+                    	If(
+                    		And(
+                    			Checkbox1_17.DisplayMode=DisplayMode.Edit,
+                    			Checkbox1_17.Value=true),
+                    				Today(),
+                    				""))
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(74,164,65,1)
@@ -5147,6 +5326,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                Default: =If(ThisItem.'Risk Management arrangements' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
@@ -5188,7 +5368,16 @@
                 BorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
-                DefaultDate: =If(Checkbox1_18.Value =true,Today(),"")
+                DefaultDate: |-
+                    =If(
+                    	Checkbox1_18.DisplayMode=DisplayMode.View, ThisItem.Date20,
+                    	If(
+                    		And(
+                    			Checkbox1_18.DisplayMode=DisplayMode.Edit,
+                    			Checkbox1_18.Value=true),
+                    				Today(),
+                    				""))
+                    	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(74,164,65,1)
@@ -5292,6 +5481,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                Default: =If(ThisItem.'Lone Worker and Home working (if appropriate to role)' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
@@ -5332,7 +5522,17 @@
                 BorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
-                DefaultDate: =If(Checkbox1_19.Value =true,Today(),"")
+                DefaultDate: |-
+                    =If(
+                    	Checkbox1_19.DisplayMode=DisplayMode.View, ThisItem.Date21,
+                    	If(
+                    		And(
+                    			Checkbox1_19.DisplayMode=DisplayMode.Edit,
+                    			Checkbox1_19.Value=true),
+                    				Today(),
+                    				""))
+                    	
+                    	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(74,164,65,1)
@@ -5601,6 +5801,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                Default: =If(ThisItem.'Electrical safety' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
@@ -5642,7 +5843,16 @@
                 BorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
-                DefaultDate: =If(Checkbox1_20.Value =true,Today(),"")
+                DefaultDate: |-
+                    =If(
+                    	Checkbox1_20.DisplayMode=DisplayMode.View, ThisItem.Date22,
+                    	If(
+                    		And(
+                    			Checkbox1_20.DisplayMode=DisplayMode.Edit,
+                    			Checkbox1_20.Value=true),
+                    				Today(),
+                    				""))
+                    	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(74,164,65,1)
@@ -5746,6 +5956,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                Default: =If(ThisItem.'Handling dangerous chemicals/waste' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
@@ -5787,7 +5998,16 @@
                 BorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
-                DefaultDate: =If(Checkbox1_21.Value =true,Today(),"")
+                DefaultDate: |-
+                    =If(
+                    	Checkbox1_21.DisplayMode=DisplayMode.View, ThisItem.Date23,
+                    	If(
+                    		And(
+                    			Checkbox1_21.DisplayMode=DisplayMode.Edit,
+                    			Checkbox1_21.Value=true),
+                    				Today(),
+                    				""))
+                    	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(74,164,65,1)
@@ -6056,6 +6276,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                Default: =If(ThisItem.'Moving and Handling' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
@@ -6097,7 +6318,18 @@
                 BorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
-                DefaultDate: =If(Checkbox1_22.Value =true,Today(),"")
+                DefaultDate: |-
+                    =If(
+                    	Checkbox1_22.DisplayMode=DisplayMode.View, ThisItem.Date24,
+                    	If(
+                    		And(
+                    			Checkbox1_22.DisplayMode=DisplayMode.Edit,
+                    			Checkbox1_22.Value=true),
+                    				Today(),
+                    				""))
+                    	
+                    	
+                    	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(74,164,65,1)
@@ -6201,6 +6433,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                Default: =If(ThisItem.'Display Screen Equipment (DSE) Assessment' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
@@ -6241,7 +6474,16 @@
                 BorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
-                DefaultDate: =If(Checkbox1_23.Value =true,Today(),"")
+                DefaultDate: |-
+                    =If(
+                    	Checkbox1_23.DisplayMode=DisplayMode.View, ThisItem.Date25,
+                    	If(
+                    		And(
+                    			Checkbox1_23.DisplayMode=DisplayMode.Edit,
+                    			Checkbox1_23.Value=true),
+                    				Today(),
+                    				""))
+                    	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(74,164,65,1)
@@ -6509,6 +6751,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                Default: =If(ThisItem.'Confirm progress of this Induction Log and requirement for completion within 12 weeks of the start date.' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
@@ -6550,7 +6793,17 @@
                 BorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
-                DefaultDate: =If(Checkbox1_24.Value =true,Today(),"")
+                DefaultDate: |-
+                    =If(
+                    	Checkbox1_24.DisplayMode=DisplayMode.View, ThisItem.Date26,
+                    	If(
+                    		And(
+                    			Checkbox1_24.DisplayMode=DisplayMode.Edit,
+                    			Checkbox1_24.Value=true),
+                    				Today(),
+                    				""))
+                    	
+                    	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(74,164,65,1)
@@ -6655,6 +6908,8 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                Default: |-
+                    =If(ThisItem.'Explain arrangements for staff member to meet with key managers and Spectrum contacts:-' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
@@ -6696,7 +6951,16 @@
                 BorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
-                DefaultDate: =If(Checkbox1_25.Value =true,Today(),"")
+                DefaultDate: |-
+                    =If(
+                    	Checkbox1_25.DisplayMode=DisplayMode.View, ThisItem.Date27,
+                    	If(
+                    		And(
+                    			Checkbox1_25.DisplayMode=DisplayMode.Edit,
+                    			Checkbox1_25.Value=true),
+                    				Today(),
+                    				""))
+                    	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(74,164,65,1)
@@ -6964,6 +7228,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                Default: =If(ThisItem.'Starting/Finishing times/hours of work' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
@@ -7005,7 +7270,16 @@
                 BorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
-                DefaultDate: =If(Checkbox1_26.Value =true,Today(),"")
+                DefaultDate: |-
+                    =If(
+                    	Checkbox1_26.DisplayMode=DisplayMode.View, ThisItem.Date28,
+                    	If(
+                    		And(
+                    			Checkbox1_26.DisplayMode=DisplayMode.Edit,
+                    			Checkbox1_26.Value=true),
+                    				Today(),
+                    				""))
+                    	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(74,164,65,1)
@@ -7109,6 +7383,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                Default: =If(ThisItem.'Sickness absence reporting and monitoring arrangements' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
@@ -7150,7 +7425,16 @@
                 BorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
-                DefaultDate: =If(Checkbox1_27.Value =true,Today(),"")
+                DefaultDate: |-
+                    =If(
+                    	Checkbox1_27.DisplayMode=DisplayMode.View, ThisItem.Date29,
+                    	If(
+                    		And(
+                    			Checkbox1_27.DisplayMode=DisplayMode.Edit,
+                    			Checkbox1_27.Value=true),
+                    				Today(),
+                    				""))
+                    	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(74,164,65,1)
@@ -7421,6 +7705,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                Default: =If(ThisItem.'Home emergencies (Special Leave Policy)' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
@@ -7462,7 +7747,15 @@
                 BorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
-                DefaultDate: =If(Checkbox1_28.Value =true,Today(),"")
+                DefaultDate: |-
+                    =If(
+                    	Checkbox1_28.DisplayMode=DisplayMode.View, ThisItem.Date30,
+                    	If(
+                    		And(
+                    			Checkbox1_28.DisplayMode=DisplayMode.Edit,
+                    			Checkbox1_28.Value=true),
+                    				Today(),
+                    				""))
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(74,164,65,1)
@@ -7825,7 +8118,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Flexibleworkingarrangements_x005"
             Default: =ThisItem.'Flexible working arrangements [if appropriate]'
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Flexibleworkingarrangements_x005")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -7879,6 +8172,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
                 Text: ="Done"
@@ -7890,7 +8184,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Date32"
             Default: =ThisItem.Date32
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Date32")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -7969,7 +8263,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Explanationoffilingsystems_x0028"
             Default: =ThisItem.'Explanation of filing systems (electronic and manual)'
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Explanationoffilingsystems_x0028")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -8023,6 +8317,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
                 Text: ="Done"
@@ -8034,7 +8329,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Date33"
             Default: =ThisItem.Date33
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Date33")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -8106,7 +8401,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Comments33"
             Default: =ThisItem.Comments33
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Comments33")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -8195,7 +8490,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Comments32"
             Default: =ThisItem.Comments32
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Comments32")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -8277,7 +8572,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Non_x002d_liabilityoforganisatio"
             Default: =ThisItem.'Non-liability of organisation in insurance claims for loss of/damage to property'
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Non_x002d_liabilityoforganisatio")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =128
@@ -8334,6 +8629,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
                 Text: ="Done"
@@ -8345,7 +8641,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Date34"
             Default: =ThisItem.Date34
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Date34")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -8424,7 +8720,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Checkthatsalaryarrangementsareun"
             Default: =ThisItem.'Check that salary arrangements are understood'
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Checkthatsalaryarrangementsareun")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -8478,6 +8774,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
                 Text: ="Done"
@@ -8489,7 +8786,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Date35"
             Default: =ThisItem.Date35
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Date35")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -8561,7 +8858,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Comments34"
             Default: =ThisItem.Comments34
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Comments34")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -8650,7 +8947,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Comments35"
             Default: =ThisItem.Comments35
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Comments35")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -8732,7 +9029,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Paymentduringabsenceduetoillness"
             Default: =ThisItem.'Payment during absence due to illness or injury'
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Paymentduringabsenceduetoillness")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -8789,6 +9086,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
                 Text: ="Done"
@@ -8800,7 +9098,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Date36"
             Default: =ThisItem.Date36
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Date36")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -8879,7 +9177,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Expenseclaimarrangements"
             Default: =ThisItem.'Expense claim arrangements'
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Expenseclaimarrangements")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -8933,6 +9231,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
                 Text: ="Done"
@@ -8944,7 +9243,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Date37"
             Default: =ThisItem.Date37
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Date37")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -9016,7 +9315,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Comments36"
             Default: =ThisItem.Comments36
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Comments36")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -9105,7 +9404,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Comments37"
             Default: =ThisItem.Comments37
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Comments37")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -9187,7 +9486,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Whotocontactregardingspecificpay"
             Default: =ThisItem.'Who to contact regarding specific payroll and pensions queries'
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Whotocontactregardingspecificpay")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =131
@@ -9241,6 +9540,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
                 Text: ="Done"
@@ -9252,7 +9552,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Date38"
             Default: =ThisItem.Date38
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Date38")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -9331,7 +9631,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Completeallrelevantdocumentation"
             Default: =ThisItem.'Complete all relevant documentation regarding payment and forward to HR'
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Completeallrelevantdocumentation")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -9385,6 +9685,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
                 Text: ="Done"
@@ -9396,7 +9697,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Date39"
             Default: =ThisItem.Date39
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Date39")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -9468,7 +9769,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Comments38"
             Default: =ThisItem.Comments38
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Comments38")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -9556,7 +9857,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Comments39"
             Default: =ThisItem.Comments39
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Comments39")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -9637,7 +9938,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Holidayentitlementsandholidayreq"
             Default: =ThisItem.'Holiday entitlements and holiday request requirements'
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Holidayentitlementsandholidayreq")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -9691,6 +9992,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
                 Text: ="Done"
@@ -9702,7 +10004,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Date40"
             Default: =ThisItem.Date40
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Date40")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -9781,7 +10083,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Holidayarrangements_x002f_fittin"
             Default: =ThisItem.'Holiday arrangements/fitting in with others'
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Holidayarrangements_x002f_fittin")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -9835,6 +10137,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
                 Text: ="Done"
@@ -9846,7 +10149,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Date41"
             Default: =ThisItem.Date41
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Date41")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -9918,7 +10221,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Comments40"
             Default: =ThisItem.Comments40
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Comments40")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -10007,7 +10310,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Comments41"
             Default: =ThisItem.Comments41
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Comments41")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -10089,7 +10392,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="BankHolidays"
             Default: =ThisItem.'Bank Holidays'
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"BankHolidays")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -10144,6 +10447,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
                 Text: ="Done"
@@ -10155,7 +10459,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Date42"
             Default: =ThisItem.Date42
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Date42")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -10234,7 +10538,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="ExpectationsrelatingtoAlcoholand"
             Default: =ThisItem.'Expectations relating to Alcohol and substance misuse'
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"ExpectationsrelatingtoAlcoholand")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -10288,6 +10592,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 FontWeight: =FontWeight.Lighter
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
@@ -10300,7 +10605,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Date43"
             Default: =ThisItem.Date43
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Date43")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -10372,7 +10677,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Comments42"
             Default: =ThisItem.Comments42
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Comments42")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -10458,7 +10763,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Comments43"
             Default: =ThisItem.Comments43
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Comments43")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -10540,7 +10845,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Useoftelephone_x002f_ITforperson"
             Default: =ThisItem.'Use of telephone/IT for personal calls and e-mails'
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Useoftelephone_x002f_ITforperson")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -10594,6 +10899,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
                 Text: ="Done"
@@ -10605,7 +10911,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Date44"
             Default: =ThisItem.Date44
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Date44")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -10684,7 +10990,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Vehicle_x002f_parkingarrangement"
             Default: =ThisItem.'Vehicle/parking arrangements [if appropriate]'
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Vehicle_x002f_parkingarrangement")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -10738,6 +11044,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
                 Text: ="Done"
@@ -10749,7 +11056,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Date45"
             Default: =ThisItem.Date45
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Date45")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -10821,7 +11128,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Comments44"
             Default: =ThisItem.Comments44
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Comments44")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -10910,7 +11217,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Comments45"
             Default: =ThisItem.Comments45
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Comments45")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -10992,7 +11299,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Locationofotherfacilitiese_x002e"
             Default: =ThisItem.'Location of other facilities e.g. shops/banks/sports facilities'
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Locationofotherfacilitiese_x002e")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -11046,6 +11353,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
                 Text: ="Done"
@@ -11057,7 +11365,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Date46"
             Default: =ThisItem.Date46
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Date46")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -11136,7 +11444,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="InformationaboutSpectrumCouncila"
             Default: =ThisItem.'Information about Spectrum Council and Trade Unions and relevant organisational contacts'
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"InformationaboutSpectrumCouncila")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -11190,6 +11498,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
                 Text: ="Done"
@@ -11201,7 +11510,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Date47"
             Default: =ThisItem.Date47
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Date47")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -11273,7 +11582,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Comments46"
             Default: =ThisItem.Comments46
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Comments46")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -11362,7 +11671,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Comments47"
             Default: =ThisItem.Comments47
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Comments47")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -11444,7 +11753,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="EqualityandDiversityandDisabilit"
             Default: =ThisItem.'Equality and Diversity and Disability related issues'
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"EqualityandDiversityandDisabilit")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -11498,6 +11807,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
                 Text: ="Done"
@@ -11509,7 +11819,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Date48"
             Default: =ThisItem.Date48
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Date48")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -11588,7 +11898,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="AccessarrangementsforemployeeCou"
             Default: =ThisItem.'Access arrangements for employee Counselling Service'
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"AccessarrangementsforemployeeCou")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -11642,6 +11952,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
                 Text: ="Done"
@@ -11653,7 +11964,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Date49"
             Default: =ThisItem.Date49
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Date49")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -11725,7 +12036,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Comments48"
             Default: =ThisItem.Comments48
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Comments48")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -11814,7 +12125,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Comments49"
             Default: =ThisItem.Comments49
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Comments49")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -11896,7 +12207,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="OccupationalHealthService"
             Default: =ThisItem.'Occupational Health Service'
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"OccupationalHealthService")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -11950,6 +12261,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
                 Text: ="Done"
@@ -11961,7 +12273,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Date50"
             Default: =ThisItem.Date50
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Date50")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -12040,7 +12352,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Howtoorderstationery_x002c_bookr"
             Default: =ThisItem.'How to order stationery, book resources and equipment'
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Howtoorderstationery_x002c_bookr")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =142
@@ -12094,6 +12406,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
                 Text: ="Done"
@@ -12105,7 +12418,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Date51"
             Default: =ThisItem.Date51
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Date51")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -12177,7 +12490,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Comments50"
             Default: =ThisItem.Comments50
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Comments50")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -12266,7 +12579,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Comments51"
             Default: =ThisItem.Comments51
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Comments51")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -12348,7 +12661,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Ensurecars_x002c_officesarelocke"
             Default: =ThisItem.'Ensure cars, offices are locked when left unattended'
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Ensurecars_x002c_officesarelocke")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -12402,6 +12715,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
                 Text: ="Done"
@@ -12413,7 +12727,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Date52"
             Default: =ThisItem.Date52
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Date52")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -12492,7 +12806,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Expectationsaroundwork_x002d_pro"
             Default: =ThisItem.'Expectations around work- provided equipment, e.g. lap- tops, tablets, mobile phones etc'
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Expectationsaroundwork_x002d_pro")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -12546,6 +12860,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
                 Text: ="Done"
@@ -12557,7 +12872,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Date53"
             Default: =ThisItem.Date53
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Date53")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -12629,7 +12944,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Comments52"
             Default: =ThisItem.Comments52
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Comments52")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -12718,7 +13033,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Comments53"
             Default: =ThisItem.Comments53
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Comments53")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -12800,7 +13115,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="ExplaintheAppraisalprocess"
             Default: =ThisItem.'Explain the Appraisal process'
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"ExplaintheAppraisalprocess")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -12854,6 +13169,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
                 Text: ="Done"
@@ -12865,7 +13181,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Date54"
             Default: =ThisItem.Date54
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Date54")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -12944,7 +13260,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Explainhowtoaccesstraininganddev"
             Default: =ThisItem.'Explain how to access training and development opportunities'
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Explainhowtoaccesstraininganddev")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -12998,6 +13314,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
                 Text: ="Done"
@@ -13009,7 +13326,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Date55"
             Default: =ThisItem.Date55
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Date55")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -13081,7 +13398,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Comments54"
             Default: =ThisItem.Comments54
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Comments54")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -13170,7 +13487,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Comments55"
             Default: =ThisItem.Comments55
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Comments55")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -13252,7 +13569,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="IntroducetorelevantsitesontheInt"
             Default: =ThisItem.'Introduce to relevant sites on the Intranet'
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"IntroducetorelevantsitesontheInt")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -13306,6 +13623,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
                 Text: ="Done"
@@ -13317,7 +13635,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Date56"
             Default: =ThisItem.Date56
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Date56")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -13396,7 +13714,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Introducetoanydepartmentaltraini"
             Default: =ThisItem.'Introduce to any departmental training and development contacts'
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Introducetoanydepartmentaltraini")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -13450,6 +13768,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
                 Text: ="Done"
@@ -13461,7 +13780,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Date57"
             Default: =ThisItem.Date57
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Date57")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -13533,7 +13852,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Comments56"
             Default: =ThisItem.Comments56
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Comments56")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -13622,7 +13941,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Comments57"
             Default: =ThisItem.Comments57
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Comments57")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -13704,7 +14023,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Ensurethatnewstaffmemberhasrecei"
             Default: =ThisItem.'Ensure that new staff member has received confirmation of all statutory and mandatory along with essential training required for role'
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Ensurethatnewstaffmemberhasrecei")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =163
@@ -13758,6 +14077,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
                 Text: ="Done"
@@ -13769,7 +14089,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Date58"
             Default: =ThisItem.Date58
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Date58")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -13848,7 +14168,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Locationoflocallibraries_x002c_s"
             Default: =ThisItem.'Location of local libraries, study centres, resources and facilities available to support study'
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Locationoflocallibraries_x002c_s")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -13902,6 +14222,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
                 Text: ="Done"
@@ -13913,7 +14234,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Date59"
             Default: =ThisItem.Date59
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Date59")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -13985,7 +14306,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Comments58"
             Default: =ThisItem.Comments58
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Comments58")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -14074,7 +14395,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Comments59"
             Default: =ThisItem.Comments59
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Comments59")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -14156,7 +14477,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Explainmandatorytrainingarrangem"
             Default: =ThisItem.'Explain mandatory training arrangements and requirements (including e-learning) in the induction period and how to access these'
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Explainmandatorytrainingarrangem")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =196
@@ -14210,6 +14531,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
                 Text: ="Done"
@@ -14221,7 +14543,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Date60"
             Default: =ThisItem.Date60
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Date60")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -14300,7 +14622,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Explaintheorganisationmanagement"
             Default: =ThisItem.'Explain the organisation management structure and the shareholding model'
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Explaintheorganisationmanagement")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -14365,7 +14687,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Date61"
             Default: =ThisItem.Date61
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Date61")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -14437,7 +14759,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Comments60"
             Default: =ThisItem.Comments60
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Comments60")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -14526,7 +14848,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Comments61"
             Default: =ThisItem.Comments61
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Comments61")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -14608,7 +14930,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="ExplanationofITSupportServiceand"
             Default: =ThisItem.'Explanation of IT Support Service and systems'
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"ExplanationofITSupportServiceand")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -14665,6 +14987,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
                 Text: ="Done"
@@ -14676,7 +14999,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Date62"
             Default: =ThisItem.Date62
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Date62")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -14809,6 +15132,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
                 Text: ="Done"
@@ -14820,7 +15144,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Date63"
             Default: =ThisItem.Date63
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Date63")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -14892,7 +15216,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Comments62"
             Default: =ThisItem.Comments62
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Comments62")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -14981,7 +15305,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Comments63"
             Default: =ThisItem.Comments63
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Comments63")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -15063,7 +15387,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Technicalhelpdeskcontacts"
             Default: =ThisItem.'Technical helpdesk contacts'
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Technicalhelpdeskcontacts")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -15120,6 +15444,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
                 Text: ="Done"
@@ -15131,7 +15456,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Date64"
             Default: =ThisItem.Date64
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Date64")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -15210,7 +15535,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="BasicuseoforganisationITsystem"
             Default: =ThisItem.'Basic use of organisation IT system'
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"BasicuseoforganisationITsystem")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -15264,6 +15589,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
                 Text: ="Done"
@@ -15275,7 +15601,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Date65"
             Default: =ThisItem.Date65
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Date65")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -15347,7 +15673,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Comments64"
             Default: =ThisItem.Comments64
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Comments64")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -15438,7 +15764,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Comments65"
             Default: =ThisItem.Comments65
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Comments65")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -15520,7 +15846,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Useofe_x002d_mailconfidentiality"
             Default: =ThisItem.'Use of e-mail confidentiality'
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Useofe_x002d_mailconfidentiality")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -15578,6 +15904,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
                 Text: ="Done"
@@ -15589,7 +15916,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Date66"
             Default: =ThisItem.Date66
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Date66")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =165
@@ -15661,7 +15988,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Comments66"
             Default: =ThisItem.Comments66
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Comments66")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
