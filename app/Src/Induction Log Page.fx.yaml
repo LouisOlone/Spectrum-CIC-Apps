@@ -10085,6 +10085,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                Default: =If(ThisItem.'Holiday entitlements and holiday request requirements' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
@@ -10126,7 +10127,16 @@
                 BorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
-                DefaultDate: =If(Checkbox1_38.Value =true,Today(),"")
+                DefaultDate: |-
+                    =If(
+                    	Checkbox1_38.DisplayMode=DisplayMode.View, ThisItem.Date40,
+                    	If(
+                    		And(
+                    			Checkbox1_38.DisplayMode=DisplayMode.Edit,
+                    			Checkbox1_38.Value=true),
+                    				Today(),
+                    				""))
+                    	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(74,164,65,1)
@@ -10230,6 +10240,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                Default: =If(ThisItem.'Holiday arrangements/fitting in with others' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
@@ -10271,7 +10282,15 @@
                 BorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
-                DefaultDate: =If(Checkbox1_39.Value =true,Today(),"")
+                DefaultDate: |-
+                    =If(
+                    	Checkbox1_39.DisplayMode=DisplayMode.View, ThisItem.Date41,
+                    	If(
+                    		And(
+                    			Checkbox1_39.DisplayMode=DisplayMode.Edit,
+                    			Checkbox1_39.Value=true),
+                    				Today(),
+                    				""))
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(74,164,65,1)
@@ -10540,6 +10559,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                Default: =If(ThisItem.'Bank Holidays' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
@@ -10581,7 +10601,19 @@
                 BorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
-                DefaultDate: =If(Checkbox1_63.Value =true,Today(),"")
+                DefaultDate: |-
+                    =If(
+                    	Checkbox1_63.DisplayMode=DisplayMode.View, ThisItem.Date42,
+                    	If(
+                    		And(
+                    			Checkbox1_63.DisplayMode=DisplayMode.Edit,
+                    			Checkbox1_63.Value=true),
+                    				Today(),
+                    				""))
+                    	
+                    	
+                    	
+                    	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(74,164,65,1)
@@ -10685,6 +10717,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                Default: =If(ThisItem.'Expectations relating to Alcohol and substance misuse' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 FontWeight: =FontWeight.Lighter
                 PressedBorderColor: =RGBA(88,89,91,0.5)
@@ -10727,7 +10760,16 @@
                 BorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
-                DefaultDate: =If(Checkbox1_64.Value =true,Today(),"")
+                DefaultDate: |-
+                    =If(
+                    	Checkbox1_64.DisplayMode=DisplayMode.View, ThisItem.Date43,
+                    	If(
+                    		And(
+                    			Checkbox1_64.DisplayMode=DisplayMode.Edit,
+                    			Checkbox1_64.Value=true),
+                    				Today(),
+                    				""))
+                    	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(74,164,65,1)
@@ -10992,6 +11034,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                Default: =If(ThisItem.'Use of telephone/IT for personal calls and e-mails' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
@@ -11033,7 +11076,16 @@
                 BorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
-                DefaultDate: =If(Checkbox1_40.Value =true,Today(),"")
+                DefaultDate: |-
+                    =If(
+                    	Checkbox1_40.DisplayMode=DisplayMode.View, ThisItem.Date44,
+                    	If(
+                    		And(
+                    			Checkbox1_40.DisplayMode=DisplayMode.Edit,
+                    			Checkbox1_40.Value=true),
+                    				Today(),
+                    				""))
+                    	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(74,164,65,1)
@@ -11137,6 +11189,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                Default: =If(ThisItem.'Vehicle/parking arrangements [if appropriate]' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
@@ -11178,7 +11231,16 @@
                 BorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
-                DefaultDate: =If(Checkbox1_41.Value =true,Today(),"")
+                DefaultDate: |-
+                    =If(
+                    	Checkbox1_41.DisplayMode=DisplayMode.View, ThisItem.Date45,
+                    	If(
+                    		And(
+                    			Checkbox1_41.DisplayMode=DisplayMode.Edit,
+                    			Checkbox1_41.Value=true),
+                    				Today(),
+                    				""))
+                    	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(74,164,65,1)
@@ -11446,6 +11508,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                Default: =If(ThisItem.'Location of other facilities e.g. shops/banks/sports facilities' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
@@ -11487,7 +11550,15 @@
                 BorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
-                DefaultDate: =If(Checkbox1_42.Value =true,Today(),"")
+                DefaultDate: |-
+                    =If(
+                    	Checkbox1_42.DisplayMode=DisplayMode.View, ThisItem.Date46,
+                    	If(
+                    		And(
+                    			Checkbox1_42.DisplayMode=DisplayMode.Edit,
+                    			Checkbox1_42.Value=true),
+                    				Today(),
+                    				""))
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(74,164,65,1)
@@ -11591,6 +11662,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                Default: =If(ThisItem.'Information about Spectrum Council and Trade Unions and relevant organisational contacts' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
@@ -11632,7 +11704,15 @@
                 BorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
-                DefaultDate: =If(Checkbox1_43.Value =true,Today(),"")
+                DefaultDate: |-
+                    =If(
+                    	Checkbox1_43.DisplayMode=DisplayMode.View, ThisItem.Date47,
+                    	If(
+                    		And(
+                    			Checkbox1_43.DisplayMode=DisplayMode.Edit,
+                    			Checkbox1_43.Value=true),
+                    				Today(),
+                    				""))
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(74,164,65,1)
@@ -11900,6 +11980,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                Default: =If(ThisItem.'Equality and Diversity and Disability related issues' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
@@ -11941,7 +12022,16 @@
                 BorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
-                DefaultDate: =If(Checkbox1_44.Value =true,Today(),"")
+                DefaultDate: |-
+                    =If(
+                    	Checkbox1_44.DisplayMode=DisplayMode.View, ThisItem.Date48,
+                    	If(
+                    		And(
+                    			Checkbox1_44.DisplayMode=DisplayMode.Edit,
+                    			Checkbox1_44.Value=true),
+                    				Today(),
+                    				""))
+                    	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(74,164,65,1)
@@ -12045,6 +12135,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                Default: =If(ThisItem.'Access arrangements for employee Counselling Service' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
@@ -12086,7 +12177,15 @@
                 BorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
-                DefaultDate: =If(Checkbox1_45.Value =true,Today(),"")
+                DefaultDate: |-
+                    =If(
+                    	Checkbox1_45.DisplayMode=DisplayMode.View, ThisItem.Date49,
+                    	If(
+                    		And(
+                    			Checkbox1_45.DisplayMode=DisplayMode.Edit,
+                    			Checkbox1_45.Value=true),
+                    				Today(),
+                    				""))
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(74,164,65,1)
@@ -12354,6 +12453,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                Default: =If(ThisItem.'Occupational Health Service' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
@@ -12395,7 +12495,17 @@
                 BorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
-                DefaultDate: =If(Checkbox1_46.Value =true,Today(),"")
+                DefaultDate: |-
+                    =If(
+                    	Checkbox1_46.DisplayMode=DisplayMode.View, ThisItem.Date50,
+                    	If(
+                    		And(
+                    			Checkbox1_46.DisplayMode=DisplayMode.Edit,
+                    			Checkbox1_46.Value=true),
+                    				Today(),
+                    				""))
+                    	
+                    	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(74,164,65,1)
@@ -12499,6 +12609,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                Default: =If(ThisItem.'How to order stationery, book resources and equipment' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
@@ -12540,7 +12651,16 @@
                 BorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
-                DefaultDate: =If(Checkbox1_47.Value =true,Today(),"")
+                DefaultDate: |-
+                    =If(
+                    	Checkbox1_47.DisplayMode=DisplayMode.View, ThisItem.Date51,
+                    	If(
+                    		And(
+                    			Checkbox1_47.DisplayMode=DisplayMode.Edit,
+                    			Checkbox1_47.Value=true),
+                    				Today(),
+                    				""))
+                    	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(74,164,65,1)
@@ -12808,6 +12928,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                Default: =If(ThisItem.'Ensure cars, offices are locked when left unattended' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
@@ -12849,7 +12970,16 @@
                 BorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
-                DefaultDate: =If(Checkbox1_48.Value =true,Today(),"")
+                DefaultDate: |-
+                    =If(
+                    	Checkbox1_48.DisplayMode=DisplayMode.View, ThisItem.Date52,
+                    	If(
+                    		And(
+                    			Checkbox1_48.DisplayMode=DisplayMode.Edit,
+                    			Checkbox1_48.Value=true),
+                    				Today(),
+                    				""))
+                    	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(74,164,65,1)
@@ -12953,6 +13083,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                Default: =If(ThisItem.'Expectations around work- provided equipment, e.g. lap- tops, tablets, mobile phones etc' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
@@ -12994,7 +13125,18 @@
                 BorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
-                DefaultDate: =If(Checkbox1_49.Value =true,Today(),"")
+                DefaultDate: |-
+                    =If(
+                    	Checkbox1_49.DisplayMode=DisplayMode.View, ThisItem.Date53,
+                    	If(
+                    		And(
+                    			Checkbox1_49.DisplayMode=DisplayMode.Edit,
+                    			Checkbox1_49.Value=true),
+                    				Today(),
+                    				""))
+                    	
+                    	
+                    	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(74,164,65,1)
@@ -13262,6 +13404,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                Default: =If(ThisItem.'Explain the Appraisal process' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
@@ -13303,7 +13446,16 @@
                 BorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
-                DefaultDate: =If(Checkbox1_50.Value =true,Today(),"")
+                DefaultDate: |-
+                    =If(
+                    	Checkbox1_50.DisplayMode=DisplayMode.View, ThisItem.Date54,
+                    	If(
+                    		And(
+                    			Checkbox1_50.DisplayMode=DisplayMode.Edit,
+                    			Checkbox1_50.Value=true),
+                    				Today(),
+                    				""))
+                    	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(74,164,65,1)
@@ -13407,6 +13559,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                Default: =If(ThisItem.'Explain how to access training and development opportunities' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
@@ -13448,7 +13601,17 @@
                 BorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
-                DefaultDate: =If(Checkbox1_51.Value =true,Today(),"")
+                DefaultDate: |-
+                    =If(
+                    	Checkbox1_51.DisplayMode=DisplayMode.View, ThisItem.Date55,
+                    	If(
+                    		And(
+                    			Checkbox1_51.DisplayMode=DisplayMode.Edit,
+                    			Checkbox1_51.Value=true),
+                    				Today(),
+                    				""))
+                    	
+                    	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(74,164,65,1)
@@ -13716,6 +13879,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                Default: =If(ThisItem.'Introduce to relevant sites on the Intranet' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
@@ -13757,7 +13921,16 @@
                 BorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
-                DefaultDate: =If(Checkbox1_52.Value =true,Today(),"")
+                DefaultDate: |-
+                    =If(
+                    	Checkbox1_52.DisplayMode=DisplayMode.View, ThisItem.Date56,
+                    	If(
+                    		And(
+                    			Checkbox1_52.DisplayMode=DisplayMode.Edit,
+                    			Checkbox1_52.Value=true),
+                    				Today(),
+                    				""))
+                    	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(74,164,65,1)
@@ -13861,6 +14034,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                Default: =If(ThisItem.'Introduce to any departmental training and development contacts' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
@@ -13902,7 +14076,16 @@
                 BorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
-                DefaultDate: =If(Checkbox1_53.Value =true,Today(),"")
+                DefaultDate: |-
+                    =If(
+                    	Checkbox1_53.DisplayMode=DisplayMode.View, ThisItem.Date57,
+                    	If(
+                    		And(
+                    			Checkbox1_53.DisplayMode=DisplayMode.Edit,
+                    			Checkbox1_53.Value=true),
+                    				Today(),
+                    				""))
+                    	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(74,164,65,1)
@@ -14170,6 +14353,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                Default: =If(ThisItem.'Ensure that new staff member has received confirmation of all statutory and mandatory along with essential training required for role' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
@@ -14211,7 +14395,15 @@
                 BorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
-                DefaultDate: =If(Checkbox1_54.Value =true,Today(),"")
+                DefaultDate: |-
+                    =If(
+                    	Checkbox1_54.DisplayMode=DisplayMode.View, ThisItem.Date58,
+                    	If(
+                    		And(
+                    			Checkbox1_54.DisplayMode=DisplayMode.Edit,
+                    			Checkbox1_54.Value=true),
+                    				Today(),
+                    				""))
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(74,164,65,1)
@@ -14315,6 +14507,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                Default: =If(ThisItem.'Location of local libraries, study centres, resources and facilities available to support study' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
@@ -14356,7 +14549,16 @@
                 BorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
-                DefaultDate: =If(Checkbox1_55.Value =true,Today(),"")
+                DefaultDate: |-
+                    =If(
+                    	Checkbox1_55.DisplayMode=DisplayMode.View, ThisItem.Date59,
+                    	If(
+                    		And(
+                    			Checkbox1_55.DisplayMode=DisplayMode.Edit,
+                    			Checkbox1_55.Value=true),
+                    				Today(),
+                    				""))
+                    	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(74,164,65,1)
@@ -14624,6 +14826,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                Default: =If(ThisItem.'Explain statutory and mandatory training needs. Ensure have basic understanding of safeguarding, Prevent, Mental Capacity Act and Conflict Management' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
@@ -14665,7 +14868,17 @@
                 BorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
-                DefaultDate: =If(Checkbox1_56.Value =true,Today(),"")
+                DefaultDate: |-
+                    =If(
+                    	Checkbox1_56.DisplayMode=DisplayMode.View, ThisItem.Date60,
+                    	If(
+                    		And(
+                    			Checkbox1_56.DisplayMode=DisplayMode.Edit,
+                    			Checkbox1_56.Value=true),
+                    				Today(),
+                    				""))
+                    	
+                    	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(74,164,65,1)
@@ -14769,6 +14982,8 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                Default: =If(ThisItem.'Explain the organisation management structure and the shareholding model' ="Complete", true, false)
+                DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
                 Text: ="Done"
@@ -14809,7 +15024,15 @@
                 BorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
-                DefaultDate: =If(Checkbox1_57.Value =true,Today(),"")
+                DefaultDate: |-
+                    =If(
+                    	Checkbox1_57.DisplayMode=DisplayMode.View, ThisItem.Date61,
+                    	If(
+                    		And(
+                    			Checkbox1_57.DisplayMode=DisplayMode.Edit,
+                    			Checkbox1_57.Value=true),
+                    				Today(),
+                    				""))
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(74,164,65,1)
@@ -15080,6 +15303,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                Default: =If(ThisItem.'Explanation of IT Support Service and systems' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
@@ -15121,7 +15345,16 @@
                 BorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
-                DefaultDate: =If(Checkbox1_58.Value =true,Today(),"")
+                DefaultDate: |-
+                    =If(
+                    	Checkbox1_58.DisplayMode=DisplayMode.View, ThisItem.Date62,
+                    	If(
+                    		And(
+                    			Checkbox1_58.DisplayMode=DisplayMode.Edit,
+                    			Checkbox1_58.Value=true),
+                    				Today(),
+                    				""))
+                    	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(74,164,65,1)
@@ -15225,6 +15458,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                Default: =If(ThisItem.'Issue of log in, passwords etc' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
@@ -15266,7 +15500,15 @@
                 BorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
-                DefaultDate: =If(Checkbox1_59.Value =true,Today(),"")
+                DefaultDate: |-
+                    =If(
+                    	Checkbox1_59.DisplayMode=DisplayMode.View, ThisItem.Date63,
+                    	If(
+                    		And(
+                    			Checkbox1_59.DisplayMode=DisplayMode.Edit,
+                    			Checkbox1_59.Value=true),
+                    				Today(),
+                    				""))
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(74,164,65,1)
@@ -15537,6 +15779,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                Default: =If(ThisItem.'Technical helpdesk contacts' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
@@ -15578,7 +15821,16 @@
                 BorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
-                DefaultDate: =If(Checkbox1_60.Value =true,Today(),"")
+                DefaultDate: |-
+                    =If(
+                    	Checkbox1_60.DisplayMode=DisplayMode.View, ThisItem.Date64,
+                    	If(
+                    		And(
+                    			Checkbox1_60.DisplayMode=DisplayMode.Edit,
+                    			Checkbox1_60.Value=true),
+                    				Today(),
+                    				""))
+                    	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(74,164,65,1)
@@ -15682,6 +15934,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                Default: =If(ThisItem.'Basic use of organisation IT system' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
@@ -15723,7 +15976,16 @@
                 BorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
-                DefaultDate: =If(Checkbox1_61.Value =true,Today(),"")
+                DefaultDate: |-
+                    =If(
+                    	Checkbox1_61.DisplayMode=DisplayMode.View, ThisItem.Date65,
+                    	If(
+                    		And(
+                    			Checkbox1_61.DisplayMode=DisplayMode.Edit,
+                    			Checkbox1_61.Value=true),
+                    				Today(),
+                    				""))
+                    	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(74,164,65,1)
@@ -15997,6 +16259,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                Default: =If(ThisItem.'Use of e-mail confidentiality' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
@@ -16038,7 +16301,18 @@
                 BorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
-                DefaultDate: =If(Checkbox1_62.Value =true,Today(),"")
+                DefaultDate: |-
+                    =If(
+                    	Checkbox1_62.DisplayMode=DisplayMode.View, ThisItem.Date66,
+                    	If(
+                    		And(
+                    			Checkbox1_62.DisplayMode=DisplayMode.Edit,
+                    			Checkbox1_62.Value=true),
+                    				Today(),
+                    				""))
+                    	
+                    	
+                    	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(74,164,65,1)
