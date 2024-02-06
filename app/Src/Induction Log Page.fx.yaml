@@ -4,7 +4,6 @@
 
     Form1_3 As form:
         DataSource: ='Induction Log'
-        DefaultMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), FormMode.Edit, FormMode.View)
         Height: =538
         Item: =varInductionLog
         NumberOfColumns: =4
@@ -87,7 +86,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="UID"
             Default: =ThisItem.UID
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"UID")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -163,7 +162,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="StartersName"
             Default: =ThisItem.EmployeeFirstName
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"StartersName")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -239,7 +238,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="EmployeeLastName"
             Default: =ThisItem.EmployeeLastName
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"EmployeeLastName")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -315,7 +314,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="JobTitle"
             Default: =ThisItem.JobTitle
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"JobTitle")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -391,7 +390,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Service"
             Default: =ThisItem.Service
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Service")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -467,7 +466,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Site"
             Default: =ThisItem.Site
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Site")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -543,7 +542,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Team"
             Default: =ThisItem.Team
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Team")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -626,7 +625,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="SpectrumEmp"
             Default: =ThisItem.SpectrumEmp
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"SpectrumEmp")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -707,7 +706,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="SpectrumEmpEmail"
             Default: =ThisItem.SpectrumEmpEmail
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"SpectrumEmpEmail")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -874,7 +873,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="WelcometotheDepartment_x002f_Bus"
             Default: =ThisItem.'Welcome to the Department/Business Unit'
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"WelcometotheDepartment_x002f_Bus")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -931,6 +930,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 HoverBorderColor: =RGBA(88,89,91,1)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
@@ -949,7 +949,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Date1"
             Default: =ThisItem.Date1
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Date1")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -1034,7 +1034,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="BriefdescriptionoftheDepartment_"
             Default: =ThisItem.'Brief description of the Department/Business Unit and how it fits into the organisation'
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"BriefdescriptionoftheDepartment_")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -1088,6 +1088,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
                 Text: ="Done"
@@ -1105,7 +1106,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Date2"
             Default: =ThisItem.Date2
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Date2")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -1183,7 +1184,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Comments1"
             Default: =ThisItem.Comments1
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Comments1")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -1273,7 +1274,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Comments2"
             Default: =ThisItem.Comments2
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Comments2")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -1356,7 +1357,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Explainmanagementstructureofthed"
             Default: =ThisItem.'Explain management structure of the department'
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Explainmanagementstructureofthed")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -1410,6 +1411,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
                 Text: ="Done"
@@ -1421,7 +1423,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Date3"
             Default: =ThisItem.Date3
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Date3")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -1500,7 +1502,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="IntroducetoMentor_x002c_whereapp"
             Default: =ThisItem.'Introduce to Mentor, where appropriate'
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"IntroducetoMentor_x002c_whereapp")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -1558,6 +1560,7 @@
                     =	
                     	
                     RGBA(88,89,91,0.25)
+                DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
                 Text: ="Done"
@@ -1569,7 +1572,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Date4"
             Default: =ThisItem.Date4
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Date4")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -1641,7 +1644,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Comments3"
             Default: =ThisItem.Comments3
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Comments3")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -1730,7 +1733,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Comments4"
             Default: =ThisItem.Comments4
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Comments4")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -1812,7 +1815,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Introducetootherstaffandexplanat"
             Default: =ThisItem.'Introduce to other staff and explanation of their roles'
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Introducetootherstaffandexplanat")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =122
@@ -1866,6 +1869,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
                 Text: ="Done"
@@ -1877,7 +1881,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Date5"
             Default: =ThisItem.Date5
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Date5")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -1956,7 +1960,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Locationoftoilets_x002c_stafffac"
             Default: =ThisItem.'Location of toilets, staff facilities, coffee room, postal area, photocopier, etc.'
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Locationoftoilets_x002c_stafffac")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =161
@@ -2010,6 +2014,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
                 Text: ="Done"
@@ -2021,7 +2026,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Date6"
             Default: =ThisItem.Date6
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Date6")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -2093,7 +2098,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Comments5"
             Default: =ThisItem.Comments5
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Comments5")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -2182,7 +2187,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Comments6"
             Default: =ThisItem.Comments6
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Comments6")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -2264,7 +2269,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Checkreceiptofformalletterofappo"
             Default: =ThisItem.'Check receipt of formal letter of appointment, contract, policy summaries and associated documents if appropriate'
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Checkreceiptofformalletterofappo")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =191
@@ -2318,6 +2323,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
                 Text: ="Done"
@@ -2329,7 +2335,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Date7"
             Default: =ThisItem.Date7
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Date7")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -2408,7 +2414,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Explainstatutoryandmandatorytrai"
             Default: =ThisItem.'Explain statutory and mandatory training needs. Ensure have basic understanding of safeguarding, Prevent, Mental Capacity Act and Conflict Management'
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Explainstatutoryandmandatorytrai")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =228
@@ -2462,6 +2468,7 @@
                 CheckboxBorderColor: |-
                     =	
                     RGBA(88,89,91,0.25)
+                DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
                 Text: ="Done"
@@ -2473,7 +2480,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Date8"
             Default: =ThisItem.Date8
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Date8")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -2545,7 +2552,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Comments7"
             Default: =ThisItem.Comments7
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Comments7")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -2634,7 +2641,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Comments8"
             Default: =ThisItem.Comments8
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Comments8")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -2716,7 +2723,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="Explainduties_x002c_remitofjob_x"
             Default: =ThisItem.'Explain duties, remit of job/go through job description'
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Explainduties_x002c_remitofjob_x")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =143
