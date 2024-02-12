@@ -981,10 +981,10 @@
                     RGBA(88,89,91,0.25)
                 DefaultDate: |-
                     =If(
-                    	Checkbox1.DisplayMode=DisplayMode.View, ThisItem.Date1,
+                    	Not(IsBlank(ThisItem.Date1)), ThisItem.Date1,
                     	If(
                     		And(
-                    			Checkbox1.DisplayMode=DisplayMode.Edit,
+                                IsBlank(ThisItem.Date1),
                     			Checkbox1.Value=true),
                     				Today(),
                     				""))
@@ -1148,10 +1148,10 @@
                     RGBA(88,89,91,0.25)
                 DefaultDate: |-
                     =If(
-                    	Checkbox1_1.DisplayMode=DisplayMode.View, ThisItem.Date2,
+                    	Not(IsBlank(ThisItem.Date2)), ThisItem.Date2,
                     	If(
                     		And(
-                    			Checkbox1_1.DisplayMode=DisplayMode.Edit,
+                                IsBlank(ThisItem.Date2),
                     			Checkbox1_1.Value=true),
                     				Today(),
                     				""))
@@ -1475,13 +1475,14 @@
                     RGBA(88,89,91,0.25)
                 DefaultDate: |-
                     =If(
-                    	Checkbox1_2.DisplayMode=DisplayMode.View, ThisItem.Date3,
+                    	Not(IsBlank(ThisItem.Date3)), ThisItem.Date3,
                     	If(
                     		And(
-                    			Checkbox1_2.DisplayMode=DisplayMode.Edit,
+                                IsBlank(ThisItem.Date3),
                     			Checkbox1_2.Value=true),
                     				Today(),
                     				""))
+                    	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(74,164,65,1)
@@ -1633,13 +1634,14 @@
                     RGBA(88,89,91,0.25)
                 DefaultDate: |-
                     =If(
-                    	Checkbox1_3.DisplayMode=DisplayMode.View, ThisItem.Date4,
+                    	Not(IsBlank(ThisItem.Date4)), ThisItem.Date4,
                     	If(
                     		And(
-                    			Checkbox1_3.DisplayMode=DisplayMode.Edit,
+                                IsBlank(ThisItem.Date4),
                     			Checkbox1_3.Value=true),
                     				Today(),
                     				""))
+                    	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(74,164,65,1)
@@ -1953,13 +1955,14 @@
                     RGBA(88,89,91,0.25)
                 DefaultDate: |-
                     =If(
-                    	Checkbox1_4.DisplayMode=DisplayMode.View, ThisItem.Date5,
+                    	Not(IsBlank(ThisItem.Date5)), ThisItem.Date5,
                     	If(
                     		And(
-                    			Checkbox1_4.DisplayMode=DisplayMode.Edit,
+                                IsBlank(ThisItem.Date5),
                     			Checkbox1_4.Value=true),
                     				Today(),
                     				""))
+                    	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(74,164,65,1)
@@ -2107,13 +2110,14 @@
                     RGBA(88,89,91,0.25)
                 DefaultDate: |-
                     =If(
-                    	Checkbox1_5.DisplayMode=DisplayMode.View, ThisItem.Date6,
+                    	Not(IsBlank(ThisItem.Date6)), ThisItem.Date6,
                     	If(
                     		And(
-                    			Checkbox1_5.DisplayMode=DisplayMode.Edit,
+                                IsBlank(ThisItem.Date6),
                     			Checkbox1_5.Value=true),
                     				Today(),
                     				""))
+                    	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(74,164,65,1)
@@ -2425,10 +2429,10 @@
                     RGBA(88,89,91,0.25)
                 DefaultDate: |-
                     =If(
-                    	Checkbox1_6.DisplayMode=DisplayMode.View, ThisItem.Date7,
+                    	Not(IsBlank(ThisItem.Date7)), ThisItem.Date7,
                     	If(
                     		And(
-                    			Checkbox1_6.DisplayMode=DisplayMode.Edit,
+                                IsBlank(ThisItem.Date7),
                     			Checkbox1_6.Value=true),
                     				Today(),
                     				""))
@@ -2580,10 +2584,10 @@
                     RGBA(88,89,91,0.25)
                 DefaultDate: |-
                     =If(
-                    	Checkbox1_7.DisplayMode=DisplayMode.View, ThisItem.Date8,
+                    	Not(IsBlank(ThisItem.Date8)), ThisItem.Date8,
                     	If(
                     		And(
-                    			Checkbox1_7.DisplayMode=DisplayMode.Edit,
+                                IsBlank(ThisItem.Date8),
                     			Checkbox1_7.Value=true),
                     				Today(),
                     				""))
@@ -2899,14 +2903,13 @@
                     RGBA(88,89,91,0.25)
                 DefaultDate: |-
                     =If(
-                    	Checkbox1_8.DisplayMode=DisplayMode.View, ThisItem.Date9,
+                    	Not(IsBlank(ThisItem.Date9)), ThisItem.Date9,
                     	If(
                     		And(
-                    			Checkbox1_8.DisplayMode=DisplayMode.Edit,
+                                IsBlank(ThisItem.Date9),
                     			Checkbox1_8.Value=true),
                     				Today(),
                     				""))
-                    	
                     	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
@@ -3058,10 +3061,10 @@
                     RGBA(88,89,91,0.25)
                 DefaultDate: |-
                     =If(
-                    	Checkbox1_9.DisplayMode=DisplayMode.View, ThisItem.Date10,
+                    	Not(IsBlank(ThisItem.Date10)), ThisItem.Date10,
                     	If(
                     		And(
-                    			Checkbox1_9.DisplayMode=DisplayMode.Edit,
+                                IsBlank(ThisItem.Date10),
                     			Checkbox1_9.Value=true),
                     				Today(),
                     				""))
@@ -3463,10 +3466,10 @@
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 DefaultDate: |-
                     =If(
-                    	Checkbox1_10.DisplayMode=DisplayMode.View, ThisItem.Date12,
+                    	Not(IsBlank(ThisItem.Date12)), ThisItem.Date12,
                     	If(
                     		And(
-                    			Checkbox1_10.DisplayMode=DisplayMode.Edit,
+                                IsBlank(ThisItem.Date12),
                     			Checkbox1_10.Value=true),
                     				Today(),
                     				""))
@@ -3618,14 +3621,13 @@
                     RGBA(88,89,91,0.25)
                 DefaultDate: |-
                     =If(
-                    	Checkbox1_11.DisplayMode=DisplayMode.View, ThisItem.Date13,
+                    	Not(IsBlank(ThisItem.Date13)), ThisItem.Date13,
                     	If(
                     		And(
-                    			Checkbox1_11.DisplayMode=DisplayMode.Edit,
+                                IsBlank(ThisItem.Date13),
                     			Checkbox1_11.Value=true),
                     				Today(),
                     				""))
-                    	
                     	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
@@ -3938,10 +3940,10 @@
                     RGBA(88,89,91,0.25)
                 DefaultDate: |-
                     =If(
-                    	Checkbox1_12.DisplayMode=DisplayMode.View, ThisItem.Date14,
+                    	Not(IsBlank(ThisItem.Date14)), ThisItem.Date14,
                     	If(
                     		And(
-                    			Checkbox1_12.DisplayMode=DisplayMode.Edit,
+                                IsBlank(ThisItem.Date14),
                     			Checkbox1_12.Value=true),
                     				Today(),
                     				""))
@@ -4093,14 +4095,13 @@
                     RGBA(88,89,91,0.25)
                 DefaultDate: |-
                     =If(
-                    	Checkbox1_13.DisplayMode=DisplayMode.View, ThisItem.Date15,
+                    	Not(IsBlank(ThisItem.Date15)), ThisItem.Date15,
                     	If(
                     		And(
-                    			Checkbox1_13.DisplayMode=DisplayMode.Edit,
+                                IsBlank(ThisItem.Date15),
                     			Checkbox1_13.Value=true),
                     				Today(),
                     				""))
-                    	
                     	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
@@ -4415,10 +4416,10 @@
                     RGBA(88,89,91,0.25)
                 DefaultDate: |-
                     =If(
-                    	Checkbox1_14.DisplayMode=DisplayMode.View, ThisItem.Date16,
+                    	Not(IsBlank(ThisItem.Date16)), ThisItem.Date16,
                     	If(
                     		And(
-                    			Checkbox1_14.DisplayMode=DisplayMode.Edit,
+                                IsBlank(ThisItem.Date16),
                     			Checkbox1_14.Value=true),
                     				Today(),
                     				""))
@@ -4573,10 +4574,10 @@
                     RGBA(88,89,91,0.25)
                 DefaultDate: |-
                     =If(
-                    	Checkbox1_15.DisplayMode=DisplayMode.View, ThisItem.Date17,
+                    	Not(IsBlank(ThisItem.Date17)), ThisItem.Date17,
                     	If(
                     		And(
-                    			Checkbox1_15.DisplayMode=DisplayMode.Edit,
+                                IsBlank(ThisItem.Date17),
                     			Checkbox1_15.Value=true),
                     				Today(),
                     				""))
@@ -4892,13 +4893,14 @@
                     RGBA(88,89,91,0.25)
                 DefaultDate: |-
                     =If(
-                    	Checkbox1_16.DisplayMode=DisplayMode.View, ThisItem.Date18,
+                    	Not(IsBlank(ThisItem.Date18)), ThisItem.Date18,
                     	If(
                     		And(
-                    			Checkbox1_16.DisplayMode=DisplayMode.Edit,
+                                IsBlank(ThisItem.Date18),
                     			Checkbox1_16.Value=true),
                     				Today(),
                     				""))
+                    	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(74,164,65,1)
@@ -5049,13 +5051,14 @@
                     RGBA(88,89,91,0.25)
                 DefaultDate: |-
                     =If(
-                    	Checkbox1_17.DisplayMode=DisplayMode.View, ThisItem.Date19,
+                    	Not(IsBlank(ThisItem.Date19)), ThisItem.Date19,
                     	If(
                     		And(
-                    			Checkbox1_17.DisplayMode=DisplayMode.Edit,
+                                IsBlank(ThisItem.Date19),
                     			Checkbox1_17.Value=true),
                     				Today(),
                     				""))
+                    	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(74,164,65,1)
@@ -5370,10 +5373,10 @@
                     RGBA(88,89,91,0.25)
                 DefaultDate: |-
                     =If(
-                    	Checkbox1_18.DisplayMode=DisplayMode.View, ThisItem.Date20,
+                    	Not(IsBlank(ThisItem.Date20)), ThisItem.Date20,
                     	If(
                     		And(
-                    			Checkbox1_18.DisplayMode=DisplayMode.Edit,
+                                IsBlank(ThisItem.Date20),
                     			Checkbox1_18.Value=true),
                     				Today(),
                     				""))
@@ -5524,14 +5527,13 @@
                     RGBA(88,89,91,0.25)
                 DefaultDate: |-
                     =If(
-                    	Checkbox1_19.DisplayMode=DisplayMode.View, ThisItem.Date21,
+                    	Not(IsBlank(ThisItem.Date21)), ThisItem.Date21,
                     	If(
                     		And(
-                    			Checkbox1_19.DisplayMode=DisplayMode.Edit,
+                                IsBlank(ThisItem.Date21),
                     			Checkbox1_19.Value=true),
                     				Today(),
                     				""))
-                    	
                     	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
@@ -5845,10 +5847,10 @@
                     RGBA(88,89,91,0.25)
                 DefaultDate: |-
                     =If(
-                    	Checkbox1_20.DisplayMode=DisplayMode.View, ThisItem.Date22,
+                    	Not(IsBlank(ThisItem.Date22)), ThisItem.Date22,
                     	If(
                     		And(
-                    			Checkbox1_20.DisplayMode=DisplayMode.Edit,
+                                IsBlank(ThisItem.Date22),
                     			Checkbox1_20.Value=true),
                     				Today(),
                     				""))
@@ -6000,10 +6002,10 @@
                     RGBA(88,89,91,0.25)
                 DefaultDate: |-
                     =If(
-                    	Checkbox1_21.DisplayMode=DisplayMode.View, ThisItem.Date23,
+                    	Not(IsBlank(ThisItem.Date23)), ThisItem.Date23,
                     	If(
                     		And(
-                    			Checkbox1_21.DisplayMode=DisplayMode.Edit,
+                                IsBlank(ThisItem.Date23),
                     			Checkbox1_21.Value=true),
                     				Today(),
                     				""))
@@ -6320,15 +6322,13 @@
                     RGBA(88,89,91,0.25)
                 DefaultDate: |-
                     =If(
-                    	Checkbox1_22.DisplayMode=DisplayMode.View, ThisItem.Date24,
+                    	Not(IsBlank(ThisItem.Date24)), ThisItem.Date24,
                     	If(
                     		And(
-                    			Checkbox1_22.DisplayMode=DisplayMode.Edit,
+                                IsBlank(ThisItem.Date24),
                     			Checkbox1_22.Value=true),
                     				Today(),
                     				""))
-                    	
-                    	
                     	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
@@ -6476,10 +6476,10 @@
                     RGBA(88,89,91,0.25)
                 DefaultDate: |-
                     =If(
-                    	Checkbox1_23.DisplayMode=DisplayMode.View, ThisItem.Date25,
+                    	Not(IsBlank(ThisItem.Date25)), ThisItem.Date25,
                     	If(
                     		And(
-                    			Checkbox1_23.DisplayMode=DisplayMode.Edit,
+                                IsBlank(ThisItem.Date25),
                     			Checkbox1_23.Value=true),
                     				Today(),
                     				""))
@@ -6795,14 +6795,13 @@
                     RGBA(88,89,91,0.25)
                 DefaultDate: |-
                     =If(
-                    	Checkbox1_24.DisplayMode=DisplayMode.View, ThisItem.Date26,
+                    	Not(IsBlank(ThisItem.Date26)), ThisItem.Date26,
                     	If(
                     		And(
-                    			Checkbox1_24.DisplayMode=DisplayMode.Edit,
+                                IsBlank(ThisItem.Date26),
                     			Checkbox1_24.Value=true),
                     				Today(),
                     				""))
-                    	
                     	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
@@ -6953,10 +6952,10 @@
                     RGBA(88,89,91,0.25)
                 DefaultDate: |-
                     =If(
-                    	Checkbox1_25.DisplayMode=DisplayMode.View, ThisItem.Date27,
+                    	Not(IsBlank(ThisItem.Date27)), ThisItem.Date27,
                     	If(
                     		And(
-                    			Checkbox1_25.DisplayMode=DisplayMode.Edit,
+                                IsBlank(ThisItem.Date27),
                     			Checkbox1_25.Value=true),
                     				Today(),
                     				""))
@@ -7272,10 +7271,10 @@
                     RGBA(88,89,91,0.25)
                 DefaultDate: |-
                     =If(
-                    	Checkbox1_26.DisplayMode=DisplayMode.View, ThisItem.Date28,
+                    	Not(IsBlank(ThisItem.Date28)), ThisItem.Date28,
                     	If(
                     		And(
-                    			Checkbox1_26.DisplayMode=DisplayMode.Edit,
+                                IsBlank(ThisItem.Date28),
                     			Checkbox1_26.Value=true),
                     				Today(),
                     				""))
@@ -7427,10 +7426,10 @@
                     RGBA(88,89,91,0.25)
                 DefaultDate: |-
                     =If(
-                    	Checkbox1_27.DisplayMode=DisplayMode.View, ThisItem.Date29,
+                    	Not(IsBlank(ThisItem.Date29)), ThisItem.Date29,
                     	If(
                     		And(
-                    			Checkbox1_27.DisplayMode=DisplayMode.Edit,
+                                IsBlank(ThisItem.Date29),
                     			Checkbox1_27.Value=true),
                     				Today(),
                     				""))
@@ -7749,13 +7748,14 @@
                     RGBA(88,89,91,0.25)
                 DefaultDate: |-
                     =If(
-                    	Checkbox1_28.DisplayMode=DisplayMode.View, ThisItem.Date30,
+                    	Not(IsBlank(ThisItem.Date30)), ThisItem.Date30,
                     	If(
                     		And(
-                    			Checkbox1_28.DisplayMode=DisplayMode.Edit,
+                                IsBlank(ThisItem.Date30),
                     			Checkbox1_28.Value=true),
                     				Today(),
                     				""))
+                    	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(74,164,65,1)
@@ -7903,10 +7903,10 @@
                     RGBA(88,89,91,0.25)
                 DefaultDate: |-
                     =If(
-                    	Checkbox1_29.DisplayMode=DisplayMode.View, ThisItem.Date31,
+                    	Not(IsBlank(ThisItem.Date31)), ThisItem.Date31,
                     	If(
                     		And(
-                    			Checkbox1_29.DisplayMode=DisplayMode.Edit,
+                                IsBlank(ThisItem.Date31),
                     			Checkbox1_29.Value=true),
                     				Today(),
                     				""))
@@ -8226,13 +8226,14 @@
                     RGBA(88,89,91,0.25)
                 DefaultDate: |-
                     =If(
-                    	Checkbox1_30.DisplayMode=DisplayMode.View, ThisItem.Date32,
+                    	Not(IsBlank(ThisItem.Date32)), ThisItem.Date32,
                     	If(
                     		And(
-                    			Checkbox1_30.DisplayMode=DisplayMode.Edit,
+                                IsBlank(ThisItem.Date32),
                     			Checkbox1_30.Value=true),
                     				Today(),
                     				""))
+                    	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(74,164,65,1)
@@ -8380,14 +8381,13 @@
                     RGBA(88,89,91,0.25)
                 DefaultDate: |-
                     =If(
-                    	Checkbox1_31.DisplayMode=DisplayMode.View, ThisItem.Date33,
+                    	Not(IsBlank(ThisItem.Date33)), ThisItem.Date33,
                     	If(
                     		And(
-                    			Checkbox1_31.DisplayMode=DisplayMode.Edit,
+                                IsBlank(ThisItem.Date33),
                     			Checkbox1_31.Value=true),
                     				Today(),
                     				""))
-                    	
                     	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
@@ -8703,10 +8703,10 @@
                     RGBA(88,89,91,0.25)
                 DefaultDate: |-
                     =If(
-                    	Checkbox1_32.DisplayMode=DisplayMode.View, ThisItem.Date34,
+                    	Not(IsBlank(ThisItem.Date34)), ThisItem.Date34,
                     	If(
                     		And(
-                    			Checkbox1_32.DisplayMode=DisplayMode.Edit,
+                                IsBlank(ThisItem.Date34),
                     			Checkbox1_32.Value=true),
                     				Today(),
                     				""))
@@ -8858,15 +8858,13 @@
                     RGBA(88,89,91,0.25)
                 DefaultDate: |-
                     =If(
-                    	Checkbox1_33.DisplayMode=DisplayMode.View, ThisItem.Date35,
+                    	Not(IsBlank(ThisItem.Date35)), ThisItem.Date35,
                     	If(
                     		And(
-                    			Checkbox1_33.DisplayMode=DisplayMode.Edit,
+                                IsBlank(ThisItem.Date35),
                     			Checkbox1_33.Value=true),
                     				Today(),
                     				""))
-                    	
-                    	
                     	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
@@ -9182,10 +9180,10 @@
                     RGBA(88,89,91,0.25)
                 DefaultDate: |-
                     =If(
-                    	Checkbox1_34.DisplayMode=DisplayMode.View, ThisItem.Date36,
+                    	Not(IsBlank(ThisItem.Date36)), ThisItem.Date36,
                     	If(
                     		And(
-                    			Checkbox1_34.DisplayMode=DisplayMode.Edit,
+                                IsBlank(ThisItem.Date36),
                     			Checkbox1_34.Value=true),
                     				Today(),
                     				""))
@@ -9337,10 +9335,10 @@
                     RGBA(88,89,91,0.25)
                 DefaultDate: |-
                     =If(
-                    	Checkbox1_35.DisplayMode=DisplayMode.View, ThisItem.Date37,
+                    	Not(IsBlank(ThisItem.Date37)), ThisItem.Date37,
                     	If(
                     		And(
-                    			Checkbox1_35.DisplayMode=DisplayMode.Edit,
+                                IsBlank(ThisItem.Date37),
                     			Checkbox1_35.Value=true),
                     				Today(),
                     				""))
@@ -9656,14 +9654,13 @@
                     RGBA(88,89,91,0.25)
                 DefaultDate: |-
                     =If(
-                    	Checkbox1_36.DisplayMode=DisplayMode.View, ThisItem.Date38,
+                    	Not(IsBlank(ThisItem.Date38)), ThisItem.Date38,
                     	If(
                     		And(
-                    			Checkbox1_36.DisplayMode=DisplayMode.Edit,
+                                IsBlank(ThisItem.Date38),
                     			Checkbox1_36.Value=true),
                     				Today(),
                     				""))
-                    	
                     	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
@@ -9812,16 +9809,17 @@
                     RGBA(88,89,91,0.25)
                 DefaultDate: |-
                     =If(
-                    	Checkbox1_37.DisplayMode=DisplayMode.View, ThisItem.Date39,
+                    	Not(IsBlank(ThisItem.Date39)), ThisItem.Date39,
                     	If(
                     		And(
-                    			Checkbox1_37.DisplayMode=DisplayMode.Edit,
+                                IsBlank(ThisItem.Date39),
                     			Checkbox1_37.Value=true),
                     				Today(),
                     				""))
                     	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                FontWeight: =FontWeight.Lighter
                 IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
@@ -10129,10 +10127,10 @@
                     RGBA(88,89,91,0.25)
                 DefaultDate: |-
                     =If(
-                    	Checkbox1_38.DisplayMode=DisplayMode.View, ThisItem.Date40,
+                    	Not(IsBlank(ThisItem.Date40)), ThisItem.Date40,
                     	If(
                     		And(
-                    			Checkbox1_38.DisplayMode=DisplayMode.Edit,
+                                IsBlank(ThisItem.Date40),
                     			Checkbox1_38.Value=true),
                     				Today(),
                     				""))
