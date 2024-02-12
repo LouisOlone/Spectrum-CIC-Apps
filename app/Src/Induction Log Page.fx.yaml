@@ -14408,13 +14408,15 @@
                     RGBA(88,89,91,0.25)
                 DefaultDate: |-
                     =If(
-                    	Checkbox1_54.DisplayMode=DisplayMode.View, ThisItem.Date58,
+                    	Not(IsBlank(ThisItem.Date58)), ThisItem.Date58,
                     	If(
                     		And(
-                    			Checkbox1_54.DisplayMode=DisplayMode.Edit,
+                                IsBlank(ThisItem.Date58),
                     			Checkbox1_54.Value=true),
                     				Today(),
                     				""))
+                    	
+                    	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(74,164,65,1)
@@ -14562,13 +14564,14 @@
                     RGBA(88,89,91,0.25)
                 DefaultDate: |-
                     =If(
-                    	Checkbox1_55.DisplayMode=DisplayMode.View, ThisItem.Date59,
+                    	Not(IsBlank(ThisItem.Date59)), ThisItem.Date59,
                     	If(
                     		And(
-                    			Checkbox1_55.DisplayMode=DisplayMode.Edit,
+                                IsBlank(ThisItem.Date59),
                     			Checkbox1_55.Value=true),
                     				Today(),
                     				""))
+                    	
                     	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
@@ -14881,10 +14884,10 @@
                     RGBA(88,89,91,0.25)
                 DefaultDate: |-
                     =If(
-                    	Checkbox1_56.DisplayMode=DisplayMode.View, ThisItem.Date60,
+                    	Not(IsBlank(ThisItem.Date60)), ThisItem.Date60,
                     	If(
                     		And(
-                    			Checkbox1_56.DisplayMode=DisplayMode.Edit,
+                                IsBlank(ThisItem.Date60),
                     			Checkbox1_56.Value=true),
                     				Today(),
                     				""))
@@ -15037,13 +15040,15 @@
                     RGBA(88,89,91,0.25)
                 DefaultDate: |-
                     =If(
-                    	Checkbox1_57.DisplayMode=DisplayMode.View, ThisItem.Date61,
+                    	Not(IsBlank(ThisItem.Date61)), ThisItem.Date61,
                     	If(
                     		And(
-                    			Checkbox1_57.DisplayMode=DisplayMode.Edit,
+                                IsBlank(ThisItem.Date61),
                     			Checkbox1_57.Value=true),
                     				Today(),
                     				""))
+                    	
+                    	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(74,164,65,1)
@@ -15358,13 +15363,14 @@
                     RGBA(88,89,91,0.25)
                 DefaultDate: |-
                     =If(
-                    	Checkbox1_58.DisplayMode=DisplayMode.View, ThisItem.Date62,
+                    	Not(IsBlank(ThisItem.Date62)), ThisItem.Date62,
                     	If(
                     		And(
-                    			Checkbox1_58.DisplayMode=DisplayMode.Edit,
+                                IsBlank(ThisItem.Date62),
                     			Checkbox1_58.Value=true),
                     				Today(),
                     				""))
+                    	
                     	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
@@ -15513,13 +15519,15 @@
                     RGBA(88,89,91,0.25)
                 DefaultDate: |-
                     =If(
-                    	Checkbox1_59.DisplayMode=DisplayMode.View, ThisItem.Date63,
+                    	Not(IsBlank(ThisItem.Date63)), ThisItem.Date63,
                     	If(
                     		And(
-                    			Checkbox1_59.DisplayMode=DisplayMode.Edit,
+                                IsBlank(ThisItem.Date63),
                     			Checkbox1_59.Value=true),
                     				Today(),
                     				""))
+                    	
+                    	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(74,164,65,1)
@@ -15834,13 +15842,14 @@
                     RGBA(88,89,91,0.25)
                 DefaultDate: |-
                     =If(
-                    	Checkbox1_60.DisplayMode=DisplayMode.View, ThisItem.Date64,
+                    	Not(IsBlank(ThisItem.Date64)), ThisItem.Date64,
                     	If(
                     		And(
-                    			Checkbox1_60.DisplayMode=DisplayMode.Edit,
+                                IsBlank(ThisItem.Date64),
                     			Checkbox1_60.Value=true),
                     				Today(),
                     				""))
+                    	
                     	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
@@ -15989,13 +15998,14 @@
                     RGBA(88,89,91,0.25)
                 DefaultDate: |-
                     =If(
-                    	Checkbox1_61.DisplayMode=DisplayMode.View, ThisItem.Date65,
+                    	Not(IsBlank(ThisItem.Date65)), ThisItem.Date65,
                     	If(
                     		And(
-                    			Checkbox1_61.DisplayMode=DisplayMode.Edit,
+                                IsBlank(ThisItem.Date65),
                     			Checkbox1_61.Value=true),
                     				Today(),
                     				""))
+                    	
                     	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
@@ -16314,14 +16324,13 @@
                     RGBA(88,89,91,0.25)
                 DefaultDate: |-
                     =If(
-                    	Checkbox1_62.DisplayMode=DisplayMode.View, ThisItem.Date66,
+                    	Not(IsBlank(ThisItem.Date66)), ThisItem.Date66,
                     	If(
                     		And(
-                    			Checkbox1_62.DisplayMode=DisplayMode.Edit,
+                                IsBlank(ThisItem.Date66),
                     			Checkbox1_62.Value=true),
                     				Today(),
                     				""))
-                    	
                     	
                     	
                 DisplayMode: =Parent.DisplayMode
