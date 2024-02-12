@@ -96,8 +96,8 @@ Requests As screen:
             Color: =RGBA(0, 0, 0, 1)
             Height: =52
             Icon: =Icon.ChevronRight
-            OnSelect: |-
-                =UpdateContext({varLoading:true});
+            OnSelect: |
+                =UpdateContext({varLoading: true});
                 If(
                     // View Laptop Request
                     ThisItem.request_type = "Laptop Request",
@@ -127,131 +127,145 @@ Requests As screen:
                             )
                         ),
                             // View Induction Log
-                    If(
-                        ThisItem.request_type = "Induction Log",
-                        And(
-                            UpdateContext({varInductionLogForm: true}),
-                            UpdateContext(
-                                {
-                                    varInductionLogDetails: LookUp(
-                                        'Induction Log',
-                                        UID = ThisItem.UID
-                                    )
-                                }
-                            )
-                        ),
-                        // View Mobile Request
                         If(
-                            ThisItem.request_type = "Mobile",
+                            ThisItem.request_type = "Induction Log",
                             And(
-                                UpdateContext({varMobileRequest: true}),
+                                UpdateContext({varInductionLogForm: true}),
                                 UpdateContext(
                                     {
-                                        varMobileDetails: LookUp(
-                                            'Mobile Requests',
+                                        varInductionLogDetails: LookUp(
+                                            'Induction Log',
                                             UID = ThisItem.UID
                                         )
                                     }
                                 )
                             ),
-                            // View Peripherals Request
+                        // View Mobile Request
                             If(
-                                ThisItem.request_type = "Peripherals",
+                                ThisItem.request_type = "Mobile",
                                 And(
-                                    UpdateContext({varPeripheralsRequest: true}),
+                                    UpdateContext({varMobileRequest: true}),
                                     UpdateContext(
                                         {
-                                            varPeripheralsDetails: LookUp(
-                                                'Peripherals Requests',
+                                            varMobileDetails: LookUp(
+                                                'Mobile Requests',
                                                 UID = ThisItem.UID
                                             )
                                         }
                                     )
                                 ),
-                                // View Special IT Request
+                            // View Peripherals Request
                                 If(
-                                    ThisItem.request_type = "Special IT Request",
+                                    ThisItem.request_type = "Peripherals",
                                     And(
-                                        UpdateContext({varSpecialRequest: true}),
+                                        UpdateContext({varPeripheralsRequest: true}),
                                         UpdateContext(
                                             {
-                                                varSpecialRequestDetails: LookUp(
-                                                    'Special IT Requests',
+                                                varPeripheralsDetails: LookUp(
+                                                    'Peripherals Requests',
                                                     UID = ThisItem.UID
                                                 )
                                             }
                                         )
                                     ),
-                                    // View Smartcard Request
+                                // View Special IT Request
                                     If(
-                                        ThisItem.request_type = "Smartcard Request",
+                                        ThisItem.request_type = "Special IT Request",
                                         And(
-                                            UpdateContext({varSmartcardRequest: true}),
+                                            UpdateContext({varSpecialRequest: true}),
                                             UpdateContext(
                                                 {
-                                                    varSmartcardRequestDetails: LookUp(
-                                                        'Smartcard Requests',
+                                                    varSpecialRequestDetails: LookUp(
+                                                        'Special IT Requests',
                                                         UID = ThisItem.UID
                                                     )
                                                 }
                                             )
                                         ),
+                                    // View Smartcard Request
+                                        If(
+                                            ThisItem.request_type = "Smartcard Request",
+                                            And(
+                                                UpdateContext({varSmartcardRequest: true}),
+                                                UpdateContext(
+                                                    {
+                                                        varSmartcardRequestDetails: LookUp(
+                                                            'Smartcard Requests',
+                                                            UID = ThisItem.UID
+                                                        )
+                                                    }
+                                                )
+                                            ),
                                         // View Smartcard Positions Request
-                                        If(
-                                            ThisItem.request_type = "Smartcard Positions",
-                                            And(
-                                                UpdateContext({varSmartcardPositionsRequest: true}),
-                                                UpdateContext(
-                                                    {
-                                                        varSmartcardPositionsRequestDetails: LookUp(
-                                                            'Smartcard Positions Requests',
-                                                            UID = ThisItem.UID
-                                                        )
-                                                    }
-                                                )
-                                            ),
+                                            If(
+                                                ThisItem.request_type = "Smartcard Positions",
+                                                And(
+                                                    UpdateContext({varSmartcardPositionsRequest: true}),
+                                                    UpdateContext(
+                                                        {
+                                                            varSmartcardPositionsRequestDetails: LookUp(
+                                                                'Smartcard Positions Requests',
+                                                                UID = ThisItem.UID
+                                                            )
+                                                        }
+                                                    )
+                                                ),
                                            // View New Starter LM Request
-                                        If(
-                                            ThisItem.request_type = "New Starter Form",
-                                            And(
-                                                UpdateContext({varNewStarterLM: true}),
-                                                UpdateContext(
-                                                    {
-                                                        varNewStarterLMDetails: LookUp(
-                                                            NewStarterForm,
-                                                            UID = ThisItem.UID
+                                                If(
+                                                    ThisItem.request_type = "New Starter Form",
+                                                    And(
+                                                        UpdateContext({varNewStarterLM: true}),
+                                                        UpdateContext(
+                                                            {
+                                                                varNewStarterLMDetails: LookUp(
+                                                                    NewStarterForm,
+                                                                    UID = ThisItem.UID
+                                                                )
+                                                            }
                                                         )
-                                                    }
-                                                )
-                                            ),
+                                                    ),
+                                                                               // View Final Probation Form
+                                                    If(
+                                                        ThisItem.request_type = "Final Probation Form",
+                                                        And(
+                                                            UpdateContext({varFinalProbationForm: true}),
+                                                            UpdateContext(
+                                                                {
+                                                                    varFinalProbationFormDetails: LookUp(
+                                                                        'Final Probation Review Form',
+                                                                        UID = ThisItem.UID
+                                                                    )
+                                                                }
+                                                            )
+                                                        ),
                                             // View Interim Probation Form
-                                        If(
-                                            ThisItem.request_type = "Interim Probation Form",
-                                            And(
-                                                UpdateContext({varInterimProbationForm: true}),
-                                                UpdateContext(
-                                                    {
-                                                        varInterimProbationFormDetails: LookUp(
-                                                            'Interim probation review form',
-                                                            UID = ThisItem.UID
+                                                        If(
+                                                            ThisItem.request_type = "Interim Probation Form",
+                                                            And(
+                                                                UpdateContext({varInterimProbationForm: true}),
+                                                                UpdateContext(
+                                                                    {
+                                                                        varInterimProbationFormDetails: LookUp(
+                                                                            'Interim probation review form',
+                                                                            UID = ThisItem.UID
+                                                                        )
+                                                                    }
+                                                                )
+                                                            ),
+                                                            false
                                                         )
-                                                    }
+                                                    )
                                                 )
-                                            ),
-                                            false
+                                            )
                                         )
                                     )
                                 )
                             )
                         )
                     )
-                    )
-                    )
-                    )
                 );
                 // Open pop-up window
-                
-                UpdateContext({varPopUp: true}); 
+                UpdateContext({varPopUp: true});
             PaddingBottom: =12
             PaddingLeft: =12
             PaddingRight: =12
@@ -2469,6 +2483,7 @@ Requests As screen:
                 UpdateContext({varNewStarterLM: false});
                 UpdateContext({varInterimProbationForm: false});
                 UpdateContext({varInductionLogForm: false});
+                UpdateContext({varFinalProbationForm: false});
                 
             Visible: =varPopUp
             Width: =20
@@ -2515,7 +2530,7 @@ Requests As screen:
             Height: =768
             Visible: =varLoading
             Width: =1366
-            ZIndex: =55
+            ZIndex: =56
 
         timer_loading_1 As timer:
             AutoStart: =
@@ -2526,7 +2541,7 @@ Requests As screen:
             Visible: =false
             X: =1037
             Y: =18
-            ZIndex: =56
+            ZIndex: =57
 
         spinner_loading_1 As Spinner:
             BasePaletteColor: =
@@ -2540,7 +2555,7 @@ Requests As screen:
             Width: =1366
             X: =0
             Y: =0
-            ZIndex: =57
+            ZIndex: =58
 
     form_comment As form:
         DataSource: =Requests_Master
@@ -12573,6 +12588,2245 @@ Requests As screen:
                 Y: =DataCardKey624.Y
                 ZIndex: =4
 
+    Form6_1 As form:
+        DataSource: ='Final Probation Review Form'
+        DefaultMode: =FormMode.View
+        Height: =525
+        Item: =varFinalProbationFormDetails
+        NumberOfColumns: =1
+        Visible: =varFinalProbationForm
+        Width: =374
+        X: =106
+        Y: =162
+        ZIndex: =55
+
+        UID_DataCard20 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="UID"
+            Default: =ThisItem.UID
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Final Probation Review Form'],DataSourceInfo.DisplayName,"UID")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =66
+            MaxLength: =DataSourceInfo([@'Final Probation Review Form'], DataSourceInfo.MaxLength, "UID")
+            Required: =false
+            Update: =DataCardValue270.Text
+            Width: =374
+            X: =0
+            Y: =0
+            ZIndex: =60
+
+            DataCardKey504 As label:
+                AutoHeight: =true
+                Color: =RGBA(0, 0, 0, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Size: =11
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue270 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(214, 221, 224, 0.5)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
+                Height: =25
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =10
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey504.Y + DataCardKey504.Height + 5
+                ZIndex: =2
+
+            ErrorMessage505 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue270.Y + DataCardValue270.Height
+                ZIndex: =3
+
+            StarVisible505 As label:
+                Align: =Align.Center
+                Height: =DataCardKey504.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey504.Y
+                ZIndex: =4
+
+        EmployeeSpectrumFlag_DataCard3 As typedDataCard.comboBoxEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="EmployeeSpectrumFlag"
+            Default: =ThisItem.EmployeeSpectrumFlag
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Final Probation Review Form'],DataSourceInfo.DisplayName,"EmployeeSpectrumFlag")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue274.Selected
+            Width: =374
+            X: =0
+            Y: =1
+            ZIndex: =60
+
+            DataCardKey506 As label:
+                AutoHeight: =true
+                Color: =RGBA(0, 0, 0, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Size: =11
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue274 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["Value"]
+                DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(214, 221, 224, 0.5)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
+                Height: =25
+                Items: =Choices([@'Final Probation Review Form'].EmployeeSpectrumFlag)
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["Value"]
+                SearchItems: =Choices('Final Probation Review Form'.EmployeeSpectrumFlag,DataCardValue274.SearchText)
+                SelectMultiple: =false
+                Size: =10
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey506.Y + DataCardKey506.Height + 5
+                ZIndex: =2
+
+            ErrorMessage507 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue274.Y + DataCardValue274.Height
+                ZIndex: =3
+
+            StarVisible507 As label:
+                Align: =Align.Center
+                Height: =DataCardKey506.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey506.Y
+                ZIndex: =4
+
+        SpectrumEmployeeName_DataCard4 As typedDataCard.comboBoxEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="SpectrumEmployeeName"
+            Default: =ThisItem.SpectrumEmployeeName
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Final Probation Review Form'],DataSourceInfo.DisplayName,"SpectrumEmployeeName")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue276.Selected
+            Width: =374
+            X: =0
+            Y: =2
+            ZIndex: =60
+
+            DataCardKey507 As label:
+                AutoHeight: =true
+                Color: =RGBA(0, 0, 0, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Size: =11
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue276 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["Email","Claims","Picture"]
+                DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(214, 221, 224, 0.5)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
+                Height: =25
+                Items: =Choices([@'Final Probation Review Form'].SpectrumEmployeeName)
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["Claims"]
+                SearchItems: =Choices('Final Probation Review Form'.SpectrumEmployeeName,DataCardValue276.SearchText)
+                SelectMultiple: =false
+                Size: =10
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey507.Y + DataCardKey507.Height + 5
+                ZIndex: =2
+
+            ErrorMessage508 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue276.Y + DataCardValue276.Height
+                ZIndex: =3
+
+            StarVisible508 As label:
+                Align: =Align.Center
+                Height: =DataCardKey507.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey507.Y
+                ZIndex: =4
+
+        NonSpecEmployeeFirstname_DataCard4 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="NonSpecEmployeeFirstname"
+            Default: =ThisItem.NonSpecEmployeeFirstname
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Final Probation Review Form'],DataSourceInfo.DisplayName,"NonSpecEmployeeFirstname")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Final Probation Review Form'], DataSourceInfo.MaxLength, "NonSpecEmployeeFirstname")
+            Required: =false
+            Update: =DataCardValue278.Text
+            Width: =374
+            X: =0
+            Y: =3
+            ZIndex: =60
+
+            DataCardKey508 As label:
+                AutoHeight: =true
+                Color: =RGBA(0, 0, 0, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Size: =11
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue278 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(214, 221, 224, 0.5)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
+                Height: =25
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =10
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey508.Y + DataCardKey508.Height + 5
+                ZIndex: =2
+
+            ErrorMessage509 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue278.Y + DataCardValue278.Height
+                ZIndex: =3
+
+            StarVisible509 As label:
+                Align: =Align.Center
+                Height: =DataCardKey508.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey508.Y
+                ZIndex: =4
+
+        NonSpecEmployeeLastname_DataCard4 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="NonSpecEmployeeLastname"
+            Default: =ThisItem.NonSpecEmployeeLastname
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Final Probation Review Form'],DataSourceInfo.DisplayName,"NonSpecEmployeeLastname")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Final Probation Review Form'], DataSourceInfo.MaxLength, "NonSpecEmployeeLastname")
+            Required: =false
+            Update: =DataCardValue280.Text
+            Width: =374
+            X: =0
+            Y: =4
+            ZIndex: =60
+
+            DataCardKey509 As label:
+                AutoHeight: =true
+                Color: =RGBA(0, 0, 0, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Size: =11
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue280 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(214, 221, 224, 0.5)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
+                Height: =25
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =10
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey509.Y + DataCardKey509.Height + 5
+                ZIndex: =2
+
+            ErrorMessage510 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue280.Y + DataCardValue280.Height
+                ZIndex: =3
+
+            StarVisible510 As label:
+                Align: =Align.Center
+                Height: =DataCardKey509.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey509.Y
+                ZIndex: =4
+
+        JobTitle_DataCard6 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="JobTitle"
+            Default: =ThisItem.JobTitle
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Final Probation Review Form'],DataSourceInfo.DisplayName,"JobTitle")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Final Probation Review Form'], DataSourceInfo.MaxLength, "JobTitle")
+            Required: =false
+            Update: =DataCardValue282.Text
+            Width: =374
+            X: =0
+            Y: =5
+            ZIndex: =60
+
+            DataCardKey510 As label:
+                AutoHeight: =true
+                Color: =RGBA(0, 0, 0, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Size: =11
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue282 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(214, 221, 224, 0.5)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
+                Height: =25
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =10
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey510.Y + DataCardKey510.Height + 5
+                ZIndex: =2
+
+            ErrorMessage511 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue282.Y + DataCardValue282.Height
+                ZIndex: =3
+
+            StarVisible511 As label:
+                Align: =Align.Center
+                Height: =DataCardKey510.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey510.Y
+                ZIndex: =4
+
+        Service_DataCard9 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Service"
+            Default: =ThisItem.Service
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Final Probation Review Form'],DataSourceInfo.DisplayName,"Service")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Final Probation Review Form'], DataSourceInfo.MaxLength, "Service")
+            Required: =false
+            Update: =DataCardValue284.Text
+            Width: =374
+            X: =0
+            Y: =6
+            ZIndex: =60
+
+            DataCardKey511 As label:
+                AutoHeight: =true
+                Color: =RGBA(0, 0, 0, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Size: =11
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue284 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(214, 221, 224, 0.5)
+                Height: =25
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey511.Y + DataCardKey511.Height + 5
+                ZIndex: =2
+
+            ErrorMessage512 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue284.Y + DataCardValue284.Height
+                ZIndex: =3
+
+            StarVisible512 As label:
+                Align: =Align.Center
+                Height: =DataCardKey511.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey511.Y
+                ZIndex: =4
+
+        Site_DataCard9 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Site"
+            Default: =ThisItem.Site
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Final Probation Review Form'],DataSourceInfo.DisplayName,"Site")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Final Probation Review Form'], DataSourceInfo.MaxLength, "Site")
+            Required: =false
+            Update: =DataCardValue286.Text
+            Width: =374
+            X: =0
+            Y: =7
+            ZIndex: =60
+
+            DataCardKey512 As label:
+                AutoHeight: =true
+                Color: =RGBA(0, 0, 0, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Size: =11
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue286 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(214, 221, 224, 0.5)
+                Height: =25
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey512.Y + DataCardKey512.Height + 5
+                ZIndex: =2
+
+            ErrorMessage513 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue286.Y + DataCardValue286.Height
+                ZIndex: =3
+
+            StarVisible513 As label:
+                Align: =Align.Center
+                Height: =DataCardKey512.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey512.Y
+                ZIndex: =4
+
+        Team_DataCard9 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Team"
+            Default: =ThisItem.Team
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Final Probation Review Form'],DataSourceInfo.DisplayName,"Team")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Final Probation Review Form'], DataSourceInfo.MaxLength, "Team")
+            Required: =false
+            Update: =DataCardValue288.Text
+            Width: =374
+            X: =0
+            Y: =8
+            ZIndex: =60
+
+            DataCardKey513 As label:
+                AutoHeight: =true
+                Color: =RGBA(0, 0, 0, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Size: =11
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue288 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(214, 221, 224, 0.5)
+                Height: =25
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey513.Y + DataCardKey513.Height + 5
+                ZIndex: =2
+
+            ErrorMessage514 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue288.Y + DataCardValue288.Height
+                ZIndex: =3
+
+            StarVisible514 As label:
+                Align: =Align.Center
+                Height: =DataCardKey513.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey513.Y
+                ZIndex: =4
+
+        StartDate_DataCard6 As typedDataCard.dateEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="StartDate"
+            Default: =ThisItem.StartDate
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Final Probation Review Form'],DataSourceInfo.DisplayName,"StartDate")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue290.SelectedDate
+            Width: =374
+            X: =0
+            Y: =9
+            ZIndex: =60
+
+            DataCardKey514 As label:
+                AutoHeight: =true
+                Color: =RGBA(0, 0, 0, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Size: =11
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue290 As datepicker:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultDate: =Parent.Default
+                DisplayMode: =Parent.DisplayMode
+                EndYear: =Year(Today())+100
+                Fill: =RGBA(214, 221, 224, 0.5)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
+                Height: =25
+                IsEditable: =true
+                PaddingBottom: =0
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                Size: =11
+                StartYear: =1899
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey514.Y + DataCardKey514.Height + 5
+                ZIndex: =2
+
+            ErrorMessage515 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue290.Y + DataCardValue290.Height
+                ZIndex: =3
+
+            StarVisible515 As label:
+                Align: =Align.Center
+                Height: =DataCardKey514.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey514.Y
+                ZIndex: =4
+
+        InterimDate_DataCard2 As typedDataCard.dateEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="InterimDate"
+            Default: =ThisItem.InterimDate
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Final Probation Review Form'],DataSourceInfo.DisplayName,"InterimDate")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue292.SelectedDate
+            Width: =374
+            X: =0
+            Y: =10
+            ZIndex: =60
+
+            DataCardKey515 As label:
+                AutoHeight: =true
+                Color: =RGBA(0, 0, 0, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Size: =11
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue292 As datepicker:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultDate: =Parent.Default
+                DisplayMode: =Parent.DisplayMode
+                EndYear: =Year(Today())+100
+                Fill: =RGBA(214, 221, 224, 0.5)
+                Font: =Font.Arial
+                Height: =25
+                IsEditable: =true
+                PaddingBottom: =0
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                Size: =10
+                StartYear: =1899
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey515.Y + DataCardKey515.Height + 5
+                ZIndex: =2
+
+            ErrorMessage516 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue292.Y + DataCardValue292.Height
+                ZIndex: =3
+
+            StarVisible516 As label:
+                Align: =Align.Center
+                Height: =DataCardKey515.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey515.Y
+                ZIndex: =4
+
+        FinalDate_DataCard2 As typedDataCard.dateEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="FinalDate"
+            Default: =ThisItem.FinalDate
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Final Probation Review Form'],DataSourceInfo.DisplayName,"FinalDate")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue294.SelectedDate
+            Width: =374
+            X: =0
+            Y: =11
+            ZIndex: =60
+
+            DataCardKey516 As label:
+                AutoHeight: =true
+                Color: =RGBA(0, 0, 0, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Size: =11
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue294 As datepicker:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultDate: =Parent.Default
+                DisplayMode: =Parent.DisplayMode
+                EndYear: =Year(Today())+100
+                Fill: =RGBA(214, 221, 224, 0.5)
+                Height: =25
+                IsEditable: =true
+                PaddingBottom: =0
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                StartYear: =1899
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey516.Y + DataCardKey516.Height + 5
+                ZIndex: =2
+
+            ErrorMessage517 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue294.Y + DataCardValue294.Height
+                ZIndex: =3
+
+            StarVisible517 As label:
+                Align: =Align.Center
+                Height: =DataCardKey516.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey516.Y
+                ZIndex: =4
+
+        TeamworkComments_DataCard4 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="TeamworkComments"
+            Default: =ThisItem.TeamworkComments
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Final Probation Review Form'],DataSourceInfo.DisplayName,"TeamworkComments")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Final Probation Review Form'], DataSourceInfo.MaxLength, "TeamworkComments")
+            Required: =false
+            Update: =DataCardValue298.Text
+            Width: =374
+            X: =0
+            Y: =12
+            ZIndex: =60
+
+            DataCardKey518 As label:
+                AutoHeight: =true
+                Color: =RGBA(0, 0, 0, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Size: =11
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue298 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(214, 221, 224, 0.5)
+                Height: =25
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey518.Y + DataCardKey518.Height + 5
+                ZIndex: =2
+
+            ErrorMessage519 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue298.Y + DataCardValue298.Height
+                ZIndex: =3
+
+            StarVisible519 As label:
+                Align: =Align.Center
+                Height: =DataCardKey518.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey518.Y
+                ZIndex: =4
+
+        AttendanceComments_DataCard4 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="AttendanceComments"
+            Default: =ThisItem.AttendanceComments
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Final Probation Review Form'],DataSourceInfo.DisplayName,"AttendanceComments")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Final Probation Review Form'], DataSourceInfo.MaxLength, "AttendanceComments")
+            Required: =false
+            Update: =DataCardValue302.Text
+            Width: =374
+            X: =0
+            Y: =13
+            ZIndex: =60
+
+            DataCardKey520 As label:
+                AutoHeight: =true
+                Color: =RGBA(0, 0, 0, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Size: =11
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue302 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(214, 221, 224, 0.5)
+                Height: =25
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey520.Y + DataCardKey520.Height + 5
+                ZIndex: =2
+
+            ErrorMessage521 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue302.Y + DataCardValue302.Height
+                ZIndex: =3
+
+            StarVisible521 As label:
+                Align: =Align.Center
+                Height: =DataCardKey520.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey520.Y
+                ZIndex: =4
+
+        InstructionComments_DataCard4 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="InstructionComments"
+            Default: =ThisItem.InstructionComments
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Final Probation Review Form'],DataSourceInfo.DisplayName,"InstructionComments")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Final Probation Review Form'], DataSourceInfo.MaxLength, "InstructionComments")
+            Required: =false
+            Update: =DataCardValue306.Text
+            Width: =374
+            X: =0
+            Y: =14
+            ZIndex: =60
+
+            DataCardKey522 As label:
+                AutoHeight: =true
+                Color: =RGBA(0, 0, 0, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Size: =11
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue306 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(214, 221, 224, 0.5)
+                Height: =25
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey522.Y + DataCardKey522.Height + 5
+                ZIndex: =2
+
+            ErrorMessage523 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue306.Y + DataCardValue306.Height
+                ZIndex: =3
+
+            StarVisible523 As label:
+                Align: =Align.Center
+                Height: =DataCardKey522.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey522.Y
+                ZIndex: =4
+
+        TrainingComments_DataCard4 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="TrainingComments"
+            Default: =ThisItem.TrainingComments
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Final Probation Review Form'],DataSourceInfo.DisplayName,"TrainingComments")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Final Probation Review Form'], DataSourceInfo.MaxLength, "TrainingComments")
+            Required: =false
+            Update: =DataCardValue342.Text
+            Width: =374
+            X: =0
+            Y: =15
+            ZIndex: =60
+
+            DataCardKey524 As label:
+                AutoHeight: =true
+                Color: =RGBA(0, 0, 0, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Size: =11
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue342 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(214, 221, 224, 0.5)
+                Height: =25
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey524.Y + DataCardKey524.Height + 5
+                ZIndex: =2
+
+            ErrorMessage525 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue342.Y + DataCardValue342.Height
+                ZIndex: =3
+
+            StarVisible525 As label:
+                Align: =Align.Center
+                Height: =DataCardKey524.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey524.Y
+                ZIndex: =4
+
+        "'FurtherDetails _DataCard4' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="FurtherDetails"
+            Default: =ThisItem.'FurtherDetails '
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Final Probation Review Form'],DataSourceInfo.DisplayName,"FurtherDetails")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Final Probation Review Form'], DataSourceInfo.MaxLength, "FurtherDetails")
+            Required: =false
+            Update: =DataCardValue346.Text
+            Width: =374
+            X: =0
+            Y: =16
+            ZIndex: =60
+
+            DataCardKey526 As label:
+                AutoHeight: =true
+                Color: =RGBA(0, 0, 0, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Size: =11
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue346 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(214, 221, 224, 0.5)
+                Height: =25
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey526.Y + DataCardKey526.Height + 5
+                ZIndex: =2
+
+            ErrorMessage527 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue346.Y + DataCardValue346.Height
+                ZIndex: =3
+
+            StarVisible527 As label:
+                Align: =Align.Center
+                Height: =DataCardKey526.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey526.Y
+                ZIndex: =4
+
+        EmployeeComments_DataCard2 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="EmployeeComments"
+            Default: =ThisItem.EmployeeComments
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Final Probation Review Form'],DataSourceInfo.DisplayName,"EmployeeComments")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Final Probation Review Form'], DataSourceInfo.MaxLength, "EmployeeComments")
+            Required: =false
+            Update: =DataCardValue350.Text
+            Width: =374
+            X: =0
+            Y: =17
+            ZIndex: =60
+
+            DataCardKey528 As label:
+                AutoHeight: =true
+                Color: =RGBA(0, 0, 0, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Size: =11
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue350 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(214, 221, 224, 0.5)
+                Height: =25
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey528.Y + DataCardKey528.Height + 5
+                ZIndex: =2
+
+            ErrorMessage529 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue350.Y + DataCardValue350.Height
+                ZIndex: =3
+
+            StarVisible529 As label:
+                Align: =Align.Center
+                Height: =DataCardKey528.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey528.Y
+                ZIndex: =4
+
+        ConfirmProbationLetterFlag_DataCard2 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ConfirmProbationLetterFlag"
+            Default: =ThisItem.ConfirmProbationLetterFlag
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Final Probation Review Form'],DataSourceInfo.DisplayName,"ConfirmProbationLetterFlag")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Final Probation Review Form'], DataSourceInfo.MaxLength, "ConfirmProbationLetterFlag")
+            Required: =false
+            Update: =DataCardValue354.Text
+            Width: =374
+            X: =0
+            Y: =18
+            ZIndex: =60
+
+            DataCardKey530 As label:
+                AutoHeight: =true
+                Color: =RGBA(0, 0, 0, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Size: =11
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue354 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(214, 221, 224, 0.5)
+                Height: =25
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey530.Y + DataCardKey530.Height + 5
+                ZIndex: =2
+
+            ErrorMessage531 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue354.Y + DataCardValue354.Height
+                ZIndex: =3
+
+            StarVisible531 As label:
+                Align: =Align.Center
+                Height: =DataCardKey530.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey530.Y
+                ZIndex: =4
+
+        GoldenHandshakeFlag_DataCard2 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="GoldenHandshakeFlag"
+            Default: =ThisItem.GoldenHandshakeFlag
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Final Probation Review Form'],DataSourceInfo.DisplayName,"GoldenHandshakeFlag")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Final Probation Review Form'], DataSourceInfo.MaxLength, "GoldenHandshakeFlag")
+            Required: =false
+            Update: =DataCardValue358.Text
+            Width: =374
+            X: =0
+            Y: =19
+            ZIndex: =60
+
+            DataCardKey532 As label:
+                AutoHeight: =true
+                Color: =RGBA(0, 0, 0, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Size: =11
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue358 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(214, 221, 224, 0.5)
+                Height: =25
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey532.Y + DataCardKey532.Height + 5
+                ZIndex: =2
+
+            ErrorMessage533 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue358.Y + DataCardValue358.Height
+                ZIndex: =3
+
+            StarVisible533 As label:
+                Align: =Align.Center
+                Height: =DataCardKey532.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey532.Y
+                ZIndex: =4
+
+        ExtendProbabtionFlag_DataCard1 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ExtendProbabtionFlag"
+            Default: =ThisItem.ExtendProbabtionFlag
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Final Probation Review Form'],DataSourceInfo.DisplayName,"ExtendProbabtionFlag")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Final Probation Review Form'], DataSourceInfo.MaxLength, "ExtendProbabtionFlag")
+            Required: =false
+            Update: =DataCardValue362.Text
+            Width: =374
+            X: =0
+            Y: =20
+            ZIndex: =60
+
+            DataCardKey534 As label:
+                AutoHeight: =true
+                Color: =RGBA(0, 0, 0, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Size: =11
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue362 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(214, 221, 224, 0.5)
+                Height: =25
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey534.Y + DataCardKey534.Height + 5
+                ZIndex: =2
+
+            ErrorMessage535 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue362.Y + DataCardValue362.Height
+                ZIndex: =3
+
+            StarVisible535 As label:
+                Align: =Align.Center
+                Height: =DataCardKey534.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey534.Y
+                ZIndex: =4
+
+        ExtensionDetails_DataCard1 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ExtensionDetails"
+            Default: =ThisItem.ExtensionDetails
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Final Probation Review Form'],DataSourceInfo.DisplayName,"ExtensionDetails")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Final Probation Review Form'], DataSourceInfo.MaxLength, "ExtensionDetails")
+            Required: =false
+            Update: =DataCardValue366.Text
+            Width: =374
+            X: =0
+            Y: =21
+            ZIndex: =60
+
+            DataCardKey536 As label:
+                AutoHeight: =true
+                Color: =RGBA(0, 0, 0, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Size: =11
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue366 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(214, 221, 224, 0.5)
+                Height: =25
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey536.Y + DataCardKey536.Height + 5
+                ZIndex: =2
+
+            ErrorMessage537 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue366.Y + DataCardValue366.Height
+                ZIndex: =3
+
+            StarVisible537 As label:
+                Align: =Align.Center
+                Height: =DataCardKey536.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey536.Y
+                ZIndex: =4
+
+        Objectives_DataCard3 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Objectives"
+            Default: =ThisItem.Objectives
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Final Probation Review Form'],DataSourceInfo.DisplayName,"Objectives")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Final Probation Review Form'], DataSourceInfo.MaxLength, "Objectives")
+            Required: =false
+            Update: =DataCardValue370.Text
+            Width: =374
+            X: =0
+            Y: =22
+            ZIndex: =60
+
+            DataCardKey538 As label:
+                AutoHeight: =true
+                Color: =RGBA(0, 0, 0, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Size: =11
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue370 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(214, 221, 224, 0.5)
+                Height: =25
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey538.Y + DataCardKey538.Height + 5
+                ZIndex: =2
+
+            ErrorMessage539 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue370.Y + DataCardValue370.Height
+                ZIndex: =3
+
+            StarVisible539 As label:
+                Align: =Align.Center
+                Height: =DataCardKey538.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey538.Y
+                ZIndex: =4
+
+        Constraints_DataCard3 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Constraints"
+            Default: =ThisItem.Constraints
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Final Probation Review Form'],DataSourceInfo.DisplayName,"Constraints")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Final Probation Review Form'], DataSourceInfo.MaxLength, "Constraints")
+            Required: =false
+            Update: =DataCardValue374.Text
+            Width: =374
+            X: =0
+            Y: =23
+            ZIndex: =60
+
+            DataCardKey540 As label:
+                AutoHeight: =true
+                Color: =RGBA(0, 0, 0, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Size: =11
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue374 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(214, 221, 224, 0.5)
+                Height: =25
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey540.Y + DataCardKey540.Height + 5
+                ZIndex: =2
+
+            ErrorMessage541 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue374.Y + DataCardValue374.Height
+                ZIndex: =3
+
+            StarVisible541 As label:
+                Align: =Align.Center
+                Height: =DataCardKey540.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey540.Y
+                ZIndex: =4
+
+        SupportTraining_DataCard3 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="SupportTraining"
+            Default: =ThisItem.SupportTraining
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Final Probation Review Form'],DataSourceInfo.DisplayName,"SupportTraining")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Final Probation Review Form'], DataSourceInfo.MaxLength, "SupportTraining")
+            Required: =false
+            Update: =DataCardValue378.Text
+            Width: =374
+            X: =0
+            Y: =24
+            ZIndex: =60
+
+            DataCardKey542 As label:
+                AutoHeight: =true
+                Color: =RGBA(0, 0, 0, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Size: =11
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue378 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(214, 221, 224, 0.5)
+                Height: =25
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey542.Y + DataCardKey542.Height + 5
+                ZIndex: =2
+
+            ErrorMessage543 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue378.Y + DataCardValue378.Height
+                ZIndex: =3
+
+            StarVisible543 As label:
+                Align: =Align.Center
+                Height: =DataCardKey542.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey542.Y
+                ZIndex: =4
+
+        ReviewDate_DataCard3 As typedDataCard.dateEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ReviewDate"
+            Default: =ThisItem.ReviewDate
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Final Probation Review Form'],DataSourceInfo.DisplayName,"ReviewDate")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue382.SelectedDate
+            Width: =374
+            X: =0
+            Y: =25
+            ZIndex: =60
+
+            DataCardKey544 As label:
+                AutoHeight: =true
+                Color: =RGBA(0, 0, 0, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Size: =11
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue382 As datepicker:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultDate: =Parent.Default
+                DisplayMode: =Parent.DisplayMode
+                EndYear: =Year(Today())+100
+                Fill: =RGBA(214, 221, 224, 0.5)
+                Height: =25
+                IsEditable: =true
+                PaddingBottom: =0
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                StartYear: =1899
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey544.Y + DataCardKey544.Height + 5
+                ZIndex: =2
+
+            ErrorMessage545 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue382.Y + DataCardValue382.Height
+                ZIndex: =3
+
+            StarVisible545 As label:
+                Align: =Align.Center
+                Height: =DataCardKey544.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey544.Y
+                ZIndex: =4
+
+        LineManagerSignatureFLag_DataCard3 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="LineManagerSignatureFLag"
+            Default: =ThisItem.LineManagerSignatureFLag
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Final Probation Review Form'],DataSourceInfo.DisplayName,"LineManagerSignatureFLag")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Final Probation Review Form'], DataSourceInfo.MaxLength, "LineManagerSignatureFLag")
+            Required: =false
+            Update: =DataCardValue386.Text
+            Width: =374
+            X: =0
+            Y: =26
+            ZIndex: =60
+
+            DataCardKey546 As label:
+                AutoHeight: =true
+                Color: =RGBA(0, 0, 0, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Size: =11
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue386 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(214, 221, 224, 0.5)
+                Height: =25
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey546.Y + DataCardKey546.Height + 5
+                ZIndex: =2
+
+            ErrorMessage547 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue386.Y + DataCardValue386.Height
+                ZIndex: =3
+
+            StarVisible547 As label:
+                Align: =Align.Center
+                Height: =DataCardKey546.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey546.Y
+                ZIndex: =4
+
+        EmployeeSignatureFlag_DataCard1 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="EmployeeSignatureFlag"
+            Default: =ThisItem.EmployeeSignatureFlag
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Final Probation Review Form'],DataSourceInfo.DisplayName,"EmployeeSignatureFlag")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Final Probation Review Form'], DataSourceInfo.MaxLength, "EmployeeSignatureFlag")
+            Required: =false
+            Update: =DataCardValue390.Text
+            Width: =374
+            X: =0
+            Y: =27
+            ZIndex: =60
+
+            DataCardKey548 As label:
+                AutoHeight: =true
+                Color: =RGBA(0, 0, 0, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Size: =11
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue390 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(214, 221, 224, 0.5)
+                Height: =25
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey548.Y + DataCardKey548.Height + 5
+                ZIndex: =2
+
+            ErrorMessage549 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue390.Y + DataCardValue390.Height
+                ZIndex: =3
+
+            StarVisible549 As label:
+                Align: =Align.Center
+                Height: =DataCardKey548.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey548.Y
+                ZIndex: =4
+
+        NonSpectrumEmail_DataCard3 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="NonSpectrumEmail"
+            Default: =ThisItem.NonSpectrumEmail
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Final Probation Review Form'],DataSourceInfo.DisplayName,"NonSpectrumEmail")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Final Probation Review Form'], DataSourceInfo.MaxLength, "NonSpectrumEmail")
+            Required: =false
+            Update: =DataCardValue394.Text
+            Width: =374
+            X: =0
+            Y: =28
+            ZIndex: =60
+
+            DataCardKey550 As label:
+                AutoHeight: =true
+                Color: =RGBA(0, 0, 0, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Size: =11
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue394 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(214, 221, 224, 0.5)
+                Height: =25
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey550.Y + DataCardKey550.Height + 5
+                ZIndex: =2
+
+            ErrorMessage551 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue394.Y + DataCardValue394.Height
+                ZIndex: =3
+
+            StarVisible551 As label:
+                Align: =Align.Center
+                Height: =DataCardKey550.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey550.Y
+                ZIndex: =4
+
+        CompleteFlag_DataCard1 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="CompleteFlag"
+            Default: =ThisItem.CompleteFlag
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Final Probation Review Form'],DataSourceInfo.DisplayName,"CompleteFlag")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Final Probation Review Form'], DataSourceInfo.MaxLength, "CompleteFlag")
+            Required: =false
+            Update: =DataCardValue398.Text
+            Width: =374
+            X: =0
+            Y: =29
+            ZIndex: =60
+
+            DataCardKey552 As label:
+                AutoHeight: =true
+                Color: =RGBA(0, 0, 0, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Size: =11
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue398 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(214, 221, 224, 0.5)
+                Height: =25
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey552.Y + DataCardKey552.Height + 5
+                ZIndex: =2
+
+            ErrorMessage553 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue398.Y + DataCardValue398.Height
+                ZIndex: =3
+
+            StarVisible553 As label:
+                Align: =Align.Center
+                Height: =DataCardKey552.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey552.Y
+                ZIndex: =4
+
     Icon1_2 As icon.Tools:
         Color: =RGBA(79, 90, 94, 1)
         Height: =55
@@ -12583,7 +14837,7 @@ Requests As screen:
         Width: =63
         X: =1303
         Y: =673
-        ZIndex: =58
+        ZIndex: =59
 
     Timeline As group:
         Height: =5
@@ -12604,6 +14858,16 @@ Requests As screen:
                         gal_requests.Selected.request_type = "Interim Probation Form",
                         LookUp(
                             'Interim probation review form',
+                            gal_requests.Selected.UID = UID,
+                            LineManagerSignatureFLag
+                        ) = "True"
+                    ),
+                    success,
+                    If(
+                    And(
+                        gal_requests.Selected.request_type = "Final Probation Form",
+                        LookUp(
+                            'Final Probation Review Form',
                             gal_requests.Selected.UID = UID,
                             LineManagerSignatureFLag
                         ) = "True"
@@ -12862,6 +15126,7 @@ Requests As screen:
                         )
                     )
                 )
+                )
             Visible: =varPopUp
             Width: =35
             X: =954
@@ -12879,32 +15144,25 @@ Requests As screen:
                     gal_requests.Selected.request_type = "Interim Probation Form",
                     "Interim Form Completion",
                     If(
-                        gal_requests.Selected.request_type = "New Starter Form",
-                        "Manager Form Completion",
+                        gal_requests.Selected.request_type = "Final Probation Form",
+                        "Final Form Completion",
                         If(
-                            gal_requests.Selected.request_type = "Induction Log",
-                            "Manager Section Completion",
+                            gal_requests.Selected.request_type = "New Starter Form",
+                            "Manager Form Completion",
                             If(
-                                gal_requests.Selected.request_type = "IT Incident",
-                                "Logged with IT",
+                                gal_requests.Selected.request_type = "Induction Log",
+                                "Manager Section Completion",
                                 If(
-                                    gal_requests.Selected.request_type = "Laptop Request",
-                                    "Line Manager Approval",
+                                    gal_requests.Selected.request_type = "IT Incident",
+                                    "Logged with IT",
                                     If(
-                                        gal_requests.Selected.request_type = "4G Laptop",
+                                        gal_requests.Selected.request_type = "Laptop Request",
                                         "Line Manager Approval",
                                         If(
-                                            gal_requests.Selected.request_type = "Mobile",
+                                            gal_requests.Selected.request_type = "4G Laptop",
                                             "Line Manager Approval",
                                             If(
-                                                And(
-                                                    gal_requests.Selected.request_type = "Peripherals",
-                                                    LookUp(
-                                                        'Peripherals Requests',
-                                                        gal_requests.Selected.UID = UID,
-                                                        keyboard_count
-                                                    ) = "10+ (Please specify amount in further detail section)"
-                                                ),
+                                                gal_requests.Selected.request_type = "Mobile",
                                                 "Line Manager Approval",
                                                 If(
                                                     And(
@@ -12912,7 +15170,7 @@ Requests As screen:
                                                         LookUp(
                                                             'Peripherals Requests',
                                                             gal_requests.Selected.UID = UID,
-                                                            headset_count
+                                                            keyboard_count
                                                         ) = "10+ (Please specify amount in further detail section)"
                                                     ),
                                                     "Line Manager Approval",
@@ -12922,7 +15180,7 @@ Requests As screen:
                                                             LookUp(
                                                                 'Peripherals Requests',
                                                                 gal_requests.Selected.UID = UID,
-                                                                mouse_count
+                                                                headset_count
                                                             ) = "10+ (Please specify amount in further detail section)"
                                                         ),
                                                         "Line Manager Approval",
@@ -12932,22 +15190,20 @@ Requests As screen:
                                                                 LookUp(
                                                                     'Peripherals Requests',
                                                                     gal_requests.Selected.UID = UID,
-                                                                    monitor_count
+                                                                    mouse_count
                                                                 ) = "10+ (Please specify amount in further detail section)"
                                                             ),
                                                             "Line Manager Approval",
                                                             If(
                                                                 And(
                                                                     gal_requests.Selected.request_type = "Peripherals",
-                                                                    Not(
-                                                                        LookUp(
-                                                                            'Peripherals Requests',
-                                                                            gal_requests.Selected.UID = UID,
-                                                                            monitor_count
-                                                                        ) = "10+ (Please specify amount in further detail section)"
-                                                                    )
+                                                                    LookUp(
+                                                                        'Peripherals Requests',
+                                                                        gal_requests.Selected.UID = UID,
+                                                                        monitor_count
+                                                                    ) = "10+ (Please specify amount in further detail section)"
                                                                 ),
-                                                                "Logged with IT",
+                                                                "Line Manager Approval",
                                                                 If(
                                                                     And(
                                                                         gal_requests.Selected.request_type = "Peripherals",
@@ -12955,7 +15211,7 @@ Requests As screen:
                                                                             LookUp(
                                                                                 'Peripherals Requests',
                                                                                 gal_requests.Selected.UID = UID,
-                                                                                headset_count
+                                                                                monitor_count
                                                                             ) = "10+ (Please specify amount in further detail section)"
                                                                         )
                                                                     ),
@@ -12967,7 +15223,7 @@ Requests As screen:
                                                                                 LookUp(
                                                                                     'Peripherals Requests',
                                                                                     gal_requests.Selected.UID = UID,
-                                                                                    keyboard_count
+                                                                                    headset_count
                                                                                 ) = "10+ (Please specify amount in further detail section)"
                                                                             )
                                                                         ),
@@ -12979,37 +15235,50 @@ Requests As screen:
                                                                                     LookUp(
                                                                                         'Peripherals Requests',
                                                                                         gal_requests.Selected.UID = UID,
-                                                                                        mouse_count
+                                                                                        keyboard_count
                                                                                     ) = "10+ (Please specify amount in further detail section)"
                                                                                 )
                                                                             ),
                                                                             "Logged with IT",
                                                                             If(
-                                                                                gal_requests.Selected.request_type = "Special IT Request",
-                                                                                "Line Manager Approval",
+                                                                                And(
+                                                                                    gal_requests.Selected.request_type = "Peripherals",
+                                                                                    Not(
+                                                                                        LookUp(
+                                                                                            'Peripherals Requests',
+                                                                                            gal_requests.Selected.UID = UID,
+                                                                                            mouse_count
+                                                                                        ) = "10+ (Please specify amount in further detail section)"
+                                                                                    )
+                                                                                ),
+                                                                                "Logged with IT",
                                                                                 If(
-                                                                                    gal_requests.Selected.request_type = "IT Incident",
+                                                                                    gal_requests.Selected.request_type = "Special IT Request",
                                                                                     "Line Manager Approval",
                                                                                     If(
-                                                                                        gal_requests.Selected.request_type = "Smartcard Request",
+                                                                                        gal_requests.Selected.request_type = "IT Incident",
                                                                                         "Line Manager Approval",
                                                                                         If(
-                                                                                            gal_requests.Selected.request_type = "Smartcard Positions",
+                                                                                            gal_requests.Selected.request_type = "Smartcard Request",
                                                                                             "Line Manager Approval",
                                                                                             If(
-                                                                                                And(
-                                                                                                    gal_requests.Selected.request_type = "Smartcard Request",
-                                                                                                    LookUp(
-                                                                                                        'Smartcard Requests',
-                                                                                                        gal_requests.Selected.UID = UID,
-                                                                                                        new_or_replacement
-                                                                                                    ) = "Replace a lost/stolen Smartcard"
-                                                                                                ),
-                                                                                                "Logged with IT",
+                                                                                                gal_requests.Selected.request_type = "Smartcard Positions",
+                                                                                                "Line Manager Approval",
                                                                                                 If(
-                                                                                                    gal_requests.Selected.request_type = "Change Form",
-                                                                                                    "Budget Holder Approval",
-                                                                                                    "Error"
+                                                                                                    And(
+                                                                                                        gal_requests.Selected.request_type = "Smartcard Request",
+                                                                                                        LookUp(
+                                                                                                            'Smartcard Requests',
+                                                                                                            gal_requests.Selected.UID = UID,
+                                                                                                            new_or_replacement
+                                                                                                        ) = "Replace a lost/stolen Smartcard"
+                                                                                                    ),
+                                                                                                    "Logged with IT",
+                                                                                                    If(
+                                                                                                        gal_requests.Selected.request_type = "Change Form",
+                                                                                                        "Budget Holder Approval",
+                                                                                                        "Error"
+                                                                                                    )
                                                                                                 )
                                                                                             )
                                                                                         )
@@ -13059,6 +15328,16 @@ Requests As screen:
                         gal_requests.Selected.request_type = "Interim Probation Form",
                         LookUp(
                             'Interim probation review form',
+                            gal_requests.Selected.UID = UID,
+                            EmployeeSignatureFlag
+                        ) = "True"
+                    ),
+                    success,
+                        If(
+                    And(
+                        gal_requests.Selected.request_type = "Final Probation Form",
+                        LookUp(
+                            'Final Probation Review Form',
                             gal_requests.Selected.UID = UID,
                             EmployeeSignatureFlag
                         ) = "True"
@@ -13319,6 +15598,7 @@ Requests As screen:
                         )
                     )
                 )
+                )
             Visible: =varPopUp
             Width: =35
             X: =954
@@ -13336,32 +15616,25 @@ Requests As screen:
                     gal_requests.Selected.request_type = "Interim Probation Form",
                     "Employee Signature",
                     If(
-                        gal_requests.Selected.request_type = "Induction Log",
+                        gal_requests.Selected.request_type = "Final Probation Form",
                         "Employee Signature",
                         If(
-                            gal_requests.Selected.request_type = "New Starter Form",
-                            "HR Approval",
+                            gal_requests.Selected.request_type = "Induction Log",
+                            "Employee Signature",
                             If(
-                                gal_requests.Selected.request_type = "IT Incident",
-                                "Complete",
+                                gal_requests.Selected.request_type = "New Starter Form",
+                                "HR Approval",
                                 If(
-                                    gal_requests.Selected.request_type = "Laptop Request",
-                                    "IT Manager Approval",
+                                    gal_requests.Selected.request_type = "IT Incident",
+                                    "Complete",
                                     If(
-                                        gal_requests.Selected.request_type = "4G Laptop",
-                                        "Finance Director Approval",
+                                        gal_requests.Selected.request_type = "Laptop Request",
+                                        "IT Manager Approval",
                                         If(
-                                            gal_requests.Selected.request_type = "Mobile",
-                                            "Logged with IT",
+                                            gal_requests.Selected.request_type = "4G Laptop",
+                                            "Finance Director Approval",
                                             If(
-                                                And(
-                                                    gal_requests.Selected.request_type = "Peripherals",
-                                                    LookUp(
-                                                        'Peripherals Requests',
-                                                        gal_requests.Selected.UID = UID,
-                                                        keyboard_count
-                                                    ) = "10+ (Please specify amount in further detail section)"
-                                                ),
+                                                gal_requests.Selected.request_type = "Mobile",
                                                 "Logged with IT",
                                                 If(
                                                     And(
@@ -13369,7 +15642,7 @@ Requests As screen:
                                                         LookUp(
                                                             'Peripherals Requests',
                                                             gal_requests.Selected.UID = UID,
-                                                            headset_count
+                                                            keyboard_count
                                                         ) = "10+ (Please specify amount in further detail section)"
                                                     ),
                                                     "Logged with IT",
@@ -13379,7 +15652,7 @@ Requests As screen:
                                                             LookUp(
                                                                 'Peripherals Requests',
                                                                 gal_requests.Selected.UID = UID,
-                                                                mouse_count
+                                                                headset_count
                                                             ) = "10+ (Please specify amount in further detail section)"
                                                         ),
                                                         "Logged with IT",
@@ -13389,22 +15662,20 @@ Requests As screen:
                                                                 LookUp(
                                                                     'Peripherals Requests',
                                                                     gal_requests.Selected.UID = UID,
-                                                                    monitor_count
+                                                                    mouse_count
                                                                 ) = "10+ (Please specify amount in further detail section)"
                                                             ),
                                                             "Logged with IT",
                                                             If(
                                                                 And(
                                                                     gal_requests.Selected.request_type = "Peripherals",
-                                                                    Not(
-                                                                        LookUp(
-                                                                            'Peripherals Requests',
-                                                                            gal_requests.Selected.UID = UID,
-                                                                            monitor_count
-                                                                        ) = "10+ (Please specify amount in further detail section)"
-                                                                    )
+                                                                    LookUp(
+                                                                        'Peripherals Requests',
+                                                                        gal_requests.Selected.UID = UID,
+                                                                        monitor_count
+                                                                    ) = "10+ (Please specify amount in further detail section)"
                                                                 ),
-                                                                "Complete",
+                                                                "Logged with IT",
                                                                 If(
                                                                     And(
                                                                         gal_requests.Selected.request_type = "Peripherals",
@@ -13412,7 +15683,7 @@ Requests As screen:
                                                                             LookUp(
                                                                                 'Peripherals Requests',
                                                                                 gal_requests.Selected.UID = UID,
-                                                                                headset_count
+                                                                                monitor_count
                                                                             ) = "10+ (Please specify amount in further detail section)"
                                                                         )
                                                                     ),
@@ -13424,7 +15695,7 @@ Requests As screen:
                                                                                 LookUp(
                                                                                     'Peripherals Requests',
                                                                                     gal_requests.Selected.UID = UID,
-                                                                                    keyboard_count
+                                                                                    headset_count
                                                                                 ) = "10+ (Please specify amount in further detail section)"
                                                                             )
                                                                         ),
@@ -13436,37 +15707,50 @@ Requests As screen:
                                                                                     LookUp(
                                                                                         'Peripherals Requests',
                                                                                         gal_requests.Selected.UID = UID,
-                                                                                        mouse_count
+                                                                                        keyboard_count
                                                                                     ) = "10+ (Please specify amount in further detail section)"
                                                                                 )
                                                                             ),
                                                                             "Complete",
                                                                             If(
-                                                                                gal_requests.Selected.request_type = "Special IT Request",
-                                                                                "Logged with IT",
+                                                                                And(
+                                                                                    gal_requests.Selected.request_type = "Peripherals",
+                                                                                    Not(
+                                                                                        LookUp(
+                                                                                            'Peripherals Requests',
+                                                                                            gal_requests.Selected.UID = UID,
+                                                                                            mouse_count
+                                                                                        ) = "10+ (Please specify amount in further detail section)"
+                                                                                    )
+                                                                                ),
+                                                                                "Complete",
                                                                                 If(
-                                                                                    gal_requests.Selected.request_type = "IT Incident",
+                                                                                    gal_requests.Selected.request_type = "Special IT Request",
                                                                                     "Logged with IT",
                                                                                     If(
-                                                                                        gal_requests.Selected.request_type = "Smartcard Request",
+                                                                                        gal_requests.Selected.request_type = "IT Incident",
                                                                                         "Logged with IT",
                                                                                         If(
-                                                                                            gal_requests.Selected.request_type = "Smartcard Positions",
+                                                                                            gal_requests.Selected.request_type = "Smartcard Request",
                                                                                             "Logged with IT",
                                                                                             If(
-                                                                                                And(
-                                                                                                    gal_requests.Selected.request_type = "Smartcard Request",
-                                                                                                    LookUp(
-                                                                                                        'Smartcard Requests',
-                                                                                                        gal_requests.Selected.UID = UID,
-                                                                                                        new_or_replacement
-                                                                                                    ) = "Replace a lost/stolen Smartcard"
-                                                                                                ),
-                                                                                                "Complete",
+                                                                                                gal_requests.Selected.request_type = "Smartcard Positions",
+                                                                                                "Logged with IT",
                                                                                                 If(
-                                                                                                    gal_requests.Selected.request_type = "Change Form",
-                                                                                                    "HR Approval",
-                                                                                                    "Error"
+                                                                                                    And(
+                                                                                                        gal_requests.Selected.request_type = "Smartcard Request",
+                                                                                                        LookUp(
+                                                                                                            'Smartcard Requests',
+                                                                                                            gal_requests.Selected.UID = UID,
+                                                                                                            new_or_replacement
+                                                                                                        ) = "Replace a lost/stolen Smartcard"
+                                                                                                    ),
+                                                                                                    "Complete",
+                                                                                                    If(
+                                                                                                        gal_requests.Selected.request_type = "Change Form",
+                                                                                                        "HR Approval",
+                                                                                                        "Error"
+                                                                                                    )
                                                                                                 )
                                                                                             )
                                                                                         )
@@ -13501,6 +15785,7 @@ Requests As screen:
                 =If(
                     Or(
                         gal_requests.Selected.request_type = "Interim Probation Form",
+                        gal_requests.Selected.request_type = "Final Probation Form",
                         gal_requests.Selected.request_type = "Induction Log",
                         gal_requests.Selected.request_type = "Mobile",
                         gal_requests.Selected.request_type = "Smartcard Positions",
@@ -13586,39 +15871,39 @@ Requests As screen:
                     success,
                     If(
                         And(
-                            gal_requests.Selected.request_type = "Induction Log",
+                            gal_requests.Selected.request_type = "Final Probation Form",
                             LookUp(
-                                'Induction Log',
+                                'Final Probation Review Form',
                                 gal_requests.Selected.UID = UID,
                                 CompleteFlag
-                            ) = "true"
+                            ) = "True"
                         ),
                         success,
                         If(
                             And(
-                                gal_requests.Selected.request_type = "New Starter Form",
+                                gal_requests.Selected.request_type = "Induction Log",
                                 LookUp(
-                                    NewStarterForm,
+                                    'Induction Log',
                                     gal_requests.Selected.UID = UID,
-                                    CurrentStage.Value
-                                ) = "Complete"
+                                    CompleteFlag
+                                ) = "true"
                             ),
                             success,
                             If(
                                 And(
-                                    gal_requests.Selected.request_type = "Laptop Request",
+                                    gal_requests.Selected.request_type = "New Starter Form",
                                     LookUp(
-                                        'Laptop Requests',
+                                        NewStarterForm,
                                         gal_requests.Selected.UID = UID,
-                                        stage_logged_with_it
-                                    ) = "true"
+                                        CurrentStage.Value
+                                    ) = "Complete"
                                 ),
                                 success,
                                 If(
                                     And(
-                                        gal_requests.Selected.request_type = "4G Laptop",
+                                        gal_requests.Selected.request_type = "Laptop Request",
                                         LookUp(
-                                            '4G Laptop Requests',
+                                            'Laptop Requests',
                                             gal_requests.Selected.UID = UID,
                                             stage_logged_with_it
                                         ) = "true"
@@ -13626,19 +15911,19 @@ Requests As screen:
                                     success,
                                     If(
                                         And(
-                                            gal_requests.Selected.request_type = "Mobile",
+                                            gal_requests.Selected.request_type = "4G Laptop",
                                             LookUp(
-                                                'Mobile Requests',
+                                                '4G Laptop Requests',
                                                 gal_requests.Selected.UID = UID,
-                                                stage_complete
+                                                stage_logged_with_it
                                             ) = "true"
                                         ),
                                         success,
                                         If(
                                             And(
-                                                gal_requests.Selected.request_type = "Special IT Request",
+                                                gal_requests.Selected.request_type = "Mobile",
                                                 LookUp(
-                                                    'Special IT Requests',
+                                                    'Mobile Requests',
                                                     gal_requests.Selected.UID = UID,
                                                     stage_complete
                                                 ) = "true"
@@ -13646,14 +15931,9 @@ Requests As screen:
                                             success,
                                             If(
                                                 And(
-                                                    gal_requests.Selected.request_type = "Peripherals",
+                                                    gal_requests.Selected.request_type = "Special IT Request",
                                                     LookUp(
-                                                        'Peripherals Requests',
-                                                        gal_requests.Selected.UID = UID,
-                                                        keyboard_count
-                                                    ) = "10+ (Please specify amount in further detail section)",
-                                                    LookUp(
-                                                        'Peripherals Requests',
+                                                        'Special IT Requests',
                                                         gal_requests.Selected.UID = UID,
                                                         stage_complete
                                                     ) = "true"
@@ -13665,7 +15945,7 @@ Requests As screen:
                                                         LookUp(
                                                             'Peripherals Requests',
                                                             gal_requests.Selected.UID = UID,
-                                                            headset_count
+                                                            keyboard_count
                                                         ) = "10+ (Please specify amount in further detail section)",
                                                         LookUp(
                                                             'Peripherals Requests',
@@ -13680,7 +15960,7 @@ Requests As screen:
                                                             LookUp(
                                                                 'Peripherals Requests',
                                                                 gal_requests.Selected.UID = UID,
-                                                                mouse_count
+                                                                headset_count
                                                             ) = "10+ (Please specify amount in further detail section)",
                                                             LookUp(
                                                                 'Peripherals Requests',
@@ -13695,7 +15975,7 @@ Requests As screen:
                                                                 LookUp(
                                                                     'Peripherals Requests',
                                                                     gal_requests.Selected.UID = UID,
-                                                                    monitor_count
+                                                                    mouse_count
                                                                 ) = "10+ (Please specify amount in further detail section)",
                                                                 LookUp(
                                                                     'Peripherals Requests',
@@ -13706,25 +15986,41 @@ Requests As screen:
                                                             success,
                                                             If(
                                                                 And(
-                                                                    gal_requests.Selected.request_type = "Smartcard Request",
+                                                                    gal_requests.Selected.request_type = "Peripherals",
                                                                     LookUp(
-                                                                        'Smartcard Requests',
+                                                                        'Peripherals Requests',
                                                                         gal_requests.Selected.UID = UID,
-                                                                        stage_logged_with_it
+                                                                        monitor_count
+                                                                    ) = "10+ (Please specify amount in further detail section)",
+                                                                    LookUp(
+                                                                        'Peripherals Requests',
+                                                                        gal_requests.Selected.UID = UID,
+                                                                        stage_complete
                                                                     ) = "true"
                                                                 ),
                                                                 success,
                                                                 If(
                                                                     And(
-                                                                        gal_requests.Selected.request_type = "Smartcard Positions",
+                                                                        gal_requests.Selected.request_type = "Smartcard Request",
                                                                         LookUp(
-                                                                            'Smartcard Positions Requests',
+                                                                            'Smartcard Requests',
                                                                             gal_requests.Selected.UID = UID,
-                                                                            stage_complete
+                                                                            stage_logged_with_it
                                                                         ) = "true"
                                                                     ),
                                                                     success,
-                                                                    circle
+                                                                    If(
+                                                                        And(
+                                                                            gal_requests.Selected.request_type = "Smartcard Positions",
+                                                                            LookUp(
+                                                                                'Smartcard Positions Requests',
+                                                                                gal_requests.Selected.UID = UID,
+                                                                                stage_complete
+                                                                            ) = "true"
+                                                                        ),
+                                                                        success,
+                                                                        circle
+                                                                    )
                                                                 )
                                                             )
                                                         )
@@ -13742,6 +16038,7 @@ Requests As screen:
                 =If(
                     Or(
                         gal_requests.Selected.request_type = "Interim Probation Form",
+                        gal_requests.Selected.request_type = "Final Probation Form",
                         gal_requests.Selected.request_type = "Induction Log",
                         gal_requests.Selected.request_type = "Mobile",
                         gal_requests.Selected.request_type = "New Starter Form",
@@ -13819,29 +16116,22 @@ Requests As screen:
                     gal_requests.Selected.request_type = "Interim Probation Form",
                     "Complete",
                     If(
-                        gal_requests.Selected.request_type = "Induction Log",
+                        gal_requests.Selected.request_type = "Final Probation Form",
                         "Complete",
                         If(
-                            gal_requests.Selected.request_type = "Laptop Request",
-                            "Logged with IT",
+                            gal_requests.Selected.request_type = "Induction Log",
+                            "Complete",
                             If(
-                                gal_requests.Selected.request_type = "4G Laptop",
+                                gal_requests.Selected.request_type = "Laptop Request",
                                 "Logged with IT",
                                 If(
-                                    gal_requests.Selected.request_type = "New Starter Form",
-                                    "Complete",
+                                    gal_requests.Selected.request_type = "4G Laptop",
+                                    "Logged with IT",
                                     If(
-                                        gal_requests.Selected.request_type = "Mobile",
+                                        gal_requests.Selected.request_type = "New Starter Form",
                                         "Complete",
                                         If(
-                                            And(
-                                                gal_requests.Selected.request_type = "Peripherals",
-                                                LookUp(
-                                                    'Peripherals Requests',
-                                                    gal_requests.Selected.UID = UID,
-                                                    keyboard_count
-                                                ) = "10+ (Please specify amount in further detail section)"
-                                            ),
+                                            gal_requests.Selected.request_type = "Mobile",
                                             "Complete",
                                             If(
                                                 And(
@@ -13849,7 +16139,7 @@ Requests As screen:
                                                     LookUp(
                                                         'Peripherals Requests',
                                                         gal_requests.Selected.UID = UID,
-                                                        headset_count
+                                                        keyboard_count
                                                     ) = "10+ (Please specify amount in further detail section)"
                                                 ),
                                                 "Complete",
@@ -13859,7 +16149,7 @@ Requests As screen:
                                                         LookUp(
                                                             'Peripherals Requests',
                                                             gal_requests.Selected.UID = UID,
-                                                            mouse_count
+                                                            headset_count
                                                         ) = "10+ (Please specify amount in further detail section)"
                                                     ),
                                                     "Complete",
@@ -13869,23 +16159,34 @@ Requests As screen:
                                                             LookUp(
                                                                 'Peripherals Requests',
                                                                 gal_requests.Selected.UID = UID,
-                                                                monitor_count
+                                                                mouse_count
                                                             ) = "10+ (Please specify amount in further detail section)"
                                                         ),
                                                         "Complete",
                                                         If(
-                                                            gal_requests.Selected.request_type = "Special IT Request",
+                                                            And(
+                                                                gal_requests.Selected.request_type = "Peripherals",
+                                                                LookUp(
+                                                                    'Peripherals Requests',
+                                                                    gal_requests.Selected.UID = UID,
+                                                                    monitor_count
+                                                                ) = "10+ (Please specify amount in further detail section)"
+                                                            ),
                                                             "Complete",
                                                             If(
-                                                                gal_requests.Selected.request_type = "Smartcard Request",
+                                                                gal_requests.Selected.request_type = "Special IT Request",
                                                                 "Complete",
                                                                 If(
-                                                                    gal_requests.Selected.request_type = "Smartcard Positions",
+                                                                    gal_requests.Selected.request_type = "Smartcard Request",
                                                                     "Complete",
                                                                     If(
-                                                                        gal_requests.Selected.request_type = "Change Form",
-                                                                        "Finance Approval",
-                                                                        "Error"
+                                                                        gal_requests.Selected.request_type = "Smartcard Positions",
+                                                                        "Complete",
+                                                                        If(
+                                                                            gal_requests.Selected.request_type = "Change Form",
+                                                                            "Finance Approval",
+                                                                            "Error"
+                                                                        )
                                                                     )
                                                                 )
                                                             )
@@ -13904,6 +16205,7 @@ Requests As screen:
                 =If(
                     Or(
                         gal_requests.Selected.request_type = "Interim Probation Form",
+                        gal_requests.Selected.request_type = "Final Probation Form",
                         gal_requests.Selected.request_type = "Induction Log",
                         gal_requests.Selected.request_type = "Mobile",
                         gal_requests.Selected.request_type = "New Starter Form",
