@@ -13094,6 +13094,8 @@ Requests As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Fill: =RGBA(214, 221, 224, 0.5)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
@@ -13101,6 +13103,7 @@ Requests As screen:
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -13168,6 +13171,8 @@ Requests As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Fill: =RGBA(214, 221, 224, 0.5)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
@@ -13175,6 +13180,7 @@ Requests As screen:
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -13242,6 +13248,8 @@ Requests As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Fill: =RGBA(214, 221, 224, 0.5)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
@@ -13249,6 +13257,7 @@ Requests As screen:
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -13321,7 +13330,7 @@ Requests As screen:
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                Size: =11
+                Size: =10
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -13390,6 +13399,7 @@ Requests As screen:
                 EndYear: =Year(Today())+100
                 Fill: =RGBA(214, 221, 224, 0.5)
                 Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 Height: =25
                 IsEditable: =true
                 PaddingBottom: =0
@@ -13462,10 +13472,13 @@ Requests As screen:
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 Fill: =RGBA(214, 221, 224, 0.5)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 Height: =25
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                Size: =10
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -13534,6 +13547,8 @@ Requests As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Fill: =RGBA(214, 221, 224, 0.5)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
@@ -13541,6 +13556,7 @@ Requests As screen:
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -13608,6 +13624,8 @@ Requests As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Fill: =RGBA(214, 221, 224, 0.5)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
@@ -13615,6 +13633,7 @@ Requests As screen:
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -13682,6 +13701,8 @@ Requests As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Fill: =RGBA(214, 221, 224, 0.5)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
@@ -13689,6 +13710,7 @@ Requests As screen:
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -13756,6 +13778,8 @@ Requests As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Fill: =RGBA(214, 221, 224, 0.5)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
@@ -13763,6 +13787,7 @@ Requests As screen:
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -13830,6 +13855,8 @@ Requests As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Fill: =RGBA(214, 221, 224, 0.5)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
@@ -13837,6 +13864,7 @@ Requests As screen:
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -13904,6 +13932,8 @@ Requests As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Fill: =RGBA(214, 221, 224, 0.5)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
@@ -13911,6 +13941,7 @@ Requests As screen:
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -13978,6 +14009,8 @@ Requests As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Fill: =RGBA(214, 221, 224, 0.5)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
@@ -13985,6 +14018,7 @@ Requests As screen:
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -14052,6 +14086,8 @@ Requests As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Fill: =RGBA(214, 221, 224, 0.5)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
@@ -14059,6 +14095,7 @@ Requests As screen:
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -14126,6 +14163,8 @@ Requests As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Fill: =RGBA(214, 221, 224, 0.5)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
@@ -14133,6 +14172,7 @@ Requests As screen:
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -14200,6 +14240,8 @@ Requests As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Fill: =RGBA(214, 221, 224, 0.5)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
@@ -14207,6 +14249,7 @@ Requests As screen:
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -14274,6 +14317,8 @@ Requests As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Fill: =RGBA(214, 221, 224, 0.5)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
@@ -14281,6 +14326,7 @@ Requests As screen:
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -14348,6 +14394,8 @@ Requests As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Fill: =RGBA(214, 221, 224, 0.5)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
@@ -14355,6 +14403,7 @@ Requests As screen:
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -14422,6 +14471,8 @@ Requests As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Fill: =RGBA(214, 221, 224, 0.5)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
@@ -14429,6 +14480,7 @@ Requests As screen:
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -14495,10 +14547,13 @@ Requests As screen:
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 Fill: =RGBA(214, 221, 224, 0.5)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 Height: =25
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                Size: =10
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -14567,6 +14622,8 @@ Requests As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Fill: =RGBA(214, 221, 224, 0.5)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
@@ -14574,6 +14631,7 @@ Requests As screen:
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -14641,6 +14699,8 @@ Requests As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Fill: =RGBA(214, 221, 224, 0.5)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
@@ -14648,6 +14708,7 @@ Requests As screen:
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -14715,6 +14776,8 @@ Requests As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Fill: =RGBA(214, 221, 224, 0.5)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
@@ -14722,6 +14785,7 @@ Requests As screen:
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -14789,6 +14853,8 @@ Requests As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Fill: =RGBA(214, 221, 224, 0.5)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 Height: =25
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
@@ -14796,6 +14862,7 @@ Requests As screen:
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
