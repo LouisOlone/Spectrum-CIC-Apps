@@ -12699,7 +12699,7 @@ Requests As screen:
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =11
-                Text: =Parent.DisplayName
+                Text: ="Are they a Spectrum Employee"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -12774,7 +12774,7 @@ Requests As screen:
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =11
-                Text: =Parent.DisplayName
+                Text: ="Spectrum Employee Email"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -12850,7 +12850,7 @@ Requests As screen:
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =11
-                Text: =Parent.DisplayName
+                Text: ="Non Spectrum Employee First Name"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -12927,7 +12927,7 @@ Requests As screen:
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =11
-                Text: =Parent.DisplayName
+                Text: ="Non Spectrum Employee Last Name"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -12981,6 +12981,83 @@ Requests As screen:
                 Y: =DataCardKey509.Y
                 ZIndex: =4
 
+        NonSpectrumEmail_DataCard3 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="NonSpectrumEmail"
+            Default: =ThisItem.NonSpectrumEmail
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Final Probation Review Form'],DataSourceInfo.DisplayName,"NonSpectrumEmail")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Final Probation Review Form'], DataSourceInfo.MaxLength, "NonSpectrumEmail")
+            Required: =false
+            Update: =DataCardValue394.Text
+            Width: =374
+            X: =0
+            Y: =5
+            ZIndex: =60
+
+            DataCardKey550 As label:
+                AutoHeight: =true
+                Color: =RGBA(0, 0, 0, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Size: =11
+                Text: ="Non Spectrum Employee Email Address"
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue394 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(214, 221, 224, 0.5)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
+                Height: =25
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =10
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey550.Y + DataCardKey550.Height + 5
+                ZIndex: =2
+
+            ErrorMessage551 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue394.Y + DataCardValue394.Height
+                ZIndex: =3
+
+            StarVisible551 As label:
+                Align: =Align.Center
+                Height: =DataCardKey550.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey550.Y
+                ZIndex: =4
+
         JobTitle_DataCard6 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="JobTitle"
@@ -12994,7 +13071,7 @@ Requests As screen:
             Update: =DataCardValue282.Text
             Width: =374
             X: =0
-            Y: =5
+            Y: =6
             ZIndex: =60
 
             DataCardKey510 As label:
@@ -13004,7 +13081,7 @@ Requests As screen:
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =11
-                Text: =Parent.DisplayName
+                Text: ="Job Title"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -13071,7 +13148,7 @@ Requests As screen:
             Update: =DataCardValue284.Text
             Width: =374
             X: =0
-            Y: =6
+            Y: =7
             ZIndex: =60
 
             DataCardKey511 As label:
@@ -13148,7 +13225,7 @@ Requests As screen:
             Update: =DataCardValue286.Text
             Width: =374
             X: =0
-            Y: =7
+            Y: =8
             ZIndex: =60
 
             DataCardKey512 As label:
@@ -13225,7 +13302,7 @@ Requests As screen:
             Update: =DataCardValue288.Text
             Width: =374
             X: =0
-            Y: =8
+            Y: =9
             ZIndex: =60
 
             DataCardKey513 As label:
@@ -13301,7 +13378,7 @@ Requests As screen:
             Update: =DataCardValue290.SelectedDate
             Width: =374
             X: =0
-            Y: =9
+            Y: =10
             ZIndex: =60
 
             DataCardKey514 As label:
@@ -13311,7 +13388,7 @@ Requests As screen:
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =11
-                Text: =Parent.DisplayName
+                Text: ="Start Date"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -13375,7 +13452,7 @@ Requests As screen:
             Update: =DataCardValue292.SelectedDate
             Width: =374
             X: =0
-            Y: =10
+            Y: =11
             ZIndex: =60
 
             DataCardKey515 As label:
@@ -13385,7 +13462,7 @@ Requests As screen:
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =11
-                Text: =Parent.DisplayName
+                Text: ="interim Date"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -13449,7 +13526,7 @@ Requests As screen:
             Update: =DataCardValue294.SelectedDate
             Width: =374
             X: =0
-            Y: =11
+            Y: =12
             ZIndex: =60
 
             DataCardKey516 As label:
@@ -13459,7 +13536,7 @@ Requests As screen:
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =11
-                Text: =Parent.DisplayName
+                Text: ="Final Date"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -13524,7 +13601,7 @@ Requests As screen:
             Update: =DataCardValue298.Text
             Width: =374
             X: =0
-            Y: =12
+            Y: =13
             ZIndex: =60
 
             DataCardKey518 As label:
@@ -13534,9 +13611,8 @@ Requests As screen:
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =11
-                Text: =Parent.DisplayName
+                Text: ="Work relationships (team work, interpersonal and communication skills)"
                 Width: =Parent.Width - 60
-                Wrap: =false
                 X: =30
                 Y: =10
                 ZIndex: =1
@@ -13601,7 +13677,7 @@ Requests As screen:
             Update: =DataCardValue302.Text
             Width: =374
             X: =0
-            Y: =13
+            Y: =14
             ZIndex: =60
 
             DataCardKey520 As label:
@@ -13611,7 +13687,7 @@ Requests As screen:
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =11
-                Text: =Parent.DisplayName
+                Text: ="Attendance and timekeeping"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -13678,7 +13754,7 @@ Requests As screen:
             Update: =DataCardValue306.Text
             Width: =374
             X: =0
-            Y: =14
+            Y: =15
             ZIndex: =60
 
             DataCardKey522 As label:
@@ -13688,7 +13764,7 @@ Requests As screen:
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =11
-                Text: =Parent.DisplayName
+                Text: ="Ability to effectively follow instruction"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -13755,7 +13831,7 @@ Requests As screen:
             Update: =DataCardValue342.Text
             Width: =374
             X: =0
-            Y: =15
+            Y: =16
             ZIndex: =60
 
             DataCardKey524 As label:
@@ -13765,7 +13841,7 @@ Requests As screen:
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =11
-                Text: =Parent.DisplayName
+                Text: ="Training undertaken /planned"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -13832,7 +13908,7 @@ Requests As screen:
             Update: =DataCardValue346.Text
             Width: =374
             X: =0
-            Y: =16
+            Y: =17
             ZIndex: =60
 
             DataCardKey526 As label:
@@ -13842,9 +13918,9 @@ Requests As screen:
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =11
-                Text: =Parent.DisplayName
+                Text: |-
+                    ="Please use this space to provide further details on the employee’s ability to effectively perform tasks outlined in the job description, achievement of targets set and any other issues of relevance:"
                 Width: =Parent.Width - 60
-                Wrap: =false
                 X: =30
                 Y: =10
                 ZIndex: =1
@@ -13909,7 +13985,7 @@ Requests As screen:
             Update: =DataCardValue350.Text
             Width: =374
             X: =0
-            Y: =17
+            Y: =18
             ZIndex: =60
 
             DataCardKey528 As label:
@@ -13919,7 +13995,7 @@ Requests As screen:
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =11
-                Text: =Parent.DisplayName
+                Text: ="Comments From Employee"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -13986,7 +14062,7 @@ Requests As screen:
             Update: =DataCardValue354.Text
             Width: =374
             X: =0
-            Y: =18
+            Y: =19
             ZIndex: =60
 
             DataCardKey530 As label:
@@ -13996,7 +14072,7 @@ Requests As screen:
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =11
-                Text: =Parent.DisplayName
+                Text: ="Confirm Probation Letter"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -14063,7 +14139,7 @@ Requests As screen:
             Update: =DataCardValue358.Text
             Width: =374
             X: =0
-            Y: =19
+            Y: =20
             ZIndex: =60
 
             DataCardKey532 As label:
@@ -14073,7 +14149,7 @@ Requests As screen:
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =11
-                Text: =Parent.DisplayName
+                Text: ="Golden Handshake"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -14140,7 +14216,7 @@ Requests As screen:
             Update: =DataCardValue362.Text
             Width: =374
             X: =0
-            Y: =20
+            Y: =21
             ZIndex: =60
 
             DataCardKey534 As label:
@@ -14150,7 +14226,7 @@ Requests As screen:
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =11
-                Text: =Parent.DisplayName
+                Text: ="Extend Probabtion"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -14217,7 +14293,7 @@ Requests As screen:
             Update: =DataCardValue366.Text
             Width: =374
             X: =0
-            Y: =21
+            Y: =22
             ZIndex: =60
 
             DataCardKey536 As label:
@@ -14227,7 +14303,7 @@ Requests As screen:
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =11
-                Text: =Parent.DisplayName
+                Text: ="Extension Details"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -14294,7 +14370,7 @@ Requests As screen:
             Update: =DataCardValue370.Text
             Width: =374
             X: =0
-            Y: =22
+            Y: =23
             ZIndex: =60
 
             DataCardKey538 As label:
@@ -14371,7 +14447,7 @@ Requests As screen:
             Update: =DataCardValue374.Text
             Width: =374
             X: =0
-            Y: =23
+            Y: =24
             ZIndex: =60
 
             DataCardKey540 As label:
@@ -14448,7 +14524,7 @@ Requests As screen:
             Update: =DataCardValue378.Text
             Width: =374
             X: =0
-            Y: =24
+            Y: =25
             ZIndex: =60
 
             DataCardKey542 As label:
@@ -14524,7 +14600,7 @@ Requests As screen:
             Update: =DataCardValue382.SelectedDate
             Width: =374
             X: =0
-            Y: =25
+            Y: =26
             ZIndex: =60
 
             DataCardKey544 As label:
@@ -14534,7 +14610,7 @@ Requests As screen:
                 FontWeight: =FontWeight.Bold
                 Height: =34
                 Size: =11
-                Text: =Parent.DisplayName
+                Text: ="Review Date"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -14584,314 +14660,6 @@ Requests As screen:
                 Width: =30
                 Wrap: =false
                 Y: =DataCardKey544.Y
-                ZIndex: =4
-
-        LineManagerSignatureFLag_DataCard3 As typedDataCard.textualEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="LineManagerSignatureFLag"
-            Default: =ThisItem.LineManagerSignatureFLag
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Final Probation Review Form'],DataSourceInfo.DisplayName,"LineManagerSignatureFLag")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Final Probation Review Form'], DataSourceInfo.MaxLength, "LineManagerSignatureFLag")
-            Required: =false
-            Update: =DataCardValue386.Text
-            Width: =374
-            X: =0
-            Y: =26
-            ZIndex: =60
-
-            DataCardKey546 As label:
-                AutoHeight: =true
-                Color: =RGBA(0, 0, 0, 1)
-                Font: =Font.Arial
-                FontWeight: =FontWeight.Bold
-                Height: =34
-                Size: =11
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue386 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                Fill: =RGBA(214, 221, 224, 0.5)
-                Font: =Font.Arial
-                FontWeight: =FontWeight.Lighter
-                Height: =25
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Size: =10
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey546.Y + DataCardKey546.Height + 5
-                ZIndex: =2
-
-            ErrorMessage547 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue386.Y + DataCardValue386.Height
-                ZIndex: =3
-
-            StarVisible547 As label:
-                Align: =Align.Center
-                Height: =DataCardKey546.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey546.Y
-                ZIndex: =4
-
-        EmployeeSignatureFlag_DataCard1 As typedDataCard.textualEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="EmployeeSignatureFlag"
-            Default: =ThisItem.EmployeeSignatureFlag
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Final Probation Review Form'],DataSourceInfo.DisplayName,"EmployeeSignatureFlag")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Final Probation Review Form'], DataSourceInfo.MaxLength, "EmployeeSignatureFlag")
-            Required: =false
-            Update: =DataCardValue390.Text
-            Width: =374
-            X: =0
-            Y: =27
-            ZIndex: =60
-
-            DataCardKey548 As label:
-                AutoHeight: =true
-                Color: =RGBA(0, 0, 0, 1)
-                Font: =Font.Arial
-                FontWeight: =FontWeight.Bold
-                Height: =34
-                Size: =11
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue390 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                Fill: =RGBA(214, 221, 224, 0.5)
-                Font: =Font.Arial
-                FontWeight: =FontWeight.Lighter
-                Height: =25
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Size: =10
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey548.Y + DataCardKey548.Height + 5
-                ZIndex: =2
-
-            ErrorMessage549 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue390.Y + DataCardValue390.Height
-                ZIndex: =3
-
-            StarVisible549 As label:
-                Align: =Align.Center
-                Height: =DataCardKey548.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey548.Y
-                ZIndex: =4
-
-        NonSpectrumEmail_DataCard3 As typedDataCard.textualEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="NonSpectrumEmail"
-            Default: =ThisItem.NonSpectrumEmail
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Final Probation Review Form'],DataSourceInfo.DisplayName,"NonSpectrumEmail")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Final Probation Review Form'], DataSourceInfo.MaxLength, "NonSpectrumEmail")
-            Required: =false
-            Update: =DataCardValue394.Text
-            Width: =374
-            X: =0
-            Y: =28
-            ZIndex: =60
-
-            DataCardKey550 As label:
-                AutoHeight: =true
-                Color: =RGBA(0, 0, 0, 1)
-                Font: =Font.Arial
-                FontWeight: =FontWeight.Bold
-                Height: =34
-                Size: =11
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue394 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                Fill: =RGBA(214, 221, 224, 0.5)
-                Font: =Font.Arial
-                FontWeight: =FontWeight.Lighter
-                Height: =25
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Size: =10
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey550.Y + DataCardKey550.Height + 5
-                ZIndex: =2
-
-            ErrorMessage551 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue394.Y + DataCardValue394.Height
-                ZIndex: =3
-
-            StarVisible551 As label:
-                Align: =Align.Center
-                Height: =DataCardKey550.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey550.Y
-                ZIndex: =4
-
-        CompleteFlag_DataCard1 As typedDataCard.textualEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="CompleteFlag"
-            Default: =ThisItem.CompleteFlag
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Final Probation Review Form'],DataSourceInfo.DisplayName,"CompleteFlag")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Final Probation Review Form'], DataSourceInfo.MaxLength, "CompleteFlag")
-            Required: =false
-            Update: =DataCardValue398.Text
-            Width: =374
-            X: =0
-            Y: =29
-            ZIndex: =60
-
-            DataCardKey552 As label:
-                AutoHeight: =true
-                Color: =RGBA(0, 0, 0, 1)
-                Font: =Font.Arial
-                FontWeight: =FontWeight.Bold
-                Height: =34
-                Size: =11
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue398 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                Fill: =RGBA(214, 221, 224, 0.5)
-                Font: =Font.Arial
-                FontWeight: =FontWeight.Lighter
-                Height: =25
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Size: =10
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey552.Y + DataCardKey552.Height + 5
-                ZIndex: =2
-
-            ErrorMessage553 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue398.Y + DataCardValue398.Height
-                ZIndex: =3
-
-            StarVisible553 As label:
-                Align: =Align.Center
-                Height: =DataCardKey552.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey552.Y
                 ZIndex: =4
 
     Icon1_2 As icon.Tools:

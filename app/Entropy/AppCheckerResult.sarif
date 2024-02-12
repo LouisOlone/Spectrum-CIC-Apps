@@ -14096,36 +14096,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Requests.Form6_1.CompleteFlag_DataCard1.DataCardValue398.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Requests.Form6_1.CompleteFlag_DataCard1.DataCardValue398.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Requests",
-                "type": "Requests.Form6_1.CompleteFlag_DataCard1.DataCardValue398"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "Requests.Form6_1.NonSpectrumEmail_DataCard3.DataCardValue394.AccessibleLabel"
                 }
               ],
@@ -14139,66 +14109,6 @@
                 "member": "AccessibleLabel",
                 "module": "Requests",
                 "type": "Requests.Form6_1.NonSpectrumEmail_DataCard3.DataCardValue394"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Requests.Form6_1.EmployeeSignatureFlag_DataCard1.DataCardValue390.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Requests.Form6_1.EmployeeSignatureFlag_DataCard1.DataCardValue390.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Requests",
-                "type": "Requests.Form6_1.EmployeeSignatureFlag_DataCard1.DataCardValue390"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Requests.Form6_1.LineManagerSignatureFLag_DataCard3.DataCardValue386.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Requests.Form6_1.LineManagerSignatureFLag_DataCard3.DataCardValue386.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Requests",
-                "type": "Requests.Form6_1.LineManagerSignatureFLag_DataCard3.DataCardValue386"
               }
             }
           ],
@@ -16154,7 +16064,7 @@
                 ],
                 "level": "Medium",
                 "primaryCategory": "performance",
-                "whyFix": "Each control consumes resources, and an app may become slow or unresponsive if a screen has too many controls. The estimated complexity of \"Requests\" is 1063, which exceeds the maximum threshold recommended (300)."
+                "whyFix": "Each control consumes resources, and an app may become slow or unresponsive if a screen has too many controls. The estimated complexity of \"Requests\" is 1048, which exceeds the maximum threshold recommended (300)."
               }
             },
             {
