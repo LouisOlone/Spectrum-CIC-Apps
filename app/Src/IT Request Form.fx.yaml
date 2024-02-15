@@ -10,6 +10,9 @@
         FontColor: =
         FontSize: =20
         Height: =44
+        OnSelect: |-
+            =	
+            SubmitForm(New_IT_Request_1)
         Text: ="Submit"
         Width: =136
         X: =1187
@@ -37,6 +40,11 @@
         FontColor: =
         FontSize: =20
         Height: =44
+        OnSelect: |-
+            =	
+            ResetForm(New_IT_Request_1);
+            
+            Navigate(Dashboard)
         Text: ="Cancel"
         Width: =136
         X: =1030
@@ -50,7 +58,11 @@
         Fill: =RGBA(255, 255, 255, 1)
         Height: =538
         NumberOfColumns: =2
-        OnSuccess: =Navigate(Requests) ; ResetForm(New_IT_Request_1)
+        OnSuccess: |-
+            =	
+            ResetForm(New_IT_Request_1);
+            
+            Navigate('Success Screen')
         SnapToColumns: =false
         Width: =1284
         X: =25
