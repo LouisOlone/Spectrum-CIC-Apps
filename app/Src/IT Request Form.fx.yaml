@@ -92,6 +92,8 @@
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 Format: =TextFormat.Number
                 Mode: =TextMode.MultiLine
                 PaddingLeft: =5
@@ -166,6 +168,8 @@
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 IsSearchable: =false
                 Items: =Choices([@'IT Equipment And Requests'].SpectrumEmployee)
                 OnChange: |-
@@ -242,6 +246,8 @@
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["DisplayName","Email","Picture"]
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 Items: =Choices([@'IT Equipment And Requests'].EmployeeNameSpec)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["DisplayName"]
@@ -315,6 +321,8 @@
                 Default: =Dropdown6_4.Selected.Value
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(32, 54, 71, 1)
                 HoverFill: =RGBA(205, 209, 213, 1)
                 MaxLength: =Parent.MaxLength
@@ -805,6 +813,8 @@
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 IsSearchable: =false
                 Items: =Choices([@'IT Equipment And Requests'].NewReplacementSmartcard)
                 OnChange: =Reset(DataCardValue50_2) && Reset(DataCardValue46_3) && Reset(DataCardValue43_3) && Reset(Dropdown7_8) && Reset(Dropdown7_10) && Reset(Dropdown7_12)
@@ -896,6 +906,8 @@
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 IsSearchable: =false
                 Items: =Choices([@'IT Equipment And Requests'].PrescriberFlag)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -976,6 +988,8 @@
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -1049,6 +1063,8 @@
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 IsSearchable: =false
                 Items: =Choices([@'IT Equipment And Requests'].UrgentRequestFlag)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -1123,6 +1139,8 @@
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 Height: =130
                 HoverBorderColor: =RGBA(32, 54, 71, 1)
                 HoverFill: =RGBA(205, 209, 213, 1)
@@ -1201,6 +1219,8 @@
             DataCardValue3_3 As attachments:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 Height: =183
                 HoverFill: =RGBA(205, 209, 213, 1)
                 IsInDataCard: =true
@@ -1387,6 +1407,8 @@
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 Height: =130
                 HoverBorderColor: =RGBA(32, 54, 71, 1)
                 HoverFill: =RGBA(205, 209, 213, 1)
@@ -1467,6 +1489,8 @@
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 HoverFill: =RGBA(205, 209, 213, 1)
                 Items: =Choices([@'IT Equipment And Requests'].LicenseType)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -1562,6 +1586,8 @@
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 HoverFill: =RGBA(205, 209, 213, 1)
                 Items: =Choices([@'IT Equipment And Requests'].'4GLaptop')
                 OnChange: =Reset(DataCardValue4_3)
@@ -1640,6 +1666,8 @@
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 Height: =130
                 HoverBorderColor: =RGBA(32, 54, 71, 1)
                 HoverFill: =RGBA(205, 209, 213, 1)
@@ -1719,6 +1747,8 @@
                 DefaultDate: =Parent.Default
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 HoverDateFill: =RGBA(205, 209, 213, 1)
                 IconBackground: =RGBA(100, 118, 132, 1)
                 IsEditable: =true
@@ -1795,6 +1825,8 @@
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 Height: =130
                 HoverBorderColor: =RGBA(32, 54, 71, 1)
                 HoverFill: =RGBA(205, 209, 213, 1)
@@ -1874,6 +1906,8 @@
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 Height: =130
                 HoverBorderColor: =RGBA(32, 54, 71, 1)
                 HoverFill: =RGBA(205, 209, 213, 1)
@@ -1954,6 +1988,8 @@
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 HoverFill: =RGBA(205, 209, 213, 1)
                 Items: =Choices([@'IT Equipment And Requests'].KeyboardFlag)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -2057,6 +2093,8 @@
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 HoverFill: =RGBA(205, 209, 213, 1)
                 Items: =Choices([@'IT Equipment And Requests'].ManagerUserPolicyFlag)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -2140,6 +2178,8 @@
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 IsSearchable: =false
                 Items: =Choices([@'IT Equipment And Requests'].UserPolicyFlag)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -2215,6 +2255,8 @@
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 HoverFill: =RGBA(205, 209, 213, 1)
                 Items: =Choices([@'IT Equipment And Requests'].MouseFlag)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -2301,6 +2343,8 @@
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 HoverFill: =RGBA(205, 209, 213, 1)
                 Items: =Choices([@'IT Equipment And Requests'].HeadsetFlag)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -2387,6 +2431,8 @@
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 HoverFill: =RGBA(205, 209, 213, 1)
                 Items: =Choices([@'IT Equipment And Requests'].MonitorFlag)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -2471,6 +2517,8 @@
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 Height: =120
                 HoverBorderColor: =RGBA(32, 54, 71, 1)
                 HoverFill: =RGBA(205, 209, 213, 1)
@@ -2550,6 +2598,8 @@
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 Height: =191
                 HoverBorderColor: =RGBA(32, 54, 71, 1)
                 HoverFill: =RGBA(205, 209, 213, 1)
@@ -2645,6 +2695,8 @@
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 IsSearchable: =false
                 Items: =Choices([@'IT Equipment And Requests'].RequestFor)
                 OnChange: |-
@@ -2721,6 +2773,8 @@
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 IsSearchable: =false
                 Items: =Choices([@'IT Equipment And Requests'].Company)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -2794,6 +2848,8 @@
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -2867,6 +2923,8 @@
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -2940,6 +2998,8 @@
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["DisplayName","Email","Picture"]
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 Items: =Choices([@'IT Equipment And Requests'].LineManagerSpec)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["DisplayName"]
@@ -3036,6 +3096,8 @@
                 AllowEmptySelection: =true
                 ChevronBackground: =RGBA(116, 116, 116, 1)
                 Default: =
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 Items: =Sort(Distinct('Services List', Site),Value)
                 Width: =582
                 X: =30
@@ -3115,6 +3177,8 @@
                 ZIndex: =4
 
             Dropdown6_3 As dropdown:
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 Items: =Distinct(Filter('Services List', Site = Dropdown5_2.Selected.Value), Address)
                 Visible: =false
                 X: =314
@@ -3156,6 +3220,8 @@
                 Default: =If(DataCardValue44_2.Selected.Value ="No", Concatenate(DataCardValue6_3.Text," ",DataCardValue7_3.Text),User().FullName,true, DataCardValue44_2.Selected.Value ="Yes",DataCardValue48_2.Selected.DisplayName, RequestFor_DataCard_1.Selected.Value ="Myself", User().FullName)
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 MaxLength: =Parent.MaxLength
                 Mode: =TextMode.MultiLine
                 PaddingLeft: =5
@@ -3229,6 +3295,8 @@
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -3356,6 +3424,8 @@
                 AllowEmptySelection: =true
                 ChevronBackground: =RGBA(102, 182, 227, 1)
                 Default: =
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 Items: =Sort(Distinct('Smartcard Positions', Site),Value)
                 Width: =582
                 X: =30
@@ -3440,6 +3510,8 @@
                 AllowEmptySelection: =true
                 ChevronBackground: =RGBA(102, 182, 227, 1)
                 Default: =
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 Items: =Distinct(Filter('Smartcard Positions', Site = Dropdown7_8.Selected.Value), Position)
                 Width: =582
                 X: =30
@@ -3514,6 +3586,8 @@
                 AllowEmptySelection: =true
                 ChevronBackground: =RGBA(102, 182, 227, 1)
                 Default: =
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 Items: =Sort(Distinct('Smartcard Positions', Site),Value)
                 Width: =582
                 X: =30
@@ -3580,6 +3654,8 @@
                 AllowEmptySelection: =true
                 ChevronBackground: =RGBA(102, 182, 227, 1)
                 Default: =
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 Items: =Distinct(Filter('Smartcard Positions', Site = Dropdown7_10.Selected.Value), Position)
                 Width: =582
                 X: =30
@@ -3646,6 +3722,8 @@
                 AllowEmptySelection: =true
                 ChevronBackground: =RGBA(102, 182, 227, 1)
                 Default: =
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 Items: =Sort(Distinct('Smartcard Positions', Site),Value)
                 Width: =582
                 X: =30
@@ -3712,6 +3790,8 @@
                 AllowEmptySelection: =true
                 ChevronBackground: =RGBA(102, 182, 227, 1)
                 Default: =
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 Items: =Distinct(Filter('Smartcard Positions', Site = Dropdown7_12.Selected.Value), Position)
                 Width: =582
                 X: =30
@@ -3779,6 +3859,8 @@
                 ChevronBackground: =RGBA(100, 118, 132, 1)
                 ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
                 DisplayFields: =["Value"]
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 HoverFill: =RGBA(205, 209, 213, 1)
                 IsSearchable: =false
                 Items: =Choices([@SharedDrives].SharedDrive)
@@ -3844,6 +3926,8 @@
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 IsSearchable: =false
                 Items: =Choices([@'IT Equipment And Requests'].RequestLength)
                 OnChange: =Reset(DataCardValue17_3) && Reset(DataCardValue11_3) && Reset(DataCardValue4_3) && Reset(DataCardValue18_3) && Reset(DataCardValue34_3) && Reset(DataCardValue20_3) && Reset(DataCardValue21_3)
@@ -3934,6 +4018,8 @@
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 IsSearchable: =false
                 Items: =Choices([@'IT Equipment And Requests'].RequestReason)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -4014,10 +4100,13 @@
                 DefaultDate: =If(DataCardValue16_3.Selected.Value ="Temporary",DataCardValue18_3).SelectedDate
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 IconBackground: =RGBA(100, 118, 132, 1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                Size: =13
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
                 Width: =582
@@ -4085,10 +4174,13 @@
                 DefaultDate: =Parent.Default
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 IconBackground: =RGBA(100, 118, 132, 1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                Size: =13
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
                 Width: =582
@@ -4157,6 +4249,8 @@
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 Height: =130
                 MaxLength: =Parent.MaxLength
                 Mode: =TextMode.MultiLine
@@ -4231,6 +4325,8 @@
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 IsSearchable: =false
                 Items: =Choices([@'IT Equipment And Requests'].MobRequestType)
                 OnChange: =Reset(DataCardValue23_3) && Reset(DataCardValue42_2) && Reset(DataCardValue14_2)
@@ -4321,6 +4417,8 @@
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 Height: =130
                 MaxLength: =Parent.MaxLength
                 Mode: =TextMode.MultiLine
@@ -4396,6 +4494,8 @@
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 Height: =217
                 MaxLength: =Parent.MaxLength
                 Mode: =TextMode.MultiLine
