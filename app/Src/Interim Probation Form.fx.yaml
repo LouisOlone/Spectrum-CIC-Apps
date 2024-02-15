@@ -472,11 +472,11 @@
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@'Interim probation review form'],DataSourceInfo.DisplayName,"Team")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =97
             MaxLength: =DataSourceInfo([@'Interim probation review form'], DataSourceInfo.MaxLength, "Team")
             Required: =false
             Update: =DataCardValue187.Text
-            Width: =642
+            Width: =1284
             X: =0
             Y: =3
             ZIndex: =3
@@ -551,8 +551,8 @@
             Required: =false
             Update: =DataCardValue188.SelectedDate
             Width: =642
-            X: =1
-            Y: =3
+            X: =0
+            Y: =4
             ZIndex: =3
 
             DataCardKey189 As label:
@@ -634,7 +634,7 @@
             Required: =false
             Update: =DataCardValue189.SelectedDate
             Width: =642
-            X: =0
+            X: =1
             Y: =4
             ZIndex: =3
 
@@ -716,9 +716,9 @@
             Height: =170
             Required: =false
             Update: =DataCardValue180.Selected
-            Width: =642
-            X: =1
-            Y: =4
+            Width: =1284
+            X: =0
+            Y: =5
             ZIndex: =3
 
             DataCardKey181 As label:
@@ -770,7 +770,7 @@
                 SelectMultiple: =false
                 Size: =12
                 Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =582
                 X: =30
                 Y: =104
                 ZIndex: =2
@@ -825,7 +825,7 @@
             Visible: =If(DataCardValue180.Selected.Value ="Yes", true,false)
             Width: =642
             X: =0
-            Y: =5
+            Y: =6
             ZIndex: =3
 
             DataCardKey182 As label:
@@ -922,7 +922,7 @@
             Visible: =If(DataCardValue180.Selected.Value ="No", true,false)
             Width: =642
             X: =1
-            Y: =5
+            Y: =6
             ZIndex: =3
 
             DataCardKey205 As label:
@@ -1002,8 +1002,8 @@
             Required: =false
             Update: =DataCardValue190.Text
             Width: =642
-            X: =0
-            Y: =6
+            X: =1
+            Y: =7
             ZIndex: =3
 
             DataCardKey191 As label:
@@ -1098,8 +1098,8 @@
             Required: =false
             Update: =DataCardValue191.Text
             Width: =642
-            X: =1
-            Y: =6
+            X: =0
+            Y: =7
             ZIndex: =3
 
             DataCardKey192 As label:
@@ -1185,7 +1185,7 @@
             Update: =DataCardValue192.Text
             Width: =642
             X: =0
-            Y: =7
+            Y: =8
             ZIndex: =3
 
             DataCardKey193 As label:
@@ -1264,7 +1264,7 @@
             Update: =DataCardValue193.Text
             Width: =642
             X: =1
-            Y: =7
+            Y: =8
             ZIndex: =3
 
             DataCardKey194 As label:
@@ -1341,9 +1341,9 @@
             MaxLength: =DataSourceInfo([@'Interim probation review form'], DataSourceInfo.MaxLength, "FurtherDetails")
             Required: =false
             Update: =DataCardValue194.Text
-            Width: =642
+            Width: =1284
             X: =0
-            Y: =8
+            Y: =9
             ZIndex: =3
 
             DataCardKey195 As label:
@@ -1421,8 +1421,8 @@
             Required: =false
             Update: =If(Checkbox3_3.Value =true, "True","False")
             Width: =642
-            X: =1
-            Y: =8
+            X: =0
+            Y: =10
             ZIndex: =3
 
             DataCardKey197 As label:
@@ -1508,8 +1508,8 @@
             Required: =false
             Update: =If(Checkbox3_5.Value =true, "True","False")
             Width: =642
-            X: =0
-            Y: =9
+            X: =1
+            Y: =10
             ZIndex: =3
 
             DataCardKey206 As label:
@@ -1583,9 +1583,9 @@
             MaxLength: =DataSourceInfo([@'Interim probation review form'], DataSourceInfo.MaxLength, "EmployeeConcernsRaisedFlag")
             Required: =false
             Update: =If(Checkbox3_4.Value =true, "True","False")
-            Width: =642
-            X: =1
-            Y: =9
+            Width: =1284
+            X: =0
+            Y: =11
             ZIndex: =3
 
             DataCardKey198 As label:
@@ -1662,7 +1662,7 @@
             Visible: =If(Checkbox3_5.Value =true, true)
             Width: =642
             X: =0
-            Y: =10
+            Y: =12
             ZIndex: =3
 
             DataCardKey207 As label:
@@ -1750,7 +1750,7 @@
             Visible: =If(Checkbox3_4.Value =true, true)
             Width: =642
             X: =1
-            Y: =10
+            Y: =12
             ZIndex: =3
 
             DataCardKey199 As label:
@@ -1830,7 +1830,7 @@
             Visible: =If(Checkbox3_4.Value =true, true)
             Width: =642
             X: =0
-            Y: =11
+            Y: =13
             ZIndex: =3
 
             DataCardKey200 As label:
@@ -1910,7 +1910,7 @@
             Visible: =If(Checkbox3_4.Value =true, true)
             Width: =642
             X: =1
-            Y: =11
+            Y: =13
             ZIndex: =3
 
             DataCardKey201 As label:
@@ -1997,7 +1997,7 @@
             Visible: =If(Checkbox3_4.Value =true, true)
             Width: =642
             X: =0
-            Y: =12
+            Y: =14
             ZIndex: =3
 
             DataCardKey202 As label:
@@ -2081,7 +2081,7 @@
             Update: =If(Checkbox3_6.Value =true, "True","False")
             Width: =642
             X: =1
-            Y: =12
+            Y: =14
             ZIndex: =3
 
             DataCardKey203 As label:
