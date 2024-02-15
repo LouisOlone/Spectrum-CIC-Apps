@@ -76,7 +76,10 @@
             DataCardKey8_4 As label:
                 AutoHeight: =true
                 Color: =RGBA(0, 0, 0, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: ="Telephone Number"
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -146,7 +149,10 @@
             DataCardKey44_1 As label:
                 AutoHeight: =true
                 Color: =RGBA(0, 0, 0, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: ="Is the request for a Spectrum employee?"
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -219,7 +225,10 @@
             DataCardKey48_2 As label:
                 AutoHeight: =true
                 Color: =RGBA(0, 0, 0, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: ="What is the employees name?"
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -290,7 +299,10 @@
             DataCardKey24_2 As label:
                 AutoHeight: =true
                 Color: =RGBA(32, 54, 71, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: ="Postcode (Can be edited) "
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -776,7 +788,10 @@
             DataCardKey49_2 As label:
                 AutoHeight: =true
                 Color: =RGBA(0, 0, 0, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: ="Do you require a new Smartcard or a Replacement for a lost one?"
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -864,7 +879,10 @@
             DataCardKey46_2 As label:
                 AutoHeight: =true
                 Color: =RGBA(0, 0, 0, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: ="Are you an prescriber?"
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -943,7 +961,10 @@
             DataCardKey50_2 As label:
                 AutoHeight: =true
                 Color: =RGBA(0, 0, 0, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: ="Please enter your smartcard number that needs replacing if you know it"
                 Width: =Parent.Width - 60
                 X: =30
@@ -2550,7 +2571,10 @@
             RequestFor_Key_1 As label:
                 AutoHeight: =true
                 Color: =RGBA(0, 0, 0, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: ="Who is this request for?"
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -2623,7 +2647,10 @@
             DataCardKey5_3 As label:
                 AutoHeight: =true
                 Color: =RGBA(0, 0, 0, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: ="What company does the user work for?"
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -2694,7 +2721,10 @@
             DataCardKey6_3 As label:
                 AutoHeight: =true
                 Color: =RGBA(0, 0, 0, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: ="First Name"
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -2764,7 +2794,10 @@
             DataCardKey7_3 As label:
                 AutoHeight: =true
                 Color: =RGBA(0, 0, 0, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: ="Last Name"
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -2833,7 +2866,10 @@
             DataCardKey9_3 As label:
                 AutoHeight: =true
                 Color: =RGBA(0, 0, 0, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: ="Line Manager"
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -2903,7 +2939,10 @@
             DataCardKey11_3 As label:
                 AutoHeight: =true
                 Color: =RGBA(0, 0, 0, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -2965,7 +3004,10 @@
             DataCardKey12_3 As label:
                 AutoHeight: =true
                 Color: =RGBA(0, 0, 0, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: ="Delivery Address (Can be edited)"
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -3041,7 +3083,10 @@
             DataCardKey8_5 As label:
                 AutoHeight: =true
                 Color: =RGBA(0, 0, 0, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: ="Full Name"
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -3111,7 +3156,10 @@
             DataCardKey13_3 As label:
                 AutoHeight: =true
                 Color: =RGBA(0, 0, 0, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: ="Delivery Telephone Number"
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -3211,7 +3259,10 @@
             DataCardKey31_1 As label:
                 AutoHeight: =true
                 Color: =RGBA(0, 0, 0, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: ="Position Site"
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -3292,7 +3343,10 @@
             DataCardKey32_1 As label:
                 AutoHeight: =true
                 Color: =RGBA(0, 0, 0, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: ="Position"
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -3363,7 +3417,10 @@
             DataCardKey33_1 As label:
                 AutoHeight: =true
                 Color: =RGBA(0, 0, 0, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: ="Position Site"
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -3426,7 +3483,10 @@
             DataCardKey34_1 As label:
                 AutoHeight: =true
                 Color: =RGBA(0, 0, 0, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: ="Position"
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -3489,7 +3549,10 @@
             DataCardKey35_1 As label:
                 AutoHeight: =true
                 Color: =RGBA(0, 0, 0, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: ="Position Site"
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -3552,7 +3615,10 @@
             DataCardKey36_1 As label:
                 AutoHeight: =true
                 Color: =RGBA(0, 0, 0, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: ="Position"
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -3615,7 +3681,10 @@
             DataCardKey15_1 As label:
                 AutoHeight: =true
                 Color: =RGBA(0, 0, 0, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: ="Shared Drive Access / Network Folder"
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -3701,7 +3770,10 @@
             DataCardKey16_1 As label:
                 AutoHeight: =true
                 Color: =RGBA(0, 0, 0, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: ="Is this a permanent of temporary laptop request?"
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -3788,7 +3860,10 @@
             DataCardKey17_1 As label:
                 AutoHeight: =true
                 Color: =RGBA(0, 0, 0, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: ="Reason for Request"
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -3866,7 +3941,10 @@
             DataCardKey21_2 As label:
                 AutoHeight: =true
                 Color: =RGBA(0, 0, 0, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: ="What date is this required for?"
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -3934,7 +4012,10 @@
             DataCardKey18_1 As label:
                 AutoHeight: =true
                 Color: =RGBA(0, 0, 0, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: ="Loan Start Date"
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -4003,7 +4084,10 @@
             DataCardKey20_1 As label:
                 AutoHeight: =true
                 Color: =RGBA(0, 0, 0, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: ="Reason for Laptop Loan"
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -4074,7 +4158,10 @@
             DataCardKey22_2 As label:
                 AutoHeight: =true
                 Color: =RGBA(0, 0, 0, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: ="Please confirm if you are raising a 'New Request' or a 'Replacement Request'"
                 Width: =Parent.Width - 60
                 X: =30
@@ -4161,7 +4248,10 @@
             DataCardKey23_1 As label:
                 AutoHeight: =true
                 Color: =RGBA(0, 0, 0, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: ="Reason for Replacement"
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -4233,7 +4323,10 @@
             DataCardKey37_1 As label:
                 AutoHeight: =true
                 Color: =RGBA(0, 0, 0, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: ="Please provide details of the special request"
                 Width: =Parent.Width - 60
                 Wrap: =false
