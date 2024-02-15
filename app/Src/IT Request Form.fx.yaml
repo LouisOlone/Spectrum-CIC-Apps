@@ -73,17 +73,6 @@
             Y: =0
             ZIndex: =1
 
-            Icon1_417 As icon.CheckBadge:
-                BorderColor: =RGBA(32, 54, 71, 1)
-                Color: =RGBA(54, 176, 75, 1)
-                Height: =26
-                Icon: =Icon.CheckBadge
-                Visible: =And(Not(IsBlank(DataCardValue8_5.Text)), And(If(Len(DataCardValue8_5.Text) >= 11,true)))
-                Width: =26
-                X: =776
-                Y: =49
-                ZIndex: =5
-
             DataCardKey8_4 As label:
                 AutoHeight: =true
                 Color: =RGBA(0, 0, 0, 1)
@@ -123,17 +112,6 @@
                 Y: =5
                 ZIndex: =8
 
-            Icon2_153 As icon.CancelBadge:
-                BorderColor: =RGBA(32, 54, 71, 1)
-                Color: =RGBA(168, 0, 0, 1)
-                Height: =40
-                Icon: =Icon.CancelBadge
-                Visible: =And(Not(IsBlank(DataCardValue8_5.Text)), Or(If(Len(DataCardValue8_5.Text) <= 10, true, Len(DataCardValue8_5.Text) >= 20, true)))
-                Width: =26
-                X: =776
-                Y: =39
-                ZIndex: =9
-
             ErrorMessage6_4 As label:
                 AutoHeight: =true
                 Height: =10
@@ -142,7 +120,7 @@
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Text: =If(Icon2_153.Visible, "Please enter enter the full conatct number")
+                Text: =
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =25
@@ -222,17 +200,6 @@
                 Y: =DataCardKey44_1.Y
                 ZIndex: =4
 
-            Icon1_412 As icon.CheckBadge:
-                BorderColor: =RGBA(32, 54, 71, 1)
-                Color: =RGBA(54, 176, 75, 1)
-                Height: =26
-                Icon: =Icon.CheckBadge
-                Visible: =And(Not(IsBlank(DataCardValue44_2.SelectedItems)), And(If(Len(DataCardValue44_2.Selected.Value) >= 1,true)))
-                Width: =26
-                X: =776
-                Y: =53
-                ZIndex: =5
-
         EmployeeNameSpec_DataCard1_1 As typedDataCard.comboBoxEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="EmployeeNameSpec"
@@ -303,17 +270,6 @@
                 Y: =DataCardKey48_2.Y
                 ZIndex: =4
 
-            Icon1_413 As icon.CheckBadge:
-                BorderColor: =RGBA(32, 54, 71, 1)
-                Color: =RGBA(54, 176, 75, 1)
-                Height: =26
-                Icon: =Icon.CheckBadge
-                Visible: =And(Not(IsBlank(DataCardValue48_2.SelectedItems)), And(If(Len(DataCardValue48_2.Selected.DisplayName) >= 1,true)))
-                Width: =26
-                X: =776
-                Y: =56
-                ZIndex: =5
-
         Postcode_DataCard1_1 As typedDataCard.textualEditCard:
             BorderColor: =RGBA(32, 54, 71, 1)
             BorderStyle: =BorderStyle.Solid
@@ -369,7 +325,7 @@
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Text: =If(Icon2_156.Visible, "Please enter A full postcode")
+                Text: =
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
@@ -393,28 +349,6 @@
                 X: =307
                 Y: =4
                 ZIndex: =5
-
-            Icon1_422 As icon.CheckBadge:
-                BorderColor: =RGBA(32, 54, 71, 1)
-                Color: =RGBA(54, 176, 75, 1)
-                Height: =26
-                Icon: =Icon.CheckBadge
-                Visible: =And(Not(IsBlank(DataCardValue15_3.Text)), And(If(Len(DataCardValue15_3.Text) >= 3,true)))
-                Width: =26
-                X: =776
-                Y: =56
-                ZIndex: =6
-
-            Icon2_156 As icon.CancelBadge:
-                BorderColor: =RGBA(32, 54, 71, 1)
-                Color: =RGBA(168, 0, 0, 1)
-                Height: =40
-                Icon: =Icon.CancelBadge
-                Visible: =And(Not(IsBlank(DataCardValue15_3.Text)), Or(If(Len(DataCardValue15_3.Text) <= 2, true)))
-                Width: =26
-                X: =776
-                Y: =49
-                ZIndex: =7
 
         ITAccountFlag_DataCard1_1 As typedDataCard.textualEditCard:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -894,17 +828,6 @@
                 Y: =DataCardKey49_2.Y
                 ZIndex: =4
 
-            Icon1_425 As icon.CheckBadge:
-                BorderColor: =RGBA(32, 54, 71, 1)
-                Color: =RGBA(54, 176, 75, 1)
-                Height: =26
-                Icon: =Icon.CheckBadge
-                Visible: =And(Not(IsBlank(DataCardValue49_3.SelectedItems)), And(If(Len(DataCardValue49_3.Selected.Value) >= 1,true)))
-                Width: =26
-                X: =776
-                Y: =114
-                ZIndex: =5
-
             Rectangle1_27 As rectangle:
                 BorderColor: =RGBA(32, 54, 71, 1)
                 Fill: =RGBA(100, 118, 132, 1)
@@ -992,17 +915,6 @@
                 Y: =DataCardKey46_2.Y
                 ZIndex: =4
 
-            Icon1_427 As icon.CheckBadge:
-                BorderColor: =RGBA(32, 54, 71, 1)
-                Color: =RGBA(54, 176, 75, 1)
-                Height: =26
-                Icon: =Icon.CheckBadge
-                Visible: =And(Not(IsBlank(DataCardValue46_3.SelectedItems)), And(If(Len(DataCardValue46_3.Selected.Value) >= 1,true)))
-                Width: =26
-                X: =776
-                Y: =56
-                ZIndex: =5
-
             Rectangle1_37 As rectangle:
                 BorderColor: =RGBA(32, 54, 71, 1)
                 Fill: =RGBA(100, 118, 132, 1)
@@ -1080,17 +992,6 @@
                 Y: =DataCardKey50_2.Y
                 ZIndex: =4
 
-            Icon1_426 As icon.CheckBadge:
-                BorderColor: =RGBA(32, 54, 71, 1)
-                Color: =RGBA(54, 176, 75, 1)
-                Height: =26
-                Icon: =Icon.CheckBadge
-                Visible: =And(Not(IsBlank(DataCardValue50_2.Text)), And(If(Len(DataCardValue50_2.Text) >= 11,true)))
-                Width: =26
-                X: =776
-                Y: =56
-                ZIndex: =5
-
         UrgentRequestFlag_DataCard2_1 As typedDataCard.comboBoxEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="UrgentRequestFlag"
@@ -1160,17 +1061,6 @@
                 Wrap: =false
                 Y: =DataCardKey43_1.Y
                 ZIndex: =4
-
-            Icon1_428 As icon.CheckBadge:
-                BorderColor: =RGBA(32, 54, 71, 1)
-                Color: =RGBA(54, 176, 75, 1)
-                Height: =26
-                Icon: =Icon.CheckBadge
-                Visible: =And(Not(IsBlank(DataCardValue43_3.SelectedItems)), And(If(Len(DataCardValue43_3.Selected.Value) >= 1,true)))
-                Width: =26
-                X: =776
-                Y: =66
-                ZIndex: =5
 
         SmartcardComments_DataCard1_1 As typedDataCard.textualEditCard:
             BorderColor: =RGBA(32, 54, 71, 1)
@@ -1247,17 +1137,6 @@
                 Wrap: =false
                 Y: =DataCardKey150_2.Y
                 ZIndex: =4
-
-            Icon1_478 As icon.CheckBadge:
-                BorderColor: =RGBA(32, 54, 71, 1)
-                Color: =RGBA(54, 176, 75, 1)
-                Height: =26
-                Icon: =Icon.CheckBadge
-                Visible: =And(Not(IsBlank(DataCardValue124_2.Text)), And(If(Len(DataCardValue124_2.Text) >= 1,true)))
-                Width: =26
-                X: =780
-                Y: =60
-                ZIndex: =5
 
         Attachments_DataCard1_1 As typedDataCard.attachmentsEditCard:
             BorderColor: =RGBA(32, 54, 71, 1)
@@ -1438,17 +1317,6 @@
                 Y: =DataCardKey52_2.Y
                 ZIndex: =4
 
-            Icon1_436 As icon.CheckBadge:
-                BorderColor: =RGBA(32, 54, 71, 1)
-                Color: =RGBA(54, 176, 75, 1)
-                Height: =26
-                Icon: =Icon.CheckBadge
-                Visible: =And(Not(IsBlank(DataCardValue33_2.Text)), And(If(Len(DataCardValue33_2.Text) >= 6,true)))
-                Width: =26
-                X: =776
-                Y: =54
-                ZIndex: =5
-
         ITAccountComments_DataCard1_1 As typedDataCard.textualEditCard:
             BorderColor: =RGBA(32, 54, 71, 1)
             BorderStyle: =BorderStyle.Solid
@@ -1524,17 +1392,6 @@
                 Wrap: =false
                 Y: =DataCardKey164_2.Y
                 ZIndex: =4
-
-            Icon1_479 As icon.CheckBadge:
-                BorderColor: =RGBA(32, 54, 71, 1)
-                Color: =RGBA(54, 176, 75, 1)
-                Height: =26
-                Icon: =Icon.CheckBadge
-                Visible: =And(Not(IsBlank(DataCardValue135_2.Text)), And(If(Len(DataCardValue135_2.Text) >= 1,true)))
-                Width: =26
-                X: =779
-                Y: =58
-                ZIndex: =5
 
         LicenseType_DataCard1_1 As typedDataCard.comboBoxEditCard:
             BorderColor: =RGBA(32, 54, 71, 1)
@@ -1618,17 +1475,6 @@
                 Width: =1300
                 Y: =5
                 ZIndex: =5
-
-            Icon1_476 As icon.CheckBadge:
-                BorderColor: =RGBA(32, 54, 71, 1)
-                Color: =RGBA(54, 176, 75, 1)
-                Height: =26
-                Icon: =Icon.CheckBadge
-                Visible: =And(Not(IsBlank(DataCardValue134_1.SelectedItems)), And(If(Len(DataCardValue134_1.Selected.Value) >= 1,true)))
-                Width: =26
-                X: =781
-                Y: =66
-                ZIndex: =6
 
             Label6_26 As label:
                 BorderColor: =RGBA(32, 54, 71, 1)
@@ -1715,17 +1561,6 @@
                 Y: =DataCardKey19_1.Y
                 ZIndex: =4
 
-            Icon1_439 As icon.CheckBadge:
-                BorderColor: =RGBA(32, 54, 71, 1)
-                Color: =RGBA(54, 176, 75, 1)
-                Height: =26
-                Icon: =Icon.CheckBadge
-                Visible: =And(Not(IsBlank(DataCardValue11_3.SelectedItems)), And(If(Len(DataCardValue11_3.Selected.Value) >= 1,true)))
-                Width: =26
-                X: =776
-                Y: =53
-                ZIndex: =5
-
         "'4GLaptopReason_DataCard1_1' As typedDataCard.textualEditCard":
             BorderColor: =RGBA(32, 54, 71, 1)
             BorderStyle: =BorderStyle.Solid
@@ -1802,28 +1637,6 @@
                 Y: =DataCardKey4_3.Y
                 ZIndex: =4
 
-            Icon1_440 As icon.CheckBadge:
-                BorderColor: =RGBA(32, 54, 71, 1)
-                Color: =RGBA(54, 176, 75, 1)
-                Height: =26
-                Icon: =Icon.CheckBadge
-                Visible: =And(Not(IsBlank(DataCardValue4_3.Text)), And(If(Len(DataCardValue4_3.Text) >= 6,true)))
-                Width: =26
-                X: =776
-                Y: =56
-                ZIndex: =5
-
-            Icon2_158 As icon.CancelBadge:
-                BorderColor: =RGBA(32, 54, 71, 1)
-                Color: =RGBA(168, 0, 0, 1)
-                Height: =40
-                Icon: =Icon.CancelBadge
-                Visible: =And(Not(IsBlank(DataCardValue4_3.Text)), Or(If(Len(DataCardValue4_3.Text) <= 5, true)))
-                Width: =26
-                X: =776
-                Y: =56
-                ZIndex: =6
-
         LoanReturnDate_DataCard1_1 As typedDataCard.dateEditCard:
             BorderColor: =RGBA(32, 54, 71, 1)
             BorderStyle: =BorderStyle.Solid
@@ -1879,7 +1692,7 @@
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Text: =If(Icon2_160.Visible, "Please make sure the end date is set to after the loan start date")
+                Text: =
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
@@ -1896,32 +1709,6 @@
                 Wrap: =false
                 Y: =DataCardKey53_2.Y
                 ZIndex: =4
-
-            Icon1_442 As icon.CheckBadge:
-                BorderColor: =RGBA(32, 54, 71, 1)
-                Color: =RGBA(54, 176, 75, 1)
-                Height: =26
-                Icon: =Icon.CheckBadge
-                Visible: |-
-                    =If(
-                         IsBlank(DataCardValue34_3.SelectedDate) || Len(DataCardValue34_3.SelectedDate) <= 2, false, true) && DateDiff(Today(),DataCardValue34_3.SelectedDate)>=0
-                Width: =26
-                X: =776
-                Y: =56
-                ZIndex: =5
-
-            Icon2_160 As icon.CancelBadge:
-                BorderColor: =RGBA(32, 54, 71, 1)
-                Color: =RGBA(168, 0, 0, 1)
-                Height: =40
-                Icon: =Icon.CancelBadge
-                Visible: |
-                    =If(
-                         IsBlank(DataCardValue34_3.SelectedDate) || Len(DataCardValue34_3.SelectedDate) <= 2, false, true) && If((DataCardValue34_3.SelectedDate) >= DataCardValue18_3.SelectedDate,false, true)
-                Width: =26
-                X: =776
-                Y: =49
-                ZIndex: =6
 
         LaptopComments_DataCard1_1 As typedDataCard.textualEditCard:
             BorderColor: =RGBA(32, 54, 71, 1)
@@ -1999,17 +1786,6 @@
                 Y: =DataCardKey162_2.Y
                 ZIndex: =4
 
-            Icon1_480 As icon.CheckBadge:
-                BorderColor: =RGBA(32, 54, 71, 1)
-                Color: =RGBA(54, 176, 75, 1)
-                Height: =26
-                Icon: =Icon.CheckBadge
-                Visible: =And(Not(IsBlank(DataCardValue133_2.Text)), And(If(Len(DataCardValue133_2.Text) >= 6,true)))
-                Width: =26
-                X: =776
-                Y: =58
-                ZIndex: =5
-
         MobileComments_DataCard1_1 As typedDataCard.textualEditCard:
             BorderColor: =RGBA(32, 54, 71, 1)
             BorderStyle: =BorderStyle.Solid
@@ -2085,17 +1861,6 @@
                 Wrap: =false
                 Y: =DataCardKey160_2.Y
                 ZIndex: =4
-
-            Icon1_481 As icon.CheckBadge:
-                BorderColor: =RGBA(32, 54, 71, 1)
-                Color: =RGBA(54, 176, 75, 1)
-                Height: =26
-                Icon: =Icon.CheckBadge
-                Visible: =And(Not(IsBlank(DataCardValue132_2.Text)), And(If(Len(DataCardValue132_2.Text) >= 6,true)))
-                Width: =26
-                X: =779
-                Y: =58
-                ZIndex: =5
 
         KeyboardFlag_DataCard1_1 As typedDataCard.comboBoxEditCard:
             BorderColor: =RGBA(32, 54, 71, 1)
@@ -2272,17 +2037,6 @@
                 Y: =DataCardKey14_1.Y
                 ZIndex: =4
 
-            Icon1_446 As icon.CheckBadge:
-                BorderColor: =RGBA(32, 54, 71, 1)
-                Color: =RGBA(54, 176, 75, 1)
-                Height: =26
-                Icon: =Icon.CheckBadge
-                Visible: =And(Not(IsBlank(DataCardValue14_2.SelectedItems)), And(If(Len(DataCardValue14_2.Selected.Value) >= 1,true)))
-                Width: =26
-                X: =776
-                Y: =409
-                ZIndex: =5
-
         UserPolicyFlag_DataCard2_1 As typedDataCard.comboBoxEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="UserPolicyFlag"
@@ -2359,17 +2113,6 @@
                 Wrap: =false
                 Y: =DataCardKey42_1.Y
                 ZIndex: =4
-
-            Icon1_447 As icon.CheckBadge:
-                BorderColor: =RGBA(32, 54, 71, 1)
-                Color: =RGBA(54, 176, 75, 1)
-                Height: =26
-                Icon: =Icon.CheckBadge
-                Visible: =And(Not(IsBlank(DataCardValue42_2.SelectedItems)), And(If(Len(DataCardValue42_2.Selected.Value) >= 1,true)))
-                Width: =26
-                X: =776
-                Y: =367
-                ZIndex: =5
 
         MouseFlag_DataCard1_1 As typedDataCard.comboBoxEditCard:
             BorderColor: =RGBA(32, 54, 71, 1)
@@ -2695,17 +2438,6 @@
                 Y: =DataCardKey151_2.Y
                 ZIndex: =4
 
-            Icon1_482 As icon.CheckBadge:
-                BorderColor: =RGBA(32, 54, 71, 1)
-                Color: =RGBA(54, 176, 75, 1)
-                Height: =26
-                Icon: =Icon.CheckBadge
-                Visible: =And(Not(IsBlank(DataCardValue129_2.Text)), And(If(Len(DataCardValue129_2.Text) >= 6,true)))
-                Width: =26
-                X: =781
-                Y: =77
-                ZIndex: =5
-
         FurtherDetails_DataCard1_1 As typedDataCard.textualEditCard:
             BorderColor: =RGBA(32, 54, 71, 1)
             BorderStyle: =BorderStyle.Solid
@@ -2800,17 +2532,6 @@
                 Y: =2
                 ZIndex: =6
 
-            Icon1_450 As icon.CheckBadge:
-                BorderColor: =RGBA(32, 54, 71, 1)
-                Color: =RGBA(54, 176, 75, 1)
-                Height: =26
-                Icon: =Icon.CheckBadge
-                Visible: =And(Not(IsBlank(DataCardValue24_3.Text)), And(If(Len(DataCardValue24_3.Text) >= 1,true)))
-                Width: =26
-                X: =664
-                Y: =99
-                ZIndex: =7
-
         RequestFor_DataCard1_1 As typedDataCard.comboBoxEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="RequestFor"
@@ -2883,17 +2604,6 @@
                 Y: =RequestFor_Key_1.Y
                 ZIndex: =4
 
-            RequestFor_Sucess_1 As icon.CheckBadge:
-                BorderColor: =RGBA(32, 54, 71, 1)
-                Color: =RGBA(54, 176, 75, 1)
-                Height: =26
-                Icon: =Icon.CheckBadge
-                Visible: =And(Not(IsBlank(RequestFor_DataCard_1.SelectedItems)), And(If(Len(RequestFor_DataCard_1.Selected.Value) >= 1,true)))
-                Width: =26
-                X: =776
-                Y: =55
-                ZIndex: =5
-
         Company_DataCard1_1 As typedDataCard.comboBoxEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Company"
@@ -2964,17 +2674,6 @@
                 Y: =DataCardKey5_3.Y
                 ZIndex: =4
 
-            Icon1_414 As icon.CheckBadge:
-                BorderColor: =RGBA(32, 54, 71, 1)
-                Color: =RGBA(54, 176, 75, 1)
-                Height: =26
-                Icon: =Icon.CheckBadge
-                Visible: =And(Not(IsBlank(DataCardValue5_3.SelectedItems)), And(If(Len(DataCardValue5_3.Selected.Value) >= 1,true)))
-                Width: =26
-                X: =776
-                Y: =53
-                ZIndex: =5
-
         FirstName_DataCard1_3 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="FirstName"
@@ -3028,7 +2727,7 @@
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Text: =If(Icon2_151.Visible, "Please enter the first name of the person who this is requsted for")
+                Text: =
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
@@ -3044,28 +2743,6 @@
                 Wrap: =false
                 Y: =DataCardKey6_3.Y
                 ZIndex: =4
-
-            Icon1_415 As icon.CheckBadge:
-                BorderColor: =RGBA(32, 54, 71, 1)
-                Color: =RGBA(54, 176, 75, 1)
-                Height: =26
-                Icon: =Icon.CheckBadge
-                Visible: =And(Not(IsBlank(DataCardValue6_3.Text)), And(If(Len(DataCardValue6_3.Text) >= 3,true)))
-                Width: =26
-                X: =776
-                Y: =56
-                ZIndex: =5
-
-            Icon2_151 As icon.CancelBadge:
-                BorderColor: =RGBA(32, 54, 71, 1)
-                Color: =RGBA(168, 0, 0, 1)
-                Height: =40
-                Icon: =Icon.CancelBadge
-                Visible: =And(Not(IsBlank(DataCardValue6_3.Text)), Or(If(Len(DataCardValue6_3.Text) <= 2, true)))
-                Width: =26
-                X: =776
-                Y: =49
-                ZIndex: =6
 
         LastName_DataCard1_3 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -3120,7 +2797,7 @@
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Text: =If(Icon2_152.Visible, "Please enter the last name of the person who this is requsted for")
+                Text: =
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
@@ -3136,28 +2813,6 @@
                 Wrap: =false
                 Y: =DataCardKey7_3.Y
                 ZIndex: =4
-
-            Icon1_416 As icon.CheckBadge:
-                BorderColor: =RGBA(32, 54, 71, 1)
-                Color: =RGBA(54, 176, 75, 1)
-                Height: =26
-                Icon: =Icon.CheckBadge
-                Visible: =And(Not(IsBlank(DataCardValue7_3.Text)), And(If(Len(DataCardValue7_3.Text) >= 3,true)))
-                Width: =26
-                X: =776
-                Y: =56
-                ZIndex: =5
-
-            Icon2_152 As icon.CancelBadge:
-                BorderColor: =RGBA(32, 54, 71, 1)
-                Color: =RGBA(168, 0, 0, 1)
-                Height: =40
-                Icon: =Icon.CancelBadge
-                Visible: =And(Not(IsBlank(DataCardValue7_3.Text)), Or(If(Len(DataCardValue7_3.Text) <= 2, true)))
-                Width: =26
-                X: =776
-                Y: =49
-                ZIndex: =6
 
         LineManagerSpec_DataCard1_1 As typedDataCard.comboBoxEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -3229,17 +2884,6 @@
                 Y: =DataCardKey9_3.Y
                 ZIndex: =4
 
-            Icon1_419 As icon.CheckBadge:
-                BorderColor: =RGBA(32, 54, 71, 1)
-                Color: =RGBA(54, 176, 75, 1)
-                Height: =26
-                Icon: =Icon.CheckBadge
-                Visible: =And(Not(IsBlank(DataCardValue9_3.SelectedItems)), And(If(Len(DataCardValue9_3.Selected.DisplayName) >= 1,true)))
-                Width: =26
-                X: =776
-                Y: =53
-                ZIndex: =5
-
         Site_DataCard1_1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Site"
@@ -3302,17 +2946,6 @@
                 Y: =40
                 ZIndex: =5
 
-            Icon1_420 As icon.CheckBadge:
-                BorderColor: =RGBA(32, 54, 71, 1)
-                Color: =RGBA(54, 176, 75, 1)
-                Height: =26
-                Icon: =Icon.CheckBadge
-                Visible: =And(Not(IsBlank(Dropdown5_2.SelectedText)), And(If(Len(Dropdown5_2.Selected.Value) >= 1,true)))
-                Width: =26
-                X: =776
-                Y: =47
-                ZIndex: =6
-
         Address_DataCard1_1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Address"
@@ -3365,7 +2998,7 @@
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Text: =If(Icon2_155.Visible, "Please enter A full address")
+                Text: =
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
@@ -3387,28 +3020,6 @@
                 Visible: =false
                 X: =314
                 ZIndex: =5
-
-            Icon1_421 As icon.CheckBadge:
-                BorderColor: =RGBA(32, 54, 71, 1)
-                Color: =RGBA(54, 176, 75, 1)
-                Height: =26
-                Icon: =Icon.CheckBadge
-                Visible: =And(Not(IsBlank(DataCardValue12_3.Text)), And(If(Len(DataCardValue12_3.Text) >= 3,true)))
-                Width: =26
-                X: =776
-                Y: =53
-                ZIndex: =6
-
-            Icon2_155 As icon.CancelBadge:
-                BorderColor: =RGBA(32, 54, 71, 1)
-                Color: =RGBA(168, 0, 0, 1)
-                Height: =40
-                Icon: =Icon.CancelBadge
-                Visible: =And(Not(IsBlank(DataCardValue12_3.Text)), Or(If(Len(DataCardValue12_3.Text) <= 2, true)))
-                Width: =26
-                X: =776
-                Y: =49
-                ZIndex: =7
 
         TargetUser_DataCard1_1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -3480,17 +3091,6 @@
                 Wrap: =false
                 Y: =DataCardKey8_5.Y
                 ZIndex: =4
-
-            Icon1_418 As icon.CheckBadge:
-                BorderColor: =RGBA(32, 54, 71, 1)
-                Color: =RGBA(54, 176, 75, 1)
-                Height: =26
-                Icon: =Icon.CheckBadge
-                Visible: =And(Not(IsBlank(DataCardValue8_6.Text)), And(If(Len(DataCardValue8_6.Text) >= 2,true)))
-                Width: =26
-                X: =776
-                Y: =56
-                ZIndex: =5
 
         TelephoneNumber_DataCard1_1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -3591,17 +3191,6 @@
                 Y: =123
                 ZIndex: =7
 
-            Icon2_157 As icon.CancelBadge:
-                BorderColor: =RGBA(32, 54, 71, 1)
-                Color: =RGBA(168, 0, 0, 1)
-                Height: =40
-                Icon: =Icon.CancelBadge
-                Visible: =And(Not(IsBlank(DataCardValue13_3.Text)), Or(If(Len(DataCardValue13_3.Text) <= 10, true, Len(DataCardValue13_3.Text) >= 12, true)))
-                Width: =26
-                X: =776
-                Y: =49
-                ZIndex: =8
-
         PositionSite1_DataCard1_1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="PositionSite1"
@@ -3664,17 +3253,6 @@
                 X: =30
                 Y: =104
                 ZIndex: =5
-
-            Icon1_429 As icon.CheckBadge:
-                BorderColor: =RGBA(32, 54, 71, 1)
-                Color: =RGBA(54, 176, 75, 1)
-                Height: =26
-                Icon: =Icon.CheckBadge
-                Visible: =And(Not(IsBlank(Dropdown7_8.SelectedText)), And(If(Len(Dropdown7_8.Selected.Value) >= 1,true)))
-                Width: =26
-                X: =776
-                Y: =105
-                ZIndex: =6
 
             Rectangle1_28 As rectangle:
                 BorderColor: =RGBA(32, 54, 71, 1)
@@ -3757,17 +3335,6 @@
                 Y: =104
                 ZIndex: =5
 
-            Icon1_430 As icon.CheckBadge:
-                BorderColor: =RGBA(32, 54, 71, 1)
-                Color: =RGBA(54, 176, 75, 1)
-                Height: =26
-                Icon: =Icon.CheckBadge
-                Visible: =And(Not(IsBlank(Dropdown7_9.SelectedText)), And(If(Len(Dropdown7_9.Selected.Value) >= 1,true)))
-                Width: =26
-                X: =776
-                Y: =53
-                ZIndex: =6
-
             Rectangle1_39 As rectangle:
                 BorderColor: =RGBA(32, 54, 71, 1)
                 Fill: =RGBA(100, 118, 132, 1)
@@ -3839,17 +3406,6 @@
                 Y: =49
                 ZIndex: =5
 
-            Icon1_431 As icon.CheckBadge:
-                BorderColor: =RGBA(32, 54, 71, 1)
-                Color: =RGBA(54, 176, 75, 1)
-                Height: =26
-                Icon: =Icon.CheckBadge
-                Visible: =And(Not(IsBlank(Dropdown7_10.SelectedText)), And(If(Len(Dropdown7_10.Selected.Value) >= 1,true)))
-                Width: =26
-                X: =776
-                Y: =56
-                ZIndex: =6
-
         Position2_DataCard1_1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Position2"
@@ -3912,17 +3468,6 @@
                 X: =30
                 Y: =55
                 ZIndex: =5
-
-            Icon1_432 As icon.CheckBadge:
-                BorderColor: =RGBA(32, 54, 71, 1)
-                Color: =RGBA(54, 176, 75, 1)
-                Height: =26
-                Icon: =Icon.CheckBadge
-                Visible: =And(Not(IsBlank(Dropdown7_11.SelectedText)), And(If(Len(Dropdown7_11.Selected.Value) >= 1,true)))
-                Width: =26
-                X: =776
-                Y: =62
-                ZIndex: =6
 
         PositionSite3_DataCard1_1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -3987,17 +3532,6 @@
                 Y: =44
                 ZIndex: =5
 
-            Icon1_433 As icon.CheckBadge:
-                BorderColor: =RGBA(32, 54, 71, 1)
-                Color: =RGBA(54, 176, 75, 1)
-                Height: =26
-                Icon: =Icon.CheckBadge
-                Visible: =And(Not(IsBlank(Dropdown7_12.SelectedText)), And(If(Len(Dropdown7_12.Selected.Value) >= 1,true)))
-                Width: =26
-                X: =776
-                Y: =51
-                ZIndex: =6
-
         Position3_DataCard1_1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Position3"
@@ -4061,17 +3595,6 @@
                 Y: =44
                 ZIndex: =5
 
-            Icon1_434 As icon.CheckBadge:
-                BorderColor: =RGBA(32, 54, 71, 1)
-                Color: =RGBA(54, 176, 75, 1)
-                Height: =26
-                Icon: =Icon.CheckBadge
-                Visible: =And(Not(IsBlank(Dropdown7_13.SelectedText)), And(If(Len(Dropdown7_13.Selected.Value) >= 1,true)))
-                Width: =26
-                X: =776
-                Y: =51
-                ZIndex: =6
-
         ShareDrive_DataCard1_1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="ShareDrive"
@@ -4124,17 +3647,6 @@
                 Wrap: =false
                 Y: =DataCardKey15_1.Y
                 ZIndex: =4
-
-            Icon1_435 As icon.CheckBadge:
-                BorderColor: =RGBA(32, 54, 71, 1)
-                Color: =RGBA(54, 176, 75, 1)
-                Height: =26
-                Icon: =Icon.CheckBadge
-                Visible: =And(Not(IsBlank(ComboBox1_1.SelectedItems)), And(If(Len(ComboBox1_1.Selected.Value) >= 1,true)))
-                Width: =26
-                X: =776
-                Y: =117
-                ZIndex: =5
 
             ComboBox1_1 As combobox:
                 BorderColor: =RGBA(32, 54, 71, 1)
@@ -4241,17 +3753,6 @@
                 Y: =DataCardKey16_1.Y
                 ZIndex: =4
 
-            Icon1_437 As icon.CheckBadge:
-                BorderColor: =RGBA(32, 54, 71, 1)
-                Color: =RGBA(54, 176, 75, 1)
-                Height: =26
-                Icon: =Icon.CheckBadge
-                Visible: =And(Not(IsBlank(DataCardValue16_3.SelectedItems)), And(If(Len(DataCardValue16_3.Selected.Value) >= 1,true)))
-                Width: =26
-                X: =776
-                Y: =116
-                ZIndex: =5
-
             Rectangle1_31 As rectangle:
                 BorderColor: =RGBA(32, 54, 71, 1)
                 Fill: =RGBA(100, 118, 132, 1)
@@ -4338,17 +3839,6 @@
                 Y: =DataCardKey17_1.Y
                 ZIndex: =4
 
-            Icon1_438 As icon.CheckBadge:
-                BorderColor: =RGBA(32, 54, 71, 1)
-                Color: =RGBA(54, 176, 75, 1)
-                Height: =26
-                Icon: =Icon.CheckBadge
-                Visible: =And(Not(IsBlank(DataCardValue17_3.SelectedItems)), And(If(Len(DataCardValue17_3.Selected.Value) >= 1,true)))
-                Width: =26
-                X: =776
-                Y: =53
-                ZIndex: =5
-
             Rectangle1_38 As rectangle:
                 BorderColor: =RGBA(32, 54, 71, 1)
                 Fill: =RGBA(100, 118, 132, 1)
@@ -4408,7 +3898,7 @@
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Text: =If(Icon2_162.Visible, "Please enter a future date")
+                Text: =
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
@@ -4424,32 +3914,6 @@
                 Wrap: =false
                 Y: =DataCardKey21_2.Y
                 ZIndex: =4
-
-            Icon1_444 As icon.CheckBadge:
-                BorderColor: =RGBA(32, 54, 71, 1)
-                Color: =RGBA(54, 176, 75, 1)
-                Height: =26
-                Icon: =Icon.CheckBadge
-                Visible: |-
-                    =If(
-                         IsBlank(DataCardValue21_3.SelectedDate) || Len(DataCardValue21_3.SelectedDate) <= 2, false, true) && DateDiff(Today(),DataCardValue21_3.SelectedDate)>=0
-                Width: =26
-                X: =776
-                Y: =56
-                ZIndex: =5
-
-            Icon2_162 As icon.CancelBadge:
-                BorderColor: =RGBA(32, 54, 71, 1)
-                Color: =RGBA(168, 0, 0, 1)
-                Height: =40
-                Icon: =Icon.CancelBadge
-                Visible: |
-                    =If(
-                         IsBlank(DataCardValue21_3.SelectedDate) || Len(DataCardValue21_3.SelectedDate) <= 2, false, true) && DateDiff(Today(),DataCardValue21_3.SelectedDate)<0
-                Width: =26
-                X: =776
-                Y: =49
-                ZIndex: =8
 
         LoanStartDate_DataCard1_1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -4502,7 +3966,7 @@
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Text: =If(Icon2_159.Visible, "You cannot enter a previous date")
+                Text: =
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
@@ -4518,32 +3982,6 @@
                 Wrap: =false
                 Y: =DataCardKey18_1.Y
                 ZIndex: =4
-
-            Icon1_441 As icon.CheckBadge:
-                BorderColor: =RGBA(32, 54, 71, 1)
-                Color: =RGBA(54, 176, 75, 1)
-                Height: =26
-                Icon: =Icon.CheckBadge
-                Visible: |-
-                    =If(
-                         IsBlank(DataCardValue18_3.SelectedDate) || Len(DataCardValue18_3.SelectedDate) <= 2, false, true) && DateDiff(Today(),DataCardValue18_3.SelectedDate)>=0
-                Width: =26
-                X: =776
-                Y: =56
-                ZIndex: =5
-
-            Icon2_159 As icon.CancelBadge:
-                BorderColor: =RGBA(32, 54, 71, 1)
-                Color: =RGBA(168, 0, 0, 1)
-                Height: =40
-                Icon: =Icon.CancelBadge
-                Visible: |
-                    =If(
-                         IsBlank(DataCardValue18_3.SelectedDate) || Len(DataCardValue18_3.SelectedDate) <= 2, false, true) && DateDiff(Today(),DataCardValue18_3.SelectedDate)<0
-                Width: =26
-                X: =776
-                Y: =49
-                ZIndex: =6
 
         ReasonForLoan_DataCard1_1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -4600,7 +4038,7 @@
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Text: =If(Icon2_161.Visible, "Please enter a reason why you need the laptop on loan")
+                Text: =
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
@@ -4616,28 +4054,6 @@
                 Wrap: =false
                 Y: =DataCardKey20_1.Y
                 ZIndex: =4
-
-            Icon1_443 As icon.CheckBadge:
-                BorderColor: =RGBA(32, 54, 71, 1)
-                Color: =RGBA(54, 176, 75, 1)
-                Height: =26
-                Icon: =Icon.CheckBadge
-                Visible: =And(Not(IsBlank(DataCardValue20_3.Text)), And(If(Len(DataCardValue20_3.Text) >= 6,true)))
-                Width: =26
-                X: =776
-                Y: =65
-                ZIndex: =5
-
-            Icon2_161 As icon.CancelBadge:
-                BorderColor: =RGBA(32, 54, 71, 1)
-                Color: =RGBA(168, 0, 0, 1)
-                Height: =40
-                Icon: =Icon.CancelBadge
-                Visible: =And(Not(IsBlank(DataCardValue20_3.Text)), Or(If(Len(DataCardValue20_3.Text) <= 5, true)))
-                Width: =26
-                X: =776
-                Y: =51
-                ZIndex: =6
 
         MobRequestType_DataCard1_1 As typedDataCard.comboBoxEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -4780,7 +4196,7 @@
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Text: =If(Icon2_163.Visible, "Please enter a reason you require replacement")
+                Text: =
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
@@ -4796,28 +4212,6 @@
                 Wrap: =false
                 Y: =DataCardKey23_1.Y
                 ZIndex: =4
-
-            Icon1_448 As icon.CheckBadge:
-                BorderColor: =RGBA(32, 54, 71, 1)
-                Color: =RGBA(54, 176, 75, 1)
-                Height: =26
-                Icon: =Icon.CheckBadge
-                Visible: =And(Not(IsBlank(DataCardValue23_3.Text)), And(If(Len(DataCardValue23_3.Text) >= 6,true)))
-                Width: =26
-                X: =776
-                Y: =49
-                ZIndex: =5
-
-            Icon2_163 As icon.CancelBadge:
-                BorderColor: =RGBA(32, 54, 71, 1)
-                Color: =RGBA(168, 0, 0, 1)
-                Height: =40
-                Icon: =Icon.CancelBadge
-                Visible: =And(Not(IsBlank(DataCardValue23_3.Text)), Or(If(Len(DataCardValue23_3.Text) <= 5, true)))
-                Width: =26
-                X: =776
-                Y: =49
-                ZIndex: =6
 
         SpecialRequestDetails_DataCard1_1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -4891,17 +4285,6 @@
                 Y: =DataCardKey37_1.Y
                 ZIndex: =4
 
-            Icon1_449 As icon.CheckBadge:
-                BorderColor: =RGBA(32, 54, 71, 1)
-                Color: =RGBA(54, 176, 75, 1)
-                Height: =26
-                Icon: =Icon.CheckBadge
-                Visible: =And(Not(IsBlank(DataCardValue37_3.Text)), And(If(Len(DataCardValue37_3.Text) >= 6,true)))
-                Width: =26
-                X: =776
-                Y: =112
-                ZIndex: =5
-
             Rectangle1_35 As rectangle:
                 BorderColor: =RGBA(32, 54, 71, 1)
                 Fill: =RGBA(100, 118, 132, 1)
@@ -4917,15 +4300,4 @@
                 X: =28
                 Y: =1
                 ZIndex: =7
-
-            Icon2_164 As icon.CancelBadge:
-                BorderColor: =RGBA(32, 54, 71, 1)
-                Color: =RGBA(168, 0, 0, 1)
-                Height: =40
-                Icon: =Icon.CancelBadge
-                Visible: =And(Not(IsBlank(DataCardValue37_3.Text)), Or(If(Len(DataCardValue37_3.Text) <= 5, true)))
-                Width: =26
-                X: =776
-                Y: =112
-                ZIndex: =8
 
