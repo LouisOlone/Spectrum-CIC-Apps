@@ -127,5 +127,31 @@
     "dependencies": {},
     "dependents": [],
     "id": "9bb50c81-f215-47ce-8d08-19b7838540ea"
+  },
+  "cb7ca1e9-1ec4-4569-8208-689de556a54e": {
+    "connectionRef": {
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1676/1.0.1676.3617/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+    },
+    "datasets": {
+      "https://spectrumcic.sharepoint.com/sites/PowerAppsDevelopment": {
+        "dataSources": {
+          "SharedDrives": {
+            "tableName": "fc0341a2-6a2d-425d-bb9a-cc34956b7352"
+          },
+          "Smartcard Positions": {
+            "tableName": "a9dbbf97-78f6-4a94-96d5-1054a35ea311"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Smartcard Positions",
+      "SharedDrives"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "cb7ca1e9-1ec4-4569-8208-689de556a54e"
   }
 }
