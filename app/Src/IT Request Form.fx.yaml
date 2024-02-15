@@ -99,6 +99,7 @@
                 HoverFill: =RGBA(88,89,91,0.01)
                 Mode: =TextMode.MultiLine
                 PaddingLeft: =5
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -179,6 +180,7 @@
                     =If(DataCardValue44_2.Selected.Value ="Yes", Reset(DataCardValue5_3) && Reset(DataCardValue6_3) && Reset(DataCardValue7_3),true) ;
                     If(DataCardValue44_2.Selected.Value ="No", Reset(DataCardValue48_2) && Reset(DataCardValue9_3),true)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 SearchFields: =["Value"]
                 SearchItems: =[]
                 SelectMultiple: =false
@@ -255,6 +257,7 @@
                 HoverFill: =RGBA(88,89,91,0.01)
                 Items: =Choices([@'IT Equipment And Requests'].EmployeeNameSpec)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 SearchFields: =["DisplayName"]
                 SearchItems: =Choices('IT Equipment And Requests'.EmployeeNameSpec,DataCardValue48_2.SearchText)
                 SelectMultiple: =false
@@ -332,6 +335,7 @@
                 HoverFill: =RGBA(205, 209, 213, 1)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -828,6 +832,7 @@
                 Items: =Choices([@'IT Equipment And Requests'].NewReplacementSmartcard)
                 OnChange: =Reset(DataCardValue50_2) && Reset(DataCardValue46_3) && Reset(DataCardValue43_3) && Reset(Dropdown7_8) && Reset(Dropdown7_10) && Reset(Dropdown7_12)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 SearchFields: =["Value"]
                 SearchItems: =[]
                 SelectMultiple: =false
@@ -922,6 +927,7 @@
                 IsSearchable: =false
                 Items: =Choices([@'IT Equipment And Requests'].PrescriberFlag)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 SearchFields: =["Value"]
                 SearchItems: =[]
                 SelectMultiple: =false
@@ -1005,6 +1011,7 @@
                 HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -1083,6 +1090,7 @@
                 IsSearchable: =false
                 Items: =Choices([@'IT Equipment And Requests'].UrgentRequestFlag)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 SearchFields: =["Value"]
                 SearchItems: =[]
                 SelectMultiple: =false
@@ -1162,6 +1170,7 @@
                 MaxLength: =Parent.MaxLength
                 Mode: =TextMode.MultiLine
                 PaddingLeft: =5
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -1242,6 +1251,7 @@
                 IsInDataCard: =true
                 ItemFill: =RGBA(100, 118, 132, 1)
                 ItemHoverFill: =RGBA(88,89,91,0.01)
+                ItemPressedColor: =RGBA(88,89,91,0.5)
                 Items: =Parent.Default
                 OnAddFile: |-
                     =Set(varAttachmentSC, JSON(Image2_1.Image, JSONFormat.IncludeBinaryData));
@@ -1251,7 +1261,9 @@
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PaddingRight: =5
                 PaddingTop: =5
-                PressedFill: =RGBA(32, 54, 71, 1)
+                PressedBorderColor: =RGBA(88,89,91,0.5)
+                PressedColor: =Color.Black
+                PressedFill: =Self.Fill
                 Tooltip: =Parent.DisplayName
                 Width: =582
                 X: =30
@@ -1350,6 +1362,7 @@
                 MaxLength: =Parent.MaxLength
                 Mode: =TextMode.MultiLine
                 PaddingLeft: =5
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -1431,6 +1444,7 @@
                 MaxLength: =Parent.MaxLength
                 Mode: =TextMode.MultiLine
                 PaddingLeft: =5
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -1511,6 +1525,7 @@
                 HoverFill: =RGBA(88,89,91,0.01)
                 Items: =Choices([@'IT Equipment And Requests'].LicenseType)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedFill: =RGBA(32, 54, 71, 1)
                 SearchFields: =["Value"]
                 SearchItems: =Choices('IT Equipment And Requests'.LicenseType,DataCardValue134_1.SearchText)
@@ -1610,6 +1625,7 @@
                 Items: =Choices([@'IT Equipment And Requests'].'4GLaptop')
                 OnChange: =Reset(DataCardValue4_3)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedFill: =RGBA(32, 54, 71, 1)
                 SearchFields: =["Value"]
                 SearchItems: =Choices('IT Equipment And Requests'.'4GLaptop',DataCardValue11_3.SearchText)
@@ -1692,6 +1708,7 @@
                 MaxLength: =Parent.MaxLength
                 Mode: =TextMode.MultiLine
                 PaddingLeft: =5
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -1851,6 +1868,7 @@
                 MaxLength: =Parent.MaxLength
                 Mode: =TextMode.MultiLine
                 PaddingLeft: =5
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -1932,6 +1950,7 @@
                 MaxLength: =Parent.MaxLength
                 Mode: =TextMode.MultiLine
                 PaddingLeft: =5
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -2012,6 +2031,7 @@
                 HoverFill: =RGBA(88,89,91,0.01)
                 Items: =Choices([@'IT Equipment And Requests'].KeyboardFlag)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedFill: =RGBA(32, 54, 71, 1)
                 SearchFields: =["Value"]
                 SearchItems: =Choices('IT Equipment And Requests'.KeyboardFlag,DataCardValue106_2.SearchText)
@@ -2118,6 +2138,7 @@
                 HoverFill: =RGBA(88,89,91,0.01)
                 Items: =Choices([@'IT Equipment And Requests'].ManagerUserPolicyFlag)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedFill: =RGBA(32, 54, 71, 1)
                 SearchFields: =["Value"]
                 SearchItems: =Choices('IT Equipment And Requests'.ManagerUserPolicyFlag,DataCardValue14_2.SearchText)
@@ -2205,6 +2226,7 @@
                 IsSearchable: =false
                 Items: =Choices([@'IT Equipment And Requests'].UserPolicyFlag)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 SearchFields: =["Value"]
                 SearchItems: =[]
                 SelectMultiple: =false
@@ -2283,6 +2305,7 @@
                 HoverFill: =RGBA(88,89,91,0.01)
                 Items: =Choices([@'IT Equipment And Requests'].MouseFlag)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedFill: =RGBA(32, 54, 71, 1)
                 SearchFields: =["Value"]
                 SearchItems: =Choices('IT Equipment And Requests'.MouseFlag,DataCardValue113_2.SearchText)
@@ -2372,6 +2395,7 @@
                 HoverFill: =RGBA(88,89,91,0.01)
                 Items: =Choices([@'IT Equipment And Requests'].HeadsetFlag)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedFill: =RGBA(32, 54, 71, 1)
                 SearchFields: =["Value"]
                 SearchItems: =Choices('IT Equipment And Requests'.HeadsetFlag,DataCardValue117_2.SearchText)
@@ -2461,6 +2485,7 @@
                 HoverFill: =RGBA(88,89,91,0.01)
                 Items: =Choices([@'IT Equipment And Requests'].MonitorFlag)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedFill: =RGBA(32, 54, 71, 1)
                 SearchFields: =["Value"]
                 SearchItems: =Choices('IT Equipment And Requests'.MonitorFlag,DataCardValue118_2.SearchText)
@@ -2550,6 +2575,7 @@
                 MaxLength: =Parent.MaxLength
                 Mode: =TextMode.MultiLine
                 PaddingLeft: =5
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -2631,6 +2657,7 @@
                 MaxLength: =Parent.MaxLength
                 Mode: =TextMode.MultiLine
                 PaddingLeft: =5
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -2732,6 +2759,7 @@
                     =If(RequestFor_DataCard_1.Selected.Value ="Myself", Reset(DataCardValue44_2) && Reset(DataCardValue5_3) && Reset(DataCardValue6_3) && Reset(DataCardValue7_3),Reset(DataCardValue22_3), Reset(DataCardValue48_2),true,false) ;
                     If(RequestFor_DataCard_1.Selected.Value ="Someone Else", Reset(DataCardValue9_3),Reset(DataCardValue22_3),true,false)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 SearchFields: =["Value"]
                 SearchItems: =[]
                 SelectMultiple: =false
@@ -2809,6 +2837,7 @@
                 IsSearchable: =false
                 Items: =Choices([@'IT Equipment And Requests'].Company)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 SearchFields: =["Value"]
                 SearchItems: =[]
                 SelectMultiple: =false
@@ -2885,6 +2914,7 @@
                 HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -2962,6 +2992,7 @@
                 HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -3039,6 +3070,7 @@
                 HoverFill: =RGBA(88,89,91,0.01)
                 Items: =Choices([@'IT Equipment And Requests'].LineManagerSpec)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 SearchFields: =["DisplayName"]
                 SearchItems: =Choices('IT Equipment And Requests'.LineManagerSpec,DataCardValue9_3.SearchText)
                 SelectMultiple: =false
@@ -3139,6 +3171,7 @@
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: =RGBA(88,89,91,0.01)
                 Items: =Sort(Distinct('Services List', Site),Value)
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 Width: =582
                 X: =30
                 Y: =40
@@ -3223,6 +3256,7 @@
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: =RGBA(88,89,91,0.01)
                 Items: =Distinct(Filter('Services List', Site = Dropdown5_2.Selected.Value), Address)
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 Visible: =false
                 X: =314
                 ZIndex: =5
@@ -3270,6 +3304,7 @@
                 MaxLength: =Parent.MaxLength
                 Mode: =TextMode.MultiLine
                 PaddingLeft: =5
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -3346,6 +3381,7 @@
                 HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -3477,6 +3513,7 @@
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: =RGBA(88,89,91,0.01)
                 Items: =Sort(Distinct('Smartcard Positions', Site),Value)
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 Width: =582
                 X: =30
                 Y: =104
@@ -3566,6 +3603,7 @@
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: =RGBA(88,89,91,0.01)
                 Items: =Distinct(Filter('Smartcard Positions', Site = Dropdown7_8.Selected.Value), Position)
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 Width: =582
                 X: =30
                 Y: =104
@@ -3645,6 +3683,7 @@
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: =RGBA(88,89,91,0.01)
                 Items: =Sort(Distinct('Smartcard Positions', Site),Value)
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 Width: =582
                 X: =30
                 Y: =49
@@ -3716,6 +3755,7 @@
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: =RGBA(88,89,91,0.01)
                 Items: =Distinct(Filter('Smartcard Positions', Site = Dropdown7_10.Selected.Value), Position)
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 Width: =582
                 X: =30
                 Y: =55
@@ -3787,6 +3827,7 @@
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: =RGBA(88,89,91,0.01)
                 Items: =Sort(Distinct('Smartcard Positions', Site),Value)
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 Width: =582
                 X: =30
                 Y: =44
@@ -3858,6 +3899,7 @@
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: =RGBA(88,89,91,0.01)
                 Items: =Distinct(Filter('Smartcard Positions', Site = Dropdown7_12.Selected.Value), Position)
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 Width: =582
                 X: =30
                 Y: =44
@@ -3930,6 +3972,7 @@
                 HoverFill: =RGBA(88,89,91,0.01)
                 IsSearchable: =false
                 Items: =Choices([@SharedDrives].SharedDrive)
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedFill: =RGBA(32, 54, 71, 1)
                 SearchFields: =["Value"]
                 SearchItems: =[]
@@ -4000,6 +4043,7 @@
                 Items: =Choices([@'IT Equipment And Requests'].RequestLength)
                 OnChange: =Reset(DataCardValue17_3) && Reset(DataCardValue11_3) && Reset(DataCardValue4_3) && Reset(DataCardValue18_3) && Reset(DataCardValue34_3) && Reset(DataCardValue20_3) && Reset(DataCardValue21_3)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 SearchFields: =["Value"]
                 SearchItems: =[]
                 SelectMultiple: =false
@@ -4093,6 +4137,7 @@
                 IsSearchable: =false
                 Items: =Choices([@'IT Equipment And Requests'].RequestReason)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 SearchFields: =["Value"]
                 SearchItems: =[]
                 SelectMultiple: =false
@@ -4327,6 +4372,7 @@
                 MaxLength: =Parent.MaxLength
                 Mode: =TextMode.MultiLine
                 PaddingLeft: =5
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -4405,6 +4451,7 @@
                 Items: =Choices([@'IT Equipment And Requests'].MobRequestType)
                 OnChange: =Reset(DataCardValue23_3) && Reset(DataCardValue42_2) && Reset(DataCardValue14_2)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 SearchFields: =["Value"]
                 SearchItems: =[]
                 SelectMultiple: =false
@@ -4499,6 +4546,7 @@
                 MaxLength: =Parent.MaxLength
                 Mode: =TextMode.MultiLine
                 PaddingLeft: =5
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -4578,6 +4626,7 @@
                 MaxLength: =Parent.MaxLength
                 Mode: =TextMode.MultiLine
                 PaddingLeft: =5
+                PressedBorderColor: =RGBA(88,89,91,0.5)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
