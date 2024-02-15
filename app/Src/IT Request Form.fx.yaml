@@ -1864,6 +1864,7 @@
             DataCardValue34_3 As datepicker:
                 BorderColor: =RGBA(88,89,91,0.25)
                 CalendarHeaderFill: =RGBA(100, 118, 132, 1)
+                Color: =RGBA(77,164,65,1)
                 DefaultDate: =Parent.Default
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
@@ -4514,6 +4515,7 @@
 
             DataCardValue21_3 As datepicker:
                 BorderColor: =RGBA(88,89,91,0.25)
+                Color: =RGBA(77,164,65,1)
                 DefaultDate: =If(DataCardValue16_3.Selected.Value ="Temporary",DataCardValue18_3).SelectedDate
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
@@ -4588,6 +4590,7 @@
 
             DataCardValue18_3 As datepicker:
                 BorderColor: =RGBA(88,89,91,0.25)
+                Color: =RGBA(77,164,65,1)
                 DefaultDate: =Parent.Default
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
