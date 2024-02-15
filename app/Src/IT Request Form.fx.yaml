@@ -934,6 +934,84 @@
                 Y: =6
                 ZIndex: =7
 
+        ReplacementSCnumber_DataCard1_1 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ReplacementSCnumber"
+            Default: =ThisItem.ReplacementSCnumber
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'IT Equipment And Requests'],DataSourceInfo.DisplayName,"ReplacementSCnumber")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'IT Equipment And Requests'], DataSourceInfo.MaxLength, "ReplacementSCnumber")
+            Required: =false
+            Update: =DataCardValue50_2.Text
+            Visible: =If(DataCardValue49_3.Selected.Value ="Replace a lost/stolen Smartcard",true,false)
+            Width: =642
+            X: =0
+            Y: =21
+            ZIndex: =1
+
+            DataCardKey50_2 As label:
+                AutoHeight: =true
+                Color: =RGBA(0, 0, 0, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Size: =14
+                Text: ="Please enter your smartcard number that needs replacing if you know it"
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue50_2 As text:
+                BorderColor: =RGBA(88,89,91,0.25)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                PressedBorderColor: =RGBA(88,89,91,0.5)
+                PressedColor: =Color.Black
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =600
+                X: =30
+                Y: =DataCardKey50_2.Y + DataCardKey50_2.Height + 5
+                ZIndex: =2
+
+            ErrorMessage50_3 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue50_2.Y + DataCardValue50_2.Height
+                ZIndex: =3
+
+            StarVisible50_2 As label:
+                Align: =Align.Center
+                Height: =DataCardKey50_2.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey50_2.Y
+                ZIndex: =4
+
         PrescriberFlag_DataCard2_1 As typedDataCard.comboBoxEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="PrescriberFlag"
@@ -1031,84 +1109,6 @@
                 Y: =6
                 ZIndex: =6
 
-        ReplacementSCnumber_DataCard1_1 As typedDataCard.textualEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="ReplacementSCnumber"
-            Default: =ThisItem.ReplacementSCnumber
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'IT Equipment And Requests'],DataSourceInfo.DisplayName,"ReplacementSCnumber")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'IT Equipment And Requests'], DataSourceInfo.MaxLength, "ReplacementSCnumber")
-            Required: =false
-            Update: =DataCardValue50_2.Text
-            Visible: =If(DataCardValue49_3.Selected.Value ="Replace a lost/stolen Smartcard",true,false)
-            Width: =642
-            X: =0
-            Y: =21
-            ZIndex: =1
-
-            DataCardKey50_2 As label:
-                AutoHeight: =true
-                Color: =RGBA(0, 0, 0, 1)
-                Font: =Font.Arial
-                FontWeight: =FontWeight.Bold
-                Height: =34
-                Size: =14
-                Text: ="Please enter your smartcard number that needs replacing if you know it"
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue50_2 As text:
-                BorderColor: =RGBA(88,89,91,0.25)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                Font: =Font.Arial
-                FontWeight: =FontWeight.Lighter
-                HoverBorderColor: =RGBA(88,89,91,1)
-                HoverFill: =RGBA(88,89,91,0.01)
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                PressedBorderColor: =RGBA(88,89,91,0.5)
-                PressedColor: =Color.Black
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =600
-                X: =30
-                Y: =DataCardKey50_2.Y + DataCardKey50_2.Height + 5
-                ZIndex: =2
-
-            ErrorMessage50_3 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue50_2.Y + DataCardValue50_2.Height
-                ZIndex: =3
-
-            StarVisible50_2 As label:
-                Align: =Align.Center
-                Height: =DataCardKey50_2.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey50_2.Y
-                ZIndex: =4
-
         UrgentRequestFlag_DataCard2_1 As typedDataCard.comboBoxEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="UrgentRequestFlag"
@@ -1196,89 +1196,6 @@
                 Width: =30
                 Wrap: =false
                 Y: =DataCardKey43_1.Y
-                ZIndex: =4
-
-        SmartcardComments_DataCard1_1 As typedDataCard.textualEditCard:
-            BorderColor: =RGBA(32, 54, 71, 1)
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="SmartcardComments"
-            Default: =ThisItem.SmartcardComments
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'IT Equipment And Requests'],DataSourceInfo.DisplayName,"SmartcardComments")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'IT Equipment And Requests'], DataSourceInfo.MaxLength, "SmartcardComments")
-            Required: =Checkbox2_68.Value = true
-            Update: =DataCardValue124_2.Text
-            Visible: =Checkbox2_68.Value = true
-            Width: =642
-            X: =2
-            Y: =21
-            ZIndex: =1
-
-            DataCardKey150_2 As label:
-                AutoHeight: =true
-                Color: =RGBA(32, 54, 71, 1)
-                Font: =Font.Arial
-                FontWeight: =FontWeight.Bold
-                Height: =34
-                Size: =14
-                Text: ="Please provide reasoning below for your request"
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue124_2 As text:
-                BorderColor: =RGBA(88,89,91,0.25)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                Font: =Font.Arial
-                FontWeight: =FontWeight.Lighter
-                Height: =130
-                HoverBorderColor: =RGBA(88,89,91,1)
-                HoverFill: =RGBA(88,89,91,0.01)
-                MaxLength: =Parent.MaxLength
-                Mode: =TextMode.MultiLine
-                PaddingLeft: =5
-                PressedBorderColor: =RGBA(88,89,91,0.5)
-                PressedColor: =Color.Black
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =582
-                X: =30
-                Y: =68
-                ZIndex: =2
-
-            ErrorMessage156_2 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue124_2.Y + DataCardValue124_2.Height
-                ZIndex: =3
-
-            StarVisible155_2 As label:
-                Align: =Align.Center
-                Color: =RGBA(32, 54, 71, 1)
-                Height: =DataCardKey150_2.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey150_2.Y
                 ZIndex: =4
 
         Attachments_DataCard1_1 As typedDataCard.attachmentsEditCard:
@@ -1393,6 +1310,89 @@
                 X: =30
                 ZIndex: =6
 
+        SmartcardComments_DataCard1_1 As typedDataCard.textualEditCard:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="SmartcardComments"
+            Default: =ThisItem.SmartcardComments
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'IT Equipment And Requests'],DataSourceInfo.DisplayName,"SmartcardComments")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'IT Equipment And Requests'], DataSourceInfo.MaxLength, "SmartcardComments")
+            Required: =Checkbox2_68.Value = true
+            Update: =DataCardValue124_2.Text
+            Visible: =Checkbox2_68.Value = true
+            Width: =642
+            X: =2
+            Y: =21
+            ZIndex: =1
+
+            DataCardKey150_2 As label:
+                AutoHeight: =true
+                Color: =RGBA(32, 54, 71, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Size: =14
+                Text: ="Please provide reasoning below for your request"
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue124_2 As text:
+                BorderColor: =RGBA(88,89,91,0.25)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
+                Height: =130
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
+                MaxLength: =Parent.MaxLength
+                Mode: =TextMode.MultiLine
+                PaddingLeft: =5
+                PressedBorderColor: =RGBA(88,89,91,0.5)
+                PressedColor: =Color.Black
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =582
+                X: =30
+                Y: =68
+                ZIndex: =2
+
+            ErrorMessage156_2 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue124_2.Y + DataCardValue124_2.Height
+                ZIndex: =3
+
+            StarVisible155_2 As label:
+                Align: =Align.Center
+                Color: =RGBA(32, 54, 71, 1)
+                Height: =DataCardKey150_2.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey150_2.Y
+                ZIndex: =4
+
         SharedDriveOther_DataCard1_1 As typedDataCard.textualEditCard:
             BorderColor: =RGBA(32, 54, 71, 1)
             BorderStyle: =BorderStyle.Solid
@@ -1408,7 +1408,7 @@
             Visible: =Or(Checkbox3_12.Value = true, Checkbox1_65.Value = true)
             Width: =642
             X: =1
-            Y: =26
+            Y: =25
             ZIndex: =1
 
             DataCardKey52_2 As label:
@@ -1422,7 +1422,7 @@
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
-                Y: =10
+                Y: =74
                 ZIndex: =1
 
             DataCardValue33_2 As text:
@@ -1473,6 +1473,14 @@
                 Wrap: =false
                 Y: =DataCardKey52_2.Y
                 ZIndex: =4
+
+            Rectangle1_47 As rectangle:
+                BorderColor: =RGBA(32, 54, 71, 1)
+                Fill: =RGBA(100, 118, 132, 1)
+                Height: =2
+                Width: =1300
+                Y: =5
+                ZIndex: =5
 
         ITAccountComments_DataCard1_1 As typedDataCard.textualEditCard:
             BorderColor: =RGBA(32, 54, 71, 1)
@@ -1666,98 +1674,13 @@
                 Y: =5
                 ZIndex: =7
 
-        "'4GLaptop_DataCard1_1' As typedDataCard.comboBoxEditCard":
-            BorderColor: =RGBA(32, 54, 71, 1)
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="OData__x0034_GLaptop"
-            Default: =ThisItem.'4GLaptop'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'IT Equipment And Requests'],DataSourceInfo.DisplayName,"OData__x0034_GLaptop")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            Required: =Checkbox3_10.Value = true
-            Update: =DataCardValue11_3.Selected
-            Visible: =Checkbox3_10.Value = true
-            Width: =642
-            X: =0
-            Y: =30
-            ZIndex: =1
-
-            DataCardKey19_1 As label:
-                AutoHeight: =true
-                Color: =RGBA(32, 54, 71, 1)
-                Font: =Font.Arial
-                FontWeight: =FontWeight.Bold
-                Height: =34
-                Size: =14
-                Text: ="Does this laptop need to be 4G?"
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue11_3 As combobox:
-                BorderColor: =RGBA(88,89,91,0.25)
-                ChevronBackground: |-
-                    =	
-                    RGBA(77,164,65,1)
-                ChevronHoverBackground: |-
-                    =	
-                    ColorFade(RGBA(77,164,65,1), -20%)
-                DefaultSelectedItems: =Parent.Default
-                DisplayFields: =["Value"]
-                DisplayMode: =Parent.DisplayMode
-                Font: =Font.Arial
-                FontWeight: =FontWeight.Lighter
-                HoverBorderColor: =RGBA(88,89,91,1)
-                HoverFill: =RGBA(88,89,91,0.01)
-                Items: =Choices([@'IT Equipment And Requests'].'4GLaptop')
-                OnChange: =Reset(DataCardValue4_3)
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                PressedBorderColor: =RGBA(88,89,91,0.5)
-                PressedColor: =Color.Black
-                PressedFill: =Self.Fill
-                SearchFields: =["Value"]
-                SearchItems: =Choices('IT Equipment And Requests'.'4GLaptop',DataCardValue11_3.SearchText)
-                SelectionColor: |-
-                    =	
-                    RGBA(0,0,0,1)
-                SelectionFill: |-
-                    =	
-                    RGBA(74,164,65,0.5)
-                SelectMultiple: =false
-                Tooltip: =Parent.DisplayName
-                Width: =582
-                X: =30
-                Y: =DataCardKey19_1.Y + DataCardKey19_1.Height + 5
-                ZIndex: =2
-
-            ErrorMessage19_1 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue11_3.Y + DataCardValue11_3.Height
-                ZIndex: =3
-
-            StarVisible19_1 As label:
-                Align: =Align.Center
-                Color: =RGBA(32, 54, 71, 1)
-                Height: =DataCardKey19_1.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey19_1.Y
-                ZIndex: =4
+            Rectangle1_46 As rectangle:
+                BorderColor: =RGBA(32, 54, 71, 1)
+                Fill: =RGBA(100, 118, 132, 1)
+                Height: =2
+                Width: =1350
+                Y: =3
+                ZIndex: =8
 
         "'4GLaptopReason_DataCard1_1' As typedDataCard.textualEditCard":
             BorderColor: =RGBA(32, 54, 71, 1)
@@ -2194,201 +2117,6 @@
                 Height: =2
                 Width: =727
                 ZIndex: =6
-
-        ManagerUserPolicyFlag_DataCard1_2 As typedDataCard.comboBoxEditCard:
-            BorderColor: =RGBA(32, 54, 71, 1)
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="ManagerUserPolicyFlag"
-            Default: =ThisItem.ManagerUserPolicyFlag
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'IT Equipment And Requests'],DataSourceInfo.DisplayName,"ManagerUserPolicyFlag")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =463
-            Required: =false
-            Update: =DataCardValue14_2.Selected
-            Visible: =If(RequestFor_DataCard_1.Selected.Value ="Someone Else",true,false) && Checkbox4_3.Value = true
-            Width: =825
-            X: =3
-            Y: =35
-            ZIndex: =1
-
-            DataCardKey14_1 As label:
-                Color: =RGBA(32, 54, 71, 1)
-                Font: =Font.Arial
-                FontWeight: =FontWeight.Bold
-                Height: =392
-                Size: =14
-                Text: |-
-                    ="Please confirm that you will ensure that the new user acknowledges the Policy below.
-                    
-                    Signing this agreement confirms that you have read and will comply with Spectrum’s Mobile Communications Devices Policy & Procedures.
-                    
-                    I agree to abide by Spectrum’s policy which is published on Spectrum’s intranet for information.
-                    
-                    I acknowledge that I may be liable for costs relating to damage and/or faults due to my own negligence and any costs arising from the non-return of the mobile device in accordance with the policy. 
-                    
-                    I understand that I may be liable to disciplinary action should I fail to comply with the policy.
-                    
-                    I agree that I will return this device once I no longer require it or leave the organisation."
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue14_2 As combobox:
-                BorderColor: =RGBA(88,89,91,0.25)
-                ChevronBackground: |-
-                    =	
-                    RGBA(77,164,65,1)
-                ChevronHoverBackground: =ColorFade(RGBA(77,164,65,1), -20%)
-                DefaultSelectedItems: =Parent.Default
-                DisplayFields: =["Value"]
-                DisplayMode: =Parent.DisplayMode
-                Font: =Font.Arial
-                FontWeight: =FontWeight.Lighter
-                HoverBorderColor: =RGBA(88,89,91,1)
-                HoverFill: =RGBA(88,89,91,0.01)
-                Items: =Choices([@'IT Equipment And Requests'].ManagerUserPolicyFlag)
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                PressedBorderColor: =RGBA(88,89,91,0.5)
-                PressedColor: =Color.Black
-                PressedFill: =Self.Fill
-                SearchFields: =["Value"]
-                SearchItems: =Choices('IT Equipment And Requests'.ManagerUserPolicyFlag,DataCardValue14_2.SearchText)
-                SelectionColor: |-
-                    =	
-                    RGBA(0,0,0,1)
-                SelectionFill: |-
-                    =	
-                    RGBA(74,164,65,0.5)
-                SelectMultiple: =false
-                Tooltip: =Parent.DisplayName
-                Width: =734
-                X: =30
-                Y: =402
-                ZIndex: =2
-
-            ErrorMessage14_1 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue14_2.Y + DataCardValue14_2.Height
-                ZIndex: =3
-
-            StarVisible14_1 As label:
-                Align: =Align.Center
-                Color: =RGBA(32, 54, 71, 1)
-                Height: =DataCardKey14_1.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey14_1.Y
-                ZIndex: =4
-
-        UserPolicyFlag_DataCard2_1 As typedDataCard.comboBoxEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="UserPolicyFlag"
-            Default: =ThisItem.UserPolicyFlag
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'IT Equipment And Requests'],DataSourceInfo.DisplayName,"UserPolicyFlag")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =415
-            Required: =false
-            Update: =DataCardValue42_2.Selected
-            Visible: =And(If(RequestFor_DataCard_1.Selected.Value ="Myself",true,false),Checkbox4_3.Value = true)
-            Width: =825
-            X: =4
-            Y: =35
-            ZIndex: =1
-
-            DataCardKey42_1 As label:
-                Color: =RGBA(0, 0, 0, 1)
-                Font: =Font.Arial
-                FontWeight: =FontWeight.Bold
-                Height: =350
-                Size: =14
-                Text: |-
-                    ="Please confirm that you have read and understand the below.
-                    
-                    Signing this agreement confirms that you have read and will comply with Spectrum’s Mobile Communications Devices Policy & Procedures.
-                    
-                    I agree to abide by Spectrum’s policy which is published on Spectrum’s intranet for information.
-                    
-                    I acknowledge that I may be liable for costs relating to damage and/or faults due to my own negligence and any costs arising from the non-return of the mobile device in accordance with the policy. I understand that I may be liable to disciplinary action should I fail to comply with the policy.
-                    
-                    I agree that I will return this device once I no longer require it or leave the organisation."
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue42_2 As combobox:
-                BorderColor: =RGBA(88,89,91,0.25)
-                ChevronBackground: |-
-                    =	
-                    RGBA(77,164,65,1)
-                ChevronHoverBackground: =ColorFade(RGBA(77,164,65,1), -20%)
-                DefaultSelectedItems: =Parent.Default
-                DisplayFields: =["Value"]
-                DisplayMode: =Parent.DisplayMode
-                Font: =Font.Arial
-                FontWeight: =FontWeight.Lighter
-                HoverBorderColor: =RGBA(88,89,91,1)
-                HoverFill: =RGBA(88,89,91,0.01)
-                IsSearchable: =false
-                Items: =Choices([@'IT Equipment And Requests'].UserPolicyFlag)
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                PressedBorderColor: =RGBA(88,89,91,0.5)
-                PressedColor: =Color.Black
-                PressedFill: =Self.Fill
-                SearchFields: =["Value"]
-                SearchItems: =[]
-                SelectionColor: |-
-                    =	
-                    RGBA(0,0,0,1)
-                SelectionFill: |-
-                    =	
-                    RGBA(74,164,65,0.5)
-                SelectMultiple: =false
-                Tooltip: =Parent.DisplayName
-                Width: =741
-                X: =30
-                Y: =365
-                ZIndex: =2
-
-            ErrorMessage42_1 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue42_2.Y + DataCardValue42_2.Height
-                ZIndex: =3
-
-            StarVisible42_1 As label:
-                Align: =Align.Center
-                Height: =DataCardKey42_1.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey42_1.Y
-                ZIndex: =4
 
         MouseFlag_DataCard1_1 As typedDataCard.comboBoxEditCard:
             BorderColor: =RGBA(32, 54, 71, 1)
@@ -2871,6 +2599,294 @@
                 X: =27
                 Y: =2
                 ZIndex: =6
+
+        "'4GLaptop_DataCard1_1' As typedDataCard.comboBoxEditCard":
+            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="OData__x0034_GLaptop"
+            Default: =ThisItem.'4GLaptop'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'IT Equipment And Requests'],DataSourceInfo.DisplayName,"OData__x0034_GLaptop")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =Checkbox3_10.Value = true
+            Update: =DataCardValue11_3.Selected
+            Visible: =Checkbox3_10.Value = true
+            Width: =642
+            X: =0
+            Y: =30
+            ZIndex: =1
+
+            DataCardKey19_1 As label:
+                AutoHeight: =true
+                Color: =RGBA(32, 54, 71, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Size: =14
+                Text: ="Does this laptop need to be 4G?"
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue11_3 As combobox:
+                BorderColor: =RGBA(88,89,91,0.25)
+                ChevronBackground: |-
+                    =	
+                    RGBA(77,164,65,1)
+                ChevronHoverBackground: |-
+                    =	
+                    ColorFade(RGBA(77,164,65,1), -20%)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["Value"]
+                DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
+                Items: =Choices([@'IT Equipment And Requests'].'4GLaptop')
+                OnChange: =Reset(DataCardValue4_3)
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PressedBorderColor: =RGBA(88,89,91,0.5)
+                PressedColor: =Color.Black
+                PressedFill: =Self.Fill
+                SearchFields: =["Value"]
+                SearchItems: =Choices('IT Equipment And Requests'.'4GLaptop',DataCardValue11_3.SearchText)
+                SelectionColor: |-
+                    =	
+                    RGBA(0,0,0,1)
+                SelectionFill: |-
+                    =	
+                    RGBA(74,164,65,0.5)
+                SelectMultiple: =false
+                Tooltip: =Parent.DisplayName
+                Width: =582
+                X: =30
+                Y: =DataCardKey19_1.Y + DataCardKey19_1.Height + 5
+                ZIndex: =2
+
+            ErrorMessage19_1 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue11_3.Y + DataCardValue11_3.Height
+                ZIndex: =3
+
+            StarVisible19_1 As label:
+                Align: =Align.Center
+                Color: =RGBA(32, 54, 71, 1)
+                Height: =DataCardKey19_1.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey19_1.Y
+                ZIndex: =4
+
+        ManagerUserPolicyFlag_DataCard1_2 As typedDataCard.comboBoxEditCard:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ManagerUserPolicyFlag"
+            Default: =ThisItem.ManagerUserPolicyFlag
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'IT Equipment And Requests'],DataSourceInfo.DisplayName,"ManagerUserPolicyFlag")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =463
+            Required: =false
+            Update: =DataCardValue14_2.Selected
+            Visible: =If(RequestFor_DataCard_1.Selected.Value ="Someone Else",true,false) && Checkbox4_3.Value = true
+            Width: =825
+            X: =3
+            Y: =35
+            ZIndex: =1
+
+            DataCardKey14_1 As label:
+                Color: =RGBA(32, 54, 71, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
+                Height: =392
+                Size: =14
+                Text: |-
+                    ="Please confirm that you will ensure that the new user acknowledges the Policy below.
+                    
+                    Signing this agreement confirms that you have read and will comply with Spectrum’s Mobile Communications Devices Policy & Procedures.
+                    
+                    I agree to abide by Spectrum’s policy which is published on Spectrum’s intranet for information.
+                    
+                    I acknowledge that I may be liable for costs relating to damage and/or faults due to my own negligence and any costs arising from the non-return of the mobile device in accordance with the policy. 
+                    
+                    I understand that I may be liable to disciplinary action should I fail to comply with the policy.
+                    
+                    I agree that I will return this device once I no longer require it or leave the organisation."
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue14_2 As combobox:
+                BorderColor: =RGBA(88,89,91,0.25)
+                ChevronBackground: |-
+                    =	
+                    RGBA(77,164,65,1)
+                ChevronHoverBackground: =ColorFade(RGBA(77,164,65,1), -20%)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["Value"]
+                DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
+                Items: =Choices([@'IT Equipment And Requests'].ManagerUserPolicyFlag)
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PressedBorderColor: =RGBA(88,89,91,0.5)
+                PressedColor: =Color.Black
+                PressedFill: =Self.Fill
+                SearchFields: =["Value"]
+                SearchItems: =Choices('IT Equipment And Requests'.ManagerUserPolicyFlag,DataCardValue14_2.SearchText)
+                SelectionColor: |-
+                    =	
+                    RGBA(0,0,0,1)
+                SelectionFill: |-
+                    =	
+                    RGBA(74,164,65,0.5)
+                SelectMultiple: =false
+                Tooltip: =Parent.DisplayName
+                Width: =734
+                X: =30
+                Y: =402
+                ZIndex: =2
+
+            ErrorMessage14_1 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue14_2.Y + DataCardValue14_2.Height
+                ZIndex: =3
+
+            StarVisible14_1 As label:
+                Align: =Align.Center
+                Color: =RGBA(32, 54, 71, 1)
+                Height: =DataCardKey14_1.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey14_1.Y
+                ZIndex: =4
+
+        UserPolicyFlag_DataCard2_1 As typedDataCard.comboBoxEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="UserPolicyFlag"
+            Default: =ThisItem.UserPolicyFlag
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'IT Equipment And Requests'],DataSourceInfo.DisplayName,"UserPolicyFlag")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =415
+            Required: =false
+            Update: =DataCardValue42_2.Selected
+            Visible: =And(If(RequestFor_DataCard_1.Selected.Value ="Myself",true,false),Checkbox4_3.Value = true)
+            Width: =825
+            X: =4
+            Y: =35
+            ZIndex: =1
+
+            DataCardKey42_1 As label:
+                Color: =RGBA(0, 0, 0, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
+                Height: =350
+                Size: =14
+                Text: |-
+                    ="Please confirm that you have read and understand the below.
+                    
+                    Signing this agreement confirms that you have read and will comply with Spectrum’s Mobile Communications Devices Policy & Procedures.
+                    
+                    I agree to abide by Spectrum’s policy which is published on Spectrum’s intranet for information.
+                    
+                    I acknowledge that I may be liable for costs relating to damage and/or faults due to my own negligence and any costs arising from the non-return of the mobile device in accordance with the policy. I understand that I may be liable to disciplinary action should I fail to comply with the policy.
+                    
+                    I agree that I will return this device once I no longer require it or leave the organisation."
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue42_2 As combobox:
+                BorderColor: =RGBA(88,89,91,0.25)
+                ChevronBackground: |-
+                    =	
+                    RGBA(77,164,65,1)
+                ChevronHoverBackground: =ColorFade(RGBA(77,164,65,1), -20%)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["Value"]
+                DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
+                IsSearchable: =false
+                Items: =Choices([@'IT Equipment And Requests'].UserPolicyFlag)
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PressedBorderColor: =RGBA(88,89,91,0.5)
+                PressedColor: =Color.Black
+                PressedFill: =Self.Fill
+                SearchFields: =["Value"]
+                SearchItems: =[]
+                SelectionColor: |-
+                    =	
+                    RGBA(0,0,0,1)
+                SelectionFill: |-
+                    =	
+                    RGBA(74,164,65,0.5)
+                SelectMultiple: =false
+                Tooltip: =Parent.DisplayName
+                Width: =741
+                X: =30
+                Y: =365
+                ZIndex: =2
+
+            ErrorMessage42_1 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue42_2.Y + DataCardValue42_2.Height
+                ZIndex: =3
+
+            StarVisible42_1 As label:
+                Align: =Align.Center
+                Height: =DataCardKey42_1.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey42_1.Y
+                ZIndex: =4
 
         RequestFor_DataCard1_1 As typedDataCard.comboBoxEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -3417,6 +3433,15 @@
                 Default: =Dropdown6_3.Selected.Value
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                HoverBorderColor: |-
+                    =	
+                    RGBA(88,89,91,1)
+                HoverColor: |-
+                    =	
+                    RGBA(0,0,0,1)
+                HoverFill: |-
+                    =	
+                    RGBA(77,164,65,0.5)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -4200,7 +4225,7 @@
             Required: =
             Update: =ComboBox1_1.Selected.Value
             Visible: =Or(Checkbox3_12.Value = true, Checkbox1_65.Value = true)
-            Width: =1284
+            Width: =642
             X: =0
             Y: =25
             ZIndex: =10
@@ -4495,83 +4520,6 @@
                 Y: =4
                 ZIndex: =6
 
-        DateRequired_DataCard1_1 As typedDataCard.dateEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="DateRequired"
-            Default: =ThisItem.DateRequired
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'IT Equipment And Requests'],DataSourceInfo.DisplayName,"DateRequired")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =92
-            Required: =Checkbox3_10.Value = true
-            Update: =DataCardValue21_3.SelectedDate
-            Visible: =Checkbox3_10.Value = true
-            Width: =642
-            X: =1
-            Y: =30
-            ZIndex: =10
-
-            DataCardKey21_2 As label:
-                AutoHeight: =true
-                Color: =RGBA(0, 0, 0, 1)
-                Font: =Font.Arial
-                FontWeight: =FontWeight.Bold
-                Height: =34
-                Size: =14
-                Text: ="What date is this required for?"
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue21_3 As datepicker:
-                BorderColor: =RGBA(88,89,91,0.25)
-                Color: =
-                DefaultDate: =If(DataCardValue16_3.Selected.Value ="Temporary",DataCardValue18_3).SelectedDate
-                DisplayMode: =Parent.DisplayMode
-                EndYear: =Year(Today())+100
-                Font: =Font.Arial
-                FontWeight: =FontWeight.Lighter
-                IconBackground: |-
-                    =	
-                    RGBA(74,164,65,1)
-                IsEditable: =true
-                PaddingBottom: =0
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                Size: =13
-                StartYear: =1899
-                Tooltip: =Parent.DisplayName
-                Width: =582
-                X: =30
-                Y: =DataCardKey21_2.Y + DataCardKey21_2.Height + 5
-                ZIndex: =2
-
-            ErrorMessage21_2 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue21_3.Y + DataCardValue21_3.Height
-                ZIndex: =3
-
-            StarVisible21_2 As label:
-                Align: =Align.Center
-                Height: =DataCardKey21_2.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey21_2.Y
-                ZIndex: =4
-
         LoanStartDate_DataCard1_1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="LoanStartDate"
@@ -4726,6 +4674,83 @@
                 Width: =30
                 Wrap: =false
                 Y: =DataCardKey20_1.Y
+                ZIndex: =4
+
+        DateRequired_DataCard1_1 As typedDataCard.dateEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="DateRequired"
+            Default: =ThisItem.DateRequired
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'IT Equipment And Requests'],DataSourceInfo.DisplayName,"DateRequired")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =92
+            Required: =Checkbox3_10.Value = true
+            Update: =DataCardValue21_3.SelectedDate
+            Visible: =Checkbox3_10.Value = true
+            Width: =642
+            X: =1
+            Y: =30
+            ZIndex: =10
+
+            DataCardKey21_2 As label:
+                AutoHeight: =true
+                Color: =RGBA(0, 0, 0, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Size: =14
+                Text: ="What date is this required for?"
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue21_3 As datepicker:
+                BorderColor: =RGBA(88,89,91,0.25)
+                Color: =
+                DefaultDate: =If(DataCardValue16_3.Selected.Value ="Temporary",DataCardValue18_3).SelectedDate
+                DisplayMode: =Parent.DisplayMode
+                EndYear: =Year(Today())+100
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
+                IconBackground: |-
+                    =	
+                    RGBA(74,164,65,1)
+                IsEditable: =true
+                PaddingBottom: =0
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                Size: =13
+                StartYear: =1899
+                Tooltip: =Parent.DisplayName
+                Width: =582
+                X: =30
+                Y: =DataCardKey21_2.Y + DataCardKey21_2.Height + 5
+                ZIndex: =2
+
+            ErrorMessage21_2 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue21_3.Y + DataCardValue21_3.Height
+                ZIndex: =3
+
+            StarVisible21_2 As label:
+                Align: =Align.Center
+                Height: =DataCardKey21_2.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey21_2.Y
                 ZIndex: =4
 
         MobRequestType_DataCard1_1 As typedDataCard.comboBoxEditCard:

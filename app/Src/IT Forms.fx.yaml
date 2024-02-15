@@ -258,6 +258,7 @@
         Fill: =RGBA(77, 164, 65, 1)
         Height: =62
         HoverFill: =ColorFade(RGBA(77,164,65,1), -20%)
+        OnSelect: =Navigate('IT Request Form')
         Text: ="IT Request"
         Width: =395
         X: =634
