@@ -191,6 +191,8 @@
                 PressedFill: =Self.Fill
                 SearchFields: =["Value"]
                 SearchItems: =[]
+                SelectionColor: =RGBA(0,0,0,1)
+                SelectionFill: =RGBA(74,164,65,0.5)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =582
@@ -275,6 +277,8 @@
                 PressedFill: =Self.Fill
                 SearchFields: =["DisplayName"]
                 SearchItems: =Choices('IT Equipment And Requests'.EmployeeNameSpec,DataCardValue48_2.SearchText)
+                SelectionColor: =RGBA(0,0,0,1)
+                SelectionFill: =RGBA(74,164,65,0.5)
                 SelectMultiple: =false
                 Template: =ListItemTemplate.Person
                 Tooltip: =Parent.DisplayName
@@ -404,13 +408,14 @@
             Default: =ThisItem.ITAccountFlag
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'IT Equipment And Requests'],DataSourceInfo.DisplayName,"ITAccountFlag")
-            Fill: =RGBA(230, 230, 230, 1)
+            Fill: =RGBA(77, 164, 65, 0.8)
             Height: =85
             MaxLength: =DataSourceInfo([@'IT Equipment And Requests'], DataSourceInfo.MaxLength, "ITAccountFlag")
             Required: =false
             Update: =If(Checkbox1_65.Value =true,"True","False")
-            Width: =321
-            X: =0
+            Width: =306
+            WidthFit: =true
+            X: =30
             Y: =14
             ZIndex: =1
 
@@ -445,13 +450,14 @@
             Default: =ThisItem.LaptopFlag
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'IT Equipment And Requests'],DataSourceInfo.DisplayName,"LaptopFlag")
-            Fill: =RGBA(230, 230, 230, 1)
+            Fill: =RGBA(77, 164, 65, 0.8)
             Height: =50
             MaxLength: =DataSourceInfo([@'IT Equipment And Requests'], DataSourceInfo.MaxLength, "LaptopFlag")
             Required: =false
             Update: =If(Checkbox3_10.Value =true,"True","False")
-            Width: =321
-            X: =1
+            Width: =306
+            WidthFit: =true
+            X: =30
             Y: =14
             ZIndex: =1
 
@@ -496,13 +502,14 @@
             Default: =ThisItem.MobileFlag
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'IT Equipment And Requests'],DataSourceInfo.DisplayName,"MobileFlag")
-            Fill: =RGBA(230, 230, 230, 1)
-            Height: =70
+            Fill: =RGBA(77, 164, 65, 0.8)
+            Height: =77
             MaxLength: =DataSourceInfo([@'IT Equipment And Requests'], DataSourceInfo.MaxLength, "MobileFlag")
             Required: =false
             Update: =If(Checkbox4_3.Value =true,"True","False")
-            Width: =321
-            X: =2
+            Width: =306
+            WidthFit: =true
+            X: =30
             Y: =14
             ZIndex: =1
 
@@ -548,13 +555,14 @@
             Default: =ThisItem.NewOrReplacementSmartcardFlag
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'IT Equipment And Requests'],DataSourceInfo.DisplayName,"NewOrReplacementSmartcardFlag")
-            Fill: =RGBA(230, 230, 230, 1)
-            Height: =76
+            Fill: =RGBA(77, 164, 65, 0.8)
+            Height: =77
             MaxLength: =DataSourceInfo([@'IT Equipment And Requests'], DataSourceInfo.MaxLength, "NewOrReplacementSmartcardFlag")
             Required: =false
             Update: =If(Checkbox2_68.Value =true,"True","False")
-            Width: =321
-            X: =3
+            Width: =306
+            WidthFit: =true
+            X: =920
             Y: =14
             ZIndex: =1
 
@@ -587,7 +595,6 @@
             Checkbox2_68 As checkbox:
                 BorderColor: =RGBA(32, 54, 71, 1)
                 CheckboxBorderColor: =RGBA(32, 54, 71, 1)
-                Height: =89
                 HoverColor: =RGBA(32, 54, 71, 1)
                 OnUncheck: =Reset(DataCardValue49_3) && Reset(DataCardValue50_2) && Reset(DataCardValue46_3) && Reset(DataCardValue43_3) && Reset(Dropdown7_8) && Reset(Dropdown7_10) && Reset(Dropdown7_12)
                 Text: ="Smartcard requests"
@@ -602,12 +609,13 @@
             Default: =ThisItem.LicenseFlag
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'IT Equipment And Requests'],DataSourceInfo.DisplayName,"LicenseFlag")
-            Fill: =RGBA(230, 230, 230, 1)
+            Fill: =RGBA(77, 164, 65, 0.8)
             Height: =50
             MaxLength: =DataSourceInfo([@'IT Equipment And Requests'], DataSourceInfo.MaxLength, "LicenseFlag")
             Required: =false
             Update: =If(Checkbox3_11.Value =true,"True","False")
-            Width: =321
+            Width: =306
+            WidthFit: =true
             X: =1
             Y: =15
             ZIndex: =1
@@ -644,7 +652,7 @@
                 HoverColor: =RGBA(32, 54, 71, 1)
                 OnUncheck: =Reset(DataCardValue134_1)
                 Text: ="Licenses"
-                Y: =15
+                Y: =10
                 ZIndex: =5
 
         SharedDriveFlag_DataCard1_1 As typedDataCard.textualEditCard:
@@ -654,12 +662,13 @@
             Default: =ThisItem.SharedDriveFlag
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'IT Equipment And Requests'],DataSourceInfo.DisplayName,"SharedDriveFlag")
-            Fill: =RGBA(230, 230, 230, 1)
+            Fill: =RGBA(77, 164, 65, 0.8)
             Height: =50
             MaxLength: =DataSourceInfo([@'IT Equipment And Requests'], DataSourceInfo.MaxLength, "SharedDriveFlag")
             Required: =false
             Update: =If(Checkbox3_12.Value =true,"True","False")
-            Width: =321
+            Width: =306
+            WidthFit: =true
             X: =2
             Y: =15
             ZIndex: =1
@@ -707,12 +716,13 @@
             Default: =ThisItem.PeripheralsFlag
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'IT Equipment And Requests'],DataSourceInfo.DisplayName,"PeripheralsFlag")
-            Fill: =RGBA(230, 230, 230, 1)
+            Fill: =RGBA(77, 164, 65, 0.8)
             Height: =50
             MaxLength: =DataSourceInfo([@'IT Equipment And Requests'], DataSourceInfo.MaxLength, "PeripheralsFlag")
             Required: =false
             Update: =If(Checkbox8_2.Value =true,"True","False")
-            Width: =321
+            Width: =306
+            WidthFit: =true
             X: =3
             Y: =15
             ZIndex: =1
@@ -748,7 +758,7 @@
                 CheckboxBorderColor: =RGBA(32, 54, 71, 1)
                 HoverColor: =RGBA(32, 54, 71, 1)
                 Text: ="Peripherals"
-                Y: =20
+                Y: =10
                 ZIndex: =5
 
         SpecialFlag_DataCard1_1 As typedDataCard.textualEditCard:
@@ -758,12 +768,13 @@
             Default: =ThisItem.SpecialFlag
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'IT Equipment And Requests'],DataSourceInfo.DisplayName,"SpecialFlag")
-            Fill: =RGBA(230, 230, 230, 1)
+            Fill: =RGBA(77, 164, 65, 0.8)
             Height: =77
             MaxLength: =DataSourceInfo([@'IT Equipment And Requests'], DataSourceInfo.MaxLength, "SpecialFlag")
             Required: =false
             Update: =If(Checkbox10_1.Value =true,"True","False")
-            Width: =321
+            Width: =306
+            WidthFit: =true
             X: =4
             Y: =15
             ZIndex: =1
@@ -801,7 +812,7 @@
                 OnUncheck: =Reset(DataCardValue37_3)
                 Text: ="Special request"
                 Width: =211
-                Y: =20
+                Y: =10
                 ZIndex: =5
 
         NewReplacementSmartcard_DataCard1_1 As typedDataCard.comboBoxEditCard:
@@ -858,6 +869,10 @@
                 PressedFill: =Self.Fill
                 SearchFields: =["Value"]
                 SearchItems: =[]
+                SelectionColor: |-
+                    =	
+                    RGBA(0,0,0,1)
+                SelectionFill: =RGBA(74,164,65,0.5)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =582
@@ -958,6 +973,12 @@
                 PressedFill: =Self.Fill
                 SearchFields: =["Value"]
                 SearchItems: =[]
+                SelectionColor: |-
+                    =	
+                    RGBA(0,0,0,1)
+                SelectionFill: |-
+                    =	
+                    RGBA(74,164,65,0.5)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =582
@@ -1127,6 +1148,12 @@
                 PressedFill: =Self.Fill
                 SearchFields: =["Value"]
                 SearchItems: =[]
+                SelectionColor: |-
+                    =	
+                    RGBA(0,0,0,1)
+                SelectionFill: |-
+                    =	
+                    RGBA(74,164,65,0.5)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =582
@@ -1332,8 +1359,8 @@
                 ZIndex: =4
 
             DataCardKey3_3 As label:
-                Color: =RGBA(32, 54, 71, 1)
-                Fill: =RGBA(202, 202, 202, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                Fill: =RGBA(77, 164, 65, 0.8)
                 Height: =246
                 Text: |-
                     ="In order to complete your Smartcard Request please send a copy of the below identification to your services ID checker. 
@@ -1571,7 +1598,12 @@
                 PressedFill: =Self.Fill
                 SearchFields: =["Value"]
                 SearchItems: =Choices('IT Equipment And Requests'.LicenseType,DataCardValue134_1.SearchText)
-                SelectionFill: =RGBA(100, 118, 132, 1)
+                SelectionColor: |-
+                    =	
+                    RGBA(0,0,0,1)
+                SelectionFill: |-
+                    =	
+                    RGBA(74,164,65,0.5)
                 Tooltip: =Parent.DisplayName
                 Width: =582
                 X: =30
@@ -1676,7 +1708,12 @@
                 PressedFill: =Self.Fill
                 SearchFields: =["Value"]
                 SearchItems: =Choices('IT Equipment And Requests'.'4GLaptop',DataCardValue11_3.SearchText)
-                SelectionFill: =RGBA(100, 118, 132, 1)
+                SelectionColor: |-
+                    =	
+                    RGBA(0,0,0,1)
+                SelectionFill: |-
+                    =	
+                    RGBA(74,164,65,0.5)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =582
@@ -2090,7 +2127,12 @@
                 PressedFill: =Self.Fill
                 SearchFields: =["Value"]
                 SearchItems: =Choices('IT Equipment And Requests'.KeyboardFlag,DataCardValue106_2.SearchText)
-                SelectionFill: =RGBA(100, 118, 132, 1)
+                SelectionColor: |-
+                    =	
+                    RGBA(0,0,0,1)
+                SelectionFill: |-
+                    =	
+                    RGBA(74,164,65,0.5)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: |
@@ -2200,7 +2242,12 @@
                 PressedFill: =Self.Fill
                 SearchFields: =["Value"]
                 SearchItems: =Choices('IT Equipment And Requests'.ManagerUserPolicyFlag,DataCardValue14_2.SearchText)
-                SelectionFill: =RGBA(100, 118, 132, 1)
+                SelectionColor: |-
+                    =	
+                    RGBA(0,0,0,1)
+                SelectionFill: |-
+                    =	
+                    RGBA(74,164,65,0.5)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =734
@@ -2292,6 +2339,12 @@
                 PressedFill: =Self.Fill
                 SearchFields: =["Value"]
                 SearchItems: =[]
+                SelectionColor: |-
+                    =	
+                    RGBA(0,0,0,1)
+                SelectionFill: |-
+                    =	
+                    RGBA(74,164,65,0.5)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =741
@@ -2375,7 +2428,12 @@
                 PressedFill: =Self.Fill
                 SearchFields: =["Value"]
                 SearchItems: =Choices('IT Equipment And Requests'.MouseFlag,DataCardValue113_2.SearchText)
-                SelectionFill: =RGBA(100, 118, 132, 1)
+                SelectionColor: |-
+                    =	
+                    RGBA(0,0,0,1)
+                SelectionFill: |-
+                    =	
+                    RGBA(74,164,65,0.5)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: |
@@ -2468,7 +2526,12 @@
                 PressedFill: =Self.Fill
                 SearchFields: =["Value"]
                 SearchItems: =Choices('IT Equipment And Requests'.HeadsetFlag,DataCardValue117_2.SearchText)
-                SelectionFill: =RGBA(100, 118, 132, 1)
+                SelectionColor: |-
+                    =	
+                    RGBA(0,0,0,1)
+                SelectionFill: |-
+                    =	
+                    RGBA(74,164,65,0.5)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: |
@@ -2566,7 +2629,12 @@
                 PressedFill: =Self.Fill
                 SearchFields: =["Value"]
                 SearchItems: =Choices('IT Equipment And Requests'.MonitorFlag,DataCardValue118_2.SearchText)
-                SelectionFill: =RGBA(100, 118, 132, 1)
+                SelectionColor: |-
+                    =	
+                    RGBA(0,0,0,1)
+                SelectionFill: |-
+                    =	
+                    RGBA(74,164,65,0.5)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: |
@@ -2834,9 +2902,7 @@
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
-                HoverFill: |-
-                    =	
-                    RGBA(88,89,91,0.01)
+                HoverFill: =RGBA(88,89,91,0.01)
                 IsSearchable: =false
                 Items: =Choices([@'IT Equipment And Requests'].RequestFor)
                 OnChange: |-
@@ -2848,6 +2914,10 @@
                 PressedFill: =Self.Fill
                 SearchFields: =["Value"]
                 SearchItems: =[]
+                SelectionColor: |-
+                    =	
+                    RGBA(0,0,0,1)
+                SelectionFill: =RGBA(74,164,65,0.5)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =582
@@ -2933,6 +3003,10 @@
                 PressedFill: =Self.Fill
                 SearchFields: =["Value"]
                 SearchItems: =[]
+                SelectionColor: |-
+                    =	
+                    RGBA(0,0,0,1)
+                SelectionFill: =RGBA(74,164,65,0.5)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =582
@@ -3155,7 +3229,9 @@
 
             DataCardValue9_3 As combobox:
                 BorderColor: =RGBA(88,89,91,0.25)
-                ChevronBackground: =RGBA(106, 122, 127, 1)
+                ChevronBackground: |-
+                    =	
+                    RGBA(77,164,65,1)
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["DisplayName","Email","Picture"]
                 DisplayMode: =Parent.DisplayMode
@@ -3170,6 +3246,12 @@
                 PressedFill: =Self.Fill
                 SearchFields: =["DisplayName"]
                 SearchItems: =Choices('IT Equipment And Requests'.LineManagerSpec,DataCardValue9_3.SearchText)
+                SelectionColor: |-
+                    =	
+                    RGBA(0,0,0,1)
+                SelectionFill: |-
+                    =	
+                    RGBA(74,164,65,0.5)
                 SelectMultiple: =false
                 Template: =ListItemTemplate.Person
                 Tooltip: =Parent.DisplayName
@@ -3276,6 +3358,12 @@
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
                 PressedFill: =Self.Fill
+                SelectionColor: |-
+                    =	
+                    RGBA(0,0,0,1)
+                SelectionFill: |-
+                    =	
+                    RGBA(74,164,65,0.5)
                 Width: =582
                 X: =30
                 Y: =40
@@ -3363,6 +3451,12 @@
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
                 PressedFill: =Self.Fill
+                SelectionColor: |-
+                    =	
+                    RGBA(0,0,0,1)
+                SelectionFill: |-
+                    =	
+                    RGBA(74,164,65,0.5)
                 Visible: =false
                 X: =314
                 ZIndex: =5
@@ -3627,6 +3721,12 @@
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
                 PressedFill: =Self.Fill
+                SelectionColor: |-
+                    =	
+                    RGBA(0,0,0,1)
+                SelectionFill: |-
+                    =	
+                    RGBA(74,164,65,0.5)
                 Width: =582
                 X: =30
                 Y: =104
@@ -3722,6 +3822,12 @@
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
                 PressedFill: =Self.Fill
+                SelectionColor: |-
+                    =	
+                    RGBA(0,0,0,1)
+                SelectionFill: |-
+                    =	
+                    RGBA(74,164,65,0.5)
                 Width: =582
                 X: =30
                 Y: =104
@@ -3809,6 +3915,12 @@
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
                 PressedFill: =Self.Fill
+                SelectionColor: |-
+                    =	
+                    RGBA(0,0,0,1)
+                SelectionFill: |-
+                    =	
+                    RGBA(74,164,65,0.5)
                 Width: =582
                 X: =30
                 Y: =49
@@ -3888,6 +4000,10 @@
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
                 PressedFill: =Self.Fill
+                SelectionColor: |-
+                    =	
+                    RGBA(0,0,0,1)
+                SelectionFill: =RGBA(74,164,65,0.5)
                 Width: =582
                 X: =30
                 Y: =55
@@ -3967,6 +4083,10 @@
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
                 PressedFill: =Self.Fill
+                SelectionColor: |-
+                    =	
+                    RGBA(0,0,0,1)
+                SelectionFill: =RGBA(74,164,65,0.5)
                 Width: =582
                 X: =30
                 Y: =44
@@ -4044,6 +4164,12 @@
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
                 PressedFill: =Self.Fill
+                SelectionColor: |-
+                    =	
+                    RGBA(0,0,0,1)
+                SelectionFill: |-
+                    =	
+                    RGBA(74,164,65,0.5)
                 Width: =582
                 X: =30
                 Y: =44
@@ -4123,7 +4249,12 @@
                 PressedFill: =Self.Fill
                 SearchFields: =["Value"]
                 SearchItems: =[]
-                SelectionFill: =RGBA(100, 118, 132, 1)
+                SelectionColor: |-
+                    =	
+                    RGBA(0,0,0,1)
+                SelectionFill: |-
+                    =	
+                    RGBA(74,164,65,0.5)
                 Width: =582
                 X: =30
                 Y: =113
@@ -4200,6 +4331,12 @@
                 PressedFill: =Self.Fill
                 SearchFields: =["Value"]
                 SearchItems: =[]
+                SelectionColor: |-
+                    =	
+                    RGBA(0,0,0,1)
+                SelectionFill: |-
+                    =	
+                    RGBA(74,164,65,0.5)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =582
@@ -4299,6 +4436,12 @@
                 PressedFill: =Self.Fill
                 SearchFields: =["Value"]
                 SearchItems: =[]
+                SelectionColor: |-
+                    =	
+                    RGBA(0,0,0,1)
+                SelectionFill: |-
+                    =	
+                    RGBA(74,164,65,0.5)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =582
@@ -4619,6 +4762,10 @@
                 PressedFill: =Self.Fill
                 SearchFields: =["Value"]
                 SearchItems: =[]
+                SelectionColor: |-
+                    =	
+                    RGBA(0,0,0,1)
+                SelectionFill: =RGBA(74,164,65,0.5)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =582
