@@ -864,7 +864,7 @@
                 SearchItems: =[]
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
-                Width: =741
+                Width: =582
                 X: =30
                 Y: =110
                 ZIndex: =2
@@ -962,7 +962,7 @@
                 SearchItems: =[]
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
-                Width: =741
+                Width: =582
                 X: =30
                 Y: =DataCardKey46_2.Y + DataCardKey46_2.Height + 5
                 ZIndex: =2
@@ -1132,7 +1132,7 @@
                 SearchItems: =[]
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
-                Width: =741
+                Width: =582
                 X: =30
                 Y: =59
                 ZIndex: =2
@@ -1218,7 +1218,7 @@
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
                 Tooltip: =Parent.DisplayName
-                Width: =741
+                Width: =582
                 X: =30
                 Y: =DataCardKey150_2.Y + DataCardKey150_2.Height + 5
                 ZIndex: =2
@@ -1378,7 +1378,7 @@
             Visible: =Or(Checkbox3_12.Value = true, Checkbox1_65.Value = true)
             Width: =642
             X: =1
-            Y: =25
+            Y: =26
             ZIndex: =1
 
             DataCardKey52_2 As label:
@@ -1408,7 +1408,7 @@
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
                 Tooltip: =Parent.DisplayName
-                Width: =741
+                Width: =582
                 X: =30
                 Y: =DataCardKey52_2.Y + DataCardKey52_2.Height + 5
                 ZIndex: =2
@@ -1463,7 +1463,7 @@
             Required: =Checkbox3_12.Value = true
             Update: =DataCardValue135_2.Text
             Visible: =Checkbox3_12.Value = true
-            Width: =1284
+            Width: =642
             X: =2
             Y: =26
             ZIndex: =1
@@ -1495,7 +1495,7 @@
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
                 Tooltip: =Parent.DisplayName
-                Width: =741
+                Width: =582
                 X: =30
                 Y: =DataCardKey164_2.Y + DataCardKey164_2.Height + 5
                 ZIndex: =2
@@ -1549,7 +1549,7 @@
             Required: =Checkbox3_11.Value = true
             Update: =DataCardValue134_1.Selected
             Visible: =Or(Checkbox3_11.Value = true, Checkbox1_65.Value = true)
-            Width: =825
+            Width: =1284
             X: =3
             Y: =26
             ZIndex: =1
@@ -1579,9 +1579,8 @@
                 SearchFields: =["Value"]
                 SearchItems: =Choices('IT Equipment And Requests'.LicenseType,DataCardValue134_1.SearchText)
                 SelectionFill: =RGBA(100, 118, 132, 1)
-                SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
-                Width: =741
+                Width: =582
                 X: =30
                 Y: =113
                 ZIndex: =2
@@ -1617,7 +1616,7 @@
                 Fill: =RGBA(100, 118, 132, 1)
                 Height: =2
                 Visible: =Checkbox3_12.Value = true
-                Width: =825
+                Width: =1300
                 Y: =5
                 ZIndex: =5
 
@@ -1653,7 +1652,7 @@
             Required: =Checkbox3_10.Value = true
             Update: =DataCardValue11_3.Selected
             Visible: =Checkbox3_10.Value = true
-            Width: =825
+            Width: =642
             X: =0
             Y: =30
             ZIndex: =1
@@ -1686,7 +1685,7 @@
                 SelectionFill: =RGBA(100, 118, 132, 1)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
-                Width: =741
+                Width: =582
                 X: =30
                 Y: =DataCardKey19_1.Y + DataCardKey19_1.Height + 5
                 ZIndex: =2
@@ -1741,7 +1740,7 @@
             Required: =If(DataCardValue11_3.Selected.Value ="Yes",true)
             Update: =DataCardValue4_3.Text
             Visible: =If(DataCardValue11_3.Selected.Value ="Yes",true,false)
-            Width: =825
+            Width: =642
             X: =0
             Y: =31
             ZIndex: =1
@@ -1938,7 +1937,7 @@
             Required: =Checkbox3_10.Value = true
             Update: =DataCardValue133_2.Text
             Visible: =Checkbox3_10.Value = true
-            Width: =825
+            Width: =642
             X: =2
             Y: =33
             ZIndex: =1
@@ -1970,7 +1969,7 @@
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
                 Tooltip: =Parent.DisplayName
-                Width: =741
+                Width: =582
                 X: =30
                 Y: =DataCardKey162_2.Y + DataCardKey162_2.Height + 5
                 ZIndex: =2
@@ -2012,6 +2011,93 @@
                 Y: =58
                 ZIndex: =5
 
+        MobileComments_DataCard1_1 As typedDataCard.textualEditCard:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="MobileComments"
+            Default: =ThisItem.MobileComments
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'IT Equipment And Requests'],DataSourceInfo.DisplayName,"MobileComments")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'IT Equipment And Requests'], DataSourceInfo.MaxLength, "MobileComments")
+            Required: =Checkbox4_3.Value = true
+            Update: =DataCardValue132_2.Text
+            Visible: =Checkbox4_3.Value = true
+            Width: =642
+            X: =1
+            Y: =35
+            ZIndex: =1
+
+            DataCardKey160_2 As label:
+                AutoHeight: =true
+                Color: =RGBA(32, 54, 71, 1)
+                Height: =34
+                Text: ="Please provide some comments on the request below"
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue132_2 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =130
+                HoverBorderColor: =RGBA(32, 54, 71, 1)
+                HoverFill: =RGBA(205, 209, 213, 1)
+                MaxLength: =Parent.MaxLength
+                Mode: =TextMode.MultiLine
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =741
+                X: =30
+                Y: =DataCardKey160_2.Y + DataCardKey160_2.Height + 5
+                ZIndex: =2
+
+            ErrorMessage166_2 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue132_2.Y + DataCardValue132_2.Height
+                ZIndex: =3
+
+            StarVisible165_2 As label:
+                Align: =Align.Center
+                Color: =RGBA(32, 54, 71, 1)
+                Height: =DataCardKey160_2.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey160_2.Y
+                ZIndex: =4
+
+            Icon1_481 As icon.CheckBadge:
+                BorderColor: =RGBA(32, 54, 71, 1)
+                Color: =RGBA(54, 176, 75, 1)
+                Height: =26
+                Icon: =Icon.CheckBadge
+                Visible: =And(Not(IsBlank(DataCardValue132_2.Text)), And(If(Len(DataCardValue132_2.Text) >= 6,true)))
+                Width: =26
+                X: =779
+                Y: =58
+                ZIndex: =5
+
         ManagerUserPolicyFlag_DataCard1_2 As typedDataCard.comboBoxEditCard:
             BorderColor: =RGBA(32, 54, 71, 1)
             BorderStyle: =BorderStyle.Solid
@@ -2025,7 +2111,7 @@
             Update: =DataCardValue14_2.Selected
             Visible: =If(RequestFor_DataCard_1.Selected.Value ="Someone Else",true,false) && Checkbox4_3.Value = true
             Width: =825
-            X: =1
+            X: =2
             Y: =35
             ZIndex: =1
 
@@ -2119,7 +2205,7 @@
             Update: =DataCardValue42_2.Selected
             Visible: =And(If(RequestFor_DataCard_1.Selected.Value ="Myself",true,false),Checkbox4_3.Value = true)
             Width: =825
-            X: =2
+            X: =3
             Y: =35
             ZIndex: =1
 
@@ -2195,93 +2281,6 @@
                 Y: =367
                 ZIndex: =5
 
-        MobileComments_DataCard1_1 As typedDataCard.textualEditCard:
-            BorderColor: =RGBA(32, 54, 71, 1)
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="MobileComments"
-            Default: =ThisItem.MobileComments
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'IT Equipment And Requests'],DataSourceInfo.DisplayName,"MobileComments")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'IT Equipment And Requests'], DataSourceInfo.MaxLength, "MobileComments")
-            Required: =Checkbox4_3.Value = true
-            Update: =DataCardValue132_2.Text
-            Visible: =Checkbox4_3.Value = true
-            Width: =825
-            X: =4
-            Y: =35
-            ZIndex: =1
-
-            DataCardKey160_2 As label:
-                AutoHeight: =true
-                Color: =RGBA(32, 54, 71, 1)
-                Height: =34
-                Text: ="Please provide some comments on the request below"
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue132_2 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                Height: =130
-                HoverBorderColor: =RGBA(32, 54, 71, 1)
-                HoverFill: =RGBA(205, 209, 213, 1)
-                MaxLength: =Parent.MaxLength
-                Mode: =TextMode.MultiLine
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =741
-                X: =30
-                Y: =DataCardKey160_2.Y + DataCardKey160_2.Height + 5
-                ZIndex: =2
-
-            ErrorMessage166_2 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue132_2.Y + DataCardValue132_2.Height
-                ZIndex: =3
-
-            StarVisible165_2 As label:
-                Align: =Align.Center
-                Color: =RGBA(32, 54, 71, 1)
-                Height: =DataCardKey160_2.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey160_2.Y
-                ZIndex: =4
-
-            Icon1_481 As icon.CheckBadge:
-                BorderColor: =RGBA(32, 54, 71, 1)
-                Color: =RGBA(54, 176, 75, 1)
-                Height: =26
-                Icon: =Icon.CheckBadge
-                Visible: =And(Not(IsBlank(DataCardValue132_2.Text)), And(If(Len(DataCardValue132_2.Text) >= 6,true)))
-                Width: =26
-                X: =779
-                Y: =58
-                ZIndex: =5
-
         KeyboardFlag_DataCard1_1 As typedDataCard.comboBoxEditCard:
             BorderColor: =RGBA(32, 54, 71, 1)
             BorderStyle: =BorderStyle.Solid
@@ -2294,7 +2293,7 @@
             Required: =false
             Update: =DataCardValue106_2.Selected
             Visible: =Checkbox8_2.Value = true
-            Width: =412
+            Width: =321
             X: =6
             Y: =44
             ZIndex: =1
@@ -2385,7 +2384,7 @@
             Required: =false
             Update: =DataCardValue113_2.Selected
             Visible: =Checkbox8_2.Value = true
-            Width: =412
+            Width: =321
             X: =6
             Y: =44
             ZIndex: =1
@@ -2468,7 +2467,7 @@
             Required: =false
             Update: =DataCardValue117_2.Selected
             Visible: =Checkbox8_2.Value = true
-            Width: =412
+            Width: =321
             X: =6
             Y: =44
             ZIndex: =1
@@ -2544,7 +2543,7 @@
             Required: =false
             Update: =DataCardValue118_2.Selected
             Visible: =Checkbox8_2.Value = true
-            Width: =412
+            Width: =321
             X: =6
             Y: =44
             ZIndex: =1
@@ -4064,7 +4063,7 @@
             Required: =
             Update: =ComboBox1_1.Selected.Value
             Visible: =Or(Checkbox3_12.Value = true, Checkbox1_65.Value = true)
-            Width: =642
+            Width: =1284
             X: =0
             Y: =25
             ZIndex: =10
@@ -4128,7 +4127,7 @@
                 SearchFields: =["Value"]
                 SearchItems: =[]
                 SelectionFill: =RGBA(100, 118, 132, 1)
-                Width: =741
+                Width: =582
                 X: =30
                 Y: =113
                 ZIndex: =6
@@ -4137,7 +4136,7 @@
                 BorderColor: =RGBA(32, 54, 71, 1)
                 Fill: =RGBA(100, 118, 132, 1)
                 Height: =2
-                Width: =825
+                Width: =1300
                 Y: =5
                 ZIndex: =7
 
@@ -4161,7 +4160,7 @@
             Required: =Checkbox3_10.Value = true
             Update: =DataCardValue16_3.Selected
             Visible: =Checkbox3_10.Value = true
-            Width: =825
+            Width: =642
             X: =0
             Y: =27
             ZIndex: =10
@@ -4191,7 +4190,7 @@
                 SearchItems: =[]
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
-                Width: =741
+                Width: =582
                 X: =30
                 Y: =119
                 ZIndex: =2
@@ -4259,9 +4258,9 @@
             Required: =Checkbox3_10.Value = true
             Update: =DataCardValue17_3.Selected
             Visible: =Checkbox3_10.Value = true
-            Width: =825
-            X: =0
-            Y: =29
+            Width: =642
+            X: =1
+            Y: =27
             ZIndex: =10
 
             DataCardKey17_1 As label:
@@ -4288,7 +4287,7 @@
                 SearchItems: =[]
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
-                Width: =741
+                Width: =582
                 X: =30
                 Y: =DataCardKey17_1.Y + DataCardKey17_1.Height + 5
                 ZIndex: =2
@@ -4329,6 +4328,108 @@
                 Y: =53
                 ZIndex: =5
 
+            Rectangle1_38 As rectangle:
+                BorderColor: =RGBA(32, 54, 71, 1)
+                Fill: =RGBA(100, 118, 132, 1)
+                Height: =2
+                Width: =825
+                Y: =4
+                ZIndex: =6
+
+        DateRequired_DataCard1_1 As typedDataCard.dateEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="DateRequired"
+            Default: =ThisItem.DateRequired
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'IT Equipment And Requests'],DataSourceInfo.DisplayName,"DateRequired")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =92
+            Required: =Checkbox3_10.Value = true
+            Update: =DataCardValue21_3.SelectedDate
+            Visible: =Checkbox3_10.Value = true
+            Width: =642
+            X: =1
+            Y: =30
+            ZIndex: =10
+
+            DataCardKey21_2 As label:
+                AutoHeight: =true
+                Color: =RGBA(0, 0, 0, 1)
+                Height: =34
+                Text: ="What date is this required for?"
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue21_3 As datepicker:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                DefaultDate: =If(DataCardValue16_3.Selected.Value ="Temporary",DataCardValue18_3).SelectedDate
+                DisplayMode: =Parent.DisplayMode
+                EndYear: =Year(Today())+100
+                IconBackground: =RGBA(100, 118, 132, 1)
+                IsEditable: =true
+                PaddingBottom: =0
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                StartYear: =1899
+                Tooltip: =Parent.DisplayName
+                Width: =582
+                X: =30
+                Y: =DataCardKey21_2.Y + DataCardKey21_2.Height + 5
+                ZIndex: =2
+
+            ErrorMessage21_2 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =If(Icon2_162.Visible, "Please enter a future date")
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue21_3.Y + DataCardValue21_3.Height
+                ZIndex: =3
+
+            StarVisible21_2 As label:
+                Align: =Align.Center
+                Height: =DataCardKey21_2.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey21_2.Y
+                ZIndex: =4
+
+            Icon1_444 As icon.CheckBadge:
+                BorderColor: =RGBA(32, 54, 71, 1)
+                Color: =RGBA(54, 176, 75, 1)
+                Height: =26
+                Icon: =Icon.CheckBadge
+                Visible: |-
+                    =If(
+                         IsBlank(DataCardValue21_3.SelectedDate) || Len(DataCardValue21_3.SelectedDate) <= 2, false, true) && DateDiff(Today(),DataCardValue21_3.SelectedDate)>=0
+                Width: =26
+                X: =776
+                Y: =56
+                ZIndex: =5
+
+            Icon2_162 As icon.CancelBadge:
+                BorderColor: =RGBA(32, 54, 71, 1)
+                Color: =RGBA(168, 0, 0, 1)
+                Height: =40
+                Icon: =Icon.CancelBadge
+                Visible: |
+                    =If(
+                         IsBlank(DataCardValue21_3.SelectedDate) || Len(DataCardValue21_3.SelectedDate) <= 2, false, true) && DateDiff(Today(),DataCardValue21_3.SelectedDate)<0
+                Width: =26
+                X: =776
+                Y: =49
+                ZIndex: =8
+
         LoanStartDate_DataCard1_1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="LoanStartDate"
@@ -4340,7 +4441,7 @@
             Required: =If(DataCardValue16_3.Selected.Value ="Temporary",true)
             Update: =DataCardValue18_3.SelectedDate
             Visible: =If(DataCardValue16_3.Selected.Value ="Temporary",true,false)
-            Width: =825
+            Width: =642
             X: =1
             Y: =31
             ZIndex: =10
@@ -4517,100 +4618,6 @@
                 Y: =51
                 ZIndex: =6
 
-        DateRequired_DataCard1_1 As typedDataCard.dateEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="DateRequired"
-            Default: =ThisItem.DateRequired
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'IT Equipment And Requests'],DataSourceInfo.DisplayName,"DateRequired")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =92
-            Required: =Checkbox3_10.Value = true
-            Update: =DataCardValue21_3.SelectedDate
-            Visible: =Checkbox3_10.Value = true
-            Width: =825
-            X: =1
-            Y: =33
-            ZIndex: =10
-
-            DataCardKey21_2 As label:
-                AutoHeight: =true
-                Color: =RGBA(0, 0, 0, 1)
-                Height: =34
-                Text: ="What date is this required for?"
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue21_3 As datepicker:
-                BorderColor: =RGBA(0, 0, 0, 1)
-                DefaultDate: =If(DataCardValue16_3.Selected.Value ="Temporary",DataCardValue18_3).SelectedDate
-                DisplayMode: =Parent.DisplayMode
-                EndYear: =Year(Today())+100
-                IconBackground: =RGBA(100, 118, 132, 1)
-                IsEditable: =true
-                PaddingBottom: =0
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                StartYear: =1899
-                Tooltip: =Parent.DisplayName
-                Width: =741
-                X: =30
-                Y: =DataCardKey21_2.Y + DataCardKey21_2.Height + 5
-                ZIndex: =2
-
-            ErrorMessage21_2 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =If(Icon2_162.Visible, "Please enter a future date")
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue21_3.Y + DataCardValue21_3.Height
-                ZIndex: =3
-
-            StarVisible21_2 As label:
-                Align: =Align.Center
-                Height: =DataCardKey21_2.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey21_2.Y
-                ZIndex: =4
-
-            Icon1_444 As icon.CheckBadge:
-                BorderColor: =RGBA(32, 54, 71, 1)
-                Color: =RGBA(54, 176, 75, 1)
-                Height: =26
-                Icon: =Icon.CheckBadge
-                Visible: |-
-                    =If(
-                         IsBlank(DataCardValue21_3.SelectedDate) || Len(DataCardValue21_3.SelectedDate) <= 2, false, true) && DateDiff(Today(),DataCardValue21_3.SelectedDate)>=0
-                Width: =26
-                X: =776
-                Y: =56
-                ZIndex: =5
-
-            Icon2_162 As icon.CancelBadge:
-                BorderColor: =RGBA(32, 54, 71, 1)
-                Color: =RGBA(168, 0, 0, 1)
-                Height: =40
-                Icon: =Icon.CancelBadge
-                Visible: |
-                    =If(
-                         IsBlank(DataCardValue21_3.SelectedDate) || Len(DataCardValue21_3.SelectedDate) <= 2, false, true) && DateDiff(Today(),DataCardValue21_3.SelectedDate)<0
-                Width: =26
-                X: =776
-                Y: =49
-                ZIndex: =8
-
         MobRequestType_DataCard1_1 As typedDataCard.comboBoxEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="MobRequestType"
@@ -4622,7 +4629,7 @@
             Required: =Checkbox4_3.Value = true
             Update: =DataCardValue22_3.Selected
             Visible: =Checkbox4_3.Value = true
-            Width: =825
+            Width: =642
             X: =0
             Y: =35
             ZIndex: =10
@@ -4686,7 +4693,7 @@
                 BorderColor: =RGBA(32, 54, 71, 1)
                 Fill: =RGBA(100, 118, 132, 1)
                 Height: =2
-                Width: =825
+                Width: =1300
                 Y: =3
                 ZIndex: =5
 
@@ -4722,7 +4729,7 @@
             Update: =DataCardValue23_3.Text
             Visible: =If(DataCardValue22_3.Selected.Value ="Replacement",true,false)
             Width: =825
-            X: =3
+            X: =4
             Y: =35
             ZIndex: =10
 
