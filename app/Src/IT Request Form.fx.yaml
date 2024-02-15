@@ -23,7 +23,7 @@
         FontWeight: =FontWeight.Semibold
         Height: =60
         Size: =26
-        Text: ="[FORM NAME]"
+        Text: ="New IT Request"
         Width: =1298
         X: =25
         Y: =91
@@ -1576,7 +1576,7 @@
             Visible: =If(DataCardValue11_3.Selected.Value ="Yes",true,false)
             Width: =642
             X: =1
-            Y: =30
+            Y: =31
             ZIndex: =1
 
             DataCardKey4_3 As label:
@@ -1595,7 +1595,7 @@
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Height: =170
+                Height: =130
                 HoverBorderColor: =RGBA(32, 54, 71, 1)
                 HoverFill: =RGBA(205, 209, 213, 1)
                 MaxLength: =Parent.MaxLength
@@ -1606,7 +1606,7 @@
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
                 Tooltip: =Parent.DisplayName
-                Width: =741
+                Width: =582
                 X: =30
                 Y: =DataCardKey4_3.Y + DataCardKey4_3.Height + 5
                 ZIndex: =2
@@ -1650,8 +1650,8 @@
             Update: =DataCardValue34_3.SelectedDate
             Visible: =If(DataCardValue16_3.Selected.Value ="Temporary",true,false)
             Width: =642
-            X: =2
-            Y: =31
+            X: =4
+            Y: =30
             ZIndex: =1
 
             DataCardKey53_2 As label:
@@ -1724,8 +1724,8 @@
             Update: =DataCardValue133_2.Text
             Visible: =Checkbox3_10.Value = true
             Width: =642
-            X: =2
-            Y: =33
+            X: =3
+            Y: =31
             ZIndex: =1
 
             DataCardKey162_2 As label:
@@ -3859,7 +3859,7 @@
             Update: =DataCardValue21_3.SelectedDate
             Visible: =Checkbox3_10.Value = true
             Width: =642
-            X: =2
+            X: =1
             Y: =30
             ZIndex: =10
 
@@ -3927,8 +3927,8 @@
             Update: =DataCardValue18_3.SelectedDate
             Visible: =If(DataCardValue16_3.Selected.Value ="Temporary",true,false)
             Width: =642
-            X: =1
-            Y: =31
+            X: =3
+            Y: =30
             ZIndex: =10
 
             DataCardKey18_1 As label:
@@ -3996,8 +3996,8 @@
             Update: =DataCardValue20_3.Text
             Visible: =If(DataCardValue16_3.Selected.Value ="Temporary",true,false)
             Width: =642
-            X: =0
-            Y: =33
+            X: =2
+            Y: =31
             ZIndex: =10
 
             DataCardKey20_1 As label:
