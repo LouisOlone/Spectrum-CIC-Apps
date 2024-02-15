@@ -96,6 +96,7 @@
                 FontWeight: =FontWeight.Lighter
                 Format: =TextFormat.Number
                 HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 Mode: =TextMode.MultiLine
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -171,6 +172,7 @@
                 DisplayMode: =Parent.DisplayMode
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
+                HoverFill: =RGBA(88,89,91,0.01)
                 IsSearchable: =false
                 Items: =Choices([@'IT Equipment And Requests'].SpectrumEmployee)
                 OnChange: |-
@@ -250,6 +252,7 @@
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 Items: =Choices([@'IT Equipment And Requests'].EmployeeNameSpec)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["DisplayName"]
@@ -367,6 +370,7 @@
 
             Dropdown6_4 As dropdown:
                 BorderColor: =RGBA(88,89,91,0.25)
+                HoverFill: =RGBA(88,89,91,0.01)
                 Items: =Distinct(Filter('Services List', And(Address = Dropdown6_3.Selected.Value, Site = Dropdown5_2.Selected.Value)), Postcode)
                 Visible: =false
                 X: =307
@@ -819,6 +823,7 @@
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 IsSearchable: =false
                 Items: =Choices([@'IT Equipment And Requests'].NewReplacementSmartcard)
                 OnChange: =Reset(DataCardValue50_2) && Reset(DataCardValue46_3) && Reset(DataCardValue43_3) && Reset(Dropdown7_8) && Reset(Dropdown7_10) && Reset(Dropdown7_12)
@@ -913,6 +918,7 @@
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 IsSearchable: =false
                 Items: =Choices([@'IT Equipment And Requests'].PrescriberFlag)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -996,6 +1002,7 @@
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -1072,6 +1079,7 @@
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 IsSearchable: =false
                 Items: =Choices([@'IT Equipment And Requests'].UrgentRequestFlag)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -1150,7 +1158,7 @@
                 FontWeight: =FontWeight.Lighter
                 Height: =130
                 HoverBorderColor: =RGBA(88,89,91,1)
-                HoverFill: =RGBA(205, 209, 213, 1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 Mode: =TextMode.MultiLine
                 PaddingLeft: =5
@@ -1230,10 +1238,10 @@
                 FontWeight: =FontWeight.Lighter
                 Height: =183
                 HoverBorderColor: =RGBA(88,89,91,1)
-                HoverFill: =RGBA(205, 209, 213, 1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 IsInDataCard: =true
                 ItemFill: =RGBA(100, 118, 132, 1)
-                ItemHoverFill: =RGBA(205, 209, 213, 1)
+                ItemHoverFill: =RGBA(88,89,91,0.01)
                 Items: =Parent.Default
                 OnAddFile: |-
                     =Set(varAttachmentSC, JSON(Image2_1.Image, JSONFormat.IncludeBinaryData));
@@ -1338,7 +1346,7 @@
                 DisplayMode: =Parent.DisplayMode
                 Height: =130
                 HoverBorderColor: =RGBA(88,89,91,1)
-                HoverFill: =RGBA(205, 209, 213, 1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 Mode: =TextMode.MultiLine
                 PaddingLeft: =5
@@ -1419,7 +1427,7 @@
                 FontWeight: =FontWeight.Lighter
                 Height: =130
                 HoverBorderColor: =RGBA(88,89,91,1)
-                HoverFill: =RGBA(205, 209, 213, 1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 Mode: =TextMode.MultiLine
                 PaddingLeft: =5
@@ -1500,7 +1508,7 @@
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
-                HoverFill: =RGBA(205, 209, 213, 1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 Items: =Choices([@'IT Equipment And Requests'].LicenseType)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PressedFill: =RGBA(32, 54, 71, 1)
@@ -1598,7 +1606,7 @@
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
-                HoverFill: =RGBA(205, 209, 213, 1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 Items: =Choices([@'IT Equipment And Requests'].'4GLaptop')
                 OnChange: =Reset(DataCardValue4_3)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -1680,7 +1688,7 @@
                 FontWeight: =FontWeight.Lighter
                 Height: =130
                 HoverBorderColor: =RGBA(88,89,91,1)
-                HoverFill: =RGBA(205, 209, 213, 1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 Mode: =TextMode.MultiLine
                 PaddingLeft: =5
@@ -1839,7 +1847,7 @@
                 FontWeight: =FontWeight.Lighter
                 Height: =130
                 HoverBorderColor: =RGBA(88,89,91,1)
-                HoverFill: =RGBA(205, 209, 213, 1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 Mode: =TextMode.MultiLine
                 PaddingLeft: =5
@@ -1920,7 +1928,7 @@
                 FontWeight: =FontWeight.Lighter
                 Height: =130
                 HoverBorderColor: =RGBA(88,89,91,1)
-                HoverFill: =RGBA(205, 209, 213, 1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 Mode: =TextMode.MultiLine
                 PaddingLeft: =5
@@ -2001,7 +2009,7 @@
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
-                HoverFill: =RGBA(205, 209, 213, 1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 Items: =Choices([@'IT Equipment And Requests'].KeyboardFlag)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PressedFill: =RGBA(32, 54, 71, 1)
@@ -2107,7 +2115,7 @@
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
-                HoverFill: =RGBA(205, 209, 213, 1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 Items: =Choices([@'IT Equipment And Requests'].ManagerUserPolicyFlag)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PressedFill: =RGBA(32, 54, 71, 1)
@@ -2193,6 +2201,7 @@
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 IsSearchable: =false
                 Items: =Choices([@'IT Equipment And Requests'].UserPolicyFlag)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -2271,7 +2280,7 @@
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
-                HoverFill: =RGBA(205, 209, 213, 1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 Items: =Choices([@'IT Equipment And Requests'].MouseFlag)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PressedFill: =RGBA(32, 54, 71, 1)
@@ -2360,7 +2369,7 @@
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
-                HoverFill: =RGBA(205, 209, 213, 1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 Items: =Choices([@'IT Equipment And Requests'].HeadsetFlag)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PressedFill: =RGBA(32, 54, 71, 1)
@@ -2449,7 +2458,7 @@
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
-                HoverFill: =RGBA(205, 209, 213, 1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 Items: =Choices([@'IT Equipment And Requests'].MonitorFlag)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PressedFill: =RGBA(32, 54, 71, 1)
@@ -2537,7 +2546,7 @@
                 FontWeight: =FontWeight.Lighter
                 Height: =120
                 HoverBorderColor: =RGBA(88,89,91,1)
-                HoverFill: =RGBA(205, 209, 213, 1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 Mode: =TextMode.MultiLine
                 PaddingLeft: =5
@@ -2618,7 +2627,7 @@
                 FontWeight: =FontWeight.Lighter
                 Height: =191
                 HoverBorderColor: =RGBA(88,89,91,1)
-                HoverFill: =RGBA(205, 209, 213, 1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 Mode: =TextMode.MultiLine
                 PaddingLeft: =5
@@ -2714,6 +2723,9 @@
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: |-
+                    =	
+                    RGBA(88,89,91,0.01)
                 IsSearchable: =false
                 Items: =Choices([@'IT Equipment And Requests'].RequestFor)
                 OnChange: |-
@@ -2793,6 +2805,7 @@
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 IsSearchable: =false
                 Items: =Choices([@'IT Equipment And Requests'].Company)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -2869,6 +2882,7 @@
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -2945,6 +2959,7 @@
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -3021,6 +3036,7 @@
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 Items: =Choices([@'IT Equipment And Requests'].LineManagerSpec)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["DisplayName"]
@@ -3121,6 +3137,7 @@
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 Items: =Sort(Distinct('Services List', Site),Value)
                 Width: =582
                 X: =30
@@ -3204,6 +3221,7 @@
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 Items: =Distinct(Filter('Services List', Site = Dropdown5_2.Selected.Value), Address)
                 Visible: =false
                 X: =314
@@ -3248,6 +3266,7 @@
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 Mode: =TextMode.MultiLine
                 PaddingLeft: =5
@@ -3324,6 +3343,7 @@
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -3455,6 +3475,7 @@
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 Items: =Sort(Distinct('Smartcard Positions', Site),Value)
                 Width: =582
                 X: =30
@@ -3543,6 +3564,7 @@
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 Items: =Distinct(Filter('Smartcard Positions', Site = Dropdown7_8.Selected.Value), Position)
                 Width: =582
                 X: =30
@@ -3621,6 +3643,7 @@
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 Items: =Sort(Distinct('Smartcard Positions', Site),Value)
                 Width: =582
                 X: =30
@@ -3691,6 +3714,7 @@
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 Items: =Distinct(Filter('Smartcard Positions', Site = Dropdown7_10.Selected.Value), Position)
                 Width: =582
                 X: =30
@@ -3761,6 +3785,7 @@
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 Items: =Sort(Distinct('Smartcard Positions', Site),Value)
                 Width: =582
                 X: =30
@@ -3831,6 +3856,7 @@
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 Items: =Distinct(Filter('Smartcard Positions', Site = Dropdown7_12.Selected.Value), Position)
                 Width: =582
                 X: =30
@@ -3901,7 +3927,7 @@
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
-                HoverFill: =RGBA(205, 209, 213, 1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 IsSearchable: =false
                 Items: =Choices([@SharedDrives].SharedDrive)
                 PressedFill: =RGBA(32, 54, 71, 1)
@@ -3969,6 +3995,7 @@
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 IsSearchable: =false
                 Items: =Choices([@'IT Equipment And Requests'].RequestLength)
                 OnChange: =Reset(DataCardValue17_3) && Reset(DataCardValue11_3) && Reset(DataCardValue4_3) && Reset(DataCardValue18_3) && Reset(DataCardValue34_3) && Reset(DataCardValue20_3) && Reset(DataCardValue21_3)
@@ -4062,6 +4089,7 @@
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 IsSearchable: =false
                 Items: =Choices([@'IT Equipment And Requests'].RequestReason)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -4295,6 +4323,7 @@
                 FontWeight: =FontWeight.Lighter
                 Height: =130
                 HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 Mode: =TextMode.MultiLine
                 PaddingLeft: =5
@@ -4371,6 +4400,7 @@
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 IsSearchable: =false
                 Items: =Choices([@'IT Equipment And Requests'].MobRequestType)
                 OnChange: =Reset(DataCardValue23_3) && Reset(DataCardValue42_2) && Reset(DataCardValue14_2)
@@ -4465,6 +4495,7 @@
                 FontWeight: =FontWeight.Lighter
                 Height: =130
                 HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 Mode: =TextMode.MultiLine
                 PaddingLeft: =5
@@ -4543,6 +4574,7 @@
                 FontWeight: =FontWeight.Lighter
                 Height: =217
                 HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 Mode: =TextMode.MultiLine
                 PaddingLeft: =5
