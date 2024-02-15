@@ -88,7 +88,7 @@
                 ZIndex: =6
 
             DataCardValue8_5 As text:
-                BorderColor: =RGBA(0, 0, 0, 1)
+                BorderColor: =RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
@@ -163,7 +163,7 @@
                 ZIndex: =1
 
             DataCardValue44_2 As combobox:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: =RGBA(88,89,91,0.25)
                 ChevronBackground: =RGBA(116, 116, 116, 1)
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
@@ -241,7 +241,7 @@
                 ZIndex: =1
 
             DataCardValue48_2 As combobox:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: =RGBA(88,89,91,0.25)
                 ChevronBackground: =RGBA(106, 122, 127, 1)
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["DisplayName","Email","Picture"]
@@ -364,6 +364,7 @@
                 ZIndex: =4
 
             Dropdown6_4 As dropdown:
+                BorderColor: =RGBA(88,89,91,0.25)
                 Items: =Distinct(Filter('Services List', And(Address = Dropdown6_3.Selected.Value, Site = Dropdown5_2.Selected.Value)), Postcode)
                 Visible: =false
                 X: =307
@@ -808,7 +809,7 @@
                 ZIndex: =1
 
             DataCardValue49_3 As combobox:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: =RGBA(88,89,91,0.25)
                 ChevronBackground: =RGBA(116, 116, 116, 1)
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
@@ -901,7 +902,7 @@
                 ZIndex: =1
 
             DataCardValue46_3 As combobox:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: =RGBA(88,89,91,0.25)
                 ChevronBackground: =RGBA(116, 116, 116, 1)
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
@@ -984,7 +985,7 @@
                 ZIndex: =1
 
             DataCardValue50_2 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: =RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
@@ -1058,7 +1059,7 @@
                 ZIndex: =1
 
             DataCardValue43_3 As combobox:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: =RGBA(88,89,91,0.25)
                 ChevronBackground: =RGBA(116, 116, 116, 1)
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
@@ -1135,7 +1136,7 @@
                 ZIndex: =1
 
             DataCardValue124_2 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: =RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
@@ -1217,7 +1218,7 @@
                 ZIndex: =1
 
             DataCardValue3_3 As attachments:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: =RGBA(88,89,91,0.25)
                 DisplayMode: =Parent.DisplayMode
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
@@ -1324,7 +1325,7 @@
                 ZIndex: =1
 
             DataCardValue33_2 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: =RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
@@ -1403,7 +1404,7 @@
                 ZIndex: =1
 
             DataCardValue135_2 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: =RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
@@ -1483,7 +1484,7 @@
                 ZIndex: =1
 
             DataCardValue134_1 As combobox:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: =RGBA(88,89,91,0.25)
                 ChevronBackground: =RGBA(100, 118, 132, 1)
                 ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
                 DefaultSelectedItems: =Parent.Default
@@ -1580,7 +1581,7 @@
                 ZIndex: =1
 
             DataCardValue11_3 As combobox:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: =RGBA(88,89,91,0.25)
                 ChevronBackground: =RGBA(116, 116, 116, 1)
                 ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
                 DefaultSelectedItems: =Parent.Default
@@ -1662,7 +1663,7 @@
                 ZIndex: =1
 
             DataCardValue4_3 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: =RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
@@ -1742,7 +1743,7 @@
                 ZIndex: =1
 
             DataCardValue34_3 As datepicker:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: =RGBA(88,89,91,0.25)
                 CalendarHeaderFill: =RGBA(100, 118, 132, 1)
                 DefaultDate: =Parent.Default
                 DisplayMode: =Parent.DisplayMode
@@ -1821,7 +1822,7 @@
                 ZIndex: =1
 
             DataCardValue133_2 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: =RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
@@ -1902,7 +1903,7 @@
                 ZIndex: =1
 
             DataCardValue132_2 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: =RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
@@ -1982,7 +1983,7 @@
                 ZIndex: =1
 
             DataCardValue106_2 As combobox:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: =RGBA(88,89,91,0.25)
                 ChevronBackground: =RGBA(100, 118, 132, 1)
                 ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
                 DefaultSelectedItems: =Parent.Default
@@ -2087,7 +2088,7 @@
                 ZIndex: =1
 
             DataCardValue14_2 As combobox:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: =RGBA(88,89,91,0.25)
                 ChevronBackground: =RGBA(102, 182, 227, 1)
                 ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
                 DefaultSelectedItems: =Parent.Default
@@ -2173,7 +2174,7 @@
                 ZIndex: =1
 
             DataCardValue42_2 As combobox:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: =RGBA(88,89,91,0.25)
                 ChevronBackground: =RGBA(106, 122, 127, 1)
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
@@ -2249,7 +2250,7 @@
                 ZIndex: =1
 
             DataCardValue113_2 As combobox:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: =RGBA(88,89,91,0.25)
                 ChevronBackground: =RGBA(100, 118, 132, 1)
                 ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
                 DefaultSelectedItems: =Parent.Default
@@ -2337,7 +2338,7 @@
                 ZIndex: =1
 
             DataCardValue117_2 As combobox:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: =RGBA(88,89,91,0.25)
                 ChevronBackground: =RGBA(100, 118, 132, 1)
                 ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
                 DefaultSelectedItems: =Parent.Default
@@ -2425,7 +2426,7 @@
                 ZIndex: =1
 
             DataCardValue118_2 As combobox:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: =RGBA(88,89,91,0.25)
                 ChevronBackground: =RGBA(100, 118, 132, 1)
                 ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
                 DefaultSelectedItems: =Parent.Default
@@ -2513,7 +2514,7 @@
                 ZIndex: =1
 
             DataCardValue129_2 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: =RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
@@ -2594,7 +2595,7 @@
                 ZIndex: =1
 
             DataCardValue24_3 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderColor: =RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
@@ -2690,7 +2691,7 @@
                 ZIndex: =1
 
             RequestFor_DataCard_1 As combobox:
-                BorderColor: =RGBA(0, 0, 0, 1)
+                BorderColor: =RGBA(88,89,91,0.25)
                 ChevronBackground: =RGBA(116, 116, 116, 1)
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
@@ -2768,7 +2769,7 @@
                 ZIndex: =1
 
             DataCardValue5_3 As combobox:
-                BorderColor: =RGBA(0, 0, 0, 1)
+                BorderColor: =RGBA(88,89,91,0.25)
                 ChevronBackground: =RGBA(106, 122, 127, 1)
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
@@ -2844,7 +2845,7 @@
                 ZIndex: =1
 
             DataCardValue6_3 As text:
-                BorderColor: =RGBA(0, 0, 0, 1)
+                BorderColor: =RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
@@ -2919,7 +2920,7 @@
                 ZIndex: =1
 
             DataCardValue7_3 As text:
-                BorderColor: =RGBA(0, 0, 0, 1)
+                BorderColor: =RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
@@ -2993,7 +2994,7 @@
                 ZIndex: =1
 
             DataCardValue9_3 As combobox:
-                BorderColor: =RGBA(0, 0, 0, 1)
+                BorderColor: =RGBA(88,89,91,0.25)
                 ChevronBackground: =RGBA(106, 122, 127, 1)
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["DisplayName","Email","Picture"]
@@ -3094,6 +3095,7 @@
 
             Dropdown5_2 As dropdown:
                 AllowEmptySelection: =true
+                BorderColor: =RGBA(88,89,91,0.25)
                 ChevronBackground: =RGBA(116, 116, 116, 1)
                 Default: =
                 Font: =Font.Arial
@@ -3177,6 +3179,7 @@
                 ZIndex: =4
 
             Dropdown6_3 As dropdown:
+                BorderColor: =RGBA(88,89,91,0.25)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
                 Items: =Distinct(Filter('Services List', Site = Dropdown5_2.Selected.Value), Address)
@@ -3216,7 +3219,7 @@
                 ZIndex: =1
 
             DataCardValue8_6 As text:
-                BorderColor: =RGBA(0, 0, 0, 1)
+                BorderColor: =RGBA(88,89,91,0.25)
                 Default: =If(DataCardValue44_2.Selected.Value ="No", Concatenate(DataCardValue6_3.Text," ",DataCardValue7_3.Text),User().FullName,true, DataCardValue44_2.Selected.Value ="Yes",DataCardValue48_2.Selected.DisplayName, RequestFor_DataCard_1.Selected.Value ="Myself", User().FullName)
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
@@ -3291,7 +3294,7 @@
                 ZIndex: =1
 
             DataCardValue13_3 As text:
-                BorderColor: =RGBA(0, 0, 0, 1)
+                BorderColor: =RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
@@ -3422,6 +3425,7 @@
 
             Dropdown7_8 As dropdown:
                 AllowEmptySelection: =true
+                BorderColor: =RGBA(88,89,91,0.25)
                 ChevronBackground: =RGBA(102, 182, 227, 1)
                 Default: =
                 Font: =Font.Arial
@@ -3508,6 +3512,7 @@
 
             Dropdown7_9 As dropdown:
                 AllowEmptySelection: =true
+                BorderColor: =RGBA(88,89,91,0.25)
                 ChevronBackground: =RGBA(102, 182, 227, 1)
                 Default: =
                 Font: =Font.Arial
@@ -3584,6 +3589,7 @@
 
             Dropdown7_10 As dropdown:
                 AllowEmptySelection: =true
+                BorderColor: =RGBA(88,89,91,0.25)
                 ChevronBackground: =RGBA(102, 182, 227, 1)
                 Default: =
                 Font: =Font.Arial
@@ -3652,6 +3658,7 @@
 
             Dropdown7_11 As dropdown:
                 AllowEmptySelection: =true
+                BorderColor: =RGBA(88,89,91,0.25)
                 ChevronBackground: =RGBA(102, 182, 227, 1)
                 Default: =
                 Font: =Font.Arial
@@ -3720,6 +3727,7 @@
 
             Dropdown7_12 As dropdown:
                 AllowEmptySelection: =true
+                BorderColor: =RGBA(88,89,91,0.25)
                 ChevronBackground: =RGBA(102, 182, 227, 1)
                 Default: =
                 Font: =Font.Arial
@@ -3788,6 +3796,7 @@
 
             Dropdown7_13 As dropdown:
                 AllowEmptySelection: =true
+                BorderColor: =RGBA(88,89,91,0.25)
                 ChevronBackground: =RGBA(102, 182, 227, 1)
                 Default: =
                 Font: =Font.Arial
@@ -3855,7 +3864,7 @@
                 ZIndex: =4
 
             ComboBox1_1 As combobox:
-                BorderColor: =RGBA(32, 54, 71, 1)
+                BorderColor: =RGBA(88,89,91,0.25)
                 ChevronBackground: =RGBA(100, 118, 132, 1)
                 ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
                 DisplayFields: =["Value"]
@@ -3921,7 +3930,7 @@
                 ZIndex: =1
 
             DataCardValue16_3 As combobox:
-                BorderColor: =RGBA(0, 0, 0, 1)
+                BorderColor: =RGBA(88,89,91,0.25)
                 ChevronBackground: =RGBA(116, 116, 116, 1)
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
@@ -4013,7 +4022,7 @@
                 ZIndex: =1
 
             DataCardValue17_3 As combobox:
-                BorderColor: =RGBA(0, 0, 0, 1)
+                BorderColor: =RGBA(88,89,91,0.25)
                 ChevronBackground: =RGBA(116, 116, 116, 1)
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
@@ -4096,7 +4105,7 @@
                 ZIndex: =1
 
             DataCardValue21_3 As datepicker:
-                BorderColor: =RGBA(0, 0, 0, 1)
+                BorderColor: =RGBA(88,89,91,0.25)
                 DefaultDate: =If(DataCardValue16_3.Selected.Value ="Temporary",DataCardValue18_3).SelectedDate
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
@@ -4170,7 +4179,7 @@
                 ZIndex: =1
 
             DataCardValue18_3 As datepicker:
-                BorderColor: =RGBA(0, 0, 0, 1)
+                BorderColor: =RGBA(88,89,91,0.25)
                 DefaultDate: =Parent.Default
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
@@ -4245,7 +4254,7 @@
                 ZIndex: =1
 
             DataCardValue20_3 As text:
-                BorderColor: =RGBA(0, 0, 0, 1)
+                BorderColor: =RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
@@ -4320,7 +4329,7 @@
                 ZIndex: =1
 
             DataCardValue22_3 As combobox:
-                BorderColor: =RGBA(0, 0, 0, 1)
+                BorderColor: =RGBA(88,89,91,0.25)
                 ChevronBackground: =RGBA(116, 116, 116, 1)
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
@@ -4413,7 +4422,7 @@
                 ZIndex: =1
 
             DataCardValue23_3 As text:
-                BorderColor: =RGBA(0, 0, 0, 1)
+                BorderColor: =RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
@@ -4490,7 +4499,7 @@
                 ZIndex: =1
 
             DataCardValue37_3 As text:
-                BorderColor: =RGBA(0, 0, 0, 1)
+                BorderColor: =RGBA(88,89,91,0.25)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
