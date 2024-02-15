@@ -1871,7 +1871,7 @@
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
                 HoverDateFill: =RGBA(205, 209, 213, 1)
-                IconBackground: =RGBA(100, 118, 132, 1)
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -4515,13 +4515,15 @@
 
             DataCardValue21_3 As datepicker:
                 BorderColor: =RGBA(88,89,91,0.25)
-                Color: =RGBA(77,164,65,1)
+                Color: =
                 DefaultDate: =If(DataCardValue16_3.Selected.Value ="Temporary",DataCardValue18_3).SelectedDate
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
-                IconBackground: =RGBA(100, 118, 132, 1)
+                IconBackground: |-
+                    =	
+                    RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -4596,7 +4598,7 @@
                 EndYear: =Year(Today())+100
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
-                IconBackground: =RGBA(100, 118, 132, 1)
+                IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
