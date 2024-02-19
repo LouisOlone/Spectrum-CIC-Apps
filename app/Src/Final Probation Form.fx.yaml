@@ -4,6 +4,7 @@
 
     Form1_2 As form:
         DataSource: ='Final Probation Review Form'
+        DefaultMode: =FormMode.New
         Height: =538
         Item: =varFinalProbationForm
         NumberOfColumns: =2
@@ -845,6 +846,7 @@
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
+                Mode: =TextMode.MultiLine
                 PaddingLeft: =5
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
@@ -937,6 +939,7 @@
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
+                Mode: =TextMode.MultiLine
                 PaddingLeft: =5
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
@@ -1017,6 +1020,7 @@
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
+                Mode: =TextMode.MultiLine
                 PaddingLeft: =5
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
@@ -1097,6 +1101,7 @@
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
+                Mode: =TextMode.MultiLine
                 PaddingLeft: =5
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
@@ -1177,6 +1182,7 @@
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
+                Mode: =TextMode.MultiLine
                 PaddingLeft: =5
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black

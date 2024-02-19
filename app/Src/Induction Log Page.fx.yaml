@@ -16544,7 +16544,11 @@
 
             DataCardKey416 As label:
                 AutoHeight: =true
+                Color: =RGBA(77, 164, 65, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
                 Height: =34
+                Size: =14
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -16599,6 +16603,8 @@
                 ZIndex: =4
 
             Checkbox2 As checkbox:
+                Font: =Font.Arial
+                Size: =12
                 Text: ="I confirm that the above induction has taken place."
                 Width: =582
                 X: =30
