@@ -672,7 +672,7 @@
                 SelectionFill: =RGBA(74,164,65,0.5)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =285
                 X: =30
                 Y: =DataCardKey491.Y + DataCardKey491.Height + 5
                 ZIndex: =2
@@ -787,87 +787,6 @@
                 Wrap: =false
                 Y: =DataCardKey493.Y
                 ZIndex: =4
-
-        NonSpecEmail_DataCard1 As typedDataCard.textualEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="NonSpecEmail"
-            Default: =ThisItem.NonSpecEmail
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"NonSpecEmail")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =159
-            MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "NonSpecEmail")
-            Required: =false
-            Update: =DataCardValue482.Text
-            Visible: =If(DataCardValue481.Selected.Value ="No", true)
-            Width: =642
-            X: =2
-            Y: =4
-            ZIndex: =3
-
-            DataCardKey492 As label:
-                AutoHeight: =true
-                Color: =RGBA(77,164,65,1)
-                Font: =Font.Arial
-                FontWeight: =FontWeight.Bold
-                Height: =34
-                Size: =14
-                Text: ="Non Spectrum Employee Email "
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue482 As text:
-                BorderColor: |-
-                    =	
-                    RGBA(88,89,91,0.25)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                HoverBorderColor: =RGBA(88,89,91,1)
-                HoverFill: =RGBA(88,89,91,0.01)
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                PressedBorderColor: =RGBA(88,89,91,0.5)
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =67
-                ZIndex: =2
-
-            ErrorMessage493 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue482.Y + DataCardValue482.Height
-                ZIndex: =3
-
-            StarVisible493 As label:
-                Align: =Align.Center
-                Height: =DataCardKey492.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey492.Y
-                ZIndex: =4
-
-            Rectangle2_9 As rectangle:
-                Fill: =RGBA(0, 0, 0, 1)
-                Height: =0.5
-                Width: =1284
-                Y: =160
-                ZIndex: =5
 
         "'Welcome to the Department/Business Unit_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
@@ -1040,6 +959,332 @@
                 Width: =1284
                 ZIndex: =6
 
+        Comments1_DataCard1 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Comments1"
+            Default: =ThisItem.Comments1
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
+            DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Comments1")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Comments1")
+            Required: =false
+            Update: =DataCardValue408.Text
+            Width: =642
+            X: =0
+            Y: =6
+            ZIndex: =3
+
+            DataCardKey418 As label:
+                AutoHeight: =true
+                Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Size: =14
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue408 As text:
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =100
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
+                MaxLength: =Parent.MaxLength
+                Mode: =TextMode.MultiLine
+                PaddingLeft: =5
+                PressedBorderColor: =RGBA(88,89,91,0.5)
+                PressedColor: =Color.Black
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey418.Y + DataCardKey418.Height + 5
+                ZIndex: =2
+
+            ErrorMessage419 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue408.Y + DataCardValue408.Height
+                ZIndex: =3
+
+            StarVisible419 As label:
+                Align: =Align.Center
+                Height: =DataCardKey418.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey418.Y
+                ZIndex: =4
+
+            Rectangle2_3 As rectangle:
+                Fill: =RGBA(0, 0, 0, 1)
+                Height: =165
+                Width: =0.5
+                X: =640
+                ZIndex: =5
+
+            Rectangle2_4 As rectangle:
+                Fill: =RGBA(0, 0, 0, 1)
+                Height: =0.5
+                Width: =642
+                Y: =163
+                ZIndex: =6
+
+        "'Explain management structure of the department_DataCard1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Explainmanagementstructureofthed"
+            Default: =ThisItem.'Explain management structure of the department'
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
+            DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Explainmanagementstructureofthed")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Explainmanagementstructureofthed")
+            Required: =false
+            Update: =If(Checkbox1_2.Value =true,"Complete","")
+            Width: =321
+            X: =0
+            Y: =7
+            ZIndex: =3
+
+            DataCardKey251 As label:
+                AutoHeight: =true
+                Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Size: =14
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            ErrorMessage252 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =
+                ZIndex: =3
+
+            StarVisible252 As label:
+                Align: =Align.Center
+                Height: =DataCardKey251.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey251.Y
+                ZIndex: =4
+
+            Checkbox1_2 As checkbox:
+                CheckboxBorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
+                Default: =If(ThisItem.'Explain management structure of the department' ="Complete", true, false)
+                DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
+                PressedBorderColor: =RGBA(88,89,91,0.5)
+                PressedColor: =Color.Black
+                Text: ="Done"
+                X: =30
+                Y: =55
+                ZIndex: =5
+
+        Date3_DataCard1 As typedDataCard.dateEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Date3"
+            Default: =ThisItem.Date3
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
+            DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Date3")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue257.SelectedDate
+            Width: =321
+            X: =1
+            Y: =7
+            ZIndex: =3
+
+            DataCardKey265 As label:
+                AutoHeight: =true
+                Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Size: =14
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue257 As datepicker:
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
+                DefaultDate: |-
+                    =If(
+                    	Not(IsBlank(ThisItem.Date3)), ThisItem.Date3,
+                    	If(
+                    		And(
+                                IsBlank(ThisItem.Date3),
+                    			Checkbox1_2.Value=true),
+                    				Today(),
+                    				""))
+                    	
+                DisplayMode: =Parent.DisplayMode
+                EndYear: =Year(Today())+100
+                IconBackground: =RGBA(74,164,65,1)
+                IsEditable: =true
+                PaddingBottom: =0
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                StartYear: =1899
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =55
+                ZIndex: =2
+
+            ErrorMessage266 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue257.Y + DataCardValue257.Height
+                ZIndex: =3
+
+            StarVisible266 As label:
+                Align: =Align.Center
+                Height: =DataCardKey265.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey265.Y
+                ZIndex: =4
+
+            Rectangle2_8 As rectangle:
+                Fill: =RGBA(0, 0, 0, 1)
+                Height: =118
+                Width: =0.5
+                X: =319
+                ZIndex: =6
+
+        NonSpecEmail_DataCard1 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="NonSpecEmail"
+            Default: =ThisItem.NonSpecEmail
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"NonSpecEmail")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =159
+            MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "NonSpecEmail")
+            Required: =false
+            Update: =DataCardValue482.Text
+            Visible: =If(DataCardValue481.Selected.Value ="No", true)
+            Width: =642
+            X: =2
+            Y: =4
+            ZIndex: =3
+
+            DataCardKey492 As label:
+                AutoHeight: =true
+                Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Size: =14
+                Text: ="Non Spectrum Employee Email "
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue482 As text:
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                PressedBorderColor: =RGBA(88,89,91,0.5)
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =67
+                ZIndex: =2
+
+            ErrorMessage493 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue482.Y + DataCardValue482.Height
+                ZIndex: =3
+
+            StarVisible493 As label:
+                Align: =Align.Center
+                Height: =DataCardKey492.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey492.Y
+                ZIndex: =4
+
+            Rectangle2_9 As rectangle:
+                Fill: =RGBA(0, 0, 0, 1)
+                Height: =0.5
+                Width: =1284
+                Y: =160
+                ZIndex: =5
+
         "'Brief description of the Department/Business Unit and how it fits into the organisation_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="BriefdescriptionoftheDepartment_"
@@ -1200,96 +1445,6 @@
                 Width: =1284
                 ZIndex: =5
 
-        Comments1_DataCard1 As typedDataCard.textualEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="Comments1"
-            Default: =ThisItem.Comments1
-            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
-            DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Comments1")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Comments1")
-            Required: =false
-            Update: =DataCardValue408.Text
-            Width: =642
-            X: =0
-            Y: =6
-            ZIndex: =3
-
-            DataCardKey418 As label:
-                AutoHeight: =true
-                Color: =RGBA(77,164,65,1)
-                Font: =Font.Arial
-                FontWeight: =FontWeight.Bold
-                Height: =34
-                Size: =14
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue408 As text:
-                BorderColor: |-
-                    =	
-                    RGBA(88,89,91,0.25)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                Height: =100
-                HoverBorderColor: =RGBA(88,89,91,1)
-                HoverFill: =RGBA(88,89,91,0.01)
-                MaxLength: =Parent.MaxLength
-                Mode: =TextMode.MultiLine
-                PaddingLeft: =5
-                PressedBorderColor: =RGBA(88,89,91,0.5)
-                PressedColor: =Color.Black
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey418.Y + DataCardKey418.Height + 5
-                ZIndex: =2
-
-            ErrorMessage419 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue408.Y + DataCardValue408.Height
-                ZIndex: =3
-
-            StarVisible419 As label:
-                Align: =Align.Center
-                Height: =DataCardKey418.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey418.Y
-                ZIndex: =4
-
-            Rectangle2_3 As rectangle:
-                Fill: =RGBA(0, 0, 0, 1)
-                Height: =165
-                Width: =0.5
-                X: =640
-                ZIndex: =5
-
-            Rectangle2_4 As rectangle:
-                Fill: =RGBA(0, 0, 0, 1)
-                Height: =0.5
-                Width: =642
-                Y: =163
-                ZIndex: =6
-
         Comments2_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Comments2"
@@ -1372,161 +1527,6 @@
                 Width: =1284
                 Y: =163
                 ZIndex: =5
-
-        "'Explain management structure of the department_DataCard1' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="Explainmanagementstructureofthed"
-            Default: =ThisItem.'Explain management structure of the department'
-            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
-            DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Explainmanagementstructureofthed")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Explainmanagementstructureofthed")
-            Required: =false
-            Update: =If(Checkbox1_2.Value =true,"Complete","")
-            Width: =321
-            X: =0
-            Y: =7
-            ZIndex: =3
-
-            DataCardKey251 As label:
-                AutoHeight: =true
-                Color: =RGBA(77,164,65,1)
-                Font: =Font.Arial
-                FontWeight: =FontWeight.Bold
-                Height: =34
-                Size: =14
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            ErrorMessage252 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =
-                ZIndex: =3
-
-            StarVisible252 As label:
-                Align: =Align.Center
-                Height: =DataCardKey251.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey251.Y
-                ZIndex: =4
-
-            Checkbox1_2 As checkbox:
-                CheckboxBorderColor: |-
-                    =	
-                    RGBA(88,89,91,0.25)
-                Default: =If(ThisItem.'Explain management structure of the department' ="Complete", true, false)
-                DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
-                PressedBorderColor: =RGBA(88,89,91,0.5)
-                PressedColor: =Color.Black
-                Text: ="Done"
-                X: =30
-                Y: =55
-                ZIndex: =5
-
-        Date3_DataCard1 As typedDataCard.dateEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="Date3"
-            Default: =ThisItem.Date3
-            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
-            DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Date3")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            Required: =false
-            Update: =DataCardValue257.SelectedDate
-            Width: =321
-            X: =1
-            Y: =7
-            ZIndex: =3
-
-            DataCardKey265 As label:
-                AutoHeight: =true
-                Color: =RGBA(77,164,65,1)
-                Font: =Font.Arial
-                FontWeight: =FontWeight.Bold
-                Height: =34
-                Size: =14
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue257 As datepicker:
-                BorderColor: |-
-                    =	
-                    RGBA(88,89,91,0.25)
-                DefaultDate: |-
-                    =If(
-                    	Not(IsBlank(ThisItem.Date3)), ThisItem.Date3,
-                    	If(
-                    		And(
-                                IsBlank(ThisItem.Date3),
-                    			Checkbox1_2.Value=true),
-                    				Today(),
-                    				""))
-                    	
-                DisplayMode: =Parent.DisplayMode
-                EndYear: =Year(Today())+100
-                IconBackground: =RGBA(74,164,65,1)
-                IsEditable: =true
-                PaddingBottom: =0
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                StartYear: =1899
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =55
-                ZIndex: =2
-
-            ErrorMessage266 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue257.Y + DataCardValue257.Height
-                ZIndex: =3
-
-            StarVisible266 As label:
-                Align: =Align.Center
-                Height: =DataCardKey265.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey265.Y
-                ZIndex: =4
-
-            Rectangle2_8 As rectangle:
-                Fill: =RGBA(0, 0, 0, 1)
-                Height: =118
-                Width: =0.5
-                X: =319
-                ZIndex: =6
 
         "'Introduce to Mentor, where appropriate_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
