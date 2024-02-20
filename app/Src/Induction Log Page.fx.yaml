@@ -145,6 +145,8 @@
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
@@ -153,6 +155,7 @@
                     =	
                     RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
+                Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -221,6 +224,8 @@
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
@@ -229,6 +234,7 @@
                     =	
                     RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
+                Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -297,6 +303,8 @@
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
@@ -305,6 +313,7 @@
                     =	
                     RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
+                Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -373,6 +382,8 @@
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
@@ -381,6 +392,7 @@
                     =	
                     RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
+                Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -449,6 +461,8 @@
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
@@ -457,6 +471,7 @@
                     =	
                     RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
+                Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -525,6 +540,8 @@
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
@@ -533,6 +550,7 @@
                     =	
                     RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
+                Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -601,6 +619,8 @@
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
@@ -609,6 +629,7 @@
                     =	
                     RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
+                Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =582
                 X: =30
@@ -686,6 +707,8 @@
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
                 Items: =Choices([@'Induction Log'].SpectrumEmp)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -697,6 +720,7 @@
                     RGBA(0,0,0,1)
                 SelectionFill: =RGBA(74,164,65,0.5)
                 SelectMultiple: =false
+                Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =285
                 X: =30
@@ -769,6 +793,8 @@
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["DisplayName","Email","Picture"]
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 HoverBorderColor: |-
                     =	
                     RGBA(88,89,91,1)
@@ -782,6 +808,7 @@
                     RGBA(0,0,0,1)
                 SelectionFill: =RGBA(74,164,65,0.5)
                 SelectMultiple: =false
+                Size: =12
                 Template: =ListItemTemplate.Person
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -852,11 +879,14 @@
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 PressedBorderColor: =RGBA(88,89,91,0.5)
+                Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -958,9 +988,12 @@
                     RGBA(88,89,91,0.25)
                 Default: =If(ThisItem.'Welcome to the Department/Business Unit'="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
+                Size: =12
                 Text: ="Done"
                 X: =30
                 Y: =104
@@ -1017,10 +1050,13 @@
                     	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                Size: =12
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -1126,8 +1162,11 @@
                     RGBA(88,89,91,0.25)
                 Default: =If(ThisItem.'Brief description of the Department/Business Unit and how it fits into the organisation'="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
+                Size: =12
                 Text: ="Done"
                 X: =30
                 Y: =104
@@ -1184,10 +1223,13 @@
                     	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                Size: =12
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -1465,8 +1507,11 @@
                     RGBA(88,89,91,0.25)
                 Default: =If(ThisItem.'Explain management structure of the department' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
+                Size: =12
                 Text: ="Done"
                 X: =30
                 Y: =55
@@ -1517,10 +1562,13 @@
                     	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                Size: =12
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -1624,8 +1672,11 @@
                     RGBA(88,89,91,0.25)
                 Default: =If(ThisItem.'Introduce to Mentor, where appropriate' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
+                Size: =12
                 Text: ="Done"
                 X: =30
                 Y: =55
@@ -1676,10 +1727,13 @@
                     	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                Size: =12
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -1953,8 +2007,11 @@
                     =	
                     If(ThisItem.'Introduce to other staff and explanation of their roles' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
+                Size: =12
                 Text: ="Done"
                 X: =30
                 Y: =111
@@ -2005,10 +2062,13 @@
                     	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                Size: =12
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -2108,8 +2168,11 @@
                     RGBA(88,89,91,0.25)
                 Default: =If(ThisItem.'Location of toilets, staff facilities, coffee room, postal area, photocopier, etc.' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
+                Size: =12
                 Text: ="Done"
                 X: =30
                 Y: =111
@@ -2160,10 +2223,13 @@
                     	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                Size: =12
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -2435,8 +2501,11 @@
                     RGBA(88,89,91,0.25)
                 Default: =If(ThisItem.'Check receipt of formal letter of appointment, contract, policy summaries and associated documents if appropriate' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
+                Size: =12
                 Text: ="Done"
                 X: =30
                 Y: =177
@@ -2487,10 +2556,13 @@
                     	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                Size: =12
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -2590,8 +2662,11 @@
                     RGBA(88,89,91,0.25)
                 Default: =If(ThisItem.'Explain statutory and mandatory training needs. Ensure have basic understanding of safeguarding, Prevent, Mental Capacity Act and Conflict Management' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
+                Size: =12
                 Text: ="Done"
                 X: =30
                 Y: =177
@@ -2642,10 +2717,13 @@
                     	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                Size: =12
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -2917,8 +2995,11 @@
                     RGBA(88,89,91,0.25)
                 Default: =If(ThisItem.'Explain duties, remit of job/go through job description' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
+                Size: =12
                 Text: ="Done"
                 X: =30
                 Y: =110
@@ -2969,10 +3050,13 @@
                     	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                Size: =12
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -3075,8 +3159,11 @@
                     RGBA(88,89,91,0.25)
                 Default: =If(ThisItem.'Explain contractual arrangements e.g. probation, (where appropriate)' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
+                Size: =12
                 Text: ="Done"
                 X: =30
                 Y: =110
@@ -3127,10 +3214,13 @@
                     	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                Size: =12
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -3380,6 +3470,8 @@
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 Height: =100
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: =RGBA(88,89,91,0.01)
@@ -3388,6 +3480,7 @@
                 PaddingLeft: =5
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
+                Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =582
                 X: =30
@@ -3487,8 +3580,11 @@
                     RGBA(88,89,91,0.25)
                 Default: =If(ThisItem.'Contact Details given' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
+                Size: =12
                 Text: ="Done"
                 X: =30
                 Y: =59
@@ -3540,10 +3636,13 @@
                     	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                Size: =12
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -3643,8 +3742,11 @@
                     RGBA(88,89,91,0.25)
                 Default: =If(ThisItem.'Issue keys/fobs and pin numbers if appropriate' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
+                Size: =12
                 Text: ="Done"
                 X: =30
                 Y: =59
@@ -3695,10 +3797,13 @@
                     	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                Size: =12
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -3970,8 +4075,11 @@
                     RGBA(88,89,91,0.25)
                 Default: =If(ThisItem.'Emergency telephone numbers' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
+                Size: =12
                 Text: ="Done"
                 X: =30
                 Y: =131
@@ -4022,10 +4130,13 @@
                     	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                Size: =12
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -4125,8 +4236,11 @@
                     RGBA(88,89,91,0.25)
                 Default: =If(ThisItem.'Identify ALL HR, corporate and locally applicable policies and procedures, list here and date shared with new employee' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
+                Size: =12
                 Text: ="Done"
                 X: =30
                 Y: =131
@@ -4177,10 +4291,13 @@
                     	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                Size: =12
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -4454,8 +4571,11 @@
                     RGBA(88,89,91,0.25)
                 Default: =If(ThisItem.'Fire and First Aid procedures' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
+                Size: =12
                 Text: ="Done"
                 X: =30
                 Y: =55
@@ -4506,10 +4626,13 @@
                     	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                Size: =12
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -4612,8 +4735,11 @@
                     RGBA(88,89,91,0.25)
                 Default: =If(ThisItem.'Workplace tidiness [wires, obstructions etc.]' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
+                Size: =12
                 Text: ="Done"
                 X: =30
                 Y: =55
@@ -4664,10 +4790,13 @@
                     	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                Size: =12
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -4939,8 +5068,11 @@
                     RGBA(88,89,91,0.25)
                 Default: =If(ThisItem.'Approach to supporting non smoking' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
+                Size: =12
                 Text: ="Done"
                 X: =30
                 Y: =55
@@ -4991,10 +5123,13 @@
                     	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                Size: =12
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -5097,8 +5232,11 @@
                     RGBA(88,89,91,0.25)
                 Default: =If(ThisItem.'Accidents and incident reporting procedures' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
+                Size: =12
                 Text: ="Done"
                 X: =30
                 Y: =55
@@ -5149,10 +5287,13 @@
                     	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                Size: =12
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -5427,8 +5568,11 @@
                     RGBA(88,89,91,0.25)
                 Default: =If(ThisItem.'Risk Management arrangements' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
+                Size: =12
                 Text: ="Done"
                 X: =30
                 Y: =88
@@ -5479,10 +5623,13 @@
                     	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                Size: =12
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -5582,8 +5729,11 @@
                     RGBA(88,89,91,0.25)
                 Default: =If(ThisItem.'Lone Worker and Home working (if appropriate to role)' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
+                Size: =12
                 Text: ="Done"
                 X: =30
                 Y: =88
@@ -5633,10 +5783,13 @@
                     	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                Size: =12
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -5909,8 +6062,11 @@
                     RGBA(88,89,91,0.25)
                 Default: =If(ThisItem.'Electrical safety' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
+                Size: =12
                 Text: ="Done"
                 X: =30
                 Y: =55
@@ -5961,10 +6117,13 @@
                     	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                Size: =12
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -6064,8 +6223,11 @@
                     RGBA(88,89,91,0.25)
                 Default: =If(ThisItem.'Handling dangerous chemicals/waste' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
+                Size: =12
                 Text: ="Done"
                 X: =30
                 Y: =55
@@ -6116,10 +6278,13 @@
                     	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                Size: =12
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -6392,8 +6557,11 @@
                     RGBA(88,89,91,0.25)
                 Default: =If(ThisItem.'Moving and Handling' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
+                Size: =12
                 Text: ="Done"
                 X: =30
                 Y: =55
@@ -6444,10 +6612,13 @@
                     	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                Size: =12
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -6547,8 +6718,11 @@
                     RGBA(88,89,91,0.25)
                 Default: =If(ThisItem.'Display Screen Equipment (DSE) Assessment' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
+                Size: =12
                 Text: ="Done"
                 X: =30
                 Y: =55
@@ -6598,10 +6772,13 @@
                     	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                Size: =12
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -6873,8 +7050,11 @@
                     RGBA(88,89,91,0.25)
                 Default: =If(ThisItem.'Confirm progress of this Induction Log and requirement for completion within 12 weeks of the start date.' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
+                Size: =12
                 Text: ="Done"
                 X: =30
                 Y: =124
@@ -6925,10 +7105,13 @@
                     	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                Size: =12
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -7030,8 +7213,11 @@
                 Default: |-
                     =If(ThisItem.'Explain arrangements for staff member to meet with key managers and Spectrum contacts:-' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
+                Size: =12
                 Text: ="Done"
                 X: =30
                 Y: =124
@@ -7082,10 +7268,13 @@
                     	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                Size: =12
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -7357,8 +7546,11 @@
                     RGBA(88,89,91,0.25)
                 Default: =If(ThisItem.'Starting/Finishing times/hours of work' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
+                Size: =12
                 Text: ="Done"
                 X: =30
                 Y: =84
@@ -7409,10 +7601,13 @@
                     	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                Size: =12
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -7512,8 +7707,11 @@
                     RGBA(88,89,91,0.25)
                 Default: =If(ThisItem.'Sickness absence reporting and monitoring arrangements' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
+                Size: =12
                 Text: ="Done"
                 X: =30
                 Y: =84
@@ -7564,10 +7762,13 @@
                     	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                Size: =12
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -7810,12 +8011,15 @@
 
             ErrorMessage309 As label:
                 AutoHeight: =true
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 Height: =10
                 Live: =Live.Assertive
                 PaddingBottom: =0
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
+                Size: =12
                 Text: =Parent.Error
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
@@ -7894,10 +8098,13 @@
                     	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                Size: =12
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -7997,8 +8204,11 @@
                     RGBA(88,89,91,0.25)
                 Default: =If(ThisItem.'Overtime/shift/on-call arrangements [if appropriate]' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
+                Size: =12
                 Text: ="Done"
                 X: =30
                 Y: =84
@@ -8049,10 +8259,13 @@
                     	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                Size: =12
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -8328,8 +8541,11 @@
                     RGBA(88,89,91,0.25)
                 Default: =If(ThisItem.'Flexible working arrangements [if appropriate]' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
+                Size: =12
                 Text: ="Done"
                 X: =30
                 Y: =84
@@ -8380,10 +8596,13 @@
                     	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                Size: =12
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -8483,8 +8702,11 @@
                     RGBA(88,89,91,0.25)
                 Default: =If(ThisItem.'Explanation of filing systems (electronic and manual)' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
+                Size: =12
                 Text: ="Done"
                 X: =30
                 Y: =84
@@ -8535,10 +8757,13 @@
                     	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                Size: =12
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -8813,8 +9038,11 @@
                     RGBA(88,89,91,0.25)
                 Default: =If(ThisItem.'Non-liability of organisation in insurance claims for loss of/damage to property' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
+                Size: =12
                 Text: ="Done"
                 X: =30
                 Y: =78
@@ -8865,10 +9093,13 @@
                     	
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 IconBackground: =RGBA(74,164,65,1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                Size: =12
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -8968,8 +9199,11 @@
                     RGBA(88,89,91,0.25)
                 Default: =If(ThisItem.'Check that salary arrangements are understood' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
+                Size: =12
                 Text: ="Done"
                 X: =30
                 Y: =78
@@ -16562,8 +16796,11 @@
                     RGBA(88,89,91,0.25)
                 Default: =If(ThisItem.'Use of e-mail confidentiality' ="Complete", true, false)
                 DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
+                Size: =12
                 Text: ="Done"
                 X: =30
                 Y: =40
@@ -16825,6 +17062,7 @@
                 ZIndex: =4
 
             Checkbox2 As checkbox:
+                Default: =If(ThisItem.'Signature Line Manager' ="Complete", true, false)
                 Font: =Font.Arial
                 Size: =12
                 Text: ="I confirm that the above induction has taken place."
