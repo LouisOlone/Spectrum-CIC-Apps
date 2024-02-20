@@ -16,23 +16,69 @@
         Y: =151
         ZIndex: =2
 
-        "'Signature individual_DataCard2' As typedDataCard.textualEditCard":
+        EmployeeApproval_DataCard1 As typedDataCard.comboBoxEditCard:
             BorderStyle: =BorderStyle.Solid
-            DataField: ="Signatureindividual"
-            Default: =ThisItem.'Signature individual'
+            DataField: ="EmployeeApproval"
+            Default: =ThisItem.EmployeeApproval
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Signatureindividual")
+            DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"EmployeeApproval")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =194
-            MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Signatureindividual")
+            Height: =165
             Required: =false
-            Update: =DataCardValue406_2.Text
+            Update: =DataCardValue272.Selected
             Width: =642
             X: =2
             Y: =72
             ZIndex: =1
 
-            ErrorMessage547 As label:
+            DataCardValue272 As combobox:
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
+                ChevronBackground: |-
+                    =	
+                    RGBA(77,164,65,1)
+                ChevronFill: |-
+                    =	
+                    RGBA(255,255,255,1)
+                ChevronHoverBackground: |-
+                    =
+                    
+                    ColorFade(RGBA(77,164,65,1), -20%)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["Value"]
+                DisplayMode: =Parent.DisplayMode
+                Fill: |-
+                    =	
+                    RGBA(255,255,255,1)
+                HoverColor: |-
+                    =	
+                    RGBA(0,0,0,1)
+                HoverFill: |-
+                    =	
+                    RGBA(77,164,65,0.5)
+                Items: =Choices([@'Induction Log'].EmployeeApproval)
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PressedBorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.5)
+                PressedColor: =Color.Black
+                SearchFields: =["Value"]
+                SearchItems: =Choices('Induction Log'.EmployeeApproval,DataCardValue272.SearchText)
+                SelectionColor: |-
+                    =	
+                    RGBA(0,0,0,1)
+                SelectionFill: |-
+                    =	
+                    RGBA(74,164,65,0.5)
+                SelectMultiple: =false
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =115
+                ZIndex: =2
+
+            ErrorMessage506 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -44,20 +90,20 @@
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =
+                Y: =DataCardValue272.Y + DataCardValue272.Height
                 ZIndex: =3
 
-            StarVisible547 As label:
+            StarVisible506 As label:
                 Align: =Align.Center
                 Height: =
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardValue406_2.Y
+                Y: =
                 ZIndex: =4
 
-            DataCardKey505_1 As label:
+            DataCardKey505_2 As label:
                 AutoHeight: =true
                 Color: =RGBA(77, 164, 65, 1)
                 Font: =Font.Arial
@@ -68,45 +114,18 @@
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
-                Y: =10
+                Y: =4
                 ZIndex: =5
 
-            DataCardValue406_2 As text:
-                BorderColor: |-
-                    =	
-                    RGBA(88,89,91,0.25)
-                Default: =If(Checkbox2_2.Value=true, Concatenate("Electronically signed by ", User().FullName, " ", Today()), Parent.Default)
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
+            Label15 As label:
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
-                HoverBorderColor: =RGBA(88,89,91,1)
-                HoverFill: |-
-                    =	
-                    RGBA(88,89,91,0.01)
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                PressedBorderColor: =RGBA(88,89,91,0.5)
-                PressedColor: =Color.Black
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Size: =12
-                Tooltip: =Parent.DisplayName
-                Width: =582
-                X: =30
-                Y: =131
-                ZIndex: =6
-
-            Checkbox2_2 As checkbox:
-                Font: =Font.Arial
                 Size: =12
                 Text: ="I confirm that the above induction has taken place and that I agree with the comments added"
                 Width: =582
                 X: =30
-                Y: =61
-                ZIndex: =7
+                Y: =55
+                ZIndex: =6
 
         UID_DataCard18 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -16984,7 +17003,7 @@
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"SignatureLineManager")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =194
+            Height: =165
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "SignatureLineManager")
             Required: =false
             Update: =DataCardValue406.Text
@@ -17031,6 +17050,7 @@
                 RadiusTopRight: =0
                 Size: =12
                 Tooltip: =Parent.DisplayName
+                Visible: =false
                 Width: =Parent.Width - 60
                 X: =30
                 Y: =131
@@ -17068,7 +17088,7 @@
                 Text: ="I confirm that the above induction has taken place."
                 Width: =582
                 X: =30
-                Y: =61
+                Y: =108
                 ZIndex: =5
 
     ButtonCanvas1_11 As Button:
