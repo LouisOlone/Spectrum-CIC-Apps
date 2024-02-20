@@ -17088,7 +17088,7 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="SignatureLineManager"
             Default: =ThisItem.'Signature Line Manager'
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"SignatureLineManager")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =165
