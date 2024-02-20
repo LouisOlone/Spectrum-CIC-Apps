@@ -26,6 +26,8 @@
             Height: =165
             Required: =false
             Update: =DataCardValue272.Selected
+            Visible: |
+                =If(IsBlank(varInductionLog.'Signature Line Manager'), false, true)
             Width: =642
             X: =2
             Y: =72
@@ -17010,7 +17012,76 @@
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "SignatureLineManager")
             Required: =false
             Update: =DataCardValue406.Text
-            Visible: =true
+            Visible: |-
+                =If(
+                    Or(
+                        Checkbox1.Value = false,
+                        Checkbox1_1.Value = false,
+                        Checkbox1_2.Value = false,
+                        Checkbox1_3.Value = false,
+                        Checkbox1_4.Value = false,
+                        Checkbox1_5.Value = false,
+                        Checkbox1_6.Value = false,
+                        Checkbox1_7.Value = false,
+                        Checkbox1_8.Value = false,
+                        Checkbox1_9.Value = false,
+                        Checkbox1_10.Value = false,
+                        Checkbox1_11.Value = false,
+                        Checkbox1_12.Value = false,
+                        Checkbox1_13.Value = false,
+                        Checkbox1_14.Value = false,
+                        Checkbox1_15.Value = false,
+                        Checkbox1_16.Value = false,
+                        Checkbox1_17.Value = false,
+                        Checkbox1_18.Value = false,
+                        Checkbox1_19.Value = false,
+                        Checkbox1_20.Value = false,
+                        Checkbox1_21.Value = false,
+                        Checkbox1_22.Value = false,
+                        Checkbox1_23.Value = false,
+                        Checkbox1_24.Value = false,
+                        Checkbox1_25.Value = false,
+                        Checkbox1_26.Value = false,
+                        Checkbox1_27.Value = false,
+                        Checkbox1_28.Value = false,
+                        Checkbox1_29.Value = false,
+                        Checkbox1_30.Value = false,
+                        Checkbox1_31.Value = false,
+                        Checkbox1_32.Value = false,
+                        Checkbox1_33.Value = false,
+                        Checkbox1_34.Value = false,
+                        Checkbox1_35.Value = false,
+                        Checkbox1_36.Value = false,
+                        Checkbox1_37.Value = false,
+                        Checkbox1_38.Value = false,
+                        Checkbox1_39.Value = false,
+                        Checkbox1_40.Value = false,
+                        Checkbox1_41.Value = false,
+                        Checkbox1_42.Value = false,
+                        Checkbox1_43.Value = false,
+                        Checkbox1_44.Value = false,
+                        Checkbox1_45.Value = false,
+                        Checkbox1_46.Value = false,
+                        Checkbox1_47.Value = false,
+                        Checkbox1_48.Value = false,
+                        Checkbox1_49.Value = false,
+                        Checkbox1_50.Value = false,
+                        Checkbox1_51.Value = false,
+                        Checkbox1_52.Value = false,
+                        Checkbox1_53.Value = false,
+                        Checkbox1_54.Value = false,
+                        Checkbox1_55.Value = false,
+                        Checkbox1_56.Value = false,
+                        Checkbox1_57.Value = false,
+                        Checkbox1_58.Value = false,
+                        Checkbox1_59.Value = false,
+                        Checkbox1_60.Value = false,
+                        Checkbox1_61.Value = false,
+                        Checkbox1_62.Value = false
+                    ),
+                    false,
+                    true
+                )
             Width: =642
             X: =0
             Y: =72
