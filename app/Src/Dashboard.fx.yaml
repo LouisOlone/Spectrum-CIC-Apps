@@ -5989,7 +5989,7 @@ Dashboard As screen:
             Height: =768
             Visible: =varLoading
             Width: =1366
-            ZIndex: =46
+            ZIndex: =51
 
         timer_loading As timer:
             AutoStart: =
@@ -6000,7 +6000,7 @@ Dashboard As screen:
             Visible: =false
             X: =1037
             Y: =18
-            ZIndex: =47
+            ZIndex: =52
 
         spinner_loading As Spinner:
             BasePaletteColor: =
@@ -6014,7 +6014,7 @@ Dashboard As screen:
             Width: =1366
             X: =0
             Y: =0
-            ZIndex: =48
+            ZIndex: =53
 
     form_smartcard_positions As form.PowerApps_CoreControls_Form:
         DataSource: ='Smartcard Positions Requests'
@@ -6979,58 +6979,7 @@ Dashboard As screen:
         Width: =63
         X: =1155
         Y: =10
-        ZIndex: =49
-
-    grp_raise_new_request As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =49
-
-        shp_sidebar_5 As button:
-            DisplayMode: =DisplayMode.View
-            Fill: =RGBA(77,164,65,1)
-            Height: =63
-            HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
-            Text: =""
-            Width: =362
-            X: =978
-            Y: =192
-            ZIndex: =6
-
-        Icon3 As icon.AddDocument:
-            Color: =RGBA(0, 0, 0, 1)
-            Height: =58
-            Icon: =Icon.AddDocument
-            Width: =58
-            X: =1264
-            Y: =194
-            ZIndex: =7
-
-        Label2 As label:
-            Font: =Font.Arial
-            FontWeight: =FontWeight.Bold
-            Height: =61
-            Size: =16
-            Text: ="Raise a new request"
-            Width: =222
-            X: =1021
-            Y: =194
-            ZIndex: =8
-
-        Button2 As button:
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =63
-            HoverColor: =RGBA(255, 255, 255, 0)
-            HoverFill: =ColorFade(RGBA(56, 96, 178, 0), -20%)
-            OnSelect: =Navigate(Forms)
-            PressedFill: =RGBA(0,0,0,0)
-            Text: =""
-            Width: =362
-            X: =978
-            Y: =192
-            ZIndex: =9
+        ZIndex: =46
 
     Label3 As label:
         Align: =Align.Center
@@ -7041,7 +6990,7 @@ Dashboard As screen:
         Text: ="DEVELOPER MODE"
         Visible: =varDeveloperMode
         Width: =1155
-        ZIndex: =50
+        ZIndex: =47
 
     Form3 As form.PowerApps_CoreControls_Form:
         DataSource: ='4G Laptop Requests'
@@ -7052,7 +7001,7 @@ Dashboard As screen:
         Visible: =var4GLaptopTest
         X: =106
         Y: =162
-        ZIndex: =51
+        ZIndex: =48
 
         raised_by_DataCard4 As typedDataCard.fluentV9ComboBoxEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -7848,7 +7797,7 @@ Dashboard As screen:
         Visible: =false
         X: =106
         Y: =162
-        ZIndex: =52
+        ZIndex: =49
 
         Title_DataCard3 As typedDataCard.fluentV9TextualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -8907,6 +8856,69 @@ Dashboard As screen:
                 Y: =DataCardKey174.Y
                 ZIndex: =4
 
+    grp_raise_new_request As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =49
+
+        shp_sidebar_5 As button:
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(77,164,65,1)
+            Height: =63
+            HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+            Text: =""
+            Width: =362
+            X: =978
+            Y: =192
+            ZIndex: =6
+
+        Icon3 As icon.AddDocument:
+            Color: =RGBA(0, 0, 0, 1)
+            Height: =58
+            Icon: =Icon.AddDocument
+            Width: =58
+            X: =1264
+            Y: =194
+            ZIndex: =7
+
+        Label2 As label:
+            Font: =Font.Arial
+            FontWeight: =FontWeight.Bold
+            Height: =61
+            Size: =16
+            Text: ="Raise a new request"
+            Width: =222
+            X: =1021
+            Y: =194
+            ZIndex: =8
+
+        Button2 As button:
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =63
+            HoverColor: =RGBA(255, 255, 255, 0)
+            HoverFill: =ColorFade(RGBA(56, 96, 178, 0), -20%)
+            OnSelect: =Navigate(Forms)
+            PressedFill: =RGBA(0,0,0,0)
+            Text: =""
+            Width: =362
+            X: =978
+            Y: =192
+            ZIndex: =9
+
+    Icon1_1 As icon.Tools:
+        Color: =RGBA(79, 90, 94, 1)
+        Height: =55
+        Icon: =Icon.Tools
+        OnSelect: |-
+            =UpdateContext({varLoading: false})
+        Visible: =If(User().FullName in LookUp(Developers, User().FullName = Developer.DisplayName, Developer.DisplayName), true, false)
+        Width: =63
+        X: =1303
+        Y: =713
+        ZIndex: =50
+
     grp_raise_new_request_1 As group:
         Height: =5
         Width: =5
@@ -8957,16 +8969,4 @@ Dashboard As screen:
             X: =978
             Y: =111
             ZIndex: =5
-
-    Icon1_1 As icon.Tools:
-        Color: =RGBA(79, 90, 94, 1)
-        Height: =55
-        Icon: =Icon.Tools
-        OnSelect: |-
-            =UpdateContext({varLoading: false})
-        Visible: =If(User().FullName in LookUp(Developers, User().FullName = Developer.DisplayName, Developer.DisplayName), true, false)
-        Width: =63
-        X: =1303
-        Y: =713
-        ZIndex: =53
 
