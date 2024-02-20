@@ -26,7 +26,8 @@
             Height: =50
             Required: =false
             Update: =DataCardValue272.Selected
-            Visible: =If(IsBlank(varInductionLog.'Signature Line Manager'), false, true)
+            Visible: |
+                =true
             Width: =1284
             X: =0
             Y: =73
@@ -41,21 +42,6 @@
                 X: =30
                 Y: =10
                 ZIndex: =1
-
-            DataCardValue272 As combobox:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultSelectedItems: =Parent.Default
-                DisplayFields: =["Value"]
-                Items: =Choices([@'Induction Log'].EmployeeApproval)
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                SearchFields: =["Value"]
-                SearchItems: =Choices('Induction Log'.EmployeeApproval,DataCardValue272.SearchText)
-                SelectMultiple: =false
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey505.Y + DataCardKey505.Height + 5
-                ZIndex: =2
 
             ErrorMessage506 As label:
                 AutoHeight: =true
@@ -81,6 +67,39 @@
                 Wrap: =false
                 Y: =DataCardKey505.Y
                 ZIndex: =4
+
+            DataCardValue406_1 As text:
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
+                Default: =If(Checkbox2_1.Value=true, Concatenate("Electronically signed by ", User().FullName, " ", Today()), Parent.Default)
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: |-
+                    =	
+                    RGBA(88,89,91,0.01)
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                PressedBorderColor: =RGBA(88,89,91,0.5)
+                PressedColor: =Color.Black
+                Size: =12
+                Tooltip: =Parent.DisplayName
+                Width: =582
+                X: =40
+                Y: =69
+                ZIndex: =5
+
+            Checkbox2_1 As checkbox:
+                Font: =Font.Arial
+                Size: =12
+                Text: ="I confirm that the above induction has taken place."
+                Width: =582
+                X: =40
+                Y: =62
+                ZIndex: =6
 
         UID_DataCard18 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -16479,7 +16498,7 @@
             DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Useofe_x002d_mailconfidentiality")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =105
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Useofe_x002d_mailconfidentiality")
             Required: =false
             Update: =If(Checkbox1_62.Value =true,"Complete","")
@@ -16550,7 +16569,7 @@
             DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Date66")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =165
+            Height: =105
             Required: =false
             Update: =DataCardValue405.SelectedDate
             Width: =642
@@ -16632,7 +16651,7 @@
             DisplayMode: =If(IsBlank(varInductionLog.'Signature Line Manager'), DisplayMode.Edit, DisplayMode.View)
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"Comments66")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =165
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "Comments66")
             Required: =false
             Update: =DataCardValue473.Text
@@ -16725,76 +16744,7 @@
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "SignatureLineManager")
             Required: =false
             Update: =DataCardValue406.Text
-            Visible: |-
-                =If(
-                    Or(
-                        Checkbox1.Value = false,
-                        Checkbox1_1.Value = false,
-                        Checkbox1_2.Value = false,
-                        Checkbox1_3.Value = false,
-                        Checkbox1_4.Value = false,
-                        Checkbox1_5.Value = false,
-                        Checkbox1_6.Value = false,
-                        Checkbox1_7.Value = false,
-                        Checkbox1_8.Value = false,
-                        Checkbox1_9.Value = false,
-                        Checkbox1_10.Value = false,
-                        Checkbox1_11.Value = false,
-                        Checkbox1_12.Value = false,
-                        Checkbox1_13.Value = false,
-                        Checkbox1_14.Value = false,
-                        Checkbox1_15.Value = false,
-                        Checkbox1_16.Value = false,
-                        Checkbox1_17.Value = false,
-                        Checkbox1_18.Value = false,
-                        Checkbox1_19.Value = false,
-                        Checkbox1_20.Value = false,
-                        Checkbox1_21.Value = false,
-                        Checkbox1_22.Value = false,
-                        Checkbox1_23.Value = false,
-                        Checkbox1_24.Value = false,
-                        Checkbox1_25.Value = false,
-                        Checkbox1_26.Value = false,
-                        Checkbox1_27.Value = false,
-                        Checkbox1_28.Value = false,
-                        Checkbox1_29.Value = false,
-                        Checkbox1_30.Value = false,
-                        Checkbox1_31.Value = false,
-                        Checkbox1_32.Value = false,
-                        Checkbox1_33.Value = false,
-                        Checkbox1_34.Value = false,
-                        Checkbox1_35.Value = false,
-                        Checkbox1_36.Value = false,
-                        Checkbox1_37.Value = false,
-                        Checkbox1_38.Value = false,
-                        Checkbox1_39.Value = false,
-                        Checkbox1_40.Value = false,
-                        Checkbox1_41.Value = false,
-                        Checkbox1_42.Value = false,
-                        Checkbox1_43.Value = false,
-                        Checkbox1_44.Value = false,
-                        Checkbox1_45.Value = false,
-                        Checkbox1_46.Value = false,
-                        Checkbox1_47.Value = false,
-                        Checkbox1_48.Value = false,
-                        Checkbox1_49.Value = false,
-                        Checkbox1_50.Value = false,
-                        Checkbox1_51.Value = false,
-                        Checkbox1_52.Value = false,
-                        Checkbox1_53.Value = false,
-                        Checkbox1_54.Value = false,
-                        Checkbox1_55.Value = false,
-                        Checkbox1_56.Value = false,
-                        Checkbox1_57.Value = false,
-                        Checkbox1_58.Value = false,
-                        Checkbox1_59.Value = false,
-                        Checkbox1_60.Value = false,
-                        Checkbox1_61.Value = false,
-                        Checkbox1_62.Value = false
-                    ),
-                    false,
-                    true
-                )
+            Visible: =true
             Width: =642
             X: =0
             Y: =72
@@ -16821,6 +16771,8 @@
                 Default: =If(Checkbox2.Value=true, Concatenate("Electronically signed by ", User().FullName, " ", Today()), Parent.Default)
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: |-
                     =	
@@ -16829,6 +16781,11 @@
                 PaddingLeft: =5
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
