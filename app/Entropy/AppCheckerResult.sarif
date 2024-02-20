@@ -15356,6 +15356,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'Induction Log Page'.Form1_3.EmployeeCommentsApproval_DataCard1.DataCardValue473_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Induction Log Page'.Form1_3.EmployeeCommentsApproval_DataCard1.DataCardValue473_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Induction Log Page",
+                "type": "'Induction Log Page'.Form1_3.EmployeeCommentsApproval_DataCard1.DataCardValue473_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "'Induction Log Page'.ButtonCanvas1_10.AccessibleLabel"
                 }
               ],
