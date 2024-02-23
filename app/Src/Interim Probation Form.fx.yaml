@@ -4,6 +4,7 @@
 
     form_interim_probation_form As form:
         DataSource: ='Interim probation review form'
+        DefaultMode: =FormMode.New
         Height: =538
         Item: =varInterimProbationForm
         NumberOfColumns: =2

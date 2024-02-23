@@ -3,7 +3,7 @@
     "ApiId": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
     "CdpRevision": {
       "BaseUrl": "/",
-      "LastChangedTimeString": "2024-01-08T17:51:11.4470000Z",
+      "LastChangedTimeString": "2024-02-12T21:23:17.3090000Z",
       "RevisionNumber": 1
     },
     "ConnectedDataSourceInfoNameMapping": {
@@ -26,6 +26,7 @@
       "AttendanceComments": "AttendanceComments",
       "Author": "Created By",
       "Author#Claims": "Created By Claims",
+      "Comment": "Comment",
       "CompleteFlag": "CompleteFlag",
       "ComplianceAssetId": "Compliance Asset Id",
       "ConfirmProbationLetterFlag": "ConfirmProbationLetterFlag",
@@ -33,6 +34,8 @@
       "Created": "Created",
       "Editor": "Modified By",
       "Editor#Claims": "Modified By Claims",
+      "EmployeeApproval": "EmployeeApproval",
+      "EmployeeApproval#Id": "EmployeeApproval Id",
       "EmployeeComments": "EmployeeComments",
       "EmployeeSignatureFlag": "EmployeeSignatureFlag",
       "EmployeeSpectrumFlag": "EmployeeSpectrumFlag",
@@ -54,6 +57,7 @@
       "Objectives": "Objectives",
       "OData__ColorTag": "Color Tag",
       "ReviewDate": "ReviewDate",
+      "ReviseFlag": "ReviseFlag",
       "Service": "Service",
       "Site": "Site",
       "SpectrumEmployeeName": "SpectrumEmployeeName",
