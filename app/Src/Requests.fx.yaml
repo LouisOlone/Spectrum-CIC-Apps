@@ -79,7 +79,7 @@ Requests As screen:
                 Requests_Master,
                 And(
                     requestor.DisplayName = User().FullName,
-                    complete_flag="false"
+                    Or(complete_flag="false", IsBlank(complete_flag))
                 )
             )
         Layout: =Layout.Vertical
