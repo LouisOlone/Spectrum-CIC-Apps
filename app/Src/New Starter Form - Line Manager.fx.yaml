@@ -2252,8 +2252,8 @@
             Update: =DataCardValue327.Text
             Visible: =false
             Width: =642
-            X: =1
-            Y: =16
+            X: =0
+            Y: =17
             ZIndex: =1
 
             DataCardKey331 As label:
@@ -2328,7 +2328,7 @@
             Visible: =If(DataCardValue318.Selected.Value ="Yes", true,false)
             Width: =642
             X: =1
-            Y: =17
+            Y: =16
             ZIndex: =1
 
             DataCardKey323 As label:
@@ -2581,7 +2581,7 @@
             Update: =DateValue3.SelectedDate
             Visible: =false
             Width: =642
-            X: =0
+            X: =1
             Y: =17
             ZIndex: =1
 
