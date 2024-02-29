@@ -557,83 +557,6 @@
                 Y: =108
                 ZIndex: =5
 
-        EndDate_DataCard2 As typedDataCard.dateEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="field_67"
-            Default: =ThisItem.EndDate
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@NewStarterForm],DataSourceInfo.DisplayName,"field_67")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            Required: =false
-            Update: =DataCardValue324.SelectedDate
-            Visible: |-
-                =Or(If(DataCardValue322.Selected.Value ="Fixed Term",true,false),
-                If(DataCardValue322.Selected.Value ="Secondment",true,false))
-            Width: =642
-            X: =0
-            Y: =4
-            ZIndex: =1
-
-            DataCardKey328 As label:
-                AutoHeight: =true
-                Color: =RGBA(77,164,65,1)
-                Font: =Font.Arial
-                FontWeight: =FontWeight.Bold
-                Height: =34
-                Size: =14
-                Text: ="End date"
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue324 As datepicker:
-                BorderColor: =RGBA(88,89,91,0.25)
-                DefaultDate: =Parent.Default
-                DisplayMode: =Parent.DisplayMode
-                EndYear: =Year(Today())+100
-                Font: =Font.Arial
-                IconBackground: |-
-                    =	
-                    RGBA(74,164,65,1)
-                IsEditable: =true
-                PaddingBottom: =0
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                Size: =12
-                StartYear: =1899
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey328.Y + DataCardKey328.Height + 5
-                ZIndex: =2
-
-            ErrorMessage329 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue324.Y + DataCardValue324.Height
-                ZIndex: =3
-
-            StarVisible329 As label:
-                Align: =Align.Center
-                Height: =DataCardKey328.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey328.Y
-                ZIndex: =4
-
         supervisor_DataCard2 As typedDataCard.comboBoxEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="supervisor"
@@ -727,6 +650,83 @@
                 Y: =108
                 ZIndex: =5
 
+        EndDate_DataCard2 As typedDataCard.dateEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="field_67"
+            Default: =ThisItem.EndDate
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@NewStarterForm],DataSourceInfo.DisplayName,"field_67")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue324.SelectedDate
+            Visible: |-
+                =Or(If(DataCardValue322.Selected.Value ="Fixed Term",true,false),
+                If(DataCardValue322.Selected.Value ="Secondment",true,false))
+            Width: =642
+            X: =0
+            Y: =4
+            ZIndex: =1
+
+            DataCardKey328 As label:
+                AutoHeight: =true
+                Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Size: =14
+                Text: ="End date"
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue324 As datepicker:
+                BorderColor: =RGBA(88,89,91,0.25)
+                DefaultDate: =Parent.Default
+                DisplayMode: =Parent.DisplayMode
+                EndYear: =Year(Today())+100
+                Font: =Font.Arial
+                IconBackground: |-
+                    =	
+                    RGBA(74,164,65,1)
+                IsEditable: =true
+                PaddingBottom: =0
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                Size: =12
+                StartYear: =1899
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey328.Y + DataCardKey328.Height + 5
+                ZIndex: =2
+
+            ErrorMessage329 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue324.Y + DataCardValue324.Height
+                ZIndex: =3
+
+            StarVisible329 As label:
+                Align: =Align.Center
+                Height: =DataCardKey328.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey328.Y
+                ZIndex: =4
+
         PayType_DataCard2 As typedDataCard.comboBoxEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="field_69"
@@ -814,6 +814,81 @@
                 Y: =DataCardKey332.Y
                 ZIndex: =4
 
+        StartDate_DataCard2 As typedDataCard.dateEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="field_66"
+            Default: =ThisItem.StartDate
+            DisplayMode: =DisplayMode.Edit
+            DisplayName: =DataSourceInfo([@NewStarterForm],DataSourceInfo.DisplayName,"field_66")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue323.SelectedDate
+            Width: =642
+            X: =0
+            Y: =5
+            ZIndex: =1
+
+            DataCardKey327 As label:
+                AutoHeight: =true
+                Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Size: =14
+                Text: ="Start date"
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue323 As datepicker:
+                BorderColor: =RGBA(88,89,91,0.25)
+                DefaultDate: =Parent.Default
+                DisplayMode: =Parent.DisplayMode
+                EndYear: =Year(Today())+100
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
+                IconBackground: |-
+                    =	
+                    RGBA(74,164,65,1)
+                IsEditable: =true
+                PaddingBottom: =0
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                Size: =12
+                StartYear: =1899
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey327.Y + DataCardKey327.Height + 5
+                ZIndex: =2
+
+            ErrorMessage328 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue323.Y + DataCardValue323.Height
+                ZIndex: =3
+
+            StarVisible328 As label:
+                Align: =Align.Center
+                Height: =DataCardKey327.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey327.Y
+                ZIndex: =4
+
         Hours_DataCard2 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="field_68"
@@ -827,8 +902,8 @@
             Update: =DataCardValue333.Text
             Visible: =Not(IsBlank(DataCardValue328.Selected.Value))
             Width: =642
-            X: =0
-            Y: =6
+            X: =1
+            Y: =5
             ZIndex: =1
 
             DataCardKey337 As label:
@@ -903,7 +978,7 @@
             Update: =DataCardValue330.Selected.Value
             Visible: =If(DataCardValue328.Selected.Value ="Agenda for change", true, false)
             Width: =642
-            X: =1
+            X: =0
             Y: =6
             ZIndex: =1
 
@@ -990,8 +1065,8 @@
             Update: =DataCardValue331.Selected.Value
             Visible: =If(DataCardValue328.Selected.Value ="Agenda for change", true, false)
             Width: =642
-            X: =0
-            Y: =7
+            X: =1
+            Y: =6
             ZIndex: =1
 
             DataCardKey335 As label:
@@ -1062,6 +1137,82 @@
                 X: =30
                 Y: =DataCardKey332.Y + DataCardKey332.Height + 5
                 ZIndex: =5
+
+        Salary_DataCard2 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="field_70"
+            Default: =ThisItem.Salary
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@NewStarterForm],DataSourceInfo.DisplayName,"field_70")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@NewStarterForm], DataSourceInfo.MaxLength, "field_70")
+            Required: =false
+            Update: =DataCardValue329.Text
+            Visible: =If(DataCardValue328.Selected.Value ="Spot", true, false)
+            Width: =642
+            X: =0
+            Y: =7
+            ZIndex: =1
+
+            DataCardKey333 As label:
+                AutoHeight: =true
+                Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Size: =14
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue329 As text:
+                BorderColor: =RGBA(88,89,91,0.25)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                PressedBorderColor: =RGBA(88,89,91,0.5)
+                PressedColor: =Color.Black
+                Size: =12
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey333.Y + DataCardKey333.Height + 5
+                ZIndex: =2
+
+            ErrorMessage334 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue329.Y + DataCardValue329.Height
+                ZIndex: =3
+
+            StarVisible334 As label:
+                Align: =Align.Center
+                Height: =DataCardKey333.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey333.Y
+                ZIndex: =4
 
         AFCWage_DataCard2 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -1150,82 +1301,6 @@
                 Y: =DataCardKey332.Y + DataCardKey332.Height + 5
                 ZIndex: =5
 
-        Salary_DataCard2 As typedDataCard.textualEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="field_70"
-            Default: =ThisItem.Salary
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@NewStarterForm],DataSourceInfo.DisplayName,"field_70")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@NewStarterForm], DataSourceInfo.MaxLength, "field_70")
-            Required: =false
-            Update: =DataCardValue329.Text
-            Visible: =If(DataCardValue328.Selected.Value ="Spot", true, false)
-            Width: =642
-            X: =0
-            Y: =8
-            ZIndex: =1
-
-            DataCardKey333 As label:
-                AutoHeight: =true
-                Color: =RGBA(77,164,65,1)
-                Font: =Font.Arial
-                FontWeight: =FontWeight.Bold
-                Height: =34
-                Size: =14
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue329 As text:
-                BorderColor: =RGBA(88,89,91,0.25)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                Font: =Font.Arial
-                FontWeight: =FontWeight.Lighter
-                HoverBorderColor: =RGBA(88,89,91,1)
-                HoverFill: =RGBA(88,89,91,0.01)
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                PressedBorderColor: =RGBA(88,89,91,0.5)
-                PressedColor: =Color.Black
-                Size: =12
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey333.Y + DataCardKey333.Height + 5
-                ZIndex: =2
-
-            ErrorMessage334 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue329.Y + DataCardValue329.Height
-                ZIndex: =3
-
-            StarVisible334 As label:
-                Align: =Align.Center
-                Height: =DataCardKey333.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey333.Y
-                ZIndex: =4
-
         SupervisoryRoleFlag_DataCard2 As typedDataCard.comboBoxEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="field_73"
@@ -1237,8 +1312,8 @@
             Required: =false
             Update: =DataCardValue334.Selected
             Width: =642
-            X: =1
-            Y: =5
+            X: =0
+            Y: =8
             ZIndex: =1
 
             DataCardKey339 As label:
@@ -1309,81 +1384,6 @@
                 Width: =30
                 Wrap: =false
                 Y: =DataCardKey339.Y
-                ZIndex: =4
-
-        StartDate_DataCard2 As typedDataCard.dateEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="field_66"
-            Default: =ThisItem.StartDate
-            DisplayMode: =DisplayMode.Edit
-            DisplayName: =DataSourceInfo([@NewStarterForm],DataSourceInfo.DisplayName,"field_66")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            Required: =false
-            Update: =DataCardValue323.SelectedDate
-            Width: =642
-            X: =0
-            Y: =5
-            ZIndex: =1
-
-            DataCardKey327 As label:
-                AutoHeight: =true
-                Color: =RGBA(77,164,65,1)
-                Font: =Font.Arial
-                FontWeight: =FontWeight.Bold
-                Height: =34
-                Size: =14
-                Text: ="Start date"
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue323 As datepicker:
-                BorderColor: =RGBA(88,89,91,0.25)
-                DefaultDate: =Parent.Default
-                DisplayMode: =Parent.DisplayMode
-                EndYear: =Year(Today())+100
-                Font: =Font.Arial
-                FontWeight: =FontWeight.Lighter
-                IconBackground: |-
-                    =	
-                    RGBA(74,164,65,1)
-                IsEditable: =true
-                PaddingBottom: =0
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                Size: =12
-                StartYear: =1899
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey327.Y + DataCardKey327.Height + 5
-                ZIndex: =2
-
-            ErrorMessage328 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue323.Y + DataCardValue323.Height
-                ZIndex: =3
-
-            StarVisible328 As label:
-                Align: =Align.Center
-                Height: =DataCardKey327.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey327.Y
                 ZIndex: =4
 
         EmployeeReportees_DataCard2 As typedDataCard.comboBoxMultiSelectEditCard:
@@ -1592,7 +1592,7 @@
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: =RGBA(77,164,65,0.5)
                 Items: =Choices([@NewStarterForm].ITAccountRequired)
-                OnChange: =Reset(DataCardValue338) && Reset(DataCardValue311) && Reset(DataCardValue312)
+                OnChange: =Reset(DataCardValue338) && Reset(DataCardValue311) 
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
@@ -1695,7 +1695,6 @@
                 SearchItems: =Choices(NewStarterForm.LicensesFlag,DataCardValue338.SearchText)
                 SelectionColor: =RGBA(0,0,0,1)
                 SelectionFill: =RGBA(74,164,65,0.5)
-                SelectMultiple: =false
                 Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -1728,82 +1727,6 @@
                 Y: =DataCardKey343.Y
                 ZIndex: =4
 
-        OtherDrives_DataCard2 As typedDataCard.textualEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="OtherDrives"
-            Default: =ThisItem.OtherDrives
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@NewStarterForm],DataSourceInfo.DisplayName,"OtherDrives")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =96
-            MaxLength: =DataSourceInfo([@NewStarterForm], DataSourceInfo.MaxLength, "OtherDrives")
-            Required: =false
-            Update: =DataCardValue312.Text
-            Visible: =If(DataCardValue337.Selected.Value ="Yes", true,false)
-            Width: =642
-            X: =0
-            Y: =12
-            ZIndex: =1
-
-            DataCardKey316 As label:
-                AutoHeight: =true
-                Color: =RGBA(77,164,65,1)
-                Font: =Font.Arial
-                FontWeight: =FontWeight.Bold
-                Height: =34
-                Size: =14
-                Text: ="Please state any other drives you require below "
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue312 As text:
-                BorderColor: =RGBA(88,89,91,0.25)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                Font: =Font.Arial
-                FontWeight: =FontWeight.Lighter
-                HoverBorderColor: =RGBA(88,89,91,1)
-                HoverFill: =RGBA(88,89,91,0.01)
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                PressedBorderColor: =RGBA(88,89,91,0.5)
-                PressedColor: =Color.Black
-                Size: =12
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =46
-                ZIndex: =2
-
-            ErrorMessage317 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue312.Y + DataCardValue312.Height
-                ZIndex: =3
-
-            StarVisible317 As label:
-                Align: =Align.Center
-                Height: =DataCardKey316.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey316.Y
-                ZIndex: =4
-
         LaptopRequired_DataCard2 As typedDataCard.comboBoxEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="LaptopRequired"
@@ -1811,12 +1734,12 @@
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@NewStarterForm],DataSourceInfo.DisplayName,"LaptopRequired")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =96
+            Height: =98
             Required: =false
             Update: =DataCardValue313.Selected
             Width: =1284
             X: =0
-            Y: =13
+            Y: =12
             ZIndex: =1
 
             DataCardKey317 As label:
@@ -1940,6 +1863,7 @@
                 HoverBorderColor: =RGBA(88,89,91,1)
                 HoverFill: =RGBA(88,89,91,0.01)
                 MaxLength: =Parent.MaxLength
+                Mode: =TextMode.MultiLine
                 PaddingLeft: =5
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 PressedColor: =Color.Black
@@ -1976,91 +1900,6 @@
                 Y: =DataCardKey315.Y
                 ZIndex: =4
 
-        "'Request Reason_DataCard2' As typedDataCard.comboBoxEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="RequestReason"
-            Default: =ThisItem.'Request Reason'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@NewStarterForm],DataSourceInfo.DisplayName,"RequestReason")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            Required: =false
-            Update: =DataCardValue314.Selected
-            Visible: =If(DataCardValue313.Selected.Value ="Yes", true,false)
-            Width: =642
-            X: =0
-            Y: =14
-            ZIndex: =1
-
-            DataCardKey318 As label:
-                AutoHeight: =true
-                Color: =RGBA(77,164,65,1)
-                Font: =Font.Arial
-                FontWeight: =FontWeight.Bold
-                Height: =34
-                Size: =14
-                Text: ="Request reason"
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue314 As combobox:
-                BorderColor: =RGBA(88,89,91,0.25)
-                ChevronBackground: |-
-                    =	
-                    RGBA(77,164,65,1)
-                ChevronHoverBackground: =ColorFade(RGBA(77,164,65,1), -20%)
-                DefaultSelectedItems: =Parent.Default
-                DisplayFields: =["Value"]
-                DisplayMode: =Parent.DisplayMode
-                Font: =Font.Arial
-                FontWeight: =FontWeight.Lighter
-                HoverBorderColor: =RGBA(88,89,91,1)
-                HoverFill: =RGBA(77,164,65,0.5)
-                Items: =Choices([@NewStarterForm].'Request Reason')
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                PressedBorderColor: =RGBA(88,89,91,0.5)
-                PressedColor: =Color.Black
-                PressedFill: =Self.Fill
-                SearchFields: =["Value"]
-                SearchItems: =Choices(NewStarterForm.'Request Reason',DataCardValue314.SearchText)
-                SelectionColor: =RGBA(0,0,0,1)
-                SelectionFill: =RGBA(74,164,65,0.5)
-                SelectMultiple: =false
-                Size: =12
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey318.Y + DataCardKey318.Height + 5
-                ZIndex: =2
-
-            ErrorMessage319 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue314.Y + DataCardValue314.Height
-                ZIndex: =3
-
-            StarVisible319 As label:
-                Align: =Align.Center
-                Height: =DataCardKey318.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey318.Y
-                ZIndex: =4
-
         "'4GReason_DataCard2' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="OData__x0034_GReason"
@@ -2075,7 +1914,7 @@
             Visible: =If(DataCardValue315.Selected.Value ="Yes", true,false)
             Width: =642
             X: =0
-            Y: =15
+            Y: =14
             ZIndex: =1
 
             DataCardKey320 As label:
@@ -2149,7 +1988,7 @@
             Update: =DataCardValue318.Selected
             Width: =1284
             X: =0
-            Y: =16
+            Y: =15
             ZIndex: =1
 
             DataCardKey322 As label:
@@ -2229,6 +2068,91 @@
                 Width: =1284
                 ZIndex: =5
 
+        "'Request Reason_DataCard2' As typedDataCard.comboBoxEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="RequestReason"
+            Default: =ThisItem.'Request Reason'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@NewStarterForm],DataSourceInfo.DisplayName,"RequestReason")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue314.Selected
+            Visible: =If(DataCardValue313.Selected.Value ="Yes", true,false)
+            Width: =642
+            X: =0
+            Y: =13
+            ZIndex: =1
+
+            DataCardKey318 As label:
+                AutoHeight: =true
+                Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Size: =14
+                Text: ="Request reason"
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue314 As combobox:
+                BorderColor: =RGBA(88,89,91,0.25)
+                ChevronBackground: |-
+                    =	
+                    RGBA(77,164,65,1)
+                ChevronHoverBackground: =ColorFade(RGBA(77,164,65,1), -20%)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["Value"]
+                DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(77,164,65,0.5)
+                Items: =Choices([@NewStarterForm].'Request Reason')
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PressedBorderColor: =RGBA(88,89,91,0.5)
+                PressedColor: =Color.Black
+                PressedFill: =Self.Fill
+                SearchFields: =["Value"]
+                SearchItems: =Choices(NewStarterForm.'Request Reason',DataCardValue314.SearchText)
+                SelectionColor: =RGBA(0,0,0,1)
+                SelectionFill: =RGBA(74,164,65,0.5)
+                SelectMultiple: =false
+                Size: =12
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey318.Y + DataCardKey318.Height + 5
+                ZIndex: =2
+
+            ErrorMessage319 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue314.Y + DataCardValue314.Height
+                ZIndex: =3
+
+            StarVisible319 As label:
+                Align: =Align.Center
+                Height: =DataCardKey318.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey318.Y
+                ZIndex: =4
+
         "'4GFlagRequired_DataCard2' As typedDataCard.comboBoxEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="OData__x0034_GFlagRequired"
@@ -2242,7 +2166,7 @@
             Visible: =If(DataCardValue313.Selected.Value ="Yes", true,false)
             Width: =642
             X: =1
-            Y: =14
+            Y: =13
             ZIndex: =1
 
             DataCardKey319 As label:
@@ -2315,84 +2239,6 @@
                 Y: =DataCardKey319.Y
                 ZIndex: =4
 
-        MobilePhoneReason_DataCard2 As typedDataCard.textualEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="MobilePhoneReason"
-            Default: =ThisItem.MobilePhoneReason
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@NewStarterForm],DataSourceInfo.DisplayName,"MobilePhoneReason")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =295
-            MaxLength: =DataSourceInfo([@NewStarterForm], DataSourceInfo.MaxLength, "MobilePhoneReason")
-            Required: =false
-            Update: =DataCardValue317.Text
-            Visible: =If(DataCardValue318.Selected.Value ="Yes", true,false)
-            Width: =642
-            X: =0
-            Y: =17
-            ZIndex: =1
-
-            DataCardKey321 As label:
-                AutoHeight: =true
-                Color: =RGBA(77,164,65,1)
-                Font: =Font.Arial
-                FontWeight: =FontWeight.Bold
-                Height: =34
-                Size: =14
-                Text: ="Reason for Mobile Phone"
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue317 As text:
-                BorderColor: =RGBA(88,89,91,0.25)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                Font: =Font.Arial
-                FontWeight: =FontWeight.Lighter
-                Height: =356
-                HoverBorderColor: =RGBA(88,89,91,1)
-                HoverFill: =RGBA(88,89,91,0.01)
-                MaxLength: =Parent.MaxLength
-                Mode: =TextMode.MultiLine
-                PaddingLeft: =5
-                PressedBorderColor: =RGBA(88,89,91,0.5)
-                PressedColor: =Color.Black
-                Size: =12
-                Tooltip: =Parent.DisplayName
-                Width: =582
-                X: =30
-                Y: =DataCardKey321.Y + DataCardKey321.Height + 5
-                ZIndex: =2
-
-            ErrorMessage322 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue317.Y + DataCardValue317.Height
-                ZIndex: =3
-
-            StarVisible322 As label:
-                Align: =Align.Center
-                Height: =DataCardKey321.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey321.Y
-                ZIndex: =4
-
         UID_DataCard14 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="UID"
@@ -2406,8 +2252,8 @@
             Update: =DataCardValue327.Text
             Visible: =false
             Width: =642
-            X: =0
-            Y: =18
+            X: =1
+            Y: =16
             ZIndex: =1
 
             DataCardKey331 As label:
@@ -2468,97 +2314,6 @@
                 Wrap: =false
                 Y: =DataCardKey331.Y
                 ZIndex: =4
-
-        ManagerSignatureDate_DataCard2 As typedDataCard.dateTimeEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="field_77"
-            Default: =ThisItem.ManagerSignatureDate
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@NewStarterForm],DataSourceInfo.DisplayName,"field_77")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            Required: =false
-            Update: =DateValue3.SelectedDate
-            Visible: =false
-            Width: =642
-            X: =0
-            Y: =19
-            ZIndex: =1
-
-            DataCardKey338 As label:
-                AutoHeight: =true
-                Color: =RGBA(77,164,65,1)
-                Font: =Font.Arial
-                FontWeight: =FontWeight.Bold
-                Height: =34
-                Size: =14
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DateValue3 As datepicker:
-                BorderColor: =RGBA(88,89,91,0.25)
-                DefaultDate: =Now()
-                DisplayMode: =Parent.DisplayMode
-                EndYear: =Year(Today())+100
-                Font: =Font.Arial
-                IconBackground: |-
-                    =	
-                    RGBA(74,164,65,1)
-                IsEditable: =true
-                PaddingBottom: =0
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                Size: =12
-                StartYear: =1899
-                Tooltip: =Parent.DisplayName
-                Width: =582
-                X: =30
-                Y: =DataCardKey338.Y + DataCardKey338.Height + 5
-                ZIndex: =2
-
-            Separator3 As label:
-                Align: =Align.Center
-                FontWeight: =FontWeight.Bold
-                Height: =
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: |-
-                    =":"
-                Width: =10
-                Wrap: =false
-                X: =
-                Y: =
-                ZIndex: =4
-
-            ErrorMessage339 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =
-                ZIndex: =6
-
-            StarVisible339 As label:
-                Align: =Align.Center
-                Height: =DataCardKey338.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey338.Y
-                ZIndex: =7
 
         ManagerUserPolicyFlag_DataCard2 As typedDataCard.comboBoxEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -2662,6 +2417,249 @@
                 Y: =75
                 ZIndex: =5
 
+        LineManagerCompleteFlag_DataCard2 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="LineManagerCompleteFlag"
+            Default: =ThisItem.LineManagerCompleteFlag
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@NewStarterForm],DataSourceInfo.DisplayName,"LineManagerCompleteFlag")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@NewStarterForm], DataSourceInfo.MaxLength, "LineManagerCompleteFlag")
+            Required: =false
+            Update: =DataCardValue341.Text
+            Visible: =false
+            Width: =642
+            X: =1
+            Y: =18
+            ZIndex: =1
+
+            DataCardKey346 As label:
+                AutoHeight: =true
+                Color: =RGBA(77,164,65,1)
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Size: =14
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue341 As text:
+                BorderColor: =RGBA(88,89,91,0.25)
+                Default: ="True"
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                PressedBorderColor: =RGBA(88,89,91,0.5)
+                PressedColor: =Color.Black
+                Size: =12
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey346.Y + DataCardKey346.Height + 5
+                ZIndex: =2
+
+            ErrorMessage347 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue341.Y + DataCardValue341.Height
+                ZIndex: =3
+
+            StarVisible347 As label:
+                Align: =Align.Center
+                Height: =DataCardKey346.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey346.Y
+                ZIndex: =4
+
+        MobilePhoneReason_DataCard2 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="MobilePhoneReason"
+            Default: =ThisItem.MobilePhoneReason
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@NewStarterForm],DataSourceInfo.DisplayName,"MobilePhoneReason")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =295
+            MaxLength: =DataSourceInfo([@NewStarterForm], DataSourceInfo.MaxLength, "MobilePhoneReason")
+            Required: =false
+            Update: =DataCardValue317.Text
+            Visible: =If(DataCardValue318.Selected.Value ="Yes", true,false)
+            Width: =642
+            X: =0
+            Y: =16
+            ZIndex: =1
+
+            DataCardKey321 As label:
+                AutoHeight: =true
+                Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Size: =14
+                Text: ="Reason for Mobile Phone"
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue317 As text:
+                BorderColor: =RGBA(88,89,91,0.25)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
+                Height: =356
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
+                MaxLength: =Parent.MaxLength
+                Mode: =TextMode.MultiLine
+                PaddingLeft: =5
+                PressedBorderColor: =RGBA(88,89,91,0.5)
+                PressedColor: =Color.Black
+                Size: =12
+                Tooltip: =Parent.DisplayName
+                Width: =582
+                X: =30
+                Y: =DataCardKey321.Y + DataCardKey321.Height + 5
+                ZIndex: =2
+
+            ErrorMessage322 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue317.Y + DataCardValue317.Height
+                ZIndex: =3
+
+            StarVisible322 As label:
+                Align: =Align.Center
+                Height: =DataCardKey321.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey321.Y
+                ZIndex: =4
+
+        ManagerSignatureDate_DataCard2 As typedDataCard.dateTimeEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="field_77"
+            Default: =ThisItem.ManagerSignatureDate
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@NewStarterForm],DataSourceInfo.DisplayName,"field_77")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DateValue3.SelectedDate
+            Visible: =false
+            Width: =642
+            X: =0
+            Y: =17
+            ZIndex: =1
+
+            DataCardKey338 As label:
+                AutoHeight: =true
+                Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Size: =14
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DateValue3 As datepicker:
+                BorderColor: =RGBA(88,89,91,0.25)
+                DefaultDate: =Now()
+                DisplayMode: =Parent.DisplayMode
+                EndYear: =Year(Today())+100
+                Font: =Font.Arial
+                IconBackground: |-
+                    =	
+                    RGBA(74,164,65,1)
+                IsEditable: =true
+                PaddingBottom: =0
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                Size: =12
+                StartYear: =1899
+                Tooltip: =Parent.DisplayName
+                Width: =582
+                X: =30
+                Y: =DataCardKey338.Y + DataCardKey338.Height + 5
+                ZIndex: =2
+
+            Separator3 As label:
+                Align: =Align.Center
+                FontWeight: =FontWeight.Bold
+                Height: =
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: |-
+                    =":"
+                Width: =10
+                Wrap: =false
+                X: =
+                Y: =
+                ZIndex: =4
+
+            ErrorMessage339 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =
+                ZIndex: =6
+
+            StarVisible339 As label:
+                Align: =Align.Center
+                Height: =DataCardKey338.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey338.Y
+                ZIndex: =7
+
         SubmitITRequirements_DataCard2 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="SubmitITRequirements"
@@ -2675,7 +2673,7 @@
             Update: =DataCardValue340.Text
             Visible: =false
             Width: =642
-            X: =1
+            X: =0
             Y: =18
             ZIndex: =1
 
@@ -2734,80 +2732,6 @@
                 Width: =30
                 Wrap: =false
                 Y: =DataCardKey345.Y
-                ZIndex: =4
-
-        LineManagerCompleteFlag_DataCard2 As typedDataCard.textualEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="LineManagerCompleteFlag"
-            Default: =ThisItem.LineManagerCompleteFlag
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@NewStarterForm],DataSourceInfo.DisplayName,"LineManagerCompleteFlag")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@NewStarterForm], DataSourceInfo.MaxLength, "LineManagerCompleteFlag")
-            Required: =false
-            Update: =DataCardValue341.Text
-            Visible: =false
-            Width: =642
-            X: =1
-            Y: =19
-            ZIndex: =1
-
-            DataCardKey346 As label:
-                AutoHeight: =true
-                Color: =RGBA(77,164,65,1)
-                FontWeight: =FontWeight.Bold
-                Height: =34
-                Size: =14
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue341 As text:
-                BorderColor: =RGBA(88,89,91,0.25)
-                Default: ="True"
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                Font: =Font.Arial
-                HoverBorderColor: =RGBA(88,89,91,1)
-                HoverFill: =RGBA(88,89,91,0.01)
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                PressedBorderColor: =RGBA(88,89,91,0.5)
-                PressedColor: =Color.Black
-                Size: =12
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey346.Y + DataCardKey346.Height + 5
-                ZIndex: =2
-
-            ErrorMessage347 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue341.Y + DataCardValue341.Height
-                ZIndex: =3
-
-            StarVisible347 As label:
-                Align: =Align.Center
-                Height: =DataCardKey346.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey346.Y
                 ZIndex: =4
 
     ButtonCanvas1_5 As Button:
