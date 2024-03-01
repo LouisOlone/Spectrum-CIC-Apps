@@ -70,9 +70,8 @@ Dashboard As screen:
                 Inbox,
                 And(
                     assigned_to.DisplayName = User().FullName,
-                    IsBlank(decision.Value)
-                )
-            )
+                    IsBlank(decision.Value),
+                    !If(action_required ="Complete",true)))
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
