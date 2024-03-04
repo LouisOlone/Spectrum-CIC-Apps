@@ -17239,7 +17239,7 @@
                 ZIndex: =4
 
             Checkbox2 As checkbox:
-                Default: =If(ThisItem.'Signature Line Manager' ="Complete", true, false)
+                Default: =If(IsBlank(ThisItem.'Signature Line Manager'), false, true)
                 Font: =Font.Arial
                 Size: =12
                 Text: ="I confirm that the above induction has taken place."
