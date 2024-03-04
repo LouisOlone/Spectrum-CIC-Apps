@@ -17248,6 +17248,17 @@
                 Y: =108
                 ZIndex: =5
 
+            Label16 As label:
+                Font: =Font.Arial
+                Height: =66
+                Italic: =true
+                Size: =11
+                Text: =If(IsBlank(ThisItem.'Signature Line Manager'), "", ThisItem.'Signature Line Manager')
+                Width: =582
+                X: =30
+                Y: =42
+                ZIndex: =6
+
     ButtonCanvas1_11 As Button:
         Appearance: ='ButtonCanvas.Appearance'.Primary
         BasePaletteColor: =RGBA(77, 164, 65, 1)
