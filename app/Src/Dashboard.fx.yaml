@@ -70,8 +70,10 @@ Dashboard As screen:
                 Inbox,
                 And(
                     assigned_to.DisplayName = User().FullName,
-                    IsBlank(decision.Value),
-                    !If(action_required ="Complete",true)))
+                    IsBlank(decision.Value)
+                )
+            )
+            //Dev update 04/03/2022 - Removed 'action_required <> Complete' as this was not a status column but a column to tell the user what to do with the action - I've change the flows now so that this reads 'Complete Form' as I appreciate it was confusing.
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
