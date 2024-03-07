@@ -30,8 +30,8 @@
             Visible: |
                 =If(IsBlank(varInductionLog.'Signature Line Manager'), false, true)
             Width: =642
-            X: =2
-            Y: =72
+            X: =0
+            Y: =73
             ZIndex: =1
 
             DataCardValue272 As combobox:
@@ -146,8 +146,8 @@
             Update: =DataCardValue473_1.Text
             Visible: =If(IsBlank(varInductionLog.'Signature Line Manager'), false, true)
             Width: =642
-            X: =3
-            Y: =72
+            X: =2
+            Y: =73
             ZIndex: =1
 
             ErrorMessage547 As label:
@@ -17166,7 +17166,7 @@
                     false,
                     true
                 )
-            Width: =642
+            Width: =1284
             X: =0
             Y: =72
             ZIndex: =3
@@ -17268,8 +17268,10 @@
         FontColor: =
         FontSize: =20
         Height: =44
-        OnSelect: =SubmitForm(Form1_3)
-        Text: ="Update"
+        OnSelect: |-
+            =SubmitForm(Form1_3);
+            If(Checkbox2.Value = true, SubmitForm(Form7_5))
+        Text: =If(Checkbox2.Value = true, "Submit","Update")
         Width: =136
         X: =1187
         Y: =711
@@ -17307,4 +17309,208 @@
         X: =1030
         Y: =711
         ZIndex: =5
+
+    Form7_5 As form:
+        DataSource: =Inbox
+        Height: =238
+        Item: |-
+            =
+            LookUp(Inbox,
+                                DataCardValue327.Text = UID)
+        Visible: =false
+        Width: =389
+        X: =963
+        Y: =434
+        ZIndex: =6
+
+        decision_DataCard3_5 As typedDataCard.comboBoxEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="decision"
+            Default: =ThisItem.decision
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@Inbox],DataSourceInfo.DisplayName,"decision")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =decision_DataCard3_5.Default
+            Width: =129
+            X: =1
+            Y: =0
+            ZIndex: =1
+
+            DataCardKey564_5 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            ErrorMessage571_5 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =
+                ZIndex: =3
+
+            StarVisible571_5 As label:
+                Align: =Align.Center
+                Height: =DataCardKey564_5.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey564_5.Y
+                ZIndex: =4
+
+            Dropdown1_5 As dropdown:
+                AllowEmptySelection: =true
+                Default: =If(Checkbox2.Value = true, "Complete")
+                Items: =Choices([@Inbox].decision)
+                Width: =80
+                X: =19
+                Y: =43
+                ZIndex: =5
+
+        decision_date_DataCard3_5 As typedDataCard.dateEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="decision_date"
+            Default: =ThisItem.decision_date
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@Inbox],DataSourceInfo.DisplayName,"decision_date")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue493_5.SelectedDate
+            Width: =129
+            X: =2
+            Y: =0
+            ZIndex: =1
+
+            DataCardKey566_5 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue493_5 As datepicker:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DisplayMode: =Parent.DisplayMode
+                EndYear: =Year(Today())+100
+                IsEditable: =true
+                PaddingBottom: =0
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                StartYear: =1899
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey566_5.Y + DataCardKey566_5.Height + 5
+                ZIndex: =2
+
+            ErrorMessage573_5 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue493_5.Y + DataCardValue493_5.Height
+                ZIndex: =3
+
+            StarVisible573_5 As label:
+                Align: =Align.Center
+                Height: =DataCardKey566_5.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey566_5.Y
+                ZIndex: =4
+
+        UID_DataCard21_5 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="UID"
+            Default: =ThisItem.UID
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@Inbox],DataSourceInfo.DisplayName,"UID")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@Inbox], DataSourceInfo.MaxLength, "UID")
+            Required: =false
+            Update: =DataCardValue312_5.Text
+            Width: =129
+            X: =0
+            Y: =0
+            ZIndex: =56
+
+            DataCardKey316_5 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue312_5 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey316_5.Y + DataCardKey316_5.Height + 5
+                ZIndex: =2
+
+            ErrorMessage549_5 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue312_5.Y + DataCardValue312_5.Height
+                ZIndex: =3
+
+            StarVisible549_5 As label:
+                Align: =Align.Center
+                Height: =DataCardKey316_5.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey316_5.Y
+                ZIndex: =4
 

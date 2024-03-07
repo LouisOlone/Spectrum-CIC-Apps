@@ -3,13 +3,11 @@
     Label8 As label:
         Align: =Align.Center
         Font: =Font.Arial
-        Height: =299
+        Height: =142
         Size: =28
-        Text: |-
-            ="Your request has been successfully submitted. 
-            You will shortly receive an email with your reference number."
+        Text: ="Success confirmation"
         Width: =1366
-        Y: =304
+        Y: =335
         ZIndex: =4
 
     Timer1 As timer:
