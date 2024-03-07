@@ -344,7 +344,9 @@ Forms As screen:
         Color: =RGBA(0, 0, 0, 1)
         Height: =36
         Icon: =Icon.BackArrow
-        OnSelect: =Navigate(Dashboard)
+        OnSelect: |-
+            =Navigate(Dashboard);
+            Refresh('4G Laptop Requests'); Refresh('Afc Wages'); Refresh(Developers); Refresh('Final Probation Review Form'); Refresh(Inbox); Refresh('Induction Log'); Refresh('Interim probation review form'); Refresh('IT Equipment And Requests'); Refresh('IT Incidents'); Refresh('Laptop Requests'); Refresh('Mobile Requests'); Refresh(NewStarterForm); Refresh('Onboarding Record'); Refresh('Peripherals Requests'); Refresh(Requests_1); Refresh(Requests_Master); Refresh('Services List'); Refresh(SharedDrives); Refresh('Smartcard Positions'); Refresh('Smartcard Positions Requests'); Refresh('Smartcard Requests'); Refresh('Special IT Requests');
         Width: =36
         X: =13
         Y: =2
