@@ -9016,9 +9016,11 @@ Dashboard As screen:
             ZIndex: =5
 
     Icon10 As icon.GlobeRefresh:
+        Height: =24
         Icon: =Icon.GlobeRefresh
         OnSelect: =Refresh('4G Laptop Requests'); Refresh('Afc Wages'); Refresh(Developers); Refresh('Final Probation Review Form'); Refresh(Inbox); Refresh('Induction Log'); Refresh('Interim probation review form'); Refresh('IT Equipment And Requests'); Refresh('IT Incidents'); Refresh('Laptop Requests'); Refresh('Mobile Requests'); Refresh(NewStarterForm); Refresh('Onboarding Record'); Refresh('Peripherals Requests'); Refresh(Requests_1); Refresh(Requests_Master); Refresh('Services List'); Refresh(SharedDrives); Refresh('Smartcard Positions'); Refresh('Smartcard Positions Requests'); Refresh('Smartcard Requests'); Refresh('Special IT Requests');
-        X: =170
-        Y: =3
+        Width: =23
+        X: =923
+        Y: =114
         ZIndex: =54
 
