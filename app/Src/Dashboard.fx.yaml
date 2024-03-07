@@ -464,6 +464,28 @@ Dashboard As screen:
                 UpdateContext({varSmartcardRequest: false});
                 UpdateContext({varSmartcardPositionsRequest: false});
                 UpdateContext({var4GLaptopTest: false});
+                Refresh('4G Laptop Requests');
+                Refresh('Afc Wages');
+                Refresh(Developers);
+                Refresh('Final Probation Review Form');
+                Refresh(Inbox);
+                Refresh('Induction Log');
+                Refresh('Interim probation review form');
+                Refresh('IT Equipment And Requests');
+                Refresh('IT Incidents');
+                Refresh('Laptop Requests');
+                Refresh('Mobile Requests');
+                Refresh(NewStarterForm);
+                Refresh('Onboarding Record');
+                Refresh('Peripherals Requests');
+                Refresh(Requests_1);
+                Refresh(Requests_Master);
+                Refresh('Services List');
+                Refresh(SharedDrives);
+                Refresh('Smartcard Positions');
+                Refresh('Smartcard Positions Requests');
+                Refresh('Smartcard Requests');
+                Refresh('Special IT Requests');
             Visible: =varPopUp
             Width: =20
             X: =1235
@@ -8869,6 +8891,9 @@ Dashboard As screen:
             Fill: =RGBA(77,164,65,1)
             Height: =63
             HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+            OnSelect: |-
+                =Navigate(Forms);
+                Refresh('4G Laptop Requests'); Refresh('Afc Wages'); Refresh(Developers); Refresh('Final Probation Review Form'); Refresh(Inbox); Refresh('Induction Log'); Refresh('Interim probation review form'); Refresh('IT Equipment And Requests'); Refresh('IT Incidents'); Refresh('Laptop Requests'); Refresh('Mobile Requests'); Refresh(NewStarterForm); Refresh('Onboarding Record'); Refresh('Peripherals Requests'); Refresh(Requests_1); Refresh(Requests_Master); Refresh('Services List'); Refresh(SharedDrives); Refresh('Smartcard Positions'); Refresh('Smartcard Positions Requests'); Refresh('Smartcard Requests'); Refresh('Special IT Requests');
             Text: =""
             Width: =362
             X: =978
@@ -8879,6 +8904,9 @@ Dashboard As screen:
             Color: =RGBA(0, 0, 0, 1)
             Height: =58
             Icon: =Icon.AddDocument
+            OnSelect: |-
+                =Navigate(Forms);
+                Refresh('4G Laptop Requests'); Refresh('Afc Wages'); Refresh(Developers); Refresh('Final Probation Review Form'); Refresh(Inbox); Refresh('Induction Log'); Refresh('Interim probation review form'); Refresh('IT Equipment And Requests'); Refresh('IT Incidents'); Refresh('Laptop Requests'); Refresh('Mobile Requests'); Refresh(NewStarterForm); Refresh('Onboarding Record'); Refresh('Peripherals Requests'); Refresh(Requests_1); Refresh(Requests_Master); Refresh('Services List'); Refresh(SharedDrives); Refresh('Smartcard Positions'); Refresh('Smartcard Positions Requests'); Refresh('Smartcard Requests'); Refresh('Special IT Requests');
             Width: =58
             X: =1264
             Y: =194
@@ -8888,6 +8916,9 @@ Dashboard As screen:
             Font: =Font.Arial
             FontWeight: =FontWeight.Bold
             Height: =61
+            OnSelect: |-
+                =Navigate(Forms);
+                Refresh('4G Laptop Requests'); Refresh('Afc Wages'); Refresh(Developers); Refresh('Final Probation Review Form'); Refresh(Inbox); Refresh('Induction Log'); Refresh('Interim probation review form'); Refresh('IT Equipment And Requests'); Refresh('IT Incidents'); Refresh('Laptop Requests'); Refresh('Mobile Requests'); Refresh(NewStarterForm); Refresh('Onboarding Record'); Refresh('Peripherals Requests'); Refresh(Requests_1); Refresh(Requests_Master); Refresh('Services List'); Refresh(SharedDrives); Refresh('Smartcard Positions'); Refresh('Smartcard Positions Requests'); Refresh('Smartcard Requests'); Refresh('Special IT Requests');
             Size: =16
             Text: ="Raise a new request"
             Width: =222
@@ -8900,7 +8931,9 @@ Dashboard As screen:
             Height: =63
             HoverColor: =RGBA(255, 255, 255, 0)
             HoverFill: =ColorFade(RGBA(56, 96, 178, 0), -20%)
-            OnSelect: =Navigate(Forms)
+            OnSelect: |-
+                =Navigate(Forms);
+                Refresh('4G Laptop Requests'); Refresh('Afc Wages'); Refresh(Developers); Refresh('Final Probation Review Form'); Refresh(Inbox); Refresh('Induction Log'); Refresh('Interim probation review form'); Refresh('IT Equipment And Requests'); Refresh('IT Incidents'); Refresh('Laptop Requests'); Refresh('Mobile Requests'); Refresh(NewStarterForm); Refresh('Onboarding Record'); Refresh('Peripherals Requests'); Refresh(Requests_1); Refresh(Requests_Master); Refresh('Services List'); Refresh(SharedDrives); Refresh('Smartcard Positions'); Refresh('Smartcard Positions Requests'); Refresh('Smartcard Requests'); Refresh('Special IT Requests');
             PressedFill: =RGBA(0,0,0,0)
             Text: =""
             Width: =362
@@ -8932,6 +8965,9 @@ Dashboard As screen:
             Fill: =RGBA(77,164,65,1)
             Height: =63
             HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+            OnSelect: |-
+                =Navigate(Requests);
+                Refresh('4G Laptop Requests'); Refresh('Afc Wages'); Refresh(Developers); Refresh('Final Probation Review Form'); Refresh(Inbox); Refresh('Induction Log'); Refresh('Interim probation review form'); Refresh('IT Equipment And Requests'); Refresh('IT Incidents'); Refresh('Laptop Requests'); Refresh('Mobile Requests'); Refresh(NewStarterForm); Refresh('Onboarding Record'); Refresh('Peripherals Requests'); Refresh(Requests_1); Refresh(Requests_Master); Refresh('Services List'); Refresh(SharedDrives); Refresh('Smartcard Positions'); Refresh('Smartcard Positions Requests'); Refresh('Smartcard Requests'); Refresh('Special IT Requests');
             Text: =""
             Width: =362
             X: =978
@@ -8942,6 +8978,9 @@ Dashboard As screen:
             Color: =RGBA(0, 0, 0, 1)
             Height: =58
             Icon: =Icon.DetailList
+            OnSelect: |-
+                =Navigate(Requests);
+                Refresh('4G Laptop Requests'); Refresh('Afc Wages'); Refresh(Developers); Refresh('Final Probation Review Form'); Refresh(Inbox); Refresh('Induction Log'); Refresh('Interim probation review form'); Refresh('IT Equipment And Requests'); Refresh('IT Incidents'); Refresh('Laptop Requests'); Refresh('Mobile Requests'); Refresh(NewStarterForm); Refresh('Onboarding Record'); Refresh('Peripherals Requests'); Refresh(Requests_1); Refresh(Requests_Master); Refresh('Services List'); Refresh(SharedDrives); Refresh('Smartcard Positions'); Refresh('Smartcard Positions Requests'); Refresh('Smartcard Requests'); Refresh('Special IT Requests');
             Width: =58
             X: =1264
             Y: =113
@@ -8951,6 +8990,9 @@ Dashboard As screen:
             Font: =Font.Arial
             FontWeight: =FontWeight.Bold
             Height: =61
+            OnSelect: |-
+                =Navigate(Requests);
+                Refresh('4G Laptop Requests'); Refresh('Afc Wages'); Refresh(Developers); Refresh('Final Probation Review Form'); Refresh(Inbox); Refresh('Induction Log'); Refresh('Interim probation review form'); Refresh('IT Equipment And Requests'); Refresh('IT Incidents'); Refresh('Laptop Requests'); Refresh('Mobile Requests'); Refresh(NewStarterForm); Refresh('Onboarding Record'); Refresh('Peripherals Requests'); Refresh(Requests_1); Refresh(Requests_Master); Refresh('Services List'); Refresh(SharedDrives); Refresh('Smartcard Positions'); Refresh('Smartcard Positions Requests'); Refresh('Smartcard Requests'); Refresh('Special IT Requests');
             Size: =16
             Text: ="View your requests"
             Width: =222
@@ -8963,7 +9005,9 @@ Dashboard As screen:
             Height: =63
             HoverColor: =RGBA(255, 255, 255, 0)
             HoverFill: =ColorFade(RGBA(56, 96, 178, 0), -20%)
-            OnSelect: =Navigate(Requests)
+            OnSelect: |-
+                =Navigate(Requests);
+                Refresh('4G Laptop Requests'); Refresh('Afc Wages'); Refresh(Developers); Refresh('Final Probation Review Form'); Refresh(Inbox); Refresh('Induction Log'); Refresh('Interim probation review form'); Refresh('IT Equipment And Requests'); Refresh('IT Incidents'); Refresh('Laptop Requests'); Refresh('Mobile Requests'); Refresh(NewStarterForm); Refresh('Onboarding Record'); Refresh('Peripherals Requests'); Refresh(Requests_1); Refresh(Requests_Master); Refresh('Services List'); Refresh(SharedDrives); Refresh('Smartcard Positions'); Refresh('Smartcard Positions Requests'); Refresh('Smartcard Requests'); Refresh('Special IT Requests');
             PressedFill: =RGBA(0,0,0,0)
             Text: =""
             Width: =362
