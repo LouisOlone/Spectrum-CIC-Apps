@@ -784,7 +784,7 @@
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"SpectrumEmp")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            Required: =false
+            Required: =true
             Update: =DataCardValue481.Selected
             Width: =321
             X: =0
@@ -868,7 +868,7 @@
             DisplayName: =DataSourceInfo([@'Induction Log'],DataSourceInfo.DisplayName,"SpectrumEmpEmail")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            Required: =false
+            Required: =If(DataCardValue481.Selected.Value ="Yes",true)
             Update: =DataCardValue483.Selected
             Visible: =If(DataCardValue481.Selected.Value ="Yes", true)
             Width: =321
@@ -958,7 +958,7 @@
             Fill: =RGBA(0, 0, 0, 0)
             Height: =159
             MaxLength: =DataSourceInfo([@'Induction Log'], DataSourceInfo.MaxLength, "NonSpecEmail")
-            Required: =false
+            Required: =If(DataCardValue481.Selected.Value ="No",true)
             Update: =DataCardValue482.Text
             Visible: =If(DataCardValue481.Selected.Value ="No", true)
             Width: =642
