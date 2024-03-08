@@ -17313,10 +17313,7 @@
     Form7_5 As form:
         DataSource: =Inbox
         Height: =238
-        Item: |-
-            =
-            LookUp(Inbox,
-                                DataCardValue327.Text = UID)
+        Item: =gal_inbox.Selected
         Visible: =false
         Width: =389
         X: =963

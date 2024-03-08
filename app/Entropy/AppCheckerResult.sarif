@@ -11346,19 +11346,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Final Probation Form'.Form7_2.decision_DataCard3_2.Dropdown1_2.AccessibleLabel"
+                  "fullyQualifiedName": "'Final Probation Form'.Form7_2.decision_DataCard3_2.ComboBox1_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Final Probation Form'.Form7_2.decision_DataCard3_2.Dropdown1_2.AccessibleLabel",
+                  "fullyQualifiedName": "'Final Probation Form'.Form7_2.decision_DataCard3_2.ComboBox1_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Final Probation Form",
-                "type": "'Final Probation Form'.Form7_2.decision_DataCard3_2.Dropdown1_2"
+                "type": "'Final Probation Form'.Form7_2.decision_DataCard3_2.ComboBox1_2"
               }
             }
           ],
@@ -12366,19 +12366,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Interim Probation Form'.Form7_4.UID_DataCard21_4.DataCardValue312_4.AccessibleLabel"
+                  "fullyQualifiedName": "'Interim Probation Form'.Form7_6.decision_date_DataCard3_6.DataCardValue493_6.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Interim Probation Form'.Form7_4.UID_DataCard21_4.DataCardValue312_4.AccessibleLabel",
+                  "fullyQualifiedName": "'Interim Probation Form'.Form7_6.decision_date_DataCard3_6.DataCardValue493_6.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Interim Probation Form",
-                "type": "'Interim Probation Form'.Form7_4.UID_DataCard21_4.DataCardValue312_4"
+                "type": "'Interim Probation Form'.Form7_6.decision_date_DataCard3_6.DataCardValue493_6"
               }
             }
           ],
@@ -12396,49 +12396,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Interim Probation Form'.Form7_4.decision_DataCard3_4.Dropdown1_4.AccessibleLabel"
+                  "fullyQualifiedName": "'Interim Probation Form'.Form7_6.UID_DataCard21_6.DataCardValue312_6.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Interim Probation Form'.Form7_4.decision_DataCard3_4.Dropdown1_4.AccessibleLabel",
+                  "fullyQualifiedName": "'Interim Probation Form'.Form7_6.UID_DataCard21_6.DataCardValue312_6.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Interim Probation Form",
-                "type": "'Interim Probation Form'.Form7_4.decision_DataCard3_4.Dropdown1_4"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Interim Probation Form'.Form7_4.decision_date_DataCard3_4.DataCardValue493_4.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Interim Probation Form'.Form7_4.decision_date_DataCard3_4.DataCardValue493_4.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Interim Probation Form",
-                "type": "'Interim Probation Form'.Form7_4.decision_date_DataCard3_4.DataCardValue493_4"
+                "type": "'Interim Probation Form'.Form7_6.UID_DataCard21_6.DataCardValue312_6"
               }
             }
           ],
@@ -15300,6 +15270,36 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Interim Probation Form'.Form7_6.decision_DataCard3_6.ComboBox1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Interim Probation Form'.Form7_6.decision_DataCard3_6.ComboBox1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Interim Probation Form",
+                "type": "'Interim Probation Form'.Form7_6.decision_DataCard3_6.ComboBox1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -18268,6 +18268,96 @@
           },
           "ruleId": "app-UnusedVariables",
           "ruleIndex": 12
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Final Probation Form'.Form7_2.Item"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Final Probation Form'.Form7_2.Item",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Item",
+                "module": "Final Probation Form",
+                "type": "'Final Probation Form'.Form7_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 13
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Interim Probation Form'.Form7_6.Item"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Interim Probation Form'.Form7_6.Item",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Item",
+                "module": "Interim Probation Form",
+                "type": "'Interim Probation Form'.Form7_6"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 13
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'New Starter Form - Line Manager'.Form7_1.Item"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'New Starter Form - Line Manager'.Form7_1.Item",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Item",
+                "module": "New Starter Form - Line Manager",
+                "type": "'New Starter Form - Line Manager'.Form7_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 13
         },
         {
           "locations": [

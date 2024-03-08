@@ -150,12 +150,42 @@ Dashboard As screen:
                                 UpdateContext({varPopUp: false}),
                                 Navigate('Interim Probation Form')
                             ),
+                             // View Interim Probation Form
+                        If(
+                            ThisItem.request_type = "Interim Probation Form",
+                            And(
+                                Set(
+                                    varInterimProbationFormEmp,
+                                    LookUp(
+                                        'Interim probation review form',
+                                        UID = ThisItem.UID
+                                    )
+                                ),
+                                UpdateContext({varLoading: false}),
+                                UpdateContext({varPopUp: false}),
+                                Navigate('Interim Probation Form')
+                            ),
                         // View Final Probation Form
                             If(
                                 ThisItem.request_type = "Final Probation Form",
                                 And(
                                     Set(
                                         varFinalProbationForm,
+                                        LookUp(
+                                            NewStarterForm,
+                                            UID = ThisItem.UID
+                                        )
+                                    ),
+                                    UpdateContext({varLoading: false}),
+                                    UpdateContext({varPopUp: false}),
+                                    Navigate('Final Probation Form')
+                                ),
+                        // View Final Probation Form
+                            If(
+                                ThisItem.request_type = "Final Probation Form",
+                                And(
+                                    Set(
+                                        varFinalProbationFormEmp,
                                         LookUp(
                                             'Final Probation Review Form',
                                             UID = ThisItem.UID
@@ -165,6 +195,7 @@ Dashboard As screen:
                                     UpdateContext({varPopUp: false}),
                                     Navigate('Final Probation Form')
                                 ),
+                                
                     // View 4G Laptop Request
                                 If(
                                     ThisItem.request_type = "4G Laptop",
@@ -260,6 +291,8 @@ Dashboard As screen:
                         )
                     )
                 )
+                )
+                    )
                 )
                 ;
                 // Open pop-up window

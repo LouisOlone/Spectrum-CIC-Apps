@@ -6,9 +6,10 @@
         DataSource: ='Interim probation review form'
         DefaultMode: =FormMode.New
         Height: =538
+        Item: =varInterimProbationFormEmp
         NumberOfColumns: =2
         OnSuccess: |-
-            =SubmitForm(Form7_4);
+            =SubmitForm(Form7_6);
             ResetForm(form_interim_probation_form);
             Navigate('Success Screen');
             Refresh('4G Laptop Requests'); Refresh('Afc Wages'); Refresh(Developers); Refresh('Final Probation Review Form'); Refresh(Inbox); Refresh('Induction Log'); Refresh('Interim probation review form'); Refresh('IT Equipment And Requests'); Refresh('IT Incidents'); Refresh('Laptop Requests'); Refresh('Mobile Requests'); Refresh(NewStarterForm); Refresh('Onboarding Record'); Refresh('Peripherals Requests'); Refresh(Requests_1); Refresh(Requests_Master); Refresh('Services List'); Refresh(SharedDrives); Refresh('Smartcard Positions'); Refresh('Smartcard Positions Requests'); Refresh('Smartcard Requests'); Refresh('Special IT Requests');
@@ -24,7 +25,7 @@
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@'Interim probation review form'],DataSourceInfo.DisplayName,"NonSpecEmployeeFirstname")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =88
             MaxLength: =DataSourceInfo([@'Interim probation review form'], DataSourceInfo.MaxLength, "NonSpecEmployeeFirstname")
             Required: =false
             Update: =DataCardValue182.Text
@@ -1750,7 +1751,7 @@
             MaxLength: =DataSourceInfo([@'Interim probation review form'], DataSourceInfo.MaxLength, "Objectives")
             Required: =false
             Update: =DataCardValue198.Text
-            Visible: =If(Checkbox3_4.Value =true, true)
+            Visible: =If(Checkbox3_4.Value =true, true,false)
             Width: =642
             X: =0
             Y: =13
@@ -1830,7 +1831,7 @@
             MaxLength: =DataSourceInfo([@'Interim probation review form'], DataSourceInfo.MaxLength, "Constraints")
             Required: =false
             Update: =DataCardValue199.Text
-            Visible: =If(Checkbox3_4.Value =true, true)
+            Visible: =If(Checkbox3_4.Value =true, true,false)
             Width: =642
             X: =1
             Y: =13
@@ -1910,7 +1911,7 @@
             MaxLength: =DataSourceInfo([@'Interim probation review form'], DataSourceInfo.MaxLength, "SupportTraining")
             Required: =false
             Update: =DataCardValue200.Text
-            Visible: =If(Checkbox3_4.Value =true, true)
+            Visible: =If(Checkbox3_4.Value =true, true,false)
             Width: =642
             X: =0
             Y: =14
@@ -1997,7 +1998,7 @@
             Height: =50
             Required: =false
             Update: =DataCardValue201.SelectedDate
-            Visible: =If(Checkbox3_4.Value =true, true)
+            Visible: =If(Checkbox3_4.Value =true, true,false)
             Width: =642
             X: =1
             Y: =14
@@ -2184,19 +2185,16 @@
         Y: =711
         ZIndex: =5
 
-    Form7_4 As form:
+    Form7_6 As form:
         DataSource: =Inbox
         Height: =238
-        Item: |-
-            =
-            LookUp(Inbox,
-                                DataCardValue179.Text = UID)
+        Item: =gal_inbox.Selected
         Width: =389
         X: =963
         Y: =434
         ZIndex: =6
 
-        decision_DataCard3_4 As typedDataCard.comboBoxEditCard:
+        decision_DataCard3_6 As typedDataCard.comboBoxEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="decision"
             Default: =ThisItem.decision
@@ -2205,13 +2203,13 @@
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
-            Update: =decision_DataCard3_4.Default
+            Update: =ComboBox1.Selected
             Width: =129
             X: =1
             Y: =0
             ZIndex: =1
 
-            DataCardKey564_4 As label:
+            DataCardKey564_6 As label:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
@@ -2221,7 +2219,7 @@
                 Y: =10
                 ZIndex: =1
 
-            ErrorMessage571_4 As label:
+            ErrorMessage571_6 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -2236,25 +2234,26 @@
                 Y: =
                 ZIndex: =3
 
-            StarVisible571_4 As label:
+            StarVisible571_6 As label:
                 Align: =Align.Center
-                Height: =DataCardKey564_4.Height
+                Height: =DataCardKey564_6.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey564_4.Y
+                Y: =DataCardKey564_6.Y
                 ZIndex: =4
 
-            Dropdown1_4 As dropdown:
-                Default: ="Complete"
+            ComboBox1 As combobox:
+                DefaultSelectedItems: =["Complete"]
+                DisplayFields: =["Value"]
                 Items: =Choices([@Inbox].decision)
-                Width: =217
-                X: =19
+                SearchFields: =["Value"]
+                SearchItems: =Choices(Inbox.decision,ComboBox1.SearchText)
                 Y: =43
-                ZIndex: =5
+                ZIndex: =6
 
-        decision_date_DataCard3_4 As typedDataCard.dateEditCard:
+        decision_date_DataCard3_6 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="decision_date"
             Default: =ThisItem.decision_date
@@ -2263,13 +2262,13 @@
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
-            Update: =DataCardValue493_4.SelectedDate
+            Update: =DataCardValue493_6.SelectedDate
             Width: =129
             X: =2
             Y: =0
             ZIndex: =1
 
-            DataCardKey566_4 As label:
+            DataCardKey566_6 As label:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
@@ -2279,7 +2278,7 @@
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue493_4 As datepicker:
+            DataCardValue493_6 As datepicker:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
@@ -2290,10 +2289,10 @@
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey566_4.Y + DataCardKey566_4.Height + 5
+                Y: =DataCardKey566_6.Y + DataCardKey566_6.Height + 5
                 ZIndex: =2
 
-            ErrorMessage573_4 As label:
+            ErrorMessage573_6 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -2305,20 +2304,20 @@
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue493_4.Y + DataCardValue493_4.Height
+                Y: =DataCardValue493_6.Y + DataCardValue493_6.Height
                 ZIndex: =3
 
-            StarVisible573_4 As label:
+            StarVisible573_6 As label:
                 Align: =Align.Center
-                Height: =DataCardKey566_4.Height
+                Height: =DataCardKey566_6.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey566_4.Y
+                Y: =DataCardKey566_6.Y
                 ZIndex: =4
 
-        UID_DataCard21_4 As typedDataCard.textualEditCard:
+        UID_DataCard21_6 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="UID"
             Default: =ThisItem.UID
@@ -2328,13 +2327,13 @@
             Height: =50
             MaxLength: =DataSourceInfo([@Inbox], DataSourceInfo.MaxLength, "UID")
             Required: =false
-            Update: =DataCardValue312_4.Text
+            Update: =DataCardValue312_6.Text
             Width: =129
             X: =0
             Y: =0
             ZIndex: =56
 
-            DataCardKey316_4 As label:
+            DataCardKey316_6 As label:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
@@ -2344,7 +2343,7 @@
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue312_4 As text:
+            DataCardValue312_6 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true
@@ -2358,10 +2357,10 @@
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey316_4.Y + DataCardKey316_4.Height + 5
+                Y: =DataCardKey316_6.Y + DataCardKey316_6.Height + 5
                 ZIndex: =2
 
-            ErrorMessage549_4 As label:
+            ErrorMessage549_6 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -2373,16 +2372,16 @@
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue312_4.Y + DataCardValue312_4.Height
+                Y: =DataCardValue312_6.Y + DataCardValue312_6.Height
                 ZIndex: =3
 
-            StarVisible549_4 As label:
+            StarVisible549_6 As label:
                 Align: =Align.Center
-                Height: =DataCardKey316_4.Height
+                Height: =DataCardKey316_6.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey316_4.Y
+                Y: =DataCardKey316_6.Y
                 ZIndex: =4
 
