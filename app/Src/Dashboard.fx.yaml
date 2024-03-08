@@ -142,7 +142,7 @@ Dashboard As screen:
                                 Set(
                                     varInterimProbationForm,
                                     LookUp(
-                                        'Interim probation review form',
+                                        NewStarterForm,
                                         UID = ThisItem.UID
                                     )
                                 ),

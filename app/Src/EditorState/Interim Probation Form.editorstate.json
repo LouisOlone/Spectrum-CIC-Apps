@@ -79,7 +79,7 @@
       "MetaDataIDKey": "",
       "Name": "AttendanceComments_DataCard1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 12,
+      "ParentIndex": 13,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2531,7 +2531,14 @@
         "Align",
         "VerticalAlign",
         "X",
-        "Y",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Y",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Width",
         "Height",
         "DisplayMode",
@@ -2545,7 +2552,14 @@
         "LineHeight",
         "BorderThickness",
         "FocusedBorderThickness",
-        "Size",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Size",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Italic",
         "Underline",
         "Strikethrough"
@@ -10656,8 +10670,8 @@
       "ControlPropertyState": [
         {
           "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": true,
-          "AutoRuleBindingString": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "Parent.Default",
           "InvariantPropertyName": "Default",
           "IsLockable": true,
           "NameMapSourceSchema": "?"
@@ -10787,7 +10801,7 @@
         {
           "Category": "Data",
           "PropertyName": "Default",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
@@ -11903,8 +11917,8 @@
       "ControlPropertyState": [
         {
           "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": true,
-          "AutoRuleBindingString": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "Parent.Default",
           "InvariantPropertyName": "Default",
           "IsLockable": true,
           "NameMapSourceSchema": "?"
@@ -12034,7 +12048,7 @@
         {
           "Category": "Data",
           "PropertyName": "Default",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
@@ -12245,8 +12259,8 @@
       "ControlPropertyState": [
         {
           "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": true,
-          "AutoRuleBindingString": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "Parent.Default",
           "InvariantPropertyName": "Default",
           "IsLockable": true,
           "NameMapSourceSchema": "?"
@@ -12376,7 +12390,7 @@
         {
           "Category": "Data",
           "PropertyName": "Default",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
@@ -12587,8 +12601,8 @@
       "ControlPropertyState": [
         {
           "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": true,
-          "AutoRuleBindingString": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "Parent.Default",
           "InvariantPropertyName": "Default",
           "IsLockable": true,
           "NameMapSourceSchema": "?"
@@ -12718,7 +12732,7 @@
         {
           "Category": "Data",
           "PropertyName": "Default",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
@@ -12929,8 +12943,8 @@
       "ControlPropertyState": [
         {
           "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": true,
-          "AutoRuleBindingString": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "Parent.Default",
           "InvariantPropertyName": "Default",
           "IsLockable": true,
           "NameMapSourceSchema": "?"
@@ -13060,7 +13074,7 @@
         {
           "Category": "Data",
           "PropertyName": "Default",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
@@ -13271,8 +13285,8 @@
       "ControlPropertyState": [
         {
           "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": true,
-          "AutoRuleBindingString": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "Parent.Default",
           "InvariantPropertyName": "Default",
           "IsLockable": true,
           "NameMapSourceSchema": "?"
@@ -13402,7 +13416,7 @@
         {
           "Category": "Data",
           "PropertyName": "Default",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
@@ -13613,8 +13627,8 @@
       "ControlPropertyState": [
         {
           "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": true,
-          "AutoRuleBindingString": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "Parent.Default",
           "InvariantPropertyName": "Default",
           "IsLockable": true,
           "NameMapSourceSchema": "?"
@@ -13751,7 +13765,7 @@
         {
           "Category": "Data",
           "PropertyName": "Default",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
@@ -29475,14 +29489,7 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Item",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        }
+        "Item"
       ],
       "HasDynamicProperties": false,
       "IsAutoGenerated": false,
@@ -34069,7 +34076,14 @@
         "X",
         "Y",
         "Width",
-        "Height",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Height",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "ZIndex",
         {
           "AFDDataSourceName": "",
@@ -42920,7 +42934,7 @@
       "MetaDataIDKey": "",
       "Name": "TeamworkComments_DataCard1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 13,
+      "ParentIndex": 12,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
