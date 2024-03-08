@@ -829,7 +829,7 @@
             Update: =DataCardValue330.Selected.Value
             Visible: =If(DataCardValue328.Selected.Value ="Agenda for change", true, false)
             Width: =642
-            X: =1
+            X: =0
             Y: =5
             ZIndex: =1
 
@@ -915,8 +915,8 @@
             Required: =true
             Update: =DataCardValue323.SelectedDate
             Width: =642
-            X: =0
-            Y: =7
+            X: =1
+            Y: =6
             ZIndex: =1
 
             DataCardKey327 As label:
@@ -992,8 +992,8 @@
             Update: =DataCardValue333.Text
             Visible: =Not(IsBlank(DataCardValue328.Selected.Value))
             Width: =642
-            X: =0
-            Y: =5
+            X: =1
+            Y: =4
             ZIndex: =1
 
             DataCardKey337 As label:
@@ -1068,8 +1068,8 @@
             Update: =DataCardValue331.Selected.Value
             Visible: =If(DataCardValue328.Selected.Value ="Agenda for change", true, false)
             Width: =642
-            X: =0
-            Y: =6
+            X: =1
+            Y: =5
             ZIndex: =1
 
             DataCardKey335 As label:
@@ -1154,7 +1154,7 @@
             Update: =DataCardValue329.Text
             Visible: =If(DataCardValue328.Selected.Value ="Spot", true, false)
             Width: =642
-            X: =1
+            X: =0
             Y: =6
             ZIndex: =1
 
@@ -1230,7 +1230,7 @@
             Update: =DataCardValue332.Selected.Value
             Visible: =If(DataCardValue328.Selected.Value ="Agenda for change", true, false)
             Width: =642
-            X: =1
+            X: =0
             Y: =7
             ZIndex: =1
 
@@ -1316,8 +1316,8 @@
             Required: =true
             Update: =DataCardValue334.Selected
             Width: =642
-            X: =0
-            Y: =8
+            X: =1
+            Y: =7
             ZIndex: =1
 
             DataCardKey339 As label:
@@ -1402,7 +1402,7 @@
             Update: =DataCardValue335.SelectedItems
             Visible: =If(DataCardValue334.Selected.Value ="Yes", true, false)
             Width: =642
-            X: =1
+            X: =0
             Y: =8
             ZIndex: =1
 
