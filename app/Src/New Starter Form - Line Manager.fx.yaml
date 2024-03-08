@@ -2790,6 +2790,7 @@
         DataSource: =Inbox
         Height: =238
         Item: =gal_inbox.Selected
+        Visible: =false
         Width: =389
         X: =963
         Y: =434
@@ -2804,7 +2805,7 @@
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
-            Update: =decision_DataCard3_1.Default
+            Update: =ComboBox1_4.Selected
             Width: =129
             X: =1
             Y: =0
@@ -2845,12 +2846,13 @@
                 Y: =DataCardKey564_1.Y
                 ZIndex: =4
 
-            Dropdown1_1 As dropdown:
-                Default: ="Complete"
+            ComboBox1_4 As combobox:
+                DefaultSelectedItems: =["Complete"]
+                DisplayFields: =["Value"]
                 Items: =Choices([@Inbox].decision)
-                Width: =217
-                X: =19
-                Y: =43
+                SearchFields: =["Value"]
+                SearchItems: =Choices(Inbox.decision,ComboBox1_4.SearchText)
+                Y: =40
                 ZIndex: =5
 
         decision_date_DataCard3_1 As typedDataCard.dateEditCard:
