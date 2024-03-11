@@ -1003,7 +1003,7 @@
             Fill: =RGBA(0, 0, 0, 0)
             Height: =170
             MaxLength: =DataSourceInfo([@'Interim probation review form'], DataSourceInfo.MaxLength, "TeamworkComments")
-            Required: =false
+            Required: =true
             Update: =DataCardValue190.Text
             Width: =642
             X: =0
@@ -1099,7 +1099,7 @@
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             MaxLength: =DataSourceInfo([@'Interim probation review form'], DataSourceInfo.MaxLength, "AttendanceComments")
-            Required: =false
+            Required: =true
             Update: =DataCardValue191.Text
             Width: =642
             X: =1
@@ -1185,7 +1185,7 @@
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             MaxLength: =DataSourceInfo([@'Interim probation review form'], DataSourceInfo.MaxLength, "InstructionComments")
-            Required: =false
+            Required: =true
             Update: =DataCardValue192.Text
             Width: =642
             X: =0
@@ -1264,7 +1264,7 @@
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             MaxLength: =DataSourceInfo([@'Interim probation review form'], DataSourceInfo.MaxLength, "TrainingComments")
-            Required: =false
+            Required: =true
             Update: =DataCardValue193.Text
             Width: =642
             X: =1
@@ -1343,7 +1343,7 @@
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             MaxLength: =DataSourceInfo([@'Interim probation review form'], DataSourceInfo.MaxLength, "FurtherDetails")
-            Required: =false
+            Required: =true
             Update: =DataCardValue194.Text
             Width: =1284
             X: =0
@@ -2081,7 +2081,7 @@
             Fill: =RGBA(0, 0, 0, 0)
             Height: =149
             MaxLength: =DataSourceInfo([@'Interim probation review form'], DataSourceInfo.MaxLength, "LineManagerSignatureFLag")
-            Required: =false
+            Required: =true
             Update: =If(Checkbox3_6.Value =true, "True","False")
             Width: =642
             X: =0

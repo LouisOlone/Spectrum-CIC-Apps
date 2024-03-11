@@ -617,7 +617,7 @@
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey240.Y + DataCardKey240.Height + 5
+                Y: =45
                 ZIndex: =2
 
             ErrorMessage241 As label:
@@ -808,7 +808,7 @@
             Fill: =RGBA(0, 0, 0, 0)
             Height: =247
             MaxLength: =DataSourceInfo([@'Final Probation Review Form'], DataSourceInfo.MaxLength, "TeamworkComments")
-            Required: =false
+            Required: =true
             Update: =DataCardValue238.Text
             Width: =642
             X: =0
@@ -900,7 +900,7 @@
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             MaxLength: =DataSourceInfo([@'Final Probation Review Form'], DataSourceInfo.MaxLength, "AttendanceComments")
-            Required: =false
+            Required: =true
             Update: =DataCardValue239.Text
             Width: =642
             X: =1
@@ -981,7 +981,7 @@
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             MaxLength: =DataSourceInfo([@'Final Probation Review Form'], DataSourceInfo.MaxLength, "InstructionComments")
-            Required: =false
+            Required: =true
             Update: =DataCardValue240.Text
             Width: =642
             X: =0
@@ -1062,7 +1062,7 @@
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             MaxLength: =DataSourceInfo([@'Final Probation Review Form'], DataSourceInfo.MaxLength, "TrainingComments")
-            Required: =false
+            Required: =true
             Update: =DataCardValue241.Text
             Width: =642
             X: =1
@@ -1105,8 +1105,8 @@
                 Size: =12
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey246.Y + DataCardKey246.Height + 5
+                X: =25
+                Y: =35
                 ZIndex: =2
 
             ErrorMessage247 As label:
