@@ -403,8 +403,8 @@
             Required: =false
             Update: =DataCardValue322.Selected
             Width: =642
-            X: =1
-            Y: =2
+            X: =0
+            Y: =4
             ZIndex: =1
 
             DataCardKey326 As label:
@@ -488,8 +488,8 @@
             Required: =false
             Update: =DataCardValue325.Text
             Width: =642
-            X: =0
-            Y: =3
+            X: =1
+            Y: =2
             ZIndex: =1
 
             DataCardKey329 As label:
@@ -551,14 +551,6 @@
                 Y: =DataCardKey329.Y
                 ZIndex: =4
 
-            Rectangle1_48 As rectangle:
-                BorderColor: =RGBA(32, 54, 71, 1)
-                Fill: =RGBA(100, 118, 132, 1)
-                Height: =2
-                Width: =1284
-                Y: =108
-                ZIndex: =5
-
         supervisor_DataCard2 As typedDataCard.comboBoxEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="supervisor"
@@ -569,8 +561,8 @@
             Height: =50
             Required: =false
             Update: =DataCardValue326.Selected
-            Width: =642
-            X: =1
+            Width: =1284
+            X: =0
             Y: =3
             ZIndex: =1
 
@@ -666,7 +658,7 @@
                 =Or(If(DataCardValue322.Selected.Value ="Fixed Term",true,false),
                 If(DataCardValue322.Selected.Value ="Secondment",true,false))
             Width: =642
-            X: =0
+            X: =1
             Y: =4
             ZIndex: =1
 
@@ -740,8 +732,8 @@
             Required: =true
             Update: =DataCardValue328.Selected
             Width: =642
-            X: =1
-            Y: =4
+            X: =0
+            Y: =5
             ZIndex: =1
 
             DataCardKey332 As label:
@@ -830,7 +822,7 @@
             Visible: =Not(IsBlank(DataCardValue328.Selected.Value))
             Width: =642
             X: =1
-            Y: =4
+            Y: =5
             ZIndex: =1
 
             DataCardKey337 As label:
@@ -906,7 +898,7 @@
             Visible: =If(DataCardValue328.Selected.Value ="Agenda for change", true, false)
             Width: =642
             X: =0
-            Y: =5
+            Y: =6
             ZIndex: =1
 
             DataCardKey334 As label:
@@ -994,7 +986,7 @@
             Visible: =If(DataCardValue328.Selected.Value ="Agenda for change", true, false)
             Width: =642
             X: =1
-            Y: =5
+            Y: =6
             ZIndex: =1
 
             DataCardKey335 As label:
@@ -1080,7 +1072,7 @@
             Visible: =If(DataCardValue328.Selected.Value ="Agenda for change", true, false)
             Width: =642
             X: =0
-            Y: =6
+            Y: =7
             ZIndex: =1
 
             DataCardKey336 As label:
@@ -1166,7 +1158,7 @@
             Update: =DataCardValue323.SelectedDate
             Width: =642
             X: =1
-            Y: =6
+            Y: =7
             ZIndex: =1
 
             DataCardKey327 As label:
@@ -1243,7 +1235,7 @@
             Visible: =If(DataCardValue328.Selected.Value ="Spot", true, false)
             Width: =642
             X: =0
-            Y: =7
+            Y: =8
             ZIndex: =1
 
             DataCardKey333 As label:
@@ -1317,7 +1309,7 @@
             Update: =DataCardValue334.Selected
             Width: =642
             X: =1
-            Y: =7
+            Y: =8
             ZIndex: =1
 
             DataCardKey339 As label:
@@ -1403,7 +1395,7 @@
             Visible: =If(DataCardValue334.Selected.Value ="Yes", true, false)
             Width: =642
             X: =0
-            Y: =8
+            Y: =9
             ZIndex: =1
 
             DataCardKey340 As label:
@@ -1486,7 +1478,7 @@
             Update: =If(Check_Mgr_Sign_Off_1.Value =true,"True","False")
             Width: =1284
             X: =0
-            Y: =9
+            Y: =10
             ZIndex: =1
 
             DataCardKey341 As label:
@@ -1566,7 +1558,7 @@
             Update: =DataCardValue337.Selected
             Width: =1284
             X: =0
-            Y: =10
+            Y: =11
             ZIndex: =1
 
             DataCardKey342 As label:
@@ -1660,7 +1652,7 @@
             Visible: =If(DataCardValue337.Selected.Value ="Yes", true,false)
             Width: =642
             X: =0
-            Y: =11
+            Y: =12
             ZIndex: =1
 
             DataCardKey343 As label:
@@ -1743,7 +1735,7 @@
             Update: =DataCardValue313.Selected
             Width: =1284
             X: =0
-            Y: =12
+            Y: =13
             ZIndex: =1
 
             DataCardKey317 As label:
@@ -1839,8 +1831,8 @@
             Update: =ComboBox2_1.Selected.Value
             Visible: =If(DataCardValue337.Selected.Value ="Yes", true,false)
             Width: =642
-            X: =1
-            Y: =11
+            X: =0
+            Y: =14
             ZIndex: =1
 
             DataCardKey315 As label:
@@ -1915,8 +1907,8 @@
             Update: =DataCardValue314.Selected
             Visible: =If(DataCardValue313.Selected.Value ="Yes", true,false)
             Width: =642
-            X: =0
-            Y: =13
+            X: =1
+            Y: =14
             ZIndex: =1
 
             DataCardKey318 As label:
@@ -2002,7 +1994,7 @@
             Visible: =If(DataCardValue315.Selected.Value ="Yes", true,false)
             Width: =642
             X: =0
-            Y: =14
+            Y: =15
             ZIndex: =1
 
             DataCardKey320 As label:
@@ -2078,7 +2070,7 @@
             Update: =DataCardValue318.Selected
             Width: =1284
             X: =0
-            Y: =15
+            Y: =16
             ZIndex: =1
 
             DataCardKey322 As label:
@@ -2170,8 +2162,8 @@
             Update: =DataCardValue315.Selected
             Visible: =If(DataCardValue313.Selected.Value ="Yes", true,false)
             Width: =642
-            X: =1
-            Y: =13
+            X: =0
+            Y: =17
             ZIndex: =1
 
             DataCardKey319 As label:
@@ -2257,8 +2249,8 @@
             Update: =DataCardValue317.Text
             Visible: =If(DataCardValue318.Selected.Value ="Yes", true,false)
             Width: =642
-            X: =0
-            Y: =16
+            X: =1
+            Y: =17
             ZIndex: =1
 
             DataCardKey321 As label:
@@ -2336,7 +2328,7 @@
             Visible: =false
             Width: =642
             X: =0
-            Y: =17
+            Y: =18
             ZIndex: =1
 
             DataCardKey331 As label:
@@ -2410,7 +2402,7 @@
             Update: =DateValue3.SelectedDate
             Visible: =false
             Width: =642
-            X: =0
+            X: =1
             Y: =18
             ZIndex: =1
 
@@ -2501,8 +2493,8 @@
             Update: =DataCardValue319.Selected
             Visible: =If(DataCardValue318.Selected.Value ="Yes", true,false)
             Width: =642
-            X: =1
-            Y: =16
+            X: =0
+            Y: =19
             ZIndex: =1
 
             DataCardKey323 As label:
@@ -2605,7 +2597,7 @@
             Visible: =false
             Width: =642
             X: =1
-            Y: =17
+            Y: =19
             ZIndex: =1
 
             DataCardKey346 As label:
@@ -2678,8 +2670,8 @@
             Update: =DataCardValue340.Text
             Visible: =false
             Width: =642
-            X: =1
-            Y: =18
+            X: =0
+            Y: =20
             ZIndex: =1
 
             DataCardKey345 As label:
