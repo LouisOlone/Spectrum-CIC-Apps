@@ -2649,7 +2649,7 @@ Requests As screen:
             DataCardValue58 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: |
-                    =Concatenate(Today(), ": ", User().FullName, " has commented: ", Char(13), Char(13), txtin_Comment.Text, Char(13), Char(13), "----------------------------------------------------------------------------------- ",gal_requests.Selected.activity)
+                    =Concatenate(Today(), ": ", User().FullName, " has commented: ", Char(13), Char(13), txtin_Comment.Text, Char(13), Char(13), "---", Char(13), Char(13),gal_requests.Selected.activity)
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 MaxLength: =Parent.MaxLength
