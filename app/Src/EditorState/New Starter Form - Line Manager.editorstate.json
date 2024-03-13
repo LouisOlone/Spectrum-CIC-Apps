@@ -422,7 +422,7 @@
       "MetaDataIDKey": "",
       "Name": "AFCWage_DataCard2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 15,
+      "ParentIndex": 14,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -728,7 +728,14 @@
         "Fill",
         "X",
         "Y",
-        "Width",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Width",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Height",
         "ZIndex",
         {
@@ -751,7 +758,7 @@
       "MetaDataIDKey": "",
       "Name": "Band_DataCard2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 11,
+      "ParentIndex": 12,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -39801,7 +39808,7 @@
       "MetaDataIDKey": "",
       "Name": "Hours_DataCard2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 13,
+      "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -40987,7 +40994,7 @@
       "MetaDataIDKey": "",
       "Name": "LaptopRequired_DataCard2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 22,
+      "ParentIndex": 21,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -43971,7 +43978,7 @@
       "MetaDataIDKey": "",
       "Name": "Salary_DataCard2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 16,
+      "ParentIndex": 15,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -44610,7 +44617,7 @@
       "MetaDataIDKey": "",
       "Name": "Shared Drive_DataCard2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 21,
+      "ParentIndex": 22,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -55816,7 +55823,7 @@
       "MetaDataIDKey": "",
       "Name": "Step_DataCard2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 14,
+      "ParentIndex": 13,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -56303,7 +56310,7 @@
       "MetaDataIDKey": "",
       "Name": "SupervisoryRoleFlag_DataCard2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 12,
+      "ParentIndex": 16,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
