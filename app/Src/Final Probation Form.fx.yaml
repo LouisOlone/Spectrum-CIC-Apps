@@ -580,7 +580,7 @@
             DisplayName: =DataSourceInfo([@'Final Probation Review Form'],DataSourceInfo.DisplayName,"StartDate")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            Required: =false
+            Required: =true
             Update: =DataCardValue235.SelectedDate
             Width: =642
             X: =0
@@ -653,7 +653,7 @@
             DisplayName: =DataSourceInfo([@'Final Probation Review Form'],DataSourceInfo.DisplayName,"InterimDate")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            Required: =false
+            Required: =true
             Update: =DataCardValue236.SelectedDate
             Width: =642
             X: =1
@@ -726,7 +726,7 @@
             DisplayName: =DataSourceInfo([@'Final Probation Review Form'],DataSourceInfo.DisplayName,"FinalDate")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =97
-            Required: =false
+            Required: =true
             Update: =DataCardValue237.SelectedDate
             Width: =1284
             X: =0
