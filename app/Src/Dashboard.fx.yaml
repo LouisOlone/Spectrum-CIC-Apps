@@ -63,25 +63,41 @@ Dashboard As screen:
     "gal_inbox As gallery.'BrowseLayout_Vertical_OneTextVariant_ver5.0'":
         DelayItemLoading: =true
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =591
+        Height: =541
         Items: |-
-            =// Filter the Inbox on only items that are assigned to the logged-in user (i.e. assigned to their Office365 account) AND only show those items that have not got a decision logged yet
-            Filter(
-                Inbox,
+            =
+            //Dev update 04/03/2022 - Removed 'action_required <> Complete' as this was not a status column but a column to tell the user what to do with the action - I've change the flows now so that this reads 'Complete Form' as I appreciate it was confusing.
+            
+            
+            
+            If(
+                        !IsBlank(Txt_Requests_Search_4),
+                    Filter(
+                        Inbox,
                 And(
                     assigned_to.DisplayName = User().FullName,
                     IsBlank(decision.Value),
-                    Not(stage ="HR Approval")
-                )
-            )
-            //Dev update 04/03/2022 - Removed 'action_required <> Complete' as this was not a status column but a column to tell the user what to do with the action - I've change the flows now so that this reads 'Complete Form' as I appreciate it was confusing.
+                    Not(stage ="HR Approval"),
+                    Or(Txt_Requests_Search_4.Text in UID, Txt_Requests_Search_4.Text in request_type, Txt_Requests_Search_4.Text in action_required, Txt_Requests_Search_4.Text in assigned_to.DisplayName, Txt_Requests_Search_4.Text in stage, Txt_Requests_Search_4.Text in 'Created By'.DisplayName))),
+            
+                       If(
+             
+                        IsBlank(Txt_Requests_Search_4),
+            
+            
+                           Filter(
+              Inbox,
+                And(
+                    assigned_to.DisplayName = User().FullName,
+                    IsBlank(decision.Value),
+                    Not(stage ="HR Approval")))))
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
         TemplateSize: =54
         Width: =917
         X: =32
-        Y: =142
+        Y: =192
         ZIndex: =14
 
         NextArrow2 As icon.ChevronRight:
@@ -400,7 +416,7 @@ Dashboard As screen:
         Text: ="UID"
         Width: =item_UID.Width
         X: =52
-        Y: =110
+        Y: =155
         ZIndex: =15
 
     lbl_request_type As label:
@@ -411,7 +427,7 @@ Dashboard As screen:
         Text: ="Request Type"
         Width: =item_request_type.Width
         X: =322
-        Y: =110
+        Y: =155
         ZIndex: =16
 
     lbl_action_required As label:
@@ -422,7 +438,7 @@ Dashboard As screen:
         Text: ="Action Required"
         Width: =item_action_required.Width
         X: =484
-        Y: =110
+        Y: =155
         ZIndex: =17
 
     lbl_stage As label:
@@ -433,7 +449,7 @@ Dashboard As screen:
         Text: ="Stage"
         Width: =item_stage.Width
         X: =661
-        Y: =110
+        Y: =155
         ZIndex: =18
 
     lbl_date_received As label:
@@ -444,7 +460,7 @@ Dashboard As screen:
         Text: ="Date Received"
         Width: =item_date_received.Width
         X: =154
-        Y: =110
+        Y: =155
         ZIndex: =19
 
     grp_pop_up As group:
@@ -968,7 +984,7 @@ Dashboard As screen:
         OnSelect: =Refresh('4G Laptop Requests'); Refresh('Afc Wages'); Refresh(Developers); Refresh('Final Probation Review Form'); Refresh(Inbox); Refresh('Induction Log'); Refresh('Interim probation review form'); Refresh('IT Equipment And Requests'); Refresh('IT Incidents'); Refresh('Laptop Requests'); Refresh('Mobile Requests'); Refresh(NewStarterForm); Refresh('Onboarding Record'); Refresh('Peripherals Requests'); Refresh(Requests_1); Refresh(Requests_Master); Refresh('Services List'); Refresh(SharedDrives); Refresh('Smartcard Positions'); Refresh('Smartcard Positions Requests'); Refresh('Smartcard Requests'); Refresh('Special IT Requests');
         Width: =23
         X: =923
-        Y: =114
+        Y: =159
         ZIndex: =28
 
     form_laptop_request As form.PowerApps_CoreControls_Form:
@@ -9057,4 +9073,30 @@ Dashboard As screen:
         X: =1303
         Y: =713
         ZIndex: =55
+
+    Txt_Requests_Search_4 As text:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Default: =""
+        Height: =37
+        HintText: ="Search Name, Email or Request Reference"
+        HoverBorderColor: =RGBA(32, 54, 71, 1)
+        HoverFill: =RGBA(205, 209, 213, 1)
+        OnSelect: =
+        Size: =10
+        Width: =294
+        X: =133
+        Y: =115
+        ZIndex: =56
+
+    Btn_Requests_ViewAll_4 As button:
+        Fill: =RGBA(100, 118, 132, 1)
+        Height: =20
+        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        OnSelect: =Reset(Txt_Requests_Search_4)
+        Size: =10
+        Text: ="View All"
+        Width: =76
+        X: =37
+        Y: =122
+        ZIndex: =57
 
