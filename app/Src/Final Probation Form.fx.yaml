@@ -1304,7 +1304,7 @@
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
                 HoverColor: =RGBA(32, 54, 71, 1)
-                OnCheck: =Reset(Checkbox3_5)
+                OnCheck: =
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 Size: =12
                 Text: ="Yes"
@@ -1381,7 +1381,7 @@
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
                 HoverColor: =RGBA(32, 54, 71, 1)
-                OnCheck: =Reset(Checkbox3_5)
+                OnCheck: =
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 Size: =12
                 Text: ="Yes"
@@ -1398,7 +1398,7 @@
             Fill: =RGBA(0, 0, 0, 0)
             Height: =182
             MaxLength: =DataSourceInfo([@'Final Probation Review Form'], DataSourceInfo.MaxLength, "LineManagerSignatureFLag")
-            Required: =false
+            Required: =true
             Update: =If(Checkbox3_9.Value =true, "True","False")
             Width: =642
             X: =0
