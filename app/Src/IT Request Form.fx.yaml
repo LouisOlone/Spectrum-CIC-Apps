@@ -1996,6 +1996,89 @@
                 Y: =DataCardKey162_2.Y
                 ZIndex: =4
 
+        MobileComments_DataCard1_1 As typedDataCard.textualEditCard:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="MobileComments"
+            Default: =ThisItem.MobileComments
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'IT Equipment And Requests'],DataSourceInfo.DisplayName,"MobileComments")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =189
+            MaxLength: =DataSourceInfo([@'IT Equipment And Requests'], DataSourceInfo.MaxLength, "MobileComments")
+            Required: =Checkbox4_3.Value = true
+            Update: =DataCardValue132_2.Text
+            Visible: =Checkbox4_3.Value = true
+            Width: =642
+            X: =2
+            Y: =35
+            ZIndex: =1
+
+            DataCardKey160_2 As label:
+                AutoHeight: =true
+                Color: =RGBA(32, 54, 71, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Size: =14
+                Text: ="Please provide some comments on the request below"
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue132_2 As text:
+                BorderColor: =RGBA(88,89,91,0.25)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
+                Height: =130
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
+                MaxLength: =Parent.MaxLength
+                Mode: =TextMode.MultiLine
+                PaddingLeft: =5
+                PressedBorderColor: =RGBA(88,89,91,0.5)
+                PressedColor: =Color.Black
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =582
+                X: =30
+                Y: =49
+                ZIndex: =2
+
+            ErrorMessage166_2 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue132_2.Y + DataCardValue132_2.Height
+                ZIndex: =3
+
+            StarVisible165_2 As label:
+                Align: =Align.Center
+                Color: =RGBA(32, 54, 71, 1)
+                Height: =DataCardKey160_2.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey160_2.Y
+                ZIndex: =4
+
         ManagerUserPolicyFlag_DataCard1_2 As typedDataCard.comboBoxEditCard:
             BorderColor: =RGBA(32, 54, 71, 1)
             BorderStyle: =BorderStyle.Solid
@@ -2779,89 +2862,6 @@
                 X: =27
                 Y: =2
                 ZIndex: =6
-
-        MobileComments_DataCard1_1 As typedDataCard.textualEditCard:
-            BorderColor: =RGBA(32, 54, 71, 1)
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="MobileComments"
-            Default: =ThisItem.MobileComments
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'IT Equipment And Requests'],DataSourceInfo.DisplayName,"MobileComments")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =189
-            MaxLength: =DataSourceInfo([@'IT Equipment And Requests'], DataSourceInfo.MaxLength, "MobileComments")
-            Required: =Checkbox4_3.Value = true
-            Update: =DataCardValue132_2.Text
-            Visible: =Checkbox4_3.Value = true
-            Width: =642
-            X: =2
-            Y: =35
-            ZIndex: =1
-
-            DataCardKey160_2 As label:
-                AutoHeight: =true
-                Color: =RGBA(32, 54, 71, 1)
-                Font: =Font.Arial
-                FontWeight: =FontWeight.Bold
-                Height: =34
-                Size: =14
-                Text: ="Please provide some comments on the request below"
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue132_2 As text:
-                BorderColor: =RGBA(88,89,91,0.25)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                Font: =Font.Arial
-                FontWeight: =FontWeight.Lighter
-                Height: =130
-                HoverBorderColor: =RGBA(88,89,91,1)
-                HoverFill: =RGBA(88,89,91,0.01)
-                MaxLength: =Parent.MaxLength
-                Mode: =TextMode.MultiLine
-                PaddingLeft: =5
-                PressedBorderColor: =RGBA(88,89,91,0.5)
-                PressedColor: =Color.Black
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =582
-                X: =30
-                Y: =49
-                ZIndex: =2
-
-            ErrorMessage166_2 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue132_2.Y + DataCardValue132_2.Height
-                ZIndex: =3
-
-            StarVisible165_2 As label:
-                Align: =Align.Center
-                Color: =RGBA(32, 54, 71, 1)
-                Height: =DataCardKey160_2.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey160_2.Y
-                ZIndex: =4
 
         RequestFor_DataCard1_1 As typedDataCard.comboBoxEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -4831,6 +4831,87 @@
                 Y: =3
                 ZIndex: =6
 
+        ReplacementReason_DataCard1_1 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ReplacementReason"
+            Default: =ThisItem.ReplacementReason
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'IT Equipment And Requests'],DataSourceInfo.DisplayName,"ReplacementReason")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'IT Equipment And Requests'], DataSourceInfo.MaxLength, "ReplacementReason")
+            Required: =If(DataCardValue22_3.Selected.Value ="Replacement",true)
+            Update: =DataCardValue23_3.Text
+            Visible: =If(DataCardValue22_3.Selected.Value ="Replacement",true,false)
+            Width: =642
+            X: =1
+            Y: =35
+            ZIndex: =10
+
+            DataCardKey23_1 As label:
+                AutoHeight: =true
+                Color: =RGBA(0, 0, 0, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Size: =14
+                Text: ="Reason for Replacement"
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue23_3 As text:
+                BorderColor: =RGBA(88,89,91,0.25)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
+                Height: =130
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
+                MaxLength: =Parent.MaxLength
+                Mode: =TextMode.MultiLine
+                PaddingLeft: =5
+                PressedBorderColor: =RGBA(88,89,91,0.5)
+                PressedColor: =Color.Black
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =582
+                X: =30
+                Y: =DataCardKey23_1.Y + DataCardKey23_1.Height + 5
+                ZIndex: =2
+
+            ErrorMessage23_1 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue23_3.Y + DataCardValue23_3.Height
+                ZIndex: =3
+
+            StarVisible23_1 As label:
+                Align: =Align.Center
+                Height: =DataCardKey23_1.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey23_1.Y
+                ZIndex: =4
+
         SpecialRequestDetails_DataCard1_1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="SpecialRequestDetails"
@@ -4927,85 +5008,4 @@
                 X: =28
                 Y: =1
                 ZIndex: =7
-
-        ReplacementReason_DataCard1_1 As typedDataCard.textualEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="ReplacementReason"
-            Default: =ThisItem.ReplacementReason
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'IT Equipment And Requests'],DataSourceInfo.DisplayName,"ReplacementReason")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'IT Equipment And Requests'], DataSourceInfo.MaxLength, "ReplacementReason")
-            Required: =If(DataCardValue22_3.Selected.Value ="Replacement",true)
-            Update: =DataCardValue23_3.Text
-            Visible: =If(DataCardValue22_3.Selected.Value ="Replacement",true,false)
-            Width: =642
-            X: =1
-            Y: =35
-            ZIndex: =10
-
-            DataCardKey23_1 As label:
-                AutoHeight: =true
-                Color: =RGBA(0, 0, 0, 1)
-                Font: =Font.Arial
-                FontWeight: =FontWeight.Bold
-                Height: =34
-                Size: =14
-                Text: ="Reason for Replacement"
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue23_3 As text:
-                BorderColor: =RGBA(88,89,91,0.25)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                Font: =Font.Arial
-                FontWeight: =FontWeight.Lighter
-                Height: =130
-                HoverBorderColor: =RGBA(88,89,91,1)
-                HoverFill: =RGBA(88,89,91,0.01)
-                MaxLength: =Parent.MaxLength
-                Mode: =TextMode.MultiLine
-                PaddingLeft: =5
-                PressedBorderColor: =RGBA(88,89,91,0.5)
-                PressedColor: =Color.Black
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =582
-                X: =30
-                Y: =DataCardKey23_1.Y + DataCardKey23_1.Height + 5
-                ZIndex: =2
-
-            ErrorMessage23_1 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue23_3.Y + DataCardValue23_3.Height
-                ZIndex: =3
-
-            StarVisible23_1 As label:
-                Align: =Align.Center
-                Height: =DataCardKey23_1.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey23_1.Y
-                ZIndex: =4
 
