@@ -551,7 +551,7 @@
             DisplayName: =DataSourceInfo([@'Interim probation review form'],DataSourceInfo.DisplayName,"StartDate")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            Required: =false
+            Required: =true
             Update: =DataCardValue188.SelectedDate
             Width: =642
             X: =0
@@ -634,7 +634,7 @@
             DisplayName: =DataSourceInfo([@'Interim probation review form'],DataSourceInfo.DisplayName,"ReviewDate")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            Required: =false
+            Required: =true
             Update: =DataCardValue189.SelectedDate
             Width: =642
             X: =1
@@ -1343,7 +1343,7 @@
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             MaxLength: =DataSourceInfo([@'Interim probation review form'], DataSourceInfo.MaxLength, "FurtherDetails")
-            Required: =true
+            Required: =false
             Update: =DataCardValue194.Text
             Width: =1284
             X: =0
@@ -1645,6 +1645,7 @@
                 FontWeight: =FontWeight.Lighter
                 HoverColor: =RGBA(32, 54, 71, 1)
                 OnCheck: =Reset(Checkbox3_5)
+                OnUncheck: =Reset(DataCardValue198) && Reset(DataCardValue199) && Reset(DataCardValue200) && Reset(DataCardValue201)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 Size: =12
                 Text: ="Yes"
@@ -1661,7 +1662,7 @@
             Fill: =RGBA(0, 0, 0, 0)
             Height: =140
             MaxLength: =DataSourceInfo([@'Interim probation review form'], DataSourceInfo.MaxLength, "ExtendedProbationTime")
-            Required: =false
+            Required: =If(Checkbox3_5.Value = true, true,false)
             Update: =DataCardValue206.Text
             Visible: =If(Checkbox3_5.Value = true, true,false)
             Width: =1284
@@ -1749,7 +1750,7 @@
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             MaxLength: =DataSourceInfo([@'Interim probation review form'], DataSourceInfo.MaxLength, "Objectives")
-            Required: =false
+            Required: =If(Checkbox3_4.Value = true, true,false)
             Update: =DataCardValue198.Text
             Visible: =If(Checkbox3_4.Value =true, true,false)
             Width: =642
@@ -1829,7 +1830,7 @@
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             MaxLength: =DataSourceInfo([@'Interim probation review form'], DataSourceInfo.MaxLength, "Constraints")
-            Required: =false
+            Required: =If(Checkbox3_4.Value = true, true,false)
             Update: =DataCardValue199.Text
             Visible: =If(Checkbox3_4.Value =true, true,false)
             Width: =642
@@ -1909,7 +1910,7 @@
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             MaxLength: =DataSourceInfo([@'Interim probation review form'], DataSourceInfo.MaxLength, "SupportTraining")
-            Required: =false
+            Required: =If(Checkbox3_4.Value = true, true,false)
             Update: =DataCardValue200.Text
             Visible: =If(Checkbox3_4.Value =true, true,false)
             Width: =642
@@ -1996,7 +1997,7 @@
             DisplayName: =DataSourceInfo([@'Interim probation review form'],DataSourceInfo.DisplayName,"ReviewDateRemidial")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            Required: =false
+            Required: =If(Checkbox3_4.Value = true, true,false)
             Update: =DataCardValue201.SelectedDate
             Visible: =If(Checkbox3_4.Value =true, true,false)
             Width: =642
