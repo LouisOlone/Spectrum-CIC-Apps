@@ -1645,6 +1645,7 @@
                 FontWeight: =FontWeight.Lighter
                 HoverColor: =RGBA(32, 54, 71, 1)
                 OnCheck: =Reset(Checkbox3_5)
+                OnUncheck: =Reset(DataCardValue198) && Reset(DataCardValue199) && Reset(DataCardValue200) && Reset(DataCardValue201)
                 PressedBorderColor: =RGBA(88,89,91,0.5)
                 Size: =12
                 Text: ="Yes"
