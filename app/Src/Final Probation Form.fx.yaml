@@ -628,8 +628,11 @@
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Text: =If(Not(IsBlank(Parent.Error)),"Please answer this question")
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Text: |
+                    =If(DateDiff(Today(),DataCardValue235.SelectedDate)>1, "Please select the correct date")
+                Visible: |
+                    =If(
+                         IsBlank(DataCardValue235.SelectedDate) || Len(DataCardValue235.SelectedDate) <= 2, false, true) && DateDiff(Today(),DataCardValue235.SelectedDate)>0
                 Width: =Parent.Width - 60
                 X: =30
                 Y: =DataCardValue235.Y + DataCardValue235.Height
@@ -701,8 +704,10 @@
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Text: =If(Not(IsBlank(Parent.Error)),"Please answer this question")
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Text: =If(DateDiff(Today(),DataCardValue236.SelectedDate)>1, "Please select the correct date")
+                Visible: |
+                    =If(
+                         IsBlank(DataCardValue236.SelectedDate) || Len(DataCardValue236.SelectedDate) <= 2, false, true) && DateDiff(Today(),DataCardValue236.SelectedDate)>0
                 Width: =Parent.Width - 60
                 X: =30
                 Y: =DataCardValue236.Y + DataCardValue236.Height
@@ -768,14 +773,16 @@
 
             ErrorMessage243 As label:
                 AutoHeight: =true
-                Height: =10
+                Height: =23
                 Live: =Live.Assertive
                 PaddingBottom: =0
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Text: =If(Not(IsBlank(Parent.Error)),"Please answer this question")
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Text: =If(DateDiff(Today(),DataCardValue237.SelectedDate)>1, "Please select the correct date")
+                Visible: |
+                    =If(
+                         IsBlank(DataCardValue237.SelectedDate) || Len(DataCardValue237.SelectedDate) <= 2, false, true) && DateDiff(Today(),DataCardValue237.SelectedDate)>0
                 Width: =Parent.Width - 60
                 X: =30
                 Y: =DataCardValue237.Y + DataCardValue237.Height

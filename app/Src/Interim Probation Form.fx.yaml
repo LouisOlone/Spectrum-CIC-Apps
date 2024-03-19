@@ -601,8 +601,10 @@
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Text: =If(Not(IsBlank(Parent.Error)),"Please answer this question")
-                Visible: =(!IsBlank(Parent.Error) && Parent.DisplayMode=DisplayMode.Edit)
+                Text: =If(DateDiff(Today(),DataCardValue188.SelectedDate)>1, "Please select the correct date")
+                Visible: |
+                    =If(
+                         IsBlank(DataCardValue188.SelectedDate) || Len(DataCardValue188.SelectedDate) <= 2, false, true) && DateDiff(Today(),DataCardValue188.SelectedDate)>0
                 Width: =Parent.Width - 60
                 X: =30
                 Y: =DataCardValue188.Y + DataCardValue188.Height
@@ -1821,6 +1823,86 @@
                 Y: =DataCardKey199.Y
                 ZIndex: =4
 
+        Constraints_DataCard1 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Constraints"
+            Default: =ThisItem.Constraints
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Interim probation review form'],DataSourceInfo.DisplayName,"Constraints")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Interim probation review form'], DataSourceInfo.MaxLength, "Constraints")
+            Required: =If(Checkbox3_4.Value = true, true,false)
+            Update: =DataCardValue199.Text
+            Visible: =If(Checkbox3_4.Value =true, true,false)
+            Width: =642
+            X: =1
+            Y: =13
+            ZIndex: =3
+
+            DataCardKey200 As label:
+                AutoHeight: =true
+                Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Size: =14
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue199 As text:
+                BorderColor: |-
+                    =	
+                    RGBA(88,89,91,0.25)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
+                Height: =133
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(88,89,91,0.01)
+                MaxLength: =Parent.MaxLength
+                Mode: =TextMode.MultiLine
+                PaddingLeft: =5
+                PressedBorderColor: =RGBA(88,89,91,0.5)
+                PressedColor: =Color.Black
+                Size: =12
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey200.Y + DataCardKey200.Height + 5
+                ZIndex: =2
+
+            ErrorMessage201 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =If(Not(IsBlank(Parent.Error)),"Please answer this question")
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue199.Y + DataCardValue199.Height
+                ZIndex: =3
+
+            StarVisible201 As label:
+                Align: =Align.Center
+                Height: =DataCardKey200.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey200.Y
+                ZIndex: =4
+
         SupportTraining_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="SupportTraining"
@@ -1909,153 +1991,6 @@
                 Y: =200
                 ZIndex: =5
 
-        LineManagerSignatureFLag_DataCard1 As typedDataCard.textualEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="LineManagerSignatureFLag"
-            Default: =ThisItem.LineManagerSignatureFLag
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Interim probation review form'],DataSourceInfo.DisplayName,"LineManagerSignatureFLag")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =149
-            MaxLength: =DataSourceInfo([@'Interim probation review form'], DataSourceInfo.MaxLength, "LineManagerSignatureFLag")
-            Required: =true
-            Update: =If(Checkbox3_6.Value =true, "True","False")
-            Width: =642
-            X: =0
-            Y: =15
-            ZIndex: =3
-
-            DataCardKey203 As label:
-                AutoHeight: =true
-                Color: =RGBA(77,164,65,1)
-                Font: =Font.Arial
-                FontWeight: =FontWeight.Bold
-                Height: =34
-                Size: =14
-                Text: ="Line Manager - I confirm that this report has been discussed with the employee"
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            ErrorMessage204 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =(!IsBlank(Parent.Error) && Parent.DisplayMode=DisplayMode.Edit)
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =Checkbox3_6.Y + Checkbox3_6.Height
-                ZIndex: =3
-
-            StarVisible204 As label:
-                Align: =Align.Center
-                Height: =DataCardKey203.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey203.Y
-                ZIndex: =4
-
-            Checkbox3_6 As checkbox:
-                BorderColor: =RGBA(32, 54, 71, 1)
-                CheckboxBorderColor: =RGBA(32, 54, 71, 1)
-                Font: =Font.Arial
-                FontWeight: =FontWeight.Lighter
-                HoverColor: =RGBA(32, 54, 71, 1)
-                PressedBorderColor: =RGBA(88,89,91,0.5)
-                Size: =12
-                Text: ="Yes"
-                X: =30
-                Y: =70
-                ZIndex: =5
-
-        Constraints_DataCard1 As typedDataCard.textualEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="Constraints"
-            Default: =ThisItem.Constraints
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Interim probation review form'],DataSourceInfo.DisplayName,"Constraints")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Interim probation review form'], DataSourceInfo.MaxLength, "Constraints")
-            Required: =If(Checkbox3_4.Value = true, true,false)
-            Update: =DataCardValue199.Text
-            Visible: =If(Checkbox3_4.Value =true, true,false)
-            Width: =642
-            X: =1
-            Y: =13
-            ZIndex: =3
-
-            DataCardKey200 As label:
-                AutoHeight: =true
-                Color: =RGBA(77,164,65,1)
-                Font: =Font.Arial
-                FontWeight: =FontWeight.Bold
-                Height: =34
-                Size: =14
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue199 As text:
-                BorderColor: |-
-                    =	
-                    RGBA(88,89,91,0.25)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                Font: =Font.Arial
-                FontWeight: =FontWeight.Lighter
-                Height: =133
-                HoverBorderColor: =RGBA(88,89,91,1)
-                HoverFill: =RGBA(88,89,91,0.01)
-                MaxLength: =Parent.MaxLength
-                Mode: =TextMode.MultiLine
-                PaddingLeft: =5
-                PressedBorderColor: =RGBA(88,89,91,0.5)
-                PressedColor: =Color.Black
-                Size: =12
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey200.Y + DataCardKey200.Height + 5
-                ZIndex: =2
-
-            ErrorMessage201 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =If(Not(IsBlank(Parent.Error)),"Please answer this question")
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue199.Y + DataCardValue199.Height
-                ZIndex: =3
-
-            StarVisible201 As label:
-                Align: =Align.Center
-                Height: =DataCardKey200.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey200.Y
-                ZIndex: =4
-
         ReviewDateRemidial_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="ReviewDateRemidial"
@@ -2138,6 +2073,73 @@
                 Height: =2
                 Width: =1284
                 Y: =200
+                ZIndex: =5
+
+        LineManagerSignatureFLag_DataCard1 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="LineManagerSignatureFLag"
+            Default: =ThisItem.LineManagerSignatureFLag
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Interim probation review form'],DataSourceInfo.DisplayName,"LineManagerSignatureFLag")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =149
+            MaxLength: =DataSourceInfo([@'Interim probation review form'], DataSourceInfo.MaxLength, "LineManagerSignatureFLag")
+            Required: =true
+            Update: =If(Checkbox3_6.Value =true, "True","False")
+            Width: =642
+            X: =0
+            Y: =15
+            ZIndex: =3
+
+            DataCardKey203 As label:
+                AutoHeight: =true
+                Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Size: =14
+                Text: ="Line Manager - I confirm that this report has been discussed with the employee"
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            ErrorMessage204 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =(!IsBlank(Parent.Error) && Parent.DisplayMode=DisplayMode.Edit)
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =Checkbox3_6.Y + Checkbox3_6.Height
+                ZIndex: =3
+
+            StarVisible204 As label:
+                Align: =Align.Center
+                Height: =DataCardKey203.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey203.Y
+                ZIndex: =4
+
+            Checkbox3_6 As checkbox:
+                BorderColor: =RGBA(32, 54, 71, 1)
+                CheckboxBorderColor: =RGBA(32, 54, 71, 1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
+                HoverColor: =RGBA(32, 54, 71, 1)
+                PressedBorderColor: =RGBA(88,89,91,0.5)
+                Size: =12
+                Text: ="Yes"
+                X: =30
+                Y: =70
                 ZIndex: =5
 
     ButtonCanvas1_7 As Button:
