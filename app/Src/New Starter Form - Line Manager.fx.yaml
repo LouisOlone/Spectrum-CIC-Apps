@@ -710,8 +710,11 @@
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Text: =If(Not(IsBlank(Parent.Error)),"Please answer this question")
-                Visible: =(!IsBlank(Parent.Error) && Parent.DisplayMode=DisplayMode.Edit)
+                Text: |
+                    =If(DateDiff(Today(),DataCardValue323.SelectedDate)>1, "Please select the correct date")
+                Visible: |
+                    =If(
+                         IsBlank(DataCardValue323.SelectedDate) || Len(DataCardValue323.SelectedDate) <= 2, false, true) && DateDiff(Today(),DataCardValue323.SelectedDate)>0
                 Width: =Parent.Width - 60
                 X: =30
                 Y: =DataCardValue323.Y + DataCardValue323.Height
