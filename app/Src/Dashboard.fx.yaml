@@ -60,6 +60,32 @@ Dashboard As screen:
         Y: =111
         ZIndex: =13
 
+    Btn_Requests_ViewAll_4 As button:
+        Fill: =RGBA(100, 118, 132, 1)
+        Height: =20
+        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        OnSelect: =Reset(Txt_Requests_Search_4)
+        Size: =10
+        Text: ="View All"
+        Width: =76
+        X: =37
+        Y: =122
+        ZIndex: =14
+
+    Txt_Requests_Search_4 As text:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Default: =""
+        Height: =37
+        HintText: ="Search Name, Email or Request Reference"
+        HoverBorderColor: =RGBA(32, 54, 71, 1)
+        HoverFill: =RGBA(205, 209, 213, 1)
+        OnSelect: =
+        Size: =10
+        Width: =294
+        X: =133
+        Y: =115
+        ZIndex: =15
+
     "gal_inbox As gallery.'BrowseLayout_Vertical_OneTextVariant_ver5.0'":
         DelayItemLoading: =true
         Fill: =RGBA(255, 255, 255, 1)
@@ -98,7 +124,7 @@ Dashboard As screen:
         Width: =917
         X: =32
         Y: =192
-        ZIndex: =14
+        ZIndex: =16
 
         NextArrow2 As icon.ChevronRight:
             AccessibleLabel: =Self.Tooltip
@@ -417,7 +443,7 @@ Dashboard As screen:
         Width: =item_UID.Width
         X: =52
         Y: =155
-        ZIndex: =15
+        ZIndex: =17
 
     lbl_request_type As label:
         Align: =Align.Center
@@ -428,7 +454,7 @@ Dashboard As screen:
         Width: =item_request_type.Width
         X: =322
         Y: =155
-        ZIndex: =16
+        ZIndex: =18
 
     lbl_action_required As label:
         Align: =Align.Center
@@ -439,7 +465,7 @@ Dashboard As screen:
         Width: =item_action_required.Width
         X: =484
         Y: =155
-        ZIndex: =17
+        ZIndex: =19
 
     lbl_stage As label:
         Align: =Align.Center
@@ -450,7 +476,7 @@ Dashboard As screen:
         Width: =item_stage.Width
         X: =661
         Y: =155
-        ZIndex: =18
+        ZIndex: =20
 
     lbl_date_received As label:
         Align: =Align.Center
@@ -461,7 +487,7 @@ Dashboard As screen:
         Width: =item_date_received.Width
         X: =154
         Y: =155
-        ZIndex: =19
+        ZIndex: =21
 
     grp_pop_up As group:
         Height: =5
@@ -476,7 +502,7 @@ Dashboard As screen:
             Height: =768
             Visible: =varPopUp
             Width: =1366
-            ZIndex: =24
+            ZIndex: =26
 
         shp_details_bkg As rectangle:
             BorderColor: =RGBA(88, 89, 91, 1)
@@ -487,7 +513,7 @@ Dashboard As screen:
             Width: =1153
             X: =106
             Y: =72
-            ZIndex: =25
+            ZIndex: =27
 
         shp_pop_up_header As rectangle:
             BorderColor: =RGBA(88, 89, 91, 1)
@@ -498,7 +524,7 @@ Dashboard As screen:
             Width: =1153
             X: =106
             Y: =72
-            ZIndex: =26
+            ZIndex: =28
 
         pop_up_cancel_badge As icon.CancelBadge:
             Color: =RGBA(255, 255, 255, 1)
@@ -540,7 +566,7 @@ Dashboard As screen:
             Width: =20
             X: =1235
             Y: =74
-            ZIndex: =27
+            ZIndex: =29
 
         form_approval_outcome As form.PowerApps_CoreControls_Form:
             DataSource: =Inbox
@@ -552,7 +578,7 @@ Dashboard As screen:
             Width: =354
             X: =905
             Y: =162
-            ZIndex: =29
+            ZIndex: =31
 
             UID_DataCard3 As typedDataCard.fluentV9TextualEditCard:
                 BorderStyle: =BorderStyle.Solid
@@ -892,7 +918,7 @@ Dashboard As screen:
             Visible: =varPopUp
             X: =127
             Y: =111
-            ZIndex: =30
+            ZIndex: =32
 
         lbl_pop_up_outcome As label:
             Color: =RGBA(77, 164, 65, 1)
@@ -901,7 +927,7 @@ Dashboard As screen:
             Visible: =varPopUp
             X: =928
             Y: =111
-            ZIndex: =31
+            ZIndex: =33
 
         btn_submit_approval_outcome As Button:
             Appearance: ='ButtonCanvas.Appearance'.Secondary
@@ -914,7 +940,7 @@ Dashboard As screen:
             Width: =96
             X: =1139
             Y: =653
-            ZIndex: =32
+            ZIndex: =34
 
         shp_divider As rectangle:
             Fill: =RGBA(53, 61, 63, 1)
@@ -923,7 +949,7 @@ Dashboard As screen:
             Width: =1
             X: =906
             Y: =96
-            ZIndex: =33
+            ZIndex: =35
 
     grp_toolbar As group:
         Height: =5
@@ -939,7 +965,7 @@ Dashboard As screen:
             HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
             Text: =""
             Width: =1366
-            ZIndex: =20
+            ZIndex: =22
 
         Label4 As label:
             Align: =Align.Center
@@ -949,7 +975,7 @@ Dashboard As screen:
             Text: =Today()
             X: =1216
             Y: =53
-            ZIndex: =21
+            ZIndex: =23
 
         icon_my_profile_8 As image:
             BorderColor: =RGBA(32, 54, 71, 1)
@@ -966,7 +992,7 @@ Dashboard As screen:
             Width: =40
             X: =1271
             Y: =3
-            ZIndex: =22
+            ZIndex: =24
 
         Label5 As label:
             Font: =Font.Arial
@@ -976,7 +1002,7 @@ Dashboard As screen:
             Width: =652
             X: =420
             Y: =5
-            ZIndex: =23
+            ZIndex: =25
 
     Icon10 As icon.GlobeRefresh:
         Height: =24
@@ -985,7 +1011,7 @@ Dashboard As screen:
         Width: =23
         X: =923
         Y: =159
-        ZIndex: =28
+        ZIndex: =30
 
     form_laptop_request As form.PowerApps_CoreControls_Form:
         DataSource: ='Laptop Requests'
@@ -997,7 +1023,7 @@ Dashboard As screen:
         Visible: =varLaptopRequest
         X: =106
         Y: =162
-        ZIndex: =34
+        ZIndex: =36
 
         UID_DataCard4 As typedDataCard.fluentV9TextualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -1861,7 +1887,7 @@ Dashboard As screen:
         Visible: =var4GLaptopRequest
         X: =106
         Y: =162
-        ZIndex: =35
+        ZIndex: =37
 
         UID_DataCard1 As typedDataCard.fluentV9TextualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -2648,6 +2674,36 @@ Dashboard As screen:
                 Y: =DataCardKey12.Y
                 ZIndex: =4
 
+    grp_attachments_warning As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =37
+
+        Label6 As label:
+            Align: =Align.Right
+            Font: =Font.Arial
+            FontWeight: =FontWeight.Bold
+            Size: =8
+            Text: |-
+                ="Warning: Attachments to review"
+            Visible: =If(And(varSmartcardRequest,gal_inbox.Selected.'Has attachments'=true), true, false)
+            Width: =200
+            X: =928
+            Y: =649
+            ZIndex: =45
+
+        Icon2 As icon.Warning:
+            Color: =RGBA(215, 58, 60, 1)
+            Height: =25
+            Icon: =Icon.Warning
+            Visible: =If(And(varSmartcardRequest,gal_inbox.Selected.'Has attachments'=true), true, false)
+            Width: =25
+            X: =938
+            Y: =656
+            ZIndex: =46
+
     form_mobile_request As form.PowerApps_CoreControls_Form:
         DataSource: ='Mobile Requests'
         DefaultMode: =FormMode.View
@@ -2658,7 +2714,7 @@ Dashboard As screen:
         Visible: =varMobileRequest
         X: =106
         Y: =162
-        ZIndex: =36
+        ZIndex: =38
 
         UID_DataCard5 As typedDataCard.fluentV9TextualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -3396,37 +3452,7 @@ Dashboard As screen:
         Width: =96
         X: =1270
         Y: =736
-        ZIndex: =37
-
-    grp_attachments_warning As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =37
-
-        Label6 As label:
-            Align: =Align.Right
-            Font: =Font.Arial
-            FontWeight: =FontWeight.Bold
-            Size: =8
-            Text: |-
-                ="Warning: Attachments to review"
-            Visible: =If(And(varSmartcardRequest,gal_inbox.Selected.'Has attachments'=true), true, false)
-            Width: =200
-            X: =928
-            Y: =649
-            ZIndex: =43
-
-        Icon2 As icon.Warning:
-            Color: =RGBA(215, 58, 60, 1)
-            Height: =25
-            Icon: =Icon.Warning
-            Visible: =If(And(varSmartcardRequest,gal_inbox.Selected.'Has attachments'=true), true, false)
-            Width: =25
-            X: =938
-            Y: =656
-            ZIndex: =44
+        ZIndex: =39
 
     ButtonCanvas3_1 As Button:
         BasePaletteColor: =
@@ -3440,7 +3466,7 @@ Dashboard As screen:
         Width: =96
         X: =1171
         Y: =735
-        ZIndex: =38
+        ZIndex: =40
 
     form_peripheral_requests As form.PowerApps_CoreControls_Form:
         DataSource: ='Peripherals Requests'
@@ -3452,7 +3478,7 @@ Dashboard As screen:
         Visible: =varPeripheralsRequest
         X: =106
         Y: =162
-        ZIndex: =39
+        ZIndex: =41
 
         UID_DataCard7 As typedDataCard.fluentV9TextualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -4389,7 +4415,7 @@ Dashboard As screen:
         Visible: =varSpecialRequest
         X: =106
         Y: =162
-        ZIndex: =40
+        ZIndex: =42
 
         UID_DataCard8 As typedDataCard.fluentV9TextualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -5048,12 +5074,51 @@ Dashboard As screen:
                 Y: =DataCardKey92.Y
                 ZIndex: =4
 
+    grp_loading_screen As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =42
+
+        shp_loading As rectangle:
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =768
+            Visible: =varLoading
+            Width: =1366
+            ZIndex: =53
+
+        timer_loading As timer:
+            AutoStart: =
+            Duration: =500
+            OnTimerEnd: |-
+                =UpdateContext({varLoading:false}); Reset(timer_loading)
+            Start: =varPopUp=true
+            Visible: =false
+            X: =1037
+            Y: =18
+            ZIndex: =54
+
+        spinner_loading As Spinner:
+            BasePaletteColor: =
+            DisplayMode: =DisplayMode.Edit
+            FontColor: =
+            Height: =768
+            Label: ="Loading..."
+            LabelPosition: ='Spinner.LabelPosition'.Below
+            SpinnerSize: ='Spinner.SpinnerSize'.Huge
+            Visible: =varLoading
+            Width: =1366
+            X: =0
+            Y: =0
+            ZIndex: =55
+
     logo_Spectrum As image:
         Height: =50
         Image: ='Spectrum Community Health CIC 2023 - white'
         X: =37
         Y: =13
-        ZIndex: =41
+        ZIndex: =43
 
     form_smartcard_requests As form.PowerApps_CoreControls_Form:
         DataSource: ='Smartcard Requests'
@@ -5065,7 +5130,7 @@ Dashboard As screen:
         Visible: =varSmartcardRequest
         X: =106
         Y: =162
-        ZIndex: =42
+        ZIndex: =44
 
         UID_DataCard9 As typedDataCard.fluentV9TextualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -6059,45 +6124,6 @@ Dashboard As screen:
                 Y: =DataCardKey111.Y
                 ZIndex: =4
 
-    grp_loading_screen As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =42
-
-        shp_loading As rectangle:
-            Fill: =RGBA(255, 255, 255, 1)
-            Height: =768
-            Visible: =varLoading
-            Width: =1366
-            ZIndex: =51
-
-        timer_loading As timer:
-            AutoStart: =
-            Duration: =500
-            OnTimerEnd: |-
-                =UpdateContext({varLoading:false}); Reset(timer_loading)
-            Start: =varPopUp=true
-            Visible: =false
-            X: =1037
-            Y: =18
-            ZIndex: =52
-
-        spinner_loading As Spinner:
-            BasePaletteColor: =
-            DisplayMode: =DisplayMode.Edit
-            FontColor: =
-            Height: =768
-            Label: ="Loading..."
-            LabelPosition: ='Spinner.LabelPosition'.Below
-            SpinnerSize: ='Spinner.SpinnerSize'.Huge
-            Visible: =varLoading
-            Width: =1366
-            X: =0
-            Y: =0
-            ZIndex: =53
-
     form_smartcard_positions As form.PowerApps_CoreControls_Form:
         DataSource: ='Smartcard Positions Requests'
         DefaultMode: =FormMode.View
@@ -6108,7 +6134,7 @@ Dashboard As screen:
         Visible: =varSmartcardPositionsRequest
         X: =106
         Y: =162
-        ZIndex: =45
+        ZIndex: =47
 
         UID_DataCard11 As typedDataCard.fluentV9TextualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -7050,7 +7076,7 @@ Dashboard As screen:
         Width: =500
         X: =381
         Y: =70
-        ZIndex: =46
+        ZIndex: =48
 
     Icon1 As icon.Tools:
         Color: =RGBA(79, 90, 94, 1)
@@ -7061,7 +7087,69 @@ Dashboard As screen:
         Width: =63
         X: =1155
         Y: =10
-        ZIndex: =47
+        ZIndex: =49
+
+    grp_raise_new_request As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =49
+
+        shp_sidebar_5 As button:
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(77,164,65,1)
+            Height: =63
+            HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+            OnSelect: |-
+                =Navigate(Forms);
+                Refresh('4G Laptop Requests'); Refresh('Afc Wages'); Refresh(Developers); Refresh('Final Probation Review Form'); Refresh(Inbox); Refresh('Induction Log'); Refresh('Interim probation review form'); Refresh('IT Equipment And Requests'); Refresh('IT Incidents'); Refresh('Laptop Requests'); Refresh('Mobile Requests'); Refresh(NewStarterForm); Refresh('Onboarding Record'); Refresh('Peripherals Requests'); Refresh(Requests_1); Refresh(Requests_Master); Refresh('Services List'); Refresh(SharedDrives); Refresh('Smartcard Positions'); Refresh('Smartcard Positions Requests'); Refresh('Smartcard Requests'); Refresh('Special IT Requests');
+            Text: =""
+            Width: =362
+            X: =978
+            Y: =192
+            ZIndex: =6
+
+        Icon3 As icon.AddDocument:
+            Color: =RGBA(0, 0, 0, 1)
+            Height: =58
+            Icon: =Icon.AddDocument
+            OnSelect: |-
+                =Navigate(Forms);
+                Refresh('4G Laptop Requests'); Refresh('Afc Wages'); Refresh(Developers); Refresh('Final Probation Review Form'); Refresh(Inbox); Refresh('Induction Log'); Refresh('Interim probation review form'); Refresh('IT Equipment And Requests'); Refresh('IT Incidents'); Refresh('Laptop Requests'); Refresh('Mobile Requests'); Refresh(NewStarterForm); Refresh('Onboarding Record'); Refresh('Peripherals Requests'); Refresh(Requests_1); Refresh(Requests_Master); Refresh('Services List'); Refresh(SharedDrives); Refresh('Smartcard Positions'); Refresh('Smartcard Positions Requests'); Refresh('Smartcard Requests'); Refresh('Special IT Requests');
+            Width: =58
+            X: =1264
+            Y: =194
+            ZIndex: =7
+
+        Label2 As label:
+            Font: =Font.Arial
+            FontWeight: =FontWeight.Bold
+            Height: =61
+            OnSelect: |-
+                =Navigate(Forms);
+                Refresh('4G Laptop Requests'); Refresh('Afc Wages'); Refresh(Developers); Refresh('Final Probation Review Form'); Refresh(Inbox); Refresh('Induction Log'); Refresh('Interim probation review form'); Refresh('IT Equipment And Requests'); Refresh('IT Incidents'); Refresh('Laptop Requests'); Refresh('Mobile Requests'); Refresh(NewStarterForm); Refresh('Onboarding Record'); Refresh('Peripherals Requests'); Refresh(Requests_1); Refresh(Requests_Master); Refresh('Services List'); Refresh(SharedDrives); Refresh('Smartcard Positions'); Refresh('Smartcard Positions Requests'); Refresh('Smartcard Requests'); Refresh('Special IT Requests');
+            Size: =16
+            Text: ="Raise a new request"
+            Width: =222
+            X: =1021
+            Y: =194
+            ZIndex: =8
+
+        Button2 As button:
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =63
+            HoverColor: =RGBA(255, 255, 255, 0)
+            HoverFill: =ColorFade(RGBA(56, 96, 178, 0), -20%)
+            OnSelect: |-
+                =Navigate(Forms);
+                Refresh('4G Laptop Requests'); Refresh('Afc Wages'); Refresh(Developers); Refresh('Final Probation Review Form'); Refresh(Inbox); Refresh('Induction Log'); Refresh('Interim probation review form'); Refresh('IT Equipment And Requests'); Refresh('IT Incidents'); Refresh('Laptop Requests'); Refresh('Mobile Requests'); Refresh(NewStarterForm); Refresh('Onboarding Record'); Refresh('Peripherals Requests'); Refresh(Requests_1); Refresh(Requests_Master); Refresh('Services List'); Refresh(SharedDrives); Refresh('Smartcard Positions'); Refresh('Smartcard Positions Requests'); Refresh('Smartcard Requests'); Refresh('Special IT Requests');
+            PressedFill: =RGBA(0,0,0,0)
+            Text: =""
+            Width: =362
+            X: =978
+            Y: =192
+            ZIndex: =9
 
     Label3 As label:
         Align: =Align.Center
@@ -7072,7 +7160,7 @@ Dashboard As screen:
         Text: ="DEVELOPER MODE"
         Visible: =varDeveloperMode
         Width: =1155
-        ZIndex: =48
+        ZIndex: =50
 
     Form3 As form.PowerApps_CoreControls_Form:
         DataSource: ='4G Laptop Requests'
@@ -7083,7 +7171,7 @@ Dashboard As screen:
         Visible: =var4GLaptopTest
         X: =106
         Y: =162
-        ZIndex: =49
+        ZIndex: =51
 
         raised_by_DataCard4 As typedDataCard.fluentV9ComboBoxEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -7870,68 +7958,6 @@ Dashboard As screen:
                 Y: =DataCardKey68.Y
                 ZIndex: =4
 
-    grp_raise_new_request As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =49
-
-        shp_sidebar_5 As button:
-            DisplayMode: =DisplayMode.View
-            Fill: =RGBA(77,164,65,1)
-            Height: =63
-            HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
-            OnSelect: |-
-                =Navigate(Forms);
-                Refresh('4G Laptop Requests'); Refresh('Afc Wages'); Refresh(Developers); Refresh('Final Probation Review Form'); Refresh(Inbox); Refresh('Induction Log'); Refresh('Interim probation review form'); Refresh('IT Equipment And Requests'); Refresh('IT Incidents'); Refresh('Laptop Requests'); Refresh('Mobile Requests'); Refresh(NewStarterForm); Refresh('Onboarding Record'); Refresh('Peripherals Requests'); Refresh(Requests_1); Refresh(Requests_Master); Refresh('Services List'); Refresh(SharedDrives); Refresh('Smartcard Positions'); Refresh('Smartcard Positions Requests'); Refresh('Smartcard Requests'); Refresh('Special IT Requests');
-            Text: =""
-            Width: =362
-            X: =978
-            Y: =192
-            ZIndex: =6
-
-        Icon3 As icon.AddDocument:
-            Color: =RGBA(0, 0, 0, 1)
-            Height: =58
-            Icon: =Icon.AddDocument
-            OnSelect: |-
-                =Navigate(Forms);
-                Refresh('4G Laptop Requests'); Refresh('Afc Wages'); Refresh(Developers); Refresh('Final Probation Review Form'); Refresh(Inbox); Refresh('Induction Log'); Refresh('Interim probation review form'); Refresh('IT Equipment And Requests'); Refresh('IT Incidents'); Refresh('Laptop Requests'); Refresh('Mobile Requests'); Refresh(NewStarterForm); Refresh('Onboarding Record'); Refresh('Peripherals Requests'); Refresh(Requests_1); Refresh(Requests_Master); Refresh('Services List'); Refresh(SharedDrives); Refresh('Smartcard Positions'); Refresh('Smartcard Positions Requests'); Refresh('Smartcard Requests'); Refresh('Special IT Requests');
-            Width: =58
-            X: =1264
-            Y: =194
-            ZIndex: =7
-
-        Label2 As label:
-            Font: =Font.Arial
-            FontWeight: =FontWeight.Bold
-            Height: =61
-            OnSelect: |-
-                =Navigate(Forms);
-                Refresh('4G Laptop Requests'); Refresh('Afc Wages'); Refresh(Developers); Refresh('Final Probation Review Form'); Refresh(Inbox); Refresh('Induction Log'); Refresh('Interim probation review form'); Refresh('IT Equipment And Requests'); Refresh('IT Incidents'); Refresh('Laptop Requests'); Refresh('Mobile Requests'); Refresh(NewStarterForm); Refresh('Onboarding Record'); Refresh('Peripherals Requests'); Refresh(Requests_1); Refresh(Requests_Master); Refresh('Services List'); Refresh(SharedDrives); Refresh('Smartcard Positions'); Refresh('Smartcard Positions Requests'); Refresh('Smartcard Requests'); Refresh('Special IT Requests');
-            Size: =16
-            Text: ="Raise a new request"
-            Width: =222
-            X: =1021
-            Y: =194
-            ZIndex: =8
-
-        Button2 As button:
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =63
-            HoverColor: =RGBA(255, 255, 255, 0)
-            HoverFill: =ColorFade(RGBA(56, 96, 178, 0), -20%)
-            OnSelect: |-
-                =Navigate(Forms);
-                Refresh('4G Laptop Requests'); Refresh('Afc Wages'); Refresh(Developers); Refresh('Final Probation Review Form'); Refresh(Inbox); Refresh('Induction Log'); Refresh('Interim probation review form'); Refresh('IT Equipment And Requests'); Refresh('IT Incidents'); Refresh('Laptop Requests'); Refresh('Mobile Requests'); Refresh(NewStarterForm); Refresh('Onboarding Record'); Refresh('Peripherals Requests'); Refresh(Requests_1); Refresh(Requests_Master); Refresh('Services List'); Refresh(SharedDrives); Refresh('Smartcard Positions'); Refresh('Smartcard Positions Requests'); Refresh('Smartcard Requests'); Refresh('Special IT Requests');
-            PressedFill: =RGBA(0,0,0,0)
-            Text: =""
-            Width: =362
-            X: =978
-            Y: =192
-            ZIndex: =9
-
     Form5 As form.PowerApps_CoreControls_Form:
         DataSource: ='Mobile Requests'
         DefaultMode: =FormMode.View
@@ -7941,7 +7967,7 @@ Dashboard As screen:
         Visible: =false
         X: =106
         Y: =162
-        ZIndex: =50
+        ZIndex: =52
 
         Title_DataCard3 As typedDataCard.fluentV9TextualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -9072,31 +9098,5 @@ Dashboard As screen:
         Width: =63
         X: =1303
         Y: =713
-        ZIndex: =55
-
-    Txt_Requests_Search_4 As text:
-        BorderColor: =RGBA(32, 54, 71, 1)
-        Default: =""
-        Height: =37
-        HintText: ="Search Name, Email or Request Reference"
-        HoverBorderColor: =RGBA(32, 54, 71, 1)
-        HoverFill: =RGBA(205, 209, 213, 1)
-        OnSelect: =
-        Size: =10
-        Width: =294
-        X: =133
-        Y: =115
         ZIndex: =56
-
-    Btn_Requests_ViewAll_4 As button:
-        Fill: =RGBA(100, 118, 132, 1)
-        Height: =20
-        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
-        OnSelect: =Reset(Txt_Requests_Search_4)
-        Size: =10
-        Text: ="View All"
-        Width: =76
-        X: =37
-        Y: =122
-        ZIndex: =57
 
