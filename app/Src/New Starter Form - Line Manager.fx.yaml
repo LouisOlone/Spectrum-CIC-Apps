@@ -668,14 +668,13 @@
             ZIndex: =1
 
             DataCardKey327 As label:
-                AutoHeight: =true
                 Color: =RGBA(77,164,65,1)
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Bold
-                Height: =34
+                Height: =37
                 Size: =14
                 Text: ="Start date"
-                Width: =Parent.Width - 60
+                Width: =116
                 Wrap: =false
                 X: =30
                 Y: =10
@@ -710,8 +709,7 @@
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Text: |
-                    =If(DateDiff(Today(),DataCardValue323.SelectedDate)<1, "Please select the correct date")
+                Text: =If(DateDiff(Today(),DataCardValue323.SelectedDate)<1, "Please select the correct date")
                 Visible: |
                     =If(
                          IsBlank(DataCardValue323.SelectedDate) || Len(DataCardValue323.SelectedDate) <= 2, false, true) && DateDiff(Today(),DataCardValue323.SelectedDate)<0
@@ -737,6 +735,20 @@
                 Width: =1284
                 Y: =111
                 ZIndex: =5
+
+            Label17 As label:
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
+                Height: =55
+                Size: =10
+                Text: |
+                    ="Warning! At least 10 working days notice is required to guarantee all equipment is available on the new starter's start date."
+                Visible: |-
+                    =//If(DateDiff(Today(),DataCardValue363.SelectedDate)<14, true, false)
+                    true
+                Width: =448
+                X: =177
+                ZIndex: =6
 
         EndDate_DataCard2 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -3139,4 +3151,14 @@
                 Wrap: =false
                 Y: =DataCardKey316_1.Y
                 ZIndex: =4
+
+    Icon11 As icon.Warning:
+        Color: =RGBA(240, 98, 15, 1)
+        Height: =26
+        Icon: =Icon.Warning
+        Visible: =If(DateDiff(Today(),DateValue(DataCardValue363.SelectedDate),TimeUnit.Days)<14, true, false)
+        Width: =32
+        X: =816
+        Y: =266
+        ZIndex: =7
 
