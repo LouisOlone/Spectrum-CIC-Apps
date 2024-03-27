@@ -750,6 +750,7 @@
 
             Icon11 As icon.Warning:
                 Color: =RGBA(240, 98, 15, 1)
+                DisplayMode: =DisplayMode.View
                 Height: =30
                 Icon: =Icon.Warning
                 Visible: =If(DateDiff(Today(),DataCardValue323.SelectedDate)<14, true, false)
@@ -1827,6 +1828,83 @@
                 Y: =DataCardKey343.Y
                 ZIndex: =4
 
+        "'Shared Drive_DataCard2' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="SharedDrive"
+            Default: =ThisItem.'Shared Drive'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@NewStarterForm],DataSourceInfo.DisplayName,"SharedDrive")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =96
+            MaxLength: =DataSourceInfo([@NewStarterForm], DataSourceInfo.MaxLength, "SharedDrive")
+            Required: =false
+            Update: =ComboBox2_1.Selected.Value
+            Visible: =If(DataCardValue337.Selected.Value ="Yes", true,false)
+            Width: =642
+            X: =1
+            Y: =12
+            ZIndex: =1
+
+            DataCardKey315 As label:
+                AutoHeight: =true
+                Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Size: =14
+                Text: ="Please state any drives the user needs access to"
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            ErrorMessage316 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =86
+                ZIndex: =3
+
+            StarVisible316 As label:
+                Align: =Align.Center
+                Height: =DataCardKey315.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey315.Y
+                ZIndex: =4
+
+            ComboBox2_1 As combobox:
+                BorderColor: =RGBA(88,89,91,0.25)
+                ChevronBackground: =RGBA(77,164,65,1)
+                ChevronHoverBackground: =ColorFade(RGBA(77,164,65,1), -20%)
+                DisplayFields: =["Value"]
+                DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(77,164,65,0.5)
+                IsSearchable: =false
+                Items: =Choices([@SharedDrives].SharedDrive)
+                PressedBorderColor: =RGBA(88,89,91,0.5)
+                PressedFill: =RGBA(32, 54, 71, 1)
+                SearchFields: =["Value"]
+                SearchItems: =[]
+                SelectionFill: =RGBA(74,164,65,0.5)
+                Width: =582
+                X: =30
+                Y: =46
+                ZIndex: =5
+
         LaptopRequired_DataCard2 As typedDataCard.comboBoxEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="LaptopRequired"
@@ -1923,83 +2001,6 @@
                 Width: =1284
                 ZIndex: =5
 
-        "'Shared Drive_DataCard2' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="SharedDrive"
-            Default: =ThisItem.'Shared Drive'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@NewStarterForm],DataSourceInfo.DisplayName,"SharedDrive")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =96
-            MaxLength: =DataSourceInfo([@NewStarterForm], DataSourceInfo.MaxLength, "SharedDrive")
-            Required: =false
-            Update: =ComboBox2_1.Selected.Value
-            Visible: =If(DataCardValue337.Selected.Value ="Yes", true,false)
-            Width: =642
-            X: =1
-            Y: =12
-            ZIndex: =1
-
-            DataCardKey315 As label:
-                AutoHeight: =true
-                Color: =RGBA(77,164,65,1)
-                Font: =Font.Arial
-                FontWeight: =FontWeight.Bold
-                Height: =34
-                Size: =14
-                Text: ="Please state any drives the user needs access to"
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            ErrorMessage316 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =86
-                ZIndex: =3
-
-            StarVisible316 As label:
-                Align: =Align.Center
-                Height: =DataCardKey315.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey315.Y
-                ZIndex: =4
-
-            ComboBox2_1 As combobox:
-                BorderColor: =RGBA(88,89,91,0.25)
-                ChevronBackground: =RGBA(77,164,65,1)
-                ChevronHoverBackground: =ColorFade(RGBA(77,164,65,1), -20%)
-                DisplayFields: =["Value"]
-                DisplayMode: =Parent.DisplayMode
-                Font: =Font.Arial
-                HoverBorderColor: =RGBA(88,89,91,1)
-                HoverFill: =RGBA(77,164,65,0.5)
-                IsSearchable: =false
-                Items: =Choices([@SharedDrives].SharedDrive)
-                PressedBorderColor: =RGBA(88,89,91,0.5)
-                PressedFill: =RGBA(32, 54, 71, 1)
-                SearchFields: =["Value"]
-                SearchItems: =[]
-                SelectionFill: =RGBA(74,164,65,0.5)
-                Width: =582
-                X: =30
-                Y: =46
-                ZIndex: =5
-
         "'Request Reason_DataCard2' As typedDataCard.comboBoxEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="RequestReason"
@@ -2083,6 +2084,92 @@
                 Width: =30
                 Wrap: =false
                 Y: =DataCardKey318.Y
+                ZIndex: =4
+
+        "'4GFlagRequired_DataCard2' As typedDataCard.comboBoxEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="OData__x0034_GFlagRequired"
+            Default: =ThisItem.'4GFlagRequired'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@NewStarterForm],DataSourceInfo.DisplayName,"OData__x0034_GFlagRequired")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =If(DataCardValue313.Selected.Value="Yes",true,false)
+            Update: =DataCardValue315.Selected
+            Visible: =If(DataCardValue313.Selected.Value ="Yes", true,false)
+            Width: =642
+            X: =1
+            Y: =14
+            ZIndex: =1
+
+            DataCardKey319 As label:
+                AutoHeight: =true
+                Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
+                Height: =34
+                Size: =14
+                Text: ="Is 4G required?"
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue315 As combobox:
+                BorderColor: =RGBA(88,89,91,0.25)
+                ChevronBackground: |-
+                    =	
+                    RGBA(77,164,65,1)
+                ChevronHoverBackground: =ColorFade(RGBA(77,164,65,1), -20%)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["Value"]
+                DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(77,164,65,0.5)
+                Items: =Choices([@NewStarterForm].'4GFlagRequired')
+                OnChange: =Reset(DataCardValue316)
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PressedBorderColor: =RGBA(88,89,91,0.5)
+                PressedColor: =Color.Black
+                PressedFill: =Self.Fill
+                SearchFields: =["Value"]
+                SearchItems: =Choices(NewStarterForm.'4GFlagRequired',DataCardValue315.SearchText)
+                SelectionColor: =RGBA(0,0,0,1)
+                SelectionFill: =RGBA(74,164,65,0.5)
+                SelectMultiple: =false
+                Size: =12
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =45
+                ZIndex: =2
+
+            ErrorMessage320 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =If(Not(IsBlank(Parent.Error)),"Please answer this question")
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue315.Y + DataCardValue315.Height
+                ZIndex: =3
+
+            StarVisible320 As label:
+                Align: =Align.Center
+                Height: =DataCardKey319.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey319.Y
                 ZIndex: =4
 
         "'4GReason_DataCard2' As typedDataCard.textualEditCard":
@@ -2256,92 +2343,6 @@
                 Width: =1284
                 ZIndex: =5
 
-        "'4GFlagRequired_DataCard2' As typedDataCard.comboBoxEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="OData__x0034_GFlagRequired"
-            Default: =ThisItem.'4GFlagRequired'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@NewStarterForm],DataSourceInfo.DisplayName,"OData__x0034_GFlagRequired")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            Required: =If(DataCardValue313.Selected.Value="Yes",true,false)
-            Update: =DataCardValue315.Selected
-            Visible: =If(DataCardValue313.Selected.Value ="Yes", true,false)
-            Width: =642
-            X: =1
-            Y: =14
-            ZIndex: =1
-
-            DataCardKey319 As label:
-                AutoHeight: =true
-                Color: =RGBA(77,164,65,1)
-                Font: =Font.Arial
-                FontWeight: =FontWeight.Bold
-                Height: =34
-                Size: =14
-                Text: ="Is 4G required?"
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue315 As combobox:
-                BorderColor: =RGBA(88,89,91,0.25)
-                ChevronBackground: |-
-                    =	
-                    RGBA(77,164,65,1)
-                ChevronHoverBackground: =ColorFade(RGBA(77,164,65,1), -20%)
-                DefaultSelectedItems: =Parent.Default
-                DisplayFields: =["Value"]
-                DisplayMode: =Parent.DisplayMode
-                Font: =Font.Arial
-                FontWeight: =FontWeight.Lighter
-                HoverBorderColor: =RGBA(88,89,91,1)
-                HoverFill: =RGBA(77,164,65,0.5)
-                Items: =Choices([@NewStarterForm].'4GFlagRequired')
-                OnChange: =Reset(DataCardValue316)
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                PressedBorderColor: =RGBA(88,89,91,0.5)
-                PressedColor: =Color.Black
-                PressedFill: =Self.Fill
-                SearchFields: =["Value"]
-                SearchItems: =Choices(NewStarterForm.'4GFlagRequired',DataCardValue315.SearchText)
-                SelectionColor: =RGBA(0,0,0,1)
-                SelectionFill: =RGBA(74,164,65,0.5)
-                SelectMultiple: =false
-                Size: =12
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =45
-                ZIndex: =2
-
-            ErrorMessage320 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =If(Not(IsBlank(Parent.Error)),"Please answer this question")
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue315.Y + DataCardValue315.Height
-                ZIndex: =3
-
-            StarVisible320 As label:
-                Align: =Align.Center
-                Height: =DataCardKey319.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey319.Y
-                ZIndex: =4
-
         MobilePhoneReason_DataCard2 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="MobilePhoneReason"
@@ -2419,6 +2420,108 @@
                 Wrap: =false
                 Y: =DataCardKey321.Y
                 ZIndex: =4
+
+        ManagerUserPolicyFlag_DataCard2 As typedDataCard.comboBoxEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ManagerUserPolicyFlag"
+            Default: =ThisItem.ManagerUserPolicyFlag
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@NewStarterForm],DataSourceInfo.DisplayName,"ManagerUserPolicyFlag")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =411
+            Required: =If(DataCardValue318.Selected.Value ="Yes",true)
+            Update: =DataCardValue319.Selected
+            Visible: =If(DataCardValue318.Selected.Value ="Yes", true,false)
+            Width: =642
+            X: =1
+            Y: =17
+            ZIndex: =1
+
+            DataCardKey323 As label:
+                Color: =RGBA(77,164,65,1)
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Bold
+                Height: =52
+                Size: =14
+                Text: ="Please confirm that you will ensure that the new user acknowledges the Policy below."
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue319 As combobox:
+                BorderColor: =RGBA(88,89,91,0.25)
+                ChevronBackground: |-
+                    =	
+                    RGBA(77,164,65,1)
+                ChevronHoverBackground: =ColorFade(RGBA(77,164,65,1), -20%)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["Value"]
+                DisplayMode: =Parent.DisplayMode
+                Font: =Font.Arial
+                FontWeight: =FontWeight.Lighter
+                HoverBorderColor: =RGBA(88,89,91,1)
+                HoverFill: =RGBA(77,164,65,0.5)
+                Items: =Choices([@NewStarterForm].ManagerUserPolicyFlag)
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PressedBorderColor: =RGBA(88,89,91,0.5)
+                PressedColor: =Color.Black
+                PressedFill: =Self.Fill
+                SearchFields: =["Value"]
+                SearchItems: =Choices(NewStarterForm.ManagerUserPolicyFlag,DataCardValue319.SearchText)
+                SelectionColor: =RGBA(0,0,0,1)
+                SelectionFill: =RGBA(74,164,65,0.5)
+                SelectMultiple: =false
+                Size: =12
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =360
+                ZIndex: =2
+
+            ErrorMessage324 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =If(Not(IsBlank(Parent.Error)),"Please answer this question")
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue319.Y + DataCardValue319.Height
+                ZIndex: =3
+
+            StarVisible324 As label:
+                Align: =Align.Center
+                Height: =DataCardKey323.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey323.Y
+                ZIndex: =4
+
+            Label17_1 As label:
+                BorderColor: =RGBA(32, 54, 71, 1)
+                FontWeight: =FontWeight.Lighter
+                Height: =270
+                Size: =12
+                Text: |-
+                    ="Signing this agreement confirms that you have read and will comply with Spectrum’s Mobile Communications Devices Policy & Procedures.
+                    
+                    I agree to abide by Spectrum’s policy which is published on Spectrum’s intranet for information.
+                    
+                    I acknowledge that I may be liable for costs relating to damage and/or faults due to my own negligence and any costs arising from the non-return of the mobile device in accordance with the policy. 
+                    I understand that I may be liable to disciplinary action should I fail to comply with the policy.
+                    
+                    I agree that I will return this device once I no longer require it or leave the organisation."
+                Width: =600
+                X: =30
+                Y: =75
+                ZIndex: =5
 
         UID_DataCard14 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -2640,108 +2743,6 @@
                 Wrap: =false
                 Y: =DataCardKey316.Y
                 ZIndex: =4
-
-        ManagerUserPolicyFlag_DataCard2 As typedDataCard.comboBoxEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="ManagerUserPolicyFlag"
-            Default: =ThisItem.ManagerUserPolicyFlag
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@NewStarterForm],DataSourceInfo.DisplayName,"ManagerUserPolicyFlag")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =411
-            Required: =If(DataCardValue318.Selected.Value ="Yes",true)
-            Update: =DataCardValue319.Selected
-            Visible: =If(DataCardValue318.Selected.Value ="Yes", true,false)
-            Width: =642
-            X: =1
-            Y: =17
-            ZIndex: =1
-
-            DataCardKey323 As label:
-                Color: =RGBA(77,164,65,1)
-                Font: =Font.Arial
-                FontWeight: =FontWeight.Bold
-                Height: =52
-                Size: =14
-                Text: ="Please confirm that you will ensure that the new user acknowledges the Policy below."
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue319 As combobox:
-                BorderColor: =RGBA(88,89,91,0.25)
-                ChevronBackground: |-
-                    =	
-                    RGBA(77,164,65,1)
-                ChevronHoverBackground: =ColorFade(RGBA(77,164,65,1), -20%)
-                DefaultSelectedItems: =Parent.Default
-                DisplayFields: =["Value"]
-                DisplayMode: =Parent.DisplayMode
-                Font: =Font.Arial
-                FontWeight: =FontWeight.Lighter
-                HoverBorderColor: =RGBA(88,89,91,1)
-                HoverFill: =RGBA(77,164,65,0.5)
-                Items: =Choices([@NewStarterForm].ManagerUserPolicyFlag)
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                PressedBorderColor: =RGBA(88,89,91,0.5)
-                PressedColor: =Color.Black
-                PressedFill: =Self.Fill
-                SearchFields: =["Value"]
-                SearchItems: =Choices(NewStarterForm.ManagerUserPolicyFlag,DataCardValue319.SearchText)
-                SelectionColor: =RGBA(0,0,0,1)
-                SelectionFill: =RGBA(74,164,65,0.5)
-                SelectMultiple: =false
-                Size: =12
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =360
-                ZIndex: =2
-
-            ErrorMessage324 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =If(Not(IsBlank(Parent.Error)),"Please answer this question")
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue319.Y + DataCardValue319.Height
-                ZIndex: =3
-
-            StarVisible324 As label:
-                Align: =Align.Center
-                Height: =DataCardKey323.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey323.Y
-                ZIndex: =4
-
-            Label17_1 As label:
-                BorderColor: =RGBA(32, 54, 71, 1)
-                FontWeight: =FontWeight.Lighter
-                Height: =270
-                Size: =12
-                Text: |-
-                    ="Signing this agreement confirms that you have read and will comply with Spectrum’s Mobile Communications Devices Policy & Procedures.
-                    
-                    I agree to abide by Spectrum’s policy which is published on Spectrum’s intranet for information.
-                    
-                    I acknowledge that I may be liable for costs relating to damage and/or faults due to my own negligence and any costs arising from the non-return of the mobile device in accordance with the policy. 
-                    I understand that I may be liable to disciplinary action should I fail to comply with the policy.
-                    
-                    I agree that I will return this device once I no longer require it or leave the organisation."
-                Width: =600
-                X: =30
-                Y: =75
-                ZIndex: =5
 
         ManagerSignatureDate_DataCard2 As typedDataCard.dateTimeEditCard:
             BorderStyle: =BorderStyle.Solid
