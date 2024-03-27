@@ -18346,36 +18346,6 @@
           },
           "ruleId": "app-ScreenHasManyControls",
           "ruleIndex": 10
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'New Starter Form - Line Manager'.Icon11.Visible"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'New Starter Form - Line Manager'.Icon11.Visible",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Visible",
-                "module": "New Starter Form - Line Manager",
-                "type": "'New Starter Form - Line Manager'.Icon11"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 11
         }
       ],
       "tool": {
