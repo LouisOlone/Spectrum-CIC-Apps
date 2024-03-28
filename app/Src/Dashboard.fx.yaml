@@ -131,7 +131,7 @@ Dashboard As screen:
             Color: =RGBA(0, 0, 0, 1)
             Height: =52
             Icon: =Icon.ChevronRight
-            OnSelect: |
+            OnSelect: |-
                 =UpdateContext({varLoading: true});
                 If(
                     // View Laptop Request
@@ -163,56 +163,26 @@ Dashboard As screen:
                             Navigate('New Starter Form - Line Manager')
                         ),
                             // View Induction Log
-                    If(
-                        ThisItem.request_type = "Induction Log",
-                        And(
-                            Set(
-                                varInductionLog,
-                                LookUp(
-                                    'Induction Log',
-                                    UID = ThisItem.UID
-                                )
+                        If(
+                            ThisItem.request_type = "Induction Log",
+                            And(
+                                Set(
+                                    varInductionLog,
+                                    LookUp(
+                                        'Induction Log',
+                                        UID = ThisItem.UID
+                                    )
+                                ),
+                                UpdateContext({varLoading: false}),
+                                UpdateContext({varPopUp: false}),
+                                Navigate('Induction Log Page')
                             ),
-                            UpdateContext({varLoading: false}),
-                            UpdateContext({varPopUp: false}),
-                            Navigate('Induction Log Page')
-                        ),
                            // View Interim Probation Form
-                        If(
-                            ThisItem.request_type = "Interim Probation Form",
-                            And(
-                                Set(
-                                    varInterimProbationForm,
-                                    LookUp(
-                                        NewStarterForm,
-                                        UID = ThisItem.UID
-                                    )
-                                ),
-                                UpdateContext({varLoading: false}),
-                                UpdateContext({varPopUp: false}),
-                                Navigate('Interim Probation Form')
-                            ),
-                             // View Interim Probation Form
-                        If(
-                            ThisItem.request_type = "Interim Probation Form",
-                            And(
-                                Set(
-                                    varInterimProbationFormEmp,
-                                    LookUp(
-                                        'Interim probation review form',
-                                        UID = ThisItem.UID
-                                    )
-                                ),
-                                UpdateContext({varLoading: false}),
-                                UpdateContext({varPopUp: false}),
-                                Navigate('Interim Probation Form')
-                            ),
-                        // View Final Probation Form
                             If(
-                                ThisItem.request_type = "Final Probation Form",
+                                ThisItem.request_type = "Interim Probation Form",
                                 And(
                                     Set(
-                                        varFinalProbationForm,
+                                        varInterimProbationForm,
                                         LookUp(
                                             NewStarterForm,
                                             UID = ThisItem.UID
@@ -220,110 +190,160 @@ Dashboard As screen:
                                     ),
                                     UpdateContext({varLoading: false}),
                                     UpdateContext({varPopUp: false}),
-                                    Navigate('Final Probation Form')
+                                    Navigate('Interim Probation Form')
                                 ),
-                        // View Final Probation Form
-                            If(
-                                ThisItem.request_type = "Final Probation Form",
-                                And(
-                                    Set(
-                                        varFinalProbationFormEmp,
-                                        LookUp(
-                                            'Final Probation Review Form',
-                                            UID = ThisItem.UID
-                                        )
-                                    ),
-                                    UpdateContext({varLoading: false}),
-                                    UpdateContext({varPopUp: false}),
-                                    Navigate('Final Probation Form')
-                                ),
-                                
-                    // View 4G Laptop Request
+                             // View Interim Probation Form
                                 If(
-                                    ThisItem.request_type = "4G Laptop",
+                                    ThisItem.request_type = "Interim Probation Form",
                                     And(
-                                        UpdateContext({var4GLaptopRequest: true}),
-                                        UpdateContext(
-                                            {
-                                                var4GLaptopDetails: LookUp(
-                                                    '4G Laptop Requests',
-                                                    UID = ThisItem.UID
-                                                )
-                                            }
-                                        )
-                                    ),
-                        // View Mobile Request
-                                    If(
-                                        ThisItem.request_type = "Mobile",
-                                        And(
-                                            UpdateContext({varMobileRequest: true}),
-                                            UpdateContext(
-                                                {
-                                                    varMobileDetails: LookUp(
-                                                        'Mobile Requests',
-                                                        UID = ThisItem.UID
-                                                    )
-                                                }
+                                        Set(
+                                            varInterimProbationFormEmp,
+                                            LookUp(
+                                                'Interim probation review form',
+                                                UID = ThisItem.UID
                                             )
                                         ),
-                            // View Peripherals Request
-                                        If(
-                                            ThisItem.request_type = "Peripherals",
-                                            And(
-                                                UpdateContext({varPeripheralsRequest: true}),
-                                                UpdateContext(
-                                                    {
-                                                        varPeripheralsDetails: LookUp(
-                                                            'Peripherals Requests',
-                                                            UID = ThisItem.UID
-                                                        )
-                                                    }
+                                        UpdateContext({varLoading: false}),
+                                        UpdateContext({varPopUp: false}),
+                                        Navigate('Interim Probation Form')
+                                    ),
+                        // View Final Probation Form
+                                    If(
+                                        ThisItem.request_type = "Final Probation Form",
+                                        And(
+                                            Set(
+                                                varFinalProbationForm,
+                                                LookUp(
+                                                    NewStarterForm,
+                                                    UID = ThisItem.UID
                                                 )
                                             ),
-                                // View Special IT Request
+                                            UpdateContext({varLoading: false}),
+                                            UpdateContext({varPopUp: false}),
+                                            Navigate('Final Probation Form')
+                                        ),
+                        // View Final Probation Form
+                                        If(
+                                            ThisItem.request_type = "Final Probation Form",
+                                            And(
+                                                Set(
+                                                    varFinalProbationFormEmp,
+                                                    LookUp(
+                                                        'Final Probation Review Form',
+                                                        UID = ThisItem.UID
+                                                    )
+                                                ),
+                                                UpdateContext({varLoading: false}),
+                                                UpdateContext({varPopUp: false}),
+                                                Navigate('Final Probation Form')
+                                            ),
+                    // View 4G Laptop Request
                                             If(
-                                                ThisItem.request_type = "Special IT Request",
+                                                ThisItem.request_type = "4G Laptop",
                                                 And(
-                                                    UpdateContext({varSpecialRequest: true}),
+                                                    UpdateContext({var4GLaptopRequest: true}),
                                                     UpdateContext(
                                                         {
-                                                            varSpecialRequestDetails: LookUp(
-                                                                'Special IT Requests',
+                                                            var4GLaptopDetails: LookUp(
+                                                                '4G Laptop Requests',
                                                                 UID = ThisItem.UID
                                                             )
                                                         }
                                                     )
                                                 ),
-                                    // View Smartcard Request
+                        // View Mobile Request
                                                 If(
-                                                    ThisItem.request_type = "Smartcard Request",
+                                                    ThisItem.request_type = "Mobile",
                                                     And(
-                                                        UpdateContext({varSmartcardRequest: true}),
+                                                        UpdateContext({varMobileRequest: true}),
                                                         UpdateContext(
                                                             {
-                                                                varSmartcardRequestDetails: LookUp(
-                                                                    'Smartcard Requests',
+                                                                varMobileDetails: LookUp(
+                                                                    'Mobile Requests',
                                                                     UID = ThisItem.UID
                                                                 )
                                                             }
                                                         )
                                                     ),
-                                        // View Smartcard Positions Request
+                            // View Peripherals Request
                                                     If(
-                                                        ThisItem.request_type = "Smartcard Positions",
+                                                        ThisItem.request_type = "Peripherals",
                                                         And(
-                                                            UpdateContext({varSmartcardPositionsRequest: true}),
+                                                            UpdateContext({varPeripheralsRequest: true}),
                                                             UpdateContext(
                                                                 {
-                                                                    varSmartcardPositionsRequestDetails: LookUp(
-                                                                        'Smartcard Positions Requests',
+                                                                    varPeripheralsDetails: LookUp(
+                                                                        'Peripherals Requests',
                                                                         UID = ThisItem.UID
                                                                     )
                                                                 }
                                                             )
+                                                        ),
+                                // View Special IT Request
+                                                        If(
+                                                            ThisItem.request_type = "Special IT Request",
+                                                            And(
+                                                                UpdateContext({varSpecialRequest: true}),
+                                                                UpdateContext(
+                                                                    {
+                                                                        varSpecialRequestDetails: LookUp(
+                                                                            'Special IT Requests',
+                                                                            UID = ThisItem.UID
+                                                                        )
+                                                                    }
+                                                                )
+                                                            ),
+                                    // View Smartcard Request
+                                                            If(
+                                                                ThisItem.request_type = "Smartcard Request",
+                                                                And(
+                                                                    UpdateContext({varSmartcardRequest: true}),
+                                                                    UpdateContext(
+                                                                        {
+                                                                            varSmartcardRequestDetails: LookUp(
+                                                                                'Smartcard Requests',
+                                                                                UID = ThisItem.UID
+                                                                            )
+                                                                        }
+                                                                    )
+                                                                ),
+                                        // View Smartcard Positions Request
+                                                                If(
+                                                                    ThisItem.request_type = "Smartcard Positions",
+                                                                    And(
+                                                                        UpdateContext({varSmartcardPositionsRequest: true}),
+                                                                        UpdateContext(
+                                                                            {
+                                                                                varSmartcardPositionsRequestDetails: LookUp(
+                                                                                    'Smartcard Positions Requests',
+                                                                                    UID = ThisItem.UID
+                                                                                )
+                                                                            }
+                                                                        )
+                                                                    ),
+                                                                    If(
+                                                                        ThisItem.request_type = "New Starter Smartcard Request",
+                                                                        And(
+                                                                            Set(
+                                                                                varNewStarterSmartcardNewRequest,
+                                                                                true
+                                                                            ),
+                                                                            Set(
+                                                                                varNewStarterSmartcardNewRequestDetails,
+                                                                                LookUp(
+                                                                                    NewStarterForm,
+                                                                                    UID = ThisItem.UID
+                                                                                )
+                                                                            ),
+                                                                            UpdateContext({varLoading: false}),
+                                                                            Navigate('IT Request Form')
+                                                                        ),
+                                                                        false
+                                                                    )
+                                                                )
+                                                            )
                                                         )
-                                                    ),
-                                                        false
+                                                    )
                                                 )
                                             )
                                         )
@@ -332,11 +352,7 @@ Dashboard As screen:
                             )
                         )
                     )
-                )
-                )
-                    )
-                )
-                ;
+                );
                 // Open pop-up window
                 UpdateContext({varPopUp: true});
                 If(
