@@ -445,6 +445,15 @@
             MaxLength: =DataSourceInfo([@'IT Equipment And Requests'], DataSourceInfo.MaxLength, "ITAccountFlag")
             Required: =false
             Update: =If(Checkbox1_65.Value =true,"True","False")
+            Visible: |-
+                =If(
+                    Or(
+                        varNewStarterSmartcardNewRequest = true,
+                        varNewStarterSmartcardPositions = true
+                    ),
+                    false,
+                    true
+                )
             Width: =306
             WidthFit: =true
             X: =30
@@ -487,6 +496,15 @@
             MaxLength: =DataSourceInfo([@'IT Equipment And Requests'], DataSourceInfo.MaxLength, "LaptopFlag")
             Required: =false
             Update: =If(Checkbox3_10.Value =true,"True","False")
+            Visible: |-
+                =If(
+                    Or(
+                        varNewStarterSmartcardNewRequest = true,
+                        varNewStarterSmartcardPositions = true
+                    ),
+                    false,
+                    true
+                )
             Width: =306
             WidthFit: =true
             X: =30
@@ -539,6 +557,15 @@
             MaxLength: =DataSourceInfo([@'IT Equipment And Requests'], DataSourceInfo.MaxLength, "MobileFlag")
             Required: =false
             Update: =If(Checkbox4_3.Value =true,"True","False")
+            Visible: |-
+                =If(
+                    Or(
+                        varNewStarterSmartcardNewRequest = true,
+                        varNewStarterSmartcardPositions = true
+                    ),
+                    false,
+                    true
+                )
             Width: =306
             WidthFit: =true
             X: =30
@@ -627,6 +654,15 @@
             Checkbox2_68 As checkbox:
                 BorderColor: =RGBA(32, 54, 71, 1)
                 CheckboxBorderColor: =RGBA(32, 54, 71, 1)
+                Default: |-
+                    =If(
+                        Or(
+                            varNewStarterSmartcardNewRequest = true,
+                            varNewStarterSmartcardPositions = true
+                        ),
+                        true,
+                        false
+                    )
                 HoverColor: =RGBA(32, 54, 71, 1)
                 OnUncheck: =Reset(DataCardValue49_3) && Reset(DataCardValue50_2) && Reset(DataCardValue46_3) && Reset(DataCardValue43_3) && Reset(Dropdown7_8) && Reset(Dropdown7_10) && Reset(Dropdown7_12)
                 Text: ="Smartcard requests"
@@ -646,6 +682,15 @@
             MaxLength: =DataSourceInfo([@'IT Equipment And Requests'], DataSourceInfo.MaxLength, "LicenseFlag")
             Required: =false
             Update: =If(Checkbox3_11.Value =true,"True","False")
+            Visible: |-
+                =If(
+                    Or(
+                        varNewStarterSmartcardNewRequest = true,
+                        varNewStarterSmartcardPositions = true
+                    ),
+                    false,
+                    true
+                )
             Width: =306
             WidthFit: =true
             X: =1
@@ -699,6 +744,15 @@
             MaxLength: =DataSourceInfo([@'IT Equipment And Requests'], DataSourceInfo.MaxLength, "SharedDriveFlag")
             Required: =false
             Update: =If(Checkbox3_12.Value =true,"True","False")
+            Visible: |-
+                =If(
+                    Or(
+                        varNewStarterSmartcardNewRequest = true,
+                        varNewStarterSmartcardPositions = true
+                    ),
+                    false,
+                    true
+                )
             Width: =306
             WidthFit: =true
             X: =2
@@ -753,6 +807,15 @@
             MaxLength: =DataSourceInfo([@'IT Equipment And Requests'], DataSourceInfo.MaxLength, "PeripheralsFlag")
             Required: =false
             Update: =If(Checkbox8_2.Value =true,"True","False")
+            Visible: |-
+                =If(
+                    Or(
+                        varNewStarterSmartcardNewRequest = true,
+                        varNewStarterSmartcardPositions = true
+                    ),
+                    false,
+                    true
+                )
             Width: =306
             WidthFit: =true
             X: =3
@@ -805,6 +868,15 @@
             MaxLength: =DataSourceInfo([@'IT Equipment And Requests'], DataSourceInfo.MaxLength, "SpecialFlag")
             Required: =false
             Update: =If(Checkbox10_1.Value =true,"True","False")
+            Visible: |-
+                =If(
+                    Or(
+                        varNewStarterSmartcardNewRequest = true,
+                        varNewStarterSmartcardPositions = true
+                    ),
+                    false,
+                    true
+                )
             Width: =306
             WidthFit: =true
             X: =4
@@ -884,9 +956,31 @@
                 ChevronHoverBackground: |-
                     =	
                     ColorFade(RGBA(77,164,65,1), -20%)
-                DefaultSelectedItems: =Parent.Default
+                DefaultSelectedItems: |-
+                    =If(
+                        varNewStarterSmartcardNewRequest = true,
+                        ["New Smartcard with Positions"],
+                        If(
+                            varNewStarterSmartcardPositions = true,
+                            ["Request positions for your current smartcard"],
+                            [""]
+                        )
+                    )
                 DisplayFields: =["Value"]
-                DisplayMode: =Parent.DisplayMode
+                DisplayMode: |+
+                    =If(
+                        Or(
+                            varNewStarterSmartcardNewRequest = true,
+                            varNewStarterSmartcardPositions = true
+                        ),
+                        DisplayMode.View,
+                        DisplayMode.Edit
+                    )
+                    
+                    
+                    
+                    
+                    
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
@@ -3135,7 +3229,15 @@
                         ""
                     )
                 DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
+                DisplayMode: |-
+                    =If(
+                        Or(
+                            varNewStarterSmartcardNewRequest = true,
+                            varNewStarterSmartcardPositions = true
+                        ),
+                        DisplayMode.View,
+                        DisplayMode.Edit
+                    )
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
@@ -3223,7 +3325,15 @@
                         ""
                     )
                 DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
+                DisplayMode: |-
+                    =If(
+                        Or(
+                            varNewStarterSmartcardNewRequest = true,
+                            varNewStarterSmartcardPositions = true
+                        ),
+                        DisplayMode.View,
+                        DisplayMode.Edit
+                    )
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
