@@ -17,7 +17,7 @@
         Width: =136
         X: =1187
         Y: =711
-        ZIndex: =3
+        ZIndex: =2
 
     Label1_7 As label:
         Align: =Align.Center
@@ -30,7 +30,7 @@
         Width: =1298
         X: =25
         Y: =91
-        ZIndex: =4
+        ZIndex: =3
 
     ButtonCanvas1_12 As Button:
         Appearance: ='ButtonCanvas.Appearance'.Secondary
@@ -56,7 +56,7 @@
         Width: =136
         X: =1030
         Y: =711
-        ZIndex: =5
+        ZIndex: =4
 
     New_IT_Request_1 As form:
         BorderColor: =RGBA(255, 255, 255, 1)
@@ -81,7 +81,7 @@
         Width: =1284
         X: =25
         Y: =151
-        ZIndex: =6
+        ZIndex: =5
 
         TelephoneNo_DataCard1_1 As typedDataCard.numberEditCard:
             BorderColor: =RGBA(32, 54, 71, 1)
@@ -5199,4 +5199,33 @@
                 X: =28
                 Y: =1
                 ZIndex: =7
+
+    Rectangle6 As rectangle:
+        Fill: =RGBA(214, 221, 224, 1)
+        Height: =768
+        Visible: =If(varSmartcardWarning = true, true, false)
+        Width: =1366
+        ZIndex: =6
+
+    Label18 As label:
+        Font: =Font.Arial
+        Height: =506
+        Size: =26
+        Text: |-
+            =If(varNewStarterSmartcardNewRequest = true, Concatenate("Warning: The new starter has indicated they require a new smartcard, please ensure you have the following: ", Char(10), Char(10), "1 form of photo ID & 2 proofs of address", Char(10),Char(10), "or", Char(10),Char(10), "2 forms of photo ID and 1 proof of address", Char(10),Char(10), "You will also require passport-style photograph of the new starter"))
+        Visible: =If(varSmartcardWarning = true, true, false)
+        Width: =921
+        X: =206
+        Y: =131
+        ZIndex: =7
+
+    Button5 As button:
+        Height: =42
+        OnSelect: =Set(varSmartcardWarning, false)
+        Text: ="Acknowledge"
+        Visible: =varSmartcardWarning
+        Width: =222
+        X: =1088
+        Y: =689
+        ZIndex: =8
 

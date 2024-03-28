@@ -335,6 +335,7 @@ Dashboard As screen:
                                                                                     UID = ThisItem.UID
                                                                                 )
                                                                             ),
+                                                                            Set(varSmartcardWarning, true),
                                                                             UpdateContext({varLoading: false}),
                                                                             Navigate('IT Request Form')
                                                                         ),
