@@ -190,9 +190,25 @@
                 ChevronHoverBackground: |-
                     =	
                     ColorFade(RGBA(77,164,65,1), -20%)
-                DefaultSelectedItems: =Parent.Default
+                DefaultSelectedItems: |-
+                    =If(
+                        Or(
+                            varNewStarterSmartcardNewRequest = true,
+                            varNewStarterSmartcardPositions = true
+                        ),
+                        ["No"],
+                        [""]
+                    )
                 DisplayFields: =["Value"]
-                DisplayMode: =Parent.DisplayMode
+                DisplayMode: |-
+                    =If(
+                        Or(
+                            varNewStarterSmartcardNewRequest = true,
+                            varNewStarterSmartcardPositions = true
+                        ),
+                        DisplayMode.View,
+                        DisplayMode.Edit
+                    )
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
                 HoverFill: =RGBA(88,89,91,0.01)
@@ -2867,7 +2883,15 @@
             BorderStyle: =BorderStyle.Solid
             DataField: ="RequestFor"
             Default: =ThisItem.RequestFor
-            DisplayMode: =Parent.DisplayMode
+            DisplayMode: |-
+                =If(
+                    Or(
+                        varNewStarterSmartcardNewRequest = true,
+                        varNewStarterSmartcardPositions = true
+                    ),
+                    DisplayMode.View,
+                    DisplayMode.Edit
+                )
             DisplayName: =DataSourceInfo([@'IT Equipment And Requests'],DataSourceInfo.DisplayName,"RequestFor")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
@@ -2900,7 +2924,15 @@
                 ChevronHoverBackground: |-
                     =	
                     ColorFade(RGBA(77,164,65,1), -20%)
-                DefaultSelectedItems: =Parent.Default
+                DefaultSelectedItems: |-
+                    =If(
+                        Or(
+                            varNewStarterSmartcardNewRequest = true,
+                            varNewStarterSmartcardPositions = true
+                        ),
+                        ["Someone Else"],
+                        [""]
+                    )
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
                 Font: =Font.Arial
@@ -2992,9 +3024,25 @@
                 ChevronHoverBackground: |-
                     =	
                     ColorFade(RGBA(77,164,65,1), -20%)
-                DefaultSelectedItems: =Parent.Default
+                DefaultSelectedItems: |-
+                    =If(
+                        Or(
+                            varNewStarterSmartcardNewRequest = true,
+                            varNewStarterSmartcardPositions = true
+                        ),
+                        ["New Starter"],
+                        [""]
+                    )
                 DisplayFields: =["Value"]
-                DisplayMode: =Parent.DisplayMode
+                DisplayMode: |-
+                    =If(
+                        Or(
+                            varNewStarterSmartcardNewRequest = true,
+                            varNewStarterSmartcardPositions = true
+                        ),
+                        DisplayMode.View,
+                        DisplayMode.Edit
+                    )
                 Font: =Font.Arial
                 FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(88,89,91,1)
@@ -3076,7 +3124,16 @@
 
             DataCardValue6_3 As text:
                 BorderColor: =RGBA(88,89,91,0.25)
-                Default: =Parent.Default
+                Default: |-
+                    =If(
+                        varNewStarterSmartcardNewRequest = true,
+                        LookUp('Onboarding Record', UID=varNewStarterSmartcardNewRequestDetails.UID, FirstName),
+                        If(
+                            varNewStarterSmartcardPositions = true,
+                            LookUp('Onboarding Record', UID=varNewStarterSmartcardPositionsDetails.UID, FirstName)
+                        ),
+                        ""
+                    )
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Font: =Font.Arial
@@ -3155,7 +3212,16 @@
 
             DataCardValue7_3 As text:
                 BorderColor: =RGBA(88,89,91,0.25)
-                Default: =Parent.Default
+                Default: |-
+                    =If(
+                        varNewStarterSmartcardNewRequest = true,
+                        LookUp('Onboarding Record', UID=varNewStarterSmartcardNewRequestDetails.UID, LastName),
+                        If(
+                            varNewStarterSmartcardPositions = true,
+                            LookUp('Onboarding Record', UID=varNewStarterSmartcardPositionsDetails.UID, LastName)
+                        ),
+                        ""
+                    )
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Font: =Font.Arial

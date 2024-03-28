@@ -338,7 +338,25 @@ Dashboard As screen:
                                                                             UpdateContext({varLoading: false}),
                                                                             Navigate('IT Request Form')
                                                                         ),
-                                                                        false
+                                                                        If(
+                                                                            ThisItem.request_type = "New Starter Smartcard Positions",
+                                                                            And(
+                                                                                Set(
+                                                                                    varNewStarterSmartcardPositions,
+                                                                                    true
+                                                                                ),
+                                                                                Set(
+                                                                                    varNewStarterSmartcardPositionsDetails,
+                                                                                    LookUp(
+                                                                                        NewStarterForm,
+                                                                                        UID = ThisItem.UID
+                                                                                    )
+                                                                                ),
+                                                                                UpdateContext({varLoading: false}),
+                                                                                Navigate('IT Request Form')
+                                                                            ),
+                                                                            false
+                                                                        )
                                                                     )
                                                                 )
                                                             )
@@ -373,6 +391,10 @@ Dashboard As screen:
                 );
                 If(
                     ThisItem.request_type = "New Starter Smartcard Request",
+                    UpdateContext({varPopUp: false})
+                );
+                If(
+                    ThisItem.request_type = "New Starter Smartcard Positions",
                     UpdateContext({varPopUp: false})
                 )
             PaddingBottom: =12
