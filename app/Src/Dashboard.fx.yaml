@@ -370,6 +370,10 @@ Dashboard As screen:
                 If(
                     ThisItem.request_type = "Induction Log",
                     UpdateContext({varPopUp: false})
+                );
+                If(
+                    ThisItem.request_type = "New Starter Smartcard Request",
+                    UpdateContext({varPopUp: false})
                 )
             PaddingBottom: =12
             PaddingLeft: =12
